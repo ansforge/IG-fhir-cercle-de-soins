@@ -151,7 +151,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-fr-patient.html">next&gt;</a>
+          | <a href="CapabilityStatement-Consommateur.html">next&gt;</a>
 
           </span>
 
@@ -185,19 +185,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Comportement: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Comportement: Search Parameters</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#4">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
    </ul>
 </div>
@@ -206,6 +200,159 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Comportement: Capability Statements </h3>
+   <p>
+    <p>La ressource CapabilityStatement permet de définir les capacités spécifiques que les systèmes doivent supporter pour être conforme à cet Implementation Guide (IG). Les systèmes conformes à cet IG doivent déclarer leur conformance à au moins une de ces ressources CapabilityStatement.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-Consommateur.html"
+                     title="CapabilityStatement/Consommateur">Consommateur</a>
+               </td>
+               <td>
+<p>Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-CreateurRestful.html"
+                     title="CapabilityStatement/CreateurRestful">CreateurRestful</a>
+               </td>
+               <td>
+<p>Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle
+de soins d’une personne</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-CreateurTransaction.html"
+                     title="CapabilityStatement/CreateurTransaction">CreateurTransaction</a>
+               </td>
+               <td>
+<p>Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle
+de soins d’une personne</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-Gestionnaire.html"
+                     title="CapabilityStatement/Gestionnaire">Gestionnaire</a>
+               </td>
+               <td>
+<p>Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,
+donne accès aux informations en cas de consultation.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Comportement: Search Parameters </h3>
+   <p>
+    <p>La ressource SearchParameter permet de définir de nouveaux paramètres de recherche pour les serveurs RESTful. Ces paramètres de recherche peuvent également être utilisés pour trier ou inclure des ressources reliées.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-Participant-AsOrganization.html"
+                     title="SearchParameter/CDS-CareTeam-Participant-AsOrganization">CDS-CareTeam-Participant-AsOrganization</a>
+               </td>
+               <td>
+<p>Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l’Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-Participant-AsPractitionerRole.html"
+                     title="SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole">CDS-CareTeam-Participant-AsPractitionerRole</a>
+               </td>
+               <td>
+<p>Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-Participant-AsRelatedPerson.html"
+                     title="SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson">CDS-CareTeam-Participant-AsRelatedPerson</a>
+               </td>
+               <td>
+<p>Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-Subject-AsPatient.html"
+                     title="SearchParameter/CDS-CareTeam-Subject-AsPatient">CDS-CareTeam-Subject-AsPatient</a>
+               </td>
+               <td>
+<p>Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-end.html"
+                     title="SearchParameter/CDS-CareTeam-end">CDS-CareTeam-end</a>
+               </td>
+               <td>
+<p>Date de fin du cercle de soins</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-participant-end.html"
+                     title="SearchParameter/CDS-CareTeam-participant-end">CDS-CareTeam-participant-end</a>
+               </td>
+               <td>
+<p>Date de sortie d’un membre du cercle de soins</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-participant-start.html"
+                     title="SearchParameter/CDS-CareTeam-participant-start">CDS-CareTeam-participant-start</a>
+               </td>
+               <td>
+<p>Date d’entrée d’un membre du cercle de soins</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-CareTeam-start.html"
+                     title="SearchParameter/CDS-CareTeam-start">CDS-CareTeam-start</a>
+               </td>
+               <td>
+<p>Date de création du cercle de soins</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-Patient-birthplace.html"
+                     title="SearchParameter/CDS-Patient-birthplace">CDS-Patient-birthplace</a>
+               </td>
+               <td>
+<p>Lieu de naissance du patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-CDS-PractitionerRole-nameex.html"
+                     title="SearchParameter/CDS-PractitionerRole-nameex">CDS-PractitionerRole-nameex</a>
+               </td>
+               <td>
+<p>Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>Ces structures définissent les contraintes sur les ressources FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
@@ -216,127 +363,58 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-fr-patient.html"
-                     title="StructureDefinition/fr-patient">Patient français</a>
+                  <a href="StructureDefinition-cds-bundle-response-recherche.html"
+                     title="StructureDefinition/cds-bundle-response-recherche">CDS_BundleResponseRecherche</a>
                </td>
                <td>
-<p>Description du patient français</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
-   <h3>Structures: Extension Definitions </h3>
-   <p>
-    <p>Ces structures définissent les contraintes sur les extensions FHIR par les systèmes conformes à cet Implementation Guide (IG).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-EyeColor.html"
-                     title="StructureDefinition/EyeColor">EyeColor</a>
-               </td>
-               <td>
-<p>Eye color extension</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
-   <h3>Terminology: Value Sets </h3>
-   <p>
-    <p>Les ressources ValueSet définissent les ensembles de codes utilisés par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Jeu De Valeur (JDV).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-EyeColorVS.html" title="ValueSet/EyeColorVS">EyeColor Value Set</a>
-               </td>
-               <td>
-<p>Different eye colors.</p>
+<p>« Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-MeltingPotVS.html" title="ValueSet/MeltingPotVS">Melting Pot Value Set</a>
+                  <a href="StructureDefinition-cds-bundle-transaction-creation.html"
+                     title="StructureDefinition/cds-bundle-transaction-creation">CDS_BundleTransactionCreation</a>
                </td>
                <td>
-<p>Melting Pot Value Set.</p>
+<p>Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.
+Il s’agit d’un bundle de type “transaction” permettant d’organiser le contenu du flux de création d’un cercle de soins.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-ModifiedAdministrativeGender.html"
-                     title="ValueSet/ModifiedAdministrativeGender">ModifiedAdministrativeGender</a>
+                  <a href="StructureDefinition-cds-bundle-transaction-maj.html"
+                     title="StructureDefinition/cds-bundle-transaction-maj">CDS_BundleTransactionMAJ</a>
                </td>
                <td>
-<p>AdministrativeGender without unknown code</p>
+<p>Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.
+Il s’agit d’un bundle de type “transaction” permettant d’organiser le contenu du flux de création d’un cercle de soins.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-TypeCarteVS.html" title="ValueSet/TypeCarteVS">Type Carte Value Set</a>
+                  <a href="StructureDefinition-cds-fr-related-person.html"
+                     title="StructureDefinition/cds-fr-related-person">CDS_FrRelatedPerson</a>
                </td>
                <td>
-<p>Type Carte Value Set.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="4"> </a>
-   <h3>Terminology: Code Systems </h3>
-   <p>
-    <p>Les ressources CodeSystem définissent les ensembles de codes définis par les systèmes conformes à cet Implementation Guide (IG). Equivalent NOS : Terminologie de REference (TRE).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-competence-code-system.html"
-                     title="CodeSystem/competence-code-system">Compétences CodeSystem</a>
-               </td>
-               <td>
-<p>Compétences des professionnels de santé.</p>
+<p>Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance, …).</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-type-carte-code-system.html"
-                     title="CodeSystem/type-carte-code-system">Type de carte</a>
+                  <a href="StructureDefinition-cds-ihe-careteam.html"
+                     title="StructureDefinition/cds-ihe-careteam">CDS_IHECareTeam</a>
                </td>
                <td>
-<p>Type de carte professionnelle et personnelle.</p>
+<p>Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins</p>
 </td>
             </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="5"> </a>
-   <h3>Example: Example Instances </h3>
-   <p>
-    <p>Ces exemples dévoilent à quoi doivent ressembler les données produites et consommées par les systèmes conformes à cet Implementation Guide (IG).</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-frpatient-exemple.html" title="Patient/frpatient-exemple">frpatient-exemple</a>
+                  <a href="StructureDefinition-cds-organization-orga-int.html"
+                     title="StructureDefinition/cds-organization-orga-int">CDS_Organization-OrgaInt</a>
                </td>
                <td>
-<p>Exemple d’un patient français</p>
+<p>Profil héritant de la ressource FHIR pour les organisations internes.</p>
 </td>
             </tr>
          </tbody>
@@ -378,7 +456,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-fr-patient.html">next&gt;</a>
+                <a href="CapabilityStatement-Consommateur.html">next&gt;</a>
 
               </td>
             </tr>
@@ -388,12 +466,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 26, 2023 12:42+0000">2023-04-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 3, 2023 13:05+0000">2023-05-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: #81BEF7" target="_blank" href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+                  | <a style="color: #81BEF7" target="_blank" href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">Version History</a> | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/IG-fhir-cercle-de-soins/issues/new">New Issue</a>
                 
 
           </span>
