@@ -1,12 +1,7 @@
 Profile: CDS_Organization-OrgaInt
-Parent: Organization
-Id: CDS_Organization-OrgaInt
+Parent: Organization //TODO : héritage annuaire / IS ?
+Id: cds-organization-orga-int
 Description: "Profil héritant de la ressource FHIR pour les organisations internes."
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt"
-* ^version = "2.0"
-* ^status = #active
-* ^date = "2021-12-01"
-* ^publisher = "ANS"
 * id 1..
 * meta 1..
 * extension ^slicing.discriminator.type = #value

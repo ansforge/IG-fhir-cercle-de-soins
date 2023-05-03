@@ -1,12 +1,8 @@
 Profile: CDS_BundleTransactionCreation
 Parent: Bundle
-Id: CDS_BundleTransactionCreation
+Id: cds-bundle-transaction-creation
 Description: """Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.
 Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du flux de création d'un cercle de soins."""
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionCreation"
-* ^version = "2.1"
-* ^date = "2022-11-15"
-* ^publisher = "ANS"
 * type = #transaction (exactly)
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
@@ -54,7 +50,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[organization].response ..0
 * entry[organizationInterne].link ^contentReference = "http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link"
 * entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only $CDS_Organization-OrgaInt
+* entry[organizationInterne].resource only cds-organization-orga-int
 * entry[organizationInterne].request.method obeys req-met-7
 * entry[organizationInterne].response ..0
 * entry[practitionerRoleOrg].link ^contentReference = "http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link"

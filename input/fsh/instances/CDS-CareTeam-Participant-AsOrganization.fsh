@@ -2,7 +2,7 @@ Instance: CDS-CareTeam-Participant-AsOrganization
 InstanceOf: SearchParameter
 Usage: #definition
 * meta.lastUpdated = "2021-10-21T09:10:19.426+00:00"
-* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization"
+* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization" // TODO : mise à jour des urls
 * version = "2.0"
 * name = "CDS_CareTeam_Participant_AsOrganization"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/CareTeam-participant"

@@ -1,12 +1,8 @@
 Profile: CDS_BundleTransactionMAJ
 Parent: Bundle
-Id: CDS_BundleTransactionMAJ
+Id: cds-bundle-transaction-maj
 Description: """Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.
 Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du flux de création d'un cercle de soins."""
-* ^url = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionMAJ"
-* ^version = "1.0"
-* ^date = "2022-11-15"
-* ^publisher = "ANS"
 * type = #transaction (exactly)
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
@@ -38,7 +34,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[patient].response ..0
 * entry[relatedPerson].link ^contentReference = "http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link"
 * entry[relatedPerson].resource 1..
-* entry[relatedPerson].resource only CDS_FrRelatedPerson
+* entry[relatedPerson].resource only cds-fr-related-person
 * entry[relatedPerson].request.method obeys req-met-3
 // WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
 // Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
@@ -54,11 +50,11 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[organization].response ..0
 * entry[organizationInterne].link ^contentReference = "http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link"
 * entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only $CDS_Organization-OrgaInt
+* entry[organizationInterne].resource only cds-organization-orga-int
 * entry[organizationInterne].request.method obeys req-met-7
 // WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
 // Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-* entry[organizationInterne].request.method ^constraint.source = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionCreationMAJ"
+* entry[organizationInterne].request.method ^constraint.source = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/cds-bundle-transaction-creation"
 * entry[organizationInterne].response ..0
 * entry[practitionerRoleOrg].link ^contentReference = "http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link"
 * entry[practitionerRoleOrg].resource 1..
@@ -66,7 +62,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[practitionerRoleOrg].request.method obeys req-met-8
 // WARNING: The constraint index in the following rule (e.g., constraint[0]) may be incorrect.
 // Please compare with the constraint array in the original definition's snapshot and adjust as necessary.
-* entry[practitionerRoleOrg].request.method ^constraint.source = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionCreationMAJ"
+* entry[practitionerRoleOrg].request.method ^constraint.source = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/cds-bundle-transaction-creation"
 * entry[practitionerRoleOrg].response ..0
 * entry[practitionerRolePro].link ^contentReference = "http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.link"
 * entry[practitionerRolePro].resource 1..
