@@ -12,7 +12,8 @@
 Les workflows associés à ce repository (.github/workflows) permettent : 
 * D'executer Sushi pour vérifier la grammaire
 * De faire les tests avec le validator_cli
-* De publier les pages : https://ansforge.github.io/{nom du repo}/ig/{nom de la branche}
+* De publier les pages : https://ansforge.github.io/IG-fhir-cercle-de-soins/ig/{nom de la branche}
+Ex : https://ansforge.github.io/IG-fhir-cercle-de-soins/ig/main
 
 # Notes
 Ce repo "IG-modele" a été créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
