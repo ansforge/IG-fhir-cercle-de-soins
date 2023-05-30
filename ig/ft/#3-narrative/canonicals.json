@@ -1,0 +1,149 @@
+[
+  {
+    "id" : "Consommateur",
+    "type" : "CapabilityStatement",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Consommateur",
+    "version" : "0.1.0",
+    "name" : "Consommateur"
+  },
+  {
+    "id" : "CreateurRestful",
+    "type" : "CapabilityStatement",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.CreateurRestful",
+    "version" : "0.1.0",
+    "name" : "CreateurRestful"
+  },
+  {
+    "id" : "Gestionnaire",
+    "type" : "CapabilityStatement",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire",
+    "version" : "0.1.0",
+    "name" : "Gestionnaire"
+  },
+  {
+    "id" : "CreateurTransaction",
+    "type" : "CapabilityStatement",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS_CreateurTransaction",
+    "version" : "0.1.0",
+    "name" : "CreateurTransaction"
+  },
+  {
+    "id" : "CDS-CareTeam-Participant-AsOrganization",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_Participant_AsOrganization"
+  },
+  {
+    "id" : "CDS-CareTeam-Participant-AsPractitionerRole",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsPractitionerRole",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_Participant_AsPractitionerRole"
+  },
+  {
+    "id" : "CDS-CareTeam-Participant-AsRelatedPerson",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsRelatedPerson",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_Participant_AsRelatedPerson"
+  },
+  {
+    "id" : "CDS-CareTeam-Subject-AsPatient",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Subject_AsPatient",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_Subject_AsPatient"
+  },
+  {
+    "id" : "CDS-CareTeam-end",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_end",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_end"
+  },
+  {
+    "id" : "CDS-CareTeam-participant-end",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_participant-end",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_participant-end"
+  },
+  {
+    "id" : "CDS-CareTeam-participant-start",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_participant-start",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_participant-start"
+  },
+  {
+    "id" : "CDS-CareTeam-start",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start",
+    "version" : "0.1.0",
+    "name" : "CDS_CareTeam_start"
+  },
+  {
+    "id" : "CDS-Patient-birthplace",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_Patient_birthplace",
+    "version" : "0.1.0",
+    "name" : "CDS_Patient_birthplace"
+  },
+  {
+    "id" : "CDS-PractitionerRole-nameex",
+    "type" : "SearchParameter",
+    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_PractitionerRole_nameex",
+    "version" : "0.1.0",
+    "name" : "CDS_PractitionerRole_nameex"
+  },
+  {
+    "id" : "ans.fhir.fr.cds",
+    "type" : "ImplementationGuide",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds",
+    "version" : "0.1.0",
+    "name" : "CDS"
+  },
+  {
+    "id" : "cds-bundle-response-recherche",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche",
+    "version" : "0.1.0",
+    "name" : "CDS_BundleResponseRecherche"
+  },
+  {
+    "id" : "cds-bundle-transaction-creation",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation",
+    "version" : "0.1.0",
+    "name" : "CDS_BundleTransactionCreation"
+  },
+  {
+    "id" : "cds-bundle-transaction-maj",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj",
+    "version" : "0.1.0",
+    "name" : "CDS_BundleTransactionMAJ"
+  },
+  {
+    "id" : "cds-fr-related-person",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
+    "version" : "0.1.0",
+    "name" : "CDS_FrRelatedPerson"
+  },
+  {
+    "id" : "cds-ihe-careteam",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
+    "version" : "0.1.0",
+    "name" : "CDS_IHECareTeam"
+  },
+  {
+    "id" : "cds-organization-orga-int",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int",
+    "version" : "0.1.0",
+    "name" : "CDS_Organization-OrgaInt"
+  }
+]
