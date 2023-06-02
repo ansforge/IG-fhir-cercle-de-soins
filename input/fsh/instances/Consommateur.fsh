@@ -1,7 +1,6 @@
 Instance: Consommateur
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Consommateur"
 * version = "2.1"
 * name = "Consommateur"
 * title = "CI-SIS Gestion-Cercle-de-soins - Consommateur"

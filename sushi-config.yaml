@@ -23,6 +23,27 @@ parameters:
 pages:
     index.md:
         title: Accueil
+    specifications_fonctionnelles.md:
+        title: Spécifications fonctionnelles
+
+        # Cas d'usage: cas_usages.html
+        # Cadre juridique et orientations organisationnellles: cadre_juridique_et_orientations_organisationnelles.html
+        # Organisation du contexte métier: organisation_contexte_metier.html
+        # Définition des processus collaboratifs: 
+        #     Processus Création du cercle de soins: processus_creation.html
+        #     Processus Consultation du cercle de soins: processus_consultation.html
+        #     Processus Mise-à-jour du cercle de soins: processus_mise_a_jour.html
+        #     Liste des acteurs pour l'ensemble des processus: liste_acteurs_processus.html
+        # Identification des flux:
+        #     Flux de création du cercle de soins: sf_flux_creation_cds.html
+        #     Flux de consultation du cercle de soins: sf_flux_consultation_cds.html
+        #     Flux de mise-à-jour du cercle de soins: sf_flux_mise_a_jour_cds.html
+        #     Synthèse des flux: sf_synthese_flux.html
+        # Equivalence MOS:
+        # Modélisation des flux:
+        #     Flux 1 - CreationCercleSoins:
+        #     Flux 2 - CreationCercleSoins:
+        #     Flux 3 - CreationCercleSoins:
     specifications_techniques.md:
         construction_des_flux.md:
         st_flux1.md:
@@ -35,39 +56,38 @@ pages:
             title: Sécurité
         downloads.md:
             title: Téléchargements et usages
-
     tests.md:
-        title: Tests      
+        title: Tests
     about.md:
         title: A propos de ce guide
 
 menu:
     Accueil: index.html
-    Spécifications fonctionnelles:
-        Cas d'usage: cas_usages.html
-        Cadre juridique et orientations organisationnellles: cadre_juridique_et_orientations_organisationnelles.html
-        Organisation du contexte métier: organisation_contexte_metier.html
-        Définition des processus collaboratifs: 
-            Processus Création du cercle de soins: processus_creation.html
-            Processus Consultation du cercle de soins: processus_consultation.html
-            Processus Mise-à-jour du cercle de soins: processus_mise_a_jour.html
-            Liste des acteurs pour l'ensemble des processus: liste_acteurs_processus.html
-        Identification des flux:
-            Flux de création du cercle de soins: sf_flux_creation_cds.html
-            Flux de consultation du cercle de soins: sf_flux_consultation_cds.html
-            Flux de mise-à-jour du cercle de soins: sf_flux_mise_a_jour_cds.html
-            Synthèse des flux: sf_synthese_flux.html
-        Equivalence MOS:
-        Modélisation des flux:
-            Flux 1 - CreationCercleSoins:
-            Flux 2 - CreationCercleSoins:
-            Flux 3 - CreationCercleSoins:
+    Spécifications fonctionnelles: specifications_fonctionnelles.html
+        # Cas d'usage: cas_usages.html
+        # Cadre juridique et orientations organisationnellles: cadre_juridique_et_orientations_organisationnelles.html
+        # Organisation du contexte métier: organisation_contexte_metier.html
+        # Définition des processus collaboratifs: 
+        #     Processus Création du cercle de soins: processus_creation.html
+        #     Processus Consultation du cercle de soins: processus_consultation.html
+        #     Processus Mise-à-jour du cercle de soins: processus_mise_a_jour.html
+        #     Liste des acteurs pour l'ensemble des processus: liste_acteurs_processus.html
+        # Identification des flux:
+        #     Flux de création du cercle de soins: sf_flux_creation_cds.html
+        #     Flux de consultation du cercle de soins: sf_flux_consultation_cds.html
+        #     Flux de mise-à-jour du cercle de soins: sf_flux_mise_a_jour_cds.html
+        #     Synthèse des flux: sf_synthese_flux.html
+        # Equivalence MOS:
+        # Modélisation des flux:
+        #     Flux 1 - CreationCercleSoins:
+        #     Flux 2 - CreationCercleSoins:
+        #     Flux 3 - CreationCercleSoins:
     Description des flux:
         Construction des flux: construction_des_flux.html
         Flux 01: st_flux1.html
         Flux 02: st_flux2.html
     Ressources de conformité: artifacts.html
-    Tests:   tests.html
+    Tests: tests.html
     Autres ressources:
         Sécurité: securite.html
         Téléchargements et usage: downloads.html
