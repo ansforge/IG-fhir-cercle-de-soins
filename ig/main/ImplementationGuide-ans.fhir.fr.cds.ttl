@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-05-03T13:32:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-12T08:01:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -41,6 +41,18 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
   ] [
      fhir:id [ fhir:v "ans_annuaire_fhir_r4" ] ;
      fhir:uri [
@@ -516,6 +528,126 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-end> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-end" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-end" ] ;
+       fhir:description [ fhir:v "Date de fin du cercle de soins" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsOrganization> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Participant-AsOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-Participant-AsOrganization" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-Participant-AsPractitionerRole" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-Participant-AsRelatedPerson" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-participant-end> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-participant-end" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-participant-end" ] ;
+       fhir:description [ fhir:v "Date de sortie d’un membre du cercle de soins" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-participant-start> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-participant-start" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-participant-start" ] ;
+       fhir:description [ fhir:v "Date d’entrée d’un membre du cercle de soins" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-start> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-start" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-start" ] ;
+       fhir:description [ fhir:v "Date de création du cercle de soins" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Subject-AsPatient> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Subject-AsPatient" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-CareTeam-Subject-AsPatient" ] ;
+       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-Patient-birthplace> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-Patient-birthplace" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-Patient-birthplace" ] ;
+       fhir:description [ fhir:v "Lieu de naissance du patient" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-PractitionerRole-nameex> ;
+         fhir:reference [ fhir:v "SearchParameter/CDS-PractitionerRole-nameex" ]
+       ] ;
+       fhir:name [ fhir:v "CDS-PractitionerRole-nameex" ] ;
+       fhir:description [ fhir:v "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -584,126 +716,6 @@
        ] ;
        fhir:name [ fhir:v "CDS_Organization-OrgaInt" ] ;
        fhir:description [ fhir:v "Profil héritant de la ressource FHIR pour les organisations internes." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsOrganization> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Participant-AsOrganization" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-Participant-AsOrganization" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-Participant-AsPractitionerRole" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-Participant-AsRelatedPerson" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Subject-AsPatient> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-Subject-AsPatient" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-Subject-AsPatient" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-end> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-end" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-end" ] ;
-       fhir:description [ fhir:v "Date de fin du cercle de soins" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-participant-end> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-participant-end" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-participant-end" ] ;
-       fhir:description [ fhir:v "Date de sortie d’un membre du cercle de soins" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-participant-start> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-participant-start" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-participant-start" ] ;
-       fhir:description [ fhir:v "Date d’entrée d’un membre du cercle de soins" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-start> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-start" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-start" ] ;
-       fhir:description [ fhir:v "Date de création du cercle de soins" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-Patient-birthplace> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-Patient-birthplace" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-Patient-birthplace" ] ;
-       fhir:description [ fhir:v "Lieu de naissance du patient" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-PractitionerRole-nameex> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-PractitionerRole-nameex" ]
-       ] ;
-       fhir:name [ fhir:v "CDS-PractitionerRole-nameex" ] ;
-       fhir:description [ fhir:v "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

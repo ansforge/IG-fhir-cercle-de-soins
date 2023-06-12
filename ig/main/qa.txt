@@ -1,15 +1,15 @@
 ﻿CDS : Validation Results
 =========================================
 
-err = 50, warn = 16, info = 4
-IG Publisher Version: 1.3.7
-Generated Wed May 03 13:33:13 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+err = 50, warn = 15, info = 4
+IG Publisher Version: 1.3.16
+Generated Mon Jun 12 08:03:04 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 294 / 4 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-Consommateur : 2 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CreateurRestful : 2 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CreateurTransaction : 2 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-Gestionnaire : 2 / 0 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 1 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-CDS-CareTeam-Participant-AsOrganization : 3 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-CDS-CareTeam-Participant-AsPractitionerRole : 3 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-CDS-CareTeam-Participant-AsRelatedPerson : 3 / 0 / 1
@@ -339,7 +339,6 @@ ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-gen
 ERROR: CapabilityStatement.where(url = 'http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire'): Conformance resource /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-Gestionnaire.json - the canonical URL (http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/Gestionnaire) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire)
 ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-Gestionnaire: URL Mismatch http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/Gestionnaire vs http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds.json ==
-WARNING: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds: Unknown Parameters: []
 == fsh-generated/resources/SearchParameter-CDS-CareTeam-Participant-AsOrganization.json ==
 ERROR: SearchParameter.where(url = 'http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization'): Conformance resource /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-CDS-CareTeam-Participant-AsOrganization.json - the canonical URL (http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsOrganization) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization)
 ERROR: SearchParameter.where(url = 'http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization'): Conformance resource /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-CDS-CareTeam-Participant-AsOrganization.json - the canonical URL (http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-Participant-AsOrganization) does not match the URL (http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization)
