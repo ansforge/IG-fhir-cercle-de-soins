@@ -1,0 +1,31 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "CDS-Patient-birthplace",
+  "meta" : {
+    "lastUpdated" : "2021-10-21T09:10:25.769+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS_Patient_birthplace</h2><p>Parameter <code>birthplace</code>:<code>string</code></p><div><p>Lieu de naissance du patient</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td></tr><tr><td>Expression</td><td><code>extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_Patient_birthplace",
+  "version" : "0.1.0",
+  "name" : "CDS_Patient_birthplace",
+  "status" : "active",
+  "date" : "2021-10-21T09:10:25.3807231+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Lieu de naissance du patient",
+  "code" : "birthplace",
+  "base" : ["Patient"],
+  "type" : "string",
+  "expression" : "extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address",
+  "multipleOr" : false,
+  "multipleAnd" : false
+}
