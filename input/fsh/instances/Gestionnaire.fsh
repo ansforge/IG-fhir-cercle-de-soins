@@ -1,26 +1,26 @@
-Instance: Gestionnaire
+Instance: CDS-Gestionnaire
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire"
-* version = "2.1"
-* name = "Gestionnaire"
-* title = "CI-SIS Gestion-Cercle-de-soins - Gestionnaire"
+* name = "gestionnaire-cds"
+* title = "CI-SIS Gestion du Cercle-de-soins - Gestionnaire"
 * status = #active
 * experimental = false
-* date = "2022-12-27T17:19:40+01:00"
 * publisher = "ANS"
 * description = "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation."
 * kind = #requirements
 * fhirVersion = #4.0.1
-* format[0] = #application/fhir+xml
-* format[+] = #application/fhir+json
-* implementationGuide = "http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.GestionCercleDeSoins"
+* format[0] = #json
+* format[+] = #xml
+* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuides/ans.fhir.fr.cds"
 * rest.mode = #server
 * rest.documentation = "Création et mise à jour des cercles de soins"
 * rest.security.cors = false
-* rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
+* rest.security.description = "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"
+
+// Restful mode
+// CareTeam Resource
 * rest.resource[0].type = #CareTeam
-* rest.resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_IHECareTeam"
+* rest.resource[=].profile = Canonical(CDSCareTeam)
 * rest.resource[=].interaction[0].code = #update
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
@@ -80,8 +80,9 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://fhir.sib.fr/fhir/SearchParameter/CareTeamManagingOrganization"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l'organisation responsable du cercle de soins."
+// Patient resource
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPatient"
+* rest.resource[=].profile = $FrPatient
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -118,8 +119,9 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_Patient_birthplace"
 * rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Genre du patient"
+// RelatedPerson resource
 * rest.resource[+].type = #RelatedPerson
-* rest.resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_FrRelatedPerson"
+* rest.resource[=].profile = Canonical(CDSRelatedPerson)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -136,15 +138,17 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/RelatedPerson-relationship"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Relation entre le patient et la personne de confiance"
+// Practitioner resource
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = "http://interopsante.org/fhir/StructureDefinition/FrPractitioner"
+* rest.resource[=].profile = $FrPractitioner
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #search-type
+// PractitionerRole resource
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"
-* rest.resource[=].supportedProfile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"
+* rest.resource[=].profile = $practitionerRole-professionalRole-rass
+* rest.resource[=].supportedProfile = $practitionerRole-organizationalRole-rass
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -156,11 +160,11 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "practitioner"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner"
 * rest.resource[=].searchParam[=].type = #reference
-* rest.resource[=].searchParam[=].documentation = "Reference du professionnel"
+* rest.resource[=].searchParam[=].documentation = "Référence du professionnel"
 * rest.resource[=].searchParam[+].name = "role"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PractitionerRole-role"
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Role du membre de cercle de soins"
+* rest.resource[=].searchParam[=].documentation = "Rôle du membre de cercle de soins"
 * rest.resource[=].searchParam[+].name = "nameex"
 * rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_PractitionerRole_nameex"
 * rest.resource[=].searchParam[=].type = #string
@@ -173,9 +177,10 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PractitionerRole-role"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Role du membre de cercle de soins"
+// Organization resource
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt"
-* rest.resource[=].supportedProfile = "http://interopsante.org/fhir/StructureDefinition/FrOrganization"
+* rest.resource[=].profile = Canonical(CDSOrganizationOrgaInt)
+* rest.resource[=].supportedProfile = $FrOrganization
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -195,8 +200,10 @@ Usage: #definition
 * rest.resource[=].searchParam[+].name = "partof"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Organization-partof"
 * rest.resource[=].searchParam[=].type = #reference
-* rest.resource[=].searchParam[=].documentation = "Reference vers l'entite juridique"
+* rest.resource[=].searchParam[=].documentation = "Référence vers l'entité juridique"
+
+// Transaction mode
 * rest.interaction[0].code = #transaction
-* rest.interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionCreation"
+* rest.interaction[=].documentation = "Création du cercle de soins via un Bundle dédié : URL_BUNDLE_CREATION"
 * rest.interaction[+].code = #transaction
-* rest.interaction[=].documentation = "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionMAJ"
+* rest.interaction[=].documentation = "Mise-à-jour du cercle de soins via un Bundle dédié : URL_BUNDLE_MAJ"
