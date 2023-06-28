@@ -4,6 +4,7 @@ Parent: CareTeam
 // Parent: $IHE_DCTM_CareTeam //TODO: find package or IHE guidelines
 Id: cds-ihe-careteam
 Description: "Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins"
+* meta 1..
 * identifier 1..1
 * identifier ^short = "Identifiant du cercle de soins"
 * identifier MS
