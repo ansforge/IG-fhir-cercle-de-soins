@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2023-06-26T08:37:35+00:00",
+  "date" : "2023-06-30T14:17:51+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -615,9 +615,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-end"
+        "reference" : "SearchParameter/cds-careteam-end"
       },
-      "name" : "CDS-CareTeam-end",
+      "name" : "cds-careteam-end",
       "description" : "Date de fin du cercle de soins",
       "exampleBoolean" : false
     },
@@ -792,6 +792,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/CDSGestionnaire"
+      },
+      "name" : "CDSGestionnaire",
+      "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -835,18 +847,6 @@
       },
       "name" : "CreateurTransaction",
       "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/Gestionnaire"
-      },
-      "name" : "Gestionnaire",
-      "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
       "exampleBoolean" : false
     }],
     "page" : {

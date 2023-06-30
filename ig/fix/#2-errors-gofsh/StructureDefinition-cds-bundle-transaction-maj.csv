@@ -20,7 +20,7 @@
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","ClinicalDocument.id","FiveWs.identifier"
 "Bundle.type","Bundle.type","","","",1,1,"","","Y","code {[]} {[]}
-","document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection","Indicates the purpose of this bundle - how it is intended to be used.","It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""transaction""/>","","","","",,"required","Indicates the purpose of a bundle - how it is intended to be used.","http://hl7.org/fhir/ValueSet/bundle-type|4.0.1","",,,,"Bundle.type",1,1,"ele-1
+","document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection","Indicates the purpose of this bundle - how it is intended to be used.","It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""transaction""/>","","","",,"required","Indicates the purpose of a bundle - how it is intended to be used.","http://hl7.org/fhir/ValueSet/bundle-type|4.0.1","",,,,"Bundle.type",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.class"
 "Bundle.timestamp","Bundle.timestamp","","","",0,1,"","","Y","instant {[]} {[]}
@@ -72,7 +72,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reference details for the link","The reference details for the link.","see http://en.wikipedia.org/wiki/Uniform_resource_identifier","","","","","","","","",,,,,"",,,,"Bundle.link.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Bundle.entry","Bundle.entry","","","",0,*,"","","Y","BackboneElement {[]} {[]}
+"Bundle.entry","Bundle.entry","","","",1,*,"","","Y","BackboneElement {[]} {[]}
 ","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:resource}
 ","",,"open","Bundle.entry",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

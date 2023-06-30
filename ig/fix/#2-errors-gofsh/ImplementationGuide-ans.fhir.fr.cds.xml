@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2023-06-26T08:37:35+00:00"/>
+  <date value="2023-06-30T14:17:51+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -457,9 +457,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-end"/>
+        <reference value="SearchParameter/cds-careteam-end"/>
       </reference>
-      <name value="CDS-CareTeam-end"/>
+      <name value="cds-careteam-end"/>
       <description value="Date de fin du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -619,6 +619,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/CDSGestionnaire"/>
+      </reference>
+      <name value="CDSGestionnaire"/>
+      <description value="Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,&#xA;donne accès aux informations en cas de consultation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -659,17 +670,6 @@
       </reference>
       <name value="CreateurTransaction"/>
       <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/Gestionnaire"/>
-      </reference>
-      <name value="Gestionnaire"/>
-      <description value="Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,&#xA;donne accès aux informations en cas de consultation."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

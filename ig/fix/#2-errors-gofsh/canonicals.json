@@ -14,13 +14,6 @@
     "name" : "CreateurRestful"
   },
   {
-    "id" : "Gestionnaire",
-    "type" : "CapabilityStatement",
-    "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire",
-    "version" : "0.1.0",
-    "name" : "Gestionnaire"
-  },
-  {
     "id" : "CreateurTransaction",
     "type" : "CapabilityStatement",
     "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS_CreateurTransaction",
@@ -54,13 +47,6 @@
     "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Subject_AsPatient",
     "version" : "0.1.0",
     "name" : "CDS_CareTeam_Subject_AsPatient"
-  },
-  {
-    "id" : "CDS-CareTeam-end",
-    "type" : "SearchParameter",
-    "url" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_end",
-    "version" : "0.1.0",
-    "name" : "CDS_CareTeam_end"
   },
   {
     "id" : "CDS-CareTeam-participant-end",
@@ -98,11 +84,25 @@
     "name" : "CDS_PractitionerRole_nameex"
   },
   {
+    "id" : "CDSGestionnaire",
+    "type" : "CapabilityStatement",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire",
+    "version" : "0.1.0",
+    "name" : "gestionnaire-cds"
+  },
+  {
     "id" : "ans.fhir.fr.cds",
     "type" : "ImplementationGuide",
     "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds",
     "version" : "0.1.0",
     "name" : "CDS"
+  },
+  {
+    "id" : "cds-careteam-end",
+    "type" : "SearchParameter",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end",
+    "version" : "0.1.0",
+    "name" : "CDSCareTeamEnd"
   },
   {
     "id" : "cds-bundle-response-recherche",

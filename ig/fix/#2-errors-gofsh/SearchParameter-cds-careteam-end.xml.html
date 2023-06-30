@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ANS.FHIR.FR.CDS\CDS-CareTeam-end - JSON Representation - FHIR v4.0.1</title>
+    <title>ANS.FHIR.FR.CDS\cds-careteam-end - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -145,15 +145,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CDS-CareTeam-end</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>cds-careteam-end</b></li>
 
           <span style="float:right;">
 
-            <a href="SearchParameter-CDS-CareTeam-end.xml.html">&lt;prev</a> | 
+            <a href="SearchParameter-cds-careteam-end.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="SearchParameter-CDS-CareTeam-end.ttl.html">next&gt;</a>
+          | <a href="SearchParameter-cds-careteam-end.json.html">next&gt;</a>
 
           </span>
 
@@ -167,7 +167,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
+<div style="counter-reset: section 7" class="col-12">
 <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
 
 
@@ -181,27 +181,27 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="SearchParameter-CDS-CareTeam-end.html">Narrative Content</a>
+    <a href="SearchParameter-cds-careteam-end.html">Narrative Content</a>
   </li>
 
 
   
-    <li>
-      <a href="SearchParameter-CDS-CareTeam-end.xml.html">XML</a>
-    </li>
-  
-
-
-  
     <li class="active">
-      <a href="#">JSON</a>
+      <a href="#">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="SearchParameter-CDS-CareTeam-end.ttl.html">TTL</a>
+      <a href="SearchParameter-cds-careteam-end.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="SearchParameter-cds-careteam-end.ttl.html">TTL</a>
     </li>
   
 
@@ -213,7 +213,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: CDS-CareTeam-end - JSON Representation</h2>
+<h2 id="root">: cds-careteam-end - XML Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -221,7 +221,7 @@
         
           Active
           
-            as of 2021-10-21
+            as of 2023-06-30
           
         
       </td>
@@ -230,62 +230,53 @@
   </table>
 
 
-<p><a href="SearchParameter-CDS-CareTeam-end.json" no-download="true">Raw json</a> | <a href="SearchParameter-CDS-CareTeam-end.json" download>Download</a></p>
+<p><a href="SearchParameter-cds-careteam-end.xml" no-download="true">Raw xml</a> | <a href="SearchParameter-cds-careteam-end.xml" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
-{
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a>" : "CDS-CareTeam-end",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2021-10-21T09:09:35.285+00:00"
-  },
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;CDS_CareTeam_end&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;end&lt;/code&gt;:&lt;code&gt;date&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Date de fin du cercle de soins&lt;/p&gt;\n&lt;/div&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/careteam.html\&quot;&gt;CareTeam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;CareTeam.period.end&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter can repeat (and) and can have repeating values (or)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Comparators&lt;/td&gt;&lt;td&gt;Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_end",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a>" : "CDS_CareTeam_end",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a>" : "2021-10-21T09:09:34.6222581+00:00",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a>" : "ANS",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "ANS",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>" : "Date de fin du cercle de soins",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a>" : "end",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a>" : [
-    "CareTeam"
-  ],
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a>" : "date",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>" : "CareTeam.period.end",
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.multipleOr">multipleOr</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.multipleAnd">multipleAnd</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a>" : [
-    "eq",
-    "ne",
-    "gt",
-    "lt",
-    "ge",
-    "le",
-    "sa",
-    "eb",
-    "ap"
-  ]
-}</code></pre>
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cds-careteam-end&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2&gt;CDSCareTeamEnd&lt;/h2&gt;&lt;p&gt;Parameter &lt;code&gt;end&lt;/code&gt;:&lt;code&gt;date&lt;/code&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;Date de fin du cercle de soins&lt;/p&gt;
+&lt;/div&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;Resource&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/careteam.html&quot;&gt;CareTeam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Expression&lt;/td&gt;&lt;td&gt;&lt;code&gt;CareTeam.period.end&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Multiples&lt;/td&gt;&lt;td&gt;The parameter can repeat (and) and can have repeating values (or)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Comparators&lt;/td&gt;&lt;td&gt;Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CDSCareTeamEnd&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-06-30T14:17:51+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ANS&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://esante.gouv.fr&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Date de fin du cercle de soins&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;end&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CareTeam&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;CareTeam.period.end&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.multipleOr">multipleOr</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.multipleAnd">multipleAnd</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;eq&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ne&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;gt&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;lt&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ge&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;le&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;sa&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;eb&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.comparator">comparator</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ap&quot;/&gt;
+&lt;/SearchParameter&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -319,7 +310,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="SearchParameter-CDS-CareTeam-end.xml.html">&lt;prev</a>
+                <a href="SearchParameter-cds-careteam-end.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -327,7 +318,7 @@
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="SearchParameter-CDS-CareTeam-end.ttl.html">next&gt;</a>
+                <a href="SearchParameter-cds-careteam-end.json.html">next&gt;</a>
 
               </td>
             </tr>
@@ -337,7 +328,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 26, 2023 08:37+0000">2023-06-26</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 30, 2023 14:17+0000">2023-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

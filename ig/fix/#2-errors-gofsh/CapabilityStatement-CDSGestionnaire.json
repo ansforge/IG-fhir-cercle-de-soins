@@ -1,17 +1,17 @@
 {
   "resourceType" : "CapabilityStatement",
-  "id" : "Gestionnaire",
+  "id" : "CDSGestionnaire",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Gestionnaire</h2><div><p>Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Création et mise à jour des cercles de soins</p>\n</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>CareTeam</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_IHECareTeam\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_IHECareTeam</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Patient</td><td><a href=\"http://interopsante.org/fhir/StructureDefinition/FrPatient\">http://interopsante.org/fhir/StructureDefinition/FrPatient</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>RelatedPerson</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_FrRelatedPerson\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_FrRelatedPerson</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"http://interopsante.org/fhir/StructureDefinition/FrPractitioner\">http://interopsante.org/fhir/StructureDefinition/FrPractitioner</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass\">https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass</a><br/>Additional supported profiles:<br/>\u00a0\u00a0<a href=\"https://simplifier.net/resolve?scope=ANS.annuaire.fhir.r4@0.2.0&amp;canonical=https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass\">PractitionerRoleOrganizationalRoleRASS</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt\">http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt</a><br/>Additional supported profiles:<br/>\u00a0\u00a0<a href=\"https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrOrganization\">FrOrganization</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>gestionnaire-cds</h2><div><p>Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Création et mise à jour des cercles de soins</p>\n</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>CareTeam</td><td><a href=\"http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam\">http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Patient</td><td><a href=\"http://interopsante.org/fhir/StructureDefinition/FrPatient\">http://interopsante.org/fhir/StructureDefinition/FrPatient</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>RelatedPerson</td><td><a href=\"http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person\">http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href=\"http://interopsante.org/fhir/StructureDefinition/FrPractitioner\">http://interopsante.org/fhir/StructureDefinition/FrPractitioner</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href=\"https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass\">https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass</a><br/>Additional supported profiles:<br/>\u00a0\u00a0<a href=\"https://simplifier.net/resolve?scope=ANS.annuaire.fhir.r4@0.2.0&amp;canonical=https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass\">PractitionerRoleOrganizationalRoleRASS</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href=\"http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int\">http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int</a><br/>Additional supported profiles:<br/>\u00a0\u00a0<a href=\"https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrOrganization\">FrOrganization</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
   },
-  "url" : "http://esante.gouv.fr/ci-sis/fhir/CapabilityStatements/CdS.Gestionnaire",
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire",
   "version" : "0.1.0",
-  "name" : "Gestionnaire",
-  "title" : "CI-SIS Gestion-Cercle-de-soins - Gestionnaire",
+  "name" : "gestionnaire-cds",
+  "title" : "CI-SIS Gestion du Cercle-de-soins - Gestionnaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2022-12-27T17:19:40+01:00",
+  "date" : "2023-07-01",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -23,19 +23,19 @@
   "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
-  "format" : ["application/fhir+xml",
-  "application/fhir+json"],
-  "implementationGuide" : ["http://esante.gouv.fr/ci-sis/fhir/ImplementationGuides/CI-SIS.GestionCercleDeSoins"],
+  "format" : ["json",
+  "xml"],
+  "implementationGuide" : ["http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "Création et mise à jour des cercles de soins",
     "security" : {
       "cors" : false,
-      "description" : "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S\n) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes\nd’information de santé (CI-SIS)"
+      "description" : "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"
     },
     "resource" : [{
       "type" : "CareTeam",
-      "profile" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_IHECareTeam",
+      "profile" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
       "interaction" : [{
         "code" : "update"
       },
@@ -202,7 +202,7 @@
     },
     {
       "type" : "RelatedPerson",
-      "profile" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_FrRelatedPerson",
+      "profile" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
       "interaction" : [{
         "code" : "create"
       },
@@ -276,13 +276,13 @@
         "name" : "practitioner",
         "definition" : "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner",
         "type" : "reference",
-        "documentation" : "Reference du professionnel"
+        "documentation" : "Référence du professionnel"
       },
       {
         "name" : "role",
         "definition" : "http://hl7.org/fhir/SearchParameter/PractitionerRole-role",
         "type" : "token",
-        "documentation" : "Role du membre de cercle de soins"
+        "documentation" : "Rôle du membre de cercle de soins"
       },
       {
         "name" : "nameex",
@@ -305,7 +305,7 @@
     },
     {
       "type" : "Organization",
-      "profile" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_Organization-OrgaInt",
+      "profile" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int",
       "supportedProfile" : ["http://interopsante.org/fhir/StructureDefinition/FrOrganization"],
       "interaction" : [{
         "code" : "create"
@@ -341,16 +341,16 @@
         "name" : "partof",
         "definition" : "http://hl7.org/fhir/SearchParameter/Organization-partof",
         "type" : "reference",
-        "documentation" : "Reference vers l'entite juridique"
+        "documentation" : "Référence vers l'entité juridique"
       }]
     }],
     "interaction" : [{
       "code" : "transaction",
-      "documentation" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionCreation"
+      "documentation" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"
     },
     {
       "code" : "transaction",
-      "documentation" : "http://esante.gouv.fr/ci-sis/fhir/StructureDefinition/CDS_BundleTransactionMAJ"
+      "documentation" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj"
     }]
   }]
 }

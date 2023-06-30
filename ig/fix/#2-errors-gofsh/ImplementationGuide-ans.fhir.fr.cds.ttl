@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-26T08:37:35+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-30T14:17:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -531,10 +531,10 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/CDS-CareTeam-end> ;
-         fhir:reference [ fhir:v "SearchParameter/CDS-CareTeam-end" ]
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end> ;
+         fhir:reference [ fhir:v "SearchParameter/cds-careteam-end" ]
        ] ;
-       fhir:name [ fhir:v "CDS-CareTeam-end" ] ;
+       fhir:name [ fhir:v "cds-careteam-end" ] ;
        fhir:description [ fhir:v "Date de fin du cercle de soins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -708,6 +708,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire> ;
+         fhir:reference [ fhir:v "CapabilityStatement/CDSGestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "CDSGestionnaire" ] ;
+       fhir:description [ fhir:v "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -752,18 +764,6 @@
        ] ;
        fhir:name [ fhir:v "CreateurTransaction" ] ;
        fhir:description [ fhir:v "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/Gestionnaire> ;
-         fhir:reference [ fhir:v "CapabilityStatement/Gestionnaire" ]
-       ] ;
-       fhir:name [ fhir:v "Gestionnaire" ] ;
-       fhir:description [ fhir:v "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
