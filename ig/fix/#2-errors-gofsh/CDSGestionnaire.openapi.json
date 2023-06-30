@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "CI-SIS Gestion du Cercle-de-soins - Gestionnaire",
+    "title": "CI-SIS Gestion du Cercle de Soins - Gestionnaire",
     "description": "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",
@@ -132,9 +132,9 @@
             }
           },
           {
-            "name": "CDS_CareTeam_start",
+            "name": "CDSCareTeamStart",
             "in": "query",
-            "description": "Date de création du cercle de soins",
+            "description": "date de création du cercle de soins",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
@@ -210,7 +210,7 @@
           {
             "name": "CDS_CareTeam_participant-start",
             "in": "query",
-            "description": "Date d’entrée d’un membre du cercle de soins",
+            "description": "Date d\u0027entrée d\u0027un membre du cercle de soins",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
@@ -219,7 +219,7 @@
           {
             "name": "CDS_CareTeam_participant-end",
             "in": "query",
-            "description": "Date de sortie d’un membre du cercle de soins",
+            "description": "Date de sortie d\u0027un membre du cercle de soins",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
@@ -800,7 +800,7 @@
           {
             "name": "birthplace",
             "in": "query",
-            "description": "Lieu de naissance du patient",
+            "description": "Genre du patient",
             "schema": {
               "type": "string"
             }
@@ -1666,7 +1666,7 @@
           {
             "name": "nameex",
             "in": "query",
-            "description": "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice",
+            "description": "Nom du membre du cercle de soins",
             "schema": {
               "type": "string"
             }

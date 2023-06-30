@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2023-06-30T14:17:51+00:00",
+  "date" : "2023-06-30T15:58:37+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -627,9 +627,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-Participant-AsOrganization"
+        "reference" : "SearchParameter/cds-careteam-participant-asorganization"
       },
-      "name" : "CDS-CareTeam-Participant-AsOrganization",
+      "name" : "cds-careteam-participant-asorganization",
       "description" : "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization",
       "exampleBoolean" : false
     },
@@ -639,9 +639,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole"
+        "reference" : "SearchParameter/cds-careteam-participant-aspractitionerrole"
       },
-      "name" : "CDS-CareTeam-Participant-AsPractitionerRole",
+      "name" : "cds-careteam-participant-aspractitionerrole",
       "description" : "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole",
       "exampleBoolean" : false
     },
@@ -651,9 +651,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson"
+        "reference" : "SearchParameter/cds-careteam-participant-asrelatedperson"
       },
-      "name" : "CDS-CareTeam-Participant-AsRelatedPerson",
+      "name" : "cds-careteam-participant-asrelatedperson",
       "description" : "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson",
       "exampleBoolean" : false
     },
@@ -663,9 +663,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-participant-end"
+        "reference" : "SearchParameter/cds-careteam-participant-end"
       },
-      "name" : "CDS-CareTeam-participant-end",
+      "name" : "cds-careteam-participant-end",
       "description" : "Date de sortie d’un membre du cercle de soins",
       "exampleBoolean" : false
     },
@@ -675,9 +675,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-participant-start"
+        "reference" : "SearchParameter/cds-careteam-participant-start"
       },
-      "name" : "CDS-CareTeam-participant-start",
+      "name" : "cds-careteam-participant-start",
       "description" : "Date d’entrée d’un membre du cercle de soins",
       "exampleBoolean" : false
     },
@@ -687,9 +687,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-start"
+        "reference" : "SearchParameter/cds-careteam-start"
       },
-      "name" : "CDS-CareTeam-start",
+      "name" : "cds-careteam-start",
       "description" : "Date de création du cercle de soins",
       "exampleBoolean" : false
     },
@@ -699,9 +699,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-CareTeam-Subject-AsPatient"
+        "reference" : "SearchParameter/cds-careteam-subject-as-patient"
       },
-      "name" : "CDS-CareTeam-Subject-AsPatient",
+      "name" : "cds-careteam-subject-as-patient",
       "description" : "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS",
       "exampleBoolean" : false
     },
@@ -711,9 +711,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-Patient-birthplace"
+        "reference" : "SearchParameter/cds-patient-birthplace"
       },
-      "name" : "CDS-Patient-birthplace",
+      "name" : "cds-patient-birthplace",
       "description" : "Lieu de naissance du patient",
       "exampleBoolean" : false
     },
@@ -723,9 +723,9 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
-        "reference" : "SearchParameter/CDS-PractitionerRole-nameex"
+        "reference" : "SearchParameter/cds-practitionerrole-nameex"
       },
-      "name" : "CDS-PractitionerRole-nameex",
+      "name" : "cds-practitionerrole-nameex",
       "description" : "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice",
       "exampleBoolean" : false
     },
@@ -780,6 +780,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/CDSConsommateur"
+      },
+      "name" : "CDSConsommateur",
+      "description" : "Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/CDSCreateurRestful"
+      },
+      "name" : "CDSCreateurRestful",
+      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/CDSCreateurTransaction"
+      },
+      "name" : "CDSCreateurTransaction",
+      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -811,42 +847,6 @@
       },
       "name" : "CDSOrganizationOrgaInt",
       "description" : "Profil héritant de la ressource FHIR pour les organisations internes.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/Consommateur"
-      },
-      "name" : "Consommateur",
-      "description" : "Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/CreateurRestful"
-      },
-      "name" : "CreateurRestful",
-      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/CreateurTransaction"
-      },
-      "name" : "CreateurTransaction",
-      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
       "exampleBoolean" : false
     }],
     "page" : {

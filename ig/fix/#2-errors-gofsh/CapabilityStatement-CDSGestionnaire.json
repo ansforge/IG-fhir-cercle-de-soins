@@ -8,10 +8,10 @@
   "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire",
   "version" : "0.1.0",
   "name" : "gestionnaire-cds",
-  "title" : "CI-SIS Gestion du Cercle-de-soins - Gestionnaire",
+  "title" : "CI-SIS Gestion du Cercle de Soins - Gestionnaire",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-07-01",
+  "date" : "2023-07-14",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -64,7 +64,7 @@
         "documentation" : "identifiant du cercle de soins"
       },
       {
-        "name" : "CDS_CareTeam_start",
+        "name" : "CDSCareTeamStart",
         "definition" : "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start",
         "type" : "date",
         "documentation" : "date de création du cercle de soins"

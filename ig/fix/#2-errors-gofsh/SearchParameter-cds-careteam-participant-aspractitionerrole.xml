@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="cds-careteam-participant-aspractitionerrole"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDSCareTeamParticipantAsPractitionerRole</h2><p>Parameter <code>participant</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a></td></tr><tr><td>Expression</td><td><code>CareTeam.participant.member</code></td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr><tr><td>Chains</td><td>Allowed: id, practitioner.identifier, partof.nameex, role</td></tr></table></div>
+  </text>
+  <url value="http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-aspractitionerrole"/>
+  <version value="0.1.0"/>
+  <name value="CDSCareTeamParticipantAsPractitionerRole"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/CareTeam-participant"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-06-30T15:58:37+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole"/>
+  <code value="participant"/>
+  <base value="CareTeam"/>
+  <type value="reference"/>
+  <expression value="CareTeam.participant.member"/>
+  <target value="PractitionerRole"/>
+  <multipleOr value="false"/>
+  <multipleAnd value="false"/>
+  <chain value="id"/>
+  <chain value="practitioner.identifier"/>
+  <chain value="partof.nameex"/>
+  <chain value="role"/>
+</SearchParameter>

@@ -15,10 +15,10 @@
   fhir:url [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "gestionnaire-cds"] ; # 
-  fhir:title [ fhir:v "CI-SIS Gestion du Cercle-de-soins - Gestionnaire"] ; # 
+  fhir:title [ fhir:v "CI-SIS Gestion du Cercle de Soins - Gestionnaire"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-07-01"^^xsd:date] ; # 
+  fhir:date [ fhir:v "2023-07-14"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -72,7 +72,7 @@
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [ fhir:v "identifiant du cercle de soins" ]
        ] [
-         fhir:name [ fhir:v "CDS_CareTeam_start" ] ;
+         fhir:name [ fhir:v "CDSCareTeamStart" ] ;
          fhir:definition [
            fhir:v "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start"^^xsd:anyURI ;
            fhir:link <http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start>

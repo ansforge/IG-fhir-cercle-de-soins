@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2023-06-30T14:17:51+00:00"/>
+  <date value="2023-06-30T15:58:37+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -468,9 +468,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-Participant-AsOrganization"/>
+        <reference value="SearchParameter/cds-careteam-participant-asorganization"/>
       </reference>
-      <name value="CDS-CareTeam-Participant-AsOrganization"/>
+      <name value="cds-careteam-participant-asorganization"/>
       <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -479,9 +479,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-Participant-AsPractitionerRole"/>
+        <reference value="SearchParameter/cds-careteam-participant-aspractitionerrole"/>
       </reference>
-      <name value="CDS-CareTeam-Participant-AsPractitionerRole"/>
+      <name value="cds-careteam-participant-aspractitionerrole"/>
       <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -490,9 +490,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-Participant-AsRelatedPerson"/>
+        <reference value="SearchParameter/cds-careteam-participant-asrelatedperson"/>
       </reference>
-      <name value="CDS-CareTeam-Participant-AsRelatedPerson"/>
+      <name value="cds-careteam-participant-asrelatedperson"/>
       <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -501,9 +501,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-participant-end"/>
+        <reference value="SearchParameter/cds-careteam-participant-end"/>
       </reference>
-      <name value="CDS-CareTeam-participant-end"/>
+      <name value="cds-careteam-participant-end"/>
       <description value="Date de sortie d’un membre du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -512,9 +512,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-participant-start"/>
+        <reference value="SearchParameter/cds-careteam-participant-start"/>
       </reference>
-      <name value="CDS-CareTeam-participant-start"/>
+      <name value="cds-careteam-participant-start"/>
       <description value="Date d’entrée d’un membre du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -523,9 +523,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-start"/>
+        <reference value="SearchParameter/cds-careteam-start"/>
       </reference>
-      <name value="CDS-CareTeam-start"/>
+      <name value="cds-careteam-start"/>
       <description value="Date de création du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -534,9 +534,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-CareTeam-Subject-AsPatient"/>
+        <reference value="SearchParameter/cds-careteam-subject-as-patient"/>
       </reference>
-      <name value="CDS-CareTeam-Subject-AsPatient"/>
+      <name value="cds-careteam-subject-as-patient"/>
       <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -545,9 +545,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-Patient-birthplace"/>
+        <reference value="SearchParameter/cds-patient-birthplace"/>
       </reference>
-      <name value="CDS-Patient-birthplace"/>
+      <name value="cds-patient-birthplace"/>
       <description value="Lieu de naissance du patient"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -556,9 +556,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/CDS-PractitionerRole-nameex"/>
+        <reference value="SearchParameter/cds-practitionerrole-nameex"/>
       </reference>
-      <name value="CDS-PractitionerRole-nameex"/>
+      <name value="cds-practitionerrole-nameex"/>
       <description value="Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -608,6 +608,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/CDSConsommateur"/>
+      </reference>
+      <name value="CDSConsommateur"/>
+      <description value="Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/CDSCreateurRestful"/>
+      </reference>
+      <name value="CDSCreateurRestful"/>
+      <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/CDSCreateurTransaction"/>
+      </reference>
+      <name value="CDSCreateurTransaction"/>
+      <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -637,39 +670,6 @@
       </reference>
       <name value="CDSOrganizationOrgaInt"/>
       <description value="Profil héritant de la ressource FHIR pour les organisations internes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/Consommateur"/>
-      </reference>
-      <name value="Consommateur"/>
-      <description value="Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/CreateurRestful"/>
-      </reference>
-      <name value="CreateurRestful"/>
-      <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
-        <reference value="CapabilityStatement/CreateurTransaction"/>
-      </reference>
-      <name value="CreateurTransaction"/>
-      <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

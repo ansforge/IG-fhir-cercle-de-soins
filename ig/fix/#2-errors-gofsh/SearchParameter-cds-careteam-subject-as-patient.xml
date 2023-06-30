@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="cds-careteam-subject-as-patient"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDSCareTeamSubjectAsPatient</h2><p>Parameter <code>patient</code>:<code>reference</code></p><div><p>Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a></td></tr><tr><td>Expression</td><td><code>CareTeam.subject</code></td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr><tr><td>Chains</td><td>Allowed: birthplace, identifier, address, family, given, gender, birthdate</td></tr></table></div>
+  </text>
+  <url value="http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-subject-as-patient"/>
+  <version value="0.1.0"/>
+  <name value="CDSCareTeamSubjectAsPatient"/>
+  <derivedFrom value="http://hl7.org/fhir/SearchParameter/CareTeam-subject"/>
+  <status value="active"/>
+  <date value="2023-06-30T15:58:37+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS"/>
+  <code value="patient"/>
+  <base value="CareTeam"/>
+  <type value="reference"/>
+  <expression value="CareTeam.subject"/>
+  <target value="Patient"/>
+  <multipleOr value="false"/>
+  <multipleAnd value="false"/>
+  <chain value="birthplace"/>
+  <chain value="identifier"/>
+  <chain value="address"/>
+  <chain value="family"/>
+  <chain value="given"/>
+  <chain value="gender"/>
+  <chain value="birthdate"/>
+</SearchParameter>
