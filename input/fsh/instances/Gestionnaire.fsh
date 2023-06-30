@@ -1,4 +1,4 @@
-Instance: CDS-Gestionnaire
+Instance: CDSGestionnaire
 InstanceOf: CapabilityStatement
 Usage: #definition
 * name = "gestionnaire-cds"
@@ -9,9 +9,10 @@ Usage: #definition
 * description = "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation."
 * kind = #requirements
 * fhirVersion = #4.0.1
+* date = "2023-07-01"
 * format[0] = #json
 * format[+] = #xml
-* implementationGuide = "http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuides/ans.fhir.fr.cds"
+* implementationGuide = Canonical(ans.fhir.fr.cds)
 * rest.mode = #server
 * rest.documentation = "Création et mise à jour des cercles de soins"
 * rest.security.cors = false
@@ -20,7 +21,7 @@ Usage: #definition
 // Restful mode
 // CareTeam Resource
 * rest.resource[0].type = #CareTeam
-* rest.resource[=].profile = Canonical(CDSCareTeam)
+* rest.resource[=].profile = Canonical(cds-ihe-careteam)
 * rest.resource[=].interaction[0].code = #update
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].interaction[+].code = #read
@@ -121,7 +122,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Genre du patient"
 // RelatedPerson resource
 * rest.resource[+].type = #RelatedPerson
-* rest.resource[=].profile = Canonical(CDSRelatedPerson)
+* rest.resource[=].profile = Canonical(cds-fr-related-person)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -204,6 +205,6 @@ Usage: #definition
 
 // Transaction mode
 * rest.interaction[0].code = #transaction
-* rest.interaction[=].documentation = "Création du cercle de soins via un Bundle dédié : URL_BUNDLE_CREATION"
+* rest.interaction[=].documentation = Canonical(cds-bundle-transaction-creation)
 * rest.interaction[+].code = #transaction
-* rest.interaction[=].documentation = "Mise-à-jour du cercle de soins via un Bundle dédié : URL_BUNDLE_MAJ"
+* rest.interaction[=].documentation = Canonical(cds-bundle-transaction-maj)
