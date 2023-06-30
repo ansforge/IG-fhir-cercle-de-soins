@@ -1,7 +1,6 @@
 // Previously named CDS_IHECareTeam
 Profile: CDSCareTeam
-Parent: CareTeam
-// Parent: $IHE_DCTM_CareTeam //TODO: find package or IHE guidelines
+Parent: CareTeam // Take IHE_DCTM_CareTeam constraint https://github.com/IHE/fhir/blob/master/StructureDefinition/structuredefinition-IHE_DCTM_CareTeam.xml
 Id: cds-ihe-careteam
 Description: "Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins"
 * meta 1..

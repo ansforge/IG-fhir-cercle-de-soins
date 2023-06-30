@@ -15,41 +15,49 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
     practitioneRoleOrg 0..* and
     practitionerRolePro 0..* and
     practitioner 0..*
+
 * entry[careTeam].resource 1..
 * entry[careTeam].resource only cds-ihe-careteam
 * entry[careTeam].search.mode = #match
 * entry[careTeam].request ..0
 * entry[careTeam].response ..0
+
 * entry[patient].resource 1..
 * entry[patient].resource only $FrPatient
 * entry[patient].search.mode = #include
 * entry[patient].request ..0
 * entry[patient].response ..0
+
 * entry[relatedPerson].resource 1..
 * entry[relatedPerson].resource only cds-fr-related-person
 * entry[relatedPerson].search.mode = #include
 * entry[relatedPerson].request ..0
 * entry[relatedPerson].response ..0
+
 * entry[organization].resource 1..
 * entry[organization].resource only $FrOrganization
 * entry[organization].search.mode = #include
 * entry[organization].request ..0
 * entry[organization].response ..0
+
 * entry[organizationInterne].resource 1..
 * entry[organizationInterne].resource only cds-organization-orga-int
 * entry[organizationInterne].search.mode = #include
 * entry[organizationInterne].request ..0
 * entry[organizationInterne].response ..0
+
 * entry[practitioneRoleOrg].resource 1..
 * entry[practitioneRoleOrg].resource only $practitionerRole-organizationalRole-rass
 * entry[practitioneRoleOrg].search.mode = #include
 * entry[practitioneRoleOrg].request ..0
 * entry[practitioneRoleOrg].response ..0
+
 * entry[practitionerRolePro].resource 1..
 * entry[practitionerRolePro].resource only $practitionerRole-professionalRole-rass
 * entry[practitionerRolePro].search.mode = #include
 * entry[practitionerRolePro].request ..0
 * entry[practitionerRolePro].response ..0
+
 * entry[practitioner].resource 1..
 * entry[practitioner].resource only $FrPractitioner
 * entry[practitioner].search.mode = #include
