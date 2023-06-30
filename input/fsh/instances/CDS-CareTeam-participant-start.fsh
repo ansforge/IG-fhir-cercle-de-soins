@@ -1,13 +1,8 @@
-Instance: CDS-CareTeam-participant-start
+Instance: cds-careteam-participant-start
 InstanceOf: SearchParameter
 Usage: #definition
-* meta.lastUpdated = "2021-10-21T09:09:56.863+00:00"
-* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_participant-start"
-* version = "1.0"
-* name = "CDS_CareTeam_participant-start"
+* name = "CDSCareTeamParticipantStart"
 * status = #active
-* date = "2021-10-21T09:09:56.0602966+00:00"
-* publisher = "ANS"
 * description = "Date d’entrée d’un membre du cercle de soins"
 * code = #participant-start
 * base = #CareTeam

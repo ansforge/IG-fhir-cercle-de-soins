@@ -1,15 +1,10 @@
-Instance: CDS-CareTeam-Participant-AsPractitionerRole
+Instance: cds-careteam-participant-aspractitionerrole
 InstanceOf: SearchParameter
 Usage: #definition
-* meta.lastUpdated = "2021-10-21T09:10:54.648+00:00"
-* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsPractitionerRole"
-* version = "2.0"
-* name = "CDS_CareTeam_Participant_AsPractitionerRole"
+* name = "CDSCareTeamParticipantAsPractitionerRole"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/CareTeam-participant"
 * status = #active
 * experimental = false
-* date = "2021-12-01"
-* publisher = "ANS"
 * description = "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole"
 * code = #participant
 * base = #CareTeam

@@ -1,14 +1,9 @@
-Instance: CDS-CareTeam-Participant-AsOrganization
+Instance: cds-careteam-participant-asorganization
 InstanceOf: SearchParameter
 Usage: #definition
-* meta.lastUpdated = "2021-10-21T09:10:19.426+00:00"
-* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_Participant_AsOrganization" // TODO : mise à jour des urls
-* version = "2.0"
-* name = "CDS_CareTeam_Participant_AsOrganization"
+* name = "CDSCareTeamParticipantAsOrganization"
 * derivedFrom = "http://hl7.org/fhir/SearchParameter/CareTeam-participant"
 * status = #active
-* date = "2021-12-01"
-* publisher = "ANS"
 * description = "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization"
 * code = #participant
 * base = #CareTeam
