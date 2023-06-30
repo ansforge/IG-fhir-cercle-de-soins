@@ -2,14 +2,12 @@ Instance: CDSGestionnaire
 InstanceOf: CapabilityStatement
 Usage: #definition
 * name = "gestionnaire-cds"
-* title = "CI-SIS Gestion du Cercle-de-soins - Gestionnaire"
+* title = "CI-SIS Gestion du Cercle de Soins - Gestionnaire"
 * status = #active
 * experimental = false
-* publisher = "ANS"
 * description = "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation."
 * kind = #requirements
 * fhirVersion = #4.0.1
-* date = "2023-07-01"
 * format[0] = #json
 * format[+] = #xml
 * implementationGuide = Canonical(ans.fhir.fr.cds)
@@ -33,7 +31,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-identifier"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "identifiant du cercle de soins"
-* rest.resource[=].searchParam[+].name = "CDS_CareTeam_start"
+* rest.resource[=].searchParam[+].name = "CDSCareTeamStart"
 * rest.resource[=].searchParam[=].definition = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start"
 * rest.resource[=].searchParam[=].type = #date
 * rest.resource[=].searchParam[=].documentation = "date de création du cercle de soins"
@@ -180,7 +178,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Role du membre de cercle de soins"
 // Organization resource
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = Canonical(CDSOrganizationOrgaInt)
+* rest.resource[=].profile = Canonical(cds-organization-orga-int)
 * rest.resource[=].supportedProfile = $FrOrganization
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
