@@ -1,0 +1,37 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "cds-careteam-participant-start",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDSCareTeamParticipantStart</h2><p>Parameter <code>participant-start</code>:<code>date</code></p><div><p>Date d’entrée d’un membre du cercle de soins</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a></td></tr><tr><td>Expression</td><td><code>CareTeam.participant.period.start</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>"
+  },
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start",
+  "version" : "0.1.0",
+  "name" : "CDSCareTeamParticipantStart",
+  "status" : "active",
+  "date" : "2023-07-03T17:09:25+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Date d’entrée d’un membre du cercle de soins",
+  "code" : "participant-start",
+  "base" : ["CareTeam"],
+  "type" : "date",
+  "expression" : "CareTeam.participant.period.start",
+  "multipleOr" : true,
+  "multipleAnd" : true,
+  "comparator" : ["eq",
+  "ne",
+  "gt",
+  "lt",
+  "ge",
+  "le",
+  "sa",
+  "eb",
+  "ap"]
+}

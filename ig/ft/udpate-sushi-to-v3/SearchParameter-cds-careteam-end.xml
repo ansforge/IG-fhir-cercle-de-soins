@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="cds-careteam-end"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDSCareTeamEnd</h2><p>Parameter <code>end</code>:<code>date</code></p><div><p>Date de fin du cercle de soins</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a></td></tr><tr><td>Expression</td><td><code>CareTeam.period.end</code></td></tr><tr><td>Multiples</td><td>The parameter can repeat (and) and can have repeating values (or)</td></tr><tr><td>Comparators</td><td>Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap</td></tr></table></div>
+  </text>
+  <url value="http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end"/>
+  <version value="0.1.0"/>
+  <name value="CDSCareTeamEnd"/>
+  <status value="active"/>
+  <date value="2023-07-03T17:09:25+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Date de fin du cercle de soins"/>
+  <code value="end"/>
+  <base value="CareTeam"/>
+  <type value="date"/>
+  <expression value="CareTeam.period.end"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+  <comparator value="eq"/>
+  <comparator value="ne"/>
+  <comparator value="gt"/>
+  <comparator value="lt"/>
+  <comparator value="ge"/>
+  <comparator value="le"/>
+  <comparator value="sa"/>
+  <comparator value="eb"/>
+  <comparator value="ap"/>
+</SearchParameter>
