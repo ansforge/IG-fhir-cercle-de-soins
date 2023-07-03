@@ -4,6 +4,7 @@ Usage: #definition
 * name = "CreateurTransaction-cds"
 * title = "CI-SIS Gestion du Cercle de Soins - CreateurTransaction"
 * status = #active
+* date = "2023-07-14"
 * experimental = false
 * description = "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne"
 * kind = #requirements

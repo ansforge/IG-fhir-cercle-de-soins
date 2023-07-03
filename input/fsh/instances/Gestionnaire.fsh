@@ -4,6 +4,7 @@ Usage: #definition
 * name = "gestionnaire-cds"
 * title = "CI-SIS Gestion du Cercle de Soins - Gestionnaire"
 * status = #active
+* date = "2023-07-14"
 * experimental = false
 * description = "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation."
 * kind = #requirements

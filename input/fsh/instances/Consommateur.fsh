@@ -4,6 +4,7 @@ Usage: #definition
 * name = "consommateur-cds"
 * title = "CI-SIS Gestion du Cercle de Soins - Consommateur"
 * status = #active
+* date = "2023-07-14"
 * experimental = false
 * description = "Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination."
 * kind = #requirements
