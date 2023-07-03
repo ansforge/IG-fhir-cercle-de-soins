@@ -1,13 +1,8 @@
-Instance: CDS-Patient-birthplace
+Instance: cds-patient-birthplace
 InstanceOf: SearchParameter
 Usage: #definition
-* meta.lastUpdated = "2021-10-21T09:10:25.769+00:00"
-* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_Patient_birthplace"
-* version = "1.0"
-* name = "CDS_Patient_birthplace"
+* name = "CDSPatientBirthplace"
 * status = #active
-* date = "2021-10-21T09:10:25.3807231+00:00"
-* publisher = "ANS"
 * description = "Lieu de naissance du patient"
 * code = #birthplace
 * base = #Patient

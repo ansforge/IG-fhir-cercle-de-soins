@@ -1,13 +1,8 @@
-Instance: CDS-CareTeam-start
+Instance: cds-careteam-start
 InstanceOf: SearchParameter
 Usage: #definition
-* meta.lastUpdated = "2021-10-21T09:10:07.963+00:00"
-* url = "http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start"
-* version = "1.0"
-* name = "CDS_CareTeam_start"
+* name = "CDSCareTeamStart"
 * status = #active
-* date = "2021-10-21T09:10:07.2846633+00:00"
-* publisher = "ANS"
 * description = "Date de création du cercle de soins"
 * code = #start
 * base = #CareTeam
