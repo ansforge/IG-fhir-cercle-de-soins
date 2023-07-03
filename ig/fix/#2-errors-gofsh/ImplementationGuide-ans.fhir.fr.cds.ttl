@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-03T10:46:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-03T16:53:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -543,42 +543,6 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-asorganization> ;
-         fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-asorganization" ]
-       ] ;
-       fhir:name [ fhir:v "cds-careteam-participant-asorganization" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-aspractitionerrole> ;
-         fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-aspractitionerrole" ]
-       ] ;
-       fhir:name [ fhir:v "cds-careteam-participant-aspractitionerrole" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-asrelatedperson> ;
-         fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-asrelatedperson" ]
-       ] ;
-       fhir:name [ fhir:v "cds-careteam-participant-asrelatedperson" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-end" ]
        ] ;
@@ -608,18 +572,6 @@
        ] ;
        fhir:name [ fhir:v "cds-careteam-start" ] ;
        fhir:description [ fhir:v "Date de création du cercle de soins" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-subject-as-patient> ;
-         fhir:reference [ fhir:v "SearchParameter/cds-careteam-subject-as-patient" ]
-       ] ;
-       fhir:name [ fhir:v "cds-careteam-subject-as-patient" ] ;
-       fhir:description [ fhir:v "Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

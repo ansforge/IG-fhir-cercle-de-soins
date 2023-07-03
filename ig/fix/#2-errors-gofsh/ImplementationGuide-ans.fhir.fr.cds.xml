@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2023-07-03T10:46:57+00:00"/>
+  <date value="2023-07-03T16:53:16+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -468,39 +468,6 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/cds-careteam-participant-asorganization"/>
-      </reference>
-      <name value="cds-careteam-participant-asorganization"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants (métiers et logiques) et noms de l'Organization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/cds-careteam-participant-aspractitionerrole"/>
-      </reference>
-      <name value="cds-careteam-participant-aspractitionerrole"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du PractitionerRole"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/cds-careteam-participant-asrelatedperson"/>
-      </reference>
-      <name value="cds-careteam-participant-asrelatedperson"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiants, noms et rôles du RelatedPerson"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
         <reference value="SearchParameter/cds-careteam-participant-end"/>
       </reference>
       <name value="cds-careteam-participant-end"/>
@@ -527,17 +494,6 @@
       </reference>
       <name value="cds-careteam-start"/>
       <description value="Date de création du cercle de soins"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/cds-careteam-subject-as-patient"/>
-      </reference>
-      <name value="cds-careteam-subject-as-patient"/>
-      <description value="Paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche les identifiant, adresse, nom, genre et lieu de naissance du Patient, sujet du CdS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
