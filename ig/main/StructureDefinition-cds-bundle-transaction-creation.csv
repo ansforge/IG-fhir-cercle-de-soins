@@ -20,7 +20,7 @@
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","ClinicalDocument.id","FiveWs.identifier"
 "Bundle.type","Bundle.type","","","",1,1,"","","Y","code {[]} {[]}
-","document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection","Indicates the purpose of this bundle - how it is intended to be used.","It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""transaction""/>","","","","",,"required","Indicates the purpose of a bundle - how it is intended to be used.","http://hl7.org/fhir/ValueSet/bundle-type|4.0.1","",,,,"Bundle.type",1,1,"ele-1
+","document | message | transaction | transaction-response | batch | batch-response | history | searchset | collection","Indicates the purpose of this bundle - how it is intended to be used.","It's possible to use a bundle for other purposes (e.g. a document can be accepted as a transaction). This is primarily defined so that there can be specific rules for some of the bundle types.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""transaction""/>","","","",,"required","Indicates the purpose of a bundle - how it is intended to be used.","http://hl7.org/fhir/ValueSet/bundle-type|4.0.1","",,,,"Bundle.type",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.class"
 "Bundle.timestamp","Bundle.timestamp","","","",0,1,"","","Y","instant {[]} {[]}
@@ -298,7 +298,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:careTeam.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-1:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:careTeam.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -442,7 +442,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:patient.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-2:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:patient.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -585,7 +585,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:relatedPerson.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-3:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:relatedPerson.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -728,7 +728,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:organization.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-4:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:organization.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -871,7 +871,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:organizationInterne.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-7:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:organizationInterne.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1014,7 +1014,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:practitionerRoleOrg.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-8:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:practitionerRoleOrg.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1157,7 +1157,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:practitionerRolePro.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-5:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:practitionerRolePro.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1300,7 +1300,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.entry:practitioner.request.method","Bundle.entry.request.method","","","",1,1,"","","Y","code {[]} {[]}
 ","GET | HEAD | POST | PUT | DELETE | PATCH","In a transaction or batch, this is the HTTP action to be executed for this entry. In a history bundle, this indicates the HTTP action that occurred.","Note that FHIR strings SHALL NOT exceed 1MB in size","","","","","","","","",,"required","HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.","http://hl7.org/fhir/ValueSet/http-verb|4.0.1","",,,,"Bundle.entry.request.method",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-req-met-6:POST si il s’agit d’un nouvel élément ou PUT si il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
+req-met:POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà {value='POST' or value='PUT'}","n/a"
 "Bundle.entry:practitioner.request.url","Bundle.entry.request.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","URL for HTTP equivalent of this entry","The URL for this entry, relative to the root (the address to which the request is posted).","E.g. for a Patient Create, the method would be ""POST"" and the URL would be ""Patient"". For a Patient Update, the method would be PUT and the URL would be ""Patient/[id]"".","","","","","","","","",,,,,"",,,,"Bundle.entry.request.url",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
