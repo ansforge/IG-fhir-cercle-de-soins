@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CDSGestionnaire"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>gestionnaire-cds</h2><div><p>Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,
+donne accès aux informations en cas de consultation.</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>Création et mise à jour des cercles de soins</p>
+</div></td></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET past versions of resources (vread interaction)">V-Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th><th><b title="GET changes to a resource (history interaction on instance)">Updates</b></th><th><b title="GET changes for all resources of the type (history interaction on type)">History</b></th></tr><tr><td>CareTeam</td><td><a href="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam">http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Patient</td><td><a href="http://interopsante.org/fhir/StructureDefinition/FrPatient">http://interopsante.org/fhir/StructureDefinition/FrPatient</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>RelatedPerson</td><td><a href="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person">http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Practitioner</td><td><a href="http://interopsante.org/fhir/StructureDefinition/FrPractitioner">http://interopsante.org/fhir/StructureDefinition/FrPractitioner</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td><a href="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass">https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass</a><br/>Additional supported profiles:<br/>  <a href="https://simplifier.net/resolve?scope=ANS.annuaire.fhir.r4@0.2.0&amp;canonical=https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass">PractitionerRoleOrganizationalRoleRASS</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Organization</td><td><a href="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int">http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int</a><br/>Additional supported profiles:<br/>  <a href="https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&amp;canonical=http://interopsante.org/fhir/StructureDefinition/FrOrganization">FrOrganization</a></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire"/>
+  <version value="0.1.0"/>
+  <name value="gestionnaire-cds"/>
+  <title value="CI-SIS Gestion du Cercle de Soins - Gestionnaire"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-14"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,&#xA;donne accès aux informations en cas de consultation."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <format value="xml"/>
+  <implementationGuide value="http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Création et mise à jour des cercles de soins"/>
+    <security>
+      <cors value="false"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+    </security>
+    <resource>
+      <type value="CareTeam"/>
+      <profile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"/>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="history-instance"/>
+      </interaction>
+      <interaction>
+        <code value="history-type"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-identifier"/>
+        <type value="token"/>
+        <documentation value="identifiant du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="CDSCareTeamStart"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_start"/>
+        <type value="date"/>
+        <documentation value="date de création du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="CDS_CareTeam_end"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_end"/>
+        <type value="date"/>
+        <documentation value="date de fin du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-status"/>
+        <type value="token"/>
+        <documentation value="statut du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="date de mise à jour du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-category"/>
+        <type value="token"/>
+        <documentation value="Représente la catégorie cercle de soins."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-date"/>
+        <type value="date"/>
+        <documentation value="Représente la période couverte par le cercle de soins."/>
+      </searchParam>
+      <searchParam>
+        <name value="participant"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-participant"/>
+        <type value="reference"/>
+        <documentation value="Représente les participants impliqués dans le cercle de soins."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
+        <type value="reference"/>
+        <documentation value="Représente le patient du cercle de soins."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-subject"/>
+        <type value="reference"/>
+        <documentation value="Représente le sujet du cercle de soins."/>
+      </searchParam>
+      <searchParam>
+        <name value="CDS_CareTeam_participant-start"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_participant-start"/>
+        <type value="date"/>
+        <documentation value="Date d'entrée d'un membre du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="CDS_CareTeam_participant-end"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_CareTeam_participant-end"/>
+        <type value="date"/>
+        <documentation value="Date de sortie d'un membre du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="CareTeamManagingOrganization"/>
+        <definition value="http://fhir.sib.fr/fhir/SearchParameter/CareTeamManagingOrganization"/>
+        <type value="reference"/>
+        <documentation value="Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l'organisation responsable du cercle de soins."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <profile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier"/>
+        <type value="token"/>
+        <documentation value="Identifiant du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="family"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/individual-family"/>
+        <type value="string"/>
+        <documentation value="Nom de famille du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="given"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/individual-given"/>
+        <type value="string"/>
+        <documentation value="Prénom du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-name"/>
+        <type value="string"/>
+        <documentation value="Nom du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="address"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/individual-address"/>
+        <type value="string"/>
+        <documentation value="Adresse du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="birthdate"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/individual-birthdate"/>
+        <type value="date"/>
+        <documentation value="Date de naissance du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="gender"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/individual-gender"/>
+        <type value="token"/>
+        <documentation value="Genre du patient"/>
+      </searchParam>
+      <searchParam>
+        <name value="birthplace"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_Patient_birthplace"/>
+        <type value="string"/>
+        <documentation value="Genre du patient"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <profile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant technique de la personne de confiance"/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/RelatedPerson-name"/>
+        <type value="string"/>
+        <documentation value="Nom de la personne de confiance"/>
+      </searchParam>
+      <searchParam>
+        <name value="relationship"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/RelatedPerson-relationship"/>
+        <type value="token"/>
+        <documentation value="Relation entre le patient et la personne de confiance"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <profile value="http://interopsante.org/fhir/StructureDefinition/FrPractitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <profile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"/>
+      <supportedProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant technique du membre professionnel dans la situation d'exercice"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner"/>
+        <type value="reference"/>
+        <documentation value="Référence du professionnel"/>
+      </searchParam>
+      <searchParam>
+        <name value="role"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-role"/>
+        <type value="token"/>
+        <documentation value="Rôle du membre de cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="nameex"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/CDS_PractitionerRole_nameex"/>
+        <type value="string"/>
+        <documentation value="Nom du membre du cercle de soins"/>
+      </searchParam>
+      <searchParam>
+        <name value="partOf"/>
+        <definition value="http://esante.gouv.fr/ci-sis/fhir/SearchParameter/PDSm_PractitionerRole_partOf"/>
+        <type value="reference"/>
+        <documentation value="Reference du professionnel"/>
+      </searchParam>
+      <searchParam>
+        <name value="relationship"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-role"/>
+        <type value="token"/>
+        <documentation value="Role du membre de cercle de soins"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <profile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int"/>
+      <supportedProfile value="http://interopsante.org/fhir/StructureDefinition/FrOrganization"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+        <documentation value="Identifiant technique de la personne de confiance"/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-name"/>
+        <type value="string"/>
+        <documentation value="Nom de la personne de confiance"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier"/>
+        <type value="token"/>
+        <documentation value="Nom de la personne de confiance"/>
+      </searchParam>
+      <searchParam>
+        <name value="partof"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-partof"/>
+        <type value="reference"/>
+        <documentation value="Référence vers l'entité juridique"/>
+      </searchParam>
+    </resource>
+    <interaction>
+      <code value="transaction"/>
+      <documentation value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"/>
+    </interaction>
+    <interaction>
+      <code value="transaction"/>
+      <documentation value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj"/>
+    </interaction>
+  </rest>
+</CapabilityStatement>
