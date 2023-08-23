@@ -204,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-07-05
+            as of 2023-08-23
           
         
       </td>
@@ -231,26 +231,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#synthèse-des-flux" id="markdown-toc-synthèse-des-flux">Synthèse des flux</a></li>
+  <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
+  <li><a href="#utilisation-de-lig" id="markdown-toc-utilisation-de-lig">Utilisation de l’IG</a></li>
   <li><a href="#auteurs-et-contributeurs" id="markdown-toc-auteurs-et-contributeurs">Auteurs et contributeurs</a></li>
 </ul>
 
 </div>
 <h3 id="introduction">Introduction</h3>
 
-<p>Il s’agit d’un exemple d’Implementation Guide de l’ANS, à prendre comme base pour créer de nouveaux IGs.</p>
+<h4 id="présentation-du-contour-fonctionnel">Présentation du contour fonctionnel</h4>
 
-<p>Selon la documentation officielle, cette page d’accueil de l’IG doit contenir :</p>
-<ul>
-  <li>De quoi parle l’IG (En termes non expert, compréhensible par un patient)</li>
-  <li>Des détails techniques sur le contexte et le besoin</li>
-</ul>
+<p>Le cercle de soins permet d’identifier l’ensemble des intervenants (personnes, professionnels et structures) participant à la prise en charge et aux actions de coordination du parcours de santé de la personne.
+Le cercle de soins d’une personne peut être échangé pour répondre aux besoins des domaines sanitaire, médico-administratif, médico-social et social.</p>
 
-<p>Les principales sections de l’IG  sont :</p>
-<ul>
-  <li>Le contexte de l’IG et les points dont les implémenteurs doivent être familier avant dans s’avoir plus sur l’IG</li>
-  <li>Ce que les Implémenteurs doivent mettre en place</li>
-  <li>Un onglet “télécharger”</li>
-</ul>
+<h4 id="présentation-du-contour-technique">Présentation du contour technique</h4>
+
+<p>Ce document présente les spécifications techniques d’interopérabilité nécessaires à la mise en œuvre du volet « Gestion du Cercle de Soins ».</p>
+
+<h4 id="architecture-simplifiée">Architecture simplifiée</h4>
+
+<h3 id="synthèse-des-flux">Synthèse des flux</h3>
+
+<h3 id="lectorat-cible">Lectorat cible</h3>
+
+<p>Ce guide d’implémentation s’adresse aux développeurs des interfaces interopérables des systèmes implémentant la gestion du cercle de soins ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.</p>
+
+<h3 id="utilisation-de-lig">Utilisation de l’IG</h3>
+
+<p>Les spécifications d’interopérabilité présentées dans ce volet ne présagent pas des conditions de leur mise en œuvre dans le cadre d’un système d’information partagé. Il appartient à tout responsable de traitement de s’assurer que les services utilisant ces spécifications respectent les cadres et bonnes pratiques applicables à ce genre de service (ex : cadre juridique, bonnes pratiques de sécurité, ergonomie, accessibilité…).</p>
+
+<p>Il est à noter que les contraintes de sécurité concernant les flux échangés ne sont pas traitées dans ce document. Celles-ci sont du ressort de chaque responsable de l’implémentation du mécanisme qui est dans l’obligation de se conformer au cadre juridique en la matière. L’ANS propose des référentiels dédiés à la politique de sécurité (la <a href="https://esante.gouv.fr/produits-services/pgssi-s">PGSSI-S</a>) et des mécanismes de sécurisation sont définis dans les volets de la <a href="https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport">couche Transport</a> du Cadre d’Interopérabilité des systèmes d’information de santé (CI- SIS).</p>
 
 <h3 id="auteurs-et-contributeurs">Auteurs et contributeurs</h3>
 
@@ -272,6 +283,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
+
 
 
 
@@ -319,7 +331,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 5, 2023 12:43+0000">2023-07-05</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 23, 2023 13:14+0000">2023-08-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

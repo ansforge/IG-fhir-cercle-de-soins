@@ -1,10 +1,10 @@
 ﻿CDS : Validation Results
 =========================================
 
-err = 1, warn = 16, info = 5
-IG Publisher Version: 1.3.22
-Generated Wed Jul 05 12:44:47 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 273 / 4 / 0
+err = 1, warn = 18, info = 5
+IG Publisher Version: 1.4.0
+Generated Wed Aug 23 13:16:16 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+ Build Errors : 278 / 4 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction : 0 / 1 / 1
@@ -14,8 +14,8 @@ Generated Wed Jul 05 12:44:47 UTC 2023. FHIR version 4.0.1 for ans.fhir.fr.cds#0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-careteam-participant-end : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-careteam-participant-start : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-careteam-start : 0 / 0 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-patient-birthplace : 0 / 0 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-practitionerrole-nameex : 0 / 0 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-patient-birthplace : 0 / 1 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/SearchParameter-cds-practitionerrole-nameex : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 0 / 1 / 1
@@ -297,6 +297,11 @@ ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/
 ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/StructureDefinition-cds-organization-orga-int.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 538, column 617: The link 'StructureDefinition-cds-organization-orga-int-definitions.html#diff_Organization.identifier' for "identifier" cannot be resolved (valid targets: 44 targets)
 ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/StructureDefinition-cds-organization-orga-int.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 539, column 623: The link 'StructureDefinition-cds-organization-orga-int-definitions.html#diff_Organization.telecom' for "telecom" cannot be resolved (valid targets: 44 targets)
 ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/StructureDefinition-cds-organization-orga-int.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 540, column 645: The link 'StructureDefinition-cds-organization-orga-int-definitions.html#diff_Organization.partOf' for "partOf" cannot be resolved (valid targets: 44 targets)
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/specifications_techniques.html#/html/body/div/div/div/div/div/p/img at Line 2178, column 5: The image source 'images/media/image5.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/specifications_techniques.html#/html/body/div/div/div/div/div/p/img at Line 2220, column 5: The image source 'images/media/image6.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/specifications_techniques.html#/html/body/div/div/div/div/div/p/img at Line 2255, column 5: The image source 'images/media/image7.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/specifications_techniques.html#/html/body/div/div/div/div/div/p/img at Line 2562, column 5: The image source 'images/media/image8.png' cannot be resolved
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/output/specifications_techniques.html#/html/body/div/div/div/div/div/p/img at Line 2589, column 5: The image source 'images/media/image9.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -315,7 +320,9 @@ WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Rule cpb-0: '
 == fsh-generated/resources/SearchParameter-cds-careteam-participant-start.json ==
 == fsh-generated/resources/SearchParameter-cds-careteam-start.json ==
 == fsh-generated/resources/SearchParameter-cds-patient-birthplace.json ==
+WARNING: SearchParameter/cds-patient-birthplace: SearchParameter.expression: The left side is inherently a collection, and so the expression 'extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/SearchParameter-cds-practitionerrole-nameex.json ==
+WARNING: SearchParameter/cds-practitionerrole-nameex: SearchParameter.expression: The left side is inherently a collection, and so the expression 'extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').value as String' may fail or return false if there is more than one item in the content being evaluated
 == fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation.json ==
