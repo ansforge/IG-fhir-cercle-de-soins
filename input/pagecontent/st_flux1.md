@@ -1,8 +1,6 @@
-
 ### Nom du flux 
 
-Description du flux 
-
+Description du flux
 
 ### Construction du flux
 
