@@ -1303,7 +1303,7 @@ Table 26 Flux de recherche
 
 ### Illustrations
 
-#### Illustration n°1
+#### Diagramme de séquence Interaction
 
 Illustration du cas d'usage présenté à l'étape 0.
 
@@ -1311,9 +1311,7 @@ Illustration du cas d'usage présenté à l'étape 0.
     <img src="sf_image11.png" alt="Flux1" title="Flux1">
 </div>
 
-Figure 9 Diagramme de séquence Interaction
-
-#### Illustration n°2
+#### Diagramme de séquence Interaction
 
 Autre illustration du cas d’usage avec SI DAC en tant que créateur & gestionnaire, Dossier Patient Informatisé et SI Médecin traitant en tant que consommateur
 
@@ -1321,12 +1319,8 @@ Autre illustration du cas d’usage avec SI DAC en tant que créateur & gestionn
     <img src="sf_image12.png" alt="Flux1" title="Flux1">
 </div>
 
-Figure 10 Diagramme de séquence Interaction
-
 #### Diagramme d'objet du flux 1.
 
 <div class="figure" style="margin:auto; width:100%;">
     <img src="sf_image13.png" alt="Flux1" title="Flux1">
 </div>
-
-Figure 11 Diagramme d'objet Annexe B - Diagramme objet
