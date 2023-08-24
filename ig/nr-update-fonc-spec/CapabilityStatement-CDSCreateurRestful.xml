@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CDSCreateurRestful"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurRestful"/>
+  <version value="0.1.0"/>
+  <name value="createur-restful-cds"/>
+  <title value="CI-SIS Gestion du Cercle de Soins - CreateurRestful"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-14"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne "/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <format value="xml"/>
+  <implementationGuide value="http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
+  <rest>
+    <mode value="client"/>
+    <documentation value="Envoie une requete pour créer ou mettre à jour un cercle de soins"/>
+    <security>
+      <cors value="false"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+    </security>
+    <resource>
+      <type value="Patient"/>
+      <profile value="http://interopsante.org/fhir/StructureDefinition/FrPatient"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <profile value="http://interopsante.org/fhir/StructureDefinition/FrPractitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <profile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"/>
+      <supportedProfile value="https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <profile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <profile value="http://interopsante.org/fhir/StructureDefinition/FrOrganization"/>
+      <supportedProfile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="CareTeam"/>
+      <profile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+    </resource>
+  </rest>
+</CapabilityStatement>
