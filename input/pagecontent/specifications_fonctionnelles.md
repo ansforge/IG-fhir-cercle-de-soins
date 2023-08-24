@@ -32,7 +32,7 @@ Cette section présente deux exemples, non exclusifs, de l’utilisation d’un 
 
 Il n’existe pas de définition juridique du cercle de soins en tant que telle. Le « cercle de soins » d’une personne peut être défini comme le regroupement de personnes, professionnels et structures intervenant dans la prise en charge de la personne dans le domaine sanitaire, médico-administratif, médico-social et social. Le « cercle de soins » d'une personne peut donc être constitué des membres de son équipe de soins, d'autres professionnels, de structures, de ses aidants, de sa personne de confiance ou encore de ses représentants légaux.
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image1.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -89,7 +89,7 @@ SI DAC : toute application ou service numérique utilisé par un DAC à des fins
 
 SI Médecin traitant : toute application ou service numérique utilisé par un Médecin (Logiciel de gestion de cabinet, service numérique de coordination...)
 
-##### Echange et partage de données relatives à un cercle de soins 
+##### Echange et partage de données relatives à un cercle de soins
 
 L’échange et le partage de données relatives à un cercle de soins constituent un traitement de données à caractère personnel, qui entre dans le champ d’application du Règlement Général européen de Protection des Données (RGPD).
 
@@ -101,7 +101,7 @@ Les lecteurs cibles sont principalement des chefs de projets ainsi que toute per
 
 Le domaine « Cercle de soins » est relatif à la gestion du cercle de soins d’une personne afin d’identifier l’ensemble des personnes, professionnels et structures participant à sa prise en charge dans le domaine sanitaire, médico-administratif, médico-social et social.
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image2.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -125,7 +125,7 @@ Les acteurs « Système » et « Personne » représentés dans les processus co
 
 ##### Processus collaboratif "Création du cercle de soins"
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image3.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -133,8 +133,8 @@ Figure 2 : Processus collaboratif "Création du cercle de soins"
 
 <table>
 <colgroup>
-<col style="width: 22%" />
-<col style="width: 77%" />
+<col style="margin:auto; width: 22%" />
+<col style="margin:auto; width: 77%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -169,7 +169,7 @@ Table 1 Caractéristiques du processus collaboratif
 
 ##### Processus collaboratif "Consultation du cercle de soins"
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image4.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -177,8 +177,8 @@ Figure 3 : Processus collaboratif "Consultation du cercle de soins"
 
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 79%" />
+<col style="margin:auto; width: 20%" />
+<col style="margin:auto; width: 79%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -212,7 +212,7 @@ Table 2 Caractéristiques du processus collaboratif
 
 ##### Processus collaboratif "Mise à jour du cercle de soins"
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image5.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -220,8 +220,8 @@ Figure 4 : Processus collaboratif "Mise à jour du cercle de soins"
 
 <table>
 <colgroup>
-<col style="width: 18%" />
-<col style="width: 81%" />
+<col style="margin:auto; width: 18%" />
+<col style="margin:auto; width: 81%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -258,8 +258,8 @@ Table 3 Caractéristiques du processus collaboratif
 
 <table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 83%" />
+<col style="margin:auto; width: 16%" />
+<col style="margin:auto; width: 83%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -292,7 +292,7 @@ Table 4 Table des acteurs
 
 #### Création du cercle de soins
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image6.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -318,7 +318,7 @@ Table 6 Flux
 
 #### Consultation du cercle de soins
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image7.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -345,7 +345,7 @@ Table 8 Flux
 
 #### Mise à jour du cercle de soins
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image8.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -386,9 +386,9 @@ Table 11 Synthèse des flux identifiés
 
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 47%" />
-<col style="width: 30%" />
+<col style="margin:auto; width: 21%" />
+<col style="margin:auto; width: 47%" />
+<col style="margin:auto; width: 30%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -496,11 +496,11 @@ Table 12 Concepts métier
 
 <table>
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 12%" />
-<col style="width: 14%" />
-<col style="width: 15%" />
-<col style="width: 33%" />
+<col style="margin:auto; width: 24%" />
+<col style="margin:auto; width: 12%" />
+<col style="margin:auto; width: 14%" />
+<col style="margin:auto; width: 15%" />
+<col style="margin:auto; width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -593,7 +593,7 @@ Table 13 Mise en équivalence MOS
 
 #### Flux 1 - CreationCercleSoins
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:100%;">
     <img src="sf_image10.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -601,16 +601,14 @@ Figure 8 Flux 1 - CreationCercleSoins
 
 Les types de données complexes sont décrits dans les classes communes du Modèle des Objets de Santé de l'ANS.
 
-##### 
-
 ##### Classe "PersonnePriseCharge"
 
 Personne physique bénéficiaire de soins, d'examens, d'actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager.
 
 <table>
 <colgroup>
-<col style="width: 29%" />
-<col style="width: 70%" />
+<col style="margin:auto; width: 29%" />
+<col style="margin:auto; width: 70%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -653,8 +651,8 @@ Une personne physique est un individu titulaire de droits et d'obligations carac
 
 <table>
 <colgroup>
-<col style="width: 24%" />
-<col style="width: 75%" />
+<col style="margin:auto; width: 24%" />
+<col style="margin:auto; width: 75%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -753,8 +751,8 @@ Il peut exister plusieurs exercices professionnels pour une personne à un insta
 
 <table>
 <colgroup>
-<col style="width: 36%" />
-<col style="width: 63%" />
+<col style="margin:auto; width: 36%" />
+<col style="margin:auto; width: 63%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -803,8 +801,8 @@ Le Cercle de Soins comprend toutes les personnes (Professionnel ou Personne Tier
 
 <table>
 <colgroup>
-<col style="width: 19%" />
-<col style="width: 80%" />
+<col style="margin:auto; width: 19%" />
+<col style="margin:auto; width: 80%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -848,16 +846,16 @@ Table 19 Attributs de la classe "CercleSoins"
 
 L'organisation interne est une unité organisationnelle regroupant des activités de soins de santé au sein d’une Entité.
 
-| Nom                                        | Description                                                                                                    |
-|--------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| identifiantOI : \[0..1\] Identifiant       | Identifiant de l'organisation interne, unique et persistant au niveau national.                                |
-| nom : \[0..1\] Texte                       | Nom de l'organisation interne.                                                                                 |
+| Nom | Description |
+| ----- | ----- |
+| identifiantOI : \[0..1\] Identifiant | Identifiant de l'organisation interne, unique et persistant au niveau national. |
+| nom : \[0..1\] Texte | Nom de l'organisation interne. |
 | boiteLettresMSS : \[0..\*\] BoiteLettreMSS | Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice. |
-| metadonnee : \[1..1\] Metadonnee           | Informations relatives à la gestion des classes et des données.                                                |
+| metadonnee : \[1..1\] Metadonnee | Informations relatives à la gestion des classes et des données. |
 
 Table 20 Attributs de la classe "OrganisationInterne"
 
-##### Classe "EntiteJuririque"
+##### Classe "EntiteJuridique"
 
 L'Entité Juridique (EJ) correspond à la notion de personne morale :
 
@@ -867,8 +865,8 @@ L'Entité Juridique (EJ) correspond à la notion de personne morale :
 
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 78%" />
+<col style="margin:auto; width: 21%" />
+<col style="margin:auto; width: 78%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -910,7 +908,7 @@ Elle figure obligatoirement dans les statuts de l'EJ.</td>
 </tbody>
 </table>
 
-Table 21 Attributs de la classe "EntiteJuririque"
+Table 21 Attributs de la classe "EntiteJuridique"
 
 ##### Classe "EntiteGeographique"
 
@@ -931,8 +929,8 @@ Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constit
 
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 78%" />
+<col style="margin:auto; width: 21%" />
+<col style="margin:auto; width: 78%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -983,8 +981,8 @@ Un contact peut être un membre de la famille ou un proche de l’Usager. Il peu
 
 <table>
 <colgroup>
-<col style="width: 22%" />
-<col style="width: 77%" />
+<col style="margin:auto; width: 22%" />
+<col style="margin:auto; width: 77%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1028,8 +1026,8 @@ Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entit
 
 <table>
 <colgroup>
-<col style="width: 38%" />
-<col style="width: 61%" />
+<col style="margin:auto; width: 38%" />
+<col style="margin:auto; width: 61%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1073,11 +1071,7 @@ Table 24 Attributs de la classe "MembreCercleSoin"
 
 ##### Règle de gestion
 
-| Nom | Description                                                                                                                                  |
-|-----|----------------------------------------------------------------------------------------------------------------------------------------------|
-|     | Lorsque la PersonnePhysique représente un Professionnel, ne pas considérer les attributs situationFamiliale, lieuNaissance et paysResidence. |
-
-Table 25 Règle de gestion
+Lorsque la PersonnePhysique représente un Professionnel, ne pas considérer les attributs situationFamiliale, lieuNaissance et paysResidence.
 
 #### Flux 3 - ResultatRechercheCercleSoins
 
@@ -1091,9 +1085,9 @@ Le modèle du flux est identique au flux 1.
 
 <table>
 <colgroup>
-<col style="width: 43%" />
-<col style="width: 42%" />
-<col style="width: 14%" />
+<col style="margin:auto; width: 43%" />
+<col style="margin:auto; width: 42%" />
+<col style="margin:auto; width: 14%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1248,29 +1242,29 @@ Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanit
 <td>Non</td>
 </tr>
 <tr class="even">
-<td>EntiteJuririque/raisonSociale</td>
+<td>EntiteJuridique/raisonSociale</td>
 <td>La raison sociale est le nom de l'entité juridique.<br />
 Elle figure obligatoirement dans les statuts de l'EJ.</td>
 <td>Non</td>
 </tr>
 <tr class="odd">
-<td>EntiteJuririque/numFINESS</td>
+<td>EntiteJuridique/numFINESS</td>
 <td>Identifiant FINESS de l'entité juridique attribué lors de sa création.<br />
 Les personnes morales identifiées par des numéros FINESS sont également dotées de numéros SIREN. Le numéro FINESS étant porteur intrinsèquement de liens avec le domaine sanitaire ou le domaine médico-social, il est, s'il existe, à privilégier pour l’identification de ces personnes morales en tant qu’acteurs sanitaires et médico-sociaux (Référentiel d’identification des acteurs sanitaires et médico-sociaux - Politique Générale de Sécurité des Systèmes d’Information de Santé (PGSSI-S)).</td>
 <td>Non</td>
 </tr>
 <tr class="even">
-<td>EntiteJuririque/numSIREN</td>
+<td>EntiteJuridique/numSIREN</td>
 <td>Le numéro SIREN est le numéro unique d'identification attribué à chaque entreprise ou organisme par l'INSEE.</td>
 <td>Non</td>
 </tr>
 <tr class="odd">
-<td>EntiteJuririque/idNat_struct</td>
+<td>EntiteJuridique/idNat_struct</td>
 <td>Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.</td>
 <td>Non</td>
 </tr>
 <tr class="even">
-<td>EntiteJuririque/identifiantEJ</td>
+<td>EntiteJuridique/identifiantEJ</td>
 <td>Identifiant spécifique de l’entité juridique d’un cabinet individuel ou d’un cabinet de groupe dont l’entité géographique est identifiée par l’attribut identifiantEG.</td>
 <td>Non</td>
 </tr>
@@ -1307,35 +1301,31 @@ TRE_R260-HL7RoleClass</td>
 
 Table 26 Flux de recherche
 
-### Annexes
+### Illustrations
 
-#### Annexe A - Illustration cas d'utilisation
-
-##### Illustration n°1
+#### Illustration n°1
 
 Illustration du cas d'usage présenté à l'étape 0.
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image11.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 9 Diagramme de séquence Interaction
 
-##### Illustration n°2
+#### Illustration n°2
 
 Autre illustration du cas d’usage avec SI DAC en tant que créateur & gestionnaire, Dossier Patient Informatisé et SI Médecin traitant en tant que consommateur
 
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image12.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 10 Diagramme de séquence Interaction
 
-#### Annexe B - Diagramme objet
+#### Diagramme d'objet du flux 1.
 
-Diagramme d'objet du flux 1.
-
-<div class="figure" style="width:65%;">
+<div class="figure" style="margin:auto; width:100%;">
     <img src="sf_image13.png" alt="Flux1" title="Flux1">
 </div>
 
