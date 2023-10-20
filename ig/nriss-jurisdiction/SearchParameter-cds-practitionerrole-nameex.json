@@ -1,0 +1,35 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "cds-practitionerrole-nameex",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDSPractitionerRoleNameex</h2><p>Parameter <code>nameex</code>:<code>string</code></p><div><p>Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a></td></tr><tr><td>Expression</td><td><code>extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').value as String</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-practitionerrole-nameex",
+  "version" : "0.1.0",
+  "name" : "CDSPractitionerRoleNameex",
+  "status" : "active",
+  "date" : "2023-10-20T12:20:13+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "code" : "nameex",
+  "base" : ["PractitionerRole"],
+  "type" : "string",
+  "expression" : "extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').value as String",
+  "multipleOr" : false,
+  "multipleAnd" : false
+}
