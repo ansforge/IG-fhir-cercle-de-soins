@@ -52,7 +52,7 @@
   <version value="0.1.0"/>
   <name value="CDSBundleTransactionCreation"/>
   <status value="draft"/>
-  <date value="2023-07-03T17:56:37+00:00"/>
+  <date value="2023-10-24T07:23:40+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -62,6 +62,13 @@
     </telecom>
   </contact>
   <description value="Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.&#xA;Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

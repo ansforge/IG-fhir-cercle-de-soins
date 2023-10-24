@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "CDSBundleTransactionMAJ",
   "status" : "draft",
-  "date" : "2023-07-03T17:56:37+00:00",
+  "date" : "2023-10-24T07:23:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,6 +19,13 @@
     }]
   }],
   "description" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type \"transaction\" permettant d'organiser le contenu du flux de création d'un cercle de soins.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",

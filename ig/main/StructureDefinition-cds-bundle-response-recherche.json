@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "CDSBundleResponseRecherche",
   "status" : "draft",
-  "date" : "2023-07-03T17:56:37+00:00",
+  "date" : "2023-10-24T07:23:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,6 +19,13 @@
     }]
   }],
   "description" : "« Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",

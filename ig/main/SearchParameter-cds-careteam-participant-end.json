@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "CDSCareTeamParticipantEnd",
   "status" : "active",
-  "date" : "2023-07-03T17:56:37+00:00",
+  "date" : "2023-10-24T07:23:40+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -19,6 +19,13 @@
     }]
   }],
   "description" : "Date de sortie d’un membre du cercle de soins",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "code" : "participant-end",
   "base" : ["CareTeam"],
   "type" : "date",
