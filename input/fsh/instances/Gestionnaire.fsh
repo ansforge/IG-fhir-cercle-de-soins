@@ -140,15 +140,14 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Relation entre le patient et la personne de confiance"
 // Practitioner resource
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = $FrPractitioner
+* rest.resource[=].profile = Canonical(as-practitioner)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 // PractitionerRole resource
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = $practitionerRole-professionalRole-rass
-* rest.resource[=].supportedProfile = $practitionerRole-organizationalRole-rass
+* rest.resource[=].profile = Canonical(as-practitionerrole)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read

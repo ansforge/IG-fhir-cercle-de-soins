@@ -2,7 +2,4 @@ Alias: $FrRelatedPerson = http://interopsante.org/fhir/StructureDefinition/FrRel
 Alias: $IHE_DCTM_CareTeam = http://ihe.net/fhir/StructureDefinition/IHE_DCTM_CareTeam
 Alias: $FrPatient = http://interopsante.org/fhir/StructureDefinition/FrPatient
 Alias: $FrOrganization = http://interopsante.org/fhir/StructureDefinition/FrOrganization
-Alias: $practitionerRole-organizationalRole-rass = https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass
-Alias: $practitionerRole-professionalRole-rass = https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass
 Alias: $FrPractitioner = http://interopsante.org/fhir/StructureDefinition/FrPractitioner
-Alias: $mailboxMSS = https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS

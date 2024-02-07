@@ -15,7 +15,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
     organization 0..* and
     organizationInterne 0..* and
     practitionerRoleOrg 0..* and
-    practitionerRolePro 0..* and
+    practitionerPro 0..* and
     practitioner 0..*
 
 * entry[careTeam].resource 1..
@@ -43,17 +43,14 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[organizationInterne].request.method obeys req-met
 * entry[organizationInterne].response ..0
 
+// Situation d'exercice
 * entry[practitionerRoleOrg].resource 1..
-* entry[practitionerRoleOrg].resource only $practitionerRole-organizationalRole-rass
+* entry[practitionerRoleOrg].resource only as-practitionerrole
 * entry[practitionerRoleOrg].request.method obeys req-met
 * entry[practitionerRoleOrg].response ..0
 
-* entry[practitionerRolePro].resource 1..
-* entry[practitionerRolePro].resource only $practitionerRole-professionalRole-rass
-* entry[practitionerRolePro].request.method obeys req-met
-* entry[practitionerRolePro].response ..0
-
-* entry[practitioner].resource 1..
-* entry[practitioner].resource only $FrPractitioner
-* entry[practitioner].request.method obeys req-met
-* entry[practitioner].response ..0
+// Exercice pro
+* entry[practitionerPro].resource 1..
+* entry[practitionerPro].resource only as-practitioner
+* entry[practitionerPro].request.method obeys req-met
+* entry[practitionerPro].response ..0

@@ -23,13 +23,12 @@ Usage: #definition
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = $FrPractitioner
+* rest.resource[=].profile = Canonical(as-practitioner)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = $practitionerRole-organizationalRole-rass
-* rest.resource[=].supportedProfile = $practitionerRole-professionalRole-rass
+* rest.resource[=].profile = Canonical(as-practitionerrole)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 
