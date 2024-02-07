@@ -12,7 +12,7 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
     relatedPerson 0..* and
     organization 0..* and
     organizationInterne 0..* and
-    practitioneRoleOrg 0..* and
+    practitionerRoleOrg 0..* and
     practitionerPro 0..*
 
 * entry[careTeam].resource 1..
@@ -46,11 +46,11 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
 * entry[organizationInterne].response ..0
 
 * entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
-* entry[practitioneRoleOrg].resource 1..
-* entry[practitioneRoleOrg].resource only as-practitionerrole
-* entry[practitioneRoleOrg].search.mode = #include
-* entry[practitioneRoleOrg].request ..0
-* entry[practitioneRoleOrg].response ..0
+* entry[practitionerRoleOrg].resource 1..
+* entry[practitionerRoleOrg].resource only as-practitionerrole
+* entry[practitionerRoleOrg].search.mode = #include
+* entry[practitionerRoleOrg].request ..0
+* entry[practitionerRoleOrg].response ..0
 
 * entry[practitionerPro] ^short = "Exercice professionnel du PS (Practitioner)"
 * entry[practitionerPro].resource 1..
