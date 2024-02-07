@@ -13,8 +13,7 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
     organization 0..* and
     organizationInterne 0..* and
     practitioneRoleOrg 0..* and
-    practitionerPro 0..* and
-    practitioner 0..*
+    practitionerPro 0..*
 
 * entry[careTeam].resource 1..
 * entry[careTeam].resource only cds-ihe-careteam
@@ -46,15 +45,14 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
 * entry[organizationInterne].request ..0
 * entry[organizationInterne].response ..0
 
-// Situation d'exercice
+* entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
 * entry[practitioneRoleOrg].resource 1..
 * entry[practitioneRoleOrg].resource only as-practitionerrole
 * entry[practitioneRoleOrg].search.mode = #include
 * entry[practitioneRoleOrg].request ..0
 * entry[practitioneRoleOrg].response ..0
 
-
-// Exercice professionel
+* entry[practitionerPro] ^short = "Exercice professionnel du PS (Practitioner)"
 * entry[practitionerPro].resource 1..
 * entry[practitionerPro].resource only as-practitioner
 * entry[practitionerPro].search.mode = #include

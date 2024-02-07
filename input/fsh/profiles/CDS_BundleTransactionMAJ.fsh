@@ -15,8 +15,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
     organization 0..* and
     organizationInterne 0..* and
     practitionerRoleOrg 0..* and
-    practitionerPro 0..* and
-    practitioner 0..*
+    practitionerPro 0..*
 
 * entry[careTeam].resource 1..
 * entry[careTeam].resource only cds-ihe-careteam
@@ -43,13 +42,13 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[organizationInterne].request.method obeys req-met
 * entry[organizationInterne].response ..0
 
-// Situation d'exercice
+* entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
 * entry[practitionerRoleOrg].resource 1..
 * entry[practitionerRoleOrg].resource only as-practitionerrole
 * entry[practitionerRoleOrg].request.method obeys req-met
 * entry[practitionerRoleOrg].response ..0
 
-// Exercice pro
+* entry[practitionerPro] ^short = "Exercice professionnel du PS (Practitioner)"
 * entry[practitionerPro].resource 1..
 * entry[practitionerPro].resource only as-practitioner
 * entry[practitionerPro].request.method obeys req-met
