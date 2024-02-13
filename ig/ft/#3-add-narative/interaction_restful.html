@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Sécurité - Cercle De Soins v0.1.0</title>
+    <title>Interactions RestFUL - Cercle De Soins v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.1"}
-    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.4"}
+    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -104,6 +104,15 @@
       <li>
         <a href="st_flux2.html">Flux 02</a>
       </li>
+      <li>
+        <a href="interaction_restful.html">Interactions RestFUL</a>
+      </li>
+      <li>
+        <a href="interaction_transaction.html">Interactions transaction</a>
+      </li>
+      <li>
+        <a href="recherche_recuperation_cds.html">Recherche CDS</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -112,17 +121,11 @@
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
-  <li>
-    <a href="tests.html">Tests</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="securite.html">Sécurité</a>
-      </li>
       <li>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
@@ -135,7 +138,7 @@
     </ul>
   </li>
   <li>
-    <a href="about.html">A propos de ce guide</a>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -149,15 +152,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='autres_ressources.html'><b>Autres Ressources</b></a></li><li><b>Sécurité</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='specifications_techniques.html'><b>Specifications Techniques</b></a></li><li><b>Interactions RestFUL</b></li>
 
           <span style="float:right;">
 
-            <a href="autres_ressources.html">&lt;prev</a> | 
+            <a href="st_flux2.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="downloads.html">next&gt;</a>
+          | <a href="interaction_transaction.html">next&gt;</a>
 
           </span>
 
@@ -180,7 +183,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Sécurité</h2>
+  <h2>Interactions RestFUL</h2>
   
 
 
@@ -195,17 +198,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#gestion-des-acteurs" id="markdown-toc-gestion-des-acteurs">Gestion des acteurs</a></li>
+  <li><a href="#gestion-du-cercle-de-soins" id="markdown-toc-gestion-du-cercle-de-soins">Gestion du cercle de soins</a></li>
+</ul>
+
 </div>
-<h3 id="sécurité">Sécurité</h3>
+<!-- Chapitre 3.1 -->
 
-<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu’il convient de protéger.</p>
+<h3 id="gestion-des-acteurs">Gestion des acteurs</h3>
 
-<p>Cette section présente les éventuelles recommandations de sécurité qui s’appliquent à cet Implementation Guidegit status
-. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.</p>
+<p>Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization ». 
+Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé , rassemblant les données d’identification des professionnels et des structu  res de santé issues des différents référentiels nationaux.
+Le flux 1a de création d’un acteur est une requête HTTP POST reposant sur l’interaction « create » de FHIR .
+Le flux 4a de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour.</p>
 
-<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
+<p>Ces requêtes sont envoyées au gestionnaire :</p>
+
+<div class="figure" style="width:65%;">
+    <img style="height: auto; width: 100%;" src="st-crea-maj-acteur.png" alt="CI-SIS" title="Diagramme de séquence des flux 1a et 4a" />
+</div>
+
+<p>Si la création de l’acteur est correctement effectuée, un code HTTP 201 created est retourné.
+Si la mise à jour d’un acteur est correctement effectuée, le système gestionnaire retourne un code HTTP 200 OK .</p>
+
+<h3 id="gestion-du-cercle-de-soins">Gestion du cercle de soins</h3>
+
+<p>Les flux permettant de gérer les cercles de soins sont définis ci-dessous :</p>
+
+<ul>
+  <li>Le flux 1b de création du cercle de soins sera assuré par une ou plusieurs requêtes HTTP POST.</li>
+  <li>Le flux 2a de recherche de cercles de soins sera assuré par une requête HTTP GET.</li>
+  <li>Le flux 2b est un flux de demande de récupération d’un cercle de soins particulier ; il sera assuré par une requête HTTP GET.</li>
+  <li>Le flux 3a de réponse à la recherche de cercles de soins sera assuré par la réponse à la requête HTTP GET (flux 2a).</li>
+  <li>Le flux 3b est un flux de réponse à la demande de récupération d’un Cercle de Soins particulier ; il sera assuré par la réponse à la requête HTTP GET (flux 2b).</li>
+  <li>Le flux 4b de mise à jour du cercle de soins sera assuré par une ou plusieurs requêtes HTTP PUT.</li>
+</ul>
+
+<p>Comme indiqué dans la Spécification Fonctionnelle des Echanges du présent volet, le pré-requis à la création d’un cercle de soins est la recherche de ce cercle de soins. Si le cercle de soins n’existe pas, il est créé (flux 1b), sinon, il est mis à jour (flux 4b) :</p>
+
+<div class="figure" style="width:65%;">
+    <img style="height: auto; width: 100%;" src="st-gestion-cds.png" alt="CI-SIS" title="Diagramme de séquence des flux de gestion d’un cercle de soins (1b, 2a, 2b, 3a, 3b et 4b)" />
+</div>
+
+<h4 id="flux-1b--création-dun-cercle-de-soins">Flux 1b : Création d’un cercle de soins</h4>
+
+<p>Le flux de création de la ressource « CareTeam » est une requête HTTP POST reposant sur l’interaction « create » de FHIR. La ressource « CareTeam » constitue le corps de la requête. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
+Si la création du cercle de soins est correctement effectuée, un code HTTP 201 created est retourné.</p>
+
 
 
 
@@ -235,7 +276,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="autres_ressources.html">&lt;prev</a>
+                <a href="st_flux2.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -243,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="downloads.html">next&gt;</a>
+                <a href="interaction_transaction.html">next&gt;</a>
 
               </td>
             </tr>
@@ -253,7 +294,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 09:27+0000">2024-02-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 15:25+0000">2024-02-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

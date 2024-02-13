@@ -104,6 +104,15 @@
       <li>
         <a href="st_flux2.html">Flux 02</a>
       </li>
+      <li>
+        <a href="interaction_restful.html">Interactions RestFUL</a>
+      </li>
+      <li>
+        <a href="interaction_transaction.html">Interactions transaction</a>
+      </li>
+      <li>
+        <a href="recherche_recuperation_cds.html">Recherche CDS</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -112,17 +121,11 @@
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
-  <li>
-    <a href="tests.html">Tests</a>
-  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="securite.html">Sécurité</a>
-      </li>
       <li>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
@@ -135,7 +138,7 @@
     </ul>
   </li>
   <li>
-    <a href="about.html">A propos de ce guide</a>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -240,6 +243,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#synthèse-des-flux" id="markdown-toc-synthèse-des-flux">Synthèse des flux</a></li>
   <li><a href="#lectorat-cible" id="markdown-toc-lectorat-cible">Lectorat cible</a></li>
   <li><a href="#utilisation-de-lig" id="markdown-toc-utilisation-de-lig">Utilisation de l’IG</a></li>
+  <li><a href="#sécurité" id="markdown-toc-sécurité">Sécurité</a></li>
   <li><a href="#auteurs-et-contributeurs" id="markdown-toc-auteurs-et-contributeurs">Auteurs et contributeurs</a></li>
 </ul>
 
@@ -269,6 +273,14 @@ Le cercle de soins d’une personne peut être échangé pour répondre aux beso
 
 <p>Il est à noter que les contraintes de sécurité concernant les flux échangés ne sont pas traitées dans ce document. Celles-ci sont du ressort de chaque responsable de l’implémentation du mécanisme qui est dans l’obligation de se conformer au cadre juridique en la matière. L’ANS propose des référentiels dédiés à la politique de sécurité (la <a href="https://esante.gouv.fr/produits-services/pgssi-s">PGSSI-S</a>) et des mécanismes de sécurisation sont définis dans les volets de la <a href="https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport">couche Transport</a> du Cadre d’Interopérabilité des systèmes d’information de santé (CI- SIS).</p>
 
+<h3 id="sécurité">Sécurité</h3>
+
+<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment les traits d’identité et coordonnées des patients et des professionnels.</p>
+
+<p>Cette section présente les éventuelles recommandations de sécurité qui s’appliquent au volet Gestion de Cercle de Soins. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.</p>
+
+<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
+
 <h3 id="auteurs-et-contributeurs">Auteurs et contributeurs</h3>
 
 <table>
@@ -277,15 +289,18 @@ Le cercle de soins d’une personne peut être échangé pour répondre aux beso
       <th>Role</th>
       <th>Nom</th>
       <th>Organisation</th>
-      <th>Contact</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Primary Editor</strong></td>
-      <td>Prenom Nom</td>
+      <td>Clotaire Delanchy</td>
+      <td>GCS E-Santé Bretagne</td>
+    </tr>
+    <tr>
+      <td><strong>Primary Editor</strong></td>
+      <td>Nicolas Riss</td>
       <td>Agence du Numérique en Santé</td>
-      <td>prenom.nom@address.email</td>
     </tr>
   </tbody>
 </table>
@@ -337,7 +352,7 @@ Le cercle de soins d’une personne peut être échangé pour répondre aux beso
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 09:27+0000">2024-02-13</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 13, 2024 15:25+0000">2024-02-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
