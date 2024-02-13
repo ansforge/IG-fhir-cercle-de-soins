@@ -11,7 +11,6 @@ Ce document présente les spécifications techniques d’interopérabilité néc
 
 #### Architecture simplifiée
 
-
 ### Synthèse des flux
 
 ### Lectorat cible
@@ -24,8 +23,17 @@ Les spécifications d'interopérabilité présentées dans ce volet ne présagen
 
 Il est à noter que les contraintes de sécurité concernant les flux échangés ne sont pas traitées dans ce document. Celles-ci sont du ressort de chaque responsable de l’implémentation du mécanisme qui est dans l’obligation de se conformer au cadre juridique en la matière. L’ANS propose des référentiels dédiés à la politique de sécurité (la [PGSSI-S](https://esante.gouv.fr/produits-services/pgssi-s)) et des mécanismes de sécurisation sont définis dans les volets de la [couche Transport](https://esante.gouv.fr/services/referentiels/ci-sis/espace-publication/couche-transport) du Cadre d’Interopérabilité des systèmes d’information de santé (CI- SIS).
 
+### Sécurité
+
+Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment les traits d’identité et coordonnées des patients et des professionnels.
+
+Cette section présente les éventuelles recommandations de sécurité qui s’appliquent au volet Gestion de Cercle de Soins. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.
+
+Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.
+
 ### Auteurs et contributeurs
 
-| Role  | Nom | Organisation | Contact |
+| Role  | Nom | Organisation |
 | --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
+| **Primary Editor** | Clotaire Delanchy | GCS E-Santé Bretagne |
+| **Primary Editor** | Nicolas Riss | Agence du Numérique en Santé |
