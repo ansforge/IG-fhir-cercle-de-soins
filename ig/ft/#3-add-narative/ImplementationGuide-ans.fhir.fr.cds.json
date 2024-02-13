@@ -10,13 +10,20 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-02-13T08:59:11+00:00",
+  "date" : "2024-02-13T09:27:20+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
     }]
   }],
   "packageId" : "ans.fhir.fr.cds",
@@ -43,15 +50,21 @@
     "version" : "1.0.0"
   },
   {
-    "id" : "ans_annuaire_fhir_r4",
-    "uri" : "http://fhir.org/packages/ans.annuaire.fhir.r4/ImplementationGuide/ans.annuaire.fhir.r4",
-    "packageId" : "ans.annuaire.fhir.r4",
-    "version" : "0.2.0"
+    "id" : "ans_fhir_fr_annuaire",
+    "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+    "packageId" : "ans.fhir.fr.annuaire",
+    "version" : "1.0.0-ballot-3"
   },
   {
     "id" : "hl7_fhir_fr_core",
     "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "ans_fr_nos",
+    "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
+    "packageId" : "ans.fr.nos",
     "version" : "1.1.0"
   }],
   "definition" : {

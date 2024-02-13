@@ -10,7 +10,7 @@
   <version value="0.1.0"/>
   <name value="CDSPatientBirthplace"/>
   <status value="active"/>
-  <date value="2024-02-13T08:59:11+00:00"/>
+  <date value="2024-02-13T09:27:20+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -20,6 +20,13 @@
     </telecom>
   </contact>
   <description value="Lieu de naissance du patient"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
   <code value="birthplace"/>
   <base value="Patient"/>
   <type value="string"/>

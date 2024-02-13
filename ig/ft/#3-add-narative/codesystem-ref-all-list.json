@@ -37,6 +37,30 @@
       "http://hl7.org/fhir/R4/valueset-care-team-status.html" : "CareTeamStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.74"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
       "url" : "http://hl7.org/fhir/http-verb",
       "version" : "4.0.1",
       "status" : "active",
@@ -85,6 +109,17 @@
       "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
     },
     {
+      "url" : "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "fr-v2-3307",
+      "title" : "Types d'organisations",
+      "description" : "This is an example code system that includes all the InteropSanté Organizations types codes.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-organization-type" : "fr-organization-type"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -108,6 +143,18 @@
       },
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
@@ -168,6 +215,114 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R02-SecteurActivite",
+      "title" : null,
+      "description" : "Secteur d'activité",
+      "oids" : ["1.2.250.1.71.4.2.4"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101-SecteurActivite-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R11-CiviliteExercice",
+      "title" : null,
+      "description" : "Civilité d'exercice",
+      "oids" : ["1.2.250.1.213.1.6.1.11"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79-CiviliteExercice-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R216-HL7RoleCode",
+      "title" : null,
+      "description" : "HL7 roleCode",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-related-person" : "fr-related-person"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R260-HL7RoleClass",
+      "title" : null,
+      "description" : "Rôle de la personne point de contact auprès d'une autre personne repris de la terminologie HL7 v3 RoleClass (https://www.hl7.org/fhir/v3/RoleClass/cs.html)",
+      "oids" : ["2.16.840.1.113883.5.110"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-related-person-role" : "fr-related-person-role"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R66-CategorieEtablissement",
+      "title" : null,
+      "description" : "Catégorie d'établissements",
+      "oids" : ["1.2.250.1.213.1.6.1.8"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129-CategorieEtablissement-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R72-FinessStatutJuridique",
+      "title" : null,
+      "description" : "Statuts juridiques provenant de FINESS, excepté pour les codes 000 et 100 à 110 qui ont été ajoutés pour les besoins du RPPS en 2017.",
+      "oids" : ["1.2.250.1.213.1.6.1.44"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J100-FinessStatutJuridique-RASS.html" : "JDV_J100-FinessStatutJuridique-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R73-ESPIC",
+      "title" : null,
+      "description" : "Etablissement de santé privé d'intérêt collectif",
+      "oids" : ["1.2.250.1.213.1.6.1.45"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J162-ESPIC-RASS.html" : "JDV_J162-ESPIC-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R75-InseeNAFrev2Niveau5",
+      "title" : null,
+      "description" : "Sous-classes de la Nomenclature d'Activités Française - INSEE",
+      "oids" : ["1.2.250.1.213.1.6.1.47"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J99-InseeNAFrav2Niveau5-RASS.html" : "JDV_J99-InseeNAFrav2Niveau5-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R81-Civilite",
+      "title" : null,
+      "description" : "Civilité",
+      "oids" : ["1.2.250.1.213.1.6.1.69"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J78-Civilite-RASS.html" : "JDV_J78-Civilite-RASS"
     },
     {
       "url" : "urn:ietf:bcp:47",

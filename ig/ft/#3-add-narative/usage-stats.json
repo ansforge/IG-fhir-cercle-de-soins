@@ -2,6 +2,7 @@
   "package": "ans.fhir.fr.cds",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "FR",
   "extensions": [],
   "profiles": {
     "Bundle": [
@@ -56,6 +57,9 @@
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
       "RelatedPerson.name"
     ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "Organization"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -86,7 +90,37 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS": [
+    "http://interopsante.org/fhir/StructureDefinition/FrContactPointEmailType": [
+      "Organization.telecom"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationDescription": [
+      "Organization"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationShortName": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
+      "Organization.meta"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-digital-certificate": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-mailbox-mss-metadata": [
+      "Organization.telecom"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-authorization-deadline": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-budget-type": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-closing-type": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pharmacy-licence": [
+      "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pricing-model": [
       "Organization"
     ]
   }
