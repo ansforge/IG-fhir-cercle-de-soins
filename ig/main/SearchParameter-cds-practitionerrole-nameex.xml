@@ -4,13 +4,13 @@
   <id value="cds-practitionerrole-nameex"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CDSPractitionerRoleNameex</h2><p>Parameter <code>nameex</code>:<code>string</code></p><div><p>Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice</p>
-</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td></tr><tr><td>Expression</td><td><code>extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').value as String</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td></tr><tr><td>Expression</td><td><code>extension('https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name').value as String</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>
   </text>
   <url value="http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-practitionerrole-nameex"/>
   <version value="0.1.0"/>
   <name value="CDSPractitionerRoleNameex"/>
   <status value="active"/>
-  <date value="2023-10-24T07:23:40+00:00"/>
+  <date value="2024-02-13T09:00:00+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
