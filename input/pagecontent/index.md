@@ -11,6 +11,14 @@ Ce document présente les spécifications techniques d’interopérabilité néc
 
 #### Architecture simplifiée
 
+#### Schéma des relations entre ressources
+
+
+<div class="figure" style="width:65%;">
+    <img style="height: auto; width: 100%;" src="schema-relation-ressources.png" alt="CI-SIS" title="Diagramme de séquence des flux 1a et 4a">
+</div>
+
+
 ### Synthèse des flux
 
 ### Lectorat cible
