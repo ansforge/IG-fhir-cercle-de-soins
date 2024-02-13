@@ -12,9 +12,8 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
     relatedPerson 0..* and
     organization 0..* and
     organizationInterne 0..* and
-    practitioneRoleOrg 0..* and
-    practitionerRolePro 0..* and
-    practitioner 0..*
+    practitionerRoleOrg 0..* and
+    practitionerPro 0..*
 
 * entry[careTeam].resource 1..
 * entry[careTeam].resource only cds-ihe-careteam
@@ -46,20 +45,16 @@ Description: "« Bundle » de type « searchset » encapsulant une collection de
 * entry[organizationInterne].request ..0
 * entry[organizationInterne].response ..0
 
-* entry[practitioneRoleOrg].resource 1..
-* entry[practitioneRoleOrg].resource only $practitionerRole-organizationalRole-rass
-* entry[practitioneRoleOrg].search.mode = #include
-* entry[practitioneRoleOrg].request ..0
-* entry[practitioneRoleOrg].response ..0
+* entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
+* entry[practitionerRoleOrg].resource 1..
+* entry[practitionerRoleOrg].resource only as-practitionerrole
+* entry[practitionerRoleOrg].search.mode = #include
+* entry[practitionerRoleOrg].request ..0
+* entry[practitionerRoleOrg].response ..0
 
-* entry[practitionerRolePro].resource 1..
-* entry[practitionerRolePro].resource only $practitionerRole-professionalRole-rass
-* entry[practitionerRolePro].search.mode = #include
-* entry[practitionerRolePro].request ..0
-* entry[practitionerRolePro].response ..0
-
-* entry[practitioner].resource 1..
-* entry[practitioner].resource only $FrPractitioner
-* entry[practitioner].search.mode = #include
-* entry[practitioner].request ..0
-* entry[practitioner].response ..0
+* entry[practitionerPro] ^short = "Exercice professionnel du PS (Practitioner)"
+* entry[practitionerPro].resource 1..
+* entry[practitionerPro].resource only as-practitioner
+* entry[practitionerPro].search.mode = #include
+* entry[practitionerPro].request ..0
+* entry[practitionerPro].response ..0

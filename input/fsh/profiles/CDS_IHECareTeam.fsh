@@ -25,7 +25,7 @@ Description: "Profil héritant du profil défini dans DCTM et défini pour le vo
 * participant ^comment = "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members"
 * participant.member 1..
 * participant.member ^requirements = "Need to know who the member is if participant is required.\r\nThis version of the profile requires that a DynamicCareTeam be referenced when the member is a care team."
-* participant.member only Reference($practitionerRole-organizationalRole-rass or cds-fr-related-person or $FrOrganization or cds-organization-orga-int)
+* participant.member only Reference(as-practitionerrole or cds-fr-related-person or $FrOrganization or cds-organization-orga-int)
 * participant.member ^short = "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager"
 * participant.period ^comment = "This version of the profile requires period to indicate how current the participant is."
 * participant.period.start 1..

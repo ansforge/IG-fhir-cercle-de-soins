@@ -153,8 +153,8 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Reference vers l'entite juridique"
 
 * rest.resource[+].type = #PractitionerRole
-* rest.resource[=].profile = $practitionerRole-professionalRole-rass
-* rest.resource[=].supportedProfile = $practitionerRole-organizationalRole-rass
+* rest.resource[=].profile = Canonical(as-practitioner)
+* rest.resource[=].supportedProfile = Canonical(as-practitionerrole)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "_id"
