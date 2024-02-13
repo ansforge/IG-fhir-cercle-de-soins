@@ -1,0 +1,49 @@
+@startuml
+
+skinparam node {
+borderColor Green
+backgroundColor Yellow
+}
+
+component "FrCorePatient" as patient
+node "CDS_IHE_CareTeam" as careteam #99FF99
+
+component "CDS_FrRelatedPerson" as cdsfrrelatedperson
+component "CDS_Organization-OrgaInt" as cdsorganization
+component "As Organization" as asorganization
+component "AS Practitioner" as aspractitioner
+component "AS PractitionerRole" as aspractitionerrole
+
+
+url of cdsfrrelatedperson is [[StructureDefinition-cds-fr-related-person.html]]
+url of careteam is [[StructureDefinition-cds-ihe-careteam.html]]
+url of cdsorganization is [[StructureDefinition-cds-organization-orga-int.html]]
+
+' ##########
+' # Patient #
+' ##########
+patient <-- careteam : subject 0..1
+
+
+' ############
+' # careteam #
+' ############
+careteam --> cdsfrrelatedperson : participant[0..*].member
+careteam --> cdsorganization : participant[0..*].member
+careteam --> asorganization : participant[0..*].member
+careteam --> aspractitionerrole : participant[0..*].member
+
+' ##################
+' # frorganization #
+' ##################
+asorganization --> asorganization : partof 1..*
+
+
+' ################
+' # practitionerrole #
+' ################
+aspractitionerrole -->  aspractitioner : practitioner 0..1
+
+' Dans le schéma initial, il y a d'autres relations qui n'ont pas été tracées : Lien entre orgaint et FrOrganization, Lien entre practitionerrole et organization. Leur précision a été considérée inutile.
+
+@enduml
