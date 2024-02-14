@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"log-exercice-professionnel","log-exercice-professionnel","","","",0,*,"","","","null {[]} {[]}
+","Exercice Professionnel","Exercice Professionnel","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-exercice-professionnel.civiliteExercice","log-exercice-professionnel.civiliteExercice","","","",0,1,"","","","code {[]} {[]}
+","Civilité d’exercice du professionnel","Civilité d’exercice du professionnel","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.civiliteExercice",0,1,"",""
+"log-exercice-professionnel.nomExercice","log-exercice-professionnel.nomExercice","","","",0,1,"","","","string {[]} {[]}
+","Nom d'exercice","Nom sous lequel exerce le professionnel","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.nomExercice",0,1,"",""
+"log-exercice-professionnel.prenomExercice","log-exercice-professionnel.prenomExercice","","","",0,1,"","","","string {[]} {[]}
+","Prénom d'exercice","Prénom sous lequel exerce le professionnel","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.prenomExercice",0,1,"",""
+"log-exercice-professionnel.profession","log-exercice-professionnel.profession","","","",0,1,"","","","code {[]} {[]}
+","Profession exercée ou future profession de l'étudiant.","Profession exercée ou future profession de l'étudiant.","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.profession",0,1,"",""
+"log-exercice-professionnel.metadonnee","log-exercice-professionnel.metadonnee","","","",0,1,"","","","Meta {[]} {[]}
+","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.metadonnee",0,1,"",""

@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-02-14T09:42:21+00:00",
+  "date" : "2024-02-14T17:54:26+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -803,6 +803,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/cds2FHIR"
+      },
+      "name" : "Cercle De Soins logical model - profile mapping",
+      "description" : "Mapping du CDS du modèle logique vers le profil FHIR CDS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -854,10 +866,46 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/log-exercice-professionnel"
+      },
+      "name" : "Exercice Professionnel",
+      "description" : "Exercice Professionnel",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/log-membre-cercle-de-soins"
+      },
+      "name" : "Membre Cercle De Soins",
+      "description" : "Membre Cercle De Soins",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/log-personne-prise-charge"
       },
       "name" : "Personne Prise En Charge",
       "description" : "Personne Prise En Charge",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/log-professionnel"
+      },
+      "name" : "Professionnel",
+      "description" : "Professionnel",
       "exampleBoolean" : false
     }],
     "page" : {

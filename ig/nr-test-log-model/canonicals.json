@@ -28,6 +28,13 @@
     "name" : "gestionnaire-cds"
   },
   {
+    "id" : "cds2FHIR",
+    "type" : "ConceptMap",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ConceptMap/cds2FHIR",
+    "version" : "0.1.0",
+    "name" : "CDS2FHIR"
+  },
+  {
     "id" : "ans.fhir.fr.cds",
     "type" : "ImplementationGuide",
     "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds",
@@ -126,10 +133,31 @@
     "name" : "CercleDeSoins"
   },
   {
+    "id" : "log-exercice-professionnel",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-exercice-professionnel",
+    "version" : "0.1.0",
+    "name" : "ExerciceProfessionnel"
+  },
+  {
+    "id" : "log-membre-cercle-de-soins",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-membre-cercle-de-soins",
+    "version" : "0.1.0",
+    "name" : "MembreCercleDeSoins"
+  },
+  {
     "id" : "log-personne-prise-charge",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge",
     "version" : "0.1.0",
     "name" : "PersonnePriseCharge"
+  },
+  {
+    "id" : "log-professionnel",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-professionnel",
+    "version" : "0.1.0",
+    "name" : "Professionnel"
   }
 ]

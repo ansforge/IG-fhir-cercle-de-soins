@@ -4953,6 +4953,30 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.metadonnee",1,1,"",""
 "log-cercle-de-soins","log-cercle-de-soins.PersonnePriseCharge","log-cercle-de-soins.PersonnePriseCharge","","","",1,1,"","","","http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge {[]} {[]}
 ","Personne prise en charge.","La personne prise en charge.","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.PersonnePriseCharge",1,1,"",""
+"log-cercle-de-soins","log-cercle-de-soins.MembreCercleSoin","log-cercle-de-soins.MembreCercleSoin","","","",0,*,"","","","http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-membre-cercle-de-soins {[]} {[]}
+","Membre du cercle de soin","Membre du cercle de soin","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.MembreCercleSoin",0,*,"",""
+"log-exercice-professionnel","log-exercice-professionnel","log-exercice-professionnel","","","",0,*,"","","","null {[]} {[]}
+","Exercice Professionnel","Exercice Professionnel","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-exercice-professionnel","log-exercice-professionnel.civiliteExercice","log-exercice-professionnel.civiliteExercice","","","",0,1,"","","","code {[]} {[]}
+","Civilité d’exercice du professionnel","Civilité d’exercice du professionnel","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.civiliteExercice",0,1,"",""
+"log-exercice-professionnel","log-exercice-professionnel.nomExercice","log-exercice-professionnel.nomExercice","","","",0,1,"","","","string {[]} {[]}
+","Nom d'exercice","Nom sous lequel exerce le professionnel","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.nomExercice",0,1,"",""
+"log-exercice-professionnel","log-exercice-professionnel.prenomExercice","log-exercice-professionnel.prenomExercice","","","",0,1,"","","","string {[]} {[]}
+","Prénom d'exercice","Prénom sous lequel exerce le professionnel","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.prenomExercice",0,1,"",""
+"log-exercice-professionnel","log-exercice-professionnel.profession","log-exercice-professionnel.profession","","","",0,1,"","","","code {[]} {[]}
+","Profession exercée ou future profession de l'étudiant.","Profession exercée ou future profession de l'étudiant.","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.profession",0,1,"",""
+"log-exercice-professionnel","log-exercice-professionnel.metadonnee","log-exercice-professionnel.metadonnee","","","",0,1,"","","","Meta {[]} {[]}
+","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-exercice-professionnel.metadonnee",0,1,"",""
+"log-membre-cercle-de-soins","log-membre-cercle-de-soins","log-membre-cercle-de-soins","","","",0,*,"","","","null {[]} {[]}
+","Membre Cercle De Soins","Membre Cercle De Soins","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-membre-cercle-de-soins","log-membre-cercle-de-soins.dateEntreeCercleSoin","log-membre-cercle-de-soins.dateEntreeCercleSoin","","","",1,*,"","","","date {[]} {[]}
+","Date d'entrée","Date de début de participation au cercle de soin de la personne prise en charge.","","","","","","","","","",,,,,"",,,,"log-membre-cercle-de-soins.dateEntreeCercleSoin",1,*,"",""
+"log-membre-cercle-de-soins","log-membre-cercle-de-soins.dateSortieCercleSoin","log-membre-cercle-de-soins.dateSortieCercleSoin","","","",0,*,"","","","date {[]} {[]}
+","Date de sortie","Date de fin de participation au cercle de soin de la personne prise en charge.","","","","","","","","","",,,,,"",,,,"log-membre-cercle-de-soins.dateSortieCercleSoin",0,*,"",""
+"log-membre-cercle-de-soins","log-membre-cercle-de-soins.metadonnee","log-membre-cercle-de-soins.metadonnee","","","",0,1,"","","","Meta {[]} {[]}
+","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-membre-cercle-de-soins.metadonnee",0,1,"",""
+"log-membre-cercle-de-soins","log-membre-cercle-de-soins.Contact","log-membre-cercle-de-soins.Contact","","","",0,1,"","","","Identifier {[]} {[]}
+","Contact","Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager. Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin de participation à ce cercle.","","","","","","","","","",,,,,"",,,,"log-membre-cercle-de-soins.Contact",0,1,"",""
 "log-personne-prise-charge","log-personne-prise-charge","log-personne-prise-charge","","","",0,*,"","","","null {[]} {[]}
 ","Personne Prise En Charge","Personne Prise En Charge","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "log-personne-prise-charge","log-personne-prise-charge.INS","log-personne-prise-charge.INS","","","",1,1,"","","","Identifier {[]} {[]}
@@ -4965,3 +4989,11 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Adresse(s) de télécommunication de la personne prise en charge (numéro de téléphone, adresse email, etc.).","Adresse(s) de télécommunication de la personne prise en charge (numéro de téléphone, adresse email, etc.).","","","","","","","","","",,,,,"",,,,"log-personne-prise-charge.telecommunication",1,*,"",""
 "log-personne-prise-charge","log-personne-prise-charge.metadonnee","log-personne-prise-charge.metadonnee","","","",1,1,"","","","Meta {[]} {[]}
 ","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-personne-prise-charge.metadonnee",1,1,"",""
+"log-professionnel","log-professionnel","log-professionnel","","","",0,*,"","","","null {[]} {[]}
+","Professionnel","Professionnel","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-professionnel","log-professionnel.idPP","log-professionnel.idPP","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant national de la personne physique","Identifiant national de la personne physique","","","","","","","","","",,,,,"",,,,"log-professionnel.idPP",0,1,"",""
+"log-professionnel","log-professionnel.typeIdNat-PP","log-professionnel.typeIdNat_PP","","","",0,1,"","","","code {[]} {[]}
+","Type d’identifiant national de la personne physique.","Type d’identifiant national de la personne physique.","","","","","","","","","",,,,,"",,,,"log-professionnel.typeIdNat_PP",0,1,"",""
+"log-professionnel","log-professionnel.metadonnee","log-professionnel.metadonnee","","","",1,1,"","","","Meta {[]} {[]}
+","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-professionnel.metadonnee",1,1,"",""

@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2024-02-14T09:42:21+00:00"/>
+  <date value="2024-02-14T17:54:26+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -625,6 +625,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/cds2FHIR"/>
+      </reference>
+      <name value="Cercle De Soins logical model - profile mapping"/>
+      <description value="Mapping du CDS du modèle logique vers le profil FHIR CDS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -672,10 +683,43 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/log-exercice-professionnel"/>
+      </reference>
+      <name value="Exercice Professionnel"/>
+      <description value="Exercice Professionnel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/log-membre-cercle-de-soins"/>
+      </reference>
+      <name value="Membre Cercle De Soins"/>
+      <description value="Membre Cercle De Soins"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/log-personne-prise-charge"/>
       </reference>
       <name value="Personne Prise En Charge"/>
       <description value="Personne Prise En Charge"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/log-professionnel"/>
+      </reference>
+      <name value="Professionnel"/>
+      <description value="Professionnel"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-14T09:42:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-14T17:54:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -717,6 +717,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/ConceptMap/cds2FHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/cds2FHIR" ]
+       ] ;
+       fhir:name [ fhir:v "Cercle De Soins logical model - profile mapping" ] ;
+       fhir:description [ fhir:v "Mapping du CDS du modèle logique vers le profil FHIR CDS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
@@ -768,11 +780,47 @@
          fhir:value [ fhir:v "StructureDefinition:logical" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-exercice-professionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/log-exercice-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "Exercice Professionnel" ] ;
+       fhir:description [ fhir:v "Exercice Professionnel" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-membre-cercle-de-soins> ;
+         fhir:reference [ fhir:v "StructureDefinition/log-membre-cercle-de-soins" ]
+       ] ;
+       fhir:name [ fhir:v "Membre Cercle De Soins" ] ;
+       fhir:description [ fhir:v "Membre Cercle De Soins" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge> ;
          fhir:reference [ fhir:v "StructureDefinition/log-personne-prise-charge" ]
        ] ;
        fhir:name [ fhir:v "Personne Prise En Charge" ] ;
        fhir:description [ fhir:v "Personne Prise En Charge" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-professionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/log-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "Professionnel" ] ;
+       fhir:description [ fhir:v "Professionnel" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
