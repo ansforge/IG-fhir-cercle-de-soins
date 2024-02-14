@@ -12,7 +12,7 @@ Description: "Profil héritant du profil défini dans DCTM et défini pour le vo
 * status 1..1
 * status ^short = "Statut du cercle de soin.\n Le statut prend sa valeur dans la liste suivante : proposed | active | suspended | inactive | entered-in-error"
 * subject 1..1
-* subject only Reference($FrPatient)
+* subject only Reference($FrPatient) //TODO Changer vers INS Patient ?
 * subject ^short = "Le sujet du cercle de soins est une personne prise en charge (« Patient »)."
 * subject ^meaningWhenMissing = "For this version of the profile, the use of group is not supported."
 * encounter only Reference(Encounter)
