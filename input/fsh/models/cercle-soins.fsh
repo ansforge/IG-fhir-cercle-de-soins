@@ -10,3 +10,19 @@ Description: "Cercle De Soins"
 * metadonnee 1..1 Meta "Informations relatives à la gestion des classes et des données." "Informations relatives à la gestion des classes et des données."
 * PersonnePriseCharge 1..1 PersonnePriseCharge "Personne prise en charge." "La personne prise en charge."
 // * MembreCercleSoin 0..*  Reference() "test" "test"
+
+
+Mapping: ModelCDSToCDS
+Source: CercleDeSoins
+Target: "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"
+Id: map-log-cercle-de-soins-to-cercle-de-soins
+Title: "Mapping modèle logique Cercle De Soins"
+* -> "CDSCareTeam"
+* idCercleSoins -> "identifier"
+* dateCreation -> "period.start"
+* dateMAJ -> "meta.lastUpdated"
+* dateFin -> "period.end"
+* statut -> "status"
+* metadonnee -> "meta"
+* PersonnePriseCharge -> "subject"
+* MembreCercleSoin -> "participant"
