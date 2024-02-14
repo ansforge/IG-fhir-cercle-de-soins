@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"log-cercle-de-soins","log-cercle-de-soins","","","",0,*,"","","","null {[]} {[]}
+","Cercle De Soins","Cercle De Soins","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-cercle-de-soins.idCercleSoins","log-cercle-de-soins.idCercleSoins","","","",1,1,"","","","Identifier {[]} {[]}
+","test","test","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.idCercleSoins",1,1,"",""
+"log-cercle-de-soins.dateCreation","log-cercle-de-soins.dateCreation","","","",1,1,"","","","date {[]} {[]}
+","test","test","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.dateCreation",1,1,"",""
+"log-cercle-de-soins.dateMAJ","log-cercle-de-soins.dateMAJ","","","",1,*,"","","","date {[]} {[]}
+","Le concept de cercle de soins a plusieurs dates de mise à jour mais chaque version de la ressource, et donc chaque instance de la ressource, ne peut avoir qu’une seule date de mise à jour","test","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.dateMAJ",1,*,"",""
+"log-cercle-de-soins.dateFin","log-cercle-de-soins.dateFin","","","",0,1,"","","","date {[]} {[]}
+","test","test","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.dateFin",0,1,"",""
+"log-cercle-de-soins.statut","log-cercle-de-soins.statut","","","",0,1,"","","","code {[]} {[]}
+","test","test","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.statut",0,1,"",""
+"log-cercle-de-soins.metadonnee","log-cercle-de-soins.metadonnee","","","",1,1,"","","","Meta {[]} {[]}
+","test","test","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.metadonnee",1,1,"",""
