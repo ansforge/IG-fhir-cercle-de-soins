@@ -1,9 +1,9 @@
 CDS : Validation Results
 =========================================
 
-err = 1, warn = 44, info = 14
+err = 1, warn = 44, info = 15
 IG Publisher Version: 1.5.16
-Generated Wed Feb 14 09:21:00 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+Generated Wed Feb 14 09:45:26 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 16 / 4 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
@@ -21,7 +21,7 @@ Generated Wed Feb 14 09:21:00 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 0 / 1 / 3
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 1 / 1 / 4
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-organization-orga-int : 0 / 1 / 10
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-organization-orga-int : 0 / 1 / 11
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-cercle-de-soins : 0 / 16 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-personne-prise-charge : 0 / 12 / 1
 </table>
@@ -80,15 +80,16 @@ INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.
 ERROR: StructureDefinition/cds-ihe-careteam: StructureDefinition.differential.element[4]: The element definition for CareTeam.subject has a property meaningWhenMissing which is not allowed in a profile
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-organization-orga-int.json ==
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[40].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://interopsante.org/CodeSystem/fr-v2-0203' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[43].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[63].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[83].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[89].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://interopsante.org/CodeSystem/fr-v2-0203' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[92].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[98].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://interopsante.org/CodeSystem/fr-v2-0203' could not be found, so the code cannot be validated
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[101].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[157].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[42].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[48].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://interopsante.org/CodeSystem/fr-v2-0203' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[51].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[71].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[91].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[97].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://interopsante.org/CodeSystem/fr-v2-0203' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[100].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[106].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://interopsante.org/CodeSystem/fr-v2-0203' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[109].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-organization-orga-int: StructureDefinition.snapshot.element[165].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-log-cercle-de-soins.json ==
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)

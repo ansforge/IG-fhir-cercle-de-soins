@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CercleDeSoins"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-14T09:17:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-14T09:42:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -39,6 +39,10 @@
      fhir:identity [ fhir:v "rim" ] ;
      fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
      fhir:name [ fhir:v "RIM Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+     fhir:uri [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Mapping modèle logique Cercle De Soins" ]
   ] ) ; # 
   fhir:kind [ fhir:v "logical"] ; # 
   fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
@@ -61,7 +65,11 @@
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
          fhir:max [ fhir:v "*" ]
        ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "CDSCareTeam" ]
+       ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.idCercleSoins" ] ;
        fhir:path [ fhir:v "log-cercle-de-soins.idCercleSoins" ] ;
@@ -76,6 +84,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "identifier" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.dateCreation" ] ;
@@ -91,6 +103,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "period.start" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.dateMAJ" ] ;
@@ -106,6 +122,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "meta.lastUpdated" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.dateFin" ] ;
@@ -121,6 +141,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "period.end" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.statut" ] ;
@@ -136,6 +160,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "status" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.metadonnee" ] ;
@@ -151,6 +179,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "meta" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.PersonnePriseCharge" ] ;
@@ -166,6 +198,10 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "subject" ]
        ] )
      ] )
   ] ; # 
@@ -174,7 +210,11 @@
        fhir:id [ fhir:v "log-cercle-de-soins" ] ;
        fhir:path [ fhir:v "log-cercle-de-soins" ] ;
        fhir:short [ fhir:v "Cercle De Soins" ] ;
-       fhir:definition [ fhir:v "Cercle De Soins" ]
+       fhir:definition [ fhir:v "Cercle De Soins" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "CDSCareTeam" ]
+       ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.idCercleSoins" ] ;
        fhir:path [ fhir:v "log-cercle-de-soins.idCercleSoins" ] ;
@@ -184,6 +224,10 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "identifier" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.dateCreation" ] ;
@@ -194,6 +238,10 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "period.start" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.dateMAJ" ] ;
@@ -204,6 +252,10 @@
        fhir:max [ fhir:v "*" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "meta.lastUpdated" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.dateFin" ] ;
@@ -214,6 +266,10 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "period.end" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.statut" ] ;
@@ -224,6 +280,10 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "status" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.metadonnee" ] ;
@@ -234,6 +294,10 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "meta" ]
        ] )
      ] [
        fhir:id [ fhir:v "log-cercle-de-soins.PersonnePriseCharge" ] ;
@@ -244,6 +308,10 @@
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
          fhir:code [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "map-log-cercle-de-soins-to-cercle-de-soins" ] ;
+         fhir:map [ fhir:v "subject" ]
        ] )
      ] )
   ] . # 

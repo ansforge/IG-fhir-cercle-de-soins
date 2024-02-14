@@ -18,7 +18,7 @@
   <name value="CercleDeSoins"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2024-02-14T09:17:54+00:00"/>
+  <date value="2024-02-14T09:42:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -41,6 +41,11 @@
     <uri value="http://hl7.org/v3"/>
     <name value="RIM Mapping"/>
   </mapping>
+  <mapping>
+    <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+    <uri value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"/>
+    <name value="Mapping modèle logique Cercle De Soins"/>
+  </mapping>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-cercle-de-soins"/>
@@ -59,6 +64,10 @@
         <max value="*"/>
       </base>
       <isModifier value="false"/>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="CDSCareTeam"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.idCercleSoins">
       <path value="log-cercle-de-soins.idCercleSoins"/>
@@ -74,6 +83,10 @@
       <type>
         <code value="Identifier"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="identifier"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.dateCreation">
       <path value="log-cercle-de-soins.dateCreation"/>
@@ -89,6 +102,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="period.start"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.dateMAJ">
       <path value="log-cercle-de-soins.dateMAJ"/>
@@ -104,6 +121,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="meta.lastUpdated"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.dateFin">
       <path value="log-cercle-de-soins.dateFin"/>
@@ -119,6 +140,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="period.end"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.statut">
       <path value="log-cercle-de-soins.statut"/>
@@ -134,6 +159,10 @@
       <type>
         <code value="code"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="status"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.metadonnee">
       <path value="log-cercle-de-soins.metadonnee"/>
@@ -149,6 +178,10 @@
       <type>
         <code value="Meta"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="meta"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.PersonnePriseCharge">
       <path value="log-cercle-de-soins.PersonnePriseCharge"/>
@@ -164,6 +197,10 @@
       <type>
         <code value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="subject"/>
+      </mapping>
     </element>
   </snapshot>
   <differential>
@@ -171,6 +208,10 @@
       <path value="log-cercle-de-soins"/>
       <short value="Cercle De Soins"/>
       <definition value="Cercle De Soins"/>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="CDSCareTeam"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.idCercleSoins">
       <path value="log-cercle-de-soins.idCercleSoins"/>
@@ -181,6 +222,10 @@
       <type>
         <code value="Identifier"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="identifier"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.dateCreation">
       <path value="log-cercle-de-soins.dateCreation"/>
@@ -191,6 +236,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="period.start"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.dateMAJ">
       <path value="log-cercle-de-soins.dateMAJ"/>
@@ -201,6 +250,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="meta.lastUpdated"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.dateFin">
       <path value="log-cercle-de-soins.dateFin"/>
@@ -211,6 +264,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="period.end"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.statut">
       <path value="log-cercle-de-soins.statut"/>
@@ -221,6 +278,10 @@
       <type>
         <code value="code"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="status"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.metadonnee">
       <path value="log-cercle-de-soins.metadonnee"/>
@@ -231,6 +292,10 @@
       <type>
         <code value="Meta"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="meta"/>
+      </mapping>
     </element>
     <element id="log-cercle-de-soins.PersonnePriseCharge">
       <path value="log-cercle-de-soins.PersonnePriseCharge"/>
@@ -241,6 +306,10 @@
       <type>
         <code value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge"/>
       </type>
+      <mapping>
+        <identity value="map-log-cercle-de-soins-to-cercle-de-soins"/>
+        <map value="subject"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

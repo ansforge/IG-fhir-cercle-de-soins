@@ -10,7 +10,7 @@
   "name" : "CercleDeSoins",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-02-14T09:17:54+00:00",
+  "date" : "2024-02-14T09:42:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -32,6 +32,11 @@
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+    "uri" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
+    "name" : "Mapping modèle logique Cercle De Soins"
   }],
   "kind" : "logical",
   "abstract" : false,
@@ -51,7 +56,11 @@
         "min" : 0,
         "max" : "*"
       },
-      "isModifier" : false
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "CDSCareTeam"
+      }]
     },
     {
       "id" : "log-cercle-de-soins.idCercleSoins",
@@ -67,6 +76,10 @@
       },
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "identifier"
       }]
     },
     {
@@ -83,6 +96,10 @@
       },
       "type" : [{
         "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "period.start"
       }]
     },
     {
@@ -99,6 +116,10 @@
       },
       "type" : [{
         "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "meta.lastUpdated"
       }]
     },
     {
@@ -115,6 +136,10 @@
       },
       "type" : [{
         "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "period.end"
       }]
     },
     {
@@ -131,6 +156,10 @@
       },
       "type" : [{
         "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "status"
       }]
     },
     {
@@ -147,6 +176,10 @@
       },
       "type" : [{
         "code" : "Meta"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "meta"
       }]
     },
     {
@@ -163,6 +196,10 @@
       },
       "type" : [{
         "code" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "subject"
       }]
     }]
   },
@@ -171,7 +208,11 @@
       "id" : "log-cercle-de-soins",
       "path" : "log-cercle-de-soins",
       "short" : "Cercle De Soins",
-      "definition" : "Cercle De Soins"
+      "definition" : "Cercle De Soins",
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "CDSCareTeam"
+      }]
     },
     {
       "id" : "log-cercle-de-soins.idCercleSoins",
@@ -182,6 +223,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "identifier"
       }]
     },
     {
@@ -193,6 +238,10 @@
       "max" : "1",
       "type" : [{
         "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "period.start"
       }]
     },
     {
@@ -204,6 +253,10 @@
       "max" : "*",
       "type" : [{
         "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "meta.lastUpdated"
       }]
     },
     {
@@ -215,6 +268,10 @@
       "max" : "1",
       "type" : [{
         "code" : "date"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "period.end"
       }]
     },
     {
@@ -226,6 +283,10 @@
       "max" : "1",
       "type" : [{
         "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "status"
       }]
     },
     {
@@ -237,6 +298,10 @@
       "max" : "1",
       "type" : [{
         "code" : "Meta"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "meta"
       }]
     },
     {
@@ -248,6 +313,10 @@
       "max" : "1",
       "type" : [{
         "code" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-personne-prise-charge"
+      }],
+      "mapping" : [{
+        "identity" : "map-log-cercle-de-soins-to-cercle-de-soins",
+        "map" : "subject"
       }]
     }]
   }
