@@ -1,9 +1,9 @@
 CDS : Validation Results
 =========================================
 
-err = 1, warn = 42, info = 14
-IG Publisher Version: 1.5.16 Out of date - current version is ?pub-ver-1?
-Generated Wed Feb 14 09:01:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+err = 1, warn = 44, info = 14
+IG Publisher Version: 1.5.16
+Generated Wed Feb 14 09:21:00 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 16 / 4 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
@@ -22,7 +22,7 @@ Generated Wed Feb 14 09:01:50 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 0 / 1 / 3
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 1 / 1 / 4
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-organization-orga-int : 0 / 1 / 10
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-cercle-de-soins : 0 / 14 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-cercle-de-soins : 0 / 16 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-personne-prise-charge : 0 / 12 / 1
 </table>
 == n/a ==
@@ -98,6 +98,7 @@ WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.snapshot.e
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
@@ -105,6 +106,7 @@ WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differenti
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 == fsh-generated/resources/StructureDefinition-log-personne-prise-charge.json ==
 WARNING: StructureDefinition/log-personne-prise-charge: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-personne-prise-charge: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
