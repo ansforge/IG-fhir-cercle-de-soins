@@ -5,7 +5,7 @@ Description: "Profil héritant de la ressource FHIR pour les organisations inter
 * id 1..
 * meta 1..
 
-* identifier ..1
+// * identifier ..1 (cause un warning)
 * telecom 1..
 * partOf 1..
 * partOf only Reference($FrOrganization)
