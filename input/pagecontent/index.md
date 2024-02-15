@@ -1,4 +1,18 @@
-### Introduction
+<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>GAP Implementation Guide</b><br>
+This implementation guide contains the profiles to share medical appointments.
+</p>
+
+<blockquote class="stu-note">
+<p>
+  <b>Attention !</b> Cet Implementation Guide n'est pas la version courante.
+</p>
+</blockquote>
+
+<div class="figure" style="width:65%;">
+    <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
+</div>
+
 
 #### Présentation du contour fonctionnel
 
@@ -16,10 +30,10 @@ Ce document présente les spécifications techniques d’interopérabilité néc
 La liste ci-dessous expose la liste des profils.
 
 {% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "Parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil%" %}
-
+<!-- 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="schema-relation-ressources.png" alt="CI-SIS" title="Diagramme de séquence des flux 1a et 4a">
-</div>
+</div> -->
 
 {% include document-overview.svg %}
 
