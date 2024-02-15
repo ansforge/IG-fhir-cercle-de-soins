@@ -2,7 +2,7 @@
 // Id: log-organisation-interne
 // Title: "Organisation Interne"
 // Description: "Organisation Interne"
-// * idMembreCercleSoin 1..1
+// * idMembreCercleSoins 1..1 Identifier "Identifiant du membre du cercle de soins." "Identifiant du membre du cercle de soins."
 // * identifiantOI 0..1
 // * telecommunication 1..*
 // * adresse 0..*

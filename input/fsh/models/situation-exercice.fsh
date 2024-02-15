@@ -2,7 +2,7 @@
 // Id: log-situation-exercice
 // Title: "Situation d'exercice"
 // Description: "Situation d'exercice"
-// * idMembreCercleSoins 1..1
+// * idMembreCercleSoins 1..1 Identifier "Identifiant du membre du cercle de soins." "Identifiant du membre du cercle de soins."
 // * telecommunication 1..*
 // * adresse 0..*
 // * modeExercice 0..1

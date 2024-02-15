@@ -2,7 +2,7 @@
 // Id: log-entite-geographique
 // Title: "Entite Geographique"
 // Description: "Entite Geographique"
-// * idMembreCercleSoin 1..1
+// * idMembreCercleSoins 1..1 Identifier "Identifiant du membre du cercle de soins." "Identifiant du membre du cercle de soins."
 // * numFINESS 0..1
 // * numSIRET 0..1
 // * identifiantEG 0..1
