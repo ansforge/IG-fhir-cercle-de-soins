@@ -1,6 +1,7 @@
 Profile: CDSBundleTransactionCreation
 Parent: Bundle
 Id: cds-bundle-transaction-creation
+Title: "CDS Bundle Transaction Creation Profile"
 Description: """Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.
 Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins."""
 * type = #transaction

@@ -1,6 +1,7 @@
 Profile: CDSFrRelatedPerson
 Parent: $FrRelatedPerson
 Id: cds-fr-related-person
+Title: "CDS Fr RelatedPerson Profile"
 Description: "Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…)."
 
 * identifier MS

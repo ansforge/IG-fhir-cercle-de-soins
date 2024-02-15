@@ -2,6 +2,7 @@
 Profile: CDSCareTeam
 Parent: CareTeam // Take IHE_DCTM_CareTeam constraint https://github.com/IHE/fhir/blob/master/StructureDefinition/structuredefinition-IHE_DCTM_CareTeam.xml
 Id: cds-ihe-careteam
+Title: "CDS CareTeam Profile"
 Description: """Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam »."""
 * meta 1..
 * meta.lastUpdated MS

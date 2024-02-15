@@ -3,37 +3,28 @@
 This implementation guide contains the profiles to share medical appointments.
 </p>
 
-<blockquote class="stu-note">
-<p>
-  <b>Attention !</b> Cet Implementation Guide n'est pas la version courante.
-</p>
-</blockquote>
+<div style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+    <blockquote class="stu-note">
+    <p>
+    <b>Attention !</b> Cet Implementation Guide n'est pas la version courante.
+    </p>
+    </blockquote>
+</div>
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
 </div>
 
-
-#### Présentation du contour fonctionnel
-
 Le cercle de soins permet d’identifier l’ensemble des intervenants (personnes, professionnels et structures) participant à la prise en charge et aux actions de coordination du parcours de santé de la personne.
 Le cercle de soins d'une personne peut être échangé pour répondre aux besoins des domaines sanitaire, médico-administratif, médico-social et social.
 
-#### Présentation du contour technique
-
-Ce document présente les spécifications techniques d’interopérabilité nécessaires à la mise en œuvre du volet « Gestion du Cercle de Soins ».
-
-#### Architecture simplifiée
-
-#### Ressources profilées
+### Ressources profilées
 
 La liste ci-dessous expose la liste des profils.
 
 {% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "Parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil%" %}
-<!-- 
-<div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="schema-relation-ressources.png" alt="CI-SIS" title="Diagramme de séquence des flux 1a et 4a">
-</div> -->
+
+Schéma de l'interaction des différentes ressources
 
 {% include document-overview.svg %}
 

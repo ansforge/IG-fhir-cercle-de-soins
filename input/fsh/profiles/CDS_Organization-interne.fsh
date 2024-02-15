@@ -1,6 +1,7 @@
 Profile: CDSOrganizationInterne
 Parent: as-organization
 Id: cds-organization-interne
+Title: "CDS Organization Interne Profile"
 Description: "Profil héritant de la ressource FHIR pour les organisations internes - organisation opérationnelle interne d'une EG permettant de délivrer la prestation."
 
 * meta MS

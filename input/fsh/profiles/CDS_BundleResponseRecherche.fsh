@@ -1,6 +1,7 @@
 Profile: CDSBundleResponseRecherche
 Parent: Bundle
 Id: cds-bundle-response-recherche
+Title: "CDS Bundle Response Recherche Profile"
 Description: "Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET."
 * type = #searchset
 * entry ^slicing.discriminator.type = #profile

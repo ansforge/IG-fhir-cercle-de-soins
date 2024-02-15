@@ -1,6 +1,7 @@
 Profile: CDSBundleTransactionMAJ
 Parent: Bundle
 Id: cds-bundle-transaction-maj
+Title: "CDS Bundle Transaction MAJ Profile"
 Description: """Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.
 Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du flux de création d'un cercle de soins."""
 * type = #transaction

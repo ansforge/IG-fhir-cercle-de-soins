@@ -5,7 +5,7 @@ borderColor Green
 backgroundColor Yellow
 }
 
-component "FrCorePatient" as patient
+component "CDS FrPatient" as patient
 node "CDS_IHE_CareTeam" as careteam #99FF99
 
 component "CDS_FrRelatedPerson" as cdsfrrelatedperson
@@ -14,7 +14,7 @@ component "As Organization" as asorganization
 component "AS Practitioner" as aspractitioner
 component "AS PractitionerRole" as aspractitionerrole
 
-
+url of patient is [[StructureDefinition-cds-fr-patient.html]]
 url of cdsfrrelatedperson is [[StructureDefinition-cds-fr-related-person.html]]
 url of careteam is [[StructureDefinition-cds-ihe-careteam.html]]
 url of cdsorganization is [[StructureDefinition-cds-organization-orga-int.html]]
