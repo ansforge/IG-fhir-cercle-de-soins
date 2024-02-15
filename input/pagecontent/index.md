@@ -3,7 +3,7 @@
 This implementation guide contains the profiles to share medical appointments.
 </p>
 
-<div style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<div style="width: 65%">
     <blockquote class="stu-note">
     <p>
     <b>Attention !</b> Cet Implementation Guide n'est pas la version courante.
