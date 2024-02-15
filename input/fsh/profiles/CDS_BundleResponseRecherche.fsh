@@ -22,7 +22,7 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[careTeam].response ..0
 
 * entry[patient].resource 1..
-* entry[patient].resource only $FrPatient  //TODO Changer vers INS Patient ?
+* entry[patient].resource only CDSFrPatient
 * entry[patient].search.mode = #include
 * entry[patient].request ..0
 * entry[patient].response ..0
@@ -34,13 +34,13 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[relatedPerson].response ..0
 
 * entry[organization].resource 1..
-* entry[organization].resource only $FrOrganization
+* entry[organization].resource only as-organization
 * entry[organization].search.mode = #include
 * entry[organization].request ..0
 * entry[organization].response ..0
 
 * entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only cds-organization-orga-int
+* entry[organizationInterne].resource only cds-organization-interne
 * entry[organizationInterne].search.mode = #include
 * entry[organizationInterne].request ..0
 * entry[organizationInterne].response ..0

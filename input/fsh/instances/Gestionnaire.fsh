@@ -82,7 +82,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l'organisation responsable du cercle de soins."
 // Patient resource
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = $FrPatient
+* rest.resource[=].profile = Canonical(CDSFrPatient)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -178,8 +178,8 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Role du membre de cercle de soins"
 // Organization resource
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = Canonical(cds-organization-orga-int)
-* rest.resource[=].supportedProfile = $FrOrganization
+* rest.resource[=].profile = Canonical(cds-organization-interne)
+* rest.resource[=].supportedProfile = Canonical(as-organization)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read

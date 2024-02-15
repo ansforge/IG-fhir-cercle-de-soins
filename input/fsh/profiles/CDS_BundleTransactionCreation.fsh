@@ -22,7 +22,7 @@ Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du
 * entry[careTeam].response ..0
 
 * entry[patient].resource 1..
-* entry[patient].resource only $FrPatient //TODO Changer vers INS Patient ?
+* entry[patient].resource only CDSFrPatient
 * entry[patient].request.method obeys req-met
 * entry[patient].response ..0
 
@@ -32,12 +32,12 @@ Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du
 * entry[relatedPerson].response ..0
 
 * entry[organization].resource 1..
-* entry[organization].resource only $FrOrganization
+* entry[organization].resource only as-organization
 * entry[organization].request.method obeys req-met
 * entry[organization].response ..0
 
 * entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only cds-organization-orga-int
+* entry[organizationInterne].resource only cds-organization-interne
 * entry[organizationInterne].request.method obeys req-met
 * entry[organizationInterne].response ..0
 
