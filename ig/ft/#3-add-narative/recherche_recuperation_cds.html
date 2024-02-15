@@ -192,15 +192,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#flux-2a--recherche-de-cercles-de-soins" id="markdown-toc-flux-2a--recherche-de-cercles-de-soins">Flux 2a : recherche de cercles de soins</a></li>
+  <li><a href="#flux-3a--réponse-à-la-recherche-de-cercles-de-soins" id="markdown-toc-flux-3a--réponse-à-la-recherche-de-cercles-de-soins">Flux 3a : Réponse à la recherche de cercles de soins</a></li>
+  <li><a href="#flux-2b--récupération-dun-cercle-de-soins" id="markdown-toc-flux-2b--récupération-dun-cercle-de-soins">Flux 2b : Récupération d’un cercle de soins</a></li>
+  <li><a href="#flux-3b--réponse-à-la-récupération-dun-cercle-de-soins" id="markdown-toc-flux-3b--réponse-à-la-récupération-dun-cercle-de-soins">Flux 3b : réponse à la récupération d’un cercle de soins</a></li>
+  <li><a href="#flux-4b--mise-à-jour-dun-cercle-de-soins" id="markdown-toc-flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : mise à jour d’un cercle de soins</a></li>
+</ul>
+
 </div>
-<h4 id="flux-2a--recherche-de-cercles-de-soins">Flux 2a : Recherche de cercles de soins</h4>
+<h3 id="flux-2a--recherche-de-cercles-de-soins">Flux 2a : recherche de cercles de soins</h3>
 
-<p>Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM.
-Le flux 2a de recherche de cercles de soins est une requête HTTP GET reposant sur l’interaction « search » de FHIR .</p>
+<p>Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM reposant sur l’interaction « search » de FHIR.</p>
 
-<p>La requête GET est accompagnée des paramètres listés dans le tableau ci-dessous. Ces critères de recherche ont été définis dans les Spécifications Fonctionnelles des Echanges de ce volet. Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes.</p>
+<p>La requête GET est accompagnée des paramètres listés dans le tableau ci-dessous. Ces critères de recherche ont été définis dans les Spécifications Fonctionnelles des Echanges. Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes.</p>
 
 <table>
   <thead>
@@ -280,7 +286,7 @@ Le flux 2a de recherche de cercles de soins est une requête HTTP GET reposant s
     </tr>
     <tr>
       <td style="text-align: left">Identifiant du professionnel</td>
-      <td style="text-align: left">participant:PractitionerRole.partof:PractitionerRole.practitioner:Practitioner.identifier</td>
+      <td style="text-align: left">participant:PractitionerRole.practitioner:Practitioner.identifier</td>
     </tr>
     <tr>
       <td style="text-align: left">Identifiant de l’entité géographique, de l’entité juridique ou de l’organisation interne</td>
@@ -292,7 +298,7 @@ Le flux 2a de recherche de cercles de soins est une requête HTTP GET reposant s
     </tr>
     <tr>
       <td style="text-align: left">Nom du membre du cercle de soins (professionnel dans un exercice professionnel ou dans une situation d’exercice)</td>
-      <td style="text-align: left">participant:PractitionerRole.partof.nameex : string (paramètre custom)</td>
+      <td style="text-align: left">participant:PractitionerRole.practitioner.name : string (paramètre custom)</td>
     </tr>
     <tr>
       <td style="text-align: left">Nom du membre du cercle de soins (entité géographique ou une organisation interne)</td>
@@ -317,15 +323,11 @@ Le flux 2a de recherche de cercles de soins est une requête HTTP GET reposant s
   </tbody>
 </table>
 
-<!-- TODO MAJ ANNUAIRE -->
-
 <p>Tableau - Liste des critères de recherche de cercles de soins, paramètres de la requête HTTP GET</p>
 
-<p>Le paramètre « _include »  pourra être utilisé pour demander le renvoi des ressources référencées par les éléments de la ressource « CareTeam », particulièrement par les éléments « subject » et « participant.member ».</p>
+<p>Les paramètres « _include » et « _revinclude » peuvent être utilisées pour récupérer les ressources référencées. Le paramètre « _elements »  pourra être utilisé pour limiter les attributs retournés par le serveur.</p>
 
-<p>Afin de pouvoir retourner les ressources référencées par la CareTeam de manière itérative à plusieurs niveaux d’imbrication, le modificateur « : iterate » devra être utilisé avec les paramètres « _include » et « _revinclude ». Afin de limiter le contenu renvoyé dans le résultat de la recherche, le paramètre « _elements »  pourra être utilisé pour lister les attributs de la ressource « CareTeam » à retourner par le serveur.</p>
-
-<p>Exemples de requêtes</p>
+<h4 id="exemples-de-requêtes">Exemples de requêtes</h4>
 
 <ul>
   <li>Rechercher les ressources de type Careteam dont le sujet porte l’identifiant 123456. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources « CareTeam » retournées ainsi que les ressources référencées par ces-dites ressources.</li>
@@ -347,32 +349,27 @@ Pour plus d’information sur la syntaxe des requêtes de recherche veuillez con
 
 <p>“GET http://targetsystem.com/API/Careteam?_include:iterate =CareTeam:subject&amp;participant:RelatedPerson.name:exact=Ducros&amp;participant:RelatedPerson.address=Tourcoing” HTTP/1.1</p>
 
-<h4 id="flux-3a--réponse-à-la-recherche-de-cercles-de-soins">Flux 3a : Réponse à la recherche de cercles de soins</h4>
+<h3 id="flux-3a--réponse-à-la-recherche-de-cercles-de-soins">Flux 3a : Réponse à la recherche de cercles de soins</h3>
 
 <p>Le flux 3a constitue la réponse à la requête GET du flux 2a. Lorsque la recherche s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « Bundle » de type « searchset » encapsulant 0, 1 à plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET.
 Les flux 2a et 3a correspondent à la transaction IHE « Search for CareTeam » [PCC-46].</p>
 
-<h4 id="flux-2b--récupération-dun-cercle-de-soins">Flux 2b : Récupération d’un cercle de soins</h4>
+<h3 id="flux-2b--récupération-dun-cercle-de-soins">Flux 2b : Récupération d’un cercle de soins</h3>
 
-<p>Ce flux se base sur la requête de la transaction IHE « Retrieve Care Team » [PCC-47] du profil DCTM.
-La récupération d’une ressource CareTeam correspondant à un identifiant spécifié est basée sur l’interaction « read » de FHIR .
-Le flux 2b est donc une requête HTTP GET accompagnée du paramètre « id ».
-La récupération d’une ressource CareTeam correspondant à un identifiant logique doit pouvoir être réalisée en s’appuyant sur l’interaction « vread » de FHIR  qui permet de tenir compte de la version de la ressource et sur l’interaction « history » qui permet de demander la récupération d’une version précise de la ressource  (history-instance et history-type devront être proposés).</p>
+<p>Ce flux se base sur la requête de la transaction IHE « Retrieve Care Team » [PCC-47] du profil DCTM. La récupération d’une ressource CareTeam correspondant à un identifiant spécifié est basée sur l’interaction « read » de FHIR. Le flux 2b est donc une requête HTTP GET accompagnée du paramètre « id ».</p>
 
-<p>Exemple de requête :</p>
+<p>La récupération d’une ressource CareTeam correspondant à un identifiant logique doit pouvoir être réalisée en s’appuyant sur l’interaction « vread » de FHIR  qui permet de tenir compte de la version de la ressource et sur l’interaction « history » qui permet de demander la récupération d’une version précise de la ressource  (history-instance et history-type devront être proposés).</p>
 
-<ul>
-  <li>Rechercher la deuxième version de la ressource CareTeam 123.</li>
-</ul>
+<h4 id="exemple-de-requête---rechercher-la-deuxième-version-de-la-ressource-careteam-123">Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123</h4>
 
 <p>“GET http://targetsystem.com/API/Careteam/123/_history/2”</p>
 
-<h4 id="flux-3b--réponse-à-la-récupération-dun-cercle-de-soins">Flux 3b : Réponse à la récupération d’un cercle de soins</h4>
+<h3 id="flux-3b--réponse-à-la-récupération-dun-cercle-de-soins">Flux 3b : réponse à la récupération d’un cercle de soins</h3>
 
-<p>Le flux 3b constitue la réponse à la requête GET du flux 3a. Lorsque la requête s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « CareTeam » portant l’identifiant demandé et le cas échéant correspondant à la version précisée dans la requête. 
+<p>Le flux 3b constitue la réponse à la requête GET du flux 3a. Lorsque la requête s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « CareTeam » portant l’identifiant demandé et le cas échéant correspondant à la version précisée dans la requête.
 Les flux 2b et 3b de récupération d’un cercle de soins correspondent à la transaction IHE « Retrieve CareTeam » [PCC-47].</p>
 
-<h4 id="flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : Mise à jour d’un cercle de soins</h4>
+<h3 id="flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : mise à jour d’un cercle de soins</h3>
 
 <p>Le flux de mise à jour de la ressource « CareTeam » est une requête HTTP PUT. La ressource « CareTeam » constitue le corps de la requête. La mise à jour de la ressource CareTeam nécessite de préciser l’identifiant logique de la ressource à mettre à jour. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
 La mise à jour du cercle de soins doit pouvoir être réalisée en s’appuyant sur l’interaction « update » de FHIR.
@@ -426,7 +423,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 15, 2024 16:51+0000">2024-02-15</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 15, 2024 17:14+0000">2024-02-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
