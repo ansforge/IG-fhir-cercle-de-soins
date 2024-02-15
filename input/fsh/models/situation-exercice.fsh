@@ -3,8 +3,8 @@
 // Title: "Situation d'exercice"
 // Description: "Situation d'exercice"
 // * idMembreCercleSoins 1..1 Identifier "Identifiant du membre du cercle de soins." "Identifiant du membre du cercle de soins."
-// * telecommunication 1..*
-// * adresse 0..*
+// * telecommunication 1..* ContactPoint "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.)" "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.)"
+// * adresse 0..* Address "Adresse(s) géopostale(s)" "Adresse(s) géopostale(s)"
 // * modeExercice 0..1
 // * role 0..1
 // * boiteLettresMSS 0..*
