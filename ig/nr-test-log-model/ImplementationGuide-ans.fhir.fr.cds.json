@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-02-14T17:54:26+00:00",
+  "date" : "2024-02-15T15:07:24+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -858,6 +858,18 @@
       },
       "name" : "CI-SIS Gestion du Cercle de Soins - Gestionnaire",
       "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/log-contact"
+      },
+      "name" : "Contact",
+      "description" : "Contact",
       "exampleBoolean" : false
     },
     {

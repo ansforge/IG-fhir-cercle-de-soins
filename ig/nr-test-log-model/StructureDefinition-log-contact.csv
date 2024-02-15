@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"log-contact","log-contact","","","",0,*,"","","","null {[]} {[]}
+","Contact","Contact","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-contact.idMembreCercleSoins","log-contact.idMembreCercleSoins","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant du membre du cercle de soins.","Identifiant du membre du cercle de soins.","","","","","","","","","",,,,,"",,,,"log-contact.idMembreCercleSoins",1,1,"",""
+"log-contact.telecommunication","log-contact.telecommunication","","","",1,*,"","","","ContactPoint {[]} {[]}
+","Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.)","Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.)","","","","","","","","","",,,,,"",,,,"log-contact.telecommunication",1,*,"",""
+"log-contact.adresse","log-contact.adresse","","","",0,*,"","","","Address {[]} {[]}
+","Adresse(s) géopostale(s)","Adresse(s) géopostale(s)","","","","","","","","","",,,,,"",,,,"log-contact.adresse",0,*,"",""
+"log-contact.role","log-contact.role","","","",1,1,"","","","code {[]} {[]}
+","Role du contact","Indique la responsabilité d’une Personne Tierce au sein du Cercle de Soins d’un Usager. Il peut s’agir par exemple du rôle d’aidant, de personne de confiance, de responsable légal.","","","","","","","","","",,,,,"",,,,"log-contact.role",1,1,"",""
+"log-contact.description","log-contact.description","","","",0,1,"","","","string {[]} {[]}
+","Une description du contact.","Une description du contact.","","","","","","","","","",,,,,"",,,,"log-contact.description",0,1,"",""
+"log-contact.relation","log-contact.relation","","","",0,1,"","","","code {[]} {[]}
+","Lien de relation","Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.","","","","","","","","","",,,,,"",,,,"log-contact.relation",0,1,"",""
+"log-contact.metadonnee","log-contact.metadonnee","","","",1,1,"","","","Meta {[]} {[]}
+","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-contact.metadonnee",1,1,"",""

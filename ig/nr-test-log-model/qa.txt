@@ -1,9 +1,9 @@
 CDS : Validation Results
 =========================================
 
-err = 1, warn = 85, info = 15
+err = 1, warn = 101, info = 15
 IG Publisher Version: 1.5.16
-Generated Wed Feb 14 17:57:38 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+Generated Thu Feb 15 15:10:32 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 16 / 4 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
@@ -24,6 +24,7 @@ Generated Wed Feb 14 17:57:38 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 1 / 1 / 4
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-cds-organization-orga-int : 0 / 1 / 11
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-cercle-de-soins : 0 / 18 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-contact : 0 / 16 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-exercice-professionnel : 0 / 12 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-membre-cercle-de-soins : 0 / 10 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/fsh-generated/resources/StructureDefinition-log-personne-prise-charge : 0 / 12 / 1
@@ -124,6 +125,23 @@ WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differenti
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-cercle-de-soins: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+== fsh-generated/resources/StructureDefinition-log-contact.json ==
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
+WARNING: StructureDefinition/log-contact: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 == fsh-generated/resources/StructureDefinition-log-exercice-professionnel.json ==
 WARNING: StructureDefinition/log-exercice-professionnel: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)
 WARNING: StructureDefinition/log-exercice-professionnel: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' (defined in http://hl7.org/fhir/StructureDefinition/StructureDefinition)

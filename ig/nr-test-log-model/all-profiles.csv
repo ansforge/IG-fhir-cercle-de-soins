@@ -4955,6 +4955,22 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Personne prise en charge.","La personne prise en charge.","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.PersonnePriseCharge",1,1,"",""
 "log-cercle-de-soins","log-cercle-de-soins.MembreCercleSoin","log-cercle-de-soins.MembreCercleSoin","","","",0,*,"","","","http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-membre-cercle-de-soins {[]} {[]}
 ","Membre du cercle de soin","Membre du cercle de soin","","","","","","","","","",,,,,"",,,,"log-cercle-de-soins.MembreCercleSoin",0,*,"",""
+"log-contact","log-contact","log-contact","","","",0,*,"","","","null {[]} {[]}
+","Contact","Contact","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"log-contact","log-contact.idMembreCercleSoins","log-contact.idMembreCercleSoins","","","",1,1,"","","","Identifier {[]} {[]}
+","Identifiant du membre du cercle de soins.","Identifiant du membre du cercle de soins.","","","","","","","","","",,,,,"",,,,"log-contact.idMembreCercleSoins",1,1,"",""
+"log-contact","log-contact.telecommunication","log-contact.telecommunication","","","",1,*,"","","","ContactPoint {[]} {[]}
+","Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.)","Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.)","","","","","","","","","",,,,,"",,,,"log-contact.telecommunication",1,*,"",""
+"log-contact","log-contact.adresse","log-contact.adresse","","","",0,*,"","","","Address {[]} {[]}
+","Adresse(s) géopostale(s)","Adresse(s) géopostale(s)","","","","","","","","","",,,,,"",,,,"log-contact.adresse",0,*,"",""
+"log-contact","log-contact.role","log-contact.role","","","",1,1,"","","","code {[]} {[]}
+","Role du contact","Indique la responsabilité d’une Personne Tierce au sein du Cercle de Soins d’un Usager. Il peut s’agir par exemple du rôle d’aidant, de personne de confiance, de responsable légal.","","","","","","","","","",,,,,"",,,,"log-contact.role",1,1,"",""
+"log-contact","log-contact.description","log-contact.description","","","",0,1,"","","","string {[]} {[]}
+","Une description du contact.","Une description du contact.","","","","","","","","","",,,,,"",,,,"log-contact.description",0,1,"",""
+"log-contact","log-contact.relation","log-contact.relation","","","",0,1,"","","","code {[]} {[]}
+","Lien de relation","Lien de la personne point de contact auprès d'une autre personne. Exemple dans le cas d'un patient, ce lien indique si le point de contact est son enfant, son frère, etc.","","","","","","","","","",,,,,"",,,,"log-contact.relation",0,1,"",""
+"log-contact","log-contact.metadonnee","log-contact.metadonnee","","","",1,1,"","","","Meta {[]} {[]}
+","Informations relatives à la gestion des classes et des données.","Informations relatives à la gestion des classes et des données.","","","","","","","","","",,,,,"",,,,"log-contact.metadonnee",1,1,"",""
 "log-exercice-professionnel","log-exercice-professionnel","log-exercice-professionnel","","","",0,*,"","","","null {[]} {[]}
 ","Exercice Professionnel","Exercice Professionnel","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "log-exercice-professionnel","log-exercice-professionnel.civiliteExercice","log-exercice-professionnel.civiliteExercice","","","",0,1,"","","","code {[]} {[]}
