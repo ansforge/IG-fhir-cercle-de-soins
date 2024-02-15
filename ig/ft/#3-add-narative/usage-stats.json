@@ -8,33 +8,39 @@
     "Bundle": [
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche",
-        "title": "CDSBundleResponseRecherche"
+        "title": "CDS Bundle Response Recherche Profile"
       },
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation",
-        "title": "CDSBundleTransactionCreation"
+        "title": "CDS Bundle Transaction Creation Profile"
       },
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj",
-        "title": "CDSBundleTransactionMAJ"
+        "title": "CDS Bundle Transaction MAJ Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient",
+        "title": "CDS FrPatient Profile"
       }
     ],
     "RelatedPerson": [
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
-        "title": "CDSFrRelatedPerson"
+        "title": "CDS Fr RelatedPerson Profile"
       }
     ],
     "CareTeam": [
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
-        "title": "CDSCareTeam"
+        "title": "CDS CareTeam Profile"
       }
     ],
     "Organization": [
       {
-        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int",
-        "title": "CDSOrganizationOrgaInt"
+        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-interne",
+        "title": "CDS Organization Interne Profile"
       }
     ]
   },
@@ -48,6 +54,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -55,10 +64,17 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
+      "Patient.name",
       "RelatedPerson.name"
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -98,6 +114,24 @@
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrOrganizationShortName": [
       "Organization"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrPatientBirthdateUpdateIndicator": [
+      "Patient"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrPatientContactComment": [
+      "Patient.contact"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrPatientContactIdentifier": [
+      "Patient.contact"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrPatientDeathPlace": [
+      "Patient"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentReliability": [
+      "Patient"
+    ],
+    "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentityMethodCollection": [
+      "Patient"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
       "Organization.meta"

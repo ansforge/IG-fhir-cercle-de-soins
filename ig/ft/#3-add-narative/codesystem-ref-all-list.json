@@ -1,6 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.4.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+    },
+    {
       "url" : "http://hl7.org/fhir/administrative-gender",
       "version" : "4.0.1",
       "status" : "active",
@@ -85,6 +109,18 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
       "url" : "http://hl7.org/fhir/name-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -107,6 +143,40 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+    },
+    {
+      "url" : "http://interopsante.org/fhir/CodeSystem/fr-cs-mode-validation-identite",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "fr-cs-mode-validation-identite",
+      "title" : null,
+      "description" : null,
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-mode-validation-identite" : "fr-mode-validation-identite"
+    },
+    {
+      "url" : "http://interopsante.org/fhir/CodeSystem/fr-v2-0203",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "fr-v2-0203",
+      "title" : null,
+      "description" : "HL7 v2 - Identifier type",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-patient-identifier-type" : "fr-patient-identifier-type"
+    },
+    {
+      "url" : "http://interopsante.org/fhir/CodeSystem/fr-v2-0445",
+      "version" : "1.0.1",
+      "status" : "draft",
+      "name" : "fr-v2-0445",
+      "title" : "Identitity reliability|Fiabilité de l'identité",
+      "description" : "This code system  includes all the French Identity reliabilty codes (InteropSanté).",
+      "oids" : ["2.16.840.1.113883.12.0445"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-identity-reliability" : "fr-identity-reliability"
     },
     {
       "url" : "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
@@ -141,8 +211,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -190,7 +260,8 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -202,7 +273,32 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-patient-identifier-type" : "fr-patient-identifier-type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -239,6 +335,18 @@
       "uses" : {
       },
       "https://interop.esante.gouv.fr/ig/nos/1.1.0/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79-CiviliteExercice-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "TRE_R20-Pays",
+      "title" : null,
+      "description" : "Référentiel des codes pays provenant du COG INSEE",
+      "oids" : ["1.2.250.1.213.2.24"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-cog-commune-pays" : "fr-cog-commune-pays"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
