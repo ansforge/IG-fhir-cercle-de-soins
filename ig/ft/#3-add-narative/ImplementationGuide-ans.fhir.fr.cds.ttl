@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-16T11:00:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-16T16:08:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -660,6 +660,18 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization> ;
+         fhir:reference [ fhir:v "SearchParameter/cds-careteam-managing-organization" ]
+       ] ;
+       fhir:name [ fhir:v "cds-careteam-managing-organization" ] ;
+       fhir:description [ fhir:v "Organisation responsable du Cercle De Soins" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SearchParameter" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-end" ]
        ] ;
@@ -701,18 +713,6 @@
        ] ;
        fhir:name [ fhir:v "cds-patient-birthplace" ] ;
        fhir:description [ fhir:v "Lieu de naissance du patient" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SearchParameter" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-practitionerrole-nameex> ;
-         fhir:reference [ fhir:v "SearchParameter/cds-practitionerrole-nameex" ]
-       ] ;
-       fhir:name [ fhir:v "cds-practitionerrole-nameex" ] ;
-       fhir:description [ fhir:v "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

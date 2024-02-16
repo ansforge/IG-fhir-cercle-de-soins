@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-02-16T11:00:57+00:00",
+  "date" : "2024-02-16T16:08:15+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -746,6 +746,18 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/cds-careteam-managing-organization"
+      },
+      "name" : "cds-careteam-managing-organization",
+      "description" : "Organisation responsable du Cercle De Soins",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/cds-careteam-participant-end"
       },
       "name" : "cds-careteam-participant-end",
@@ -786,18 +798,6 @@
       },
       "name" : "cds-patient-birthplace",
       "description" : "Lieu de naissance du patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/cds-practitionerrole-nameex"
-      },
-      "name" : "cds-practitionerrole-nameex",
-      "description" : "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice",
       "exampleBoolean" : false
     },
     {

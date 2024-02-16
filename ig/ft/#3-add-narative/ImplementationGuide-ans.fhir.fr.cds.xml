@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2024-02-16T11:00:57+00:00"/>
+  <date value="2024-02-16T16:08:15+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -573,6 +573,17 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/cds-careteam-managing-organization"/>
+      </reference>
+      <name value="cds-careteam-managing-organization"/>
+      <description value="Organisation responsable du Cercle De Soins"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/cds-careteam-participant-end"/>
       </reference>
       <name value="cds-careteam-participant-end"/>
@@ -610,17 +621,6 @@
       </reference>
       <name value="cds-patient-birthplace"/>
       <description value="Lieu de naissance du patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/cds-practitionerrole-nameex"/>
-      </reference>
-      <name value="cds-practitionerrole-nameex"/>
-      <description value="Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
