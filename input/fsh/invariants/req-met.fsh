@@ -1,4 +1,4 @@
 Invariant: req-met
-Description: "POST s'il s’agit d’un nouvel élément ou PUT s'il s’agit d’un élément qui existe déjà"
+Description: ""
 Severity: #error
 Expression: "value='POST' or value='PUT'"
