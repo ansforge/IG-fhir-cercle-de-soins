@@ -1307,7 +1307,7 @@ Table 26 Flux de recherche
 
 Illustration du cas d'usage présenté à l'étape 0.
 
-<div class="figure" style="margin:auto; width:65%;">
+<div class="figure" style="margin:auto; width:100%;">
     <img style="height: auto; width: 100%;" src="sf_image11.png" alt="Flux1" title="Flux1">
 </div>
 
@@ -1315,7 +1315,7 @@ Illustration du cas d'usage présenté à l'étape 0.
 
 Autre illustration du cas d’usage avec SI DAC en tant que créateur & gestionnaire, Dossier Patient Informatisé et SI Médecin traitant en tant que consommateur
 
-<div class="figure" style="margin:auto; width:65%;">
+<div class="figure" style="margin:auto; width:100%;">
     <img style="height: auto; width: 100%;" src="sf_image12.png" alt="Flux1" title="Flux1">
 </div>
 
