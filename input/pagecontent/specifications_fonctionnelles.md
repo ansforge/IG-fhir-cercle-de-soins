@@ -33,7 +33,7 @@ Cette section présente deux exemples, non exclusifs, de l’utilisation d’un 
 Il n’existe pas de définition juridique du cercle de soins en tant que telle. Le « cercle de soins » d’une personne peut être défini comme le regroupement de personnes, professionnels et structures intervenant dans la prise en charge de la personne dans le domaine sanitaire, médico-administratif, médico-social et social. Le « cercle de soins » d'une personne peut donc être constitué des membres de son équipe de soins, d'autres professionnels, de structures, de ses aidants, de sa personne de confiance ou encore de ses représentants légaux.
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img style="height: auto; width: 100%;" src="sf_image1.png" alt="Flux1" title="Flux1">
+    <img src="sf_image1.png" alt="Flux1" title="Flux1">
 </div>
 
 ##### Equipe de soins
@@ -102,7 +102,7 @@ Les lecteurs cibles sont principalement des chefs de projets ainsi que toute per
 Le domaine « Cercle de soins » est relatif à la gestion du cercle de soins d’une personne afin d’identifier l’ensemble des personnes, professionnels et structures participant à sa prise en charge dans le domaine sanitaire, médico-administratif, médico-social et social.
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img style="height: auto; width: 100%;" src="sf_image2.png" alt="Flux1" title="Flux1">
+    <img src="sf_image2.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 1 Organisation du contexte métier de l'étude "Cercle de soins"
@@ -293,7 +293,7 @@ Table 4 Table des acteurs
 #### Création du cercle de soins
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img style="height: auto; width: 100%;" src="sf_image6.png" alt="Flux1" title="Flux1">
+    <img src="sf_image6.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 5 : Processus collaboratif "Création du cercle de soins"
@@ -319,7 +319,7 @@ Table 6 Flux
 #### Consultation du cercle de soins
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img style="height: auto; width: 100%;" src="sf_image7.png" alt="Flux1" title="Flux1">
+    <img src="sf_image7.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 6 : Processus collaboratif "Consultation du cercle de soins"
@@ -346,7 +346,7 @@ Table 8 Flux
 #### Mise à jour du cercle de soins
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img style="height: auto; width: 100%;" src="sf_image8.png" alt="Flux1" title="Flux1">
+    <img src="sf_image8.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 7 : Processus collaboratif "Mise à jour du cercle de soins"
