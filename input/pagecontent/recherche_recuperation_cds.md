@@ -1,5 +1,10 @@
 ### Flux 2a : recherche de cercles de soins
 
+```
+Plus d'informations sur la search en FHIR sur la documentation officielle
+https://www.hl7.org/fhir/R4/search.html
+```
+
 Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM reposant sur l’interaction « search » de FHIR.
 
 La requête GET est accompagnée des paramètres de recherches définis dans le [CapabilityStatement du Gestionnaire](CapabilityStatement-CDSGestionnaire.html).
@@ -30,7 +35,6 @@ Les paramètres «_include » et «_revinclude » peuvent être utilisés pour r
 "GET http://targetsystem.com/API/Careteam?_include:iterate=*&patient.identifier=http://exAutoriteAffectation/patient|123456" HTTP/1.1
 
 * Rechercher les ressources de type Careteam ayant un membre de type RelatedPerson portant le nom Ducros et vivant à Tourcoing. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par l’élément « subject » des ressources « Careteam » retournées, c’est-à-dire les ressources correspondant aux patients ayant cette personne tierce dans leur cercle de soins.
-Pour plus d’information sur la syntaxe des requêtes de recherche veuillez consulter la documentation relative à l’interaction de recherche, « search », de l’API REST FHIR .
 
 "GET http://targetsystem.com/API/Careteam?_include:iterate =CareTeam:subject&participant:RelatedPerson.name:exact=Ducros&participant:RelatedPerson.address=Tourcoing" HTTP/1.1
 
