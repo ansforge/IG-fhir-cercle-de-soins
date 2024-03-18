@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2024-02-21T15:34:54+00:00"/>
+  <date value="2024-03-18T15:36:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -58,7 +58,7 @@
   <dependsOn id="ans_fr_nos">
     <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
     <packageId value="ans.fr.nos"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -548,24 +548,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-organization-interne"/>
-      </reference>
-      <name value="CDS Organization Interne Profile"/>
-      <description value="Profil héritant de la ressource FHIR pour les organisations internes - organisation opérationnelle interne d'une EG permettant de délivrer la prestation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
         <reference value="SearchParameter/cds-careteam-end"/>
       </reference>
       <name value="cds-careteam-end"/>
-      <description value="Date de fin du cercle de soins"/>
+      <description value="Recherche sur la date de fin du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -609,7 +598,7 @@
         <reference value="SearchParameter/cds-careteam-start"/>
       </reference>
       <name value="cds-careteam-start"/>
-      <description value="Date de création du cercle de soins"/>
+      <description value="Recherche sur la date de création du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -10,7 +10,7 @@
   "name" : "CDSFrPatient",
   "title" : "CDS FrPatient Profile",
   "status" : "draft",
-  "date" : "2024-02-21T15:34:54+00:00",
+  "date" : "2024-03-18T15:36:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -385,7 +385,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -439,7 +439,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -493,7 +493,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -578,7 +578,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -631,7 +631,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -716,7 +716,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -841,7 +841,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -926,7 +926,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1047,7 +1047,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1132,7 +1132,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1466,7 +1466,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1520,7 +1520,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1574,7 +1574,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1628,7 +1628,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1713,7 +1713,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1753,14 +1753,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x]",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x]",
       "short" : "Value of extension",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).",
@@ -1866,7 +1858,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -1879,14 +1871,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].use",
       "short" : "home | work | temp | old | billing - purpose of this address",
       "definition" : "The purpose of this address.",
@@ -1946,14 +1930,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].type",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].type",
       "short" : "postal | physical | both",
       "definition" : "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
@@ -2010,14 +1986,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].text",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].text",
       "short" : "Text representation of the address",
       "definition" : "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.",
@@ -2066,14 +2034,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].line",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].line",
       "short" : "Street name, number, direction & P.O. Box etc.",
       "definition" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
@@ -2126,14 +2086,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].city",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].city",
       "short" : "Name of city, town etc.",
       "definition" : "The name of the city, town, suburb, village or other community or delivery center.",
@@ -2186,14 +2138,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].district",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].district",
       "short" : "District name (aka county)",
       "definition" : "The name of the administrative area (county).",
@@ -2243,14 +2187,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].state",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].state",
       "short" : "Sub-unit of country (abbreviations ok)",
       "definition" : "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).",
@@ -2300,14 +2236,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].postalCode",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].postalCode",
       "short" : "Postal code for area",
       "definition" : "A postal code designating a region defined by the postal service.",
@@ -2360,14 +2288,6 @@
     },
     {
       "id" : "Patient.extension:birthPlace.value[x].country",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.extension.value[x].country",
       "short" : "Country (e.g. can be ISO 3166 2 or 3 letter code)",
       "definition" : "Country - a nation as commonly understood or generally accepted.",
@@ -2460,7 +2380,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -2538,7 +2458,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them",
@@ -2761,7 +2681,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -2774,14 +2694,6 @@
     },
     {
       "id" : "Patient.identifier:INS-NIR.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -2914,14 +2826,6 @@
     },
     {
       "id" : "Patient.identifier:INS-NIR.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a OID that describes a set values that are unique. | Autorité d'affectation des INS-NIR",
@@ -2971,14 +2875,6 @@
     },
     {
       "id" : "Patient.identifier:INS-NIR.value",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -3063,7 +2959,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3131,7 +3027,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3297,7 +3193,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -3310,14 +3206,6 @@
     },
     {
       "id" : "Patient.identifier:INS-NIA.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -3450,14 +3338,6 @@
     },
     {
       "id" : "Patient.identifier:INS-NIA.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a OID that describes a set values that are unique. | Autorité d'affectation des INS-NIA",
@@ -3507,14 +3387,6 @@
     },
     {
       "id" : "Patient.identifier:INS-NIA.value",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -3599,7 +3471,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3667,7 +3539,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -3833,7 +3705,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -3846,14 +3718,6 @@
     },
     {
       "id" : "Patient.identifier:INS-C.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -3986,14 +3850,6 @@
     },
     {
       "id" : "Patient.identifier:INS-C.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -4043,14 +3899,6 @@
     },
     {
       "id" : "Patient.identifier:INS-C.value",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -4135,7 +3983,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4203,7 +4051,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4369,7 +4217,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -4382,14 +4230,6 @@
     },
     {
       "id" : "Patient.identifier:NDP.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -4522,14 +4362,6 @@
     },
     {
       "id" : "Patient.identifier:NDP.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -4579,14 +4411,6 @@
     },
     {
       "id" : "Patient.identifier:NDP.value",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -4671,7 +4495,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4739,7 +4563,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -4905,7 +4729,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -4918,14 +4742,6 @@
     },
     {
       "id" : "Patient.identifier:PI.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -5058,14 +4874,6 @@
     },
     {
       "id" : "Patient.identifier:PI.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -5114,14 +4922,6 @@
     },
     {
       "id" : "Patient.identifier:PI.value",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -5206,7 +5006,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -5274,7 +5074,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -5440,7 +5240,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -5453,14 +5253,6 @@
     },
     {
       "id" : "Patient.identifier:RRI.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
       "definition" : "The purpose of this identifier.",
@@ -5593,14 +5385,6 @@
     },
     {
       "id" : "Patient.identifier:RRI.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.system",
       "short" : "The namespace for the identifier value",
       "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
@@ -5649,14 +5433,6 @@
     },
     {
       "id" : "Patient.identifier:RRI.value",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.identifier.value",
       "short" : "The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
@@ -5741,7 +5517,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -5809,7 +5585,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -6092,7 +5868,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -6146,7 +5922,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -6159,14 +5935,6 @@
     },
     {
       "id" : "Patient.name:usualName.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.use",
       "short" : "usual | official | temp | nickname | anonymous | old | maiden",
       "definition" : "Identifies the purpose for this name.",
@@ -6223,14 +5991,6 @@
     },
     {
       "id" : "Patient.name:usualName.text",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.text",
       "short" : "Text representation of the full name",
       "definition" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
@@ -6271,14 +6031,6 @@
     },
     {
       "id" : "Patient.name:usualName.family",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.family",
       "short" : "Family name (often called 'Surname')",
       "definition" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
@@ -6323,14 +6075,6 @@
     },
     {
       "id" : "Patient.name:usualName.given",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.given",
       "short" : "Given names (not always 'first'). Includes middle names",
       "definition" : "Given name.",
@@ -6377,14 +6121,6 @@
     },
     {
       "id" : "Patient.name:usualName.prefix",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.prefix",
       "short" : "Parts that come before the name",
       "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
@@ -6434,14 +6170,6 @@
     },
     {
       "id" : "Patient.name:usualName.suffix",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.suffix",
       "short" : "jeu de valeurs pour spécifier le titre de la personne",
       "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
@@ -6525,7 +6253,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -6693,7 +6421,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -6747,7 +6475,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -6760,14 +6488,6 @@
     },
     {
       "id" : "Patient.name:officialName.use",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.use",
       "short" : "usual | official | temp | nickname | anonymous | old | maiden",
       "definition" : "Identifies the purpose for this name.",
@@ -6824,14 +6544,6 @@
     },
     {
       "id" : "Patient.name:officialName.text",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.text",
       "short" : "Text representation of the full name",
       "definition" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
@@ -6872,14 +6584,6 @@
     },
     {
       "id" : "Patient.name:officialName.family",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.family",
       "short" : "Family name (often called 'Surname')",
       "definition" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
@@ -6924,14 +6628,6 @@
     },
     {
       "id" : "Patient.name:officialName.given",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.given",
       "short" : "Given names (not always 'first'). Includes middle names",
       "definition" : "Given name.",
@@ -6978,14 +6674,6 @@
     },
     {
       "id" : "Patient.name:officialName.prefix",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.prefix",
       "short" : "Parts that come before the name",
       "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
@@ -7035,14 +6723,6 @@
     },
     {
       "id" : "Patient.name:officialName.suffix",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.name.suffix",
       "short" : "jeu de valeurs pour spécifier le titre de la personne",
       "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
@@ -7126,7 +6806,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -7187,7 +6867,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "mustSupport" : true,
       "isSummary" : true,
@@ -7570,7 +7250,7 @@
         "human" : "If the Attachment has data, it SHALL have a contentType",
         "expression" : "data.empty() or contentType.exists()",
         "xpath" : "not(exists(f:data)) or exists(f:contentType)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -7718,7 +7398,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -7772,7 +7452,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -7826,7 +7506,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -7872,7 +7552,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -8112,7 +7792,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -8261,7 +7941,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -8274,14 +7954,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RolePerson.coding.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.system",
       "short" : "Identity of the terminology system",
       "definition" : "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -8327,14 +7999,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RolePerson.coding.version",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.version",
       "short" : "Version of the system - if relevant",
       "definition" : "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -8378,14 +8042,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RolePerson.coding.code",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.code",
       "short" : "Symbol in syntax defined by the system",
       "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -8431,14 +8087,6 @@
     {
       "id" : "Patient.contact.relationship:RolePerson.coding.display",
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      },
-      {
         "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
         "valueBoolean" : true
       }],
@@ -8486,14 +8134,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RolePerson.coding.userSelected",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.userSelected",
       "short" : "If this coding was chosen directly by the user",
       "definition" : "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).",
@@ -8539,14 +8179,6 @@
     {
       "id" : "Patient.contact.relationship:RolePerson.text",
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      },
-      {
         "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
         "valueBoolean" : true
       }],
@@ -8739,7 +8371,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -8888,7 +8520,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -8901,14 +8533,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RelatedPerson.coding.system",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.system",
       "short" : "Identity of the terminology system",
       "definition" : "The identification of the code system that defines the meaning of the symbol in the code.",
@@ -8954,14 +8578,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RelatedPerson.coding.version",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.version",
       "short" : "Version of the system - if relevant",
       "definition" : "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
@@ -9005,14 +8621,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RelatedPerson.coding.code",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.code",
       "short" : "Symbol in syntax defined by the system",
       "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
@@ -9058,14 +8666,6 @@
     {
       "id" : "Patient.contact.relationship:RelatedPerson.coding.display",
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      },
-      {
         "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
         "valueBoolean" : true
       }],
@@ -9113,14 +8713,6 @@
     },
     {
       "id" : "Patient.contact.relationship:RelatedPerson.coding.userSelected",
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      }],
       "path" : "Patient.contact.relationship.coding.userSelected",
       "short" : "If this coding was chosen directly by the user",
       "definition" : "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).",
@@ -9166,14 +8758,6 @@
     {
       "id" : "Patient.contact.relationship:RelatedPerson.text",
       "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-        "valueCode" : "normative"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-        "valueCode" : "4.0.0"
-      },
-      {
         "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
         "valueBoolean" : true
       }],
@@ -9308,7 +8892,7 @@
         "human" : "A system is required if a value is provided.",
         "expression" : "value.empty() or system.exists()",
         "xpath" : "not(exists(f:value)) or exists(f:system)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -9480,7 +9064,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -9534,7 +9118,7 @@
         "human" : "If present, start SHALL have a lower value than end",
         "expression" : "start.hasValue().not() or end.hasValue().not() or (start <= end)",
         "xpath" : "not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) <= xs:dateTime(f:end/@value))",
-        "source" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -9670,7 +9254,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -9716,7 +9300,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -9877,7 +9461,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -9933,7 +9517,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{
@@ -10069,7 +9653,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "mapping" : [{
         "identity" : "rim",
@@ -10115,7 +9699,7 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DomainResource"
       }],
       "isModifier" : true,
       "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
@@ -10166,7 +9750,7 @@
         "human" : "SHALL have a contained resource if a local reference is provided",
         "expression" : "reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))",
         "xpath" : "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Observation"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Practitioner"
       }],
       "isSummary" : true,
       "mapping" : [{

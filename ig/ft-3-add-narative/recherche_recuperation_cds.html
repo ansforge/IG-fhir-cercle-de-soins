@@ -206,7 +206,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM reposant sur l’interaction « search » de FHIR.</p>
 
-<p>La requête GET est accompagnée des paramètres listés dans le tableau ci-dessous. Ces critères de recherche ont été définis dans les Spécifications Fonctionnelles des Echanges. Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes.</p>
+<p>La requête GET est accompagnée des paramètres de recherches définis dans le <a href="CapabilityStatement-CDSGestionnaire.html">CapabilityStatement du Gestionnaire</a>.
+Ces critères de recherche ont été définis dans les <a href="specifications_fonctionnelles.html">Spécification Fonctionnelle</a>.</p>
+
+<p>Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes, certains exemples peuvent être trouvés dans le tableau ci-dessous :</p>
 
 <table>
   <thead>
@@ -217,62 +220,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">Identifiant du cercle de soins</td>
-      <td style="text-align: left">identifier : token</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Date de création du cercle de soins</td>
-      <td style="text-align: left">start : date (paramètre custom)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Date de fin du cercle de soins</td>
-      <td style="text-align: left">end : date (paramètre custom)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Statut du cercle de soins</td>
-      <td style="text-align: left">status : token</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Date de mise à jour du cercle de soins</td>
-      <td style="text-align: left">_lastUpdated : date</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Date d’entrée d’un membre du cercle de soins</td>
-      <td style="text-align: left">participant-start : date (paramètre custom)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Date de sortie d’un membre du cercle de soins</td>
-      <td style="text-align: left">participant-end : date (paramètre custom)</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Identifiant du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.identifier : token</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Adresse du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.address  : string</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Nom du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.family  : string</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Prénom du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.given  : string</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Date de naissance du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.birthdate : date</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Sexe du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.gender : token</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Lieu de naissance du sujet du cercle de soins</td>
-      <td style="text-align: left">patient.birthplace : string (paramètre custom)</td>
-    </tr>
-    <tr>
       <td style="text-align: left">Identifiant du membre du cercle de soins (contact)</td>
       <td style="text-align: left">participant:RelatedPerson._id : token</td>
     </tr>
@@ -281,16 +228,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: left">participant:PractitionerRole._id : token</td>
     </tr>
     <tr>
-      <td style="text-align: left">Identifiant du membre du cercle de soins (entité géographique ou une organisation interne)</td>
+      <td style="text-align: left">Identifiant du membre du cercle de soins (entité géographique)</td>
       <td style="text-align: left">participant:Organization._id : token</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Identifiant de l’entité géographique, de l’entité juridique</td>
+      <td style="text-align: left">participant:Organization.identifier : token</td>
     </tr>
     <tr>
       <td style="text-align: left">Identifiant du professionnel</td>
       <td style="text-align: left">participant:PractitionerRole.practitioner:Practitioner.identifier</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Identifiant de l’entité géographique, de l’entité juridique ou de l’organisation interne</td>
-      <td style="text-align: left">participant:Organization.identifier : token</td>
     </tr>
     <tr>
       <td style="text-align: left">Nom du membre du cercle de soins (contact)</td>
@@ -301,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: left">participant:PractitionerRole.practitioner.name : string (paramètre custom)</td>
     </tr>
     <tr>
-      <td style="text-align: left">Nom du membre du cercle de soins (entité géographique ou une organisation interne)</td>
+      <td style="text-align: left">Nom du membre du cercle de soins (entité géographique)</td>
       <td style="text-align: left">participant:Organization.name : string</td>
     </tr>
     <tr>
@@ -316,16 +263,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="text-align: left">Rôle du membre du cercle de soins (exercice professionnel)</td>
       <td style="text-align: left">participant:PractitionerRole.role : token</td>
     </tr>
-    <tr>
-      <td style="text-align: left">Organisation responsable du cercle de soins</td>
-      <td style="text-align: left">managingOrganization : Reference (paramètre custom)</td>
-    </tr>
   </tbody>
 </table>
 
-<p>Tableau - Liste des critères de recherche de cercles de soins, paramètres de la requête HTTP GET</p>
-
-<p>Les paramètres « _include » et « _revinclude » peuvent être utilisées pour récupérer les ressources référencées. Le paramètre « _elements »  pourra être utilisé pour limiter les attributs retournés par le serveur.</p>
+<p>Les paramètres «_include » et «_revinclude » peuvent être utilisés pour récupérer les ressources référencées. Le paramètre « _elements » peut être utilisé pour limiter les attributs retournés par le serveur.</p>
 
 <h4 id="exemples-de-requêtes">Exemples de requêtes</h4>
 
@@ -423,7 +364,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 21, 2024 15:34+0000">2024-02-21</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 15:36+0000">2024-03-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

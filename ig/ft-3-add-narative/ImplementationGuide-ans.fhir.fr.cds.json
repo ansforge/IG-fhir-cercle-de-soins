@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-02-21T15:34:54+00:00",
+  "date" : "2024-03-18T15:36:21+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -65,7 +65,7 @@
     "id" : "ans_fr_nos",
     "uri" : "https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos",
     "packageId" : "ans.fr.nos",
-    "version" : "1.1.0"
+    "version" : "1.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -719,25 +719,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-organization-interne"
-      },
-      "name" : "CDS Organization Interne Profile",
-      "description" : "Profil héritant de la ressource FHIR pour les organisations internes - organisation opérationnelle interne d'une EG permettant de délivrer la prestation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
       }],
       "reference" : {
         "reference" : "SearchParameter/cds-careteam-end"
       },
       "name" : "cds-careteam-end",
-      "description" : "Date de fin du cercle de soins",
+      "description" : "Recherche sur la date de fin du cercle de soins",
       "exampleBoolean" : false
     },
     {
@@ -785,7 +773,7 @@
         "reference" : "SearchParameter/cds-careteam-start"
       },
       "name" : "cds-careteam-start",
-      "description" : "Date de création du cercle de soins",
+      "description" : "Recherche sur la date de création du cercle de soins",
       "exampleBoolean" : false
     },
     {

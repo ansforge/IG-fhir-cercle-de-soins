@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-21T15:34:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-18T15:36:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -83,7 +83,7 @@
        fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "1.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -633,18 +633,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-interne> ;
-         fhir:reference [ fhir:v "StructureDefinition/cds-organization-interne" ]
-       ] ;
-       fhir:name [ fhir:v "CDS Organization Interne Profile" ] ;
-       fhir:description [ fhir:v "Profil héritant de la ressource FHIR pour les organisations internes - organisation opérationnelle interne d'une EG permettant de délivrer la prestation." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
@@ -652,7 +640,7 @@
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-end" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-end" ] ;
-       fhir:description [ fhir:v "Date de fin du cercle de soins" ] ;
+       fhir:description [ fhir:v "Recherche sur la date de fin du cercle de soins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -700,7 +688,7 @@
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-start" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-start" ] ;
-       fhir:description [ fhir:v "Date de création du cercle de soins" ] ;
+       fhir:description [ fhir:v "Recherche sur la date de création du cercle de soins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

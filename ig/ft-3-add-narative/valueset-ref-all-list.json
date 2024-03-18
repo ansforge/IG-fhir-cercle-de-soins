@@ -113,50 +113,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ContactPointSystem",
-      "title" : "ContactPointSystem",
-      "description" : "Telecommunications form for contact point.",
-      "systems" : ["http://hl7.org/fhir/contact-point-system"],
-      "oids" : ["2.16.840.1.113883.4.642.3.71"],
-      "sources" : ["2.16.840.1.113883.4.642.3.71"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ContactPointUse",
-      "title" : "ContactPointUse",
-      "description" : "Use of contact point.",
-      "systems" : ["http://hl7.org/fhir/contact-point-use"],
-      "oids" : ["2.16.840.1.113883.4.642.3.73"],
-      "sources" : ["2.16.840.1.113883.4.642.3.73"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ContactEntityType",
-      "title" : "Contact entity type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.416"],
-      "sources" : ["2.16.840.1.113883.4.642.3.416"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -201,8 +158,7 @@
       "uses" : {
       },
       "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
-      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -220,9 +176,8 @@
       "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile",
       "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
       "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
-      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile",
       "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -269,20 +224,6 @@
       },
       "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
       "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "OrganizationType",
-      "title" : "Organization type",
-      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.414"],
-      "sources" : ["2.16.840.1.113883.4.642.3.414"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -363,8 +304,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
       "url" : "http://interopsante.org/fhir/ValueSet/fr-cog-commune-pays",
@@ -412,34 +352,6 @@
       "uses" : {
       },
       "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
-    },
-    {
-      "url" : "http://interopsante.org/fhir/ValueSet/fr-organization-identifier-type",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "fr-organization-identifier-type",
-      "title" : null,
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for    a specific purpose (Organizations).",
-      "systems" : ["http://interopsante.org/CodeSystem/fr-v2-0203"],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.3"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.3"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "http://interopsante.org/fhir/ValueSet/fr-organization-type",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "fr-organization-type",
-      "title" : null,
-      "description" : "Organization types | Types de structures",
-      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-3307"],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.22"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.22"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
     },
     {
       "url" : "http://interopsante.org/fhir/ValueSet/fr-patient-identifier-type",
@@ -493,72 +405,8 @@
       "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
     },
     {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J100-FinessStatutJuridique-RASS/FHIR/JDV-J100-FinessStatutJuridique-RASS",
-      "version" : "1.1.0",
-      "status" : "active",
-      "name" : "JDV_J100-FinessStatutJuridique-RASS",
-      "title" : null,
-      "description" : "Statut juridique FINESS dans le RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.168"],
-      "sources" : ["1.2.250.1.213.1.6.1.168"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
-      "version" : "1.1.0",
-      "status" : "active",
-      "name" : "JDV_J101-SecteurActivite-RASS",
-      "title" : null,
-      "description" : "Secteurs d'activité des établissements avec la même activité dans le RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.169"],
-      "sources" : ["1.2.250.1.213.1.6.1.169"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
-      "version" : "1.1.0",
-      "status" : "active",
-      "name" : "JDV_J129-CategorieEtablissement-RASS",
-      "title" : null,
-      "description" : "Catégorie d'établissement du RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.215"],
-      "sources" : ["1.2.250.1.213.1.6.1.215"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J162-ESPIC-RASS/FHIR/JDV-J162-ESPIC-RASS",
-      "version" : "1.1.0",
-      "status" : "active",
-      "name" : "JDV_J162-ESPIC-RASS",
-      "title" : null,
-      "description" : "Etablissement de santé privée d'intérêt collectif dans le RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.226"],
-      "sources" : ["1.2.250.1.213.1.6.1.226"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
-    },
-    {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J78-Civilite-RASS",
       "title" : null,
@@ -575,7 +423,7 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS",
-      "version" : "1.1.0",
+      "version" : "1.2.0",
       "status" : "active",
       "name" : "JDV_J79-CiviliteExercice-RASS",
       "title" : null,
@@ -589,22 +437,6 @@
       },
       "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
       "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J99-InseeNAFrav2Niveau5-RASS/FHIR/JDV-J99-InseeNAFrav2Niveau5-RASS",
-      "version" : "1.1.0",
-      "status" : "active",
-      "name" : "JDV_J99-InseeNAFrav2Niveau5-RASS",
-      "title" : null,
-      "description" : "Sous-classes de la Nomenclature Activités Française (INSEE) des prof du RASS",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5"
-      ],
-      "oids" : ["1.2.250.1.213.1.6.1.167"],
-      "sources" : ["1.2.250.1.213.1.6.1.167"],
-      "uses" : {
-      },
-      "StructureDefinition-cds-organization-interne.html" : "CDS Organization Interne Profile"
     }
   ]
 }

@@ -36,12 +36,6 @@
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
         "title": "CDS CareTeam Profile"
       }
-    ],
-    "Organization": [
-      {
-        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-interne",
-        "title": "CDS Organization Interne Profile"
-      }
     ]
   },
   "usage": {
@@ -67,9 +61,6 @@
       "Patient.name",
       "RelatedPerson.name"
     ],
-    "http://hl7.org/fhir/StructureDefinition/organization-period": [
-      "Organization"
-    ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
     ],
@@ -80,7 +71,6 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
@@ -106,15 +96,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://interopsante.org/fhir/StructureDefinition/FrContactPointEmailType": [
-      "Organization.telecom"
-    ],
-    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationDescription": [
-      "Organization"
-    ],
-    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationShortName": [
-      "Organization"
-    ],
     "http://interopsante.org/fhir/StructureDefinition/FrPatientBirthdateUpdateIndicator": [
       "Patient"
     ],
@@ -132,30 +113,6 @@
     ],
     "http://interopsante.org/fhir/StructureDefinition/FrPatientIdentityMethodCollection": [
       "Patient"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
-      "Organization.meta"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-digital-certificate": [
-      "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-mailbox-mss-metadata": [
-      "Organization.telecom"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-authorization-deadline": [
-      "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-budget-type": [
-      "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-closing-type": [
-      "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pharmacy-licence": [
-      "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pricing-model": [
-      "Organization"
     ]
   }
 }
