@@ -9,10 +9,8 @@ La première étape de la construction de ce flux de création du cercle de soin
     * Avec PractitionerRole (profil PractitionerRoleProfessionalRoleRASS) représentant l’exercice professionnel, référencée depuis PractitionerRole.partOf.
     * Avec Practitioner (profil FrPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).
   * RelatedPerson (profil CDS_FrRelatedperson) pour représenter une personne tierce,
-  * Organization (profil FrOrganization) pour représenter une entité géographique (EG)
-    * Avec Organization (profil FrOrganization) représentant l’entité juridique (EJ) et référencée depuis Organization.partOf (EG)
-  * Organization (profil CDS_Organization-OrgaInt) pour représenter une organisation interne (OI)
-    * Avec Organization (profil FrOrganization) représentant l’entité géographique et référencée depuis Organization.partOf (OI)
+  * Organization (profil AsOrganization) pour représenter une entité géographique (EG)
+    * Avec Organization (profil AsOrganization) représentant l’entité juridique (EJ) et référencée depuis Organization.partOf (EG)
   * Ou aucune si le seul membre est la personne prise en charge déjà référencée comme sujet du Cercle de Soins.
 
 Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil « CDS_BundleTransactionCreation ». Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.

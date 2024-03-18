@@ -2,46 +2,32 @@
 
 Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM reposant sur l’interaction « search » de FHIR.
 
-La requête GET est accompagnée des paramètres listés dans le tableau ci-dessous. Ces critères de recherche ont été définis dans les Spécifications Fonctionnelles des Echanges. Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes.
+La requête GET est accompagnée des paramètres de recherches définis dans le [CapabilityStatement du Gestionnaire](CapabilityStatement-CDSGestionnaire.html).
+Ces critères de recherche ont été définis dans les [Spécification Fonctionnelle](specifications_fonctionnelles.html).
+
+Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes, certains exemples peuvent être trouvés dans le tableau ci-dessous :
 
 | Critère de recherche | Paramètre de recherche |
 | :---- | :---- |
-| Identifiant du cercle de soins | identifier : token |
-| Date de création du cercle de soins | start : date (paramètre custom) |
-| Date de fin du cercle de soins | end : date (paramètre custom) |
-| Statut du cercle de soins | status : token |
-| Date de mise à jour du cercle de soins | _lastUpdated : date |
-| Date d’entrée d’un membre du cercle de soins | participant-start : date (paramètre custom) |
-| Date de sortie d’un membre du cercle de soins | participant-end : date (paramètre custom) |
-| Identifiant du sujet du cercle de soins | patient.identifier : token |
-| Adresse du sujet du cercle de soins | patient.address  : string |
-| Nom du sujet du cercle de soins | patient.family  : string |
-| Prénom du sujet du cercle de soins | patient.given  : string |
-| Date de naissance du sujet du cercle de soins | patient.birthdate : date |
-| Sexe du sujet du cercle de soins | patient.gender : token |
-| Lieu de naissance du sujet du cercle de soins | patient.birthplace : string (paramètre custom) |
 | Identifiant du membre du cercle de soins (contact) | participant:RelatedPerson._id : token |
 | Identifiant du membre du cercle de soins (professionnel dans une situation d’exercice) | participant:PractitionerRole._id : token |
-| Identifiant du membre du cercle de soins (entité géographique ou une organisation interne) | participant:Organization._id : token |
+| Identifiant du membre du cercle de soins (entité géographique) | participant:Organization._id : token |
+| Identifiant de l’entité géographique, de l’entité juridique | participant:Organization.identifier : token |
 | Identifiant du professionnel | participant:PractitionerRole.practitioner:Practitioner.identifier |
-| Identifiant de l’entité géographique, de l’entité juridique ou de l’organisation interne | participant:Organization.identifier : token |
 | Nom du membre du cercle de soins (contact) | participant:RelatedPerson.name: string |
 | Nom du membre du cercle de soins (professionnel dans un exercice professionnel ou dans une situation d’exercice) | participant:PractitionerRole.practitioner.name : string (paramètre custom) |
-| Nom du membre du cercle de soins (entité géographique ou une organisation interne) | participant:Organization.name : string |
+| Nom du membre du cercle de soins (entité géographique) | participant:Organization.name : string |
 | Raison sociale de l’Entité Juridique | participant:Organization.partof.name : string |
 | Rôle du membre du cercle de soins (contact) | participant:RelatedPerson.relationship: token |
 | Rôle du membre du cercle de soins (exercice professionnel) | participant:PractitionerRole.role : token |
-| Organisation responsable du cercle de soins | managingOrganization : Reference (paramètre custom) |
 
-Tableau - Liste des critères de recherche de cercles de soins, paramètres de la requête HTTP GET
-
-Les paramètres « _include » et « _revinclude » peuvent être utilisées pour récupérer les ressources référencées. Le paramètre « _elements »  pourra être utilisé pour limiter les attributs retournés par le serveur.
+Les paramètres «_include » et «_revinclude » peuvent être utilisés pour récupérer les ressources référencées. Le paramètre « _elements » peut être utilisé pour limiter les attributs retournés par le serveur.
 
 #### Exemples de requêtes
 
 * Rechercher les ressources de type Careteam dont le sujet porte l’identifiant 123456. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources « CareTeam » retournées ainsi que les ressources référencées par ces-dites ressources.
 
-"GET http://targetsystem.com/API/Careteam?_include:iterate=*&patient.identifier=http://exAutoriteAffectation/patient|123456" HTTP/1.1 
+"GET http://targetsystem.com/API/Careteam?_include:iterate=*&patient.identifier=http://exAutoriteAffectation/patient|123456" HTTP/1.1
 
 * Rechercher les ressources de type Careteam ayant un membre de type RelatedPerson portant le nom Ducros et vivant à Tourcoing. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par l’élément « subject » des ressources « Careteam » retournées, c’est-à-dire les ressources correspondant aux patients ayant cette personne tierce dans leur cercle de soins.
 Pour plus d’information sur la syntaxe des requêtes de recherche veuillez consulter la documentation relative à l’interaction de recherche, « search », de l’API REST FHIR .

@@ -157,19 +157,18 @@ Usage: #definition
 * rest.resource[=].supportedProfile = Canonical(as-practitionerrole)
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
+
 * rest.resource[=].searchParam[0].name = "_id"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Identifiant technique du membre professionnel dans la situation d'exercice"
+
 * rest.resource[=].searchParam[+].name = "practitioner"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[=].documentation = "Référence du professionnel"
+
 * rest.resource[=].searchParam[+].name = "role"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PractitionerRole-role"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[=].documentation = "Rôle du membre de cercle de soins"
-* rest.resource[=].searchParam[+].name = "relationship"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/PractitionerRole-role"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].documentation = "Rôle du membre de cercle de soins"

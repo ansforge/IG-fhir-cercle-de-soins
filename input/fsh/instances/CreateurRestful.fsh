@@ -39,7 +39,6 @@ Usage: #definition
 
 * rest.resource[+].type = #Organization
 * rest.resource[=].profile = Canonical(as-organization)
-* rest.resource[=].supportedProfile = Canonical(cds-organization-interne)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 

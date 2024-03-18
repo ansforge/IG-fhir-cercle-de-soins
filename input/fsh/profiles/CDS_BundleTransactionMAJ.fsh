@@ -14,7 +14,6 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
     patient 0..* and
     relatedPerson 0..* and
     organization 0..* and
-    organizationInterne 0..* and
     practitionerRoleOrg 0..* and
     practitionerPro 0..*
 
@@ -37,11 +36,6 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[organization].resource only as-organization
 * entry[organization].request.method obeys req-met
 * entry[organization].response ..0
-
-* entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only cds-organization-interne
-* entry[organizationInterne].request.method obeys req-met
-* entry[organizationInterne].response ..0
 
 * entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
 * entry[practitionerRoleOrg].resource 1..

@@ -12,7 +12,6 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
     patient 0..* and
     relatedPerson 0..* and
     organization 0..* and
-    organizationInterne 0..* and
     practitionerRoleOrg 0..* and
     practitionerPro 0..*
 
@@ -39,12 +38,6 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[organization].search.mode = #include
 * entry[organization].request ..0
 * entry[organization].response ..0
-
-* entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only cds-organization-interne
-* entry[organizationInterne].search.mode = #include
-* entry[organizationInterne].request ..0
-* entry[organizationInterne].response ..0
 
 * entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
 * entry[practitionerRoleOrg].resource 1..

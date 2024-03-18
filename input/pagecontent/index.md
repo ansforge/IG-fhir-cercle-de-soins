@@ -66,17 +66,10 @@ Le schéma d’urbanisation de la gestion du cercle de soins peut être centrali
 
 Ces spécifications d’interopérabilité s’appliquent quel que soit le schéma d’urbanisation adopté.
 
-### Sécurité
-
-Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment les traits d’identité et coordonnées des patients et des professionnels.
-
-Cette section présente les éventuelles recommandations de sécurité qui s’appliquent au volet Gestion de Cercle de Soins. Il s’agit d’un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible.
-
-Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.
 
 ### Auteurs et contributeurs
 
 | Role  | Nom | Organisation |
 | --- | --- | --- | --- |
-| **Primary Editor** | Clotaire Delanchy | GCS E-Santé Bretagne |
+| **Primary Editor** | Clotaire Delanchy | Groupement Régional e-Santé Bretagne |
 | **Primary Editor** | Nicolas Riss | Agence du Numérique en Santé |
