@@ -49,7 +49,7 @@ Ce flux se base sur la requête de la transaction IHE « Retrieve Care Team » [
 
 La récupération d’une ressource CareTeam correspondant à un identifiant logique doit pouvoir être réalisée en s’appuyant sur l’interaction « vread » de FHIR  qui permet de tenir compte de la version de la ressource et sur l’interaction « history » qui permet de demander la récupération d’une version précise de la ressource  (history-instance et history-type devront être proposés).
 
-#### Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123
+* Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123
 
 "GET http://targetsystem.com/API/Careteam/123/_history/2"
 

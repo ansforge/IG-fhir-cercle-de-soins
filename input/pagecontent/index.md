@@ -1,6 +1,6 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
-<b>GAP Implementation Guide</b><br>
-This implementation guide contains the profiles to share medical appointments.
+<b>CDS Implementation Guide</b><br>
+This implementation guide contains the profiles to share about a patient CareTeam.
 </p>
 
 <div style="width: 65%">
