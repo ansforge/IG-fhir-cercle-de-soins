@@ -22,7 +22,7 @@ Le cercle de soins d'une personne peut être échangé pour répondre aux besoin
 
 La liste ci-dessous expose la liste des profils.
 
-{% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "Parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil%" %}
+{% sql SELECT '[' || Title ||'](StructureDefinition-' || id || '.html)' as "Titre du profil", Description, json_extract(Json, '$.baseDefinition') as "URL canonique de la ressource parent" FROM Resources WHERE Type = 'StructureDefinition' and Description like "Profil%" %}
 
 <div class="figure" style="width:100%;">
     <p>{% include document-overview.svg %}</p>
