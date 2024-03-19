@@ -1139,7 +1139,7 @@ La liste des valeurs possibles n'est pas définie par ces spécifications. Les c
 <td>MembreCercleSoin/dateSortieCercleSoin</td>
 <td>Date de fin de participation au cercle de soin de la personne prise en charge.</td>
 <td>Non</td>
-</tr>
+</tr>!
 <tr class="odd">
 <td>PersonnePriseCharge/INS</td>
 <td>L'INS référence les données de santé et se compose des éléments suivants :<br />

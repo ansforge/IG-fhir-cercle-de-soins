@@ -58,9 +58,3 @@ La récupération d’une ressource CareTeam correspondant à un identifiant log
 Le flux 3b constitue la réponse à la requête GET du flux 3a. Lorsque la requête s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « CareTeam » portant l’identifiant demandé et le cas échéant correspondant à la version précisée dans la requête.
 Les flux 2b et 3b de récupération d’un cercle de soins correspondent à la transaction IHE « Retrieve CareTeam » [PCC-47].
 
-### Flux 4b : mise à jour d’un cercle de soins
-
-Le flux de mise à jour de la ressource « CareTeam » est une requête HTTP PUT. La ressource « CareTeam » constitue le corps de la requête. La mise à jour de la ressource CareTeam nécessite de préciser l’identifiant logique de la ressource à mettre à jour. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
-La mise à jour du cercle de soins doit pouvoir être réalisée en s’appuyant sur l’interaction « update » de FHIR.
-Si la mise à jour du cercle de soins est correctement effectuée, le système gestionnaire retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de mise à jour, « update » de l’API REST FHIR.  
-A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de version de la ressource (Careteam.meta.versionID) et indique la date de la mise à jour au niveau de Careteam.meta.LastUpdated.

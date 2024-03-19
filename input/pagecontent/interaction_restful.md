@@ -19,7 +19,7 @@ Ces requêtes sont envoyées au gestionnaire :
 </div>
 
 Si la création de l’acteur est correctement effectuée, un code HTTP 201 created est retourné.
-Si la mise à jour d’un acteur est correctement effectuée, le système gestionnaire retourne un code HTTP 200 OK . 
+Si la mise à jour d’un acteur est correctement effectuée, le système gestionnaire retourne un code HTTP 200 OK.
 
 ### Gestion du cercle de soins
 
@@ -42,3 +42,10 @@ Comme indiqué dans l'onglet [Spécification Fonctionnelle](specifications_fonct
 
 Le flux de création de la ressource « CareTeam » est une requête HTTP POST reposant sur l’interaction « create » de FHIR. La ressource « CareTeam » constitue le corps de la requête. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
 Si la création du cercle de soins est correctement effectuée, un code HTTP 201 created est retourné.
+
+### Flux 4b : mise à jour d’un cercle de soins
+
+Le flux de mise à jour de la ressource « CareTeam » est une requête HTTP PUT. La ressource « CareTeam » constitue le corps de la requête. La mise à jour de la ressource CareTeam nécessite de préciser l’identifiant logique de la ressource à mettre à jour. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
+La mise à jour du cercle de soins doit pouvoir être réalisée en s’appuyant sur l’interaction « update » de FHIR.g
+Si la mise à jour du cercle de soins est correctement effectuée, le système gestionnaire retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de mise à jour, « update » de l’API REST FHIR.  
+A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de version de la ressource (Careteam.meta.versionID) et indique la date de la mise à jour au niveau de Careteam.meta.LastUpdated.
