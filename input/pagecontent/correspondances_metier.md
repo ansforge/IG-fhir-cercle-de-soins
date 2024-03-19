@@ -1,5 +1,3 @@
-### Correspondance entre objets métier et objets du standard HL7 FHIR
-
 Dans cette section, la mise en correspondance est faite entre :
 
 * Les objets métier identifiés à l’issue des spécifications fonctionnelles des échanges,
@@ -7,7 +5,7 @@ Dans cette section, la mise en correspondance est faite entre :
 
 Pour chaque objet métier, les tableaux ci-dessous reprennent l’ensemble des éléments métier identifiés dans l’étude métier du cas d’usage. Pour chaque attribut de chaque classe métier, la ressource FHIR et plus particulièrement l’élément de cette ressource utilisé pour véhiculer l’information est identifié. Lorsqu’un profil existant est identifié, les caractéristiques de l’élément FHIR de ce profil sont rapportées (par exemple IHECareTeam ou encore FrPatient).
 
-#### Flux 1 : Création d’un cercle de soins
+### Flux 1 : Création d’un cercle de soins
 
 Le flux 1 - CreationCercleSoins contient les informations relatives à la création d’un cercle de soins.
 
@@ -690,7 +688,7 @@ Le flux 1 - CreationCercleSoins contient les informations relatives à la créat
 
 Tableau 4 Mise en correspondance des contenus métier / standard du flux 1
 
-#### Flux 2 : Recherche de cercles de soins
+### Flux 2 : Recherche de cercles de soins
 
 Le flux 2 - RechercheCercleSoins contient les critères pour rechercher un ou plusieurs cercle(s) de soins.
 
