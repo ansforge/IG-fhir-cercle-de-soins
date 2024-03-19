@@ -96,7 +96,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="interaction_restful.html">Interactions RestFUL</a>
+        <a href="interaction_restful.html">Interactions RESTful</a>
       </li>
       <li>
         <a href="interaction_transaction.html">Interactions transaction</a>
@@ -198,7 +198,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#flux-3a--réponse-à-la-recherche-de-cercles-de-soins" id="markdown-toc-flux-3a--réponse-à-la-recherche-de-cercles-de-soins">Flux 3a : Réponse à la recherche de cercles de soins</a></li>
   <li><a href="#flux-2b--récupération-dun-cercle-de-soins" id="markdown-toc-flux-2b--récupération-dun-cercle-de-soins">Flux 2b : Récupération d’un cercle de soins</a></li>
   <li><a href="#flux-3b--réponse-à-la-récupération-dun-cercle-de-soins" id="markdown-toc-flux-3b--réponse-à-la-récupération-dun-cercle-de-soins">Flux 3b : réponse à la récupération d’un cercle de soins</a></li>
-  <li><a href="#flux-4b--mise-à-jour-dun-cercle-de-soins" id="markdown-toc-flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : mise à jour d’un cercle de soins</a></li>
 </ul>
 
 </div>
@@ -315,13 +314,6 @@ Les flux 2a et 3a correspondent à la transaction IHE « Search for CareTeam » 
 <p>Le flux 3b constitue la réponse à la requête GET du flux 3a. Lorsque la requête s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « CareTeam » portant l’identifiant demandé et le cas échéant correspondant à la version précisée dans la requête.
 Les flux 2b et 3b de récupération d’un cercle de soins correspondent à la transaction IHE « Retrieve CareTeam » [PCC-47].</p>
 
-<h3 id="flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : mise à jour d’un cercle de soins</h3>
-
-<p>Le flux de mise à jour de la ressource « CareTeam » est une requête HTTP PUT. La ressource « CareTeam » constitue le corps de la requête. La mise à jour de la ressource CareTeam nécessite de préciser l’identifiant logique de la ressource à mettre à jour. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
-La mise à jour du cercle de soins doit pouvoir être réalisée en s’appuyant sur l’interaction « update » de FHIR.
-Si la mise à jour du cercle de soins est correctement effectuée, le système gestionnaire retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de mise à jour, « update » de l’API REST FHIR.<br />
-A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de version de la ressource (Careteam.meta.versionID) et indique la date de la mise à jour au niveau de Careteam.meta.LastUpdated.</p>
-
 
 
 
@@ -369,7 +361,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 13:56+0000">2024-03-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 16:30+0000">2024-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
