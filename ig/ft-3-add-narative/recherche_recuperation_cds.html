@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.4"}
-    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.3"}
+    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -95,9 +95,6 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
-      </li>
       <li>
         <a href="interaction_restful.html">Interactions RestFUL</a>
       </li>
@@ -204,6 +201,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="flux-2a--recherche-de-cercles-de-soins">Flux 2a : recherche de cercles de soins</h3>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Plus d'informations sur la search en FHIR sur la documentation officielle
+https://www.hl7.org/fhir/R4/search.html
+</code></pre></div></div>
+
 <p>Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM reposant sur l’interaction « search » de FHIR.</p>
 
 <p>La requête GET est accompagnée des paramètres de recherches définis dans le <a href="CapabilityStatement-CDSGestionnaire.html">CapabilityStatement du Gestionnaire</a>.
@@ -284,8 +285,7 @@ Ces critères de recherche ont été définis dans les <a href="specifications_f
 </table>
 
 <ul>
-  <li>Rechercher les ressources de type Careteam ayant un membre de type RelatedPerson portant le nom Ducros et vivant à Tourcoing. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par l’élément « subject » des ressources « Careteam » retournées, c’est-à-dire les ressources correspondant aux patients ayant cette personne tierce dans leur cercle de soins.
-Pour plus d’information sur la syntaxe des requêtes de recherche veuillez consulter la documentation relative à l’interaction de recherche, « search », de l’API REST FHIR .</li>
+  <li>Rechercher les ressources de type Careteam ayant un membre de type RelatedPerson portant le nom Ducros et vivant à Tourcoing. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par l’élément « subject » des ressources « Careteam » retournées, c’est-à-dire les ressources correspondant aux patients ayant cette personne tierce dans leur cercle de soins.</li>
 </ul>
 
 <p>“GET http://targetsystem.com/API/Careteam?_include:iterate =CareTeam:subject&amp;participant:RelatedPerson.name:exact=Ducros&amp;participant:RelatedPerson.address=Tourcoing” HTTP/1.1</p>
@@ -364,7 +364,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 15:36+0000">2024-03-18</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 10:06+0000">2024-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -96,9 +96,6 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
-      </li>
-      <li>
         <a href="interaction_restful.html">Interactions RestFUL</a>
       </li>
       <li>
@@ -154,7 +151,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="construction_des_flux.html">next&gt;</a>
+          | <a href="interaction_restful.html">next&gt;</a>
 
           </span>
 
@@ -2178,7 +2175,7 @@ Le statut prend sa valeur dans la liste suivante : proposed | active | suspended
 
 <p>Tableau 8 Définition du profil de la ressource RelatedPerson</p>
 
-<p><a name="l5226">​</a><img src="images/media/image5.png" alt="null"/><strong><span class="underline">Schéma des relations entre les ressources FHIR</span> :</strong></p>
+<p><a name="l5220">​</a><img src="images/media/image5.png" alt="null"/><strong><span class="underline">Schéma des relations entre les ressources FHIR</span> :</strong></p>
 
 <p>Figure 1 Représentation des ressources FHIR liées entre elles par des éléments de type « Reference</p>
 
@@ -2220,7 +2217,7 @@ Construction des flux</p>
 
 <p>Ces requêtes sont envoyées au gestionnaire :</p>
 
-<p><a name="l5301">​</a><img src="images/media/image6.png" alt="null"/></p>
+<p><a name="l5295">​</a><img src="images/media/image6.png" alt="null"/></p>
 
 <p>Figure 2 Diagramme de séquence des flux 1a et 4a</p>
 
@@ -2255,7 +2252,7 @@ Construction des flux</p>
 
 <p>Comme indiqué dans la Spécification Fonctionnelle des Echanges du présent volet, le pré-requis à la création d’un cercle de soins est la recherche de ce cercle de soins. Si le cercle de soins n’existe pas, il est créé (flux 1b), sinon, il est mis à jour (flux 4b)&nbsp;:</p>
 
-<p><a name="l5367">​</a><img src="images/media/image7.png" alt="null"/></p>
+<p><a name="l5361">​</a><img src="images/media/image7.png" alt="null"/></p>
 
 <p>Figure 3 Diagramme de séquence des flux de gestion d’un cercle de soins (1b, 2a, 2b, 3a, 3b et 4b)</p>
 
@@ -2562,7 +2559,7 @@ Construction des flux</p>
 
 <p>Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil «&nbsp;CDS_BundleTransactionCreation&nbsp;». Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.</p>
 
-<p><a name="l5974">​</a><img src="images/media/image8.png" alt="PlantUML diagram"/></p>
+<p><a name="l5968">​</a><img src="images/media/image8.png" alt="PlantUML diagram"/></p>
 
 <p><strong>Figure 4 Diagramme de séquence du flux 1c</strong></p>
 
@@ -2589,7 +2586,7 @@ Construction des flux</p>
 
 <p>Le Bundle «&nbsp;CDS_BundleTransactionMAJ&nbsp;» peut contenir exactement les mêmes ressources que le CDS_BundleTransactionCreation<strong>.</strong> Le Bundle contient à minima une ressource CareTeam&nbsp;; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.</p>
 
-<p><a name="l6028">​</a><img src="images/media/image9.png" alt="Une image contenant table Description générée automatiquement"/></p>
+<p><a name="l6022">​</a><img src="images/media/image9.png" alt="Une image contenant table Description générée automatiquement"/></p>
 
 <p>Figure 4 - Diagramme de séquence du flux 4c</p>
 
@@ -3225,7 +3222,7 @@ Construction des flux</p>
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="construction_des_flux.html">next&gt;</a>
+                <a href="interaction_restful.html">next&gt;</a>
 
               </td>
             </tr>
@@ -3235,7 +3232,7 @@ Construction des flux</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 15:36+0000">2024-03-18</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 10:06+0000">2024-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
