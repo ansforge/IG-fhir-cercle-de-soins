@@ -104,6 +104,9 @@
       <li>
         <a href="recherche_recuperation_cds.html">Recherche CDS</a>
       </li>
+      <li>
+        <a href="correspondances_metier.html">Correspondances métier</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -151,7 +154,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="specifications_fonctionnelles.html">next&gt;</a>
+          | <a href="correspondances_metier.html">next&gt;</a>
 
           </span>
 
@@ -301,7 +304,9 @@ Les flux 2a et 3a correspondent à la transaction IHE « Search for CareTeam » 
 
 <p>La récupération d’une ressource CareTeam correspondant à un identifiant logique doit pouvoir être réalisée en s’appuyant sur l’interaction « vread » de FHIR  qui permet de tenir compte de la version de la ressource et sur l’interaction « history » qui permet de demander la récupération d’une version précise de la ressource  (history-instance et history-type devront être proposés).</p>
 
-<h4 id="exemple-de-requête---rechercher-la-deuxième-version-de-la-ressource-careteam-123">Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123</h4>
+<ul>
+  <li>Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123</li>
+</ul>
 
 <p>“GET http://targetsystem.com/API/Careteam/123/_history/2”</p>
 
@@ -354,7 +359,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="specifications_fonctionnelles.html">next&gt;</a>
+                <a href="correspondances_metier.html">next&gt;</a>
 
               </td>
             </tr>
@@ -364,7 +369,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 10:06+0000">2024-03-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 10:26+0000">2024-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

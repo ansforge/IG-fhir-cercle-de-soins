@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-19T10:06:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-19T10:26:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -798,6 +798,14 @@
            ] ) ;
            fhir:name [ fhir:v "recherche_recuperation_cds.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Recherche CDS" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "correspondances_metier.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "correspondances_metier.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Correspondances métier" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [
