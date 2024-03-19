@@ -5,9 +5,8 @@ La première étape de la construction de ce flux de création du cercle de soin
 * La ressource CareTeam (profil CDS_IHECareTeam),
 * La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient (profil FrPatient),
 * La ou les ressources référencées comme membres du Cercle de Soins, et celles qu’elles référencent, parmi les ressources suivantes :
-  * PractitionerRole (profil PractitionerRoleOrganizationalRoleRASS) pour représenter la situation d’exercice particulière d’un professionnel.
-    * Avec PractitionerRole (profil PractitionerRoleProfessionalRoleRASS) représentant l’exercice professionnel, référencée depuis PractitionerRole.partOf.
-    * Avec Practitioner (profil FrPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).
+  * PractitionerRole (profil ASPractitionerRole) pour représenter la situation d’exercice particulière d’un professionnel.
+    * Avec Practitioner (profil ASPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).
   * RelatedPerson (profil CDS_FrRelatedperson) pour représenter une personne tierce,
   * Organization (profil AsOrganization) pour représenter une entité géographique (EG)
     * Avec Organization (profil AsOrganization) représentant l’entité juridique (EJ) et référencée depuis Organization.partOf (EG)
