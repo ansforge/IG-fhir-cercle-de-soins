@@ -208,10 +208,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient (profil FrPatient),</li>
   <li>La ou les ressources référencées comme membres du Cercle de Soins, et celles qu’elles référencent, parmi les ressources suivantes :
     <ul>
-      <li>PractitionerRole (profil PractitionerRoleOrganizationalRoleRASS) pour représenter la situation d’exercice particulière d’un professionnel.
+      <li>PractitionerRole (profil ASPractitionerRole) pour représenter la situation d’exercice particulière d’un professionnel.
         <ul>
-          <li>Avec PractitionerRole (profil PractitionerRoleProfessionalRoleRASS) représentant l’exercice professionnel, référencée depuis PractitionerRole.partOf.</li>
-          <li>Avec Practitioner (profil FrPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).</li>
+          <li>Avec Practitioner (profil ASPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).</li>
         </ul>
       </li>
       <li>RelatedPerson (profil CDS_FrRelatedperson) pour représenter une personne tierce,</li>
@@ -307,7 +306,7 @@ Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource O
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 16:30+0000">2024-03-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 16:35+0000">2024-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
