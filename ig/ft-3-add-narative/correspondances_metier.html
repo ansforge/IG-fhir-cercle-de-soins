@@ -215,10 +215,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table>
 <thead>
 <tr class="header">
-<th>Éléments métier</th>
-<th>Éléments FHIR des profils FHIR identifiés</th>
-<th></th>
-<th></th>
+<th colspan="2">Éléments métier</th>
+<th colspan="2">Éléments correspondant dans les profils FHIR</th>
 </tr>
 </thead>
 <tbody>
@@ -229,63 +227,56 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td><strong>Elément</strong></td>
 </tr>
 <tr class="even">
-<td>CercleSoins</td>
+<td rowspan="8">CercleSoins</td>
 <td>idCercleSoins : [1..1] Identifiant</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>identifier : Identifier [1..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>dateCreation : [1..1] Date</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>period[1..1].start : dateTime [1..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>dateMAJ : [1..*] Date[10]</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>meta[0..1].lastUpdated : instant [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>dateFin : [0..1] Date</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>period[1..1].end : dateTime [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>statut : [0..1] code</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>status : code [1..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>PersonnePriseCharge : [1..1][11]</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>subject : Reference [1..1] (Patient)</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>MembreCercleSoin : [0..*][12]</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>participant : BackboneElement [0..*]</td>
 </tr>
 <tr class="even">
-<td>PersonnePriseCharge</td>
+<td rowspan="5">PersonnePriseCharge</td>
 <td><p>INS : [1..1] INS[13]</p>
 <ul>
 <li><p>matriculeINS : [1..1] Identifiant</p></li>
@@ -324,35 +315,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>idPersonnePriseCharge : [0..*] Identifiant</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>adresseCorrespondance : [1..1] Adresse</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>address : FrAddress [0..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>telecommunication : [1..*] Telecommunication</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="odd">
-<td>PersonnePhysique</td>
+<td rowspan="10">PersonnePhysique</td>
 <td>civilite : [0..1] Code</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
@@ -360,7 +347,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Slice « officialName », Patient.name.use prenant la valeur « official »</p></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>nomFamille : [0..1] Texte</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
@@ -368,7 +354,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Slice « usualName », Patient.name.use prenant la valeur « usual »</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>prenom : [0..*] Texte</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
@@ -376,35 +361,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Slice « usualName », Patient.name.use prenant la valeur « usual »</p></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>sexe : [0..1] Code</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>gender : code [1..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>langueParlee : [0..*] LangueParlee</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>communication[0..*].language : CodeableConcept [1..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>situationFamiliale : [0..1] Code</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>maritalStatus : CodeableConcept [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>dateNaissance : [0..1] Date</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>birthDate : date [1..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>lieuNaissance : [0..1] Texte</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
@@ -412,82 +392,66 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Extension BirthPlace</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>paysResidence : [0..1] Code</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>address[0..*].country : string [0..1] (FrAddress)</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="odd">
-<td>MembreCercleSoin</td>
+<td rowspan="6">MembreCercleSoin</td>
 <td>dateEntreeCercleSoin : [1..*] Date</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>participant [0..*].period[1..1].start : dateTime [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>dateSortieCercleSoin : [0..*] Date</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>participant [0..*].period[1..1].end : dateTime [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>SituationExercice : [0..1]<sup>7</sup></td>
-<td><p><strong>CareTeam</strong></p>
+<td rowspan="4"><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
-<td><p>participant[0..*].member :Reference [1..1]</p>
+<td rowspan="4"><p>participant[0..*].member :Reference [1..1]</p>
 <p>(Practitioner|PractitionerRole| RelatedPerson|Patient|Organization|CareTeam)</p></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>EntiteGeographique : [0..1] <sup>7</sup></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>OrganisationInterne : [0..1] <sup>7</sup></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>Contact : [0..1] <sup>7</sup></td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td>Contact</td>
+<td rowspan="7">Contact</td>
 <td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>id : Id [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>telecommunication : [1..*] Telecommunication</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>adresse : [0..*] Adresse</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>address : FrAddress [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>role : [1..1] Code</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
@@ -495,14 +459,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Slice « RolePerson », RelatedPerson.relationship.coding.system prenant la valeur «https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass »</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>description : [0..1] Texte</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>text : Narrative [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>relation : [0..1] Code</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
@@ -510,28 +472,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Slice « RelatedPerson », RelatedPerson.relationship.coding.system prenant la valeur «https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode»</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="even">
-<td>PersonnePhysique</td>
+<td rowspan="3">PersonnePhysique</td>
 <td>nomFamille : [1..1] Texte</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>name[0..*].family : string [0..1] (FrHumanName)</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>prenom [0..1] Texte</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>name[0..*].given : string [0..*] (FrHumanName)</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>civilite [0..1] Code</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
@@ -540,7 +499,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <!-- SITEX -->
 <tr class="odd">
-<td>SituationExercice</td>
+<td rowspan="8">SituationExercice</td>
 <td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
@@ -548,14 +507,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 
 <tr class="even">
-<td></td>
 <td>telecommunication : [1..*] Telecommunication</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>adresse : [0..*] Adresse</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
@@ -563,7 +520,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>(LocationRASS)</p></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>modeExercice : [0..1] Code</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
@@ -571,14 +527,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Slice « modeExercice »</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>role : [0..1] Code</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
 <td>code : CodeableConcept [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>boiteLettresMSS : [0..*] BoiteLettreMSS</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
@@ -586,45 +540,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Extension MailboxMSS</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>EntiteGeographique : [0..1][14]</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
 <td>organization : Reference [0..1] (Organization)</td>
 </tr>
 
-
 <!-- expro -->
 <tr class="even">
-<td>ExerciceProfessionnel</td>
+<td rowspan="5">xerciceProfessionnel</td>
 <td>civiliteExercice : [0..1] Code</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
 <td><p>name[0..*].suffix : string [0..*] (FrHumanName)</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>nomExercice : [0..1] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
 <td><p>name[0..*].family : string [0..1] (FrHumanName)</p></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>prenomExercice : [0..1] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
 <td><p>name[0..*].given : string [0..*] (FrHumanName)</p></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>profession : [0..1] Code</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
@@ -637,7 +585,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
@@ -648,240 +595,197 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- professionnel -->
 
 <tr class="even">
-<td>Professionnel</td>
+<td rowspan="3">Professionnel</td>
 <td>idPP : [0..1] Identifiant</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>identifier : Identifier [0..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>typeIdNat_PP : [0..1] Code</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>identifier.type : CodeableConcept [1..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="odd">
-<td>PersonnePhysique</td>
+<td rowspan="7">PersonnePhysique</td>
 <td>civilite : [0..1] Code</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>name[0..*].prefix : string [0..1] (FrHumanName)</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>nomFamille : [0..1] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>name[0..*].family : string [0..1] (FrHumanName)</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>prenom : [0..*] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>name[0..*].given : string [0..*] (FrHumanName)</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>sexe : [0..1] Code</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>gender : code [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>langueParlee : [0..*] LangueParlee</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>communication : CodeableConcept [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>dateNaissance : [0..1] Date</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>birthDate : date [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="even">
-<td>EntiteGeographique</td>
+<td rowspan="11">EntiteGeographique</td>
 <td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>id : Id [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>numFINESS : [0..1] Identifiant</td>
-<td><p><strong>Organization</strong></p>
+<td rowspan="4"><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
-<td>identifier : Identifier [0..*]</td>
+<td rowspan="4">identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>numSIRET : [0..1] Identifiant</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>identifiantEG : [0..1] Identifiant</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>idNat_struct : [0..1] Identifiant</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>telecommunication : [1..*] Telecommunication</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>adresse : [0..*] Adresse</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>address : FrAddress [0..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>denominationEG : [0..1] Texte</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>name : string [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>boiteLettresMSS : [0..*] BoiteLettreMSS</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>telecom : [0..*] FrContactPoint</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>EntiteJuridique : [1..1] [17]</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>partOf : Reference [0..1] (ASOrganization)</td>
 </tr>
 <tr class="odd">
-<td>EntiteJuridique</td>
+<td rowspan="7">EntiteJuridique</td>
 <td>numFINESS : [0..1] Identifiant</td>
-<td><p><strong>Organization</strong></p>
+<td rowspan="4"><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
-<td>identifier : Identifier [0..*]</td>
+<td rowspan="4">identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>numSIREN : [0..1] Identifiant</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>identifiantEJ : [0..1] Identifiant</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>idNat_struct : [0..1] Identifiant</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>raisonSociale : [0..1] Texte</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>name : string [0..1]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>boiteLettresMSS : [0..*] BoiteLettreMSS</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>telecom : [0..*] FrContactPoint</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="even">
-<td>OrganisationInterne</td>
+<td rowspan="8">OrganisationInterne</td>
 <td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><strong>Organization</strong>[18]</td>
 <td>id : Id [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>identifiantOI : [0..1] Identifiant</td>
 <td><strong>Organization</strong></td>
 <td>identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>telecommunication : [1..*] Telecommunication</td>
 <td><strong>Organization</strong></td>
 <td>telecom : ContactPoint [0..*]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>adresse : [0..*] Adresse</td>
 <td><strong>Organization</strong></td>
 <td>address : Address [0..*]</td>
 </tr>
 <tr class="even">
-<td></td>
 <td>nom : [0..1] Texte</td>
 <td><strong>Organization</strong></td>
 <td>name : string [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>boiteLettresMSS : [0..*] BoiteLettreMSS</td>
 <td><strong>Organization</strong></td>
 <td><p>mailboxMSS[0..*].value : string [0..1]</p>
 <p>Extension MailboxMSS (rass)</p></td>
 </tr>
 <tr class="even">
-<td></td>
 <td>metadonnee : [1..1] Metadonnee</td>
 <td><strong>Organization</strong></td>
 <td>meta : Meta [0..1]</td>
 </tr>
 <tr class="odd">
-<td></td>
 <td>EntiteGeographique : [1..1]<sup>9</sup></td>
 <td><strong>Organization</strong></td>
 <td>partOf : reference [0..1] (Organization)</td>
@@ -899,36 +803,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <thead>
 <tr class="header">
 <th>Critère de recherche</th>
-<th>Paramètre FHIR</th>
+<th>Ressource FHIR</th>
+<td>Paramètre de recherche FHIR</td>
 <th></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td></td>
-<td>Ressource</td>
-<td>Paramètre de recherche</td>
-</tr>
 <tr class="even">
 <td>CercleSoins/idCercleSoins</td>
-<td>CareTeam</td>
+<td rowspan="4">CareTeam</td>
 <td>identifier : token</td>
 </tr>
 <tr class="odd">
 <td>CercleSoins/dateCreation</td>
-<td></td>
 <td><p><em>Pas de correspondance</em></p>
 <p><em>Paramètre de recherche créé dans le cadre de ce volet : start</em></p></td>
 </tr>
 <tr class="even">
 <td>CercleSoins/dateFin</td>
-<td></td>
 <td><p><em>Pas de correspondance</em></p>
 <p><em>Paramètre de recherche créé dans le cadre de ce volet : end</em></p></td>
 </tr>
 <tr class="odd">
 <td>CercleSoins/statut</td>
-<td></td>
 <td>status : token</td>
 </tr>
 <tr class="even">
@@ -938,86 +835,74 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="odd">
 <td>MembreCercleSoin/dateEntréeCercleSoin</td>
-<td>CareTeam</td>
+<td rowspan="2">CareTeam</td>
 <td><p><em>Pas de correspondance</em></p>
 <p><em>Paramètre de recherche créé dans le cadre de ce volet: participant-start</em></p></td>
 </tr>
 <tr class="even">
 <td>MembreCercleSoin/dateSortieCercleSoin</td>
-<td></td>
 <td><p><em>Pas de correspondance</em></p>
 <p><em>Paramètre de recherche créé dans le cadre de ce volet: participant-end</em></p></td>
 </tr>
 <tr class="odd">
 <td>PersonnePriseCharge/idPersonnePriseCharge</td>
-<td>Patient</td>
+<td rowspan="7">Patient</td>
 <td>identifier : token</td>
 </tr>
 <tr class="even">
 <td>PersonnePriseCharge/adresseCorrespondance</td>
-<td></td>
 <td>address : string</td>
 </tr>
 <tr class="odd">
 <td>PersonnePhysique/nomFamille</td>
-<td></td>
 <td>family : string</td>
 </tr>
 <tr class="even">
 <td>PersonnePhysique/prenom</td>
-<td></td>
 <td>given : string</td>
 </tr>
 <tr class="odd">
 <td>PersonnePhysique/dateNaissance</td>
-<td></td>
 <td>birthdate : date</td>
 </tr>
 <tr class="even">
 <td>PersonnePhysique/lieuNaissance</td>
-<td></td>
 <td><p><em>Pas de correspondance</em></p>
 <p><em>Paramètre de recherche créé dans le cadre de ce volet : birthplace</em></p></td>
 </tr>
 <tr class="odd">
 <td>PersonnePhysique/sexe</td>
-<td></td>
 <td>gender : token</td>
 </tr>
 <tr class="even">
 <td>MembreCercleSoin/idMembreCercleSoin</td>
-<td>RelatedPerson</td>
+<td rowspan="3">RelatedPerson</td>
 <td>_id : token</td>
 </tr>
 <tr class="odd">
 <td>PersonnePhysique/nomFamille</td>
-<td></td>
 <td>name : string</td>
 </tr>
 <tr class="even">
 <td>Contact/role</td>
-<td></td>
 <td>relationship : token</td>
 </tr>
 <tr class="odd">
 <td>MembreCercleSoin/idMembreCercleSoin</td>
-<td>PractitionerRole</td>
+<td rowspan="4">PractitionerRole</td>
 <td>_id : token</td>
 </tr>
 <tr class="even">
 <td>ExerciceProfessionnel/profession</td>
-<td></td>
 <td>role : token</td>
 </tr>
 <tr class="odd">
 <td>ExerciceProfessionnel/nomExercice</td>
-<td></td>
 <td><p><em>Pas de correspondance</em></p>
 <p><em>Paramètre de recherche créé dans le cadre de ce volet : nameex</em></p></td>
 </tr>
 <tr class="even">
 <td>SituationExercice/role</td>
-<td></td>
 <td>role : token</td>
 </tr>
 <tr class="odd">
@@ -1027,67 +912,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="even">
 <td>MembreCercleSoin/idMembreCercleSoin</td>
-<td>Organization</td>
+<td rowspan="13">Organization</td>
 <td>_id : token</td>
 </tr>
 <tr class="odd">
 <td>EntiteGeographique/identifiantEG</td>
-<td></td>
-<td>identifier : token</td>
+<td rowspan="4">identifier : token</td>
 </tr>
 <tr class="even">
 <td>EntiteGeographique/numFINESS</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>EntiteGeographique/numSIRET</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td>EntiteGeographique/idNat_struct</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>EntiteJuridique/identifiantEJ</td>
-<td></td>
-<td>identifier : token</td>
+<td rowspan="4">identifier : token</td>
 </tr>
 <tr class="even">
 <td>EntiteJuridique/numFINESS</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>EntiteJuridique/numSIREN</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="even">
 <td>EntiteJuridique/idNat_struct</td>
-<td></td>
-<td></td>
 </tr>
 <tr class="odd">
 <td>EntiteGeographique/denominationEG</td>
-<td></td>
 <td>name : string</td>
 </tr>
 <tr class="even">
 <td>OrganisationInterne/identifiantOI</td>
-<td></td>
 <td>identifier : token</td>
 </tr>
 <tr class="odd">
 <td>OrganisationInterne/nom</td>
-<td></td>
 <td>name : string</td>
 </tr>
 <tr class="even">
 <td>EntiteJuridique/raisonSociale</td>
-<td></td>
 <td>name : string</td>
 </tr>
 </tbody>
@@ -1142,7 +1009,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 10:50+0000">2024-03-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 19, 2024 13:55+0000">2024-03-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
