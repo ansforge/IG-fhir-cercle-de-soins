@@ -6,7 +6,7 @@ This implementation guide contains the profiles to share about a patient CareTea
 <div style="width: 65%">
     <blockquote class="stu-note">
     <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas la version courante.
+    <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante sera accessible via l'URL canonique après la prochaine release : http://interop.esante.gouv.fr/ig/fhir/cds
     </p>
     </blockquote>
 </div>
