@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * name = "CDSCareTeamStart"
 * status = #active
-* description = "Date de création du cercle de soins"
+* description = "Recherche sur la date de création du cercle de soins"
 * code = #start
 * base = #CareTeam
 * type = #date
