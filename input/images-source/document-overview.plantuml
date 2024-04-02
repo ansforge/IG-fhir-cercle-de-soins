@@ -4,7 +4,6 @@ artifact "CDS FrPatient" as patient
 artifact "CDS IHE CareTeam" as careteam #99FF99
 
 artifact "CDS FrRelatedPerson" as cdsfrrelatedperson
-artifact "CDS Organization-Interne" as cdsorganization
 artifact "As Organization" as asorganization
 artifact "AS Practitioner" as aspractitioner
 artifact "AS PractitionerRole" as aspractitionerrole
@@ -12,7 +11,6 @@ artifact "AS PractitionerRole" as aspractitionerrole
 url of patient is [[StructureDefinition-cds-fr-patient.html]]
 url of cdsfrrelatedperson is [[StructureDefinition-cds-fr-related-person.html]]
 url of careteam is [[StructureDefinition-cds-ihe-careteam.html]]
-url of cdsorganization is [[StructureDefinition-cds-organization-interne.html]]
 
 ' ###########
 ' # Patient #
@@ -24,7 +22,6 @@ patient <-- careteam : subject 0..1
 ' # careteam #
 ' ############
 careteam --> cdsfrrelatedperson : participant[0..*].member
-careteam --> cdsorganization : participant[0..*].member
 careteam --> asorganization : participant[0..*].member
 careteam --> aspractitionerrole : participant[0..*].member
 
