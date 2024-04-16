@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2024-04-03T12:05:40+00:00"/>
+  <date value="2024-04-16T11:50:31+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -544,6 +544,17 @@
       </reference>
       <name value="CDS FrPatient Profile"/>
       <description value="Profil patient adapté au cercle de soins."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-organization"/>
+      </reference>
+      <name value="CDS Organization Profile"/>
+      <description value="Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

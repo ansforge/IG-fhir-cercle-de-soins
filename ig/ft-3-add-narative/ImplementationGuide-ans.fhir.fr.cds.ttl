@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-03T12:05:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-16T11:50:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -629,6 +629,18 @@
        ] ;
        fhir:name [ fhir:v "CDS FrPatient Profile" ] ;
        fhir:description [ fhir:v "Profil patient adapté au cercle de soins." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/cds-organization" ]
+       ] ;
+       fhir:name [ fhir:v "CDS Organization Profile" ] ;
+       fhir:description [ fhir:v "Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
