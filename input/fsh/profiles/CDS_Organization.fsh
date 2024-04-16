@@ -7,7 +7,7 @@ Title: "CDS Organization Profile"
 
 * identifier contains identifierOI 0..1 MS
 
-* identifier[identifierOI] ^short = "identifiantOI (OI) : Identifiant de l'organisation interne, unique et persistant au niveau national"
+* identifier[identifierOI] ^short = "identifiantOI (OI) : Identifiant de l'organisation interne. Le system https://oi.esante.gouv.fr est à utiliser s'il s'agit de l'OI unique et persistant défini au niveau national."
 * identifier[identifierOI].type 1..1 MS
 * identifier[identifierOI].type = https://mos.esante.gouv.fr/NOS/TRE_R345-TypeIdentifiantAutre/FHIR/TRE-R345-TypeIdentifiantAutre#42
-* identifier[identifierOI].system = "https://oi.esante.gouv.fr"
+* identifier[identifierOI].system ^example.valueString = "https://oi.esante.gouv.fr"
