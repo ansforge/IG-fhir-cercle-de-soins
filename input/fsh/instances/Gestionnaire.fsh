@@ -224,7 +224,7 @@ Usage: #definition
 // * Recherche sur le profil Organization *
 // ****************************************
 * rest.resource[+].type = #Organization
-* rest.resource[=].profile = Canonical(as-organization)
+* rest.resource[=].profile = Canonical(CDSAsOrganization)
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read

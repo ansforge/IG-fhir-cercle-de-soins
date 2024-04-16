@@ -32,7 +32,7 @@ Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du
 * entry[relatedPerson].response ..0
 
 * entry[organization].resource 1..
-* entry[organization].resource only as-organization
+* entry[organization].resource only cds-organization
 * entry[organization].request.method obeys req-met
 * entry[organization].response ..0
 

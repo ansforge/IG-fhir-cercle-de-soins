@@ -34,7 +34,7 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[relatedPerson].response ..0
 
 * entry[organization].resource 1..
-* entry[organization].resource only as-organization
+* entry[organization].resource only cds-organization
 * entry[organization].search.mode = #include
 * entry[organization].request ..0
 * entry[organization].response ..0
