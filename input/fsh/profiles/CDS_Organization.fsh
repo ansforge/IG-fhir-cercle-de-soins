@@ -11,3 +11,6 @@ Title: "CDS Organization Profile"
 * identifier[identifierOI].type 1..1 MS
 * identifier[identifierOI].type = https://mos.esante.gouv.fr/NOS/TRE_R345-TypeIdentifiantAutre/FHIR/TRE-R345-TypeIdentifiantAutre#42
 * identifier[identifierOI].system ^example.valueString = "https://oi.esante.gouv.fr"
+// Cette slice pourra être placée sur FrOrganization, cf https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/151
+
+* partOf only Reference(fr-core-organization or AsOrganizationProfile or CDSAsOrganization)
