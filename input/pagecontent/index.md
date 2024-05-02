@@ -65,9 +65,14 @@ Le schéma d’urbanisation de la gestion du cercle de soins peut être centrali
 
 Ces spécifications d’interopérabilité s’appliquent quel que soit le schéma d’urbanisation adopté.
 
+### Dépendances
+
+{% include dependency-table.xhtml %}
+
 ### Auteurs et contributeurs
 
 | Role  | Nom | Organisation |
 | --- | --- | --- | --- |
 | **Primary Editor** | Clotaire Delanchy | Groupement Régional e-Santé Bretagne |
 | **Primary Editor** | Nicolas Riss | Agence du Numérique en Santé |
+
