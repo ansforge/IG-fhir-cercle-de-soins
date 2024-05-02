@@ -14,3 +14,4 @@ Title: "CDS Organization Profile"
 // Cette slice pourra être placée sur FrOrganization, cf https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/151
 
 * partOf only Reference(FRCoreOrganizationProfile or AsOrganizationProfile or CDSAsOrganization)
+* partOf ^short = "Référence vers la structure de rattachement (lien OI/EG ou lien EG/EJ)"
