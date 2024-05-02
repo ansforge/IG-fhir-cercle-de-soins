@@ -13,4 +13,4 @@ Title: "CDS Organization Profile"
 * identifier[identifierOI].system ^example.valueString = "https://oi.esante.gouv.fr"
 // Cette slice pourra être placée sur FrOrganization, cf https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/151
 
-* partOf only Reference(fr-core-organization or AsOrganizationProfile or CDSAsOrganization)
+* partOf only Reference(FRCoreOrganizationProfile or AsOrganizationProfile or CDSAsOrganization)

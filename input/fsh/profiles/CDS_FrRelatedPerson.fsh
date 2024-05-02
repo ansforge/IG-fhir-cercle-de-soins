@@ -17,7 +17,8 @@ Description: "Profil créé pour le volet Gestion du Cercle de Soins afin de dé
 * telecom MS
 * telecom 1..*
 
-* relationship[RolePerson] 1..
-* relationship[RolePerson] ^short = "Rôle de la personne"
-* relationship[RelatedPerson] ..1
-* relationship[RelatedPerson] ^short = "Relation de la personne"
+* relationship[Role] 1..
+* relationship[Role] ^short = "Rôle de la personne"
+
+* relationship[RelationType] ..1
+* relationship[RelationType] ^short = "Relation de la personne"

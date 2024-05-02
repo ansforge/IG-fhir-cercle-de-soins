@@ -1,5 +1,5 @@
 Profile: CDSFrPatient
-Parent: FrPatient // Passer à INS Patient ?
+Parent: FRCorePatientProfile // Passer à INS Patient ?
 Id: cds-fr-patient
 Description: """Profil patient adapté au cercle de soins."""
 Title: "CDS FrPatient Profile"
