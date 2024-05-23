@@ -14,7 +14,7 @@ Description: """Profil héritant du profil défini dans DCTM et défini pour le 
 * identifier.value ^requirements = "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team"
 
 * status 1..1
-* status ^short = "Statut du cercle de soin.\n valeurs autorisées : proposed | active | suspended | inactive | entered-in-error"
+* status ^short = "Statut du cercle de soins.\n valeurs autorisées : proposed | active | suspended | inactive | entered-in-error"
 
 * category ^short = "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé."
 
@@ -34,9 +34,9 @@ Description: """Profil héritant du profil défini dans DCTM et défini pour le 
 * period ^requirements = "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam."
 
 * period.start 1..
-* period.start ^short = "Date de création du cercle de soin."
+* period.start ^short = "Date de création du cercle de soins."
 * period.start ^comment = "This version of the profile requires at least a start time for the CareTeam."
-* period.end ^short = "Date de fin d'existence du cercle de soin."
+* period.end ^short = "Date de fin d'existence du cercle de soins."
 
 * participant ^short = "Membres du cercle de soins."
 * participant ^comment = "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members"
