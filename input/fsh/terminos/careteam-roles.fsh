@@ -12,4 +12,4 @@ ValueSet: CareTeamRolesValueSet
 Id: careteam-roles-vs
 Title: "Roles des participants dans un cercle de soins"
 Description: "Roles des participants dans un cercle de soins."
-* include codes from system careteam-roles-cs
+* include codes from system CareTeamRolesCodeSystem
