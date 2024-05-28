@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-05-02T10:26:21+00:00",
+  "date" : "2024-05-28T07:54:16+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -53,13 +53,13 @@
     "id" : "ans_fhir_fr_annuaire",
     "uri" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
     "packageId" : "ans.fhir.fr.annuaire",
-    "version" : "1.0.0-ballot-3"
+    "version" : "1.0.1"
   },
   {
     "id" : "hl7_fhir_fr_core",
-    "uri" : "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
+    "uri" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
     "packageId" : "hl7.fhir.fr.core",
-    "version" : "1.1.0"
+    "version" : "2.0.1"
   },
   {
     "id" : "ans_fr_nos",
@@ -647,13 +647,109 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-bundle-response-recherche"
+      },
+      "name" : "CDS Bundle Response Recherche Profile",
+      "description" : "Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-bundle-transaction-creation"
+      },
+      "name" : "CDS Bundle Transaction Creation Profile",
+      "description" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-bundle-transaction-maj"
+      },
+      "name" : "CDS Bundle Transaction MAJ Profile",
+      "description" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type \"transaction\" permettant d'organiser le contenu du flux de création d'un cercle de soins.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-ihe-careteam"
+      },
+      "name" : "CDS CareTeam Profile",
+      "description" : "Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam ».",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-fr-related-person"
+      },
+      "name" : "CDS Fr RelatedPerson Profile",
+      "description" : "Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-fr-patient"
+      },
+      "name" : "CDS FrPatient Profile",
+      "description" : "Profil patient adapté au cercle de soins.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cds-organization"
+      },
+      "name" : "CDS Organization Profile",
+      "description" : "Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
       }],
       "reference" : {
         "reference" : "SearchParameter/cds-careteam-end"
       },
       "name" : "cds-careteam-end",
-      "description" : "Date de fin du cercle de soins",
+      "description" : "Recherche sur la date de fin du cercle de soins",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/cds-careteam-managing-organization"
+      },
+      "name" : "cds-careteam-managing-organization",
+      "description" : "Organisation responsable du Cercle De Soins",
       "exampleBoolean" : false
     },
     {
@@ -689,7 +785,7 @@
         "reference" : "SearchParameter/cds-careteam-start"
       },
       "name" : "cds-careteam-start",
-      "description" : "Date de création du cercle de soins",
+      "description" : "Recherche sur la date de création du cercle de soins",
       "exampleBoolean" : false
     },
     {
@@ -702,90 +798,6 @@
       },
       "name" : "cds-patient-birthplace",
       "description" : "Lieu de naissance du patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "SearchParameter"
-      }],
-      "reference" : {
-        "reference" : "SearchParameter/cds-practitionerrole-nameex"
-      },
-      "name" : "cds-practitionerrole-nameex",
-      "description" : "Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-bundle-response-recherche"
-      },
-      "name" : "CDSBundleResponseRecherche",
-      "description" : "« Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-bundle-transaction-creation"
-      },
-      "name" : "CDSBundleTransactionCreation",
-      "description" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-bundle-transaction-maj"
-      },
-      "name" : "CDSBundleTransactionMAJ",
-      "description" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type \"transaction\" permettant d'organiser le contenu du flux de création d'un cercle de soins.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-ihe-careteam"
-      },
-      "name" : "CDSCareTeam",
-      "description" : "Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-fr-related-person"
-      },
-      "name" : "CDSFrRelatedPerson",
-      "description" : "Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cds-organization-orga-int"
-      },
-      "name" : "CDSOrganizationOrgaInt",
-      "description" : "Profil héritant de la ressource FHIR pour les organisations internes.",
       "exampleBoolean" : false
     },
     {
@@ -864,30 +876,48 @@
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "construction_des_flux.html"
+            "valueUrl" : "interaction_restful.html"
           }],
-          "nameUrl" : "construction_des_flux.html",
-          "title" : "Construction Des Flux",
+          "nameUrl" : "interaction_restful.html",
+          "title" : "Interactions RESTful",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "st_flux1.html"
+            "valueUrl" : "interaction_transaction.html"
           }],
-          "nameUrl" : "st_flux1.html",
-          "title" : "Flux 01",
+          "nameUrl" : "interaction_transaction.html",
+          "title" : "Interactions transaction",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "st_flux2.html"
+            "valueUrl" : "recherche_recuperation_cds.html"
           }],
-          "nameUrl" : "st_flux2.html",
-          "title" : "Flux 02",
+          "nameUrl" : "recherche_recuperation_cds.html",
+          "title" : "Recherche CDS",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "correspondances_metier.html"
+          }],
+          "nameUrl" : "correspondances_metier.html",
+          "title" : "Correspondances métier",
           "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_fonctionnelles.html"
+        }],
+        "nameUrl" : "specifications_fonctionnelles.html",
+        "title" : "Spécifications fonctionnelles",
+        "generation" : "markdown"
       },
       {
         "extension" : [{
@@ -900,39 +930,12 @@
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "securite.html"
-          }],
-          "nameUrl" : "securite.html",
-          "title" : "Sécurité",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "downloads.html"
           }],
           "nameUrl" : "downloads.html",
           "title" : "Téléchargements et usages",
           "generation" : "markdown"
         }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "tests.html"
-        }],
-        "nameUrl" : "tests.html",
-        "title" : "Tests",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "about.html"
-        }],
-        "nameUrl" : "about.html",
-        "title" : "A propos de ce guide",
-        "generation" : "markdown"
       }]
     },
     "parameter" : [{

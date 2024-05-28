@@ -8,33 +8,39 @@
     "Bundle": [
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche",
-        "title": "CDSBundleResponseRecherche"
+        "title": "CDS Bundle Response Recherche Profile"
       },
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation",
-        "title": "CDSBundleTransactionCreation"
+        "title": "CDS Bundle Transaction Creation Profile"
       },
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj",
-        "title": "CDSBundleTransactionMAJ"
+        "title": "CDS Bundle Transaction MAJ Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient",
+        "title": "CDS FrPatient Profile"
       }
     ],
     "RelatedPerson": [
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
-        "title": "CDSFrRelatedPerson"
+        "title": "CDS Fr RelatedPerson Profile"
       }
     ],
     "CareTeam": [
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
-        "title": "CDSCareTeam"
+        "title": "CDS CareTeam Profile"
       }
     ],
     "Organization": [
       {
-        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int",
-        "title": "CDSOrganizationOrgaInt"
+        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization",
+        "title": "CDS Organization Profile"
       }
     ]
   },
@@ -59,6 +65,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -90,23 +99,41 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://interopsante.org/fhir/StructureDefinition/FrContactPointEmailType": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
       "Organization.telecom"
     ],
-    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationDescription": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
       "Organization"
     ],
-    "http://interopsante.org/fhir/StructureDefinition/FrOrganizationShortName": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
       "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Patient.name"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
+      "Patient"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
       "Organization.meta"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-digital-certificate": [
       "Organization"
-    ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-mailbox-mss-metadata": [
-      "Organization.telecom"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-authorization-deadline": [
       "Organization"
@@ -122,6 +149,9 @@
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pricing-model": [
       "Organization"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types": [
+      "Organization.type"
     ]
   }
 }

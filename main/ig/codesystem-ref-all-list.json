@@ -85,6 +85,18 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
       "url" : "http://hl7.org/fhir/name-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -109,17 +121,6 @@
       "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
     },
     {
-      "url" : "http://interopsante.org/fhir/CodeSystem/fr-v2-3307",
-      "version" : "1.0.1",
-      "status" : "draft",
-      "name" : "fr-v2-3307",
-      "title" : "Types d'organisations",
-      "description" : "This is an example code system that includes all the InteropSanté Organizations types codes.",
-      "uses" : {
-      },
-      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-organization-type" : "fr-organization-type"
-    },
-    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -141,8 +142,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -190,7 +191,9 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -205,6 +208,30 @@
       "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "version" : "3.0.0",
       "status" : "active",
@@ -215,6 +242,28 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status",
+      "version" : "2.0.1",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemMaritalStatus",
+      "title" : "FR Core CodeSystem Marital Status",
+      "description" : "Identifier type",
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "version" : "2.0.1",
+      "status" : "draft",
+      "name" : "FRCoreCodeSystemv2_3307",
+      "title" : "FR Core CodeSystem v2-3307",
+      "description" : "HL7 v2 - Table 3307",
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-organization-type.html" : "FR Core ValueSet Organization type"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
@@ -250,7 +299,19 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-related-person" : "fr-related-person"
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-relation-type.html" : "FR Core ValueSet relation type"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "TRE_R217-ProtectionJuridique",
+      "title" : null,
+      "description" : "Protection juridique",
+      "oids" : ["1.2.250.1.213.1.1.4.327"],
+      "uses" : {
+      },
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
@@ -262,7 +323,7 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=hl7.fhir.fr.core@1.1.0&canonical=http://interopsante.org/fhir/ValueSet/fr-related-person-role" : "fr-related-person-role"
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
@@ -299,6 +360,18 @@
       "uses" : {
       },
       "https://interop.esante.gouv.fr/ig/nos/1.2.0/ValueSet-JDV-J162-ESPIC-RASS.html" : "JDV_J162-ESPIC-RASS"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "TRE_R74-ModeFixationTarifaire",
+      "title" : null,
+      "description" : "Mode de fixation tarifaire",
+      "oids" : ["1.2.250.1.213.1.6.1.46"],
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/ValueSet-as-vs-organization-types.html" : "AS ValueSet OrganizationTypes"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5",

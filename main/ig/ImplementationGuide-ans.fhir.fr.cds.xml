@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="draft"/>
-  <date value="2024-05-02T10:26:21+00:00"/>
+  <date value="2024-05-28T07:54:16+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -48,12 +48,12 @@
   <dependsOn id="ans_fhir_fr_annuaire">
     <uri value="https://interop.esante.gouv.fr/ig/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire"/>
     <packageId value="ans.fhir.fr.annuaire"/>
-    <version value="1.0.0-ballot-3"/>
+    <version value="1.0.1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
-    <uri value="http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core"/>
+    <uri value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
     <packageId value="hl7.fhir.fr.core"/>
-    <version value="1.1.0"/>
+    <version value="2.0.1"/>
   </dependsOn>
   <dependsOn id="ans_fr_nos">
     <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
@@ -482,13 +482,101 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-bundle-response-recherche"/>
+      </reference>
+      <name value="CDS Bundle Response Recherche Profile"/>
+      <description value="Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-bundle-transaction-creation"/>
+      </reference>
+      <name value="CDS Bundle Transaction Creation Profile"/>
+      <description value="Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.&#xA;Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-bundle-transaction-maj"/>
+      </reference>
+      <name value="CDS Bundle Transaction MAJ Profile"/>
+      <description value="Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.&#xA;Il s'agit d'un bundle de type &quot;transaction&quot; permettant d'organiser le contenu du flux de création d'un cercle de soins."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-ihe-careteam"/>
+      </reference>
+      <name value="CDS CareTeam Profile"/>
+      <description value="Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam »."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-fr-related-person"/>
+      </reference>
+      <name value="CDS Fr RelatedPerson Profile"/>
+      <description value="Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-fr-patient"/>
+      </reference>
+      <name value="CDS FrPatient Profile"/>
+      <description value="Profil patient adapté au cercle de soins."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cds-organization"/>
+      </reference>
+      <name value="CDS Organization Profile"/>
+      <description value="Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
         <reference value="SearchParameter/cds-careteam-end"/>
       </reference>
       <name value="cds-careteam-end"/>
-      <description value="Date de fin du cercle de soins"/>
+      <description value="Recherche sur la date de fin du cercle de soins"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/cds-careteam-managing-organization"/>
+      </reference>
+      <name value="cds-careteam-managing-organization"/>
+      <description value="Organisation responsable du Cercle De Soins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -521,7 +609,7 @@
         <reference value="SearchParameter/cds-careteam-start"/>
       </reference>
       <name value="cds-careteam-start"/>
-      <description value="Date de création du cercle de soins"/>
+      <description value="Recherche sur la date de création du cercle de soins"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -533,83 +621,6 @@
       </reference>
       <name value="cds-patient-birthplace"/>
       <description value="Lieu de naissance du patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/cds-practitionerrole-nameex"/>
-      </reference>
-      <name value="cds-practitionerrole-nameex"/>
-      <description value="Nom du membre du cercle de soins, le membre étant un professionnel dans un exercice professionnel ou dans une situation d’exercice"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-bundle-response-recherche"/>
-      </reference>
-      <name value="CDSBundleResponseRecherche"/>
-      <description value="« Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-bundle-transaction-creation"/>
-      </reference>
-      <name value="CDSBundleTransactionCreation"/>
-      <description value="Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.&#xA;Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-bundle-transaction-maj"/>
-      </reference>
-      <name value="CDSBundleTransactionMAJ"/>
-      <description value="Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.&#xA;Il s'agit d'un bundle de type &quot;transaction&quot; permettant d'organiser le contenu du flux de création d'un cercle de soins."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-ihe-careteam"/>
-      </reference>
-      <name value="CDSCareTeam"/>
-      <description value="Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-fr-related-person"/>
-      </reference>
-      <name value="CDSFrRelatedPerson"/>
-      <description value="Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cds-organization-orga-int"/>
-      </reference>
-      <name value="CDSOrganizationOrgaInt"/>
-      <description value="Profil héritant de la ressource FHIR pour les organisations internes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -680,28 +691,44 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="construction_des_flux.html"/>
+            <valueUrl value="interaction_restful.html"/>
           </extension>
-          <nameUrl value="construction_des_flux.html"/>
-          <title value="Construction Des Flux"/>
+          <nameUrl value="interaction_restful.html"/>
+          <title value="Interactions RESTful"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st_flux1.html"/>
+            <valueUrl value="interaction_transaction.html"/>
           </extension>
-          <nameUrl value="st_flux1.html"/>
-          <title value="Flux 01"/>
+          <nameUrl value="interaction_transaction.html"/>
+          <title value="Interactions transaction"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st_flux2.html"/>
+            <valueUrl value="recherche_recuperation_cds.html"/>
           </extension>
-          <nameUrl value="st_flux2.html"/>
-          <title value="Flux 02"/>
+          <nameUrl value="recherche_recuperation_cds.html"/>
+          <title value="Recherche CDS"/>
           <generation value="markdown"/>
         </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="correspondances_metier.html"/>
+          </extension>
+          <nameUrl value="correspondances_metier.html"/>
+          <title value="Correspondances métier"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="specifications_fonctionnelles.html"/>
+        </extension>
+        <nameUrl value="specifications_fonctionnelles.html"/>
+        <title value="Spécifications fonctionnelles"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -712,36 +739,12 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="securite.html"/>
-          </extension>
-          <nameUrl value="securite.html"/>
-          <title value="Sécurité"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="downloads.html"/>
           </extension>
           <nameUrl value="downloads.html"/>
           <title value="Téléchargements et usages"/>
           <generation value="markdown"/>
         </page>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="tests.html"/>
-        </extension>
-        <nameUrl value="tests.html"/>
-        <title value="Tests"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="about.html"/>
-        </extension>
-        <nameUrl value="about.html"/>
-        <title value="A propos de ce guide"/>
-        <generation value="markdown"/>
       </page>
     </page>
     <parameter>

@@ -42,6 +42,13 @@
     "name" : "CDSCareTeamEnd"
   },
   {
+    "id" : "cds-careteam-managing-organization",
+    "type" : "SearchParameter",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization",
+    "version" : "0.1.0",
+    "name" : "CDSCareTeamManagingOrganization"
+  },
+  {
     "id" : "cds-careteam-participant-end",
     "type" : "SearchParameter",
     "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end",
@@ -70,13 +77,6 @@
     "name" : "CDSPatientBirthplace"
   },
   {
-    "id" : "cds-practitionerrole-nameex",
-    "type" : "SearchParameter",
-    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-practitionerrole-nameex",
-    "version" : "0.1.0",
-    "name" : "CDSPractitionerRoleNameex"
-  },
-  {
     "id" : "cds-bundle-response-recherche",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche",
@@ -98,6 +98,13 @@
     "name" : "CDSBundleTransactionMAJ"
   },
   {
+    "id" : "cds-fr-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient",
+    "version" : "0.1.0",
+    "name" : "CDSFrPatient"
+  },
+  {
     "id" : "cds-fr-related-person",
     "type" : "StructureDefinition",
     "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
@@ -112,10 +119,10 @@
     "name" : "CDSCareTeam"
   },
   {
-    "id" : "cds-organization-orga-int",
+    "id" : "cds-organization",
     "type" : "StructureDefinition",
-    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization-orga-int",
+    "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization",
     "version" : "0.1.0",
-    "name" : "CDSOrganizationOrgaInt"
+    "name" : "CDSAsOrganization"
   }
 ]

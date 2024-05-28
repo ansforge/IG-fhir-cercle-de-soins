@@ -12,7 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -26,9 +27,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDSBundleTransactionCreation",
-      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDSBundleTransactionMAJ",
-      "StructureDefinition-cds-bundle-response-recherche.html" : "CDSBundleResponseRecherche"
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile",
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-team-category",
@@ -42,7 +43,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.155"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam"
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-team-status",
@@ -56,7 +57,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.153"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam"
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -70,7 +71,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam"
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -84,7 +85,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -98,7 +102,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -112,7 +116,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -126,7 +130,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -140,9 +144,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDSBundleTransactionCreation",
-      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDSBundleTransactionMAJ",
-      "StructureDefinition-cds-bundle-response-recherche.html" : "CDSBundleResponseRecherche"
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile",
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -156,7 +160,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -170,8 +176,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt",
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -185,12 +192,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt",
-      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDSBundleTransactionCreation",
-      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDSBundleTransactionMAJ",
-      "StructureDefinition-cds-bundle-response-recherche.html" : "CDSBundleResponseRecherche",
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam",
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile",
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -204,7 +226,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -218,7 +241,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.414"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -232,7 +255,21 @@
       "sources" : ["2.16.840.1.113883.4.642.3.152"],
       "uses" : {
       },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDSCareTeam"
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
@@ -249,7 +286,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.449"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -263,9 +300,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDSBundleTransactionCreation",
-      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDSBundleTransactionMAJ",
-      "StructureDefinition-cds-bundle-response-recherche.html" : "CDSBundleResponseRecherche"
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile",
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -285,67 +322,84 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
-      "url" : "http://interopsante.org/fhir/ValueSet/fr-organization-identifier-type",
-      "version" : "1.0.1",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status",
+      "version" : "2.0.1",
       "status" : "active",
-      "name" : "fr-organization-identifier-type",
-      "title" : null,
-      "description" : "A coded type for an identifier that can be used to determine which identifier to use for    a specific purpose (Organizations).",
-      "systems" : ["http://interopsante.org/CodeSystem/fr-v2-0203"],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.3"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.3"],
+      "name" : "FRCoreValueSetMaritalStatus",
+      "title" : "FR Core ValueSet Patient gender INS ValueSet",
+      "description" : "Patient Gender for INS : male | female | unknown",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status"
+      ],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile"
     },
     {
-      "url" : "http://interopsante.org/fhir/ValueSet/fr-organization-type",
-      "version" : "1.0.1",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
+      "version" : "2.0.1",
       "status" : "active",
-      "name" : "fr-organization-type",
-      "title" : null,
+      "name" : "FRCoreValueSetOrganizationType",
+      "title" : "FR Core ValueSet Organization type",
       "description" : "Organization types | Types de structures",
-      "systems" : ["http://interopsante.org/fhir/CodeSystem/fr-v2-3307"],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.22"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.22"],
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
-      "url" : "http://interopsante.org/fhir/ValueSet/fr-related-person",
-      "version" : "1.0.1",
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+      "version" : "2.0.1",
       "status" : "active",
-      "name" : "fr-related-person",
-      "title" : null,
-      "description" : "Value set related person",
+      "name" : "FRCoreValueSetPatientContactRole",
+      "title" : "FR Core ValueSet Patient contact role",
+      "description" : "ValueSet patient contact role",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "FRCoreValueSetPatientRelationType",
+      "title" : "FR Core ValueSet relation type",
+      "description" : "ValueSet relation type",
       "systems" : [
         "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
       ],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.2"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.2"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-patient.html" : "CDS FrPatient Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
     },
     {
-      "url" : "http://interopsante.org/fhir/ValueSet/fr-related-person-role",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types",
       "version" : "1.0.1",
       "status" : "active",
-      "name" : "fr-related-person-role",
-      "title" : null,
-      "description" : "Value set related person role",
+      "name" : "AsVsOrganizationTypes",
+      "title" : "AS ValueSet OrganizationTypes",
+      "description" : "ValueSet définissant les types d'organisation",
       "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
+        "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire"
       ],
-      "oids" : ["2.16.840.1.113883.2.8.1.3.2"],
-      "sources" : ["2.16.840.1.113883.2.8.1.3.2"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J100-FinessStatutJuridique-RASS/FHIR/JDV-J100-FinessStatutJuridique-RASS",
@@ -361,7 +415,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.168"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
@@ -377,7 +431,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.169"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
@@ -393,7 +447,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.215"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J162-ESPIC-RASS/FHIR/JDV-J162-ESPIC-RASS",
@@ -409,7 +463,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.226"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
@@ -425,7 +479,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.146"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS",
@@ -441,7 +495,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.147"],
       "uses" : {
       },
-      "StructureDefinition-cds-fr-related-person.html" : "CDSFrRelatedPerson"
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J99-InseeNAFrav2Niveau5-RASS/FHIR/JDV-J99-InseeNAFrav2Niveau5-RASS",
@@ -457,7 +511,7 @@
       "sources" : ["1.2.250.1.213.1.6.1.167"],
       "uses" : {
       },
-      "StructureDefinition-cds-organization-orga-int.html" : "CDSOrganizationOrgaInt"
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
     }
   ]
 }

@@ -132,18 +132,18 @@
             }
           },
           {
-            "name": "CDSCareTeamStart",
+            "name": "start",
             "in": "query",
-            "description": "date de création du cercle de soins",
+            "description": "Recherche sur la date de création du cercle de soins",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
             }
           },
           {
-            "name": "CDS_CareTeam_end",
+            "name": "end",
             "in": "query",
-            "description": "date de fin du cercle de soins",
+            "description": "Recherche sur la date de fin du cercle de soins",
             "schema": {
               "type": "string",
               "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
@@ -172,6 +172,24 @@
             "description": "Type of team",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "participant-start",
+            "in": "query",
+            "description": "Date d’entrée d’un membre du cercle de soins",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "participant-end",
+            "in": "query",
+            "description": "Date d’entrée d’un membre du cercle de soins",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
             }
           },
           {
@@ -208,27 +226,9 @@
             }
           },
           {
-            "name": "CDS_CareTeam_participant-start",
+            "name": "managingOrganization",
             "in": "query",
-            "description": "Date d\u0027entrée d\u0027un membre du cercle de soins",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "CDS_CareTeam_participant-end",
-            "in": "query",
-            "description": "Date de sortie d\u0027un membre du cercle de soins",
-            "schema": {
-              "type": "string",
-              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
-            }
-          },
-          {
-            "name": "CareTeamManagingOrganization",
-            "in": "query",
-            "description": "Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l\u0027organisation responsable du cercle de soins.",
+            "description": "Organisation responsable du Cercle De Soins",
             "schema": {
               "type": "string"
             }
@@ -800,7 +800,7 @@
           {
             "name": "birthplace",
             "in": "query",
-            "description": "Genre du patient",
+            "description": "Lieu de naissance du patient",
             "schema": {
               "type": "string"
             }
@@ -1368,6 +1368,22 @@
           },
           {
             "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "description": "A practitioner\u0027s Identifier",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "description": "Multiple Resources: \r\n\r\n* [Patient](patient.html): A portion of the family name of the patient\r\n* [Practitioner](practitioner.html): A portion of the family name\r\n",
+            "schema": {
+              "type": "string"
+            }
           }
         ]
       },
@@ -1662,30 +1678,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "nameex",
-            "in": "query",
-            "description": "Nom du membre du cercle de soins",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "partOf",
-            "in": "query",
-            "description": "Reference du professionnel",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "relationship",
-            "in": "query",
-            "description": "The practitioner can perform this role at for the organization",
-            "schema": {
-              "type": "string"
-            }
           }
         ]
       },
@@ -1966,14 +1958,6 @@
             }
           },
           {
-            "name": "name",
-            "in": "query",
-            "description": "A portion of the organization\u0027s name or alias",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
             "name": "identifier",
             "in": "query",
             "description": "Any identifier for the organization (not the accreditation issuer\u0027s identifier)",
@@ -1982,9 +1966,9 @@
             }
           },
           {
-            "name": "partof",
+            "name": "name",
             "in": "query",
-            "description": "An organization of which this organization forms a part",
+            "description": "A portion of the organization\u0027s name or alias",
             "schema": {
               "type": "string"
             }

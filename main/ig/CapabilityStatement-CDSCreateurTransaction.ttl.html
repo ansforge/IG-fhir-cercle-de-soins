@@ -43,17 +43,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.3"}
-    h3,h4,h5,h6{--heading-prefix:"6.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.3"}
+    h3,h4,h5,h6{--heading-prefix:"5.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-</div>
-<div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-  <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-</div>
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Cercle De Soins</span>
@@ -98,30 +98,30 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
+        <a href="interaction_restful.html">Interactions RESTful</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 01</a>
+        <a href="interaction_transaction.html">Interactions transaction</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 02</a>
+        <a href="recherche_recuperation_cds.html">Recherche CDS</a>
+      </li>
+      <li>
+        <a href="correspondances_metier.html">Correspondances métier</a>
       </li>
     </ul>
   </li>
   <li>
-    <a href="artifacts.html">Ressources de conformité</a>
+    <a href="specifications_fonctionnelles.html">Spécifications fonctionnelles</a>
   </li>
   <li>
-    <a href="tests.html">Tests</a>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="securite.html">Sécurité</a>
-      </li>
       <li>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
@@ -134,7 +134,7 @@
     </ul>
   </li>
   <li>
-    <a href="about.html">A propos de ce guide</a>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -255,7 +255,7 @@
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CDSCreateurTransaction&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2 id=\&quot;title\&quot;&gt;CI-SIS Gestion du Cercle de Soins - CreateurTransaction&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 0.1.0&lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1&lt;/li&gt;&lt;li&gt;Supported Formats: &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;xml&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Supported Patch Formats: &lt;/li&gt;&lt;li&gt;Published on: 2023-07-14&lt;/li&gt;&lt;li&gt;Published by: ANS&lt;/li&gt;&lt;/ul&gt;&lt;blockquote class=\&quot;impl-note\&quot;&gt;&lt;p&gt;&lt;strong&gt;Note to Implementers: FHIR Capabilities&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Any FHIR capability may be 'allowed' by the system unless explicitly marked as &amp;quot;SHALL NOT&amp;quot;. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=\&quot;shallIGs\&quot;&gt;SHALL Support the Following Implementation Guides&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;ImplementationGuide-ans.fhir.fr.cds.html\&quot;&gt;http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id=\&quot;rest\&quot;&gt;FHIR RESTful Capabilities&lt;/h2&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h3 id=\&quot;mode1\&quot; class=\&quot;panel-title\&quot;&gt;Mode: &lt;code&gt;client&lt;/code&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div&gt;&lt;p&gt;Envoie une requete pour créer ou mettre à jour un cercle de soins&lt;/p&gt;\n&lt;/div&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Security&lt;/em&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)&lt;/p&gt;\n&lt;/div&gt;&lt;/blockquote&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Summary of System-wide Interactions&lt;/em&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Supports the &lt;code&gt;transaction&lt;/code&gt; interaction described as follows:&lt;div&gt;&lt;p&gt;http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation&lt;/p&gt;\n&lt;/div&gt;&lt;/li&gt;&lt;li&gt;Supports the &lt;code&gt;transaction&lt;/code&gt; interaction described as follows:&lt;div&gt;&lt;p&gt;http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj&lt;/p&gt;\n&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2 id=\&quot;title\&quot;&gt;CI-SIS Gestion du Cercle de Soins - CreateurTransaction&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 0.1.0 &lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1 &lt;/li&gt;&lt;li&gt;Supported Formats: &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;xml&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Supported Patch Formats: &lt;/li&gt;&lt;li&gt;Published on: 2023-07-14 &lt;/li&gt;&lt;li&gt;Published by: ANS &lt;/li&gt;&lt;/ul&gt;&lt;blockquote class=\&quot;impl-note\&quot;&gt;&lt;p&gt;&lt;strong&gt;Note to Implementers: FHIR Capabilities&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.&lt;/p&gt;&lt;/blockquote&gt;&lt;h3 id=\&quot;shallIGs\&quot;&gt;SHALL Support the Following Implementation Guides&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;index.html\&quot;&gt;http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2 id=\&quot;rest\&quot;&gt;FHIR RESTful Capabilities&lt;/h2&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h3 id=\&quot;mode1\&quot; class=\&quot;panel-title\&quot;&gt;Mode: &lt;code&gt;client&lt;/code&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div&gt;&lt;p&gt;Envoie une requete pour créer ou mettre à jour un cercle de soins&lt;/p&gt;\n&lt;/div&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Security&lt;/em&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)&lt;/p&gt;\n&lt;/div&gt;&lt;/blockquote&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Summary of System-wide Interactions&lt;/em&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Supports the &lt;code&gt;transaction&lt;/code&gt;interaction described as follows:&lt;div&gt;&lt;p&gt;http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation&lt;/p&gt;\n&lt;/div&gt;&lt;/li&gt;&lt;li&gt;Supports the &lt;code&gt;transaction&lt;/code&gt;interaction described as follows:&lt;div&gt;&lt;p&gt;http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj&lt;/p&gt;\n&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction&quot;^^xsd:anyURI] ; # 
   <a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
@@ -316,13 +316,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -351,14 +345,13 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 2, 2024 10:26+0000">2024-05-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 28, 2024 07:54+0000">2024-05-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">Historique des versions </a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/IG-fhir-cercle-de-soins/issues/new">New Issue</a>
-                
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/IG-fhir-cercle-de-soins/issues/new">New Issue</a>
 
           </span>
         </p>
@@ -386,20 +379,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
   <!-- Fin ajout ANS -->
 
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-  
-
-
-
-<!-- / feedback form  -->
 
   <!-- Analytics Below
   ================================================== -->
