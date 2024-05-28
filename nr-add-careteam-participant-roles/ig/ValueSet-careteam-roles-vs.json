@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "careteam-roles-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-careteam-roles-cs.html\"><code>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
+  "version" : "0.1.0",
+  "name" : "CareTeamRolesValueSet",
+  "title" : "Roles des participants dans un cercle de soins",
+  "status" : "draft",
+  "date" : "2024-05-28T13:56:40+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Roles des participants dans un cercle de soins.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs"
+    }]
+  }
+}

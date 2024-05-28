@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "careteam-roles-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MT<a name=\"careteam-roles-cs-MT\"> </a></td><td>Médecin Traitant</td><td>Médecin Traitant</td></tr><tr><td style=\"white-space:nowrap\">AID<a name=\"careteam-roles-cs-AID\"> </a></td><td>Aidant</td><td>Aidant</td></tr><tr><td style=\"white-space:nowrap\">PC<a name=\"careteam-roles-cs-PC\"> </a></td><td>Personne de Confiance</td><td>Personne de Confiance</td></tr><tr><td style=\"white-space:nowrap\">RL<a name=\"careteam-roles-cs-RL\"> </a></td><td>Responsable légal</td><td>Responsable légal</td></tr></table></div>"
+  },
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs",
+  "version" : "0.1.0",
+  "name" : "CareTeamRolesCodeSystem",
+  "title" : "Roles des participants dans un cercle de soins",
+  "status" : "draft",
+  "date" : "2024-05-28T13:56:40+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Roles des participants dans un cercle de soins.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "MT",
+    "display" : "Médecin Traitant",
+    "definition" : "Médecin Traitant"
+  },
+  {
+    "code" : "AID",
+    "display" : "Aidant",
+    "definition" : "Aidant"
+  },
+  {
+    "code" : "PC",
+    "display" : "Personne de Confiance",
+    "definition" : "Personne de Confiance"
+  },
+  {
+    "code" : "RL",
+    "display" : "Responsable légal",
+    "definition" : "Responsable légal"
+  }]
+}

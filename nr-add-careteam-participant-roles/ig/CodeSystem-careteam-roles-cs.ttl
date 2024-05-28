@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "careteam-roles-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MT<a name=\"careteam-roles-cs-MT\"> </a></td><td>Médecin Traitant</td><td>Médecin Traitant</td></tr><tr><td style=\"white-space:nowrap\">AID<a name=\"careteam-roles-cs-AID\"> </a></td><td>Aidant</td><td>Aidant</td></tr><tr><td style=\"white-space:nowrap\">PC<a name=\"careteam-roles-cs-PC\"> </a></td><td>Personne de Confiance</td><td>Personne de Confiance</td></tr><tr><td style=\"white-space:nowrap\">RL<a name=\"careteam-roles-cs-RL\"> </a></td><td>Responsable légal</td><td>Responsable légal</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CareTeamRolesCodeSystem"] ; # 
+  fhir:title [ fhir:v "Roles des participants dans un cercle de soins"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-05-28T13:56:40+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "ANS"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "ANS" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Roles des participants dans un cercle de soins."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "MT" ] ;
+     fhir:display [ fhir:v "Médecin Traitant" ] ;
+     fhir:definition [ fhir:v "Médecin Traitant" ]
+  ] [
+     fhir:code [ fhir:v "AID" ] ;
+     fhir:display [ fhir:v "Aidant" ] ;
+     fhir:definition [ fhir:v "Aidant" ]
+  ] [
+     fhir:code [ fhir:v "PC" ] ;
+     fhir:display [ fhir:v "Personne de Confiance" ] ;
+     fhir:definition [ fhir:v "Personne de Confiance" ]
+  ] [
+     fhir:code [ fhir:v "RL" ] ;
+     fhir:display [ fhir:v "Responsable légal" ] ;
+     fhir:definition [ fhir:v "Responsable légal" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

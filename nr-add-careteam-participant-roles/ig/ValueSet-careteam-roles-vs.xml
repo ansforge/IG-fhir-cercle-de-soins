@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="careteam-roles-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-careteam-roles-cs.html"><code>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+  <version value="0.1.0"/>
+  <name value="CareTeamRolesValueSet"/>
+  <title value="Roles des participants dans un cercle de soins"/>
+  <status value="draft"/>
+  <date value="2024-05-28T13:56:40+00:00"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Roles des participants dans un cercle de soins."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs"/>
+    </include>
+  </compose>
+</ValueSet>
