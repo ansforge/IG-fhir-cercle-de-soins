@@ -1,0 +1,146 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "cds2FHIR",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"StructureDefinition-log-cercle-de-soins.html\">Cercle De Soins</a> to <a href=\"StructureDefinition-cds-ihe-careteam.html\">CDS CareTeam Profile</a></p><p>DRAFT (not intended for production usage). Published on 2024-05-28 08:37:42+0000 by ANS  (ANS: <a href=\"https://esante.gouv.fr\">https://esante.gouv.fr</a>). </p><div><p>Mapping du CDS du modèle logique vers le profil FHIR CDS</p>\n</div><br/><p><b>Group 1 </b>Mapping from <a href=\"StructureDefinition-log-cercle-de-soins.html\">Cercle De Soins</a> to <a href=\"StructureDefinition-cds-ihe-careteam.html\">CDS CareTeam Profile</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>CercleDeSoins</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam</td></tr><tr><td>CercleDeSoins.idCercleSoins (Identifiant cercle de soins)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.identifier</td></tr><tr><td>CercleDeSoins.dateCreation (Date de création)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.period.start</td></tr><tr><td>CercleDeSoins.dateMAJ (Date de mise à jour du cercle de soin)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.lastUpdated</td></tr><tr><td>CercleDeSoins.dateFin (Date de fin d'existence du cercle de soins)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.period.end</td></tr><tr><td>CercleDeSoins.statut (Statut du cercle de soins)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.status</td></tr><tr><td>CercleDeSoins.metadonnee (Informations relatives à la gestion des classes et des données)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.meta</td></tr><tr><td>CercleDeSoins.PersonnePriseCharge (Personne prise en charge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.subject</td></tr><tr><td>CercleDeSoins.MembreCercleSoin (Membre du cercle de soin)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CareTeam.participant.member</td></tr></table></div>"
+  },
+  "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ConceptMap/cds2FHIR",
+  "version" : "0.1.0",
+  "name" : "CDS2FHIR",
+  "title" : "Cercle De Soins logical model - profile mapping",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-05-28T08:37:42+00:00",
+  "publisher" : "ANS",
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Mapping du CDS du modèle logique vers le profil FHIR CDS",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "purpose" : "Mapping du CDS du modèle logique vers le profil FHIR CDS",
+  "sourceUri" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-cercle-de-soins",
+  "targetUri" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
+  "group" : [{
+    "source" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/log-cercle-de-soins",
+    "target" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
+    "element" : [{
+      "code" : "CercleDeSoins",
+      "display" : "Cercle de soins",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.idCercleSoins",
+      "display" : "Identifiant cercle de soins",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.identifier",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.dateCreation",
+      "display" : "Date de création",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.period.start",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.dateMAJ",
+      "display" : "Date de mise à jour du cercle de soin",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.lastUpdated",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.dateFin",
+      "display" : "Date de fin d'existence du cercle de soins",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.period.end",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.statut",
+      "display" : "Statut du cercle de soins",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.status",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.metadonnee",
+      "display" : "Informations relatives à la gestion des classes et des données",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.meta",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.PersonnePriseCharge",
+      "display" : "Personne prise en charge",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.subject",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "CercleDeSoins.MembreCercleSoin",
+      "display" : "Membre du cercle de soin",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "CareTeam.participant.member",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}
