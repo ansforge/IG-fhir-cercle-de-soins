@@ -2,30 +2,21 @@
 
 # Contexte
 
-## Contexte métier du projet
-[A COMPLETER : doit contenir la description fonctionnelle du projet destinée à un profil non technique]
+## Contexte du projet
+Le guide d'implémentation Cercle de Soins (CDS) contient les spécifications fonctionnelles et techniques pour garantir une interopérabilité des échanges.
 
-## Contexte technique du projet
-[A COMPLETER : doit expliquer brièvement quelles ressources / profils sont utilisés, exemple implémentation où IG est utilisé]
+Le cercle de soins permet d’identifier l’ensemble des intervenants (personnes, professionnels et structures) participant à la prise en charge et aux actions de coordination du parcours de santé de la personne. Le cercle de soins d’une personne peut être échangé pour répondre aux besoins des domaines sanitaire, médico-administratif, médico-social et social.
 
-# CI/CD
-Les workflows associés à ce repository (.github/workflows) permettent : 
-* D'executer Sushi pour vérifier la grammaire
-* De faire les tests avec le validator_cli
-* De publier les pages : https://ansforge.github.io/IG-fhir-cercle-de-soins/ig/{nom de la branche}
-Ex : https://ansforge.github.io/IG-fhir-cercle-de-soins/ig/main
+La version intégration continue est accessible à l'adresse [https://ansforge.github.io/IG-fhir-cercle-de-soins/ig/main](https://ansforge.github.io/IG-fhir-cercle-de-soins/ig/main)
 
 # Notes
-Ce repo "IG-modele" a été créé à partir du repo [sample-ig](https://github.com/FHIR/sample-ig) de l'organisation GitHub FHIR.
 
-[A COMPLETER: notes supplémentaires pour le lecteur de la spec]
 Un commentaire ? Une remarque ? Utilisez les GitHub [issues](https://docs.github.com/fr/issues) pour indiquer vos propositions d'amélioration et de correction.
 
 ## Acronymes
 
 * IG : Implementation Guide
 * FHIR : Fast Healthcare Interoperability Resources
-* FIG : FHIR Implementation Guide
 * HL7 : Health Level Seven
+* CDS : Cercle De Soins
 
-[A COMPLETER : acronymes utilisés dans le cadre de ce projet]
