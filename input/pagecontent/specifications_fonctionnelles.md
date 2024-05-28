@@ -126,7 +126,7 @@ Les acteurs « Système » et « Personne » représentés dans les processus co
 ##### Processus collaboratif "Création du cercle de soins"
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img src="sf_image3.png" alt="Flux1" title="Flux1">
+    <img style="height: auto; width: 100%;" src="sf_image3.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 2 : Processus collaboratif "Création du cercle de soins"
@@ -170,7 +170,7 @@ Table 1 Caractéristiques du processus collaboratif
 ##### Processus collaboratif "Consultation du cercle de soins"
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img src="sf_image4.png" alt="Flux1" title="Flux1">
+    <img style="height: auto; width: 100%;" src="sf_image4.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 3 : Processus collaboratif "Consultation du cercle de soins"
@@ -213,7 +213,7 @@ Table 2 Caractéristiques du processus collaboratif
 ##### Processus collaboratif "Mise à jour du cercle de soins"
 
 <div class="figure" style="margin:auto; width:65%;">
-    <img src="sf_image5.png" alt="Flux1" title="Flux1">
+    <img style="height: auto; width: 100%;" src="sf_image5.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 4 : Processus collaboratif "Mise à jour du cercle de soins"
@@ -594,7 +594,7 @@ Table 13 Mise en équivalence MOS
 #### Flux 1 - CreationCercleSoins
 
 <div class="figure" style="margin:auto; width:100%;">
-    <img src="sf_image10.png" alt="Flux1" title="Flux1">
+    <img style="height: auto; width: 100%;" src="sf_image10.png" alt="Flux1" title="Flux1">
 </div>
 
 Figure 8 Flux 1 - CreationCercleSoins
@@ -1307,20 +1307,20 @@ Table 26 Flux de recherche
 
 Illustration du cas d'usage présenté à l'étape 0.
 
-<div class="figure" style="margin:auto; width:65%;">
-    <img src="sf_image11.png" alt="Flux1" title="Flux1">
+<div class="figure" style="margin:auto; width:100%;">
+    <img style="height: auto; width: 100%;" src="sf_image11.png" alt="Flux1" title="Flux1">
 </div>
 
 #### Diagramme de séquence Interaction
 
 Autre illustration du cas d’usage avec SI DAC en tant que créateur & gestionnaire, Dossier Patient Informatisé et SI Médecin traitant en tant que consommateur
 
-<div class="figure" style="margin:auto; width:65%;">
-    <img src="sf_image12.png" alt="Flux1" title="Flux1">
+<div class="figure" style="margin:auto; width:100%;">
+    <img style="height: auto; width: 100%;" src="sf_image12.png" alt="Flux1" title="Flux1">
 </div>
 
 #### Diagramme d'objet du flux 1.
 
 <div class="figure" style="margin:auto; width:100%;">
-    <img src="sf_image13.png" alt="Flux1" title="Flux1">
+    <img style="height: auto; width: 100%;" src="sf_image13.png" alt="Flux1" title="Flux1">
 </div>

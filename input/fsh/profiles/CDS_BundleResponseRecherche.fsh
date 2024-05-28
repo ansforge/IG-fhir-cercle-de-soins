@@ -1,6 +1,7 @@
 Profile: CDSBundleResponseRecherche
 Parent: Bundle
 Id: cds-bundle-response-recherche
+Title: "CDS Bundle Response Recherche Profile"
 Description: "Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET."
 * type = #searchset
 * entry ^slicing.discriminator.type = #profile
@@ -11,7 +12,6 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
     patient 0..* and
     relatedPerson 0..* and
     organization 0..* and
-    organizationInterne 0..* and
     practitionerRoleOrg 0..* and
     practitionerPro 0..*
 
@@ -22,7 +22,7 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[careTeam].response ..0
 
 * entry[patient].resource 1..
-* entry[patient].resource only $FrPatient  //TODO Changer vers INS Patient ?
+* entry[patient].resource only CDSFrPatient
 * entry[patient].search.mode = #include
 * entry[patient].request ..0
 * entry[patient].response ..0
@@ -34,16 +34,10 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[relatedPerson].response ..0
 
 * entry[organization].resource 1..
-* entry[organization].resource only $FrOrganization
+* entry[organization].resource only cds-organization
 * entry[organization].search.mode = #include
 * entry[organization].request ..0
 * entry[organization].response ..0
-
-* entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only cds-organization-orga-int
-* entry[organizationInterne].search.mode = #include
-* entry[organizationInterne].request ..0
-* entry[organizationInterne].response ..0
 
 * entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
 * entry[practitionerRoleOrg].resource 1..

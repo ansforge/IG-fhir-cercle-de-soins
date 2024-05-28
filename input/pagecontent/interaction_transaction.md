@@ -2,20 +2,16 @@
 
 La première étape de la construction de ce flux de création du cercle de soins consiste à organiser son contenu. Plusieurs types de ressources sont présents :
 
-* La ressource CareTeam (profil CDS_IHECareTeam),
+* La ressource CareTeam (profil [CDS_IHECareTeam](StructureDefinition-cds-ihe-careteam.html)),
 * La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient (profil FrPatient),
 * La ou les ressources référencées comme membres du Cercle de Soins, et celles qu’elles référencent, parmi les ressources suivantes :
-  * PractitionerRole (profil PractitionerRoleOrganizationalRoleRASS) pour représenter la situation d’exercice particulière d’un professionnel.
-    * Avec PractitionerRole (profil PractitionerRoleProfessionalRoleRASS) représentant l’exercice professionnel, référencée depuis PractitionerRole.partOf.
-    * Avec Practitioner (profil FrPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).
-  * RelatedPerson (profil CDS_FrRelatedperson) pour représenter une personne tierce,
-  * Organization (profil FrOrganization) pour représenter une entité géographique (EG)
-    * Avec Organization (profil FrOrganization) représentant l’entité juridique (EJ) et référencée depuis Organization.partOf (EG)
-  * Organization (profil CDS_Organization-OrgaInt) pour représenter une organisation interne (OI)
-    * Avec Organization (profil FrOrganization) représentant l’entité géographique et référencée depuis Organization.partOf (OI)
+  * PractitionerRole (profil ASPractitionerRole) pour représenter la situation d’exercice particulière d’un professionnel.
+    * Avec Practitioner (profil ASPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).
+  * RelatedPerson (profil [CDS_FrRelatedperson](StructureDefinition-cds-fr-related-person.html)) pour représenter une personne tierce,
+  * Organization (profil CDSAsOrganization) pour représenter une entité géographique (EG), une entité juridique (EJ) ou une organisation interne (OI)
   * Ou aucune si le seul membre est la personne prise en charge déjà référencée comme sujet du Cercle de Soins.
 
-Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil « CDS_BundleTransactionCreation ». Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.
+Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.html). Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="crea-cds-trans.png" alt="CI-SIS" title="Diagramme de séquence du flux 1c">
@@ -33,7 +29,7 @@ Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource O
 
 ### Mise à jour de cercles de soins
 
-Le Bundle « CDS_BundleTransactionMAJ » peut contenir exactement les mêmes ressources que le CDS_BundleTransactionCreation. Le Bundle contient à minima une ressource CareTeam ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.
+Le Bundle [CDS_BundleTransactionMAJ](StructureDefinition-cds-bundle-transaction-maj.html) peut contenir exactement les mêmes ressources que le [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.html). Le Bundle contient à minima une ressource CareTeam ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="maj-cds-trans.png" alt="CI-SIS" title="Diagramme de séquence du flux 4c">
