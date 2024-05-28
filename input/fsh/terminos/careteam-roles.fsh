@@ -1,4 +1,4 @@
-ValueSet: CareTeamRolesCodeSystem
+CodeSystem: CareTeamRolesCodeSystem
 Id: careteam-roles-cs
 Title: "Roles des participants dans un cercle de soins"
 Description: "Roles des participants dans un cercle de soins."
