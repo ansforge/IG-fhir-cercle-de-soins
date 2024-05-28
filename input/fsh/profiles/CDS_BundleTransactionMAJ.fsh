@@ -1,6 +1,7 @@
 Profile: CDSBundleTransactionMAJ
 Parent: Bundle
 Id: cds-bundle-transaction-maj
+Title: "CDS Bundle Transaction MAJ Profile"
 Description: """Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.
 Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du flux de création d'un cercle de soins."""
 * type = #transaction
@@ -13,7 +14,6 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
     patient 0..* and
     relatedPerson 0..* and
     organization 0..* and
-    organizationInterne 0..* and
     practitionerRoleOrg 0..* and
     practitionerPro 0..*
 
@@ -23,7 +23,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[careTeam].response ..0
 
 * entry[patient].resource 1..
-* entry[patient].resource only $FrPatient
+* entry[patient].resource only CDSFrPatient  //TODO Changer vers INS Patient ?
 * entry[patient].request.method obeys req-met
 * entry[patient].response ..0
 
@@ -33,14 +33,9 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 * entry[relatedPerson].response ..0
 
 * entry[organization].resource 1..
-* entry[organization].resource only $FrOrganization
+* entry[organization].resource only cds-organization
 * entry[organization].request.method obeys req-met
 * entry[organization].response ..0
-
-* entry[organizationInterne].resource 1..
-* entry[organizationInterne].resource only cds-organization-orga-int
-* entry[organizationInterne].request.method obeys req-met
-* entry[organizationInterne].response ..0
 
 * entry[practitionerRoleOrg] ^short = "Situation d'exercice du PS (PractitionerRole)"
 * entry[practitionerRoleOrg].resource 1..
