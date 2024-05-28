@@ -47,8 +47,6 @@ La liste ci-dessous expose la liste des profils.
 | Flux 4a - MiseJourActeurRestful, Flux 4b - MiseJourCercleSoinsRestful | Ces deux flux ont été dissociés pour séparer la mise à jour des acteurs de la mise à jour des cercles de soins dans l’option de construction Restful. |
 | Flux 4c – MAJCercleSoinsTransaction       | Ce flux a été dissocié pour séparer les mises à jour dans l’option de construction Transaction |
 
-#### Présentation du contour technique
-
 ### Utilisation de l'IG
 
 Ce guide d'implémentation s’adresse aux développeurs des interfaces interopérables des systèmes implémentant la gestion du cercle de soins ou à toute autre personne intervenant dans le processus de mise en place de ces interfaces.
