@@ -22,7 +22,7 @@ Description: """Profil héritant du profil défini dans DCTM et défini pour le 
 * name ^short = "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »."
 
 * subject 1..1
-* subject only Reference(CDSFrPatient) 
+* subject only Reference(FRCorePatientProfile) 
 * subject ^short = "Le sujet du cercle de soins est une personne prise en charge (« Patient »)."
 
 * encounter only Reference(Encounter)

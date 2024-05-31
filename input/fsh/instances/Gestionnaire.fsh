@@ -103,7 +103,7 @@ Usage: #definition
 // * Recherche sur le profil Patient *
 // ***********************************
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = Canonical(CDSFrPatient)
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read

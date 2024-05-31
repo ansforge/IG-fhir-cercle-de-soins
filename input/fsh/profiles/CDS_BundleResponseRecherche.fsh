@@ -22,7 +22,7 @@ Description: "Profil « Bundle » de type « searchset » encapsulant une collec
 * entry[careTeam].response ..0
 
 * entry[patient].resource 1..
-* entry[patient].resource only CDSFrPatient
+* entry[patient].resource only FRCorePatientProfile
 * entry[patient].search.mode = #include
 * entry[patient].request ..0
 * entry[patient].response ..0

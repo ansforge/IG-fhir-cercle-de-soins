@@ -78,7 +78,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].documentation = "Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l'organisation responsable du cercle de soins."
 
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = Canonical(CDSFrPatient)
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest.resource[=].interaction[0].code = #read
 * rest.resource[=].interaction[+].code = #search-type
 * rest.resource[=].searchParam[0].name = "identifier"
