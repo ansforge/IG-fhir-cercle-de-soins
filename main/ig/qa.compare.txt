@@ -1,10 +1,10 @@
 CDS : Validation Results
 =========================================
 
-err = 3, warn = 15, info = 5
+err = 3, warn = 14, info = 3
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 0 / 3 / 0
+ Build Errors : 1 / 3 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction : 0 / 1 / 1
@@ -19,12 +19,12 @@ Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://inte
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-patient : 0 / 1 / 3
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 4
 </table>
 == n/a ==
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/index.html#/html/body/div/div/div/div/div/div/p/svg/g/g/a at Line 282, column 396: The link 'StructureDefinition-cds-fr-patient.html' for "CDS FrPatient" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -52,10 +52,6 @@ WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-cds-fr-patient.json ==
-INFORMATION: StructureDefinition/cds-fr-patient: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
-INFORMATION: StructureDefinition/cds-fr-patient: StructureDefinition.snapshot.element[50].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
-WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-fr-related-person.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-ihe-careteam.json ==

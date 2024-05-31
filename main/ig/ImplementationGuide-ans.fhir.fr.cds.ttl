@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-28T14:08:32+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-31T13:43:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -617,18 +617,6 @@
        ] ;
        fhir:name [ fhir:v "CDS Fr RelatedPerson Profile" ] ;
        fhir:description [ fhir:v "Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…)." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/cds-fr-patient" ]
-       ] ;
-       fhir:name [ fhir:v "CDS FrPatient Profile" ] ;
-       fhir:description [ fhir:v "Profil patient adapté au cercle de soins." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

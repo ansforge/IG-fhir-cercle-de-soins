@@ -208,10 +208,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 https://www.hl7.org/fhir/R4/http.html
 </code></pre></div></div>
 
-<p>Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization ».
-Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé, rassemblant les données d’identification des professionnels et des structures de santé issues des différents référentiels nationaux.
-Le flux 1a de création d’un acteur est une requête HTTP POST reposant sur l’interaction « create » de FHIR.
-Le flux 4a de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour.</p>
+<p>Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization » :</p>
+
+<ul>
+  <li>Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé, rassemblant les données d’identification des professionnels et des structures de santé issues des différents référentiels nationaux.</li>
+  <li>la ressource Patient respectant le profil FrCorePatientProfile doit contenir de préférence un identifier, un telecom et une address</li>
+</ul>
+
+<p>Les flux d’interaction restful définis sont :</p>
+
+<ul>
+  <li>Le flux 1a de création d’un acteur est une requête HTTP POST reposant sur l’interaction « create » de FHIR.</li>
+  <li>Le flux 4a de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour.</li>
+</ul>
 
 <p>Ces requêtes sont envoyées au gestionnaire :</p>
 
@@ -294,7 +303,7 @@ A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 28, 2024 14:08+0000">2024-05-28</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 31, 2024 13:43+0000">2024-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
