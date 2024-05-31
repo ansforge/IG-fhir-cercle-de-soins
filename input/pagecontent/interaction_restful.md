@@ -10,7 +10,7 @@ https://www.hl7.org/fhir/R4/http.html
 Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization » :
 
 * Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé, rassemblant les données d’identification des professionnels et des structures de santé issues des différents référentiels nationaux.
-* la ressource Patient respectant le profil FrCorePatientProfile doit contenir de préférence un identifiant, un telecom et une address
+* la ressource Patient respectant le profil FrCorePatientProfile doit contenir de préférence un identifier, un telecom et une address
 
 Les flux d'interaction restful définis sont :
 
