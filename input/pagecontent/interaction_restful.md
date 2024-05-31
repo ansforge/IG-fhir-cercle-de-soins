@@ -7,10 +7,15 @@ Plus d'informations sur les requêtes HTTP en FHIR sur la documentation officiel
 https://www.hl7.org/fhir/R4/http.html
 ```
 
-Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization ».
-Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé, rassemblant les données d’identification des professionnels et des structures de santé issues des différents référentiels nationaux.
-Le flux 1a de création d’un acteur est une requête HTTP POST reposant sur l’interaction « create » de FHIR.
-Le flux 4a de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour.
+Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization » :
+
+* Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé, rassemblant les données d’identification des professionnels et des structures de santé issues des différents référentiels nationaux.
+* la ressource Patient respectant le profil FrCorePatientProfile doit contenir de préférence un identifiant, un telecom et une address
+
+Les flux d'interaction restful définis sont :
+
+* Le flux 1a de création d’un acteur est une requête HTTP POST reposant sur l’interaction « create » de FHIR.
+* Le flux 4a de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour.
 
 Ces requêtes sont envoyées au gestionnaire :
 
