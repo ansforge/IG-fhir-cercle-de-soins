@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDSPatientBirthplace</h2><p>Parameter <code>birthplace</code>:<code>string</code></p><div><p>Lieu de naissance du patient</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td></tr><tr><td>Expression</td><td><code>extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may only appear once</li><li>multipleOr: The parameter may only have one value (no comma separators)</li></ul></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "2.0.0-ballot"] ; # 
   fhir:name [ fhir:v "CDSPatientBirthplace"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-31T13:43:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-25T20:35:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
