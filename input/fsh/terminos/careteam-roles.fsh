@@ -13,3 +13,4 @@ Id: careteam-roles-vs
 Title: "Roles des participants dans un cercle de soins"
 Description: "Roles des participants dans un cercle de soins."
 * include codes from system CareTeamRolesCodeSystem
+* include codes from system http://hl7.org/fhir/ValueSet/participant-role
