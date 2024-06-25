@@ -1,73 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "67546939-bfeb-48e9-a4b6-37d1aae5c105",
+  "id" : "1a6950f8-0f47-4bf1-bcd3-83371e668d48",
   "meta" : {
-    "lastUpdated" : "2024-05-28T14:07:04.465+00:00"
+    "lastUpdated" : "2024-06-25T13:31:21.633+00:00"
   },
-  "type" : "collection",
-  "entry" : [{
-    "fullUrl" : "http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-careteam-roles-cs.html\">codesystem Roles des participants dans un cercle de soins v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---interop.esante.gouv.fr-ig-fhir-cds-CodeSystem-careteam-roles-cs-MT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-careteam-roles-cs.html#careteam-roles-cs-MT\">MT</a></td><td>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</td><td>Médecin Traitant</td><td><div><p>Médecin Traitant</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---interop.esante.gouv.fr-ig-fhir-cds-CodeSystem-careteam-roles-cs-AID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-careteam-roles-cs.html#careteam-roles-cs-AID\">AID</a></td><td>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</td><td>Aidant</td><td><div><p>Aidant</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---interop.esante.gouv.fr-ig-fhir-cds-CodeSystem-careteam-roles-cs-PC\"> </a>\u00a0\u00a0<a href=\"CodeSystem-careteam-roles-cs.html#careteam-roles-cs-PC\">PC</a></td><td>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</td><td>Personne de Confiance</td><td><div><p>Personne de Confiance</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---interop.esante.gouv.fr-ig-fhir-cds-CodeSystem-careteam-roles-cs-RL\"> </a>\u00a0\u00a0<a href=\"CodeSystem-careteam-roles-cs.html#careteam-roles-cs-RL\">RL</a></td><td>http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs</td><td>Responsable légal</td><td><div><p>Responsable légal</p>\n</div></td></tr></table></div>"
-      },
-      "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
-      "version" : "0.1.0",
-      "name" : "CareTeamRolesValueSet",
-      "title" : "Roles des participants dans un cercle de soins",
-      "status" : "draft",
-      "date" : "2024-05-28T14:07:04+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:b9a43e75-388b-4045-ada3-d6076a7d4ec3",
-        "timestamp" : "2024-05-28T14:07:41+00:00",
-        "total" : 4,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs",
-          "code" : "MT",
-          "display" : "Médecin Traitant"
-        },
-        {
-          "system" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs",
-          "code" : "AID",
-          "display" : "Aidant"
-        },
-        {
-          "system" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs",
-          "code" : "PC",
-          "display" : "Personne de Confiance"
-        },
-        {
-          "system" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs",
-          "code" : "RL",
-          "display" : "Responsable légal"
-        }]
-      }
-    }
-  }]
+  "type" : "collection"
 }
