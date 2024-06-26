@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="cds-organization-example"/>
+  <meta>
+    <profile value="http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization </b><a name="cds-organization-example"> </a><a name="hccds-organization-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceOrganization &quot;cds-organization-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cds-organization.html">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: Médical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (fr-v2-3307#MEDICAL)</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 FRA </p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://interopsante.org/fhir/CodeSystem/fr-v2-3307"/>
+      <code value="MEDICAL"/>
+      <display value="Médical"/>
+    </coding>
+  </type>
+  <name value="Cabinet médical CC CC"/>
+  <alias value="CC CC Rennes"/>
+  <address>
+    <line value="12 rue du paris"/>
+    <city value="Rennes"/>
+    <postalCode value="35000"/>
+    <country value="FRA"/>
+  </address>
+</Organization>
