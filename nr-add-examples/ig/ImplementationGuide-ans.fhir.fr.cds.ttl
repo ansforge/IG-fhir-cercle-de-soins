@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-26T09:50:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-26T10:01:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -636,10 +636,10 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation> ;
-         fhir:reference [ fhir:v "Bundle/cds-bundle-transaction-creation" ]
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> ;
+         fhir:reference [ fhir:v "Bundle/cds-bundle-transaction-creation-example" ]
        ] ;
-       fhir:name [ fhir:v "cds-bundle-transaction-creation" ] ;
+       fhir:name [ fhir:v "cds-bundle-transaction-creation-example" ] ;
        fhir:example [
          fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
          fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
