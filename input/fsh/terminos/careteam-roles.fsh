@@ -1,16 +1,5 @@
-CodeSystem: CareTeamRolesCodeSystem
-Id: careteam-roles-cs
-Title: "Roles des participants dans un cercle de soins"
-Description: "Roles des participants dans un cercle de soins."
-* #MT "Médecin Traitant" "Médecin Traitant"
-* #AID "Aidant" "Aidant"
-* #PC "Personne de Confiance" "Personne de Confiance"
-* #RL "Responsable légal" "Responsable légal"
-
-
-ValueSet: CareTeamRolesValueSet
 Id: careteam-roles-vs
 Title: "Roles des participants dans un cercle de soins"
 Description: "Roles des participants dans un cercle de soins."
-* include codes from system CareTeamRolesCodeSystem
-* include codes from system http://hl7.org/fhir/ValueSet/participant-role
+* https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction#PCP
+* include codes from system https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass
