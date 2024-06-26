@@ -1,9 +1,9 @@
 CDS : Validation Results
 =========================================
 
-err = 3, warn = 17, info = 6
+err = 3, warn = 17, info = 10
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 15:39:15 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+Generated Wed Jun 26 15:39:37 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0.1.0 (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 0 / 4 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
@@ -21,8 +21,8 @@ Generated Wed Jun 26 15:39:15 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-patient : 0 / 1 / 3
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 4
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 0 / 1 / 4
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 5
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ValueSet-careteam-roles-vs : 0 / 1 / 1
 </table>
 == n/a ==
@@ -32,13 +32,13 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-CDSConsommateur.json ==
-WARNING: CapabilityStatement/CDSConsommateur: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: CapabilityStatement/CDSConsommateur: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
 == fsh-generated/resources/CapabilityStatement-CDSCreateurRestful.json ==
-WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
 == fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction.json ==
-WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
 == fsh-generated/resources/CapabilityStatement-CDSGestionnaire.json ==
-WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
 ERROR: CapabilityStatement/CDSGestionnaire: CapabilityStatement.rest[0].resource[3].searchParam[1]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/individual-family|4.0.1' type is string, but type here is token
 ERROR: CapabilityStatement/CDSGestionnaire: CapabilityStatement.rest[0].resource[5].searchParam[2]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/Organization-name|4.0.1' type is string, but type here is token
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds.json ==
@@ -62,12 +62,16 @@ WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/
 == fsh-generated/resources/StructureDefinition-cds-fr-related-person.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-ihe-careteam.json ==
+INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[24].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[31].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[43].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-organization.json ==
 ERROR: StructureDefinition.differential.element[2].example[0]: Unrecognized property 'valueString'
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[90].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
+INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[111].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-careteam-roles-vs.json ==
 WARNING: ValueSet/careteam-roles-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
