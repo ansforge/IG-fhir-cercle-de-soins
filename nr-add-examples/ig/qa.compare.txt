@@ -1,7 +1,7 @@
 CDS : Validation Results
 =========================================
 
-err = 15, warn = 17, info = 13
+err = 14, warn = 17, info = 13
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 1 / 8 / 1
@@ -11,7 +11,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://inte
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSGestionnaire : 2 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CareTeam-cds-careteam-example : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 0 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Organization-cds-organization-example : 9 / 0 / 4
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Organization-cds-organization-example : 8 / 0 / 4
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Patient-cds-patient-example : 3 / 1 / 6
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/RelatedPerson-cds-relatedperson-example : 0 / 0 / 2
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/SearchParameter-cds-careteam-end : 0 / 0 / 1
@@ -60,8 +60,7 @@ ERROR: Organization/cds-organization-example: Organization.type[0]: Slicing cann
 ERROR: Organization/cds-organization-example: Organization.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:typeEtablissement - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions
 INFORMATION: Organization/cds-organization-example: Organization.meta.profile[0]: This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Organization/cds-organization-example: Organization.type[0]: Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1
-ERROR: Organization/cds-organization-example: Organization.type[0].extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Organization/cds-organization-example: Organization.type[0].extension[0]: The Extension 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types' definition is for a simple extension, so it must contain a value
+ERROR: Organization/cds-organization-example: Organization.type[0].extension[0].value.ofType(code): The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')
 INFORMATION: Organization/cds-organization-example: Organization.address[0].country: Reference to retired ValueSet https://mos.esante.gouv.fr/NOS/JDV_J74-Pays-RASS/FHIR/JDV-J74-Pays-RASS|1.2.0
 == fsh-generated/resources/Patient-cds-patient-example.json ==
 INFORMATION: Patient/cds-patient-example: Patient.meta.profile[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
