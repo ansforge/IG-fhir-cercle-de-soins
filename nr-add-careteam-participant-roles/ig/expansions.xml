@@ -1,9 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="3e7dc2b5-d10f-4fd2-ab49-02780cbcb7fe"/>
+  <id value="de5441c1-3f45-43fb-b73f-b324c4717fb5"/>
   <meta>
-    <lastUpdated value="2024-06-25T13:32:08.857+00:00"/>
+    <lastUpdated value="2024-06-26T15:38:12.512+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on:</p>
+              <ul>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R259-HL7ParticipationFunction.html">codesystem TRE_R259-HL7ParticipationFunction v1.2.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html">codesystem TRE_R260-HL7RoleClass v1.2.0 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R259-HL7ParticipationFunction-FHIR-TRE-R259-HL7ParticipationFunction-PCP"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R259-HL7ParticipationFunction.html#TRE-R259-HL7ParticipationFunction-PCP">PCP</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction</td>
+                <td>Médecin traitant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-ECON"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-ECON">ECON</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Entité à contacter en cas d'urgence</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-GUARD"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-GUARD">GUARD</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Responsable légal</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-QUAL"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-QUAL">QUAL</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Personne de confiance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-POLHOLD"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-POLHOLD">POLHOLD</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Assuré ouvrant droit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-CON"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CON">CON</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Informateur</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-CAREGIVER"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CAREGIVER">CAREGIVER</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Aidant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-PAT"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PAT">PAT</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Patient</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-PROV"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PROV">PROV</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Professionnel de santé</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---mos.esante.gouv.fr-NOS-TRE-R260-HL7RoleClass-FHIR-TRE-R260-HL7RoleClass-AGNT"> </a>  
+                  <a href="https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-AGNT">AGNT</a>
+                </td>
+                <td>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</td>
+                <td>Professionnel caractérisé par son rôle</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+        <version value="0.1.0"/>
+        <name value="CareTeamRolesValueSet"/>
+        <title value="Roles des participants dans un cercle de soins"/>
+        <status value="draft"/>
+        <date value="2024-06-26T15:38:12+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="FRANCE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:500d6d0b-4639-48f1-a24b-d0064b0f8216"/>
+          <timestamp value="2024-06-26T15:38:49+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|1.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|1.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
+            <code value="PCP"/>
+            <display value="Médecin traitant"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="ECON"/>
+            <display value="Entité à contacter en cas d'urgence"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="GUARD"/>
+            <display value="Responsable légal"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="QUAL"/>
+            <display value="Personne de confiance"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="POLHOLD"/>
+            <display value="Assuré ouvrant droit"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CON"/>
+            <display value="Informateur"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CAREGIVER"/>
+            <display value="Aidant"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PAT"/>
+            <display value="Patient"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="AGNT"/>
+            <display value="Professionnel caractérisé par son rôle"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-25T13:32:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-26T15:38:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -770,18 +770,6 @@
        fhir:reference [
          fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs> ;
          fhir:reference [ fhir:v "ValueSet/careteam-roles-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Roles des participants dans un cercle de soins" ] ;
-       fhir:description [ fhir:v "Roles des participants dans un cercle de soins." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/careteam-roles-cs" ]
        ] ;
        fhir:name [ fhir:v "Roles des participants dans un cercle de soins" ] ;
        fhir:description [ fhir:v "Roles des participants dans un cercle de soins." ] ;

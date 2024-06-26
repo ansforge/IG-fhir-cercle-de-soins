@@ -121,17 +121,6 @@
       "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
     },
     {
-      "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/CodeSystem/careteam-roles-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CareTeamRolesCodeSystem",
-      "title" : "Roles des participants dans un cercle de soins",
-      "description" : "Roles des participants dans un cercle de soins.",
-      "uses" : {
-      },
-      "ValueSet-careteam-roles-vs.html" : "Roles des participants dans un cercle de soins"
-    },
-    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -202,8 +191,8 @@
       "uses" : {
       },
       "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
-      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
+      "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -324,6 +313,18 @@
       "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+      "version" : "1.2.0",
+      "status" : "active",
+      "name" : "TRE_R259-HL7ParticipationFunction",
+      "title" : null,
+      "description" : "Rôles fonctionnels HL7",
+      "oids" : ["2.16.840.1.113883.5.88"],
+      "uses" : {
+      },
+      "ValueSet-careteam-roles-vs.html" : "Roles des participants dans un cercle de soins"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
       "version" : "1.2.0",
       "status" : "active",
@@ -333,7 +334,8 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
+      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
+      "ValueSet-careteam-roles-vs.html" : "Roles des participants dans un cercle de soins"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
