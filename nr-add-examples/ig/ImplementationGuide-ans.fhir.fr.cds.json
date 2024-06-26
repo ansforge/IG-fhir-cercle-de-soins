@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-06-26T09:22:02+00:00",
+  "date" : "2024-06-26T09:50:24+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -715,6 +715,17 @@
       "name" : "CDS Organization Profile",
       "description" : "Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/cds-bundle-transaction-creation"
+      },
+      "name" : "cds-bundle-transaction-creation",
+      "exampleCanonical" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"
     },
     {
       "extension" : [{

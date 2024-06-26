@@ -61,6 +61,7 @@
       "Organization"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
@@ -97,6 +98,7 @@
       "Organization.telecom"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
@@ -106,6 +108,7 @@
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
+      "Bundle.entry.resource.name",
       "Patient.name"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
@@ -130,6 +133,7 @@
       "Organization"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types": [
+      "Bundle.entry.resource.type",
       "Organization.type"
     ]
   }

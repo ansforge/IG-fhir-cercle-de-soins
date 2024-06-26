@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 14, warn = 17, info = 13-->
+<!-- broken links = 1, errors = 37, warn = 16, info = 30-->
 <head>
   <title>CDS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for CDS</h1>
- <p>Generated Wed Jun 26 09:23:01 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = <a href="http://interop.esante.gouv.fr/ig/fhir/cds">http://interop.esante.gouv.fr/ig/fhir/cds</a> (<a href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Wed Jun 26 09:51:22 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = <a href="http://interop.esante.gouv.fr/ig/fhir/cds">http://interop.esante.gouv.fr/ig/fhir/cds</a> (<a href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.cds, Canonical = http://interop.esante.gouv.fr/ig/fhir/cds</td></tr>
@@ -98,9 +98,9 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.fr.core#2.0.1:     <a href="https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-3307.html">FRCoreCodeSystemv2_3307</a>
- (1 uses),     <a href="https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0445.html">FRCoreCodeSystemv2_0445</a>
- (1 uses),     <a href="https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0203.html">FRCoreCodeSystemv2_0203</a>
- (6 uses)
+ (2 uses),     <a href="https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0445.html">FRCoreCodeSystemv2_0445</a>
+ (2 uses),     <a href="https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0203.html">FRCoreCodeSystemv2_0203</a>
+ (7 uses)
   </li>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
@@ -146,7 +146,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (20 uses)
+ (21 uses)
   </li>
 </ul>
 </td></tr>
@@ -154,14 +154,17 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://interop.esante.gouv.fr/ig/fhir/cds (Problem #1 with package-list.json at http://interop.esante.gouv.fr/ig/fhir/cds: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 14, warn = 17, info = 13, broken links = 1</td></tr>
+ <tr><td>Summary:</td><td> errors = 37, warn = 16, info = 30, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>8</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>9</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Bundle-cds-bundle-transaction-creation"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Bundle-cds-bundle-transaction-creation</b></a></td><td><b>25</b></td><td><b>0</b></td><td><b>17</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_CapabilityStatement-CDSConsommateur"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -179,16 +182,13 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Organization-cds-organization-example"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Organization-cds-organization-example</b></a></td><td><b>8</b></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Patient-cds-patient-example"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Patient-cds-patient-example</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>5</b></td>
+     <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Patient-cds-patient-example"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Patient-cds-patient-example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>5</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_SearchParameter-cds-patient-birthplace"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/SearchParameter-cds-patient-birthplace</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_StructureDefinition-cds-bundle-response-recherche"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_StructureDefinition-cds-bundle-transaction-creation"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_StructureDefinition-cds-bundle-transaction-maj"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -202,6 +202,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/cds-bundle-transaction-creation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CareTeam/cds-careteam-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
@@ -234,9 +237,145 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Bundle-cds-bundle-transaction-creation"> </a>
+<h2><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(13)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-cds-bundle-transaction-creation.html">CDS Bundle Transaction Creation Profile</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-cds-ihe-careteam.html">CDS CareTeam Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a> and <i>this.</i><a href="StructureDefinition-cds-ihe-careteam.html">CDS CareTeam Profile</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-cds-organization.html">CDS Organization Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-cds-organization.html">CDS Organization Profile</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fhir.fr.core</a>.<a href="https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html">FR Core Patient Profile</a>, <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fhir.fr.core</a>.<a href="https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient-ins.html">FR Core Patient INS Profile</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-cds-fr-related-person.html">CDS Fr RelatedPerson Profile</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> and <i>this.</i><a href="StructureDefinition-cds-fr-related-person.html">CDS Fr RelatedPerson Profile</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0] (l11/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl11" class="flip" onclick="flip('l11')">Show Reasoning</span><div id="l11" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam')</li>, <li>Bundle.entry[0]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0]: Bundle entry missing fullUrl</li>, <li>Bundle.entry[0].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl</li>, <li>Bundle.entry[0].resource.participant[0].member: Relative Reference appears inside Bundle whose entry is missing a fullUrl</li>, <li>Bundle.entry[0].resource.participant[1].member: Relative Reference appears inside Bundle whose entry is missing a fullUrl</li>, <li>Bundle.entry[0].resource.managingOrganization[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient')</li>, <li>Bundle.entry[0]: Profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Patient' in profile 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1', but found type 'CareTeam'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person')</li>, <li>Bundle.entry[0]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'RelatedPerson' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.0-ballot', but found type 'CareTeam'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization')</li>, <li>Bundle.entry[0]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot', but found type 'CareTeam'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole')</li>, <li>Bundle.entry[0]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'PractitionerRole' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1', but found type 'CareTeam'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner')</li>, <li>Bundle.entry[0]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Practitioner' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1', but found type 'CareTeam'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[1] (l65/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl12" class="flip" onclick="flip('l12')">Show Reasoning</span><div id="l12" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam')</li>, <li>Bundle.entry[1]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource: Specified profile type was 'CareTeam' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.0-ballot', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient')</li>, <li>Bundle.entry[1]: Profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource: Specified profile type was 'Patient' in profile 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person')</li>, <li>Bundle.entry[1]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource: Specified profile type was 'RelatedPerson' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.0-ballot', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization')</li>, <li>Bundle.entry[1]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:organizationType - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:secteurActiviteRASS - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:categorieEtablissementRASS - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:activiteINSEE - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:statutJuridiqueINSEE - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:sphParticipation - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.type[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:typeEtablissement - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</li>, <li>Bundle.entry[1].resource.meta.profile[0]: This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[1].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization').exists()</li></ul></li>, <li>Bundle.entry[1].resource.type[0].extension[0].value.ofType(code): The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole')</li>, <li>Bundle.entry[1]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource: Specified profile type was 'PractitionerRole' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1', but found type 'Organization'</li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner')</li>, <li>Bundle.entry[1]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource: Specified profile type was 'Practitioner' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1', but found type 'Organization'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[2] (l112/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl13" class="flip" onclick="flip('l13')">Show Reasoning</span><div id="l13" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam')</li>, <li>Bundle.entry[2]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'CareTeam' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.0-ballot', but found type 'Patient'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient')</li>, <li>Bundle.entry[2]: Profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource.identifier[0]: This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2].resource.identifier[0]: discriminator = true and type.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0203') and (code = 'NH')).exists()</li>, <li>Bundle.entry[2].resource.identifier[0]: discriminator = true and type.coding.where((system = 'https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203') and (code = 'INS-C') and (display = 'Identifiant National de Santé Calculé')).exists()</li>, <li>Bundle.entry[2].resource.identifier[0]: discriminator = true and type.coding.where((system = 'https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203') and (code = 'NDP') and (display = 'Identifiant du patient au Dossier Pharmaceutique')).exists()</li>, <li>Bundle.entry[2].resource.identifier[0]: discriminator = true and type.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0203') and (code = 'PI') and (display = 'Patient internal identifier')).exists()</li>, <li>Bundle.entry[2].resource.identifier[0]: discriminator = true and type.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0203') and (code = 'RRI') and (display = 'Regional registry ID')).exists()</li></ul></li>, <li>Bundle.entry[2].resource.meta.profile[0]: This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient').exists()</li></ul></li>, <li>Bundle.entry[2].resource.extension[1].value.ofType(Address).extension[0].value.ofType(Coding).system: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</li>, <li>Bundle.entry[2].resource.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1' because the code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune| was not found</li>, <li>Bundle.entry[2].resource.extension[1].value.ofType(Address).extension[0].value.ofType(Coding): The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</li>, <li>Bundle.entry[2].resource.name[0].extension[0]: This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2].resource.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' in url)</li></ul></li>, <li>Bundle.entry[2].resource.meta.profile[0]: This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient').exists()</li></ul></li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person')</li>, <li>Bundle.entry[2]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'RelatedPerson' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.0-ballot', but found type 'Patient'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization')</li>, <li>Bundle.entry[2]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'Organization' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot', but found type 'Patient'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole')</li>, <li>Bundle.entry[2]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'PractitionerRole' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1', but found type 'Patient'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner')</li>, <li>Bundle.entry[2]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'Practitioner' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1', but found type 'Patient'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3] (l189/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl14" class="flip" onclick="flip('l14')">Show Reasoning</span><div id="l14" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam')</li>, <li>Bundle.entry[3]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource: Specified profile type was 'CareTeam' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.0-ballot', but found type 'RelatedPerson'</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient')</li>, <li>Bundle.entry[3]: Profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource: Specified profile type was 'Patient' in profile 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.0.1', but found type 'RelatedPerson'</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person')</li>, <li>Bundle.entry[3]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource.meta.profile[0]: This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[3].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person').exists()</li></ul></li>, <li>Bundle.entry[3]: Bundle entry missing fullUrl</li>, <li>Bundle.entry[3].resource.patient: Relative Reference appears inside Bundle whose entry is missing a fullUrl</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization')</li>, <li>Bundle.entry[3]: Profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource: Specified profile type was 'Organization' in profile 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot', but found type 'RelatedPerson'</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole')</li>, <li>Bundle.entry[3]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource: Specified profile type was 'PractitionerRole' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.0.1', but found type 'RelatedPerson'</li></ul></li>, <li>Bundle.entry[3]: discriminator = true and resource.conformsTo('https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner')</li>, <li>Bundle.entry[3]: Profile https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[3].resource: Specified profile type was 'Practitioner' in profile 'https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.0.1', but found type 'RelatedPerson'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:careTeam': a matching slice is required, but not found (from http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Bundle.entry:patient': a matching slice is required, but not found (from http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0] (l11/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*CareTeam&#8203;/cds-careteam-example*&#8203;/&#8203;.subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*CareTeam&#8203;/cds-careteam-example*&#8203;/&#8203;.participant[0]&#8203;.member</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*CareTeam&#8203;/cds-careteam-example*&#8203;/&#8203;.participant[1]&#8203;.member</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*CareTeam&#8203;/cds-careteam-example*&#8203;/&#8203;.managingOrganization[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.participant[0]&#8203;.member</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.participant[1]&#8203;.member</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.managingOrganization[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Organization&#8203;/cds-organization-example*&#8203;/&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Organization&#8203;/cds-organization-example*&#8203;/&#8203;.type[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(code) (l79&#8203;/c48)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:organizationType - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:secteurActiviteRASS - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:categorieEtablissementRASS - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:activiteINSEE - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:statutJuridiqueINSEE - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:sphParticipation - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:typeEtablissement - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[1]&#8203;.resource&#8203;.meta&#8203;.profile[0] (l71&#8203;/c93)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl35" class="flip" onclick="flip('l35')">Show Reasoning</span><div id="l35" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[1].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0] (l75&#8203;/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.type[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(code) (l79&#8203;/c48)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;.address[0]&#8203;.country (l103&#8203;/c31)</b></td><td><b>information</b></td><td title="MSG_RETIRED"><b>Reference to retired ValueSet https://mos.esante.gouv.fr/NOS/JDV_J74-Pays-RASS/FHIR/JDV-J74-Pays-RASS|1.2.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Patient&#8203;/cds-patient-example*&#8203;/&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l128&#8203;/c18)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Patient&#8203;/cds-patient-example*&#8203;/&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l141&#8203;/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Patient&#8203;/cds-patient-example*&#8203;/&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l141&#8203;/c20)</b></td><td><b>information</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Patient&#8203;/cds-patient-example*&#8203;/&#8203;.identifier[0]&#8203;.type (l169&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[2]&#8203;.resource&#8203;.meta&#8203;.profile[0] (l119&#8203;/c82)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl43" class="flip" onclick="flip('l43')">Show Reasoning</span><div id="l43" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l128&#8203;/c18)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l141&#8203;/c20)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l141&#8203;/c20)</b></td><td><b>information</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.identifier[0]&#8203;.type (l169&#8203;/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[2]&#8203;.resource&#8203;.name[0]&#8203;.extension[0] (l155&#8203;/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl48" class="flip" onclick="flip('l48')">Show Reasoning</span><div id="l48" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[2].resource.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3] (l189/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*RelatedPerson&#8203;/cds-relatedperson-example*&#8203;/&#8203;.patient</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[3]&#8203;.resource&#8203;.meta&#8203;.profile[0] (l195&#8203;/c98)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl51" class="flip" onclick="flip('l51')">Show Reasoning</span><div id="l51" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[3].resource.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.patient</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_CapabilityStatement-CDSConsommateur"> </a>
-<h2><a href="CapabilityStatement-CDSConsommateur.html">fsh-generated/resources/CapabilityStatement-CDSConsommateur.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+<h2><a href="CapabilityStatement-CDSConsommateur.html">fsh-generated/resources/CapabilityStatement-CDSConsommateur.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -248,8 +387,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_CapabilityStatement-CDSCreateurRestful"> </a>
-<h2><a href="CapabilityStatement-CDSCreateurRestful.html">fsh-generated/resources/CapabilityStatement-CDSCreateurRestful.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+<h2><a href="CapabilityStatement-CDSCreateurRestful.html">fsh-generated/resources/CapabilityStatement-CDSCreateurRestful.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -261,8 +400,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_CapabilityStatement-CDSCreateurTransaction"> </a>
-<h2><a href="CapabilityStatement-CDSCreateurTransaction.html">fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+<h2><a href="CapabilityStatement-CDSCreateurTransaction.html">fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -274,8 +413,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_CapabilityStatement-CDSGestionnaire"> </a>
-<h2><a href="CapabilityStatement-CDSGestionnaire.html">fsh-generated/resources/CapabilityStatement-CDSGestionnaire.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+<h2><a href="CapabilityStatement-CDSGestionnaire.html">fsh-generated/resources/CapabilityStatement-CDSGestionnaire.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -293,8 +432,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Organization-cds-organization-example"> </a>
-<h2><a href="Organization-cds-organization-example.html">fsh-generated/resources/Organization-cds-organization-example.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-cds-organization.html">CDS Organization Profile</a></li></ul>
+<h2><a href="Organization-cds-organization-example.html">fsh-generated/resources/Organization-cds-organization-example.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-cds-organization.html">CDS Organization Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -322,7 +461,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Organization.type[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:typeEtablissement - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Organization.meta.profile[0] (l6/c87)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl23" class="flip" onclick="flip('l23')">Show Reasoning</span><div id="l23" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Organization.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization').exists()</li></ul></div></td>
+     <td><b><a href="">Organization.meta.profile[0] (l6/c87)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl66" class="flip" onclick="flip('l66')">Show Reasoning</span><div id="l66" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Organization.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Organization.type[0] (l10/c6)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1</b></td>
@@ -336,45 +475,36 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_Patient-cds-patient-example"> </a>
-<h2><a href="Patient-cds-patient-example.html">fsh-generated/resources/Patient-cds-patient-example.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Patient: Validated against <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fhir.fr.core</a>.<a href="https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient-ins.html">FR Core Patient INS Profile</a></li></ul>
+<h2><a href="Patient-cds-patient-example.html">fsh-generated/resources/Patient-cds-patient-example.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Patient: Validated against <a href="https://hl7.fr/ig/fhir/core/2.0.1">hl7.fhir.fr.core</a>.<a href="https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient-ins.html">FR Core Patient INS Profile</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Patient.meta.profile[0] (l7/c76)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl27" class="flip" onclick="flip('l27')">Show Reasoning</span><div id="l27" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient').exists()</li></ul></div></td>
+     <td><b><a href="">Patient.meta.profile[0] (l7/c76)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl70" class="flip" onclick="flip('l70')">Show Reasoning</span><div id="l70" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.meta.profile[0]: discriminator = true and $this.where(value = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Patient&#8203;.extension[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l16&#8203;/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.0.1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Patient&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.system (l29&#8203;/c14)</b></td><td><b>error</b></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>, see <a href="qa-tx.html#l9">log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Patient&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l29&#8203;/c14)</b></td><td><b>warning</b></td><td><b>Unable to check whether the code is in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1' because the code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune| was not found</b> (from <a href="qa-txsrvr.html#http://tx.fhir.org/r4">http://tx.fhir.org/r4</ta>, see <a href="qa-tx.html#l9">log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Patient&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l29&#8203;/c14)</b></td><td><b>error</b></td><td><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1' because the code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune| was not found</b> (from <a href="qa-txsrvr.html#"></ta>, see <a href="qa-tx.html#l9">log</a>)</td>
+     <td><b>Patient&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l29&#8203;/c14)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Patient&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l29&#8203;/c14)</b></td><td><b>information</b></td><td title="UNKNOWN_CODESYSTEM"><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Patient&#8203;.extension[1]&#8203;.value&#8203;.ofType(Address)&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l29&#8203;/c14)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Patient.identifier[0].type (l57/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Patient.name[0].extension[0] (l43/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl35" class="flip" onclick="flip('l35')">Show Reasoning</span><div id="l35" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' in url)</li></ul></div></td>
+     <td><b><a href="">Patient.name[0].extension[0] (l43/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl75" class="flip" onclick="flip('l75')">Show Reasoning</span><div id="l75" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/humanname-assembly-order' in url)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_SearchParameter-cds-patient-birthplace"> </a>
-<h2><a href="SearchParameter-cds-patient-birthplace.html">fsh-generated/resources/SearchParameter-cds-patient-birthplace.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
+<h2><a href="SearchParameter-cds-patient-birthplace.html">fsh-generated/resources/SearchParameter-cds-patient-birthplace.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>SearchParameter: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/searchparameter.html">SearchParameter</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -386,20 +516,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 </table>
 <hr/>
 <a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_StructureDefinition-cds-bundle-response-recherche"> </a>
-<h2><a href="StructureDefinition-cds-bundle-response-recherche.html">fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/cds&#8203;/StructureDefinition&#8203;/cds-bundle-response-recherche')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_StructureDefinition-cds-bundle-transaction-creation"> </a>
-<h2><a href="StructureDefinition-cds-bundle-transaction-creation.html">fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+<h2><a href="StructureDefinition-cds-bundle-response-recherche.html">fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -407,7 +524,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/cds&#8203;/StructureDefinition&#8203;/cds-bundle-transaction-creation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/cds&#8203;/StructureDefinition&#8203;/cds-bundle-response-recherche')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -485,6 +602,52 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Bundle_BUNDLE_Entry_NoFullUrl"> </a>
+<h2>Bundle_BUNDLE_Entry_NoFullUrl</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_FullUrl_Missing"> </a>
+<h2>Bundle_BUNDLE_FullUrl_Missing</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="CapabalityStatement_CS_SP_WrongType"> </a>
 <h2>CapabalityStatement_CS_SP_WrongType</h2>
  <table class="grid">
@@ -507,6 +670,24 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <a name="MSG_DRAFT"> </a>
 <h2>MSG_DRAFT</h2>
  <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445|2.0.1</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+   </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Organization-cds-organization-example.html">fsh-generated/resources/Organization-cds-organization-example.json</a></td><td><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307|2.0.1</b></td>
    </tr>
@@ -531,6 +712,9 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <h2>MSG_RETIRED</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Reference to retired ValueSet https://mos.esante.gouv.fr/NOS/JDV_J74-Pays-RASS/FHIR/JDV-J74-Pays-RASS|1.2.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
      <td><a href="Organization-cds-organization-example.html">fsh-generated/resources/Organization-cds-organization-example.json</a></td><td><b>Reference to retired ValueSet https://mos.esante.gouv.fr/NOS/JDV_J74-Pays-RASS/FHIR/JDV-J74-Pays-RASS|1.2.0</b></td>
    </tr>
 </table>
@@ -538,6 +722,27 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <a name="SLICING_CANNOT_BE_EVALUATED"> </a>
 <h2>SLICING_CANNOT_BE_EVALUATED</h2>
  <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:organizationType - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:secteurActiviteRASS - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:categorieEtablissementRASS - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:activiteINSEE - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:statutJuridiqueINSEE - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:sphParticipation - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:typeEtablissement - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
+   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Organization-cds-organization-example.html">fsh-generated/resources/Organization-cds-organization-example.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Organization.type:organizationType - the discriminator http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.0-ballot does not have fixed value, binding or existence assertions</b></td>
    </tr>
@@ -565,7 +770,10 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <h2>Terminology_TX_Confirm_4a</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Patient-cds-patient-example.html">fsh-generated/resources/Patient-cds-patient-example.json</a></td><td><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1' because the code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune| was not found</b></td>
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Patient-cds-patient-example.html">fsh-generated/resources/Patient-cds-patient-example.json</a></td><td><b>The code provided (https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune#29064) was not found in the value set 'FR Core ValueSet INSEE code' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1), and a code from this value set is required: A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
@@ -576,6 +784,12 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <h2>Terminology_TX_NoValid_16</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="Organization-cds-organization-example.html">fsh-generated/resources/Organization-cds-organization-example.json</a></td><td><b>The value provided ('organizationType') was not found in the value set 'AS ValueSet OrganizationTypes' (https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'organizationType' in the ValueSet 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1'; The provided code '#organizationType' was not found in the value set 'https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types|1.0.1')</b></td>
    </tr>
 </table>
@@ -584,7 +798,24 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <h2>UNKNOWN_CODESYSTEM</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
      <td><a href="Patient-cds-patient-example.html">fsh-generated/resources/Patient-cds-patient-example.json</a></td><td><b>A definition for CodeSystem 'https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum_SLICE"> </a>
+<h2>Validation_VAL_Profile_Minimum_SLICE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slice 'Bundle.entry:careTeam': a matching slice is required, but not found (from http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-cds-bundle-transaction-creation.html">fsh-generated/resources/Bundle-cds-bundle-transaction-creation.json</a></td><td><b>Slice 'Bundle.entry:patient': a matching slice is required, but not found (from http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.0-ballot). Note that other slices are allowed in addition to this required slice</b></td>
    </tr>
 </table>
 </body>
