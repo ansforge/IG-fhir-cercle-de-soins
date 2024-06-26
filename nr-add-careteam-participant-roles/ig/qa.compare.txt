@@ -1,14 +1,14 @@
 CDS : Validation Results
 =========================================
 
-err = 3, warn = 17, info = 10
+err = 1, warn = 16, info = 4
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 0 / 4 / 1
+ Build Errors : 1 / 4 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSGestionnaire : 2 / 1 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSGestionnaire : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/SearchParameter-cds-careteam-end : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/SearchParameter-cds-careteam-managing-organization : 0 / 0 / 1
@@ -19,28 +19,26 @@ Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://inte
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-response-recherche : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-patient : 0 / 1 / 3
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 0 / 1 / 4
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 5
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 0 / 1 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 4
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ValueSet-careteam-roles-vs : 0 / 1 / 1
 </table>
 == n/a ==
 INFORMATION: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/assets/images/fra.svg: The html source does not contain the publish box; this is recommended for publishing support
 WARNING: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/assets/images/fra.svg#/html/head/script at Line 1, column 29: The <script> containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild
+ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/index.html#/html/body/div/div/div/div/div/div/p/svg/g/g/a at Line 282, column 396: The link 'StructureDefinition-cds-fr-patient.html' for "CDS FrPatient" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-CDSConsommateur.json ==
-WARNING: CapabilityStatement/CDSConsommateur: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSConsommateur: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSCreateurRestful.json ==
-WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction.json ==
-WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSGestionnaire.json ==
-WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
-ERROR: CapabilityStatement/CDSGestionnaire: CapabilityStatement.rest[0].resource[3].searchParam[1]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/individual-family|4.0.1' type is string, but type here is token
-ERROR: CapabilityStatement/CDSGestionnaire: CapabilityStatement.rest[0].resource[5].searchParam[2]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/Organization-name|4.0.1' type is string, but type here is token
+WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds.json ==
 == fsh-generated/resources/SearchParameter-cds-careteam-end.json ==
 == fsh-generated/resources/SearchParameter-cds-careteam-managing-organization.json ==
@@ -55,23 +53,15 @@ WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-cds-fr-patient.json ==
-INFORMATION: StructureDefinition/cds-fr-patient: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
-INFORMATION: StructureDefinition/cds-fr-patient: StructureDefinition.snapshot.element[50].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
-WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-fr-related-person.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-ihe-careteam.json ==
-INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[24].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[31].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[43].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-organization.json ==
 ERROR: StructureDefinition.differential.element[2].example[0]: Unrecognized property 'valueString'
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[90].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
-INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[111].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-careteam-roles-vs.json ==
 WARNING: ValueSet/careteam-roles-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

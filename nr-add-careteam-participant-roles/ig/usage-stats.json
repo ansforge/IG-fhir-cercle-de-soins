@@ -1,6 +1,6 @@
 {
   "package": "ans.fhir.fr.cds",
-  "version": "0.1.0",
+  "version": "2.0.0-ballot",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [],
@@ -17,12 +17,6 @@
       {
         "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj",
         "title": "CDS Bundle Transaction MAJ Profile"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-patient",
-        "title": "CDS FrPatient Profile"
       }
     ],
     "RelatedPerson": [
@@ -66,9 +60,6 @@
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
     ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -99,35 +90,14 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
-      "Patient.contact"
-    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
       "Organization.telecom"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
-      "Patient"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
       "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
-      "Patient.name"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
-      "Patient"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
-      "Patient.contact"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
-      "Patient"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
-      "Patient"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
       "Organization.meta"

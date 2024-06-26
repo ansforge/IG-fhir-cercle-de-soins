@@ -85,18 +85,6 @@
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
-      "url" : "http://hl7.org/fhir/link-type",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "LinkType",
-      "title" : "LinkType",
-      "description" : "The type of link between this patient resource and another patient resource.",
-      "oids" : ["2.16.840.1.113883.4.642.4.424"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
-    },
-    {
       "url" : "http://hl7.org/fhir/name-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -191,7 +179,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type",
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship ",
       "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
@@ -207,30 +194,6 @@
       "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "MaritalStatus",
-      "title" : "MaritalStatus",
-      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
-      "oids" : ["2.16.840.1.113883.5.2"],
-      "uses" : {
-      },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "NullFlavor",
-      "title" : "NullFlavor",
-      "description" : "A collection of codes specifying why a valid value is not present.",
-      "oids" : ["2.16.840.1.113883.5.1008"],
-      "uses" : {
-      },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "version" : "3.0.0",
       "status" : "active",
@@ -241,17 +204,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
-    },
-    {
-      "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status",
-      "version" : "2.0.1",
-      "status" : "draft",
-      "name" : "FRCoreCodeSystemMaritalStatus",
-      "title" : "FR Core CodeSystem Marital Status",
-      "description" : "Identifier type",
-      "uses" : {
-      },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-marital-status.html" : "FR Core ValueSet Patient gender INS ValueSet"
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
