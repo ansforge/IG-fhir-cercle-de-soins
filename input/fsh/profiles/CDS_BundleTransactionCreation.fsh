@@ -22,7 +22,7 @@ Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du
 * entry[careTeam].response ..0
 
 * entry[patient].resource 1..
-* entry[patient].resource only CDSFrPatient
+* entry[patient].resource only FRCorePatientProfile
 * entry[patient].request.method obeys req-met
 * entry[patient].response ..0
 

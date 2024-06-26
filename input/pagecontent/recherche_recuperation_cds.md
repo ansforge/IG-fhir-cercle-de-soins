@@ -32,11 +32,11 @@ Les paramètres «_include » et «_revinclude » peuvent être utilisés pour r
 
 * Rechercher les ressources de type Careteam dont le sujet porte l’identifiant 123456. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources « CareTeam » retournées ainsi que les ressources référencées par ces-dites ressources.
 
-"GET http://targetsystem.com/API/Careteam?_include:iterate=*&patient.identifier=http://exAutoriteAffectation/patient|123456" HTTP/1.1
+GET http://targetsystem.com/API/Careteam?_include:iterate=*&patient.identifier=http://exAutoriteAffectation/patient\|123456
 
 * Rechercher les ressources de type Careteam ayant un membre de type RelatedPerson portant le nom Ducros et vivant à Tourcoing. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par l’élément « subject » des ressources « Careteam » retournées, c’est-à-dire les ressources correspondant aux patients ayant cette personne tierce dans leur cercle de soins.
 
-"GET http://targetsystem.com/API/Careteam?_include:iterate =CareTeam:subject&participant:RelatedPerson.name:exact=Ducros&participant:RelatedPerson.address=Tourcoing" HTTP/1.1
+GET http://targetsystem.com/API/Careteam?_include:iterate =CareTeam:subject&participant:RelatedPerson.name:exact=Ducros&participant:RelatedPerson.address=Tourcoing
 
 ### Flux 3a : Réponse à la recherche de cercles de soins
 
@@ -51,10 +51,9 @@ La récupération d’une ressource CareTeam correspondant à un identifiant log
 
 * Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123
 
-"GET http://targetsystem.com/API/Careteam/123/_history/2"
+GET http://targetsystem.com/API/Careteam/123/_history/2
 
 ### Flux 3b : réponse à la récupération d’un cercle de soins
 
 Le flux 3b constitue la réponse à la requête GET du flux 3a. Lorsque la requête s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « CareTeam » portant l’identifiant demandé et le cas échéant correspondant à la version précisée dans la requête.
 Les flux 2b et 3b de récupération d’un cercle de soins correspondent à la transaction IHE « Retrieve CareTeam » [PCC-47].
-

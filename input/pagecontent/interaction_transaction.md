@@ -3,7 +3,7 @@
 La première étape de la construction de ce flux de création du cercle de soins consiste à organiser son contenu. Plusieurs types de ressources sont présents :
 
 * La ressource CareTeam (profil [CDS_IHECareTeam](StructureDefinition-cds-ihe-careteam.html)),
-* La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient (profil FrPatient),
+* La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient respectant le profil FrCorePatientProfile, contenant de préférence un identifier, un telecom et une address,
 * La ou les ressources référencées comme membres du Cercle de Soins, et celles qu’elles référencent, parmi les ressources suivantes :
   * PractitionerRole (profil ASPractitionerRole) pour représenter la situation d’exercice particulière d’un professionnel.
     * Avec Practitioner (profil ASPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).

@@ -103,7 +103,7 @@ Usage: #definition
 // * Recherche sur le profil Patient *
 // ***********************************
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = Canonical(CDSFrPatient)
+* rest.resource[=].profile = "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
 * rest.resource[=].interaction[0].code = #create
 * rest.resource[=].interaction[+].code = #update
 * rest.resource[=].interaction[+].code = #read
@@ -191,7 +191,7 @@ Usage: #definition
 
 * rest.resource[=].searchParam[+].name = "name"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/individual-family"
-* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Recherche selon le nom du practicien"
 
 // *******************************************
@@ -242,7 +242,7 @@ Usage: #definition
 
 * rest.resource[=].searchParam[+].name = "name"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Organization-name"
-* rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[=].type = #string
 * rest.resource[=].searchParam[=].documentation = "Recherche selon le nom de l'organisation"
 // Transaction mode
 * rest.interaction[0].code = #transaction
