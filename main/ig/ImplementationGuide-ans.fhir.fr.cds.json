@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-06-25T20:35:23+00:00",
+  "date" : "2024-06-26T07:47:20+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -856,6 +856,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "specifications_fonctionnelles.html"
+        }],
+        "nameUrl" : "specifications_fonctionnelles.html",
+        "title" : "Volume 1 - Etude fonctionnelle",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "specifications_techniques.html"
         }],
         "nameUrl" : "specifications_techniques.html",
@@ -897,15 +906,6 @@
           "title" : "Correspondances métier",
           "generation" : "markdown"
         }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "specifications_fonctionnelles.html"
-        }],
-        "nameUrl" : "specifications_fonctionnelles.html",
-        "title" : "Spécifications fonctionnelles",
-        "generation" : "markdown"
       },
       {
         "extension" : [{

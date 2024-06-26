@@ -1,10 +1,10 @@
 CDS : Validation Results
 =========================================
 
-err = 3, warn = 14, info = 3
+err = 3, warn = 15, info = 4
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 1 / 3 / 0
+ Build Errors : 1 / 4 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction : 0 / 1 / 1
@@ -24,6 +24,8 @@ Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = http://inte
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 4
 </table>
 == n/a ==
+INFORMATION: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/assets/images/fra.svg: The html source does not contain the publish box; this is recommended for publishing support
+WARNING: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/assets/images/fra.svg#/html/head/script at Line 1, column 29: The <script> containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild
 ERROR: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/index.html#/html/body/div/div/div/div/div/div/p/svg/g/g/a at Line 282, column 396: The link 'StructureDefinition-cds-fr-patient.html' for "CDS FrPatient" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
