@@ -1,9 +1,9 @@
 CDS : Validation Results
 =========================================
 
-err = 0, warn = 15, info = 4
+err = 1, warn = 15, info = 4
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 08:41:31 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+Generated Wed Jun 26 08:46:54 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 1 / 4 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
@@ -21,7 +21,7 @@ Generated Wed Jun 26 08:41:31 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 0 / 1 / 4
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 1 / 1 / 4
 </table>
 == n/a ==
 INFORMATION: /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/output/assets/images/fra.svg: The html source does not contain the publish box; this is recommended for publishing support
@@ -57,6 +57,7 @@ WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/
 == fsh-generated/resources/StructureDefinition-cds-ihe-careteam.json ==
 WARNING: StructureDefinition.where(url = 'http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-cds-organization.json ==
+ERROR: StructureDefinition.differential.element[2].example[0]: Unrecognized property 'valueString'
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[90].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
