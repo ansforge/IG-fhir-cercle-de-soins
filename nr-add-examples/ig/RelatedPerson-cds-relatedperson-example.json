@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson </b><a name=\"cds-relatedperson-example\"> </a><a name=\"hccds-relatedperson-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;cds-relatedperson-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-fr-related-person.html\">CDS Fr RelatedPerson Profile</a></p></div><p><b>identifier</b>: <code>https://fake-system</code>/id-relatedPerson-12\u00a0(use:\u00a0temp)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"urn:uuid:0cd07e94-5dfe-11ee-8c99-0242ac120002\">urn:uuid:0cd07e94-5dfe-11ee-8c99-0242ac120002</a></p><p><b>relationship</b>: Entité à contacter en cas d'urgence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html\">TRE_R260-HL7RoleClass</a>#ECON)</span>, Voisin(e) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R216-HL7RoleCode.html\">TRE_R216-HL7RoleCode</a>#NBOR)</span></p><p><b>name</b>: CHIBOUT Lamine (Official)</p><p><b>telecom</b>: ph: 0602143212</p><p><b>gender</b>: male</p><p><b>address</b>: 12 Rue de la Paix Paris 75004 FRA </p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson </b><a name=\"cds-relatedperson-example\"> </a><a name=\"hccds-relatedperson-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;cds-relatedperson-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-fr-related-person.html\">CDS Fr RelatedPerson Profile</a></p></div><p><b>identifier</b>: <code>https://fake-system</code>/id-relatedPerson-12\u00a0(use:\u00a0temp)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-cds-patient-example.html\">Patient/cds-patient-example</a> &quot; THOBOIS&quot;</p><p><b>relationship</b>: Entité à contacter en cas d'urgence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R260-HL7RoleClass.html\">TRE_R260-HL7RoleClass</a>#ECON)</span>, Voisin(e) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R216-HL7RoleCode.html\">TRE_R216-HL7RoleCode</a>#NBOR)</span></p><p><b>name</b>: CHIBOUT Lamine (Official)</p><p><b>telecom</b>: ph: 0602143212</p><p><b>gender</b>: male</p><p><b>address</b>: 12 Rue de la Paix Paris 75004 FRA </p></div>"
   },
   "identifier" : [{
     "use" : "temp",
@@ -15,7 +15,7 @@
   }],
   "active" : true,
   "patient" : {
-    "reference" : "urn:uuid:0cd07e94-5dfe-11ee-8c99-0242ac120002"
+    "reference" : "Patient/cds-patient-example"
   },
   "relationship" : [{
     "coding" : [{
