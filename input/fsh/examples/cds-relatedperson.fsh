@@ -8,9 +8,11 @@ Usage: #example
 * identifier.system = "https://fake-system"
 * identifier.value = "id-relatedPerson-12"
 * active = true
-* patient = Reference(urn:uuid:0cd07e94-5dfe-11ee-8c99-0242ac120002)
+* patient = Reference(cds-patient-example)
+
 * relationship[0] = $TRE-R260-HL7RoleClass#ECON "Entité à contacter en cas d'urgence"
 * relationship[+] = $TRE-R216-HL7RoleCode#NBOR "Voisin(e)"
+
 * name.use = #official
 * name.family = "Lamine"
 * name.given = "CHIBOUT"
