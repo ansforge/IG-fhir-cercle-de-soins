@@ -1,14 +1,14 @@
 CDS : Validation Results
 =========================================
 
-err = 3, warn = 15, info = 4
+err = 1, warn = 15, info = 4
 IG Publisher Version: 1.6.11
-Generated Wed Jun 26 07:48:22 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+Generated Wed Jun 26 08:47:46 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 1 / 4 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction : 0 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSGestionnaire : 2 / 1 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSGestionnaire : 0 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/SearchParameter-cds-careteam-end : 0 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/SearchParameter-cds-careteam-managing-organization : 0 / 0 / 1
@@ -38,8 +38,6 @@ WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint
 WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSGestionnaire.json ==
 WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
-ERROR: CapabilityStatement/CDSGestionnaire: CapabilityStatement.rest[0].resource[3].searchParam[1]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/individual-family|4.0.1' type is string, but type here is token
-ERROR: CapabilityStatement/CDSGestionnaire: CapabilityStatement.rest[0].resource[5].searchParam[2]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/Organization-name|4.0.1' type is string, but type here is token
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds.json ==
 == fsh-generated/resources/SearchParameter-cds-careteam-end.json ==
 == fsh-generated/resources/SearchParameter-cds-careteam-managing-organization.json ==
