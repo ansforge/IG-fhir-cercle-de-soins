@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 1, warn = 15, info = 4-->
+<!-- broken links = 1, errors = 1, warn = 21, info = 3-->
 <head>
   <title>CDS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,9 +36,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for CDS</h1>
- <p>Generated Wed Jun 26 08:47:46 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = <a href="http://interop.esante.gouv.fr/ig/fhir/cds">http://interop.esante.gouv.fr/ig/fhir/cds</a> (<a href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Jun 27 12:31:01 UTC 2024, FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = <a href="http://interop.esante.gouv.fr/ig/fhir/cds">http://interop.esante.gouv.fr/ig/fhir/cds</a> (<a href="http://interop.esante.gouv.fr/ig/fhir/cds/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.12</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.cds, Canonical = http://interop.esante.gouv.fr/ig/fhir/cds</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Publication Request:</td><td><table class="grid">
@@ -134,7 +134,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-team-status.html">CareTeamStatus</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-care-team-category.html">CareTeamCategory</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
@@ -144,7 +143,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (16 uses)
+ (17 uses)
   </li>
 </ul>
 </td></tr>
@@ -152,14 +151,14 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://interop.esante.gouv.fr/ig/fhir/cds (Problem #1 with package-list.json at http://interop.esante.gouv.fr/ig/fhir/cds: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 1, warn = 15, info = 4, broken links = 1</td></tr>
+ <tr><td>Summary:</td><td> errors = 1, warn = 21, info = 3, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>9</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_CapabilityStatement-CDSConsommateur"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -194,17 +193,32 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_StructureDefinition-cds-organization"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>3</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_ValueSet-careteam-roles-vs"><b>/home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ValueSet-careteam-roles-vs</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
-   <tr style="background-color: #ffffe6">
-     <td><b>output/assets/images/fra.svg</b></td><td><b>information</b></td><td title=""><b>The html source does not contain the publish box; this is recommended for publishing support  (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations). Note that this is mandatory for HL7 specifications, and on the ci-build, but in other cases it's still recommended (this is only reported once, but applies for all pages)</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-cds-bundle-response-recherche&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Bundle.implicitRules,Bundle.entry.search.id,Bundle.entry.response.location,Bundle.entry.response.modifierExtension,Bundle.entry.response,Bundle.link.modifierExtension,Bundle.entry,Bundle.entry.extension,Bundle.language,Bundle.entry.response.lastModified,Bundle.type,Bundle.entry.request.id,Bundle.entry.request.ifNoneExist,Bundle.id,Bundle.identifier,Bundle.entry.search.modifierExtension,Bundle.link.extension,Bundle.entry.response.status,Bundle.entry.link,Bundle.link.url,Bundle.entry.request.modifierExtension,Bundle.entry.search.mode,Bundle.entry.modifierExtension,Bundle.entry.request.extension,Bundle.entry.response.etag,Bundle.meta,Bundle.entry.request.ifNoneMatch,Bundle.timestamp,Bundle.entry.fullUrl,Bundle.entry.request.method,Bundle.entry.request.ifMatch,Bundle.link.relation,Bundle.signature,Bundle.entry.request,Bundle.entry.resource,Bundle.link,Bundle.entry.response.outcome,summary,Bundle.entry.search,Bundle,Bundle.entry.response.extension,Bundle.entry.search.extension,inv,Bundle.entry.id,Bundle.entry.search.score,Bundle.entry.response.id,Bundle.link.id,Bundle.entry.request.ifModifiedSince,Bundle.entry.request.url,Bundle.total</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>output&#8203;/assets&#8203;/images&#8203;/fra&#8203;.svg&#8203;#&#8203;/html&#8203;/head&#8203;/script at Line 1, column 29</b></td><td><b>warning</b></td><td title=""><b>The &lt;script&gt; containing the javascript 'window.onload=functi'... is illegal and not allowed on the HL7 cibuild - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 cibuild</b></td>
+     <td><b>output&#8203;/StructureDefinition-cds-bundle-transaction-creation&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Bundle.implicitRules,Bundle.entry.search.id,Bundle.entry.response.location,Bundle.entry.response.modifierExtension,Bundle.entry.response,Bundle.link.modifierExtension,Bundle.entry,Bundle.entry.extension,Bundle.language,Bundle.entry.response.lastModified,Bundle.type,Bundle.entry.request.id,Bundle.entry.request.ifNoneExist,Bundle.id,Bundle.identifier,Bundle.entry.search.modifierExtension,Bundle.link.extension,Bundle.entry.response.status,Bundle.entry.link,Bundle.link.url,Bundle.entry.request.modifierExtension,Bundle.entry.search.mode,Bundle.entry.modifierExtension,Bundle.entry.request.extension,Bundle.entry.response.etag,Bundle.meta,Bundle.entry.request.ifNoneMatch,Bundle.timestamp,Bundle.entry.request.method,Bundle.entry.fullUrl,Bundle.entry.request.ifMatch,Bundle.link.relation,Bundle.signature,Bundle.entry.request,Bundle.entry.resource,Bundle.link,Bundle.entry.response.outcome,summary,Bundle.entry.search,Bundle,Bundle.entry.response.extension,inv,Bundle.entry.search.extension,Bundle.entry.id,Bundle.entry.search.score,Bundle.entry.response.id,Bundle.entry.request.ifModifiedSince,Bundle.link.id,Bundle.entry.request.url,Bundle.total</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-cds-bundle-transaction-maj&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Bundle.implicitRules,Bundle.entry.search.id,Bundle.entry.response.location,Bundle.entry.response.modifierExtension,Bundle.entry.response,Bundle.link.modifierExtension,Bundle.entry,Bundle.entry.extension,Bundle.language,Bundle.entry.response.lastModified,Bundle.type,Bundle.entry.request.id,Bundle.entry.request.ifNoneExist,Bundle.id,Bundle.identifier,Bundle.entry.search.modifierExtension,Bundle.link.extension,Bundle.entry.response.status,Bundle.entry.link,Bundle.link.url,Bundle.entry.request.modifierExtension,Bundle.entry.search.mode,Bundle.entry.modifierExtension,Bundle.entry.request.extension,Bundle.entry.response.etag,Bundle.meta,Bundle.entry.request.ifNoneMatch,Bundle.timestamp,Bundle.entry.request.method,Bundle.entry.fullUrl,Bundle.entry.request.ifMatch,Bundle.link.relation,Bundle.signature,Bundle.entry.request,Bundle.entry.resource,Bundle.link,Bundle.entry.response.outcome,summary,Bundle.entry.search,Bundle,Bundle.entry.response.extension,inv,Bundle.entry.search.extension,Bundle.entry.id,Bundle.entry.search.score,Bundle.entry.response.id,Bundle.entry.request.ifModifiedSince,Bundle.link.id,Bundle.entry.request.url,Bundle.total</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-cds-fr-related-person&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: RelatedPerson.meta.versionId,RelatedPerson.relationship.coding.display,RelatedPerson.name.family,RelatedPerson.relationship.coding.code,RelatedPerson.communication.preferred,RelatedPerson.meta.security,RelatedPerson.birthDate,RelatedPerson.implicitRules,RelatedPerson.meta,RelatedPerson.contained,RelatedPerson.address,RelatedPerson.communication.extension,RelatedPerson,RelatedPerson.identifier,RelatedPerson.name,RelatedPerson.meta.extension,RelatedPerson.name.extension,RelatedPerson.communication.modifierExtension,RelatedPerson.relationship,RelatedPerson.name.text,RelatedPerson.id,RelatedPerson.text,RelatedPerson.photo,RelatedPerson.name.prefix,RelatedPerson.relationship.extension,RelatedPerson.relationship.coding.version,RelatedPerson.patient,RelatedPerson.extension,RelatedPerson.communication,RelatedPerson.relationship.coding,RelatedPerson.meta.id,RelatedPerson.meta.lastUpdated,RelatedPerson.communication.id,RelatedPerson.name.id,RelatedPerson.gender,RelatedPerson.name.suffix,summary,RelatedPerson.relationship.coding.system,RelatedPerson.relationship.coding.id,RelatedPerson.relationship.id,RelatedPerson.relationship.coding.userSelected,RelatedPerson.relationship.coding.extension,RelatedPerson.active,RelatedPerson.relationship.text,RelatedPerson.language,RelatedPerson.name.period,RelatedPerson.communication.language,RelatedPerson.name.use,inv,RelatedPerson.meta.source,RelatedPerson.meta.tag,RelatedPerson.modifierExtension,RelatedPerson.name.given,RelatedPerson.meta.profile,RelatedPerson.period,RelatedPerson.telecom</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-cds-ihe-careteam&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: CareTeam.category,CareTeam.participant.modifierExtension,CareTeam.participant.onBehalfOf,CareTeam.modifierExtension,CareTeam.period.id,CareTeam.implicitRules,CareTeam.subject,CareTeam.identifier,CareTeam.language,CareTeam.identifier.extension,CareTeam.extension,CareTeam.managingOrganization,CareTeam.note,CareTeam.identifier.period,CareTeam.meta.tag,CareTeam.participant.role,CareTeam.meta.extension,CareTeam.period.end,CareTeam.meta.security,CareTeam.identifier.assigner,CareTeam.participant.period.id,CareTeam.identifier.system,CareTeam.period.extension,CareTeam.participant.id,CareTeam.encounter,CareTeam.identifier.use,CareTeam.participant.period.extension,CareTeam.period.start,CareTeam.id,CareTeam.participant,CareTeam.meta.versionId,CareTeam.participant.period.start,CareTeam.participant.member,CareTeam.meta.id,CareTeam,CareTeam.participant.period,CareTeam.participant.extension,CareTeam.meta.profile,CareTeam.meta.source,CareTeam.reasonReference,CareTeam.telecom,CareTeam.status,CareTeam.text,CareTeam.contained,summary,CareTeam.identifier.id,CareTeam.name,CareTeam.reasonCode,CareTeam.meta,inv,CareTeam.period,CareTeam.identifier.value,CareTeam.meta.lastUpdated,CareTeam.identifier.type,CareTeam.participant.period.end</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/StructureDefinition-cds-organization&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: Organization.identifier.extension,Organization.identifier,Organization.partOf.reference,Organization.implicitRules,Organization.language,Organization.type.extension.id,Organization.name,Organization.partOf.display,Organization.identifier.use,Organization.partOf.id,Organization.type.extension,Organization.identifier.value,Organization.type.text,Organization.meta,Organization.extension.value_x_.start,Organization.meta.security,Organization.identifier.period,Organization.extension.value_x_.id,Organization.contact,Organization.identifier.type.coding.id,Organization.type.coding.code,Organization.identifier.type,Organization.identifier.assigner,Organization.type.coding.version,Organization.contact.extension,Organization.type,Organization.address,Organization.identifier.type.coding.system,Organization.telecom.system,Organization.type.coding.display,Organization.meta.lastUpdated,Organization.extension.id,Organization.extension,Organization.identifier.system,Organization.identifier.type.text,Organization.contact.address,Organization.type.extension.value_x_,Organization.telecom.rank,Organization.meta.source,Organization.id,Organization.type.extension.url,Organization.meta.tag,Organization.extension.value_x_.end,Organization.identifier.type.coding.code,Organization.text,Organization.partOf.type,Organization.telecom.id,Organization.alias,Organization.identifier.type.coding.display,Organization.type.id,Organization.extension.url,Organization.telecom.value,Organization.type.coding.system,Organization,Organization.partOf,Organization.modifierExtension,Organization.telecom,Organization.extension.value_x_.extension,Organization.type.extension.extension,Organization.contained,Organization.partOf.extension,Organization.type.coding,Organization.meta.profile,Organization.identifier.type.coding.extension,Organization.identifier.type.coding.userSelected,Organization.contact.id,Organization.identifier.id,Organization.identifier.type.coding.version,Organization.endpoint,Organization.meta.id,Organization.identifier.type.id,Organization.contact.purpose,Organization.contact.name,summary,Organization.type.coding.extension,Organization.telecom.use,Organization.telecom.extension,Organization.meta.extension,Organization.active,Organization.type.coding.id,Organization.extension.extension,Organization.partOf.identifier,Organization.identifier.type.extension,inv,Organization.contact.modifierExtension,Organization.contact.telecom,Organization.type.coding.userSelected,Organization.extension.value_x_,Organization.telecom.period,Organization.meta.versionId,Organization.identifier.type.coding</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="index.html#l506">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/svg&#8203;/g&#8203;/g&#8203;/a at Line 282, column 396</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-cds-fr-patient.html' for &quot;CDS FrPatient&quot; cannot be resolved</b></td>
@@ -229,7 +243,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CapabilityStatement (l1/c27213)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>CapabilityStatement (l1/c27416)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
 </table>
 <hr/>
@@ -242,7 +256,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CapabilityStatement (l1/c13351)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>CapabilityStatement (l1/c13566)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
 </table>
 <hr/>
@@ -255,7 +269,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CapabilityStatement (l1/c3533)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>CapabilityStatement (l1/c3764)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
 </table>
 <hr/>
@@ -268,7 +282,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CapabilityStatement (l1/c30845)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+     <td><b>CapabilityStatement (l1/c31048)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
    </tr>
 </table>
 <hr/>
@@ -281,7 +295,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>SearchParameter.expression (l1/c1336)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>The left side is inherently a collection, and so the expression 'extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address' may fail or return false if there is more than one item in the content being evaluated</b></td>
+     <td><b>SearchParameter.expression (l1/c1563)</b></td><td><b>warning</b></td><td title="FHIRPATH_COLLECTION_STATUS_OPERATION_LEFT"><b>The left side is inherently a collection, and so the expression 'extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address' may fail or return false if there is more than one item in the content being evaluated</b></td>
    </tr>
 </table>
 <hr/>
@@ -362,16 +376,29 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.example[0] (l47&#8203;/c55)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'valueString'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c75442)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c75649)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[90]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c137157)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[90]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c137364)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[99]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c148409)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[99]&#8203;.pattern&#8203;.ofType(CodeableConcept) (l1&#8203;/c148616)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/interop&#8203;.esante&#8203;.gouv&#8203;.fr&#8203;/ig&#8203;/fhir&#8203;/cds&#8203;/StructureDefinition&#8203;/cds-organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_IG-fhir-cercle-de-soins_IG-fhir-cercle-de-soins_igSource_fsh-generated_resources_ValueSet-careteam-roles-vs"> </a>
+<h2><a href="ValueSet-careteam-roles-vs.html">fsh-generated/resources/ValueSet-careteam-roles-vs.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2017)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
