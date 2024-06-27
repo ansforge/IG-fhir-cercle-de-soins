@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-27T12:29:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-27T12:58:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -633,6 +633,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> ;
+         fhir:reference [ fhir:v "Bundle/cds-bundle-transaction-creation-example" ]
+       ] ;
+       fhir:name [ fhir:v "cds-bundle-transaction-creation-example" ] ;
+       fhir:example [
+         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
@@ -642,6 +656,20 @@
        fhir:name [ fhir:v "cds-careteam-end" ] ;
        fhir:description [ fhir:v "Recherche sur la date de fin du cercle de soins" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CareTeam" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CareTeam/cds-careteam-example> ;
+         fhir:reference [ fhir:v "CareTeam/cds-careteam-example" ]
+       ] ;
+       fhir:name [ fhir:v "cds-careteam-example" ] ;
+       fhir:example [
+         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -693,6 +721,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+         fhir:reference [ fhir:v "Organization/cds-organization-example" ]
+       ] ;
+       fhir:name [ fhir:v "cds-organization-example" ] ;
+       fhir:example [
+         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
@@ -702,6 +744,31 @@
        fhir:name [ fhir:v "cds-patient-birthplace" ] ;
        fhir:description [ fhir:v "Lieu de naissance du patient" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+         fhir:reference [ fhir:v "Patient/cds-patient-example" ]
+       ] ;
+       fhir:name [ fhir:v "cds-patient-example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
+         fhir:reference [ fhir:v "RelatedPerson/cds-relatedperson-example" ]
+       ] ;
+       fhir:name [ fhir:v "cds-relatedperson-example" ] ;
+       fhir:example [
+         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
+         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

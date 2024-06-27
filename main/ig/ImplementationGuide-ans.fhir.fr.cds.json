@@ -10,7 +10,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "draft",
-  "date" : "2024-06-27T12:29:52+00:00",
+  "date" : "2024-06-27T12:58:56+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -719,6 +719,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/cds-bundle-transaction-creation-example"
+      },
+      "name" : "cds-bundle-transaction-creation-example",
+      "exampleCanonical" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
       }],
       "reference" : {
@@ -727,6 +738,17 @@
       "name" : "cds-careteam-end",
       "description" : "Recherche sur la date de fin du cercle de soins",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CareTeam"
+      }],
+      "reference" : {
+        "reference" : "CareTeam/cds-careteam-example"
+      },
+      "name" : "cds-careteam-example",
+      "exampleCanonical" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"
     },
     {
       "extension" : [{
@@ -779,6 +801,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/cds-organization-example"
+      },
+      "name" : "cds-organization-example",
+      "exampleCanonical" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "SearchParameter"
       }],
       "reference" : {
@@ -787,6 +820,28 @@
       "name" : "cds-patient-birthplace",
       "description" : "Lieu de naissance du patient",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/cds-patient-example"
+      },
+      "name" : "cds-patient-example",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/cds-relatedperson-example"
+      },
+      "name" : "cds-relatedperson-example",
+      "exampleCanonical" : "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"
     },
     {
       "extension" : [{
