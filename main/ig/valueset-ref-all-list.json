@@ -279,6 +279,21 @@
       "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
+      "url" : "http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
+      "version" : "2.0.0-ballot",
+      "status" : "draft",
+      "name" : "CareTeamRolesValueSet",
+      "title" : "Roles des participants dans un cercle de soins",
+      "description" : "Roles des participants dans un cercle de soins.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
+    },
+    {
       "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
       "version" : "2.0.1",
       "status" : "active",
@@ -333,21 +348,6 @@
       "uses" : {
       },
       "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
-      "version" : "2.0.0-ballot",
-      "status" : "draft",
-      "name" : "CareTeamRolesValueSet",
-      "title" : "Roles des participants dans un cercle de soins",
-      "description" : "Roles des participants dans un cercle de soins.",
-      "systems" : [
-        "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
-        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/JDV_J100-FinessStatutJuridique-RASS/FHIR/JDV-J100-FinessStatutJuridique-RASS",

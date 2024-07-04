@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> a fhir:RelatedPerson ;
+<http://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> a fhir:RelatedPerson ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "cds-relatedperson-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+       fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
      ] )
   ] ; # 
   fhir:text [
@@ -25,7 +25,7 @@
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:patient [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
      fhir:reference [ fhir:v "Patient/cds-patient-example" ]
   ] ; # 
   fhir:relationship ( [

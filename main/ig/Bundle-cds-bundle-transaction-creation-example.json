@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "cds-bundle-transaction-creation-example",
   "meta" : {
-    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"]
+    "profile" : ["http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"]
   },
   "type" : "transaction",
   "entry" : [{
@@ -12,7 +12,7 @@
       "id" : "cds-careteam-example",
       "meta" : {
         "lastUpdated" : "2023-09-27T13:48:19.342+01:00",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"]
+        "profile" : ["http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"]
       },
       "text" : {
         "status" : "generated",
@@ -62,7 +62,7 @@
       "resourceType" : "Organization",
       "id" : "cds-organization-example",
       "meta" : {
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"]
+        "profile" : ["http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"]
       },
       "text" : {
         "status" : "generated",
@@ -164,7 +164,7 @@
       "resourceType" : "RelatedPerson",
       "id" : "cds-relatedperson-example",
       "meta" : {
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"]
+        "profile" : ["http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"]
       },
       "text" : {
         "status" : "generated",

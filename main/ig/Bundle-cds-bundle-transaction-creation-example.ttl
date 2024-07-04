@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> a fhir:Bundle ;
+<http://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "cds-bundle-transaction-creation-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
+       fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
      ] )
   ] ; # 
   fhir:type [ fhir:v "transaction"] ; # 
@@ -50,8 +50,8 @@
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2023-09-27T13:48:19.342+01:00"^^xsd:dateTime ] ;
      fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
+       fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
      ] )
   ] ; # 
   fhir:text [
@@ -65,7 +65,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:name [ fhir:v "Cercle de soins de Mr Jacques Thobois"] ; # 
   fhir:subject [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
      fhir:reference [ fhir:v "Patient/cds-patient-example" ]
   ] ; # 
   fhir:period [
@@ -73,7 +73,7 @@
   ] ; # 
   fhir:participant ( [
      fhir:member [
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
        fhir:reference [ fhir:v "RelatedPerson/cds-relatedperson-example" ]
      ] ;
      fhir:period [
@@ -81,7 +81,7 @@
      ]
   ] [
      fhir:member [
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
        fhir:reference [ fhir:v "Organization/cds-organization-example" ]
      ] ;
      fhir:period [
@@ -90,7 +90,7 @@
      ]
   ] ) ; # 
   fhir:managingOrganization ( [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
      fhir:reference [ fhir:v "Organization/cds-organization-example" ]
   ] ) . # 
 
@@ -98,8 +98,8 @@
   fhir:id [ fhir:v "cds-organization-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+       fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
      ] )
   ] ; # 
   fhir:text [
@@ -192,8 +192,8 @@
   fhir:id [ fhir:v "cds-relatedperson-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
-       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+       fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
+       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
      ] )
   ] ; # 
   fhir:text [
@@ -207,7 +207,7 @@
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:patient [
-     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
      fhir:reference [ fhir:v "Patient/cds-patient-example" ]
   ] ; # 
   fhir:relationship ( [
