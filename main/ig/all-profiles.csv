@@ -245,7 +245,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-response-recherche","Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
+"cds-bundle-response-recherche","Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
 ","Planned participants in the coordination and delivery of care for a patient or group","The Care Team includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-response-recherche","Bundle.entry:careTeam.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -530,7 +530,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-response-recherche","Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
+"cds-bundle-response-recherche","Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
 ","A person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-response-recherche","Bundle.entry:relatedPerson.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -672,7 +672,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-response-recherche","Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
+"cds-bundle-response-recherche","Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-response-recherche","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -1319,7 +1319,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-transaction-creation","Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
+"cds-bundle-transaction-creation","Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
 ","Planned participants in the coordination and delivery of care for a patient or group","The Care Team includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-transaction-creation","Bundle.entry:careTeam.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -1604,7 +1604,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-transaction-creation","Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
+"cds-bundle-transaction-creation","Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
 ","A person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-transaction-creation","Bundle.entry:relatedPerson.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -1746,7 +1746,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-transaction-creation","Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
+"cds-bundle-transaction-creation","Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-transaction-creation","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -2393,7 +2393,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-transaction-maj","Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
+"cds-bundle-transaction-maj","Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
 ","Planned participants in the coordination and delivery of care for a patient or group","The Care Team includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-transaction-maj","Bundle.entry:careTeam.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -2678,7 +2678,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-transaction-maj","Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
+"cds-bundle-transaction-maj","Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
 ","A person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-transaction-maj","Bundle.entry:relatedPerson.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -2820,7 +2820,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-bundle-transaction-maj","Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
+"cds-bundle-transaction-maj","Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "cds-bundle-transaction-maj","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"ele-1
@@ -3626,10 +3626,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "cds-ihe-careteam","CareTeam.participant.role","CareTeam.participant.role","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
-","Type of involvement","Indicates specific responsibility of an individual within the care team, such as ""Primary care physician"", ""Trained social worker counselor"", ""Caregiver"", etc.","Roles may sometimes be inferred by type of Practitioner.  These are relationships that hold only within the context of the care team.  General relationships should be handled as properties of the Patient resource directly.","","","","","","","","",,"preferred","","http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs","",,,,"CareTeam.participant.role",0,*,"ele-1
+","Type of involvement","Indicates specific responsibility of an individual within the care team, such as ""Primary care physician"", ""Trained social worker counselor"", ""Caregiver"", etc.","Roles may sometimes be inferred by type of Practitioner.  These are relationships that hold only within the context of the care team.  General relationships should be handled as properties of the Patient resource directly.","","","","","","","","",,"preferred","","https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs","",,,,"CareTeam.participant.role",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"cds-ihe-careteam","CareTeam.participant.member","CareTeam.participant.member","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole], CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person], CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]}
+"cds-ihe-careteam","CareTeam.participant.member","CareTeam.participant.member","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]}
 ","Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager","The specific person or organization who is participating/expected to participate in the care team.","Patient only needs to be listed if they have a role other than ""subject of care"".
 
 Member is optional because some participants may be known only by their role, particularly in draft plans.","Need to know who the member is if participant is required.
@@ -4444,7 +4444,7 @@ ele-1:All FHIR elements must have a @value or children {hasValue() or (children(
 ","adresseEJ : Adresse géopostale de l'entité juridique ou adresseEG : Adresse(s) géopostale(s) de l'entité géographique.","An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.","Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.address",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}"
-"cds-organization","Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization], CanonicalType[http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]}
+"cds-organization","Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization], CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]}
 ","Référence vers la structure de rattachement (lien OI/EG ou lien EG/EJ)","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "cds-organization","Organization.partOf.id","Organization.partOf.id","","","",0,1,"","","","string {[]} {[]}
