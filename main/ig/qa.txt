@@ -1,9 +1,9 @@
 CDS : Validation Results
 =========================================
 
-err = 139, warn = 32, info = 31
+err = 139, warn = 32, info = 27
 IG Publisher Version: 1.6.14
-Generated Thu Jul 04 11:49:05 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
+Generated Thu Jul 04 11:55:00 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0-ballot (canonical = http://interop.esante.gouv.fr/ig/fhir/cds)
  Build Errors : 1 / 14 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Bundle-cds-bundle-transaction-creation-example : 12 / 10 / 26
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 1
@@ -25,8 +25,8 @@ Generated Thu Jul 04 11:49:05 UTC 2024. FHIR version 4.0.1 for ans.fhir.fr.cds#2
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-creation : 27 / 0 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-bundle-transaction-maj : 27 / 1 / 1
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-fr-related-person : 10 / 0 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 21 / 0 / 4
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 6 / 0 / 5
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-ihe-careteam : 21 / 0 / 1
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/StructureDefinition-cds-organization : 6 / 0 / 4
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ValueSet-careteam-roles-vs : 0 / 1 / 1
 </table>
 == n/a ==
@@ -84,13 +84,13 @@ INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].res
 WARNING: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource.patient: Entry 2 matches the reference Patient/cds-patient-example by type and id but it's fullUrl urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c does not match the full target URL urn:uuid:cds-patient-example by Bundle resolution rules
 WARNING: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.patient: Entry 2 matches the reference Patient/cds-patient-example by type and id but it's fullUrl urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c does not match the full target URL urn:uuid:cds-patient-example by Bundle resolution rules
 == fsh-generated/resources/CapabilityStatement-CDSConsommateur.json ==
-WARNING: CapabilityStatement/CDSConsommateur: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSConsommateur: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSCreateurRestful.json ==
-WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSCreateurRestful: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction.json ==
-WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSCreateurTransaction: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CapabilityStatement-CDSGestionnaire.json ==
-WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/CapabilityStatement)
+WARNING: CapabilityStatement/CDSGestionnaire: CapabilityStatement: Constraint failed: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
 == fsh-generated/resources/CareTeam-cds-careteam-example.json ==
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds.json ==
 == fsh-generated/resources/Organization-cds-organization-example.json ==
@@ -219,9 +219,6 @@ ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-fr-relat
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-fr-related-person-definitions.html#rRelatedPerson.name.given' at 'div/table/tr/td/a' for 'given' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-fr-related-person-definitions.html#rRelatedPerson.telecom' at 'div/table/tr/td/a' for 'telecom' does not resolve
 == fsh-generated/resources/StructureDefinition-cds-ihe-careteam.json ==
-INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[24].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[31].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/cds-ihe-careteam: StructureDefinition.snapshot.element[43].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-ihe-careteam-definitions.html#rCareTeam' at 'div/table/tr/td/a' for 'CareTeam' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-ihe-careteam-definitions.html#rCareTeam.meta' at 'div/table/tr/td/a' for 'meta' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-ihe-careteam-definitions.html#rCareTeam.meta.lastUpdated' at 'div/table/tr/td/a' for 'lastUpdated' does not resolve
@@ -248,7 +245,6 @@ ERROR: StructureDefinition.differential.element[2].example[0]: Unrecognized prop
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[41].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[90].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
 INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[99].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.1
-INFORMATION: StructureDefinition/cds-organization: StructureDefinition.snapshot.element[111].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-organization-definitions.html#rOrganization' at 'div/table/tr/td/a' for 'Organization' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-organization-definitions.html#rOrganization.identifier:identifierOI' at 'div/table/tr/td/a' for 'identifier:identifierOI' does not resolve
 ERROR: StructureDefinition.text.div: Hyperlink 'StructureDefinition-cds-organization-definitions.html#rOrganization.identifier:identifierOI.type' at 'div/table/tr/td/a' for 'type' does not resolve
