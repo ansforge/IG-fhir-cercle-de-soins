@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds> a fhir:ImplementationGuide ;
+<https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ans.fhir.fr.cds"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cds</b></p><a name=\"ans.fhir.fr.cds\"> </a><a name=\"hcans.fhir.fr.cds\"> </a><a name=\"hcans.fhir.fr.cds-fr-FR\"> </a><h2>CDS</h2><p>The official URL for this implementation guide is: </p><pre>http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.cds</b></p><a name=\"ans.fhir.fr.cds\"> </a><a name=\"hcans.fhir.fr.cds\"> </a><a name=\"hcans.fhir.fr.cds-fr-FR\"> </a><h2>CDS</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</pre></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.0.0-ballot"] ; # 
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-07-04T11:53:56+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-04T11:58:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -182,7 +182,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/history.html" ]
+         fhir:value [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -419,7 +419,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/history.html" ]
+         fhir:value [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -564,7 +564,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche> ;
          fhir:reference [ fhir:v "StructureDefinition/cds-bundle-response-recherche" ]
        ] ;
        fhir:name [ fhir:v "CDS Bundle Response Recherche Profile" ] ;
@@ -576,7 +576,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation> ;
          fhir:reference [ fhir:v "StructureDefinition/cds-bundle-transaction-creation" ]
        ] ;
        fhir:name [ fhir:v "CDS Bundle Transaction Creation Profile" ] ;
@@ -588,7 +588,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj> ;
          fhir:reference [ fhir:v "StructureDefinition/cds-bundle-transaction-maj" ]
        ] ;
        fhir:name [ fhir:v "CDS Bundle Transaction MAJ Profile" ] ;
@@ -600,7 +600,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam> ;
          fhir:reference [ fhir:v "StructureDefinition/cds-ihe-careteam" ]
        ] ;
        fhir:name [ fhir:v "CDS CareTeam Profile" ] ;
@@ -612,7 +612,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person> ;
          fhir:reference [ fhir:v "StructureDefinition/cds-fr-related-person" ]
        ] ;
        fhir:name [ fhir:v "CDS Fr RelatedPerson Profile" ] ;
@@ -624,7 +624,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization> ;
          fhir:reference [ fhir:v "StructureDefinition/cds-organization" ]
        ] ;
        fhir:name [ fhir:v "CDS Organization Profile" ] ;
@@ -636,13 +636,13 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> ;
          fhir:reference [ fhir:v "Bundle/cds-bundle-transaction-creation-example" ]
        ] ;
        fhir:name [ fhir:v "cds-bundle-transaction-creation-example" ] ;
        fhir:example [
-         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
        ]
      ] [
        fhir:extension ( [
@@ -650,7 +650,7 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-end" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-end" ] ;
@@ -662,13 +662,13 @@
          fhir:value [ fhir:v "CareTeam" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CareTeam/cds-careteam-example> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/CareTeam/cds-careteam-example> ;
          fhir:reference [ fhir:v "CareTeam/cds-careteam-example" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-example" ] ;
        fhir:example [
-         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
        ]
      ] [
        fhir:extension ( [
@@ -676,7 +676,7 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-managing-organization" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-managing-organization" ] ;
@@ -688,7 +688,7 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-end" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-participant-end" ] ;
@@ -700,7 +700,7 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-participant-start" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-participant-start" ] ;
@@ -712,7 +712,7 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start> ;
          fhir:reference [ fhir:v "SearchParameter/cds-careteam-start" ]
        ] ;
        fhir:name [ fhir:v "cds-careteam-start" ] ;
@@ -724,13 +724,13 @@
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
          fhir:reference [ fhir:v "Organization/cds-organization-example" ]
        ] ;
        fhir:name [ fhir:v "cds-organization-example" ] ;
        fhir:example [
-         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
        ]
      ] [
        fhir:extension ( [
@@ -738,7 +738,7 @@
          fhir:value [ fhir:v "SearchParameter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace> ;
          fhir:reference [ fhir:v "SearchParameter/cds-patient-birthplace" ]
        ] ;
        fhir:name [ fhir:v "cds-patient-birthplace" ] ;
@@ -750,7 +750,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
          fhir:reference [ fhir:v "Patient/cds-patient-example" ]
        ] ;
        fhir:name [ fhir:v "cds-patient-example" ] ;
@@ -761,13 +761,13 @@
          fhir:value [ fhir:v "RelatedPerson" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
          fhir:reference [ fhir:v "RelatedPerson/cds-relatedperson-example" ]
        ] ;
        fhir:name [ fhir:v "cds-relatedperson-example" ] ;
        fhir:example [
-         fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
        ]
      ] [
        fhir:extension ( [
@@ -775,7 +775,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSConsommateur> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSConsommateur> ;
          fhir:reference [ fhir:v "CapabilityStatement/CDSConsommateur" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - Consommateur" ] ;
@@ -787,7 +787,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurRestful> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurRestful> ;
          fhir:reference [ fhir:v "CapabilityStatement/CDSCreateurRestful" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - CreateurRestful" ] ;
@@ -799,7 +799,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction> ;
          fhir:reference [ fhir:v "CapabilityStatement/CDSCreateurTransaction" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - CreateurTransaction" ] ;
@@ -811,7 +811,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire> ;
          fhir:reference [ fhir:v "CapabilityStatement/CDSGestionnaire" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - Gestionnaire" ] ;
@@ -823,7 +823,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs> ;
          fhir:reference [ fhir:v "ValueSet/careteam-roles-vs" ]
        ] ;
        fhir:name [ fhir:v "Roles des participants dans un cercle de soins" ] ;

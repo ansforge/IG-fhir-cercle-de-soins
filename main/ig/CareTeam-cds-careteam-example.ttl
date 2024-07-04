@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://interop.esante.gouv.fr/ig/fhir/cds/CareTeam/cds-careteam-example> a fhir:CareTeam ;
+<https://interop.esante.gouv.fr/ig/fhir/cds/CareTeam/cds-careteam-example> a fhir:CareTeam ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "cds-careteam-example"] ; # 
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2023-09-27T13:48:19.342+01:00"^^xsd:dateTime ] ;
      fhir:profile ( [
-       fhir:v "http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
-       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
      ] )
   ] ; # 
   fhir:text [
@@ -26,7 +26,7 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:name [ fhir:v "Cercle de soins de Mr Jacques Thobois"] ; # 
   fhir:subject [
-     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
      fhir:reference [ fhir:v "Patient/cds-patient-example" ]
   ] ; # 
   fhir:period [
@@ -34,7 +34,7 @@
   ] ; # 
   fhir:participant ( [
      fhir:member [
-       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
        fhir:reference [ fhir:v "RelatedPerson/cds-relatedperson-example" ]
      ] ;
      fhir:period [
@@ -42,7 +42,7 @@
      ]
   ] [
      fhir:member [
-       fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
        fhir:reference [ fhir:v "Organization/cds-organization-example" ]
      ] ;
      fhir:period [
@@ -51,7 +51,7 @@
      ]
   ] ) ; # 
   fhir:managingOrganization ( [
-     fhir:link <http://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
      fhir:reference [ fhir:v "Organization/cds-organization-example" ]
   ] ) . # 
 
