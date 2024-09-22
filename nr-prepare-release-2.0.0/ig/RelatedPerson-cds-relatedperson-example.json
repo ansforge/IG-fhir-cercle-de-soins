@@ -1,0 +1,50 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "cds-relatedperson-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson cds-relatedperson-example</b></p><a name=\"cds-relatedperson-example\"> </a><a name=\"hccds-relatedperson-example\"> </a><a name=\"cds-relatedperson-example-fr-FR\"> </a><p><b>identifier</b>: <code>https://fake-system</code>/id-relatedPerson-12\u00a0(use:\u00a0temp,\u00a0)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-cds-patient-example.html\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>relationship</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Entité à contacter en cas d'urgence</span>, <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode NBOR}\">Voisin(e)</span></p><p><b>name</b>: CHIBOUT Lamine (Official)</p><p><b>telecom</b>: ph: 0602143212</p><p><b>gender</b>: Male</p><p><b>address</b>: 12 Rue de la Paix Paris 75004 FRA </p></div>"
+  },
+  "identifier" : [{
+    "use" : "temp",
+    "system" : "https://fake-system",
+    "value" : "id-relatedPerson-12"
+  }],
+  "active" : true,
+  "patient" : {
+    "reference" : "Patient/cds-patient-example"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+      "code" : "ECON",
+      "display" : "Entité à contacter en cas d'urgence"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+      "code" : "NBOR",
+      "display" : "Voisin(e)"
+    }]
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Lamine",
+    "given" : ["CHIBOUT"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "0602143212"
+  }],
+  "gender" : "male",
+  "address" : [{
+    "line" : ["12 Rue de la Paix"],
+    "city" : "Paris",
+    "postalCode" : "75004",
+    "country" : "FRA"
+  }]
+}

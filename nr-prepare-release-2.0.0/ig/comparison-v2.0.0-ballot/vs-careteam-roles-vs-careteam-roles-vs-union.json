@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f837a2b1-cedf-43a0-8ef2-ff1e096e8c54-32",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f837a2b1-cedf-43a0-8ef2-ff1e096e8c54-32",
+  "name" : "UnionCareTeamRolesValueSetAndCareTeamRolesValueSet",
+  "title" : "Union of Roles des participants dans un cercle de soins And Roles des participants dans un cercle de soins",
+  "status" : "draft",
+  "date" : "2024-09-22T18:03:49+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "PCP",
+        "display" : "Médecin traitant"
+      }]
+    },
+    {
+      
+    }]
+  }
+}

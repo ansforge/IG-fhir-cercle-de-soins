@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cds-relatedperson-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson cds-relatedperson-example</b></p><a name=\"cds-relatedperson-example\"> </a><a name=\"hccds-relatedperson-example\"> </a><a name=\"cds-relatedperson-example-fr-FR\"> </a><p><b>identifier</b>: <code>https://fake-system</code>/id-relatedPerson-12 (use: temp, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-cds-patient-example.html\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif (use: official, ))</a></p><p><b>relationship</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Entité à contacter en cas d'urgence</span>, <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode NBOR}\">Voisin(e)</span></p><p><b>name</b>: CHIBOUT Lamine (Official)</p><p><b>telecom</b>: ph: 0602143212</p><p><b>gender</b>: Male</p><p><b>address</b>: 12 Rue de la Paix Paris 75004 FRA </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:system [ fhir:v "https://fake-system"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "id-relatedPerson-12" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:reference [ fhir:v "Patient/cds-patient-example" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ECON" ] ;
+       fhir:display [ fhir:v "Entité à contacter en cas d'urgence" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NBOR" ] ;
+       fhir:display [ fhir:v "Voisin(e)" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Lamine" ] ;
+     fhir:given ( [ fhir:v "CHIBOUT" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0602143212" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "12 Rue de la Paix" ] ) ;
+     fhir:city [ fhir:v "Paris" ] ;
+     fhir:postalCode [ fhir:v "75004" ] ;
+     fhir:country [ fhir:v "FRA" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,244 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cds/Bundle/cds-bundle-transaction-creation-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cds-bundle-transaction-creation-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "CareTeam"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0b"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0b> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Organization"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Patient"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0d"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0d> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "RelatedPerson"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a> a fhir:CareTeam ;
+  fhir:id [ fhir:v "cds-careteam-example"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-09-27T13:48:19.342+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CareTeam_cds-careteam-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CareTeam cds-careteam-example</b></p><a name=\"cds-careteam-example\"> </a><a name=\"hccds-careteam-example\"> </a><a name=\"cds-careteam-example-fr-FR\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-09-27 13:48:19+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-ihe-careteam.html\">CDS CareTeam Profile</a></p></div><p><b>identifier</b>: <code>http://fake-identifier.fr</code>/1</p><p><b>status</b>: Active</p><p><b>name</b>: Cercle de soins de Mr Jacques Thobois</p><p><b>subject</b>: <a href=\"Patient-cds-patient-example.html\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif (use: official, ))</a></p><p><b>period</b>: 2013-01-12 --&gt; (ongoing)</p><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"RelatedPerson-cds-relatedperson-example.html\">RelatedPerson CHIBOUT Lamine (official)</a></p><p><b>period</b>: 2013-01-12 --&gt; (ongoing)</p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"Organization-cds-organization-example.html\">Organization Cabinet médical CC CC</a></p><p><b>period</b>: 2013-01-12 --&gt; 2032-12-18 13:48:19+0100</p></blockquote><p><b>managingOrganization</b>: <a href=\"Organization-cds-organization-example.html\">Organization Cabinet médical CC CC</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fake-identifier.fr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Cercle de soins de Mr Jacques Thobois"] ; # 
+  fhir:subject [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:reference [ fhir:v "Patient/cds-patient-example" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2013-01-12"^^xsd:date ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:member [
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/RelatedPerson/cds-relatedperson-example> ;
+       fhir:reference [ fhir:v "RelatedPerson/cds-relatedperson-example" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2013-01-12"^^xsd:date ]
+     ]
+  ] [
+     fhir:member [
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+       fhir:reference [ fhir:v "Organization/cds-organization-example" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2013-01-12"^^xsd:date ] ;
+       fhir:end [ fhir:v "2032-12-18T13:48:19.342+01:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:managingOrganization ( [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Organization/cds-organization-example> ;
+     fhir:reference [ fhir:v "Organization/cds-organization-example" ]
+  ] ) . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0b> a fhir:Organization ;
+  fhir:id [ fhir:v "cds-organization-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_cds-organization-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization cds-organization-example</b></p><a name=\"cds-organization-example\"> </a><a name=\"hccds-organization-example\"> </a><a name=\"cds-organization-example-fr-FR\"> </a><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "organizationType" ]
+     ] ) ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MEDICAL" ] ;
+       fhir:display [ fhir:v "Médical" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Cabinet médical CC CC"] ; # 
+  fhir:alias ( [ fhir:v "CC CC Rennes"] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "12 rue du paris" ] ) ;
+     fhir:city [ fhir:v "Rennes" ] ;
+     fhir:postalCode [ fhir:v "35000" ] ;
+     fhir:country [ fhir:v "99100" ]
+  ] ) . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c> a fhir:Patient ;
+  fhir:id [ fhir:v "cds-patient-example"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-09-27T13:48:19.342+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_cds-patient-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient cds-patient-example</b></p><a name=\"cds-patient-example\"> </a><a name=\"hccds-patient-example\"> </a><a name=\"cds-patient-example-fr-FR\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-09-27 13:48:19+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient-ins.html\">FR Core Patient INS Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">GOULVEN </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\">FR Core Patient Ident Reliability Extension:</td><td colspan=\"3\"><ul><li>identityStatus: <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">FR Core CodeSystem v2-0445</a> VALI: Identité validée</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "identityStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "VALI" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "29064" ]
+         ]
+       ] ) ;
+       fhir:city [ fhir:v "GOULVEN" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "INS-NIR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.250.1.213.1.4.8"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789012244" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Jacques" ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Thobois" ] ;
+     fhir:given ( [ fhir:v "Jacques" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1984-10-02"^^xsd:date] . # 
+
+<urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0d> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "cds-relatedperson-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_cds-relatedperson-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson cds-relatedperson-example</b></p><a name=\"cds-relatedperson-example\"> </a><a name=\"hccds-relatedperson-example\"> </a><a name=\"cds-relatedperson-example-fr-FR\"> </a><p><b>identifier</b>: <code>https://fake-system</code>/id-relatedPerson-12 (use: temp, )</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-cds-patient-example.html\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif (use: official, ))</a></p><p><b>relationship</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Entité à contacter en cas d'urgence</span>, <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode NBOR}\">Voisin(e)</span></p><p><b>name</b>: CHIBOUT Lamine (Official)</p><p><b>telecom</b>: ph: 0602143212</p><p><b>gender</b>: Male</p><p><b>address</b>: 12 Rue de la Paix Paris 75004 FRA </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:system [ fhir:v "https://fake-system"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "id-relatedPerson-12" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:reference [ fhir:v "Patient/cds-patient-example" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ECON" ] ;
+       fhir:display [ fhir:v "Entité à contacter en cas d'urgence" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NBOR" ] ;
+       fhir:display [ fhir:v "Voisin(e)" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Lamine" ] ;
+     fhir:given ( [ fhir:v "CHIBOUT" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0602143212" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "12 Rue de la Paix" ] ) ;
+     fhir:city [ fhir:v "Paris" ] ;
+     fhir:postalCode [ fhir:v "75004" ] ;
+     fhir:country [ fhir:v "FRA" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

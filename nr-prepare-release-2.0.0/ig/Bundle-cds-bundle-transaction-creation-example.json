@@ -1,0 +1,218 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "cds-bundle-transaction-creation-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"]
+  },
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a",
+    "resource" : {
+      "resourceType" : "CareTeam",
+      "id" : "cds-careteam-example",
+      "meta" : {
+        "lastUpdated" : "2023-09-27T13:48:19.342+01:00",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CareTeam_cds-careteam-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CareTeam cds-careteam-example</b></p><a name=\"cds-careteam-example\"> </a><a name=\"hccds-careteam-example\"> </a><a name=\"cds-careteam-example-fr-FR\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-09-27 13:48:19+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-ihe-careteam.html\">CDS CareTeam Profile</a></p></div><p><b>identifier</b>: <code>http://fake-identifier.fr</code>/1</p><p><b>status</b>: Active</p><p><b>name</b>: Cercle de soins de Mr Jacques Thobois</p><p><b>subject</b>: <a href=\"Patient-cds-patient-example.html\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2013-01-12 --&gt; (ongoing)</p><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"RelatedPerson-cds-relatedperson-example.html\">RelatedPerson CHIBOUT Lamine (official)</a></p><p><b>period</b>: 2013-01-12 --&gt; (ongoing)</p></blockquote><blockquote><p><b>participant</b></p><p><b>member</b>: <a href=\"Organization-cds-organization-example.html\">Organization Cabinet médical CC CC</a></p><p><b>period</b>: 2013-01-12 --&gt; 2032-12-18 13:48:19+0100</p></blockquote><p><b>managingOrganization</b>: <a href=\"Organization-cds-organization-example.html\">Organization Cabinet médical CC CC</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://fake-identifier.fr",
+        "value" : "1"
+      }],
+      "status" : "active",
+      "name" : "Cercle de soins de Mr Jacques Thobois",
+      "subject" : {
+        "reference" : "Patient/cds-patient-example"
+      },
+      "period" : {
+        "start" : "2013-01-12"
+      },
+      "participant" : [{
+        "member" : {
+          "reference" : "RelatedPerson/cds-relatedperson-example"
+        },
+        "period" : {
+          "start" : "2013-01-12"
+        }
+      },
+      {
+        "member" : {
+          "reference" : "Organization/cds-organization-example"
+        },
+        "period" : {
+          "start" : "2013-01-12",
+          "end" : "2032-12-18T13:48:19.342+01:00"
+        }
+      }],
+      "managingOrganization" : [{
+        "reference" : "Organization/cds-organization-example"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "CareTeam"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0b",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "cds-organization-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_cds-organization-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization cds-organization-example</b></p><a name=\"cds-organization-example\"> </a><a name=\"hccds-organization-example\"> </a><a name=\"cds-organization-example-fr-FR\"> </a><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div>"
+      },
+      "active" : true,
+      "type" : [{
+        "extension" : [{
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types",
+          "valueCode" : "organizationType"
+        }],
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+          "code" : "MEDICAL",
+          "display" : "Médical"
+        }]
+      }],
+      "name" : "Cabinet médical CC CC",
+      "alias" : ["CC CC Rennes"],
+      "address" : [{
+        "line" : ["12 rue du paris"],
+        "city" : "Rennes",
+        "postalCode" : "35000",
+        "country" : "99100"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Organization"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "cds-patient-example",
+      "meta" : {
+        "lastUpdated" : "2023-09-27T13:48:19.342+01:00",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_cds-patient-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient cds-patient-example</b></p><a name=\"cds-patient-example\"> </a><a name=\"hccds-patient-example\"> </a><a name=\"cds-patient-example-fr-FR\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-09-27 13:48:19+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient-ins.html\">FR Core Patient INS Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">GOULVEN </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Reliabilility of the patient's identity | Précision sur le degré de fiabilité de l'identité du patient (si provisoire, validé... avec la justification : quelle type de pièce d'identité ?) avec la méthode de collection\">FR Core Patient Ident Reliability Extension:</td><td colspan=\"3\"><ul><li>identityStatus: <a href=\"https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI\">FR Core CodeSystem v2-0445</a> VALI: Identité validée</li></ul></td></tr></table></div>"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+            "valueCoding" : {
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+              "code" : "29064"
+            }
+          }],
+          "city" : "GOULVEN"
+        }
+      }],
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "INS-NIR"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.1.213.1.4.8",
+        "value" : "123456789012244"
+      }],
+      "name" : [{
+        "extension" : [{
+          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+          "valueString" : "Jacques"
+        }],
+        "use" : "official",
+        "family" : "Thobois",
+        "given" : ["Jacques"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1984-10-02"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Patient"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0d",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "cds-relatedperson-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_cds-relatedperson-example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson cds-relatedperson-example</b></p><a name=\"cds-relatedperson-example\"> </a><a name=\"hccds-relatedperson-example\"> </a><a name=\"cds-relatedperson-example-fr-FR\"> </a><p><b>identifier</b>: <code>https://fake-system</code>/id-relatedPerson-12\u00a0(use:\u00a0temp,\u00a0)</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-cds-patient-example.html\">Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>relationship</b>: <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass ECON}\">Entité à contacter en cas d'urgence</span>, <span title=\"Codes:{https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode NBOR}\">Voisin(e)</span></p><p><b>name</b>: CHIBOUT Lamine (Official)</p><p><b>telecom</b>: ph: 0602143212</p><p><b>gender</b>: Male</p><p><b>address</b>: 12 Rue de la Paix Paris 75004 FRA </p></div>"
+      },
+      "identifier" : [{
+        "use" : "temp",
+        "system" : "https://fake-system",
+        "value" : "id-relatedPerson-12"
+      }],
+      "active" : true,
+      "patient" : {
+        "reference" : "Patient/cds-patient-example"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code" : "ECON",
+          "display" : "Entité à contacter en cas d'urgence"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+          "code" : "NBOR",
+          "display" : "Voisin(e)"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Lamine",
+        "given" : ["CHIBOUT"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "0602143212"
+      }],
+      "gender" : "male",
+      "address" : [{
+        "line" : ["12 Rue de la Paix"],
+        "city" : "Paris",
+        "postalCode" : "75004",
+        "country" : "FRA"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "RelatedPerson"
+    }
+  }]
+}
