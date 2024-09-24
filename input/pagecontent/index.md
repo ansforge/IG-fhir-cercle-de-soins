@@ -3,13 +3,13 @@
 This implementation guide contains the profiles to share about a patient CareTeam.
 </p>
 
-<!-- <div style="width: 65%">
+<div style="width: 65%">
     <blockquote class="stu-note">
     <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante sera accessible via l'URL canonique (http://interop.esante.gouv.fr/ig/fhir/cds) après la prochaine release.
+    <b>Attention !</b> Cet Implementation Guide n'est pas la version courante. La version courante est accessible via l'URL canonique (http://interop.esante.gouv.fr/ig/fhir/cds).
     </p>
     </blockquote>
-</div> -->
+</div>
 
 <div class="figure" style="width:65%;">
     <img style="height: auto; width: 100%;" src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS">
