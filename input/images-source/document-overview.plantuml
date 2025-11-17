@@ -1,6 +1,6 @@
 @startuml document-overview
 
-artifact "CDS FrPatient" as patient
+artifact "FR Core Patient" as patient
 artifact "CDS IHE CareTeam" as careteam #99FF99
 
 artifact "CDS FrRelatedPerson" as cdsfrrelatedperson
@@ -8,10 +8,12 @@ artifact "CDS Organization" as cdsorganization
 artifact "AS Practitioner" as aspractitioner
 artifact "AS PractitionerRole" as aspractitionerrole
 
-url of patient is [[StructureDefinition-cds-fr-patient.html]]
+url of patient is [[https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html]]
 url of cdsfrrelatedperson is [[StructureDefinition-cds-fr-related-person.html]]
 url of careteam is [[StructureDefinition-cds-ihe-careteam.html]]
 url of cdsorganization is [[StructureDefinition-cds-organization.html]]
+url of aspractitioner is [[https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html]]
+url of aspractitionerrole is [[https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html]]
 
 ' ###########
 ' # Patient #
