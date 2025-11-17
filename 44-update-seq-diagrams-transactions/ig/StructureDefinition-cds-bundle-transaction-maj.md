@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CDSBundleTransactionMAJ |
+| Active as of 2025-11-17 | *Computable Name*:CDSBundleTransactionMAJ |
 
  
 Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction. Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du flux de création d'un cercle de soins. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-transacti
   "name" : "CDSBundleTransactionMAJ",
   "title" : "CDS Bundle Transaction MAJ Profile",
   "status" : "active",
-  "date" : "2025-11-14T19:50:33+00:00",
+  "date" : "2025-11-17T08:13:38+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
