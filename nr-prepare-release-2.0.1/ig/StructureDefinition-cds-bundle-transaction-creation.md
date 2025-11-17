@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-transacti
   "name" : "CDSBundleTransactionCreation",
   "title" : "CDS Bundle Transaction Creation Profile",
   "status" : "active",
-  "date" : "2025-11-17T13:13:56+00:00",
+  "date" : "2025-11-17T13:15:05+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
