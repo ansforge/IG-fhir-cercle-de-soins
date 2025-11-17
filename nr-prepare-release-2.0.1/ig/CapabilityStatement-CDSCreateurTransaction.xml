@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="CDSCreateurTransaction"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CapabilityStatement CDSCreateurTransaction</b></p><a name="CDSCreateurTransaction"> </a><a name="hcCDSCreateurTransaction"> </a><h2 id="title">CI-SIS Gestion du Cercle de Soins - CreateurTransaction</h2><ul><li>Version du guide dimplémentation : {0} </li><li>Version de FHIR : 4.0.1 </li><li>Formats supportés : <code>json</code>, <code>xml</code></li><li>Publié sur : 2023-07-14 </li><li>Publié par : ANS </li></ul><blockquote class="impl-note"><p><strong>Note aux implémenteurs : capacités FHIR</strong></p><p>Toute capacité FHIR peut être 'autorisée' par le système sauf si elle est explicitement marquée comme 'SHALL NOT'. Quelques éléments sont marqués comme MAY dans le guide dimplémentation pour souligner leur pertinence potentielle pour le cas dusage.</p></blockquote><h3 id="shallIGs">DOIT prendre en charge les guides d’implémentation suivants.</h3><ul><li><a href="index.html">https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</a></li></ul><h2 id="rest">Capacités RESTful FHIR</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>client</code></h3></div><div class="panel-body"><div><p>Envoie une requete pour créer ou mettre à jour un cercle de soins</p>
+</div><div class="lead"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)</p>
+</div></blockquote><div class="lead"><em>Résumé des interactions au niveau du système</em></div><ul><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation</p>
+</div></li><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj</p>
+</div></li></ul></div></div></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction"/>
+  <version value="2.0.0"/>
+  <name value="CreateurTransaction-cds"/>
+  <title value="CI-SIS Gestion du Cercle de Soins - CreateurTransaction"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-14"/>
+  <publisher value="ANS"/>
+  <contact>
+    <name value="ANS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle&#xA;de soins d'une personne"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <format value="xml"/>
+  <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
+  <rest>
+    <mode value="client"/>
+    <documentation value="Envoie une requete pour créer ou mettre à jour un cercle de soins"/>
+    <security>
+      <cors value="false"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+    </security>
+    <interaction>
+      <code value="transaction"/>
+      <documentation value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"/>
+    </interaction>
+    <interaction>
+      <code value="transaction"/>
+      <documentation value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj"/>
+    </interaction>
+  </rest>
+</CapabilityStatement>
