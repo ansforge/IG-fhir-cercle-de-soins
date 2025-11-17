@@ -41,7 +41,7 @@ Recherche sur la date de fin du cercle de soins
   "version" : "2.0.0",
   "name" : "CDSCareTeamEnd",
   "status" : "active",
-  "date" : "2025-11-17T08:57:58+00:00",
+  "date" : "2025-11-17T09:19:28+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

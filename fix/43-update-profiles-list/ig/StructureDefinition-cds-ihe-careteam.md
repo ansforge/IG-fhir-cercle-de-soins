@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
   "name" : "CDSCareTeam",
   "title" : "CDS CareTeam Profile",
   "status" : "active",
-  "date" : "2025-11-17T08:57:58+00:00",
+  "date" : "2025-11-17T09:19:28+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
