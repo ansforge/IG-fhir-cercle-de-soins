@@ -98,7 +98,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-11-17T13:15:55+00:00",
+  "date" : "2025-11-17T14:06:25+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -192,7 +192,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           },
           {
             "url" : "value",
-            "valueString" : "working"
+            "valueString" : "final-text"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -534,7 +534,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           },
           {
             "url" : "value",
-            "valueString" : "working"
+            "valueString" : "final-text"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
