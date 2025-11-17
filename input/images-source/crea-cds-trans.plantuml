@@ -1,0 +1,10 @@
+@startuml crea-cds-trans
+
+activate Créateur
+Créateur -> Gestionnaire : Flux 1c - CreationCercleSoinsTransaction\nHTTP POST [Lien vers le serveur]/
+activate Gestionnaire
+Gestionnaire --> Créateur : HTTP 200 OK
+deactivate Gestionnaire
+deactivate Créateur
+
+@enduml

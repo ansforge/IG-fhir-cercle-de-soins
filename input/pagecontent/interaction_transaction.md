@@ -13,8 +13,8 @@ La première étape de la construction de ce flux de création du cercle de soin
 
 Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.html). Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.
 
-<div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="crea-cds-trans.png" alt="CI-SIS" title="Diagramme de séquence du flux 1c">
+<div class="figure" style="width:100%;">
+    <p>{% include crea-cds-trans.svg %}</p>
 </div>
 
 Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à POST pour les nouvelles ressources à poster sur le serveur :
@@ -32,7 +32,7 @@ Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource O
 Le Bundle [CDS_BundleTransactionMAJ](StructureDefinition-cds-bundle-transaction-maj.html) peut contenir exactement les mêmes ressources que le [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.html). Le Bundle contient à minima une ressource CareTeam ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="maj-cds-trans.png" alt="CI-SIS" title="Diagramme de séquence du flux 4c">
+     <p>{% include maj-cds-trans.svg %}</p>
 </div>
 
 Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à PUT pour chaque ressource à mettre à jour ou à POST pour chaque nouvelle ressource à créer sur le serveur :

@@ -1,0 +1,10 @@
+@startuml maj-cds-trans
+
+activate Créateur
+Créateur -> Gestionnaire : Flux 4c - MAJCercleSoinsTransaction\nHTTP POST [Lien vers le serveur]/
+activate Gestionnaire
+Gestionnaire --> Créateur : HTTP 200 OK
+deactivate Gestionnaire
+deactivate Créateur
+
+@enduml
