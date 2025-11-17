@@ -98,7 +98,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-11-17T14:24:44+00:00",
+  "date" : "2025-11-17T14:25:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

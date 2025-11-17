@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-fr-related-perso
   "name" : "CDSFrRelatedPerson",
   "title" : "CDS Fr RelatedPerson Profile",
   "status" : "active",
-  "date" : "2025-11-17T14:24:44+00:00",
+  "date" : "2025-11-17T14:25:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

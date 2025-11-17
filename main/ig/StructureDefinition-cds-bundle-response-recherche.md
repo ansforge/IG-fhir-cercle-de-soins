@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
   "name" : "CDSBundleResponseRecherche",
   "title" : "CDS Bundle Response Recherche Profile",
   "status" : "active",
-  "date" : "2025-11-17T14:24:44+00:00",
+  "date" : "2025-11-17T14:25:46+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
