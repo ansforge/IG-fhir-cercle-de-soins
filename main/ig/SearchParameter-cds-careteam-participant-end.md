@@ -41,7 +41,7 @@ Date de sortie d’un membre du cercle de soins
   "version" : "2.0.0",
   "name" : "CDSCareTeamParticipantEnd",
   "status" : "active",
-  "date" : "2025-11-17T14:06:25+00:00",
+  "date" : "2025-11-17T14:06:39+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
