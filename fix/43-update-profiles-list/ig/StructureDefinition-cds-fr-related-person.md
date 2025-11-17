@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CDSFrRelatedPerson |
+| Active as of 2025-11-17 | *Computable Name*:CDSFrRelatedPerson |
 
  
 Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…). 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-fr-related-perso
   "name" : "CDSFrRelatedPerson",
   "title" : "CDS Fr RelatedPerson Profile",
   "status" : "active",
-  "date" : "2025-11-14T17:32:42+00:00",
+  "date" : "2025-11-17T08:57:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

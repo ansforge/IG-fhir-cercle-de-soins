@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CDSCareTeamManagingOrganization |
+| Active as of 2025-11-17 | *Computable Name*:CDSCareTeamManagingOrganization |
 
  
 Organisation responsable du Cercle De Soins 
@@ -40,7 +40,7 @@ Organisation responsable du Cercle De Soins
   "version" : "2.0.0",
   "name" : "CDSCareTeamManagingOrganization",
   "status" : "active",
-  "date" : "2025-11-14T17:32:42+00:00",
+  "date" : "2025-11-17T08:57:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

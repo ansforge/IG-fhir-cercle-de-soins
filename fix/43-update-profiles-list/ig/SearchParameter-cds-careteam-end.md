@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CDSCareTeamEnd |
+| Active as of 2025-11-17 | *Computable Name*:CDSCareTeamEnd |
 
  
 Recherche sur la date de fin du cercle de soins 
@@ -41,7 +41,7 @@ Recherche sur la date de fin du cercle de soins
   "version" : "2.0.0",
   "name" : "CDSCareTeamEnd",
   "status" : "active",
-  "date" : "2025-11-14T17:32:42+00:00",
+  "date" : "2025-11-17T08:57:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

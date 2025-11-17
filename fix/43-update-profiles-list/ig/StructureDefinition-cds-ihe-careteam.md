@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CDSCareTeam |
+| Active as of 2025-11-17 | *Computable Name*:CDSCareTeam |
 
  
 Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam ». 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
   "name" : "CDSCareTeam",
   "title" : "CDS CareTeam Profile",
   "status" : "active",
-  "date" : "2025-11-14T17:32:42+00:00",
+  "date" : "2025-11-17T08:57:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

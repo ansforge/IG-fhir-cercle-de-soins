@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CareTeamRolesValueSet |
+| Active as of 2025-11-17 | *Computable Name*:CareTeamRolesValueSet |
 
  
 Roles des participants dans un cercle de soins. 
@@ -57,7 +57,7 @@ Ce jeu de valeur (ValueSet) contient 11 concepts
   "name" : "CareTeamRolesValueSet",
   "title" : "Roles des participants dans un cercle de soins",
   "status" : "active",
-  "date" : "2025-11-14T17:32:42+00:00",
+  "date" : "2025-11-17T08:57:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

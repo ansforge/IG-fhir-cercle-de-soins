@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace | *Version*:2.0.0 |
-| Active as of 2025-11-14 | *Computable Name*:CDSPatientBirthplace |
+| Active as of 2025-11-17 | *Computable Name*:CDSPatientBirthplace |
 
  
 Lieu de naissance du patient 
@@ -40,7 +40,7 @@ Lieu de naissance du patient
   "version" : "2.0.0",
   "name" : "CDSPatientBirthplace",
   "status" : "active",
-  "date" : "2025-11-14T17:32:42+00:00",
+  "date" : "2025-11-17T08:57:58+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
