@@ -1,4 +1,4 @@
-# cds-patient-birthplace - Cercle De Soins v2.0.0
+# cds-patient-birthplace - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace | *Version*:2.0.1 |
 | Active as of 2025-11-17 | *Computable Name*:CDSPatientBirthplace |
 
  
@@ -37,10 +37,10 @@ Lieu de naissance du patient
   "resourceType" : "SearchParameter",
   "id" : "cds-patient-birthplace",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CDSPatientBirthplace",
   "status" : "active",
-  "date" : "2025-11-17T14:06:39+00:00",
+  "date" : "2025-11-17T14:24:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

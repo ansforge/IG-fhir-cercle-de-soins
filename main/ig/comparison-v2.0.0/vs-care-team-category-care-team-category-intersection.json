@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9867bac1-406f-4b23-b9f8-3b7d1703a656-45",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9867bac1-406f-4b23-b9f8-3b7d1703a656-45",
+  "name" : "IntersectionCareTeamCategoryAndCareTeamCategory",
+  "title" : "Intersection of Care Team category And Care Team category",
+  "status" : "draft",
+  "date" : "2025-11-17T14:26:25+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27975-4"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27976-2"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27977-0"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27978-8"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA28865-6"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA28866-4"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27980-4"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA28867-2"
+      }]
+    }]
+  }
+}

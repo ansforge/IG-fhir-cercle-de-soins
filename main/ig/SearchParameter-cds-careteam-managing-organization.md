@@ -1,4 +1,4 @@
-# cds-careteam-managing-organization - Cercle De Soins v2.0.0
+# cds-careteam-managing-organization - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization | *Version*:2.0.1 |
 | Active as of 2025-11-17 | *Computable Name*:CDSCareTeamManagingOrganization |
 
  
@@ -37,10 +37,10 @@ Organisation responsable du Cercle De Soins
   "resourceType" : "SearchParameter",
   "id" : "cds-careteam-managing-organization",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CDSCareTeamManagingOrganization",
   "status" : "active",
-  "date" : "2025-11-17T14:06:39+00:00",
+  "date" : "2025-11-17T14:24:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

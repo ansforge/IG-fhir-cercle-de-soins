@@ -1,4 +1,4 @@
-# CI-SIS Gestion du Cercle de Soins - Consommateur - Cercle De Soins v2.0.0
+# CI-SIS Gestion du Cercle de Soins - Consommateur - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSConsommateur | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSConsommateur | *Version*:2.0.1 |
 | Active as of 2023-07-14 | *Computable Name*:consommateur-cds |
 
  
@@ -183,7 +183,7 @@ Paramètres de recherche
   "resourceType" : "CapabilityStatement",
   "id" : "CDSConsommateur",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSConsommateur",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "consommateur-cds",
   "title" : "CI-SIS Gestion du Cercle de Soins - Consommateur",
   "status" : "active",

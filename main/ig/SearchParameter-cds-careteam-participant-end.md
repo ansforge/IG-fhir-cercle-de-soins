@@ -1,4 +1,4 @@
-# cds-careteam-participant-end - Cercle De Soins v2.0.0
+# cds-careteam-participant-end - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end | *Version*:2.0.1 |
 | Active as of 2025-11-17 | *Computable Name*:CDSCareTeamParticipantEnd |
 
  
@@ -38,10 +38,10 @@ Date de sortie d’un membre du cercle de soins
   "resourceType" : "SearchParameter",
   "id" : "cds-careteam-participant-end",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CDSCareTeamParticipantEnd",
   "status" : "active",
-  "date" : "2025-11-17T14:06:39+00:00",
+  "date" : "2025-11-17T14:24:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# CDS Bundle Response Recherche Profile - Cercle De Soins v2.0.0
+# CDS Bundle Response Recherche Profile - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche | *Version*:2.0.1 |
 | Active as of 2025-11-17 | *Computable Name*:CDSBundleResponseRecherche |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
   "resourceType" : "StructureDefinition",
   "id" : "cds-bundle-response-recherche",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CDSBundleResponseRecherche",
   "title" : "CDS Bundle Response Recherche Profile",
   "status" : "active",
-  "date" : "2025-11-17T14:06:39+00:00",
+  "date" : "2025-11-17T14:24:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

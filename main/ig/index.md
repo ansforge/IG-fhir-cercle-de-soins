@@ -1,4 +1,4 @@
-# Accueil - Cercle De Soins v2.0.0
+# Accueil - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds | *Version*:2.0.1 |
 | Active as of 2025-11-17 | *Computable Name*:CDS |
 
  **CDS Implementation Guide**
@@ -94,11 +94,11 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fhir.fr.cds",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-11-17T14:06:39+00:00",
+  "date" : "2025-11-17T14:24:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

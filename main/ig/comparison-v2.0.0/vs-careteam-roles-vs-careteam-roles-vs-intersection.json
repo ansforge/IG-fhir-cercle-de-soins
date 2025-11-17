@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9867bac1-406f-4b23-b9f8-3b7d1703a656-81",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9867bac1-406f-4b23-b9f8-3b7d1703a656-81",
+  "name" : "IntersectionCareTeamRolesValueSetAndCareTeamRolesValueSet",
+  "title" : "Intersection of Roles des participants dans un cercle de soins And Roles des participants dans un cercle de soins",
+  "status" : "active",
+  "date" : "2025-11-17T14:26:25+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "PCP",
+        "display" : "Médecin traitant"
+      }]
+    },
+    {
+      
+    }]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9867bac1-406f-4b23-b9f8-3b7d1703a656-74",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9867bac1-406f-4b23-b9f8-3b7d1703a656-74",
+  "name" : "UnionSNOMEDCTClinicalFindingsAndSNOMEDCTClinicalFindings",
+  "title" : "Union of SNOMED CT Clinical Findings And SNOMED CT Clinical Findings",
+  "status" : "draft",
+  "date" : "2025-11-17T14:26:25+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    }]
+  }
+}

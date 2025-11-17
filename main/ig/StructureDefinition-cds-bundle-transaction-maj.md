@@ -1,4 +1,4 @@
-# CDS Bundle Transaction MAJ Profile - Cercle De Soins v2.0.0
+# CDS Bundle Transaction MAJ Profile - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj | *Version*:2.0.1 |
 | Active as of 2025-11-17 | *Computable Name*:CDSBundleTransactionMAJ |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-transacti
   "resourceType" : "StructureDefinition",
   "id" : "cds-bundle-transaction-maj",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CDSBundleTransactionMAJ",
   "title" : "CDS Bundle Transaction MAJ Profile",
   "status" : "active",
-  "date" : "2025-11-17T14:06:39+00:00",
+  "date" : "2025-11-17T14:24:44+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

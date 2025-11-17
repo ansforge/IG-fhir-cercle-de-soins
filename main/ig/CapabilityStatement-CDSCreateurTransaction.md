@@ -1,4 +1,4 @@
-# CI-SIS Gestion du Cercle de Soins - CreateurTransaction - Cercle De Soins v2.0.0
+# CI-SIS Gestion du Cercle de Soins - CreateurTransaction - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction | *Version*:2.0.1 |
 | Active as of 2023-07-14 | *Computable Name*:CreateurTransaction-cds |
 
  
@@ -64,7 +64,7 @@ https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transa
   "resourceType" : "CapabilityStatement",
   "id" : "CDSCreateurTransaction",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "CreateurTransaction-cds",
   "title" : "CI-SIS Gestion du Cercle de Soins - CreateurTransaction",
   "status" : "active",

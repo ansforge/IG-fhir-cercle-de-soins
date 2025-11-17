@@ -1,4 +1,4 @@
-# CI-SIS Gestion du Cercle de Soins - Gestionnaire - Cercle De Soins v2.0.0
+# CI-SIS Gestion du Cercle de Soins - Gestionnaire - Cercle De Soins v2.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire | *Version*:2.0.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire | *Version*:2.0.1 |
 | Active as of 2023-07-14 | *Computable Name*:gestionnaire-cds |
 
  
@@ -214,7 +214,7 @@ Paramètres de recherche
   "resourceType" : "CapabilityStatement",
   "id" : "CDSGestionnaire",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "gestionnaire-cds",
   "title" : "CI-SIS Gestion du Cercle de Soins - Gestionnaire",
   "status" : "active",
