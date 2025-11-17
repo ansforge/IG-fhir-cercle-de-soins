@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "91945053-066b-4e42-b1d1-b10572cae30a-44",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/91945053-066b-4e42-b1d1-b10572cae30a-44",
+  "name" : "UnionCareTeamCategoryAndCareTeamCategory",
+  "title" : "Union of Care Team category And Care Team category",
+  "status" : "draft",
+  "date" : "2025-11-17T14:47:47+00:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27975-4"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27976-2"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27977-0"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27978-8"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA28865-6"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA28866-4"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA27980-4"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LA28867-2"
+      }]
+    }]
+  }
+}
