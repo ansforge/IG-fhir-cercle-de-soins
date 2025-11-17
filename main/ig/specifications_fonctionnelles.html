@@ -40,18 +40,24 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"2"}
     h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
+
+  <div id="ig-search">
+ </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Cercle De Soins</span>
@@ -176,7 +182,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/cds/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/cds/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Volume 1 - Etude fonctionnelle</h2>
   
 
@@ -199,34 +205,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#définition-des-processus-collaboratifs" id="markdown-toc-définition-des-processus-collaboratifs">Définition des processus collaboratifs</a></li>
   <li><a href="#description-des-processus-collaboratifs-et-identification-des-flux" id="markdown-toc-description-des-processus-collaboratifs-et-identification-des-flux">Description des processus collaboratifs et identification des flux</a></li>
   <li><a href="#identification-des-concepts-véhiculés-dans-les-flux-dinformations-et-correspondance-avec-les-classes-et-attributs-du-mos" id="markdown-toc-identification-des-concepts-véhiculés-dans-les-flux-dinformations-et-correspondance-avec-les-classes-et-attributs-du-mos">Identification des concepts véhiculés dans les flux d’informations et correspondance avec les classes et attributs du MOS</a></li>
-  <li><a href="#modélisation-des-flux-dinformations" id="markdown-toc-modélisation-des-flux-dinformations">Modélisation des flux d’informations</a></li>
+  <li><a href="#modélisation-des-flux-dinformations" id="markdown-toc-modélisation-des-flux-dinformations">Modélisation des flux d'informations</a></li>
   <li><a href="#illustrations" id="markdown-toc-illustrations">Illustrations</a></li>
 </ul>
 
 </div>
 <h3 id="cadre-juridique-et-orientations-organisationnelles">Cadre juridique et orientations organisationnelles</h3>
 
-<p>Ce document présente l’étude de spécifications fonctionnelles des échanges pour la mise en œuvre d’un mécanisme de gestion du cercle de soins d’une personne dans le domaine sanitaire, médico-administratif, médico-social et social. Le cercle de soins permet d’identifier l’ensemble des intervenants (personnes, professionnels et structures) participant à la prise en charge et aux actions de coordination du parcours de santé de la personne.</p>
+<p>Ce document présente l'étude de spécifications fonctionnelles des échanges pour la mise en œuvre d’un mécanisme de gestion du cercle de soins d’une personne dans le domaine sanitaire, médico-administratif, médico-social et social. Le cercle de soins permet d’identifier l’ensemble des intervenants (personnes, professionnels et structures) participant à la prise en charge et aux actions de coordination du parcours de santé de la personne.</p>
 
-<p>L’étude menée concerne la modélisation des flux qui existent entre des applications et services numériques de santé accessibles sur ordinateur, smartphone ou tablette qui participent et contribuent à la gestion du cercle de soins d’une personne. Elle englobe les actions d’alimentation et de consultation du cercle de soins d’une personne selon divers critères de recherche qui sont présentés dans ce document.</p>
+<p>L’étude menée concerne la modélisation des flux qui existent entre des applications et services numériques de santé accessibles sur ordinateur, smartphone ou tablette qui participent et contribuent à la gestion du cercle de soins d’une personne. Elle englobe les actions d'alimentation et de consultation du cercle de soins d’une personne selon divers critères de recherche qui sont présentés dans ce document.</p>
 
-<p>A noter que les spécifications fonctionnelles des échanges sont des spécifications d’interopérabilité qui n’ont ni vocation à définir la structure interne et l’urbanisation des systèmes d’information ni vocation à aborder la gestion des habilitations. Cette gestion des habilitations relatives à la création, mise à jour et consommation du Cercle de Soins doit faire l’objet d’une étude préalable avant toute implémentation de ces interfaces dans le respect du cadre réglementaire de l’échange et du partage de données de santé.</p>
+<p>A noter que les spécifications fonctionnelles des échanges sont des spécifications d’interopérabilité qui n'ont ni vocation à définir la structure interne et l’urbanisation des systèmes d’information ni vocation à aborder la gestion des habilitations. Cette gestion des habilitations relatives à la création, mise à jour et consommation du Cercle de Soins doit faire l'objet d'une étude préalable avant toute implémentation de ces interfaces dans le respect du cadre réglementaire de l'échange et du partage de données de santé.</p>
 
 <p>Par ailleurs, les contraintes de sécurité concernant les flux échangés ne sont pas traitées dans ce document. En effet, les aspects relatifs à la sécurité sont du ressort du système d’information les implémentant.</p>
 
 <p>Ces exigences « techniques » sont mises en œuvre par les couches transport et service du CI-SIS.</p>
 
-<h4 id="exemple-de-cas-dusage">Exemple de cas d’usage</h4>
+<h4 id="exemple-de-cas-dusage">Exemple de cas d'usage</h4>
 
 <p>Cette section présente deux exemples, non exclusifs, de l’utilisation d’un cercle de soins. Ces spécifications ne s’appliquent pas uniquement à ces cas d’usages et peuvent faire intervenir des acteurs différents.</p>
 
-<p><strong><u>Contexte 1</u> :</strong> <em>Une personne, âgée de 75 ans et vivant seule à son domicile, est atteinte de troubles cognitifs et souffre d’une maladie chronique inflammatoire des bronches (BPCO). Elle est suivie tous les mois par son médecin traitant qui dispose d’un appui d’un Dispositif d’Appui à la Coordination (DAC) de son territoire pour la coordination et la prise en charge de son patient. Parmi les actions de coordination mises en place par le médecin traitant et le médecin coordinateur du DAC, une infirmière se rend quotidiennement au domicile de la personne pour l’administration des traitements. De même, une kinésithérapeute passe quotidiennement à son domicile pour maintenir son activité physique et renforcer sa capacité respiratoire.</em></p>
+<p><strong><u>Contexte 1</u> :</strong> <em>Une personne, âgée de 75 ans et vivant seule à son domicile, est atteinte de troubles cognitifs et souffre d’une maladie chronique inflammatoire des bronches (BPCO). Elle est suivie tous les mois par son médecin traitant qui dispose d’un appui d'un Dispositif d'Appui à la Coordination (DAC) de son territoire pour la coordination et la prise en charge de son patient. Parmi les actions de coordination mises en place par le médecin traitant et le médecin coordinateur du DAC, une infirmière se rend quotidiennement au domicile de la personne pour l’administration des traitements. De même, une kinésithérapeute passe quotidiennement à son domicile pour maintenir son activité physique et renforcer sa capacité respiratoire.</em></p>
 
-<p><u>Cas d'usage 1</u> : La personne est prise en charge pour la première fois par le DAC, qui crée son cercle de soins dans son outil numérique d’appui à la coordination. Tous les professionnels intervenants auprès de la personne prise en charge sont répertoriés dans le cercle de soins avec leurs coordonnées.</p>
+<p><u>Cas d'usage 1</u> : La personne est prise en charge pour la première fois par le DAC, qui crée son cercle de soins dans son outil numérique d'appui à la coordination. Tous les professionnels intervenants auprès de la personne prise en charge sont répertoriés dans le cercle de soins avec leurs coordonnées.</p>
 
 <p><u>Cas d’usage 2</u> : La personne chute à son domicile et contacte les secours. Elle est prise en charge par une ambulance qui la transporte dans l’unité de soins des urgences d’une structure de santé de son territoire. Le médecin des urgences prend connaissance du cercle de soins de la personne dans le Dossier Patient Informatisé de la structure, ce qui permet à la structure de santé de se mettre en contact avec le médecin traitant de la personne et le DAC pour organiser sa sortie.</p>
 
-<p><u>Cas d’usage 3</u> : L’infirmière libérale déménage, la personne choisit un nouvel infirmier. Le DAC met à jour le cercle de soins de la personne dans son outil numérique d’appui à la coordination en fonction des nouveaux professionnels intervenants auprès de la personne prise en charge.</p>
+<p><u>Cas d’usage 3</u> : L'infirmière libérale déménage, la personne choisit un nouvel infirmier. Le DAC met à jour le cercle de soins de la personne dans son outil numérique d'appui à la coordination en fonction des nouveaux professionnels intervenants auprès de la personne prise en charge.</p>
 
 <p><strong><u>Contexte 2</u> :</strong> <em>Une personne, âgée de 62 ans, souffre de diabète et est suivie régulièrement par son diabétologue exerçant au sein d’un cabinet libéral. Un suivi avec un diététicien est également mis en place.</em></p>
 
@@ -236,7 +242,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="cercle-de-soins">Cercle de soins</h5>
 
-<p>Il n’existe pas de définition juridique du cercle de soins en tant que telle. Le « cercle de soins » d’une personne peut être défini comme le regroupement de personnes, professionnels et structures intervenant dans la prise en charge de la personne dans le domaine sanitaire, médico-administratif, médico-social et social. Le « cercle de soins » d’une personne peut donc être constitué des membres de son équipe de soins, d’autres professionnels, de structures, de ses aidants, de sa personne de confiance ou encore de ses représentants légaux.</p>
+<p>Il n’existe pas de définition juridique du cercle de soins en tant que telle. Le « cercle de soins » d’une personne peut être défini comme le regroupement de personnes, professionnels et structures intervenant dans la prise en charge de la personne dans le domaine sanitaire, médico-administratif, médico-social et social. Le « cercle de soins » d'une personne peut donc être constitué des membres de son équipe de soins, d'autres professionnels, de structures, de ses aidants, de sa personne de confiance ou encore de ses représentants légaux.</p>
 
 <div class="figure" style="margin:auto; width:65%;">
     <img src="sf_image1.png" alt="Flux1" title="Flux1" />
@@ -247,35 +253,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>La notion d’« équipe de soins » a été définie dans la loi n°2016-41 du 26 Janvier 2016, et dans les textes qui en découlent :</p>
 
 <ul>
-  <li>Décret n°2016-994 du 20 juillet 2016 relatif aux conditions d’échange et de partage d’informations entre professionnels de santé et autres professionnels des champs social et médico-social et à l’accès aux informations de santé à caractère personnel ;</li>
-  <li>Décret n°2016-996 du 20 juillet 2016 relatif à la liste des structures de coopération, d’exercice partagé ou de coordination sanitaire ou médico-sociale dans lesquelles peuvent exercer les membres d’une équipe de soins ;</li>
+  <li>Décret n°2016-994 du 20 juillet 2016 relatif aux conditions d'échange et de partage d'informations entre professionnels de santé et autres professionnels des champs social et médico-social et à l'accès aux informations de santé à caractère personnel ;</li>
+  <li>Décret n°2016-996 du 20 juillet 2016 relatif à la liste des structures de coopération, d'exercice partagé ou de coordination sanitaire ou médico-sociale dans lesquelles peuvent exercer les membres d'une équipe de soins ;</li>
   <li>Décret n°2016-1349 du 10 octobre 2016 relatif au consentement préalable au partage d’informations entre des professionnels ne faisant pas partie de la même équipe de soins ;</li>
   <li>Arrêté du 25 novembre 2016 fixant le cahier des charges de définition de l’équipe de soins visée au 3 de l’article L. 1110-12 du code de la santé publique.</li>
 </ul>
 
-<p>Selon l’article L. 1110-12 du Code de la Santé Publique, l’équipe de soins est un ensemble de professionnels qui participent directement au profit d’un même patient à la réalisation d’un acte diagnostique, thérapeutique, de compensation du handicap, de soulagement de la douleur ou de prévention de perte d’autonomie, ou aux actions nécessaires à la coordination de plusieurs de ces actes, et qui :</p>
+<p>Selon l’article L. 1110-12 du Code de la Santé Publique, l'équipe de soins est un ensemble de professionnels qui participent directement au profit d'un même patient à la réalisation d'un acte diagnostique, thérapeutique, de compensation du handicap, de soulagement de la douleur ou de prévention de perte d'autonomie, ou aux actions nécessaires à la coordination de plusieurs de ces actes, et qui :</p>
 
-<p>1° Soit exercent dans le même établissement de santé, au sein du service de santé des armées, dans le même établissement ou service social ou médico-social mentionné au I de l’article L. 312-1 du code de l’action sociale et des familles ou dans le cadre d’une structure de coopération, d’exercice partagé ou de coordination sanitaire ou médico-sociale figurant sur une liste fixée par décret ;</p>
+<p>1° Soit exercent dans le même établissement de santé, au sein du service de santé des armées, dans le même établissement ou service social ou médico-social mentionné au I de l'article L. 312-1 du code de l'action sociale et des familles ou dans le cadre d'une structure de coopération, d'exercice partagé ou de coordination sanitaire ou médico-sociale figurant sur une liste fixée par décret ;</p>
 
-<p>2° Soit se sont vu reconnaître la qualité de membre de l’équipe de soins par le patient qui s’adresse à eux pour la réalisation des consultations et des actes prescrits par un médecin auquel il a confié sa prise en charge ;</p>
+<p>2° Soit se sont vu reconnaître la qualité de membre de l'équipe de soins par le patient qui s'adresse à eux pour la réalisation des consultations et des actes prescrits par un médecin auquel il a confié sa prise en charge ;</p>
 
 <p>3° Soit exercent dans un ensemble, comprenant au moins un professionnel de santé, présentant une organisation formalisée et des pratiques conformes à un cahier des charges fixé par un arrêté du ministre chargé de la santé.</p>
 
 <h5 id="aidant">Aidant</h5>
 
-<p>On retrouve plusieurs définitions juridiques de l’ « aidant » proche des personnes prises en charge dans les différents codes juridiques français (Code de l’action sociale et des familles, Code de la sécurité sociale, Code du Travail…).</p>
+<p>On retrouve plusieurs définitions juridiques de l' « aidant » proche des personnes prises en charge dans les différents codes juridiques français (Code de l’action sociale et des familles, Code de la sécurité sociale, Code du Travail…).</p>
 
-<p>Si l’on se réfère à sa définition dans le Code de la santé publique, l’article L1111-6-1 précise le statut de l’aidant naturel comme une personne choisie par la personne aidée pour l’accompagner dans les gestes liés à des soins prescrits par un médecin pour favoriser son autonomie.</p>
+<p>Si l'on se réfère à sa définition dans le Code de la santé publique, l’article L1111-6-1 précise le statut de l’aidant naturel comme une personne choisie par la personne aidée pour l’accompagner dans les gestes liés à des soins prescrits par un médecin pour favoriser son autonomie.</p>
 
 <h5 id="personne-de-confiance">Personne de confiance</h5>
 
 <p>La loi du 4 mars 2002 relative aux droits des malades a introduit la notion de « personne de confiance » de la personne prise en charge dans le droit français.</p>
 
-<p>La loi du 2 février 2016 créant de nouveaux droits en faveur des malades et des personnes en fin de vie est venue en préciser les contours codifiés dans l’article L1111-6 du Code de la santé publique.</p>
+<p>La loi du 2 février 2016 créant de nouveaux droits en faveur des malades et des personnes en fin de vie est venue en préciser les contours codifiés dans l'article L1111-6 du Code de la santé publique.</p>
 
-<p>L’article L1111-6 du Code de la santé publique précise ainsi que toute personne majeure peut désigner une personne de confiance qui peut être un parent, un proche ou le médecin traitant et qui sera consultée au cas où elle-même serait hors d’état d’exprimer sa volonté et de recevoir l’information nécessaire à cette fin. La personne de confiance rend compte de la volonté de la personne. Son témoignage prévaut sur tout autre témoignage. Cette désignation est faite par écrit et cosignée par la personne désignée. Elle est révisable et révocable à tout moment.</p>
+<p>L'article L1111-6 du Code de la santé publique précise ainsi que toute personne majeure peut désigner une personne de confiance qui peut être un parent, un proche ou le médecin traitant et qui sera consultée au cas où elle-même serait hors d'état d'exprimer sa volonté et de recevoir l'information nécessaire à cette fin. La personne de confiance rend compte de la volonté de la personne. Son témoignage prévaut sur tout autre témoignage. Cette désignation est faite par écrit et cosignée par la personne désignée. Elle est révisable et révocable à tout moment.</p>
 
-<p>Si le patient le souhaite, la personne de confiance l’accompagne dans ses démarches et assiste aux entretiens médicaux afin de l’aider dans ses décisions.</p>
+<p>Si le patient le souhaite, la personne de confiance l'accompagne dans ses démarches et assiste aux entretiens médicaux afin de l'aider dans ses décisions.</p>
 
 <p>La désignation de la personne de confiance n’est pas obligatoire. Mais dans le cadre du suivi de son patient, le médecin traitant s’assure que son patient est informé de la possibilité de désigner une personne de confiance. Par ailleurs, lors de toute hospitalisation, il est proposé au malade de désigner une personne de confiance. Cette désignation est valable pour la durée de l’hospitalisation, sauf mention contraire du patient.</p>
 
@@ -283,13 +289,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="responsable-légal">Responsable légal</h5>
 
-<p>Un représentant légal est une personne légalement désignée en vue de représenter et de défendre les intérêts d’une autre. Le représentant légal agit au nom et pour le compte de la personne qu’il représente.</p>
+<p>Un représentant légal est une personne légalement désignée en vue de représenter et de défendre les intérêts d'une autre. Le représentant légal agit au nom et pour le compte de la personne qu'il représente.</p>
 
-<p>Pour l’enfant mineur, sa représentation légale incombe dans l’immense majorité des cas aux personnes qui exercent l’autorité parentale sur l’enfant (Art. 382 du Code Civil).</p>
+<p>Pour l'enfant mineur, sa représentation légale incombe dans l’immense majorité des cas aux personnes qui exercent l'autorité parentale sur l'enfant (Art. 382 du Code Civil).</p>
 
-<p>Lorsque les titulaires de l’autorité parentale ne peuvent plus l’exercer, la loi a envisagé la situation dans laquelle l’enfant mineur est représenté par un tiers (le tuteur), chargé de représenter et de défendre ses intérêts (Art. 390 à 413 du Code Civil).</p>
+<p>Lorsque les titulaires de l'autorité parentale ne peuvent plus l'exercer, la loi a envisagé la situation dans laquelle l'enfant mineur est représenté par un tiers (le tuteur), chargé de représenter et de défendre ses intérêts (Art. 390 à 413 du Code Civil).</p>
 
-<p>Lorsqu’une personne majeure connaît une altération de ses facultés mentales mais aussi corporelles (à la condition qu’elle soit de nature à empêcher l’expression de sa volonté) qui la place dans l’impossibilité de pourvoir seule à ses intérêts, la loi envisage sa protection dans le respect des libertés individuelles selon quatre modes de protection : la sauvegarde de justice, la curatelle, la tutelle et l’habilitation familiale. Dans le cas de la tutelle, la personne majeure est représentée par un tiers (le tuteur), chargé de représenter et de défendre ses intérêts (Art. 440 et suivants du Code Civil).</p>
+<p>Lorsqu'une personne majeure connaît une altération de ses facultés mentales mais aussi corporelles (à la condition qu'elle soit de nature à empêcher l'expression de sa volonté) qui la place dans l'impossibilité de pourvoir seule à ses intérêts, la loi envisage sa protection dans le respect des libertés individuelles selon quatre modes de protection : la sauvegarde de justice, la curatelle, la tutelle et l'habilitation familiale. Dans le cas de la tutelle, la personne majeure est représentée par un tiers (le tuteur), chargé de représenter et de défendre ses intérêts (Art. 440 et suivants du Code Civil).</p>
 
 <h5 id="si-dac-et-si-médecin">SI DAC et SI Médecin</h5>
 
@@ -313,9 +319,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <img src="sf_image2.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 1 Organisation du contexte métier de l’étude “Cercle de soins”</p>
+<p>Figure 1 Organisation du contexte métier de l'étude "Cercle de soins"</p>
 
-<p>Le périmètre de l’étude englobe les processus en couleur sur le diagramme de paquetage.</p>
+<p>Le périmètre de l'étude englobe les processus en couleur sur le diagramme de paquetage.</p>
 
 <h4 id="gestion-du-cercle-de-soins">Gestion du cercle de soins</h4>
 
@@ -329,17 +335,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="définition-des-processus-collaboratifs">Définition des processus collaboratifs</h3>
 
-<p>Les acteurs « Système » et « Personne » représentés dans les processus collaboratifs suivants sont donnés à titre d’exemple. Seuls les acteurs « Rôle » sont génériques.</p>
+<p>Les acteurs « Système » et « Personne » représentés dans les processus collaboratifs suivants sont donnés à titre d'exemple. Seuls les acteurs « Rôle » sont génériques.</p>
 
-<h4 id="cas-dutilisations">Cas d’utilisations</h4>
+<h4 id="cas-dutilisations">Cas d'utilisations</h4>
 
-<h5 id="processus-collaboratif-création-du-cercle-de-soins">Processus collaboratif “Création du cercle de soins”</h5>
+<h5 id="processus-collaboratif-création-du-cercle-de-soins">Processus collaboratif "Création du cercle de soins"</h5>
 
 <div class="figure" style="margin:auto; width:65%;">
     <img style="height: auto; width: 100%;" src="sf_image3.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 2 : Processus collaboratif “Création du cercle de soins”</p>
+<p>Figure 2 : Processus collaboratif "Création du cercle de soins"</p>
 
 <table>
 <colgroup>
@@ -377,13 +383,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 1 Caractéristiques du processus collaboratif</p>
 
-<h5 id="processus-collaboratif-consultation-du-cercle-de-soins">Processus collaboratif “Consultation du cercle de soins”</h5>
+<h5 id="processus-collaboratif-consultation-du-cercle-de-soins">Processus collaboratif "Consultation du cercle de soins"</h5>
 
 <div class="figure" style="margin:auto; width:65%;">
     <img style="height: auto; width: 100%;" src="sf_image4.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 3 : Processus collaboratif “Consultation du cercle de soins”</p>
+<p>Figure 3 : Processus collaboratif "Consultation du cercle de soins"</p>
 
 <table>
 <colgroup>
@@ -420,13 +426,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 2 Caractéristiques du processus collaboratif</p>
 
-<h5 id="processus-collaboratif-mise-à-jour-du-cercle-de-soins">Processus collaboratif “Mise à jour du cercle de soins”</h5>
+<h5 id="processus-collaboratif-mise-à-jour-du-cercle-de-soins">Processus collaboratif "Mise à jour du cercle de soins"</h5>
 
 <div class="figure" style="margin:auto; width:65%;">
     <img style="height: auto; width: 100%;" src="sf_image5.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 4 : Processus collaboratif “Mise à jour du cercle de soins”</p>
+<p>Figure 4 : Processus collaboratif "Mise à jour du cercle de soins"</p>
 
 <table>
 <colgroup>
@@ -464,7 +470,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Table 3 Caractéristiques du processus collaboratif</p>
 
-<h4 id="liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l’ensemble des processus</h4>
+<h4 id="liste-des-acteurs-pour-lensemble-des-processus">Liste des acteurs pour l'ensemble des processus</h4>
 
 <table>
 <colgroup>
@@ -506,7 +512,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <img src="sf_image6.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 5 : Processus collaboratif “Création du cercle de soins”</p>
+<p>Figure 5 : Processus collaboratif "Création du cercle de soins"</p>
 
 <h5 id="description-des-actions">Description des actions</h5>
 
@@ -566,7 +572,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <img src="sf_image7.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 6 : Processus collaboratif “Consultation du cercle de soins”</p>
+<p>Figure 6 : Processus collaboratif "Consultation du cercle de soins"</p>
 
 <h5 id="description-des-actions-1">Description des actions</h5>
 
@@ -633,7 +639,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <img src="sf_image8.png" alt="Flux1" title="Flux1" />
 </div>
 
-<p>Figure 7 : Processus collaboratif “Mise à jour du cercle de soins”</p>
+<p>Figure 7 : Processus collaboratif "Mise à jour du cercle de soins"</p>
 
 <h5 id="description-des-actions-2">Description des actions</h5>
 
@@ -942,7 +948,7 @@ L'aidant accompagne la personne prise en charge dans les gestes liés à des soi
 
 <p>Table 13 Mise en équivalence MOS</p>
 
-<h3 id="modélisation-des-flux-dinformations">Modélisation des flux d’informations</h3>
+<h3 id="modélisation-des-flux-dinformations">Modélisation des flux d'informations</h3>
 
 <h4 id="flux-1---creationcerclesoins">Flux 1 - CreationCercleSoins</h4>
 
@@ -952,11 +958,11 @@ L'aidant accompagne la personne prise en charge dans les gestes liés à des soi
 
 <p>Figure 8 Flux 1 - CreationCercleSoins</p>
 
-<p>Les types de données complexes sont décrits dans les classes communes du Modèle des Objets de Santé de l’ANS.</p>
+<p>Les types de données complexes sont décrits dans les classes communes du Modèle des Objets de Santé de l'ANS.</p>
 
-<h5 id="classe-personneprisecharge">Classe “PersonnePriseCharge”</h5>
+<h5 id="classe-personneprisecharge">Classe "PersonnePriseCharge"</h5>
 
-<p>Personne physique bénéficiaire de soins, d’examens, d’actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager.</p>
+<p>Personne physique bénéficiaire de soins, d'examens, d'actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager.</p>
 
 <table>
 <colgroup>
@@ -996,11 +1002,11 @@ L'aidant accompagne la personne prise en charge dans les gestes liés à des soi
 </tbody>
 </table>
 
-<p>Table 14 Attributs de la classe “PersonnePriseCharge”</p>
+<p>Table 14 Attributs de la classe "PersonnePriseCharge"</p>
 
-<h5 id="classe-personnephysique">Classe “PersonnePhysique”</h5>
+<h5 id="classe-personnephysique">Classe "PersonnePhysique"</h5>
 
-<p>Une personne physique est un individu titulaire de droits et d’obligations caractérisé par une identité civile.</p>
+<p>Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.</p>
 
 <table>
 <colgroup>
@@ -1069,9 +1075,9 @@ TRE_R20-Pays</td>
 </tbody>
 </table>
 
-<p>Table 15 Attributs de la classe “PersonnePhysique”</p>
+<p>Table 15 Attributs de la classe "PersonnePhysique"</p>
 
-<h5 id="classe-professionnel">Classe “Professionnel”</h5>
+<h5 id="classe-professionnel">Classe "Professionnel"</h5>
 
 <p>Un Professionnel est une personne qui participe à la prise en charge d’un Usager que ce soit au niveau sanitaire, médico-administratif, médico-social et social.</p>
 
@@ -1085,7 +1091,7 @@ TRE_R20-Pays</td>
   <tbody>
     <tr>
       <td>dPP : [0..1] Identifiant</td>
-      <td>Identifiant national de la personne physique:<br /> ** Pour les professionnels de santé: Numéro RPPS ou ADELI.<br /> ** Pour les étudiants: Numéro RPPS depuis 2017.<br /> Remarque, le numéro Etudiant (identifiant ordinal) n’est plus attribué aux nouveaux étudiants mais peut subsister dans certaines cartes d’étudiant en pharmacie jusqu’à 2022.<br /> ** Pour les acteurs non professionnels de santé employés d’une structure : l’identifiant est composé de l’identifiant principal de la structure et de l’identifiant interne attribué par la structure.</td>
+      <td>Identifiant national de la personne physique:<br /> ** Pour les professionnels de santé: Numéro RPPS ou ADELI.<br /> ** Pour les étudiants: Numéro RPPS depuis 2017.<br /> Remarque, le numéro Etudiant (identifiant ordinal) n'est plus attribué aux nouveaux étudiants mais peut subsister dans certaines cartes d'étudiant en pharmacie jusqu'à 2022.<br /> ** Pour les acteurs non professionnels de santé employés d’une structure : l’identifiant est composé de l’identifiant principal de la structure et de l’identifiant interne attribué par la structure.</td>
     </tr>
     <tr>
       <td>typeIdNat_PP : [0..1] Code</td>
@@ -1098,11 +1104,11 @@ TRE_R20-Pays</td>
   </tbody>
 </table>
 
-<p>Table 16 Attributs de la classe “Professionnel”</p>
+<p>Table 16 Attributs de la classe "Professionnel"</p>
 
-<h5 id="classe-situationexercice">Classe “SituationExercice”</h5>
+<h5 id="classe-situationexercice">Classe "SituationExercice"</h5>
 
-<p>Caractéristiques de l’exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l’exception des remplaçants).</p>
+<p>Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).</p>
 
 <table>
   <thead>
@@ -1114,7 +1120,7 @@ TRE_R20-Pays</td>
   <tbody>
     <tr>
       <td>modeExercice : [0..1] Code</td>
-      <td>Le mode d’exercice décrit selon quelle modalité une activité est exercée au regard de l’organisation de la rétribution du professionnel.<br /> Exemples :<br /> ** Libéral;<br /> ** Salarié;<br /> ** Bénévole<br /><br />Nomenclature associée :<br />TRE_R23-ModeExercice&lt;/td&gt;</td>
+      <td>Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.<br /> Exemples :<br /> ** Libéral;<br /> ** Salarié;<br /> ** Bénévole<br /><br />Nomenclature associée :<br />TRE_R23-ModeExercice&lt;/td&gt;</td>
     </tr>
     <tr>
       <td>role : [0..1] Code</td>
@@ -1122,7 +1128,7 @@ TRE_R20-Pays</td>
     </tr>
     <tr>
       <td>boiteLettresMSS : [0..*] BoiteLettreMSS</td>
-      <td> Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d’exercice.</td>
+      <td> Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</td>
     </tr>
     <tr>
       <td>metadonnee : [1..1] Metadonnee</td>
@@ -1131,11 +1137,11 @@ TRE_R20-Pays</td>
   </tbody>
 </table>
 
-<p>Table 17 Attributs de la classe “SituationExercice”</p>
+<p>Table 17 Attributs de la classe "SituationExercice"</p>
 
-<h5 id="classe-exerciceprofessionnel">Classe “ExerciceProfessionnel”</h5>
+<h5 id="classe-exerciceprofessionnel">Classe "ExerciceProfessionnel"</h5>
 
-<p>Informations décrivant notamment la profession exercée, l’identité d’exercice d’un professionnel et le cadre de son exercice (civil, militaire, etc.).</p>
+<p>Informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, militaire, etc.).</p>
 
 <p>Il peut exister plusieurs exercices professionnels pour une personne à un instant donné.</p>
 
@@ -1183,9 +1189,9 @@ TRE_R291-AutreProfession</td>
 </tbody>
 </table>
 
-<p>Table 18 Attributs de la classe “ExerciceProfessionnel”</p>
+<p>Table 18 Attributs de la classe "ExerciceProfessionnel"</p>
 
-<h5 id="classe-cerclesoins">Classe “CercleSoins”</h5>
+<h5 id="classe-cerclesoins">Classe "CercleSoins"</h5>
 
 <p>Le Cercle de Soins comprend toutes les personnes (Professionnel ou Personne Tierce) et Entités qui participent à la prise en charge et aux actions de coordination du parcours de santé d’un Usager. Le Cercle de Soins possède un statut, une date de début, une date de fin et une date de mise à jour.</p>
 
@@ -1230,11 +1236,11 @@ La liste des valeurs possibles n'est pas définie par ces spécifications. Les c
 </tbody>
 </table>
 
-<p>Table 19 Attributs de la classe “CercleSoins”</p>
+<p>Table 19 Attributs de la classe "CercleSoins"</p>
 
-<h5 id="classe-organisationinterne">Classe “OrganisationInterne”</h5>
+<h5 id="classe-organisationinterne">Classe "OrganisationInterne"</h5>
 
-<p>L’organisation interne est une unité organisationnelle regroupant des activités de soins de santé au sein d’une Entité.</p>
+<p>L'organisation interne est une unité organisationnelle regroupant des activités de soins de santé au sein d’une Entité.</p>
 
 <table>
   <thead>
@@ -1246,15 +1252,15 @@ La liste des valeurs possibles n'est pas définie par ces spécifications. Les c
   <tbody>
     <tr>
       <td>identifiantOI : [0..1] Identifiant</td>
-      <td>Identifiant de l’organisation interne, unique et persistant au niveau national.</td>
+      <td>Identifiant de l'organisation interne, unique et persistant au niveau national.</td>
     </tr>
     <tr>
       <td>nom : [0..1] Texte</td>
-      <td>Nom de l’organisation interne.</td>
+      <td>Nom de l'organisation interne.</td>
     </tr>
     <tr>
       <td>boiteLettresMSS : [0..*] BoiteLettreMSS</td>
-      <td>Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d’exercice.</td>
+      <td>Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</td>
     </tr>
     <tr>
       <td>metadonnee : [1..1] Metadonnee</td>
@@ -1263,13 +1269,13 @@ La liste des valeurs possibles n'est pas définie par ces spécifications. Les c
   </tbody>
 </table>
 
-<p>Table 20 Attributs de la classe “OrganisationInterne”</p>
+<p>Table 20 Attributs de la classe "OrganisationInterne"</p>
 
-<h5 id="classe-entitejuridique">Classe “EntiteJuridique”</h5>
+<h5 id="classe-entitejuridique">Classe "EntiteJuridique"</h5>
 
-<p>L’Entité Juridique (EJ) correspond à la notion de personne morale :</p>
+<p>L'Entité Juridique (EJ) correspond à la notion de personne morale :</p>
 
-<p>** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d’exercer ses activités dans des établissements ; chaque EJ dispose d’un statut juridique de la personne morale ;</p>
+<p>** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d'exercer ses activités dans des établissements ; chaque EJ dispose d'un statut juridique de la personne morale ;</p>
 
 <p>** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro SIREN.</p>
 
@@ -1318,24 +1324,24 @@ Elle figure obligatoirement dans les statuts de l'EJ.</td>
 </tbody>
 </table>
 
-<p>Table 21 Attributs de la classe “EntiteJuridique”</p>
+<p>Table 21 Attributs de la classe "EntiteJuridique"</p>
 
-<h5 id="classe-entitegeographique">Classe “EntiteGeographique”</h5>
+<h5 id="classe-entitegeographique">Classe "EntiteGeographique"</h5>
 
-<p>L’Entité Géographique (EG) correspond à la notion d’établissement :</p>
+<p>L'Entité Géographique (EG) correspond à la notion d'établissement :</p>
 
-<p>** Pour les établissements inscrits au FINESS, cette notion d’établissement résulte du croisement de trois critères :</p>
+<p>** Pour les établissements inscrits au FINESS, cette notion d'établissement résulte du croisement de trois critères :</p>
 
-<p>- Un critère géographique : Est un établissement tout lieu dont l’implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d’une autre implantation.<br />
-Ainsi un Centre Hospitalier Régional comprend autant d’établissements que d’implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L’implantation géographique peut-être décrite soit avec l’attribut addresseEG soit au travers de la classe Lieu.</p>
+<p>- Un critère géographique : Est un établissement tout lieu dont l'implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d'une autre implantation.<br />
+Ainsi un Centre Hospitalier Régional comprend autant d'établissements que d'implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L'implantation géographique peut-être décrite soit avec l'attribut addresseEG soit au travers de la classe Lieu.</p>
 
-<p>- Un critère budgétaire : Pour une même implantation géographique, on distingue autant d’établissements du secteur public qu’il y a de budgets distincts (budget général, budget annexe).<br />
-Ainsi un ESAT et son foyer d’hébergement constituent deux établissements même s’ils sont implantés à la même adresse.</p>
+<p>- Un critère budgétaire : Pour une même implantation géographique, on distingue autant d'établissements du secteur public qu'il y a de budgets distincts (budget général, budget annexe).<br />
+Ainsi un ESAT et son foyer d'hébergement constituent deux établissements même s'ils sont implantés à la même adresse.</p>
 
-<p>- Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d’établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.<br />
-Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s’ils sont implantés à la même adresse.</p>
+<p>- Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d'établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.<br />
+Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s'ils sont implantés à la même adresse.</p>
 
-<p>** Pour les entreprises inscrites dans le SIRENE, l’EG correspond à un établissement de la personne morale, elle est identifiée par un numéro SIRET.</p>
+<p>** Pour les entreprises inscrites dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro SIRET.</p>
 
 <table>
 <colgroup>
@@ -1383,9 +1389,9 @@ Dans le cas d'un établissement enregistré dans le FINESS, cet attribut corresp
 </tbody>
 </table>
 
-<p>Table 22 Attributs de la classe “EntiteGeographique”</p>
+<p>Table 22 Attributs de la classe "EntiteGeographique"</p>
 
-<h5 id="classe-contact">Classe “Contact”</h5>
+<h5 id="classe-contact">Classe "Contact"</h5>
 
 <p>Un contact peut être un membre de la famille ou un proche de l’Usager. Il peut s’agir par exemple d’un aidant, de la personne de confiance de l’Usager…</p>
 
@@ -1428,9 +1434,9 @@ TRE_R260-HL7RoleClass</td>
 </tbody>
 </table>
 
-<p>Table 23 Attributs de la classe “Contact”</p>
+<p>Table 23 Attributs de la classe "Contact"</p>
 
-<h5 id="classe-membrecerclesoin">Classe “MembreCercleSoin”</h5>
+<h5 id="classe-membrecerclesoin">Classe "MembreCercleSoin"</h5>
 
 <p>Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager. Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin de participation à ce cercle.</p>
 
@@ -1477,7 +1483,7 @@ TRE_R260-HL7RoleClass</td>
 </tbody>
 </table>
 
-<p>Table 24 Attributs de la classe “MembreCercleSoin”</p>
+<p>Table 24 Attributs de la classe "MembreCercleSoin"</p>
 
 <h5 id="règle-de-gestion">Règle de gestion</h5>
 
@@ -1715,7 +1721,7 @@ TRE_R260-HL7RoleClass</td>
 
 <h4 id="diagramme-de-séquence-interaction">Diagramme de séquence Interaction</h4>
 
-<p>Illustration du cas d’usage présenté à l’étape 0.</p>
+<p>Illustration du cas d'usage présenté à l'étape 0.</p>
 
 <div class="figure" style="margin:auto; width:100%;">
     <img style="height: auto; width: 100%;" src="sf_image11.png" alt="Flux1" title="Flux1" />
@@ -1729,7 +1735,7 @@ TRE_R260-HL7RoleClass</td>
     <img style="height: auto; width: 100%;" src="sf_image12.png" alt="Flux1" title="Flux1" />
 </div>
 
-<h4 id="diagramme-dobjet-du-flux-1">Diagramme d’objet du flux 1.</h4>
+<h4 id="diagramme-dobjet-du-flux-1">Diagramme d'objet du flux 1.</h4>
 
 <div class="figure" style="margin:auto; width:100%;">
     <img style="height: auto; width: 100%;" src="sf_image13.png" alt="Flux1" title="Flux1" />
@@ -1776,12 +1782,13 @@ TRE_R260-HL7RoleClass</td>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 24, 2024 16:16+0000">2024-09-24</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  Package ans.fhir.fr.cds#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 17, 2025 08:43+0000">2025-11-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/cds/history.html">Historique des versions </a>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/cds/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/IG-fhir-cercle-de-soins/issues/new">New Issue</a>
 
           </span>
