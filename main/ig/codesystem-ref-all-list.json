@@ -122,10 +122,10 @@
     },
     {
       "url" : "http://snomed.info/sct",
-      "version" : null,
+      "version" : "http://snomed.info/sct/900000000000207008/version/20251001",
       "status" : "active",
       "name" : "SNOMED_CT",
-      "title" : "SNOMED CT (all versions)",
+      "title" : "SNOMED CT core",
       "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
@@ -178,7 +178,7 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role",
       "http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html" : "Patient relationship type"
     },
     {
@@ -207,68 +207,90 @@
     },
     {
       "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-      "version" : "2.0.1",
+      "version" : "2.1.0",
       "status" : "draft",
       "name" : "FRCoreCodeSystemv2_3307",
       "title" : "FR Core CodeSystem v2-3307",
       "description" : "HL7 v2 - Table 3307",
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-organization-type.html" : "FR Core ValueSet Organization type"
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-organization-type.html" : "FR Core ValueSet Organization type"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/CodeSystem/as-cs-organization-types",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AsCsOrganizationTypes",
+      "title" : "AS CodeSystem OrganizationTypes",
+      "description" : "CodeSystem définissant les types d'organisation",
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/ValueSet-as-vs-organization-types.html" : "AS ValueSet OrganizationTypes"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/CodeSystem/as-cs-type-etablissement",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AsCsTypeEtablissement",
+      "title" : "AS CodeSystem Type Etablissement",
+      "description" : "CodeSystem définissant les types d'établissement.",
+      "uses" : {
+      },
+      "https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/ValueSet-as-vs-type-etablissement.html" : "AS ValueSet type Etablissement"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
-      "version" : "1.5.0",
+      "version" : "20250523120000",
       "status" : "active",
-      "name" : "TRE_R02-SecteurActivite",
+      "name" : "TRE_R02_SecteurActivite",
       "title" : null,
       "description" : "Le secteur d'activité de santé est une donnée RPPS et correspond au type de service fourni par une structure. Il sert principalement à déterminer les propriétés de facturation des professionnels de ces structures vis-à-vis de l'assurance maladie",
       "oids" : ["1.2.250.1.71.4.2.4"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101-SecteurActivite-RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101_SecteurActivite_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice",
-      "version" : "1.5.0",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "TRE_R11-CiviliteExercice",
+      "name" : "TRE_R11_CiviliteExercice",
       "title" : null,
       "description" : "Civilité d'exercice",
       "oids" : ["1.2.250.1.213.1.6.1.11"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79-CiviliteExercice-RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79_CiviliteExercice_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
-      "version" : "1.5.0",
+      "version" : "20241213120000",
       "status" : "active",
-      "name" : "TRE_R216-HL7RoleCode",
+      "name" : "TRE_R216_HL7RoleCode",
       "title" : null,
       "description" : "HL7 roleCode",
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-relation-type.html" : "FR Core ValueSet relation type"
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-relation-type.html" : "FR Core ValueSet relation type"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
-      "version" : "1.5.0",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "TRE_R217-ProtectionJuridique",
+      "name" : "TRE_R217_ProtectionJuridique",
       "title" : null,
       "description" : "Protection juridique",
       "oids" : ["1.2.250.1.213.1.1.4.327"],
       "uses" : {
       },
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
-      "version" : "1.5.0",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "TRE_R259-HL7ParticipationFunction",
+      "name" : "TRE_R259_HL7ParticipationFunction",
       "title" : null,
       "description" : "Rôles fonctionnels HL7",
       "oids" : ["2.16.840.1.113883.5.88"],
@@ -278,88 +300,76 @@
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
-      "version" : "1.5.0",
+      "version" : "20240426120000",
       "status" : "active",
-      "name" : "TRE_R260-HL7RoleClass",
+      "name" : "TRE_R260_HL7RoleClass",
       "title" : null,
       "description" : "Rôle de la personne point de contact auprès d'une autre personne repris de la terminologie HL7 v3 RoleClass (https://www.hl7.org/fhir/v3/RoleClass/cs.html)",
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
       "ValueSet-careteam-roles-vs.html" : "Roles des participants dans un cercle de soins",
-      "https://hl7.fr/ig/fhir/core/2.0.1/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
+      "https://hl7.fr/ig/fhir/core/2.1.0/ValueSet-fr-core-vs-patient-contact-role.html" : "FR Core ValueSet Patient contact role"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
-      "version" : "1.5.0",
+      "version" : "20250425120000",
       "status" : "active",
-      "name" : "TRE_R66-CategorieEtablissement",
+      "name" : "TRE_R66_CategorieEtablissement",
       "title" : null,
       "description" : "Catégorie d'établissements",
       "oids" : ["1.2.250.1.213.1.6.1.8"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129-CategorieEtablissement-RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129_CategorieEtablissement_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique",
-      "version" : "1.5.0",
+      "version" : "20240329120000",
       "status" : "active",
-      "name" : "TRE_R72-FinessStatutJuridique",
+      "name" : "TRE_R72_FinessStatutJuridique",
       "title" : null,
       "description" : "Statuts juridiques provenant de FINESS, excepté pour les codes 000 et 100 à 110 qui ont été ajoutés pour les besoins du RPPS en 2017.",
       "oids" : ["1.2.250.1.213.1.6.1.44"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J100-FinessStatutJuridique-RASS.html" : "JDV_J100-FinessStatutJuridique-RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J100-FinessStatutJuridique-RASS.html" : "JDV_J100_FinessStatutJuridique_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
-      "version" : "1.5.0",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "TRE_R73-ESPIC",
+      "name" : "TRE_R73_ESPIC",
       "title" : null,
       "description" : "Etablissement de santé privé d'intérêt collectif",
       "oids" : ["1.2.250.1.213.1.6.1.45"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J162-ESPIC-RASS.html" : "JDV_J162-ESPIC-RASS"
-    },
-    {
-      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire",
-      "version" : "1.5.0",
-      "status" : "active",
-      "name" : "TRE_R74-ModeFixationTarifaire",
-      "title" : null,
-      "description" : "Mode de fixation tarifaire",
-      "oids" : ["1.2.250.1.213.1.6.1.46"],
-      "uses" : {
-      },
-      "https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/ValueSet-as-vs-organization-types.html" : "AS ValueSet OrganizationTypes"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J162-ESPIC-RASS.html" : "JDV_J162_ESPIC_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5",
-      "version" : "1.5.0",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "TRE_R75-InseeNAFrev2Niveau5",
+      "name" : "TRE_R75_InseeNAFrev2Niveau5",
       "title" : null,
       "description" : "Sous-classes de la Nomenclature d'Activités Française - INSEE",
       "oids" : ["1.2.250.1.213.1.6.1.47"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J99-InseeNAFrav2Niveau5-RASS.html" : "JDV_J99-InseeNAFrav2Niveau5-RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J99-InseeNAFrav2Niveau5-RASS.html" : "JDV_J99_InseeNAFrav2Niveau5_RASS"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
-      "version" : "1.5.0",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "TRE_R81-Civilite",
+      "name" : "TRE_R81_Civilite",
       "title" : null,
       "description" : "Civilité",
       "oids" : ["1.2.250.1.213.1.6.1.69"],
       "uses" : {
       },
-      "https://interop.esante.gouv.fr/ig/nos/1.5.0/ValueSet-JDV-J78-Civilite-RASS.html" : "JDV_J78-Civilite-RASS"
+      "https://interop.esante.gouv.fr/terminologies/1.4.0/ValueSet-JDV-J78-Civilite-RASS.html" : "JDV_J78_Civilite_RASS"
     },
     {
       "url" : "urn:ietf:bcp:47",

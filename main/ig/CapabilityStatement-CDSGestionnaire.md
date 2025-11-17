@@ -71,10 +71,10 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 | | | | | | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [CareTeam](#CareTeam1-1) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam](StructureDefinition-cds-ihe-careteam.md) | y | y | y | y | y | y | y | identifier, start, end, status, _lastUpdated, category, participant-start, participant-end, date, participant, patient, subject, managingOrganization |  |  |  |
-| [Patient](#Patient1-2) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html) | y |  | y | y | y |  |  | identifier, family, given, name, address, birthdate, gender, birthplace |  |  |  |
+| [Patient](#Patient1-2) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html) | y |  | y | y | y |  |  | identifier, family, given, name, address, birthdate, gender, birthplace |  |  |  |
 | [RelatedPerson](#RelatedPerson1-3) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person](StructureDefinition-cds-fr-related-person.md) | y |  | y | y | y |  |  | _id, name, relationship |  |  |  |
-| [Practitioner](#Practitioner1-4) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html) | y |  | y | y | y |  |  | identifier, name |  |  |  |
-| [PractitionerRole](#PractitionerRole1-5) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html) | y |  | y | y | y |  |  | _id, practitioner, role |  |  |  |
+| [Practitioner](#Practitioner1-4) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html) | y |  | y | y | y |  |  | identifier, name |  |  |  |
+| [PractitionerRole](#PractitionerRole1-5) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html) | y |  | y | y | y |  |  | _id, practitioner, role |  |  |  |
 | [Organization](#Organization1-6) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization](StructureDefinition-cds-organization.md) | y |  | y | y | y |  |  | _id, identifier, name |  |  |  |
 
 -------
@@ -104,7 +104,7 @@ Paramètres de recherche
 
 Profil système de base
 
-[FR Core Patient Profile](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html)
+[FR Core Patient Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html)
 
 Conformité au Profil
 
@@ -146,7 +146,7 @@ Paramètres de recherche
 
 Profil système de base
 
-[AS Practitioner Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html)
+[AS Practitioner Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html)
 
 Conformité au Profil
 
@@ -167,7 +167,7 @@ Paramètres de recherche
 
 Profil système de base
 
-[AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html)
+[AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html)
 
 Conformité au Profil
 

@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for CDS</h1>
- <p>Generated Mon Nov 17 08:46:16 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/cds">https://interop.esante.gouv.fr/ig/fhir/cds</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/cds/history.html">history</a>))</p>
+ <p>Generated Mon Nov 17 09:26:31 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/cds">https://interop.esante.gouv.fr/ig/fhir/cds</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/cds/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -62,11 +62,11 @@
     <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=https://tx.fhir.org/r4, auth = , candidates=https://tx.fhir.org/r4]</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.fhir.org/r4</td>
-    <td>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.0.1</td>
-    <td>https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</td>
-    <td>auth = , candidates=</td>
+    <td>Found most authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-insee-code|2.1.0</td>
+    <td>[https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM, https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune]</td>
+    <td>[auth = https://smt.esante.gouv.fr/fhir, candidates=, auth = , candidates=]</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -151,7 +151,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 7. Code Systems used: </p>
+<p>Use Count: 6. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -170,7 +170,7 @@
   <tr>
     <td>https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</td>
     <td>0</td>
-    <td>2</td>
+    <td>1</td>
     <td></td>
   </tr>
   <tr>
@@ -178,7 +178,7 @@
     <td>3</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
   </tr>
   <tr>
@@ -186,7 +186,7 @@
     <td>1</td>
     <td>0</td>
     <td>
-      <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-iso3166-2.html">ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code</a>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-iso3166-2.html">ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code</a>
     </td>
   </tr>
 </table>
@@ -207,6 +207,39 @@
     <th>
       <b>Details</b>
     </th>
+  </tr>
+</table>
+<h2>Server: https://smt.esante.gouv.fr/fhir</h2>
+<a href="https://smt.esante.gouv.fr/fhir"></a>
+<p>Use Count: 1. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R13-CommuneOM.html">TRE_R13_CommuneOM</a>
+    </td>
   </tr>
 </table>
 </body>

@@ -59,10 +59,10 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 | | | | | | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | [CareTeam](#CareTeam1-1) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam](StructureDefinition-cds-ihe-careteam.md) | y | y | y |  |  | y | y | identifier, CDSCareTeamStart, CDSCareTeamEnd, status, _lastUpdated, category, date, participant, patient, subject, CDSCareTeamParticipantStart, CDSCareTeamParticipantEnd, CareTeamManagingOrganization |  |  |  |
-| [Patient](#Patient1-2) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html) | y |  | y |  |  |  |  | identifier, family, given, name, address, birthdate, gender, birthplace |  |  |  |
-| [RelatedPerson](#RelatedPerson1-3) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-related-person.html) | y |  | y |  |  |  |  | _id, name, relationship |  |  |  |
+| [Patient](#Patient1-2) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html) | y |  | y |  |  |  |  | identifier, family, given, name, address, birthdate, gender, birthplace |  |  |  |
+| [RelatedPerson](#RelatedPerson1-3) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-related-person.html) | y |  | y |  |  |  |  | _id, name, relationship |  |  |  |
 | [Organization](#Organization1-4) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization](StructureDefinition-cds-organization.md) | y |  | y |  |  |  |  | _id, name, identifier, partof |  |  |  |
-| [PractitionerRole](#PractitionerRole1-5) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html)**Profils additionnels supportés :**  [AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html) | y |  | y |  |  |  |  | _id, practitioner, role |  |  |  |
+| [PractitionerRole](#PractitionerRole1-5) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html)**Profils additionnels supportés :**  [AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html) | y |  | y |  |  |  |  | _id, practitioner, role |  |  |  |
 
 -------
 
@@ -91,7 +91,7 @@ Paramètres de recherche
 
 Profil système de base
 
-[FR Core Patient Profile](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient.html)
+[FR Core Patient Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html)
 
 Conformité au Profil
 
@@ -112,7 +112,7 @@ Paramètres de recherche
 
 Profil système de base
 
-[FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-related-person.html)
+[FR Core Related Person Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-related-person.html)
 
 Conformité au Profil
 
@@ -154,7 +154,7 @@ Paramètres de recherche
 
 Profil système de base
 
-[AS Practitioner Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitioner.html)
+[AS Practitioner Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html)
 
 Conformité au Profil
 
@@ -163,7 +163,7 @@ Conformité au Profil
 Politique de référence
 
 Profils supportés
-[AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.0.1/StructureDefinition-as-practitionerrole.html)
+[AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html)
 
 Résumé des interactions
 

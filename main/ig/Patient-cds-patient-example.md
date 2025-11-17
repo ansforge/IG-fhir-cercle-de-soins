@@ -8,7 +8,7 @@
 
 Dernière mise à jour : 2023-09-27 13:48:19+0100
 
-Profil: [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/2.0.1/StructureDefinition-fr-core-patient-ins.html)
+Profil: [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient-ins.html)
 
 Jacques Thobois (official) Male, Date de Naissance :1984-10-02 ( NIR définitif (use: official, ))
 
@@ -17,7 +17,7 @@ Jacques Thobois (official) Male, Date de Naissance :1984-10-02 ( NIR définitif�
 | | |
 | :--- | :--- |
 | [Patient Birth Place](http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html) | GOULVEN |
-| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](https://hl7.fr/ig/fhir/core/2.0.1/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI) (Identité validée)
+| FR Core Patient Ident Reliability Extension: | * identityStatus: [FR Core CodeSystem v2-0445: VALI](https://hl7.fr/ig/fhir/core/2.1.0/CodeSystem-fr-core-cs-v2-0445.html#fr-core-cs-v2-0445-VALI) (Identité validée)
  |
 
 
