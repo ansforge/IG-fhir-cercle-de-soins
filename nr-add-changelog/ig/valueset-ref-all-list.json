@@ -1,0 +1,479 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile",
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-team-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CareTeamCategory",
+      "title" : "Care Team category",
+      "description" : "Indicates the type of care team.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.155"],
+      "sources" : ["2.16.840.1.113883.4.642.3.155"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-team-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CareTeamStatus",
+      "title" : "CareTeamStatus",
+      "description" : "Indicates the status of the care team.",
+      "systems" : ["http://hl7.org/fhir/care-team-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.153"],
+      "sources" : ["2.16.840.1.113883.4.642.3.153"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile",
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile",
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient relationship type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.449"],
+      "sources" : ["2.16.840.1.113883.4.642.3.449"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-bundle-response-recherche.html" : "CDS Bundle Response Recherche Profile",
+      "StructureDefinition-cds-bundle-transaction-maj.html" : "CDS Bundle Transaction MAJ Profile",
+      "StructureDefinition-cds-bundle-transaction-creation.html" : "CDS Bundle Transaction Creation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile",
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile",
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-organization-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetOrganizationType",
+      "title" : "FR Core ValueSet Organization type",
+      "description" : "Organization types | Types de structures",
+      "systems" : ["https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetPatientContactRole",
+      "title" : "FR Core ValueSet Patient contact role",
+      "description" : "ValueSet patient contact role",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "FRCoreValueSetPatientRelationType",
+      "title" : "FR Core ValueSet relation type",
+      "description" : "ValueSet relation type",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-organization-types",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AsVsOrganizationTypes",
+      "title" : "AS ValueSet OrganizationTypes",
+      "description" : "ValueSet définissant les types d'organisation",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/CodeSystem/as-cs-organization-types"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/ValueSet/as-vs-type-etablissement",
+      "version" : "1.1.0",
+      "status" : "active",
+      "name" : "AsVsTypeEtablissement",
+      "title" : "AS ValueSet type Etablissement",
+      "description" : "ValueSet définissant les types d'établissement.",
+      "systems" : [
+        "https://interop.esante.gouv.fr/ig/fhir/annuaire/CodeSystem/as-cs-type-etablissement"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "CareTeamRolesValueSet",
+      "title" : "Roles des participants dans un cercle de soins",
+      "description" : "Roles des participants dans un cercle de soins.",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cds-ihe-careteam.html" : "CDS CareTeam Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J100-FinessStatutJuridique-RASS/FHIR/JDV-J100-FinessStatutJuridique-RASS",
+      "version" : "20200424120000",
+      "status" : "active",
+      "name" : "JDV_J100_FinessStatutJuridique_RASS",
+      "title" : null,
+      "description" : "Statut juridique FINESS dans le RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.168"],
+      "sources" : ["1.2.250.1.213.1.6.1.168"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J101-SecteurActivite-RASS/FHIR/JDV-J101-SecteurActivite-RASS",
+      "version" : "20250828120000",
+      "status" : "active",
+      "name" : "JDV_J101_SecteurActivite_RASS",
+      "title" : null,
+      "description" : "Secteurs d'activité des établissements avec la même activité dans le RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.169"],
+      "sources" : ["1.2.250.1.213.1.6.1.169"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J129-CategorieEtablissement-RASS/FHIR/JDV-J129-CategorieEtablissement-RASS",
+      "version" : "20241025120000",
+      "status" : "active",
+      "name" : "JDV_J129_CategorieEtablissement_RASS",
+      "title" : null,
+      "description" : "Catégorie d'établissement du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.215"],
+      "sources" : ["1.2.250.1.213.1.6.1.215"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J162-ESPIC-RASS/FHIR/JDV-J162-ESPIC-RASS",
+      "version" : "20210528120000",
+      "status" : "active",
+      "name" : "JDV_J162_ESPIC_RASS",
+      "title" : null,
+      "description" : "Etablissement de santé privée d'intérêt collectif dans le RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.226"],
+      "sources" : ["1.2.250.1.213.1.6.1.226"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS",
+      "version" : "20221216120000",
+      "status" : "active",
+      "name" : "JDV_J78_Civilite_RASS",
+      "title" : null,
+      "description" : "Civilités des personnes physiques du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.146"],
+      "sources" : ["1.2.250.1.213.1.6.1.146"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS",
+      "version" : "20200424120000",
+      "status" : "active",
+      "name" : "JDV_J79_CiviliteExercice_RASS",
+      "title" : null,
+      "description" : "Civilités d'exercice d'un professionnel du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.147"],
+      "sources" : ["1.2.250.1.213.1.6.1.147"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-fr-related-person.html" : "CDS Fr RelatedPerson Profile"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/JDV_J99-InseeNAFrav2Niveau5-RASS/FHIR/JDV-J99-InseeNAFrav2Niveau5-RASS",
+      "version" : "20200424120000",
+      "status" : "active",
+      "name" : "JDV_J99_InseeNAFrav2Niveau5_RASS",
+      "title" : null,
+      "description" : "Sous-classes de la Nomenclature Activités Française (INSEE) des prof du RASS",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5"
+      ],
+      "oids" : ["1.2.250.1.213.1.6.1.167"],
+      "sources" : ["1.2.250.1.213.1.6.1.167"],
+      "uses" : {
+      },
+      "StructureDefinition-cds-organization.html" : "CDS Organization Profile"
+    }
+  ]
+}
