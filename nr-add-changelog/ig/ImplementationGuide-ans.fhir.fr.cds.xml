@@ -10,7 +10,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="active"/>
-  <date value="2025-11-18T17:12:23+00:00"/>
+  <date value="2025-11-18T17:18:56+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -83,6 +83,14 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -294,6 +302,14 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -554,7 +570,7 @@
         <reference value="Bundle/cds-bundle-transaction-creation-example"/>
       </reference>
       <name value="cds-bundle-transaction-creation-example"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -575,7 +591,7 @@
         <reference value="CareTeam/cds-careteam-example"/>
       </reference>
       <name value="cds-careteam-example"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -629,7 +645,7 @@
         <reference value="Organization/cds-organization-example"/>
       </reference>
       <name value="cds-organization-example"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -660,7 +676,7 @@
         <reference value="RelatedPerson/cds-relatedperson-example"/>
       </reference>
       <name value="cds-relatedperson-example"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"/>
+      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
   "name" : "CDSCareTeam",
   "title" : "CDS CareTeam Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:12:23+00:00",
+  "date" : "2025-11-18T17:18:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "CareTeam",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CareTeam",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -143,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0"
             ]
           }
         ]
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
         "path" : "CareTeam.participant.role",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs|2.0.1"
         }
       },
       {
@@ -197,9 +197,9 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
-              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
-              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0",
+              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1",
+              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"
             ]
           }
         ]

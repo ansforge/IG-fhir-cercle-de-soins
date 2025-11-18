@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-18T17:12:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-18T17:18:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -171,6 +171,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "pin-canonicals"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "pin-all"
          ]
        ] ) ;
        fhir:url [
@@ -804,6 +828,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "pin-canonicals"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "pin-all"
          ]
        ] ) ;
        fhir:url [
@@ -1507,8 +1555,8 @@
        fhir:name [ fhir:v "cds-bundle-transaction-creation-example" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation?version=2.0.1>
        ]
      ] [
        fhir:extension ( [
@@ -1549,8 +1597,8 @@
        fhir:name [ fhir:v "cds-careteam-example" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam?version=2.0.1>
        ]
      ] [
        fhir:extension ( [
@@ -1654,8 +1702,8 @@
        fhir:name [ fhir:v "cds-organization-example" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization?version=2.0.1>
        ]
      ] [
        fhir:extension ( [
@@ -1716,8 +1764,8 @@
        fhir:name [ fhir:v "cds-relatedperson-example" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person?version=2.0.1>
        ]
      ] [
        fhir:extension ( [

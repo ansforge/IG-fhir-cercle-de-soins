@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-organization.csv
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:12:23+00:00",
+  "date" : "2025-11-18T17:18:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-organization.csv
   "kind" : "resource",
   "abstract" : false,
   "type" : "Organization",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.1.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -156,9 +156,9 @@ Other representations of profile: [CSV](StructureDefinition-cds-organization.csv
             ],
             "code" : "Reference",
             "targetProfile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization",
-              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization",
-              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization|2.1.0",
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-organization|1.1.0",
+              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"
             ]
           }
         ]

@@ -54,10 +54,10 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0": [
       "RelatedPerson.name"
     ],
-    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+    "http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0": [
       "Organization"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
@@ -91,46 +91,49 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type|2.1.0": [
       "Organization.telecom"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Bundle.entry.resource",
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description|2.1.0": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.1.0": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
       "Bundle.entry.resource.name",
       "Patient.name"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-data-trace|1.1.0": [
       "Organization.meta"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-digital-certificate": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-digital-certificate|1.1.0": [
       "Organization"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-authorization-deadline": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-authorization-deadline|1.1.0": [
       "Organization"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-budget-type": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-budget-type|1.1.0": [
       "Organization"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-closing-type": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-closing-type|1.1.0": [
       "Organization"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pharmacy-licence": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pharmacy-licence|1.1.0": [
       "Organization"
     ],
-    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pricing-model": [
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-pricing-model|1.1.0": [
       "Organization"
     ],
     "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types": [
       "Bundle.entry.resource.type",
+      "Organization.type"
+    ],
+    "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types|1.1.0": [
       "Organization.type"
     ]
   }

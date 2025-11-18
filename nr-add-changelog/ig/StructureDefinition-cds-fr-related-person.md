@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-fr-related-perso
   "name" : "CDSFrRelatedPerson",
   "title" : "CDS Fr RelatedPerson Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:12:23+00:00",
+  "date" : "2025-11-18T17:18:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-fr-related-perso
   "kind" : "resource",
   "abstract" : false,
   "type" : "RelatedPerson",
-  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person|2.1.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [

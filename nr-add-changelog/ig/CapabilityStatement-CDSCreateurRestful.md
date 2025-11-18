@@ -58,12 +58,12 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 
 | | | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Patient](#Patient1-1) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html) |  |  | y | y |  |  |  |  |
-| [Practitioner](#Practitioner1-2) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html) |  |  | y | y |  |  |  |  |
-| [PractitionerRole](#PractitionerRole1-3) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html) |  |  | y | y |  |  |  |  |
-| [RelatedPerson](#RelatedPerson1-4) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person](StructureDefinition-cds-fr-related-person.md) |  |  | y | y |  |  |  |  |
-| [Organization](#Organization1-5) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization](StructureDefinition-cds-organization.md) |  |  | y | y |  |  |  |  |
-| [CareTeam](#CareTeam1-6) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam](StructureDefinition-cds-ihe-careteam.md) |  |  | y | y |  |  |  |  |
+| [Patient](#Patient1-1) | [https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html) |  |  | y | y |  |  |  |  |
+| [Practitioner](#Practitioner1-2) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html) |  |  | y | y |  |  |  |  |
+| [PractitionerRole](#PractitionerRole1-3) | [https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html) |  |  | y | y |  |  |  |  |
+| [RelatedPerson](#RelatedPerson1-4) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1](StructureDefinition-cds-fr-related-person.md) |  |  | y | y |  |  |  |  |
+| [Organization](#Organization1-5) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1](StructureDefinition-cds-organization.md) |  |  | y | y |  |  |  |  |
+| [CareTeam](#CareTeam1-6) | [https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1](StructureDefinition-cds-ihe-careteam.md) |  |  | y | y |  |  |  |  |
 
 -------
 
@@ -71,7 +71,7 @@ Le tableau récapitulatif liste les ressources faisant partie de cette configura
 
 Profil système de base
 
-[FR Core Patient Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html)
+[FR Core Patient Profileversion: 2.1.0)](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html)
 
 Conformité au Profil
 
@@ -87,7 +87,7 @@ Résumé des interactions
 
 Profil système de base
 
-[AS Practitioner Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html)
+[AS Practitioner Profileversion: 1.1.0)](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html)
 
 Conformité au Profil
 
@@ -103,7 +103,7 @@ Résumé des interactions
 
 Profil système de base
 
-[AS PractitionerRole Profile](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html)
+[AS PractitionerRole Profileversion: 1.1.0)](https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html)
 
 Conformité au Profil
 
@@ -119,7 +119,7 @@ Résumé des interactions
 
 Profil système de base
 
-[CDS Fr RelatedPerson Profile](StructureDefinition-cds-fr-related-person.md)
+[CDS Fr RelatedPerson Profileversion: 2.0.1)](StructureDefinition-cds-fr-related-person.md)
 
 Conformité au Profil
 
@@ -135,7 +135,7 @@ Résumé des interactions
 
 Profil système de base
 
-[CDS Organization Profile](StructureDefinition-cds-organization.md)
+[CDS Organization Profileversion: 2.0.1)](StructureDefinition-cds-organization.md)
 
 Conformité au Profil
 
@@ -151,7 +151,7 @@ Résumé des interactions
 
 Profil système de base
 
-[CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
+[CDS CareTeam Profileversion: 2.0.1)](StructureDefinition-cds-ihe-careteam.md)
 
 Conformité au Profil
 
@@ -219,7 +219,7 @@ Résumé des interactions
       "resource" : [
         {
           "type" : "Patient",
-          "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient",
+          "profile" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0",
           "interaction" : [
             {
               "code" : "create"
@@ -231,7 +231,7 @@ Résumé des interactions
         },
         {
           "type" : "Practitioner",
-          "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner",
+          "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0",
           "interaction" : [
             {
               "code" : "create"
@@ -243,7 +243,7 @@ Résumé des interactions
         },
         {
           "type" : "PractitionerRole",
-          "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole",
+          "profile" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0",
           "interaction" : [
             {
               "code" : "create"
@@ -255,7 +255,7 @@ Résumé des interactions
         },
         {
           "type" : "RelatedPerson",
-          "profile" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
+          "profile" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1",
           "interaction" : [
             {
               "code" : "create"
@@ -267,7 +267,7 @@ Résumé des interactions
         },
         {
           "type" : "Organization",
-          "profile" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization",
+          "profile" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1",
           "interaction" : [
             {
               "code" : "create"
@@ -279,7 +279,7 @@ Résumé des interactions
         },
         {
           "type" : "CareTeam",
-          "profile" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam",
+          "profile" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1",
           "interaction" : [
             {
               "code" : "create"

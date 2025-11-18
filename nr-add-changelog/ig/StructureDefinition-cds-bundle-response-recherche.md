@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
   "name" : "CDSBundleResponseRecherche",
   "title" : "CDS Bundle Response Recherche Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:12:23+00:00",
+  "date" : "2025-11-18T17:18:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
   "kind" : "resource",
   "abstract" : false,
   "type" : "Bundle",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Bundle|4.0.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -133,7 +133,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
           {
             "code" : "CareTeam",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"
+              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1"
             ]
           }
         ]
@@ -168,7 +168,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
           {
             "code" : "Patient",
             "profile" : [
-              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient"
+              "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0"
             ]
           }
         ]
@@ -203,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
           {
             "code" : "RelatedPerson",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"
+              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1"
             ]
           }
         ]
@@ -238,7 +238,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
           {
             "code" : "Organization",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
+              "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"
             ]
           }
         ]
@@ -274,7 +274,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
           {
             "code" : "PractitionerRole",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0"
             ]
           }
         ]
@@ -310,7 +310,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
           {
             "code" : "Practitioner",
             "profile" : [
-              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner"
+              "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0"
             ]
           }
         ]

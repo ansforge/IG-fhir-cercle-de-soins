@@ -204,7 +204,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam]]} {[]}
+"Bundle.entry:careTeam.resource","Bundle.entry.resource","","","",1,1,"","","","CareTeam {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1]]} {[]}
 ","Planned participants in the coordination and delivery of care for a patient or group","The Care Team includes all the people and organizations who plan to participate in the coordination and delivery of care for a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act"
 "Bundle.entry:careTeam.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -322,7 +322,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",1,1,"","","","Patient {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient]]} {[]}
+","",1,1,"","","","Patient {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Patient[classCode=PAT]","ClinicalDocument.recordTarget.patientRole"
 "Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -439,7 +439,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person]]} {[]}
+"Bundle.entry:relatedPerson.resource","Bundle.entry.resource","","","",1,1,"","","","RelatedPerson {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1]]} {[]}
 ","A person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","role"
 "Bundle.entry:relatedPerson.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -556,7 +556,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization]]} {[]}
+"Bundle.entry:organization.resource","Bundle.entry.resource","","","",1,1,"","","","Organization {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","(also see master files messages)","Entity. Role, or Act","Organization(classCode=ORG, determinerCode=INST)"
 "Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -673,7 +673,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:practitionerRoleOrg.resource","Bundle.entry.resource","","","",1,1,"","","","PractitionerRole {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole]]} {[]}
+"Bundle.entry:practitionerRoleOrg.resource","Bundle.entry.resource","","","",1,1,"","","","PractitionerRole {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0]]} {[]}
 ","Roles/organizations the practitioner is associated with","A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PRD (as one example)","Entity. Role, or Act","Role"
 "Bundle.entry:practitionerRoleOrg.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -790,7 +790,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:practitionerPro.resource","Bundle.entry.resource","","","",1,1,"","","","Practitioner {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner]]} {[]}
+"Bundle.entry:practitionerPro.resource","Bundle.entry.resource","","","",1,1,"","","","Practitioner {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PRD (as one example)","Entity. Role, or Act","Role"
 "Bundle.entry:practitionerPro.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2

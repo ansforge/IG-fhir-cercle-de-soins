@@ -98,7 +98,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-11-18T17:12:23+00:00",
+  "date" : "2025-11-18T17:18:56+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -206,6 +206,19 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "pin-canonicals"
+          },
+          {
+            "url" : "value",
+            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -548,6 +561,19 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "pin-canonicals"
+          },
+          {
+            "url" : "value",
+            "valueString" : "pin-all"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -948,7 +974,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           "reference" : "Bundle/cds-bundle-transaction-creation-example"
         },
         "name" : "cds-bundle-transaction-creation-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1"
       },
       {
         "extension" : [
@@ -975,7 +1001,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           "reference" : "CareTeam/cds-careteam-example"
         },
         "name" : "cds-careteam-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1"
       },
       {
         "extension" : [
@@ -1044,7 +1070,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           "reference" : "Organization/cds-organization-example"
         },
         "name" : "cds-organization-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"
       },
       {
         "extension" : [
@@ -1084,7 +1110,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
           "reference" : "RelatedPerson/cds-relatedperson-example"
         },
         "name" : "cds-relatedperson-example",
-        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"
+        "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1"
       },
       {
         "extension" : [
