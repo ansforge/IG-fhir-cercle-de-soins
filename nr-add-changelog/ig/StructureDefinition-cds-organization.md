@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-organization.csv
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2025-11-18T17:11:50+00:00",
+  "date" : "2025-11-18T17:12:23+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
