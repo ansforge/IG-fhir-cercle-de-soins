@@ -1,0 +1,57 @@
+# ans.fhir.fr.cds#2.0.1: Cercle De Soins
+
+## Pages
+
+* [Accueil](index.md)
+* [Correspondances métier](correspondances_metier.md)
+* [Interactions RESTful](interaction_restful.md)
+* [Artifacts Summary](artifacts.md)
+* [Specifications Techniques](specifications_techniques.md)
+* [Recherche CDS](recherche_recuperation_cds.md)
+* [Interactions transaction](interaction_transaction.md)
+* [Autres Ressources](autres_ressources.md)
+* [Volume 1 - Etude fonctionnelle](specifications_fonctionnelles.md)
+* [Téléchargements et usages](downloads.md)
+
+## Resources
+
+### ValueSets
+
+* [Roles des participants dans un cercle de soins](ValueSet-careteam-roles-vs.md)
+
+### Resource Profiles
+
+* [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md)
+* [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md)
+* [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
+* [CDS Fr RelatedPerson Profile](StructureDefinition-cds-fr-related-person.md)
+* [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
+* [CDS Organization Profile](StructureDefinition-cds-organization.md)
+
+### CapabilityStatements
+
+* [CI-SIS Gestion du Cercle de Soins - Consommateur](CapabilityStatement-CDSConsommateur.md)
+* [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md)
+* [CI-SIS Gestion du Cercle de Soins - CreateurTransaction](CapabilityStatement-CDSCreateurTransaction.md)
+* [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
+
+### ImplementationGuides
+
+* [Cercle De Soins](index.md)
+
+### SearchParameters
+
+* [CDSCareTeamEnd](SearchParameter-cds-careteam-end.md)
+* [CDSCareTeamManagingOrganization](SearchParameter-cds-careteam-managing-organization.md)
+* [CDSCareTeamParticipantEnd](SearchParameter-cds-careteam-participant-end.md)
+* [CDSCareTeamParticipantStart](SearchParameter-cds-careteam-participant-start.md)
+* [CDSCareTeamStart](SearchParameter-cds-careteam-start.md)
+* [CDSPatientBirthplace](SearchParameter-cds-patient-birthplace.md)
+
+### Examples
+
+* [cds-bundle-transaction-creation-example (Bundle)](Bundle-cds-bundle-transaction-creation-example.md)
+* [Cercle de soins de Mr Jacques Thobois (CareTeam)](CareTeam-cds-careteam-example.md)
+* [Cabinet médical CC CC (Organization)](Organization-cds-organization-example.md)
+* [cds-patient-example (Patient)](Patient-cds-patient-example.md)
+* [cds-relatedperson-example (RelatedPerson)](RelatedPerson-cds-relatedperson-example.md)
