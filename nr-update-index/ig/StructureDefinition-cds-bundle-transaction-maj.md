@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-transacti
   "name" : "CDSBundleTransactionMAJ",
   "title" : "CDS Bundle Transaction MAJ Profile",
   "status" : "active",
-  "date" : "2025-12-02T15:54:40+00:00",
+  "date" : "2025-12-02T16:00:51+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

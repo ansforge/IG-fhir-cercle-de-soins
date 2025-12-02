@@ -107,7 +107,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-12-02T15:54:40+00:00",
+  "date" : "2025-12-02T16:00:51+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1305,6 +1305,17 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
               "generation" : "markdown"
             }
           ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "changes.html"
+            }
+          ],
+          "nameUrl" : "changes.html",
+          "title" : "Historique",
+          "generation" : "markdown"
         }
       ]
     },
