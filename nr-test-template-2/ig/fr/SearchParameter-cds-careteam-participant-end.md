@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# cds-careteam-participant-end - Cercle De Soins v2.0.1
 
 ## SearchParameter: cds-careteam-participant-end 
 
@@ -32,7 +32,7 @@ Date de sortie d’un membre du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamParticipantEnd",
   "status" : "active",
-  "date" : "2025-12-02T13:33:21+00:00",
+  "date" : "2025-12-02T14:04:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

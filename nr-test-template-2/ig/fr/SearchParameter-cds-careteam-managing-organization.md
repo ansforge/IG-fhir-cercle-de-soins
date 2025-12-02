@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# cds-careteam-managing-organization - Cercle De Soins v2.0.1
 
 ## SearchParameter: cds-careteam-managing-organization 
 
@@ -31,7 +31,7 @@ Organisation responsable du Cercle De Soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamManagingOrganization",
   "status" : "active",
-  "date" : "2025-12-02T13:33:21+00:00",
+  "date" : "2025-12-02T14:04:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

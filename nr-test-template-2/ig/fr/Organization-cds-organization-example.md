@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# cds-organization-example - Cercle De Soins v2.0.1
 
 ## Exemple Organization: cds-organization-example
 

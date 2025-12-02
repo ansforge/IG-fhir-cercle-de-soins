@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# Roles des participants dans un cercle de soins - Cercle De Soins v2.0.1
 
 ## ValueSet: Roles des participants dans un cercle de soins 
 
@@ -44,7 +44,7 @@ Ce jeu de valeur (ValueSet) contient 11 concepts
   "name" : "CareTeamRolesValueSet",
   "title" : "Roles des participants dans un cercle de soins",
   "status" : "active",
-  "date" : "2025-12-02T13:33:21+00:00",
+  "date" : "2025-12-02T14:04:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# cds-patient-example - Cercle De Soins v2.0.1
 
 ## Exemple Patient: cds-patient-example
 

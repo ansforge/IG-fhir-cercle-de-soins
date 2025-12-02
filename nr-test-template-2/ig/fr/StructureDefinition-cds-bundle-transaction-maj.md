@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# CDS Bundle Transaction MAJ Profile - Cercle De Soins v2.0.1
 
 ## Profil des ressources: CDS Bundle Transaction MAJ Profile 
 
@@ -116,7 +116,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-bundle-tran
   "name" : "CDSBundleTransactionMAJ",
   "title" : "CDS Bundle Transaction MAJ Profile",
   "status" : "active",
-  "date" : "2025-12-02T13:33:21+00:00",
+  "date" : "2025-12-02T14:04:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

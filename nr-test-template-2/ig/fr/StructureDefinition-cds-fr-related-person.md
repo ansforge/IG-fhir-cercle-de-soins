@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# CDS Fr RelatedPerson Profile - Cercle De Soins v2.0.1
 
 ## Profil des ressources: CDS Fr RelatedPerson Profile 
 
@@ -81,7 +81,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-fr-related-
   "name" : "CDSFrRelatedPerson",
   "title" : "CDS Fr RelatedPerson Profile",
   "status" : "active",
-  "date" : "2025-12-02T13:33:21+00:00",
+  "date" : "2025-12-02T14:04:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

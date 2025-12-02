@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# cds-careteam-example - Cercle De Soins v2.0.1
 
 ## Exemple CareTeam: cds-careteam-example
 

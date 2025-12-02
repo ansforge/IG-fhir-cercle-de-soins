@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# CDS Organization Profile - Cercle De Soins v2.0.1
 
 ## Profil des ressources: CDS Organization Profile 
 
@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-organizatio
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2025-12-02T13:33:21+00:00",
+  "date" : "2025-12-02T14:04:07+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

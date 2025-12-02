@@ -1,4 +1,4 @@
-#  - Cercle De Soins v2.0.1
+# cds-bundle-transaction-creation-example - Cercle De Soins v2.0.1
 
 ## Exemple Bundle: cds-bundle-transaction-creation-example
 
