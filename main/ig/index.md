@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CDS |
+| Active as of 2025-12-02 | *Computable Name*:CDS |
 
  **CDS Implementation Guide**
  This implementation guide contains the profiles to share about a patient CareTeam. 
@@ -98,7 +98,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1296,6 +1296,17 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
               "generation" : "markdown"
             }
           ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "changes.html"
+            }
+          ],
+          "nameUrl" : "changes.html",
+          "title" : "Historique",
+          "generation" : "markdown"
         }
       ]
     },

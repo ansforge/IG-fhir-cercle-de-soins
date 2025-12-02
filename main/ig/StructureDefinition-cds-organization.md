@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CDSAsOrganization |
+| Active as of 2025-12-02 | *Computable Name*:CDSAsOrganization |
 
  
 Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI) 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md), [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md) and [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
-* Refer to this Profile: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md) and [CDS Organization Profile](StructureDefinition-cds-organization.md)
-* Examples for this Profile: [Cabinet médical CC CC](Organization-cds-organization-example.md)
-* CapabilityStatements using this Profile: [CI-SIS Gestion du Cercle de Soins - Consommateur](CapabilityStatement-CDSConsommateur.md), [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md) and [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
+* Utiliser ce Profil: [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md), [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md) and [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
+* Référer à ce Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md) and [CDS Organization Profile](StructureDefinition-cds-organization.md)
+* Exemples pour ce Profil: [Cabinet médical CC CC](Organization-cds-organization-example.md)
+* CapabilityStatements utilisant ce Profil: [CI-SIS Gestion du Cercle de Soins - Consommateur](CapabilityStatement-CDSConsommateur.md), [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md) and [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.cds|current/StructureDefinition/cds-organization)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-organization.csv
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

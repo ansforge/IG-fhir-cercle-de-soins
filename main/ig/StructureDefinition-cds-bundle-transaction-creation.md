@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CDSBundleTransactionCreation |
+| Active as of 2025-12-02 | *Computable Name*:CDSBundleTransactionCreation |
 
  
 Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction. Il s'agit d'un bundle de type`transaction`permettant d'organiser le contenu du flux de création d'un cercle de soins. 
 
-**Usages:**
+**Utilisations:**
 
-* Examples for this Profile: [Bundle/cds-bundle-transaction-creation-example](Bundle-cds-bundle-transaction-creation-example.md)
+* Exemples pour ce Profil: [Bundle/cds-bundle-transaction-creation-example](Bundle-cds-bundle-transaction-creation-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.cds|current/StructureDefinition/cds-bundle-transaction-creation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-transacti
   "name" : "CDSBundleTransactionCreation",
   "title" : "CDS Bundle Transaction Creation Profile",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

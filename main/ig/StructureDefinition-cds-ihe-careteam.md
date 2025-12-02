@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CDSCareTeam |
+| Active as of 2025-12-02 | *Computable Name*:CDSCareTeam |
 
  
 Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam ». 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md), [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md) and [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
-* Examples for this Profile: [Cercle de soins de Mr Jacques Thobois](CareTeam-cds-careteam-example.md)
-* CapabilityStatements using this Profile: [CI-SIS Gestion du Cercle de Soins - Consommateur](CapabilityStatement-CDSConsommateur.md), [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md) and [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
+* Utiliser ce Profil: [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md), [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md) and [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
+* Exemples pour ce Profil: [Cercle de soins de Mr Jacques Thobois](CareTeam-cds-careteam-example.md)
+* CapabilityStatements utilisant ce Profil: [CI-SIS Gestion du Cercle de Soins - Consommateur](CapabilityStatement-CDSConsommateur.md), [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md) and [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.cds|current/StructureDefinition/cds-ihe-careteam)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-ihe-careteam.csv
   "name" : "CDSCareTeam",
   "title" : "CDS CareTeam Profile",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

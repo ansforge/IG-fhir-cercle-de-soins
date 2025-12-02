@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CareTeamRolesValueSet |
+| Active as of 2025-12-02 | *Computable Name*:CareTeamRolesValueSet |
 
  
 Roles des participants dans un cercle de soins. 
@@ -18,7 +18,7 @@ Roles des participants dans un cercle de soins.
 
 * [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -28,6 +28,11 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_R259_HL7ParticipationFunction v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R259-HL7ParticipationFunction.html)
+* [codesystem TRE_R260_HL7RoleClass v20240426120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R260-HL7RoleClass.html)
 
 Ce jeu de valeur (ValueSet) contient 11 concepts
 
@@ -57,7 +62,7 @@ Ce jeu de valeur (ValueSet) contient 11 concepts
   "name" : "CareTeamRolesValueSet",
   "title" : "Roles des participants dans un cercle de soins",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

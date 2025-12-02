@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CDSCareTeamParticipantEnd |
+| Active as of 2025-12-02 | *Computable Name*:CDSCareTeamParticipantEnd |
 
  
 Date de sortie d’un membre du cercle de soins 
@@ -24,10 +24,10 @@ Date de sortie d’un membre du cercle de soins
 | :--- | :--- |
 | Ressource | [CareTeam](http://hl7.org/fhir/R4/careteam.html) |
 | Expression | `CareTeam.participant.period.end` |
-| Multiples | * multipleAnd: The parameter may repeat in order to specify multiple values that must all be true
-* multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true
+| Multiples | * multipleAnd : Le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies
+* multipleOr : Le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie
  |
-| Comparateurs | Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap |
+| Comparateurs | Autorisé : eq, ne, gt, lt, ge, le, sa, eb, ap |
 
 
 
@@ -41,7 +41,7 @@ Date de sortie d’un membre du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamParticipantEnd",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person | *Version*:2.0.1 |
-| Active as of 2025-11-19 | *Computable Name*:CDSFrRelatedPerson |
+| Active as of 2025-12-02 | *Computable Name*:CDSFrRelatedPerson |
 
  
 Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…). 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Profile: [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md), [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md) and [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
-* Refer to this Profile: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
-* Examples for this Profile: [RelatedPerson/cds-relatedperson-example](RelatedPerson-cds-relatedperson-example.md)
-* CapabilityStatements using this Profile: [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md) and [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
+* Utiliser ce Profil: [CDS Bundle Response Recherche Profile](StructureDefinition-cds-bundle-response-recherche.md), [CDS Bundle Transaction Creation Profile](StructureDefinition-cds-bundle-transaction-creation.md) and [CDS Bundle Transaction MAJ Profile](StructureDefinition-cds-bundle-transaction-maj.md)
+* Référer à ce Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
+* Exemples pour ce Profil: [RelatedPerson/cds-relatedperson-example](RelatedPerson-cds-relatedperson-example.md)
+* CapabilityStatements utilisant ce Profil: [CI-SIS Gestion du Cercle de Soins - CreateurRestful](CapabilityStatement-CDSCreateurRestful.md) and [CI-SIS Gestion du Cercle de Soins - Gestionnaire](CapabilityStatement-CDSGestionnaire.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.cds|current/StructureDefinition/cds-fr-related-person)
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-fr-related-perso
   "name" : "CDSFrRelatedPerson",
   "title" : "CDS Fr RelatedPerson Profile",
   "status" : "active",
-  "date" : "2025-11-19T09:11:46+00:00",
+  "date" : "2025-12-02T13:49:48+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
