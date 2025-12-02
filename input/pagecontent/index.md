@@ -67,7 +67,7 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
 
 ### Dépendances
 
-{% include dependency-table.xhtml %}
+{% include dependency-table-fr.xhtml %}
 
 ### Auteurs et contributeurs
 
