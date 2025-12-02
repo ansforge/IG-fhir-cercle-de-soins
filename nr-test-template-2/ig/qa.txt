@@ -3,8 +3,8 @@ CDS : Validation Results
 
 err = 8, warn = 50, info = 1484
 IG Publisher Version: 2.0.27
-Generated Tue Dec 02 13:35:36 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 322 / 8 / 0
+Generated Tue Dec 02 13:35:55 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/cds)
+ Build Errors : 167 / 8 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Bundle-cds-bundle-transaction-creation-example : 5 / 18 / 23
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 38
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 7
@@ -36,303 +36,155 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cds-patient-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/cds-relatedperson-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: fr/Bundle-cds-bundle-transaction-creation-example.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Bundle-cds-bundle-transaction-creation-example.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Bundle-cds-bundle-transaction-creation-example.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Bundle-cds-bundle-transaction-creation-example.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Bundle-cds-bundle-transaction-creation-example.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Bundle-cds-bundle-transaction-creation-example.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Bundle-cds-bundle-transaction-creation-example.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Bundle-cds-bundle-transaction-creation-example.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Bundle-cds-bundle-transaction-creation-example.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Bundle-cds-bundle-transaction-creation-example.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSConsommateur-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSConsommateur-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSConsommateur.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSConsommateur.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSConsommateur.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSConsommateur.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSConsommateur.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSConsommateur.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSConsommateur.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSConsommateur.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSConsommateur.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSConsommateur.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurRestful-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurRestful-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurRestful.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurRestful.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurRestful.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurRestful.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurRestful.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurRestful.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurRestful.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurRestful.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurRestful.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurRestful.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurTransaction-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurTransaction-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurTransaction.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurTransaction.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurTransaction.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurTransaction.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurTransaction.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurTransaction.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurTransaction.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurTransaction.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSCreateurTransaction.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSCreateurTransaction.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSGestionnaire-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSGestionnaire-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSGestionnaire.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSGestionnaire.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSGestionnaire.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSGestionnaire.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSGestionnaire.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSGestionnaire.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSGestionnaire.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSGestionnaire.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CapabilityStatement-CDSGestionnaire.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CapabilityStatement-CDSGestionnaire.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CareTeam-cds-careteam-example.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CareTeam-cds-careteam-example.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CareTeam-cds-careteam-example.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CareTeam-cds-careteam-example.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CareTeam-cds-careteam-example.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CareTeam-cds-careteam-example.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CareTeam-cds-careteam-example.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CareTeam-cds-careteam-example.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/CareTeam-cds-careteam-example.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/CareTeam-cds-careteam-example.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Organization-cds-organization-example.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Organization-cds-organization-example.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Organization-cds-organization-example.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Organization-cds-organization-example.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Organization-cds-organization-example.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Organization-cds-organization-example.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Organization-cds-organization-example.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Organization-cds-organization-example.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Organization-cds-organization-example.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Organization-cds-organization-example.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Patient-cds-patient-example.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Patient-cds-patient-example.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Patient-cds-patient-example.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Patient-cds-patient-example.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Patient-cds-patient-example.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Patient-cds-patient-example.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Patient-cds-patient-example.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Patient-cds-patient-example.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/Patient-cds-patient-example.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/Patient-cds-patient-example.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/RelatedPerson-cds-relatedperson-example.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/RelatedPerson-cds-relatedperson-example.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/RelatedPerson-cds-relatedperson-example.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/RelatedPerson-cds-relatedperson-example.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/RelatedPerson-cds-relatedperson-example.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/RelatedPerson-cds-relatedperson-example.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/RelatedPerson-cds-relatedperson-example.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/RelatedPerson-cds-relatedperson-example.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/RelatedPerson-cds-relatedperson-example.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/RelatedPerson-cds-relatedperson-example.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-end-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-end-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-end.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-end.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-end.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-end.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-end.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-end.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-end.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-end.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-end.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-end.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-managing-organization-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-managing-organization-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-managing-organization.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-managing-organization.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-managing-organization.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-managing-organization.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-managing-organization.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-managing-organization.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-managing-organization.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-managing-organization.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-managing-organization.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-managing-organization.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-end-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-end-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-end.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-end.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-end.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-end.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-end.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-end.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-end.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-end.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-end.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-end.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-start-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-start-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-start.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-start.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-start.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-start.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-start.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-start.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-start.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-start.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-participant-start.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-participant-start.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-start-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-start-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-start.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-start.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-start.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-start.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-start.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-start.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-start.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-start.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-careteam-start.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-careteam-start.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-patient-birthplace-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-patient-birthplace-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-patient-birthplace.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-patient-birthplace.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-patient-birthplace.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-patient-birthplace.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-patient-birthplace.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-patient-birthplace.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-patient-birthplace.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-patient-birthplace.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/SearchParameter-cds-patient-birthplace.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/SearchParameter-cds-patient-birthplace.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche-definitions.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche-examples.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche-mappings.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.history.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.json.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.ttl.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.xml.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-response-recherche.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-definitions.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-examples.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-mappings.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.history.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.json.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.ttl.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.xml.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-creation.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-definitions.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-examples.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-mappings.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.history.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.json.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.ttl.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.xml.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-bundle-transaction-maj.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person-definitions.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person-examples.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person-mappings.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person.profile.history.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person.profile.json.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person.profile.ttl.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-fr-related-person.profile.xml.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-fr-related-person.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam-definitions.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam-examples.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam-mappings.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.history.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.json.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.ttl.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.xml.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-ihe-careteam.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization-definitions.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization-definitions.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization-examples.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization-examples.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization-mappings.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization-mappings.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization.profile.history.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization.profile.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization.profile.json.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization.profile.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization.profile.ttl.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/StructureDefinition-cds-organization.profile.xml.html#/html/body/div/div/div/p/span/img at Line 77, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/StructureDefinition-cds-organization.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 152, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/ValueSet-careteam-roles-vs-testing.html#/html/body/div/div/div/p/span/img at Line 73, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/ValueSet-careteam-roles-vs-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 148, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/ValueSet-careteam-roles-vs.change.history.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/ValueSet-careteam-roles-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/ValueSet-careteam-roles-vs.html#/html/body/div/div/div/p/span/img at Line 72, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/ValueSet-careteam-roles-vs.html#/html/body/div/div/nav/div/div/ul/li/a at Line 147, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/ValueSet-careteam-roles-vs.json.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/ValueSet-careteam-roles-vs.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/ValueSet-careteam-roles-vs.ttl.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/ValueSet-careteam-roles-vs.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/ValueSet-careteam-roles-vs.xml.html#/html/body/div/div/div/p/span/img at Line 75, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/ValueSet-careteam-roles-vs.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 150, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/artifacts.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/autres_ressources.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
+ERROR: fr/changes.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
 ERROR: fr/correspondances_metier.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/correspondances_metier.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/p/a at Line 209, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/p/a at Line 211, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 219, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
@@ -343,20 +195,13 @@ ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, col
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'examples.ttl.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: fr/index.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/index.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/interaction_restful.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/interaction_restful.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/interaction_transaction.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/interaction_transaction.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/recherche_recuperation_cds.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/recherche_recuperation_cds.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
 ERROR: fr/specifications_fonctionnelles.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/specifications_fonctionnelles.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/specifications_techniques.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/specifications_techniques.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 ERROR: fr/toc.html#/html/body/div/div/div/p/span/img at Line 71, column 4: The image source 'assets/images/fra.svg' cannot be resolved
-ERROR: fr/toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 146, column 6: The link 'changes.html' for "Historique" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

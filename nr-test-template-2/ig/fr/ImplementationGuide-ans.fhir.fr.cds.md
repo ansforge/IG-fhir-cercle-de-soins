@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-12-02T13:32:51+00:00",
+  "date" : "2025-12-02T13:33:21+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -1232,6 +1232,17 @@
               "generation" : "markdown"
             }
           ]
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "changes.html"
+            }
+          ],
+          "nameUrl" : "changes.html",
+          "title" : "Historique",
+          "generation" : "markdown"
         }
       ]
     },
