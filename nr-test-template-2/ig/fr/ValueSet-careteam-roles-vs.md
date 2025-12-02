@@ -44,7 +44,7 @@ Ce jeu de valeur (ValueSet) contient 11 concepts
   "name" : "CareTeamRolesValueSet",
   "title" : "Roles des participants dans un cercle de soins",
   "status" : "active",
-  "date" : "2025-12-02T14:04:07+00:00",
+  "date" : "2025-12-02T14:19:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

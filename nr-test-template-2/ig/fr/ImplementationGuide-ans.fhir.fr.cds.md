@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-12-02T14:04:07+00:00",
+  "date" : "2025-12-02T14:19:50+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
