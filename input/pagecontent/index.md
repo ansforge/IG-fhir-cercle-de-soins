@@ -67,7 +67,11 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
 
 ### Dépendances
 
-{% include dependency-table.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
+
+### Propriété intellectuelle
+
+{% lang-fragment ip-statements.xhtml %}
 
 ### Auteurs et contributeurs
 
