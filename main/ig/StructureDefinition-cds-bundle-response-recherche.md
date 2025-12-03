@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-response-recherche | *Version*:2.0.1 |
-| Active as of 2025-12-02 | *Computable Name*:CDSBundleResponseRecherche |
+| Active as of 2025-12-03 | *Computable Name*:CDSBundleResponseRecherche |
 
  
 Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-bundle-response-
   "name" : "CDSBundleResponseRecherche",
   "title" : "CDS Bundle Response Recherche Profile",
   "status" : "active",
-  "date" : "2025-12-02T13:49:48+00:00",
+  "date" : "2025-12-03T08:47:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

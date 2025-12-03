@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end | *Version*:2.0.1 |
-| Active as of 2025-12-02 | *Computable Name*:CDSCareTeamParticipantEnd |
+| Active as of 2025-12-03 | *Computable Name*:CDSCareTeamParticipantEnd |
 
  
 Date de sortie d’un membre du cercle de soins 
@@ -41,7 +41,7 @@ Date de sortie d’un membre du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamParticipantEnd",
   "status" : "active",
-  "date" : "2025-12-02T13:49:48+00:00",
+  "date" : "2025-12-03T08:47:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

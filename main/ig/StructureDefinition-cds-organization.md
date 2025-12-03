@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization | *Version*:2.0.1 |
-| Active as of 2025-12-02 | *Computable Name*:CDSAsOrganization |
+| Active as of 2025-12-03 | *Computable Name*:CDSAsOrganization |
 
  
 Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI) 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-cds-organization.csv
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2025-12-02T13:49:48+00:00",
+  "date" : "2025-12-03T08:47:15+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
