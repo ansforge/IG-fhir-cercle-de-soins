@@ -5,6 +5,12 @@
  
 Recherche sur la date de création du cercle de soins 
 
+-------
+
+**French**
+
+-------
+
 ## CDSCareTeamStart
 
 Paramètre `start`:`date`
@@ -32,7 +38,7 @@ Recherche sur la date de création du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamStart",
   "status" : "active",
-  "date" : "2025-12-02T14:19:50+00:00",
+  "date" : "2025-12-03T08:35:21+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

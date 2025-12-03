@@ -2,6 +2,12 @@
 
 ## Exemple RelatedPerson: cds-relatedperson-example
 
+-------
+
+**French**
+
+-------
+
 Langue : fr
 
 Profil: [CDS Fr RelatedPerson Profile](StructureDefinition-cds-fr-related-person.md)

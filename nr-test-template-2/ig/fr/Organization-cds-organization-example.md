@@ -2,6 +2,12 @@
 
 ## Exemple Organization: cds-organization-example
 
+-------
+
+**French**
+
+-------
+
 Langue : fr
 
 Profil: [CDS Organization Profile](StructureDefinition-cds-organization.md)

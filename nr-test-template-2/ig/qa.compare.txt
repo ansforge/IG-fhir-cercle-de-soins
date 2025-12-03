@@ -1,10 +1,10 @@
 CDS : Validation Results
 =========================================
 
-err = 8, warn = 50, info = 1484
+err = 8, warn = 49, info = 1484
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.cds#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 10 / 8 / 0
+ Build Errors : 20 / 7 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Bundle-cds-bundle-transaction-creation-example : 5 / 18 / 23
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 0 / 1 / 38
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 0 / 1 / 7
@@ -35,19 +35,28 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/cds-organization-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cds-patient-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/cds-relatedperson-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/p/a at Line 220, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/p/a at Line 222, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 230, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 237, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
-ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8: The link 'examples.ttl.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/p/a at Line 242, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/p/a at Line 244, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 258, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 266, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 267, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 268, column 8: The link 'examples.ttl.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: en/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/p/a at Line 235, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/p/a at Line 237, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: fr/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'examples.ttl.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: fr/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
-WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
-WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-cds-bundle-transaction-creation-example.json ==
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[2]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)

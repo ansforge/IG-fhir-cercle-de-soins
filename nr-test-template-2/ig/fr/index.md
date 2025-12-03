@@ -70,6 +70,15 @@ Ces spécifications d’interopérabilité s’appliquent quel que soit le sché
 
 
 
+### Propriété intellectuelle
+
+This publication includes IP covered under the following statements.
+
+* ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [CDS](index.md), [CDSAsOrganization](StructureDefinition-cds-organization.md)...Show 16 more,[CDSBundleResponseRecherche](StructureDefinition-cds-bundle-response-recherche.md),[CDSBundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.md),[CDSBundleTransactionMAJ](StructureDefinition-cds-bundle-transaction-maj.md),[CDSCareTeam](StructureDefinition-cds-ihe-careteam.md),[CDSCareTeamEnd](SearchParameter-cds-careteam-end.md),[CDSCareTeamManagingOrganization](SearchParameter-cds-careteam-managing-organization.md),[CDSCareTeamParticipantEnd](SearchParameter-cds-careteam-participant-end.md),[CDSCareTeamParticipantStart](SearchParameter-cds-careteam-participant-start.md),[CDSCareTeamStart](SearchParameter-cds-careteam-start.md),[CDSFrRelatedPerson](StructureDefinition-cds-fr-related-person.md),[CDSPatientBirthplace](SearchParameter-cds-patient-birthplace.md),[CareTeamRolesValueSet](ValueSet-careteam-roles-vs.md),[CreateurTransaction-cds](CapabilityStatement-CDSCreateurTransaction.md),[consommateur-cds](CapabilityStatement-CDSConsommateur.md),[createur-restful-cds](CapabilityStatement-CDSCreateurRestful.md)and[gestionnaire-cds](CapabilityStatement-CDSGestionnaire.md)
+
+
 ### Auteurs et contributeurs
 
 | | | |

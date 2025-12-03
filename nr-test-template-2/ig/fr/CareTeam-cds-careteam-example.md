@@ -2,6 +2,12 @@
 
 ## Exemple CareTeam: cds-careteam-example
 
+-------
+
+**French**
+
+-------
+
 Dernière mise à jour : 2023-09-27 13:48:19+0100; Langue : fr
 
 Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)

@@ -7,6 +7,12 @@ Le rôle de consommateur incarné par un système, peut consulter un cercle de s
 
  [Fichier de définition d'OpenAPI-Swagger](../CDSConsommateur.openapi.json) | [Télécharger](../CDSConsommateur.openapi.json) 
 
+-------
+
+**French**
+
+-------
+
 ## CI-SIS Gestion du Cercle de Soins - Consommateur
 
 * Version du guide dimplémentation : {0} 

@@ -7,6 +7,12 @@ Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de 
 
  [Fichier de définition d'OpenAPI-Swagger](../CDSGestionnaire.openapi.json) | [Télécharger](../CDSGestionnaire.openapi.json) 
 
+-------
+
+**French**
+
+-------
+
 ## CI-SIS Gestion du Cercle de Soins - Gestionnaire
 
 * Version du guide dimplémentation : {0} 

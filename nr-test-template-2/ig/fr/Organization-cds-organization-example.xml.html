@@ -158,6 +158,21 @@
 
               
 
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div id="select_flg" class="flaglist" style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag en" src="assets/images/lang-fr.png"/>Français</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div id="flaglist" class="flaglist" style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;">
+    <div><img class="flag" alt="flag fr" src="assets/images/lang-fr.png"/>Français</div>
+
+    <div><a href="../en/Organization-cds-organization-example.xml.html"><img class="flag" src="assets/images/lang-en.png" alt="flag en"/>English</a></div>
+
+  </div>
+</div>
+
+
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
       <!-- /HEADER CONTENT -->
@@ -260,7 +275,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/resource.html#Organization.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Organization.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;fr&quot; lang=&quot;fr&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : Organisation cds-organization-example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;cds-organization-example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccds-organization-example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Langue : fr&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profil: &lt;a href=&quot;StructureDefinition-cds-organization.html&quot;&gt;CDS Organization Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}&quot;&gt;Médical&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Cabinet médical CC CC&lt;/p&gt;&lt;p&gt;&lt;b&gt;alias&lt;/b&gt;: CC CC Rennes&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 12 rue du paris Rennes 35000 99100 &lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xml:lang=&quot;fr&quot; lang=&quot;fr&quot;&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;French&lt;/b&gt;&lt;/p&gt;&lt;hr/&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Narratif généré : Organisation cds-organization-example&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;cds-organization-example&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccds-organization-example&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Langue : fr&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profil: &lt;a href=&quot;StructureDefinition-cds-organization.html&quot;&gt;CDS Organization Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}&quot;&gt;Médical&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Cabinet médical CC CC&lt;/p&gt;&lt;p&gt;&lt;b&gt;alias&lt;/b&gt;: CC CC Rennes&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 12 rue du paris Rennes 35000 99100 &lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Organization.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>&gt;
@@ -337,8 +352,8 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
           Le paquet ans.fhir.fr.cds#2.0.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Généré 
-  <span title="2025-12-02 14:19:00 +0000">
-    2025-12-02
+  <span title="2025-12-03 08:35:00 +0000">
+    2025-12-03
   </span>
 
           <br/>

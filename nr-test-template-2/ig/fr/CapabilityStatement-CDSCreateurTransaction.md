@@ -7,6 +7,12 @@ Le rôle de créateur incarné par un système peut créer ou mettre à jour le 
 
  [Fichier de définition d'OpenAPI-Swagger](../CDSCreateurTransaction.openapi.json) | [Télécharger](../CDSCreateurTransaction.openapi.json) 
 
+-------
+
+**French**
+
+-------
+
 ## CI-SIS Gestion du Cercle de Soins - CreateurTransaction
 
 * Version du guide dimplémentation : {0} 

@@ -97,7 +97,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-organizatio
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2025-12-02T14:19:50+00:00",
+  "date" : "2025-12-03T08:35:21+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

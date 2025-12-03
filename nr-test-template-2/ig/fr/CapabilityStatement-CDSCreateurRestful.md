@@ -7,6 +7,12 @@ Le rôle de créateur incarné par un système peut créer ou mettre à jour le 
 
  [Fichier de définition d'OpenAPI-Swagger](../CDSCreateurRestful.openapi.json) | [Télécharger](../CDSCreateurRestful.openapi.json) 
 
+-------
+
+**French**
+
+-------
+
 ## CI-SIS Gestion du Cercle de Soins - CreateurRestful
 
 * Version du guide dimplémentation : {0} 

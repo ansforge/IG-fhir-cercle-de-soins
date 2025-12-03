@@ -4,14 +4,14 @@
   <id value="ans.fhir.fr.cds"/>
   <language value="fr"/>
   <text>
-    <status value="generated"/><div xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.cds</b></p><a name="ans.fhir.fr.cds"> </a><a name="hcans.fhir.fr.cds"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>CDS</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</pre></div>
+    <status value="generated"/><div xml:lang="fr" lang="fr"><hr/><p><b>French</b></p><hr/><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fhir.fr.cds</b></p><a name="ans.fhir.fr.cds"> </a><a name="hcans.fhir.fr.cds"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>CDS</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
   <version value="2.0.1"/>
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="active"/>
-  <date value="2025-12-02T14:19:50+00:00"/>
+  <date value="2025-12-03T08:35:21+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -97,6 +97,14 @@
       </extension>
       <extension url="value">
         <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -324,6 +332,14 @@
       </extension>
       <extension url="value">
         <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

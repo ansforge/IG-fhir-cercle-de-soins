@@ -2,6 +2,12 @@
 
 ## Exemple Patient: cds-patient-example
 
+-------
+
+**French**
+
+-------
+
 Dernière mise à jour : 2023-09-27 13:48:19+0100; Langue : fr
 
 Profil: [FR Core Patient INS Profile](https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient-ins.html)
