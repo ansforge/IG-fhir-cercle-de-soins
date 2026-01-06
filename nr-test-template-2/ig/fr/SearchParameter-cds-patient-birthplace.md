@@ -5,26 +5,6 @@
  
 Lieu de naissance du patient 
 
--------
-
-**French**
-
--------
-
-## CDSPatientBirthplace
-
-Paramètre `birthplace`:`string`
-
-Lieu de naissance du patient
-
-| | |
-| :--- | :--- |
-| Ressource | [Patient](http://hl7.org/fhir/R4/patient.html) |
-| Expression | `extension('http://hl7.org/fhir/StructureDefinition/patient-birthPlace').value as Address` |
-| Multiples | * multipleAnd : Le paramètre ne peut apparaître quune fois
-* multipleOr : Le paramètre ne peut avoir quune seule valeur (pas de séparateurs virgules)
- |
-
 
 
 ## Resource Content
@@ -37,7 +17,7 @@ Lieu de naissance du patient
   "version" : "2.0.1",
   "name" : "CDSPatientBirthplace",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

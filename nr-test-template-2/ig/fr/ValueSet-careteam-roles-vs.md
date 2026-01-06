@@ -11,21 +11,9 @@ Roles des participants dans un cercle de soins.
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut ce(s) code(s) tel quil(s) est (sont) défini(s) dans [`https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R259-HL7ParticipationFunction.html)version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass`](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R260-HL7RoleClass.html)version 📦20240426120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R259_HL7ParticipationFunction v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R259-HL7ParticipationFunction.html)
-* [codesystem TRE_R260_HL7RoleClass v20240426120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.4.0/CodeSystem-TRE-R260-HL7RoleClass.html)
-
-Ce jeu de valeur (ValueSet) contient 11 concepts
 
 -------
 
@@ -44,7 +32,7 @@ Ce jeu de valeur (ValueSet) contient 11 concepts
   "name" : "CareTeamRolesValueSet",
   "title" : "Roles des participants dans un cercle de soins",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

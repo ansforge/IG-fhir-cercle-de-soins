@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
@@ -52,7 +52,7 @@
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.0.0"
+      "version" : "7.0.1"
     },
     {
       "id" : "ans_fhir_fr_annuaire",
@@ -460,7 +460,7 @@
       },
       {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
       },
       {
         "extension" : [

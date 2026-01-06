@@ -5,26 +5,6 @@
  
 Organisation responsable du Cercle De Soins 
 
--------
-
-**French**
-
--------
-
-## CDSCareTeamManagingOrganization
-
-Paramètre `managingOrganization`:`reference`
-
-Organisation responsable du Cercle De Soins
-
-| | |
-| :--- | :--- |
-| Ressource | [CareTeam](http://hl7.org/fhir/R4/careteam.html) |
-| Expression | `CareTeam.managingOrganization` |
-| Multiples | * multipleAnd : Le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies
-* multipleOr : Le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie
- |
-
 
 
 ## Resource Content
@@ -37,7 +17,7 @@ Organisation responsable du Cercle De Soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamManagingOrganization",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

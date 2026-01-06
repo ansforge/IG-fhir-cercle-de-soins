@@ -15,8 +15,6 @@ Roles des participants dans un cercle de soins.
 
 ### Expansion
 
-This value set contains 11 concepts
-
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -34,7 +32,7 @@ This value set contains 11 concepts
   "name" : "CareTeamRolesValueSet",
   "title" : "Roles des participants dans un cercle de soins",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

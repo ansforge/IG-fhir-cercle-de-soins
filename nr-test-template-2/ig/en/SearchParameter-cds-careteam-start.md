@@ -5,27 +5,6 @@
  
 Recherche sur la date de création du cercle de soins 
 
--------
-
-**English**
-
--------
-
-## CDSCareTeamStart
-
-Parameter `start`:`date`
-
-Recherche sur la date de création du cercle de soins
-
-| | |
-| :--- | :--- |
-| Resource | [CareTeam](http://hl7.org/fhir/R4/careteam.html) |
-| Expression | `CareTeam.period.start` |
-| Multiples | * multipleAnd: The parameter may repeat in order to specify multiple values that must all be true
-* multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true
- |
-| Comparators | Allowed: eq, ne, gt, lt, ge, le, sa, eb, ap |
-
 
 
 ## Resource Content
@@ -38,7 +17,7 @@ Recherche sur la date de création du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamStart",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {

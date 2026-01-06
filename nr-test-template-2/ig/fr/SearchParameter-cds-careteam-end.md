@@ -5,27 +5,6 @@
  
 Recherche sur la date de fin du cercle de soins 
 
--------
-
-**French**
-
--------
-
-## CDSCareTeamEnd
-
-Paramètre `end`:`date`
-
-Recherche sur la date de fin du cercle de soins
-
-| | |
-| :--- | :--- |
-| Ressource | [CareTeam](http://hl7.org/fhir/R4/careteam.html) |
-| Expression | `CareTeam.period.end` |
-| Multiples | * multipleAnd : Le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies
-* multipleOr : Le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie
- |
-| Comparateurs | Autorisé : eq, ne, gt, lt, ge, le, sa, eb, ap |
-
 
 
 ## Resource Content
@@ -38,7 +17,7 @@ Recherche sur la date de fin du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamEnd",
   "status" : "active",
-  "date" : "2025-12-03T08:35:21+00:00",
+  "date" : "2026-01-06T09:36:59+00:00",
   "publisher" : "ANS",
   "contact" : [
     {
