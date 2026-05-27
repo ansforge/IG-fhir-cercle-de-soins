@@ -3,30 +3,66 @@ $(function () {
   const $table = $("table.fhir-conformance-list");
 
   /* Exclude header row (0) and filter row (1) */
+  const $header = $table.find("tr").first();
   const $rows = $table.find("tr").slice(2);
 
+  const colId = 0;
+  const colExpect = 1;
+  const colCond = 2;
+  var colActor = -1;
+  var colCat = -1;
+  var colRule = -1;
+  
+  var i = 0;
+  var hasIds = false;
+  $headerCells = $header.children("th,td");
+  $headerCells.each(function () {
+    if ($(this).attr("id") === "fcl-actor" || $(this).text() == "Actor(s)") {
+      colActor = i;
+      hasIds = true;
+    } else if ($(this).attr("id") === "fcl-cat" || $(this).text() == "Category(ies)") {
+      colCat = i;
+      hasIds = true;
+    } else if ($(this).attr("id") === "fcl-rule" || $(this).text() == "Rule") {
+      colRule = i;
+      hasIds = true;
+    }
+    i++;
+  });
+  
+  if (!hasIds) {
+    colActor = 3;
+    colCat = 4;
+    colRule = 5;
+  }
+
   function normalize(text) {
-    return text.replace(/\s+/g, "").toLowerCase();
+    return text.replace(/\s+/g, " ").trim();
   }
 
   function applyFilters() {
 
-    const idFilter   = normalize($("input[name='filterid']").val() || "");
-    const ruleFilter = normalize($("input[name='filterrule']").val() || "");
+    const idFilter   = normalize($("input[name='filterid']").val() || "").toLowerCase();
+    const ruleFilter = normalize($("input[name='filterrule']").val() || "").toLowerCase();
 
+    /* Selected expectations (exact tokens) */
     const expectations = $("input[name^='expect']:checked")
       .map(function () {
-        return $(this)[0].nextSibling.nodeValue.trim();
+        return normalize(this.nextSibling.nodeValue);
       })
       .get();
 
+    /* Selected actors */
     const actors = $("input[name^='actor']:checked")
-      .map(function () { return $(this).next("a").text().trim(); })
+      .map(function () {
+        return $(this).next("a").text().trim();
+      })
       .get();
 
+    /* Selected categories */
     const categories = $("input[name^='category']:checked")
       .map(function () {
-        return this.nextSibling.nodeValue.trim();
+        return normalize(this.nextSibling.nodeValue).replace(/^\xa0/, "");
       })
       .get();
 
@@ -36,14 +72,35 @@ $(function () {
 
       const $cells = $(this).children("th,td");
 
-      const idText          = normalize($cells.eq(0).text());
-      const expectationText = $cells.eq(1).text().replace(/\s+/g, " ").trim();
-      const conditionalText = $cells.eq(2).text();
-      const actorText       = $cells.eq(3).text();
-      const categoryText    = $cells.eq(4).text();
-      const ruleText        = normalize($cells.eq(5).text());
+      const idText   = $cells.eq(colId).text().toLowerCase();
+      const condText = $cells.eq(colCond).text();
+      const ruleText = $cells.eq(colRule).text().toLowerCase();
 
-      const hasConditionalX = /\bX\b/.test(conditionalText);
+      const hasConditionalX = /\bX\b/.test(condText);
+
+      /* Extract expectation tokens (split on <br/>) */
+      const rowExpectations = $cells.eq(colExpect)
+        .html()
+        .split(/<br\s*\/?>/i)
+        .map(e => normalize($("<div>").html(e).text()))
+        .filter(Boolean);
+
+      /* Extract actors (exact anchor match) */
+      const rowActors = $cells.eq(colActor).find("a")
+        .map(function () {
+          return $(this).text().trim();
+        })
+        .get();
+
+      /* Extract categories (exact tokens) */
+      rowCategories = [];
+      if (colCat != -1) {
+        rowCategories = $cells.eq(colCat)
+          .text()
+          .split(/<br\s*\/?>/i)
+          .map(c => $("<div>").html(c).text().trim())
+          .filter(Boolean);
+      }
 
       let visible = true;
 
@@ -52,8 +109,9 @@ $(function () {
         visible = false;
       }
 
-      /* Expectation filter */
-      if (expectations.length && !expectations.includes(expectationText)) {
+      /* Expectation filter — exact token match */
+      if (expectations.length &&
+          !expectations.some(e => rowExpectations.includes(e))) {
         visible = false;
       }
 
@@ -66,13 +124,17 @@ $(function () {
       }
 
       /* Actor filter */
-      if (actors.length && !actors.some(a => actorText.includes(a))) {
+      if (actors.length &&
+          !actors.some(a => rowActors.includes(a))) {
         visible = false;
       }
 
       /* Category filter */
-      if (categories.length && !categories.some(c => categoryText.includes(c))) {
-        visible = false;
+      if (colCat != -1) {
+        if (categories.length &&
+            !categories.some(c => rowCategories.includes(c))) {
+          visible = false;
+        }
       }
 
       /* Rule filter */

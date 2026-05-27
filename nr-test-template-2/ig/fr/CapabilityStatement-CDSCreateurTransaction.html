@@ -73,7 +73,7 @@
 
 
 
-  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
+  <span title="">FR</span>
 
 
             </span>
@@ -185,9 +185,9 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="CapabilityStatement-CDSCreateurRestful.ttl.html">&lt; prev</a> | 
+            <a href="CapabilityStatement-CDSCreateurRestful.ttl.html">&lt; précédent</a> | 
 
-            <a href="#bottom">fond</a>
+            <a href="#bottom">bas de page</a>
 
           | <a href="CapabilityStatement-CDSCreateurTransaction-testing.html">suivant &gt;</a>
 
@@ -204,7 +204,7 @@
           <div class="inner-wrapper">
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - version de développement local (v2.0.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/cds/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - version de développement local (intégration continue v2.0.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/cds/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -258,11 +258,17 @@
   <table class="colsi" data-fhir="generated">
 
     <tr>
-      <td colspan="4"><i>URL officiel</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction"/></span>
+      <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction"/></span>
       </td>
       <td><i>Version</i>:
-
       <span class="copy-text">2.0.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction|2.0.1"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Mettre en surbrillance les modifications du texte ?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
       </td>
     </tr>
 
@@ -274,7 +280,15 @@
 
 
 
-      <td colspan="4">
+      <td colspan="5">
+        
+          Active
+          
+
+            à partir de 
+2023-07-14
+
+          
         
       </td>
 
@@ -312,7 +326,7 @@ de soins d'une personne</p>
   
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="CDSCreateurTransaction"> </a><a name="hcCDSCreateurTransaction"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2 id="title">CI-SIS Gestion du Cercle de Soins - CreateurTransaction</h2><ul><li>Version du guide dimplémentation : {0} </li><li>Version de FHIR : 4.0.1 </li><li>Formats supportés : <code>json</code>, <code>xml</code></li><li>Publié sur : 2023-07-14 </li><li>Publié par : ANS </li></ul><blockquote class="impl-note"><p><strong>Note aux implémenteurs : capacités FHIR</strong></p><p>Toute capacité FHIR peut être 'autorisée' par le système sauf si elle est explicitement marquée comme 'SHALL NOT'. Quelques éléments sont marqués comme MAY dans le guide dimplémentation pour souligner leur pertinence potentielle pour le cas dusage.</p></blockquote><h3 id="shallIGs">DOIT prendre en charge les guides d’implémentation suivants.</h3><ul><li><a href="index.html">https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</a></li></ul><h2 id="rest">Capacités RESTful FHIR</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>client</code></h3></div><div class="panel-body"><div><p>Envoie une requete pour créer ou mettre à jour un cercle de soins</p>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="CDSCreateurTransaction"> </a><a name="hcCDSCreateurTransaction"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2 id="title">CI-SIS Gestion du Cercle de Soins - CreateurTransaction</h2><ul><li>Version du guide d'implémentation : 2.0.1 </li><li>Version de FHIR : 4.0.1 </li><li>Formats supportés : <code>json</code>, <code>xml</code></li><li>Publié sur : 2023-07-14 </li><li>Publié par : ANS </li></ul><blockquote class="impl-note"><p><strong>Note aux implémenteurs : capacités FHIR</strong></p><p>Toute capacité FHIR peut être 'autorisée' par le système sauf si elle est explicitement marquée comme 'SHALL NOT'. Quelques éléments sont marqués comme MAY dans le guide d'implémentation pour souligner leur pertinence potentielle pour le cas d'usage.</p></blockquote><h3 id="shallIGs">DOIT prendre en charge les guides d’implémentation suivants.</h3><ul><li><a href="index.html">https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</a></li></ul><h2 id="rest">Capacités RESTful FHIR</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>client</code></h3></div><div class="panel-body"><div><p>Envoie une requete pour créer ou mettre à jour un cercle de soins</p>
 </div><div class="lead"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)</p>
 </div></blockquote><div class="lead"><em>Résumé des interactions au niveau du système</em></div><ul><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation</p>
 </div></li><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj</p>
@@ -347,11 +361,11 @@ de soins d'une personne</p>
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="CapabilityStatement-CDSCreateurRestful.ttl.html">&lt; prev</a>
+                <a href="CapabilityStatement-CDSCreateurRestful.ttl.html">&lt; précédent</a>
 
               </td>
               <td style="text-align:center">
-                <a href="#top">sommet</a>
+                <a href="#top">haut</a>
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
@@ -369,10 +383,10 @@ de soins d'une personne</p>
 
 
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
-          Le paquet ans.fhir.fr.cds#2.0.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Généré 
-  <span title="2026-01-06 09:36:00 +0000">
-    2026-01-06
+          Le papackagequet ans.fhir.fr.cds#2.0.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-05-27 15:38:00 +0000">
+    2026-05-27
   </span>
 
           <br/>

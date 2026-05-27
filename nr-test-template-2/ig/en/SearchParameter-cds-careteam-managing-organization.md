@@ -17,31 +17,23 @@ Organisation responsable du Cercle De Soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamManagingOrganization",
   "status" : "active",
-  "date" : "2026-01-06T09:36:59+00:00",
+  "date" : "2026-05-27T15:38:19+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Organisation responsable du Cercle De Soins",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "code" : "managingOrganization",
   "base" : ["CareTeam"],
   "type" : "reference",

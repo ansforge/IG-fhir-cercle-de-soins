@@ -8,7 +8,7 @@
 
 -------
 
-Dernière mise à jour : 2023-09-27 13:48:19+0100; Langue : fr
+Dernière mise à jour : 2023-09-27 13:48:19+0100
 
 Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
 
@@ -22,9 +22,9 @@ Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
 
 **period**: 2013-01-12 --> (en cours)
 
-> **participant****member**:[RelatedPerson CHIBOUT Lamine (official)](RelatedPerson-cds-relatedperson-example.md)**period**: 2013-01-12 --> (en cours)
+> **participant****member**: [RelatedPerson CHIBOUT Lamine (official)](RelatedPerson-cds-relatedperson-example.md)**period**: 2013-01-12 --> (en cours)
 
-> **participant****member**:[Organization Cabinet médical CC CC](Organization-cds-organization-example.md)**period**: 2013-01-12 --> 2032-12-18 13:48:19+0100
+> **participant****member**: [Organization Cabinet médical CC CC](Organization-cds-organization-example.md)**period**: 2013-01-12 --> 2032-12-18 13:48:19+0100
 
 **managingOrganization**: [Organization Cabinet médical CC CC](Organization-cds-organization-example.md)
 
@@ -38,17 +38,12 @@ Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
   "id" : "cds-careteam-example",
   "meta" : {
     "lastUpdated" : "2023-09-27T13:48:19.342+01:00",
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"]
   },
-  "language" : "fr",
-  "identifier" : [
-    {
-      "system" : "http://fake-identifier.fr",
-      "value" : "1"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://fake-identifier.fr",
+    "value" : "1"
+  }],
   "status" : "active",
   "name" : "Cercle de soins de Mr Jacques Thobois",
   "subject" : {
@@ -57,30 +52,26 @@ Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
   "period" : {
     "start" : "2013-01-12"
   },
-  "participant" : [
-    {
-      "member" : {
-        "reference" : "RelatedPerson/cds-relatedperson-example"
-      },
-      "period" : {
-        "start" : "2013-01-12"
-      }
+  "participant" : [{
+    "member" : {
+      "reference" : "RelatedPerson/cds-relatedperson-example"
     },
-    {
-      "member" : {
-        "reference" : "Organization/cds-organization-example"
-      },
-      "period" : {
-        "start" : "2013-01-12",
-        "end" : "2032-12-18T13:48:19.342+01:00"
-      }
+    "period" : {
+      "start" : "2013-01-12"
     }
-  ],
-  "managingOrganization" : [
-    {
+  },
+  {
+    "member" : {
       "reference" : "Organization/cds-organization-example"
+    },
+    "period" : {
+      "start" : "2013-01-12",
+      "end" : "2032-12-18T13:48:19.342+01:00"
     }
-  ]
+  }],
+  "managingOrganization" : [{
+    "reference" : "Organization/cds-organization-example"
+  }]
 }
 
 ```

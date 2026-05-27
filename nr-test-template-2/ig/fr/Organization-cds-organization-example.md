@@ -8,8 +8,6 @@
 
 -------
 
-Langue : fr
-
 Profil: [CDS Organization Profile](StructureDefinition-cds-organization.md)
 
 **active**: true
@@ -31,39 +29,28 @@ Profil: [CDS Organization Profile](StructureDefinition-cds-organization.md)
   "resourceType" : "Organization",
   "id" : "cds-organization-example",
   "meta" : {
-    "profile" : [
-      "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"
-    ]
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"]
   },
-  "language" : "fr",
   "active" : true,
-  "type" : [
-    {
-      "extension" : [
-        {
-          "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types",
-          "valueCode" : "organizationType"
-        }
-      ],
-      "coding" : [
-        {
-          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
-          "code" : "MEDICAL",
-          "display" : "Médical"
-        }
-      ]
-    }
-  ],
+  "type" : [{
+    "extension" : [{
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types",
+      "valueCode" : "organizationType"
+    }],
+    "coding" : [{
+      "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+      "code" : "MEDICAL",
+      "display" : "Médical"
+    }]
+  }],
   "name" : "Cabinet médical CC CC",
   "alias" : ["CC CC Rennes"],
-  "address" : [
-    {
-      "line" : ["12 rue du paris"],
-      "city" : "Rennes",
-      "postalCode" : "35000",
-      "country" : "99100"
-    }
-  ]
+  "address" : [{
+    "line" : ["12 rue du paris"],
+    "city" : "Rennes",
+    "postalCode" : "35000",
+    "country" : "99100"
+  }]
 }
 
 ```

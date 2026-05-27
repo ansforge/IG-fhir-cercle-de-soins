@@ -71,7 +71,7 @@
 
 
 
-  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
+  <span title="">FR</span>
 
 
             </span>
@@ -183,9 +183,9 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="changes.html">&lt; prev</a> | 
+            <a href="changes.html">&lt; précédent</a> | 
 
-            <a href="#bottom">fond</a>
+            <a href="#bottom">bas de page</a>
 
           | <a href="CapabilityStatement-CDSConsommateur.html">suivant &gt;</a>
 
@@ -208,7 +208,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - version de développement local (v2.0.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/cds/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Cercle De Soins - version de développement local (intégration continue v2.0.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/cds/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Résumé des artefacts</h2>
   
   
@@ -222,16 +222,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contenu:</p>
    <ul>
       <li>
-         <a href="#1">Comportement: Énoncés de capacités</a>
+         <a href="#1">Comportement: Déclarations de capacités (CapabilityStatement)</a>
       </li>
       <li>
-         <a href="#2">Comportement: Paramètres de recherche</a>
+         <a href="#2">Comportement: Paramètres de recherche (SearchParameter)</a>
       </li>
       <li>
          <a href="#3">Structures: Profils de ressources</a>
       </li>
       <li>
-         <a href="#4">Terminologie: Ensembles de valeurs</a>
+         <a href="#4">Terminologie: Jeux de valeurs (ValueSets)</a>
       </li>
       <li>
          <a href="#5">Exemple: Exemples d'instances</a>
@@ -244,8 +244,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      data-fhir="generated">
    <p>Cette page fournit une liste des artefacts FHIR définis dans le cadre de ce guide de mise en œuvre.</p>
    <a name="1"> </a>
-   <h3>Comportement: Énoncés de capacités </h3>
-    <p>Les artefacts suivants définissent les capacités spécifiques que les différents types de systèmes sont censés posséder pour se conformer au présent guide de mise en œuvre.  Les systèmes conformes à ce guide de mise en œuvre sont censés déclarer leur conformité à une ou plusieurs des déclarations de capacité suivantes.</p>
+   <h3>Comportement: Déclarations de capacités (CapabilityStatement) </h3>
+    <p>Les artefacts suivants définissent les capacités spécifiques que les différents types de systèmes sont censés posséder pour se conformer au présent guide d'implémentation.  Les systèmes conformes à ce guide d'implémentation sont censés déclarer leur conformité à une ou plusieurs des déclarations de capacité suivantes.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -303,8 +303,8 @@ donne accès aux informations en cas de consultation.</p>
       </tbody>
    </table>
    <a name="2"> </a>
-   <h3>Comportement: Paramètres de recherche </h3>
-    <p>Ils définissent les propriétés permettant d'effectuer des recherches dans un serveur RESTful.  Elles peuvent également être utilisées pour trier et inclure des ressources connexes.</p>
+   <h3>Comportement: Paramètres de recherche (SearchParameter) </h3>
+    <p>Ils définissent les propriétés permettant d'effectuer des recherches dans un serveur RESTful. Elles peuvent également être utilisées pour trier et inclure des ressources connexes.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -384,7 +384,7 @@ donne accès aux informations en cas de consultation.</p>
    </table>
    <a name="3"> </a>
    <h3>Structures: Profils de ressources </h3>
-    <p>Ils définissent les contraintes sur les ressources FHIR pour les systèmes conformes à ce guide de mise en œuvre.</p>
+    <p>Ils définissent les contraintes sur les ressources FHIR pour les systèmes conformes à ce guide d'implémentation.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -465,8 +465,8 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
       </tbody>
    </table>
    <a name="4"> </a>
-   <h3>Terminologie: Ensembles de valeurs </h3>
-    <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide de mise en œuvre.</p>
+   <h3>Terminologie: Jeux de valeurs (ValueSets) </h3>
+    <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -486,7 +486,7 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
    </table>
    <a name="5"> </a>
    <h3>Exemple: Exemples d'instances </h3>
-    <p>Il s'agit d'exemples d'instances qui montrent à quoi peuvent ressembler les données produites et consommées par des systèmes conformes au présent guide de mise en œuvre.</p>
+    <p>Il s'agit d'exemples d'instances qui montrent à quoi peuvent ressembler les données produites et consommées par des systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -561,11 +561,11 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="changes.html">&lt; prev</a>
+                <a href="changes.html">&lt; précédent</a>
 
               </td>
               <td style="text-align:center">
-                <a href="#top">sommet</a>
+                <a href="#top">haut</a>
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
@@ -583,10 +583,10 @@ Il s'agit d'un bundle de type "transaction" permettant d'organiser le contenu du
 
 
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">ANS</a>.  
-          Le paquet ans.fhir.fr.cds#2.0.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Généré 
-  <span title="2026-01-06 09:36:00 +0000">
-    2026-01-06
+          Le papackagequet ans.fhir.fr.cds#2.0.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-05-27 15:38:00 +0000">
+    2026-05-27
   </span>
 
           <br/>

@@ -17,48 +17,38 @@ Recherche sur la date de création du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamStart",
   "status" : "active",
-  "date" : "2026-01-06T09:36:59+00:00",
+  "date" : "2026-05-27T15:38:19+00:00",
   "publisher" : "ANS",
-  "contact" : [
-    {
-      "name" : "ANS",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "ANS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Recherche sur la date de création du cercle de soins",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "code" : "start",
   "base" : ["CareTeam"],
   "type" : "date",
   "expression" : "CareTeam.period.start",
   "multipleOr" : true,
   "multipleAnd" : true,
-  "comparator" : [
-    "eq",
-    "ne",
-    "gt",
-    "lt",
-    "ge",
-    "le",
-    "sa",
-    "eb",
-    "ap"
-  ]
+  "comparator" : ["eq",
+  "ne",
+  "gt",
+  "lt",
+  "ge",
+  "le",
+  "sa",
+  "eb",
+  "ap"]
 }
 
 ```
