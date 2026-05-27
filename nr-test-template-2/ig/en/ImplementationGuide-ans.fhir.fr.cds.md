@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2026-05-27T15:54:25+00:00",
+  "date" : "2026-05-27T15:54:55+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -120,6 +120,17 @@
       {
         "url" : "value",
         "valueString" : "fr"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -291,17 +302,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-license"
       },
       {
@@ -454,6 +454,17 @@
       {
         "url" : "value",
         "valueString" : "fr"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -615,17 +626,6 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-copyright"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",

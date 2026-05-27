@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-27T15:54:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-27T15:54:55+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -210,6 +210,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "fr"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
          ]
        ] ) ;
        fhir:url [
@@ -561,30 +585,6 @@
          fhir:value [
            a fhir:String ;
            fhir:v "apply-copyright"
-         ]
-       ] [
-         fhir:url [
-           fhir:v "value"^^xsd:anyURI ;
-           fhir:l fhir:value
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "code"^^xsd:anyURI ;
-           fhir:l fhir:code
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "apply-jurisdiction"
          ]
        ] [
          fhir:url [
@@ -953,6 +953,30 @@
          ] ;
          fhir:value [
            a fhir:Code ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
            fhir:v "i18n-lang"
          ]
        ] [
@@ -1290,30 +1314,6 @@
          fhir:value [
            a fhir:Code ;
            fhir:v "apply-copyright"
-         ]
-       ] [
-         fhir:url [
-           fhir:v "value"^^xsd:anyURI ;
-           fhir:l fhir:value
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "true"
-         ]
-       ] ) ;
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "code"^^xsd:anyURI ;
-           fhir:l fhir:code
-         ] ;
-         fhir:value [
-           a fhir:Code ;
-           fhir:v "apply-jurisdiction"
          ]
        ] [
          fhir:url [
