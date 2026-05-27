@@ -1,0 +1,29 @@
+{
+  "id" : "Patient-cds-patient-example",
+  "baseLang" : "fr",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Address.city",
+          "context" : "The name of the city, town, suburb, village or other community or delivery center.",
+          "source" : "GOULVEN",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.family",
+          "context" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+          "source" : "Thobois",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.given",
+          "context" : "Given name.",
+          "source" : "Jacques",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id" : "RelatedPerson-cds-relatedperson-example",
+  "baseLang" : "fr",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Entité à contacter en cas d'urgence",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Voisin(e)",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.family",
+          "context" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+          "source" : "Lamine",
+          "target" : null
+        },
+        {
+          "id" : "HumanName.given",
+          "context" : "Given name.",
+          "source" : "CHIBOUT",
+          "target" : null
+        },
+        {
+          "id" : "Address.line",
+          "context" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+          "source" : "12 Rue de la Paix",
+          "target" : null
+        },
+        {
+          "id" : "Address.city",
+          "context" : "The name of the city, town, suburb, village or other community or delivery center.",
+          "source" : "Paris",
+          "target" : null
+        },
+        {
+          "id" : "Address.postalCode",
+          "context" : "A postal code designating a region defined by the postal service.",
+          "source" : "75004",
+          "target" : null
+        },
+        {
+          "id" : "Address.country",
+          "context" : "Country - a nation as commonly understood or generally accepted.",
+          "source" : "FRA",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

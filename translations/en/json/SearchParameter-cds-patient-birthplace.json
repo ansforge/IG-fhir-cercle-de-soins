@@ -1,0 +1,41 @@
+{
+  "id" : "SearchParameter-cds-patient-birthplace",
+  "baseLang" : "fr",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "SearchParameter.name",
+          "context" : "A natural language name identifying the search parameter. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "CDSPatientBirthplace",
+          "target" : null
+        },
+        {
+          "id" : "SearchParameter.publisher",
+          "context" : "The name of the organization or individual that published the search parameter.",
+          "source" : "ANS",
+          "target" : null
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "ANS",
+          "target" : null
+        },
+        {
+          "id" : "SearchParameter.description",
+          "context" : "And how it used.",
+          "source" : "Lieu de naissance du patient",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "FRANCE",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}
