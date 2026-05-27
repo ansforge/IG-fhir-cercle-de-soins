@@ -35,7 +35,7 @@ Le rôle de consommateur incarné par un système, peut consulter un cercle de s
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

@@ -17,7 +17,7 @@ Organisation responsable du Cercle De Soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamManagingOrganization",
   "status" : "active",
-  "date" : "2026-05-27T15:45:18+00:00",
+  "date" : "2026-05-27T15:46:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -31,7 +31,7 @@ Organisation responsable du Cercle De Soins
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "code" : "managingOrganization",

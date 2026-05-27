@@ -35,7 +35,7 @@ Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de 
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "kind" : "requirements",

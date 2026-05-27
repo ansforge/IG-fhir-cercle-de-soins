@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-cds-organization.
   "name" : "CDSAsOrganization",
   "title" : "CDS Organization Profile",
   "status" : "active",
-  "date" : "2026-05-27T15:45:18+00:00",
+  "date" : "2026-05-27T15:46:35+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-cds-organization.
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "fhirVersion" : "4.0.1",
