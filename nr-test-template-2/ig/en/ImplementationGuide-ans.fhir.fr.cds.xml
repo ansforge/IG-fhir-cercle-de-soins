@@ -11,7 +11,7 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="active"/>
-  <date value="2026-05-27T15:46:35+00:00"/>
+  <date value="2026-05-27T15:54:25+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -105,6 +105,14 @@
       </extension>
       <extension url="value">
         <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -340,6 +348,14 @@
       </extension>
       <extension url="value">
         <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/en"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

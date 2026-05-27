@@ -3,7 +3,7 @@
 ## Accueil
 
  
-There is no translation page available for the current page, so it has been rendered in the default language 
+This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
 
  **CDS Implementation Guide**
  This implementation guide contains the profiles to share about a patient CareTeam. 
