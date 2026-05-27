@@ -102,7 +102,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-ihe-caretea
   "name" : "CDSCareTeam",
   "title" : "CDS CareTeam Profile",
   "status" : "active",
-  "date" : "2026-05-27T15:54:55+00:00",
+  "date" : "2026-05-27T15:59:28+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
