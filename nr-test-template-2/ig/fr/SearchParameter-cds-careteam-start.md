@@ -17,7 +17,7 @@ Recherche sur la date de création du cercle de soins
   "version" : "2.0.1",
   "name" : "CDSCareTeamStart",
   "status" : "active",
-  "date" : "2026-05-27T16:11:26+00:00",
+  "date" : "2026-05-27T16:13:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",

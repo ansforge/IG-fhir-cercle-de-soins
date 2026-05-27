@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2026-05-27T16:11:26+00:00",
+  "date" : "2026-05-27T16:13:17+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -152,7 +152,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "input/translations/en"
+        "valueString" : "translations/en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -486,7 +486,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "input/translations/en"
+        "valueString" : "translations/en"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
