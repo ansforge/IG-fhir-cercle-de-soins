@@ -17,7 +17,7 @@ Lieu de naissance du patient
   "version" : "2.0.1",
   "name" : "CDSPatientBirthplace",
   "status" : "active",
-  "date" : "2026-05-27T15:38:19+00:00",
+  "date" : "2026-05-27T15:45:18+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
