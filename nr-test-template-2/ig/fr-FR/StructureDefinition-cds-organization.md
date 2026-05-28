@@ -102,7 +102,7 @@ Cette structure fait référence à ces autres structures:
     }]
   },
   "status" : "active",
-  "date" : "2026-05-28T08:25:32+00:00",
+  "date" : "2026-05-28T12:20:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
