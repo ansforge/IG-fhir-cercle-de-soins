@@ -14,10 +14,10 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2026-05-28T08:04:13+00:00",
-  "publisher" : "ANS",
+  "date" : "2026-05-28T08:17:26+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
-    "name" : "ANS",
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"
@@ -98,6 +98,17 @@
       {
         "url" : "value",
         "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "../../expansion-params.json"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -399,6 +410,12 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+      "valueReference" : {
+        "reference" : "Parameters/expansion-parameters"
+      }
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
@@ -432,6 +449,17 @@
       {
         "url" : "value",
         "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "../../expansion-params.json"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

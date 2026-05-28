@@ -46,9 +46,9 @@ Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de 
   "status" : "active",
   "experimental" : false,
   "date" : "2023-07-14",
-  "publisher" : "ANS",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
-    "name" : "ANS",
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"

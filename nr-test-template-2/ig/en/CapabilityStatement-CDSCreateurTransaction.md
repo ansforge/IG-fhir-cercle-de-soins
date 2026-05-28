@@ -46,9 +46,9 @@ Le rôle de créateur incarné par un système peut créer ou mettre à jour le 
   "status" : "active",
   "experimental" : false,
   "date" : "2023-07-14",
-  "publisher" : "ANS",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
-    "name" : "ANS",
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"

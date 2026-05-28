@@ -11,10 +11,10 @@
   <name value="CDS"/>
   <title value="Cercle De Soins"/>
   <status value="active"/>
-  <date value="2026-05-28T08:04:13+00:00"/>
-  <publisher value="ANS"/>
+  <date value="2026-05-28T08:17:26+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
-    <name value="ANS"/>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
     <telecom>
       <system value="url"/>
       <value value="https://esante.gouv.fr"/>
@@ -81,6 +81,14 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -299,6 +307,11 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
       <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
     </extension>
@@ -324,6 +337,14 @@
       </extension>
       <extension url="value">
         <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../expansion-params.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

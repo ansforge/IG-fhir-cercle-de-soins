@@ -1,17 +1,17 @@
 CDS : Validation Results
 =========================================
 
-err = 220, warn = 40, info = 1590
+err = 220, warn = 41, info = 1591
 IG Publisher Version: 2.2.8
-Generated Thu May 28 08:07:02 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/cds)
- Build Errors : 21 / 7 / 0
+Generated Thu May 28 08:20:29 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.cds#2.0.1 (canonical = https://interop.esante.gouv.fr/ig/fhir/cds)
+ Build Errors : 21 / 8 / 0
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Bundle-cds-bundle-transaction-creation-example : 11 / 9 / 38
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSConsommateur : 72 / 1 / 41
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurRestful : 8 / 1 / 11
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSCreateurTransaction : 12 / 1 / 5
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CapabilityStatement-CDSGestionnaire : 76 / 1 / 43
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/CareTeam-cds-careteam-example : 2 / 1 / 1
- /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 2 / 11
+ /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.cds : 0 / 2 / 12
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Organization-cds-organization-example : 4 / 0 / 8
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/Patient-cds-patient-example : 1 / 2 / 7
  /home/runner/work/IG-fhir-cercle-de-soins/IG-fhir-cercle-de-soins/igSource/fsh-generated/resources/RelatedPerson-cds-relatedperson-example : 2 / 1 / 13
@@ -58,6 +58,7 @@ ERROR: fr/searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Li
 ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-cds-bundle-transaction-creation-example.json ==
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[1]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -86,11 +87,11 @@ INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[2].res
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[2].resource.name[0].extension[0]: This element does not match any known slice defined in the profile https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-human-name|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.identifier[0].system: No definition could be found for URL value 'https://fake-system'
 WARNING: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.patient: Entry 2 matches the reference Patient/cds-patient-example by type and id but its fullUrl urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c does not match the full target URL urn:uuid:cds-patient-example by Bundle resolution rules
-ERROR: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. There are no valid display names found for language(s) 'fr'. Default display is 'personne à prévenir en cas d'urgence'
+ERROR: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. Valid display is 'personne à prévenir en cas d'urgence' (fr-FR) (for the language(s) 'fr-FR')
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON)
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource/*RelatedPerson/cds-relatedperson-example*/.relationship[1]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode#NBOR)
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. Valid display is one of 3 choices: 'personne à prévenir en cas d'urgence', 'ECON' (null) or 'personne à prévenir en cas d'urgence' (null) (for the language(s) 'fr')
+ERROR: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. Valid display is one of 3 choices: 'personne à prévenir en cas d'urgence', 'ECON' (null) or 'personne à prévenir en cas d'urgence' (null) (for the language(s) 'fr-FR')
 INFORMATION: Bundle/cds-bundle-transaction-creation-example: Bundle.entry[3].resource.relationship[0]: None of the codings provided are in the value set 'FR Core ValueSet Patient contact role' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.1.0), and a coding is recommended to come from this value set (codes = https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON)
 INFORMATION: Coding.display: Unused 'en' translation 'Médical' -> ''
 INFORMATION: Address.line: Unused 'en' translation '12 rue du paris' -> ''
@@ -389,6 +390,7 @@ INFORMATION: ImplementationGuide.definition.resource[6].profile[0]: Pinned the v
 INFORMATION: ImplementationGuide.definition.resource[8].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam to 2.0.1
 INFORMATION: ImplementationGuide.definition.resource[13].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization to 2.0.1
 INFORMATION: ImplementationGuide.definition.resource[16].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person to 2.0.1
+INFORMATION: ImplementationGuide.publisher: Unused 'en' translation 'ANS' -> ''
 INFORMATION: ContactDetail.name: Unused 'en' translation 'ANS' -> ''
 INFORMATION: Coding.display: Unused 'en' translation 'France (la)' -> ''
 INFORMATION: ImplementationGuide.definition.resource.description: Unused 'en' translation 'Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.' -> ''
@@ -422,9 +424,9 @@ INFORMATION: HumanName.given: Unused 'en' translation 'Jacques' -> ''
 == fsh-generated/resources/RelatedPerson-cds-relatedperson-example.json ==
 INFORMATION: RelatedPerson/cds-relatedperson-example: RelatedPerson.meta.profile[0]: This element does not match any known slice defined in the profile https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: RelatedPerson/cds-relatedperson-example: RelatedPerson.identifier[0].system: No definition could be found for URL value 'https://fake-system'
-ERROR: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. Valid display is one of 3 choices: 'personne à prévenir en cas d'urgence', 'ECON' (null) or 'personne à prévenir en cas d'urgence' (null) (for the language(s) 'fr')
+ERROR: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. Valid display is one of 3 choices: 'personne à prévenir en cas d'urgence', 'ECON' (null) or 'personne à prévenir en cas d'urgence' (null) (for the language(s) 'fr-FR')
 INFORMATION: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[0]: None of the codings provided are in the value set 'FR Core ValueSet Patient contact role' (https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role|2.1.0), and a coding is recommended to come from this value set (codes = https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON)
-ERROR: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. There are no valid display names found for language(s) 'fr'. Default display is 'personne à prévenir en cas d'urgence'
+ERROR: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[0].coding[0].display: Wrong Display Name 'Entité à contacter en cas d'urgence' for https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON. Valid display is 'personne à prévenir en cas d'urgence' (fr-FR) (for the language(s) 'fr-FR')
 INFORMATION: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass#ECON)
 INFORMATION: RelatedPerson/cds-relatedperson-example: RelatedPerson.relationship[1]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode#NBOR)
 INFORMATION: Coding.display: Unused 'en' translation 'Entité à contacter en cas d'urgence' -> ''

@@ -123,10 +123,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-organizatio
     }]
   },
   "status" : "active",
-  "date" : "2026-05-28T08:04:13+00:00",
-  "publisher" : "ANS",
+  "date" : "2026-05-28T08:17:26+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
-    "name" : "ANS",
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
     "telecom" : [{
       "system" : "url",
       "value" : "https://esante.gouv.fr"
