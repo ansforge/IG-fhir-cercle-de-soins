@@ -18,10 +18,64 @@
      fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation>
   ] ; # 
   fhir:version [ fhir:v "2.0.1"] ; # 
-  fhir:name [ fhir:v "CDSBundleTransactionCreation"] ; # 
-  fhir:title [ fhir:v "CDS Bundle Transaction Creation Profile"] ; # 
+  fhir:name [
+     fhir:v "CDSBundleTransactionCreation" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CDSBundleTransactionCreation"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
+  fhir:title [
+     fhir:v "CDS Bundle Transaction Creation Profile" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CDS Bundle Transaction Creation Profile"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-27T16:13:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-28T07:53:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -6825,7 +6879,34 @@
        fhir:id [ fhir:v "Bundle.entry:practitionerRoleOrg" ] ;
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:sliceName [ fhir:v "practitionerRoleOrg" ] ;
-       fhir:short [ fhir:v "Situation d'exercice du PS (PractitionerRole)" ] ;
+       fhir:short [
+         fhir:v "Situation d'exercice du PS (PractitionerRole)" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Situation d'exercice du PS (PractitionerRole)"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
@@ -8046,7 +8127,34 @@
        fhir:id [ fhir:v "Bundle.entry:practitionerPro" ] ;
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:sliceName [ fhir:v "practitionerPro" ] ;
-       fhir:short [ fhir:v "Exercice professionnel du PS (Practitioner)" ] ;
+       fhir:short [
+         fhir:v "Exercice professionnel du PS (Practitioner)" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Exercice professionnel du PS (Practitioner)"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only)." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
@@ -9490,7 +9598,34 @@
        fhir:id [ fhir:v "Bundle.entry:practitionerRoleOrg" ] ;
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:sliceName [ fhir:v "practitionerRoleOrg" ] ;
-       fhir:short [ fhir:v "Situation d'exercice du PS (PractitionerRole)" ] ;
+       fhir:short [
+         fhir:v "Situation d'exercice du PS (PractitionerRole)" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Situation d'exercice du PS (PractitionerRole)"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ]
      ] [
@@ -9528,7 +9663,34 @@
        fhir:id [ fhir:v "Bundle.entry:practitionerPro" ] ;
        fhir:path [ fhir:v "Bundle.entry" ] ;
        fhir:sliceName [ fhir:v "practitionerPro" ] ;
-       fhir:short [ fhir:v "Exercice professionnel du PS (Practitioner)" ] ;
+       fhir:short [
+         fhir:v "Exercice professionnel du PS (Practitioner)" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Exercice professionnel du PS (Practitioner)"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ]
      ] [

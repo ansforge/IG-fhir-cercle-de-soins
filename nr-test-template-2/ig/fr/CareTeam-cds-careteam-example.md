@@ -46,6 +46,19 @@ Profil: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
   }],
   "status" : "active",
   "name" : "Cercle de soins de Mr Jacques Thobois",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : ""
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "subject" : {
     "reference" : "Patient/cds-patient-example"
   },

@@ -79,10 +79,28 @@
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj"/>
   <version value="2.0.1"/>
-  <name value="CDSBundleTransactionMAJ"/>
-  <title value="CDS Bundle Transaction MAJ Profile"/>
+  <name value="CDSBundleTransactionMAJ">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content">
+        <valueString value="CDSBundleTransactionMAJ"/>
+      </extension>
+    </extension>
+  </name>
+  <title value="CDS Bundle Transaction MAJ Profile">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content">
+        <valueString value="CDS Bundle Transaction MAJ Profile"/>
+      </extension>
+    </extension>
+  </title>
   <status value="active"/>
-  <date value="2026-05-27T16:13:17+00:00"/>
+  <date value="2026-05-28T07:53:58+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -5539,7 +5557,16 @@
     <element id="Bundle.entry:practitionerRoleOrg">
       <path value="Bundle.entry"/>
       <sliceName value="practitionerRoleOrg"/>
-      <short value="Situation d'exercice du PS (PractitionerRole)"/>
+      <short value="Situation d'exercice du PS (PractitionerRole)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Situation d'exercice du PS (PractitionerRole)"/>
+          </extension>
+        </extension>
+      </short>
       <definition value="An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only)."/>
       <min value="0"/>
       <max value="*"/>
@@ -6525,7 +6552,16 @@
     <element id="Bundle.entry:practitionerPro">
       <path value="Bundle.entry"/>
       <sliceName value="practitionerPro"/>
-      <short value="Exercice professionnel du PS (Practitioner)"/>
+      <short value="Exercice professionnel du PS (Practitioner)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Exercice professionnel du PS (Practitioner)"/>
+          </extension>
+        </extension>
+      </short>
       <definition value="An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only)."/>
       <min value="0"/>
       <max value="*"/>
@@ -7694,7 +7730,16 @@
     <element id="Bundle.entry:practitionerRoleOrg">
       <path value="Bundle.entry"/>
       <sliceName value="practitionerRoleOrg"/>
-      <short value="Situation d'exercice du PS (PractitionerRole)"/>
+      <short value="Situation d'exercice du PS (PractitionerRole)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Situation d'exercice du PS (PractitionerRole)"/>
+          </extension>
+        </extension>
+      </short>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -7723,7 +7768,16 @@
     <element id="Bundle.entry:practitionerPro">
       <path value="Bundle.entry"/>
       <sliceName value="practitionerPro"/>
-      <short value="Exercice professionnel du PS (Practitioner)"/>
+      <short value="Exercice professionnel du PS (Practitioner)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Exercice professionnel du PS (Practitioner)"/>
+          </extension>
+        </extension>
+      </short>
       <min value="0"/>
       <max value="*"/>
     </element>

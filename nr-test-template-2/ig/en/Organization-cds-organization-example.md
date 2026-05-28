@@ -14,9 +14,9 @@ Profile: [CDS Organization Profile](StructureDefinition-cds-organization.md)
 
 **type**: Médical
 
-**name**: Cabinet médical CC CC
+**name**: 
 
-**alias**: CC CC Rennes
+**alias**: 
 
 **address**: 12 rue du paris Rennes 35000 99100 
 
@@ -44,7 +44,33 @@ Profile: [CDS Organization Profile](StructureDefinition-cds-organization.md)
     }]
   }],
   "name" : "Cabinet médical CC CC",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : ""
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "alias" : ["CC CC Rennes"],
+  "_alias" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : ""
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  }],
   "address" : [{
     "line" : ["12 rue du paris"],
     "city" : "Rennes",

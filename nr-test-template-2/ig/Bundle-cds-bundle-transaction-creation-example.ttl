@@ -91,7 +91,34 @@
      fhir:value [ fhir:v "1" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:name [ fhir:v "Cercle de soins de Mr Jacques Thobois"] ; # 
+  fhir:name [
+     fhir:v "Cercle de soins de Mr Jacques Thobois" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v ""
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
   fhir:subject [
      fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
      fhir:reference [ fhir:v "Patient/cds-patient-example" ]
@@ -155,8 +182,62 @@
        fhir:display [ fhir:v "Médical" ]
      ] )
   ] ) ; # 
-  fhir:name [ fhir:v "Cabinet médical CC CC"] ; # 
-  fhir:alias ( [ fhir:v "CC CC Rennes"] ) ; # 
+  fhir:name [
+     fhir:v "Cabinet médical CC CC" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v ""
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
+  fhir:alias ( [
+     fhir:v "CC CC Rennes" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v ""
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ) ; # 
   fhir:address ( [
      fhir:line ( [ fhir:v "12 rue du paris" ] ) ;
      fhir:city [ fhir:v "Rennes" ] ;

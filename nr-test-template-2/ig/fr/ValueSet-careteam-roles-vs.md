@@ -30,9 +30,33 @@ Roles des participants dans un cercle de soins.
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs",
   "version" : "2.0.1",
   "name" : "CareTeamRolesValueSet",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "title" : "Roles des participants dans un cercle de soins",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "status" : "active",
-  "date" : "2026-05-27T16:13:17+00:00",
+  "date" : "2026-05-28T07:53:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -42,6 +66,18 @@ Roles des participants dans un cercle de soins.
     }]
   }],
   "description" : "Roles des participants dans un cercle de soins.",
+  "_description" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -55,7 +91,10 @@ Roles des participants dans un cercle de soins.
       "version" : "20231215120000",
       "concept" : [{
         "code" : "PCP",
-        "display" : "Médecin traitant"
+        "display" : "Médecin traitant",
+        "designation" : [{
+          "language" : "en"
+        }]
       }]
     },
     {

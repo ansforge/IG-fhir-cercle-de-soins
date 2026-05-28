@@ -15,8 +15,22 @@
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurTransaction"/>
   <version value="2.0.1"/>
-  <name value="CreateurTransaction-cds"/>
-  <title value="CI-SIS Gestion du Cercle de Soins - CreateurTransaction"/>
+  <name value="CreateurTransaction-cds">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </name>
+  <title value="CI-SIS Gestion du Cercle de Soins - CreateurTransaction">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </title>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-07-14"/>
@@ -43,18 +57,46 @@
   <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
   <rest>
     <mode value="client"/>
-    <documentation value="Envoie une requete pour créer ou mettre à jour un cercle de soins"/>
+    <documentation value="Envoie une requete pour créer ou mettre à jour un cercle de soins">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"/>
+        </extension>
+        <extension url="content"/>
+      </extension>
+    </documentation>
     <security>
       <cors value="false"/>
-      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content"/>
+        </extension>
+      </description>
     </security>
     <interaction>
       <code value="transaction"/>
-      <documentation value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"/>
+      <documentation value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content"/>
+        </extension>
+      </documentation>
     </interaction>
     <interaction>
       <code value="transaction"/>
-      <documentation value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj"/>
+      <documentation value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content"/>
+        </extension>
+      </documentation>
     </interaction>
   </rest>
 </CapabilityStatement>

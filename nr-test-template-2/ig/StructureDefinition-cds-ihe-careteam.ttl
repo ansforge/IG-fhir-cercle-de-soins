@@ -18,10 +18,64 @@
      fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam>
   ] ; # 
   fhir:version [ fhir:v "2.0.1"] ; # 
-  fhir:name [ fhir:v "CDSCareTeam"] ; # 
-  fhir:title [ fhir:v "CDS CareTeam Profile"] ; # 
+  fhir:name [
+     fhir:v "CDSCareTeam" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CDSCareTeam"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
+  fhir:title [
+     fhir:v "CDS CareTeam Profile" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CDS CareTeam Profile"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-27T16:13:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-28T07:53:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -816,7 +870,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.identifier" ] ;
        fhir:path [ fhir:v "CareTeam.identifier" ] ;
-       fhir:short [ fhir:v "Identifiant du cercle de soins" ] ;
+       fhir:short [
+         fhir:v "Identifiant du cercle de soins" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Identifiant du cercle de soins"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "Business identifiers assigned to this care team by the performer or other systems which remain constant as the resource is updated and propagates from server to server." ] ;
        fhir:comment [ fhir:v "This is a business identifier, not a resource identifier (see [discussion](http://hl7.org/fhir/R4/resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number." ] ;
        fhir:requirements [ fhir:v "Allows identification of the care team as it is known by various participating systems and in a way that remains consistent across servers." ] ;
@@ -1116,7 +1197,34 @@
        fhir:short [ fhir:v "The value that is unique" ] ;
        fhir:definition [ fhir:v "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ] ;
        fhir:comment [ fhir:v "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." ] ;
-       fhir:requirements [ fhir:v "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team" ] ;
+       fhir:requirements [
+         fhir:v "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1305,7 +1413,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.category" ] ;
        fhir:path [ fhir:v "CareTeam.category" ] ;
-       fhir:short [ fhir:v "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé." ] ;
+       fhir:short [
+         fhir:v "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "Identifies what kind of team.  This is to support differentiation between multiple co-existing teams, such as care plan team, episode of care team, longitudinal care team." ] ;
        fhir:comment [ fhir:v "There may be multiple axis of categorization and one team may serve multiple purposes." ] ;
        fhir:requirements [ fhir:v "Used for filtering what teams(s) are retrieved and displayed to different types of users." ] ;
@@ -1360,7 +1495,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.name" ] ;
        fhir:path [ fhir:v "CareTeam.name" ] ;
-       fhir:short [ fhir:v "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »." ] ;
+       fhir:short [
+         fhir:v "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "A label for human use intended to distinguish like teams.  E.g. the \"red\" vs. \"green\" trauma teams." ] ;
        fhir:comment [ fhir:v "The meaning/purpose of the team is conveyed in CareTeam.category.  This element may also convey semantics of the team (e.g. \"Red trauma team\"), but its primary purpose is to distinguish between identical teams in a human-friendly way.  (\"Team 18735\" isn't as friendly.)." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -1392,7 +1554,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.subject" ] ;
        fhir:path [ fhir:v "CareTeam.subject" ] ;
-       fhir:short [ fhir:v "Le sujet du cercle de soins est une personne prise en charge (« Patient »)." ] ;
+       fhir:short [
+         fhir:v "Le sujet du cercle de soins est une personne prise en charge (« Patient »)." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Le sujet du cercle de soins est une personne prise en charge (« Patient »)."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "Identifies the patient or group whose intended care is handled by the team." ] ;
        fhir:requirements [ fhir:v "Allows the team to care for a group (e.g. marriage) therapy. \nAllows for an organization to designate a team such as the PICC line team." ] ;
        fhir:alias ( [ fhir:v "patient" ] ) ;
@@ -1436,9 +1625,63 @@
      ] [
        fhir:id [ fhir:v "CareTeam.encounter" ] ;
        fhir:path [ fhir:v "CareTeam.encounter" ] ;
-       fhir:short [ fhir:v "La rencontre au cours de laquelle le cercle de soins a été créé ou à laquelle la création de cet enregistrement est étroitement associée n’est pas utilisée dans ce volet." ] ;
+       fhir:short [
+         fhir:v "La rencontre au cours de laquelle le cercle de soins a été créé ou à laquelle la création de cet enregistrement est étroitement associée n’est pas utilisée dans ce volet." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "La rencontre au cours de laquelle le cercle de soins a été créé ou à laquelle la création de cet enregistrement est étroitement associée n’est pas utilisée dans ce volet."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "The Encounter during which this CareTeam was created or to which the creation of this record is tightly associated." ] ;
-       fhir:comment [ fhir:v "This profile allows for CareTeam creation outside of the context of an encounter or episode." ] ;
+       fhir:comment [
+         fhir:v "This profile allows for CareTeam creation outside of the context of an encounter or episode." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "This profile allows for CareTeam creation outside of the context of an encounter or episode."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1476,9 +1719,63 @@
      ] [
        fhir:id [ fhir:v "CareTeam.period" ] ;
        fhir:path [ fhir:v "CareTeam.period" ] ;
-       fhir:short [ fhir:v "Période couverte par le cercle de soins." ] ;
+       fhir:short [
+         fhir:v "Période couverte par le cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Période couverte par le cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "Indicates when the team did (or is intended to) come into effect and end." ] ;
-       fhir:requirements [ fhir:v "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam." ] ;
+       fhir:requirements [
+         fhir:v "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1603,9 +1900,63 @@
      ] [
        fhir:id [ fhir:v "CareTeam.period.start" ] ;
        fhir:path [ fhir:v "CareTeam.period.start" ] ;
-       fhir:short [ fhir:v "Date de création du cercle de soins." ] ;
+       fhir:short [
+         fhir:v "Date de création du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Date de création du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "The start of the period. The boundary is inclusive." ] ;
-       fhir:comment [ fhir:v "This version of the profile requires at least a start time for the CareTeam." ] ;
+       fhir:comment [
+         fhir:v "This version of the profile requires at least a start time for the CareTeam." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "This version of the profile requires at least a start time for the CareTeam."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -1643,7 +1994,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.period.end" ] ;
        fhir:path [ fhir:v "CareTeam.period.end" ] ;
-       fhir:short [ fhir:v "Date de fin d'existence du cercle de soins." ] ;
+       fhir:short [
+         fhir:v "Date de fin d'existence du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Date de fin d'existence du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." ] ;
        fhir:comment [ fhir:v "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -1684,9 +2062,63 @@
      ] [
        fhir:id [ fhir:v "CareTeam.participant" ] ;
        fhir:path [ fhir:v "CareTeam.participant" ] ;
-       fhir:short [ fhir:v "Membres du cercle de soins." ] ;
+       fhir:short [
+         fhir:v "Membres du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Membres du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "Identifies all people and organizations who are expected to be involved in the care team." ] ;
-       fhir:comment [ fhir:v "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members" ] ;
+       fhir:comment [
+         fhir:v "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1912,7 +2344,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.participant.member" ] ;
        fhir:path [ fhir:v "CareTeam.participant.member" ] ;
-       fhir:short [ fhir:v "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager" ] ;
+       fhir:short [
+         fhir:v "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "The specific person or organization who is participating/expected to participate in the care team." ] ;
        fhir:comment [ fhir:v "Patient only needs to be listed if they have a role other than \"subject of care\".\n\nMember is optional because some participants may be known only by their role, particularly in draft plans." ] ;
        fhir:requirements [ fhir:v "Need to know who the member is if participant is required.\r\nThis version of the profile requires that a DynamicCareTeam be referenced when the member is a care team." ] ;
@@ -2003,7 +2462,34 @@
        fhir:path [ fhir:v "CareTeam.participant.period" ] ;
        fhir:short [ fhir:v "Time period of participant" ] ;
        fhir:definition [ fhir:v "Indicates when the specific member or organization did (or is intended to) come into effect and end." ] ;
-       fhir:comment [ fhir:v "Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin (optionnelle) de participation à ce cercle." ] ;
+       fhir:comment [
+         fhir:v "Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin (optionnelle) de participation à ce cercle." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin (optionnelle) de participation à ce cercle."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2124,7 +2610,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.participant.period.start" ] ;
        fhir:path [ fhir:v "CareTeam.participant.period.start" ] ;
-       fhir:short [ fhir:v "Date de début de participation au cercle de soin de la personne prise en charge Un membre doit pouvoir entrer et sortir plusieurs fois du cercle de soins. Pour satisfaire cette demande, il est possible de créer plusieurs instances de l’élément participant faisant référence au même membre mais à des périodes différentes." ] ;
+       fhir:short [
+         fhir:v "Date de début de participation au cercle de soin de la personne prise en charge Un membre doit pouvoir entrer et sortir plusieurs fois du cercle de soins. Pour satisfaire cette demande, il est possible de créer plusieurs instances de l’élément participant faisant référence au même membre mais à des périodes différentes." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Date de début de participation au cercle de soin de la personne prise en charge Un membre doit pouvoir entrer et sortir plusieurs fois du cercle de soins. Pour satisfaire cette demande, il est possible de créer plusieurs instances de l’élément participant faisant référence au même membre mais à des périodes différentes."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "The start of the period. The boundary is inclusive." ] ;
        fhir:comment [ fhir:v "If the low element is missing, the meaning is that the low boundary is not known." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
@@ -2297,7 +2810,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.managingOrganization" ] ;
        fhir:path [ fhir:v "CareTeam.managingOrganization" ] ;
-       fhir:short [ fhir:v "L’organisation responsable du cercle de soins." ] ;
+       fhir:short [
+         fhir:v "L’organisation responsable du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "L’organisation responsable du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "The organization responsible for the care team." ] ;
        fhir:requirements [ fhir:v "Allows for multiple organizations to collaboratively manage cross-organizational, longitudinal care plan." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2333,7 +2873,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.telecom" ] ;
        fhir:path [ fhir:v "CareTeam.telecom" ] ;
-       fhir:short [ fhir:v "Point de contact central du cercle de soins (qui s’applique à tous les membres) ; élément non utilisé dans le cadre de ce volet." ] ;
+       fhir:short [
+         fhir:v "Point de contact central du cercle de soins (qui s’applique à tous les membres) ; élément non utilisé dans le cadre de ce volet." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Point de contact central du cercle de soins (qui s’applique à tous les membres) ; élément non utilisé dans le cadre de ce volet."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "A central contact detail for the care team (that applies to all members)." ] ;
        fhir:comment [ fhir:v "The ContactPoint.use code of home is not appropriate to use. These contacts are not the contact details of individual care team members." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2365,7 +2932,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.note" ] ;
        fhir:path [ fhir:v "CareTeam.note" ] ;
-       fhir:short [ fhir:v "Commentaires sur le cercle de soins." ] ;
+       fhir:short [
+         fhir:v "Commentaires sur le cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Commentaires sur le cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:definition [ fhir:v "Comments made about the CareTeam." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
@@ -2407,14 +3001,68 @@
      ] [
        fhir:id [ fhir:v "CareTeam.identifier" ] ;
        fhir:path [ fhir:v "CareTeam.identifier" ] ;
-       fhir:short [ fhir:v "Identifiant du cercle de soins" ] ;
+       fhir:short [
+         fhir:v "Identifiant du cercle de soins" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Identifiant du cercle de soins"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:mustSupport [ fhir:v true ]
      ] [
        fhir:id [ fhir:v "CareTeam.identifier.value" ] ;
        fhir:path [ fhir:v "CareTeam.identifier.value" ] ;
-       fhir:requirements [ fhir:v "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team" ] ;
+       fhir:requirements [
+         fhir:v "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "This version of the profile requires an ID identifying this profile as an IHE PCC Dynamic Care Team"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "CareTeam.status" ] ;
@@ -2424,16 +3072,97 @@
      ] [
        fhir:id [ fhir:v "CareTeam.category" ] ;
        fhir:path [ fhir:v "CareTeam.category" ] ;
-       fhir:short [ fhir:v "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé." ]
+       fhir:short [
+         fhir:v "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Type d’équipe. Une personne prise en charge ne peut avoir qu’un cercle de soins donc cet élément n’est pas utilisé."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.name" ] ;
        fhir:path [ fhir:v "CareTeam.name" ] ;
-       fhir:short [ fhir:v "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »." ] ;
+       fhir:short [
+         fhir:v "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Nom de l’équipe tel que « Cercle de soins de Mr Dupont »."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "CareTeam.subject" ] ;
        fhir:path [ fhir:v "CareTeam.subject" ] ;
-       fhir:short [ fhir:v "Le sujet du cercle de soins est une personne prise en charge (« Patient »)." ] ;
+       fhir:short [
+         fhir:v "Le sujet du cercle de soins est une personne prise en charge (« Patient »)." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Le sujet du cercle de soins est une personne prise en charge (« Patient »)."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
          fhir:code [
@@ -2448,29 +3177,272 @@
      ] [
        fhir:id [ fhir:v "CareTeam.encounter" ] ;
        fhir:path [ fhir:v "CareTeam.encounter" ] ;
-       fhir:short [ fhir:v "La rencontre au cours de laquelle le cercle de soins a été créé ou à laquelle la création de cet enregistrement est étroitement associée n’est pas utilisée dans ce volet." ] ;
-       fhir:comment [ fhir:v "This profile allows for CareTeam creation outside of the context of an encounter or episode." ]
+       fhir:short [
+         fhir:v "La rencontre au cours de laquelle le cercle de soins a été créé ou à laquelle la création de cet enregistrement est étroitement associée n’est pas utilisée dans ce volet." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "La rencontre au cours de laquelle le cercle de soins a été créé ou à laquelle la création de cet enregistrement est étroitement associée n’est pas utilisée dans ce volet."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
+       fhir:comment [
+         fhir:v "This profile allows for CareTeam creation outside of the context of an encounter or episode." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "This profile allows for CareTeam creation outside of the context of an encounter or episode."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.period" ] ;
        fhir:path [ fhir:v "CareTeam.period" ] ;
-       fhir:short [ fhir:v "Période couverte par le cercle de soins." ] ;
-       fhir:requirements [ fhir:v "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam." ] ;
+       fhir:short [
+         fhir:v "Période couverte par le cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Période couverte par le cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
+       fhir:requirements [
+         fhir:v "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Allows tracking what team(s) are in effect at a particular time. This version of the profile requires period for the CareTeam."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "CareTeam.period.start" ] ;
        fhir:path [ fhir:v "CareTeam.period.start" ] ;
-       fhir:short [ fhir:v "Date de création du cercle de soins." ] ;
-       fhir:comment [ fhir:v "This version of the profile requires at least a start time for the CareTeam." ] ;
+       fhir:short [
+         fhir:v "Date de création du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Date de création du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
+       fhir:comment [
+         fhir:v "This version of the profile requires at least a start time for the CareTeam." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "This version of the profile requires at least a start time for the CareTeam."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "CareTeam.period.end" ] ;
        fhir:path [ fhir:v "CareTeam.period.end" ] ;
-       fhir:short [ fhir:v "Date de fin d'existence du cercle de soins." ]
+       fhir:short [
+         fhir:v "Date de fin d'existence du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Date de fin d'existence du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.participant" ] ;
        fhir:path [ fhir:v "CareTeam.participant" ] ;
-       fhir:short [ fhir:v "Membres du cercle de soins." ] ;
-       fhir:comment [ fhir:v "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members" ]
+       fhir:short [
+         fhir:v "Membres du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Membres du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
+       fhir:comment [
+         fhir:v "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "It is possible for a care team to be set up with roles specified only, before actual participants are invited into or identified as team members"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.participant.role" ] ;
        fhir:path [ fhir:v "CareTeam.participant.role" ] ;
@@ -2484,7 +3456,34 @@
      ] [
        fhir:id [ fhir:v "CareTeam.participant.member" ] ;
        fhir:path [ fhir:v "CareTeam.participant.member" ] ;
-       fhir:short [ fhir:v "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager" ] ;
+       fhir:short [
+         fhir:v "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager" ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Il s’agit d’une personne (Professionnel ou Personne Tierce) ou d’une Entité qui fait partie du Cercle de Soins d’un Usager"
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:requirements [ fhir:v "Need to know who the member is if participant is required.\r\nThis version of the profile requires that a DynamicCareTeam be referenced when the member is a care team." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:type ( [
@@ -2506,24 +3505,159 @@
      ] [
        fhir:id [ fhir:v "CareTeam.participant.period" ] ;
        fhir:path [ fhir:v "CareTeam.participant.period" ] ;
-       fhir:comment [ fhir:v "Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin (optionnelle) de participation à ce cercle." ]
+       fhir:comment [
+         fhir:v "Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin (optionnelle) de participation à ce cercle." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Chaque membre du Cercle de Soins dispose d’une date de début et une date de fin (optionnelle) de participation à ce cercle."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.participant.period.start" ] ;
        fhir:path [ fhir:v "CareTeam.participant.period.start" ] ;
-       fhir:short [ fhir:v "Date de début de participation au cercle de soin de la personne prise en charge Un membre doit pouvoir entrer et sortir plusieurs fois du cercle de soins. Pour satisfaire cette demande, il est possible de créer plusieurs instances de l’élément participant faisant référence au même membre mais à des périodes différentes." ] ;
+       fhir:short [
+         fhir:v "Date de début de participation au cercle de soin de la personne prise en charge Un membre doit pouvoir entrer et sortir plusieurs fois du cercle de soins. Pour satisfaire cette demande, il est possible de créer plusieurs instances de l’élément participant faisant référence au même membre mais à des périodes différentes." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Date de début de participation au cercle de soin de la personne prise en charge Un membre doit pouvoir entrer et sortir plusieurs fois du cercle de soins. Pour satisfaire cette demande, il est possible de créer plusieurs instances de l’élément participant faisant référence au même membre mais à des périodes différentes."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
      ] [
        fhir:id [ fhir:v "CareTeam.managingOrganization" ] ;
        fhir:path [ fhir:v "CareTeam.managingOrganization" ] ;
-       fhir:short [ fhir:v "L’organisation responsable du cercle de soins." ]
+       fhir:short [
+         fhir:v "L’organisation responsable du cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "L’organisation responsable du cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.telecom" ] ;
        fhir:path [ fhir:v "CareTeam.telecom" ] ;
-       fhir:short [ fhir:v "Point de contact central du cercle de soins (qui s’applique à tous les membres) ; élément non utilisé dans le cadre de ce volet." ]
+       fhir:short [
+         fhir:v "Point de contact central du cercle de soins (qui s’applique à tous les membres) ; élément non utilisé dans le cadre de ce volet." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Point de contact central du cercle de soins (qui s’applique à tous les membres) ; élément non utilisé dans le cadre de ce volet."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] [
        fhir:id [ fhir:v "CareTeam.note" ] ;
        fhir:path [ fhir:v "CareTeam.note" ] ;
-       fhir:short [ fhir:v "Commentaires sur le cercle de soins." ]
+       fhir:short [
+         fhir:v "Commentaires sur le cercle de soins." ;
+         fhir:extension ( [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "lang"^^xsd:anyURI ;
+               fhir:l fhir:lang
+             ] ;
+             fhir:value [
+               a fhir:Code ;
+               fhir:v "en"
+             ]
+           ] [
+             fhir:url [
+               fhir:v "content"^^xsd:anyURI ;
+               fhir:l fhir:content
+             ] ;
+             fhir:value [
+               a fhir:String ;
+               fhir:v "Commentaires sur le cercle de soins."
+             ]
+           ] ) ;
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+           ]
+         ] )
+       ]
      ] )
   ] . # 
 

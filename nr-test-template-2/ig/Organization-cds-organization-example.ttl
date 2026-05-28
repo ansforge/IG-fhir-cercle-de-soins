@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Organisation cds-organization-example</b></p><a name=\"cds-organization-example\"> </a><a name=\"hccds-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Organization cds-organization-example</b></p><a name=\"en-cds-organization-example\"> </a><a name=\"en-hccds-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : Organisation cds-organization-example</b></p><a name=\"cds-organization-example\"> </a><a name=\"hccds-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes :{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Organization cds-organization-example</b></p><a name=\"en-cds-organization-example\"> </a><a name=\"en-hccds-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: </p><p><b>alias</b>: </p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:active [ fhir:v true] ; # 
   fhir:type ( [
@@ -40,8 +40,62 @@
        fhir:display [ fhir:v "Médical" ]
      ] )
   ] ) ; # 
-  fhir:name [ fhir:v "Cabinet médical CC CC"] ; # 
-  fhir:alias ( [ fhir:v "CC CC Rennes"] ) ; # 
+  fhir:name [
+     fhir:v "Cabinet médical CC CC" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v ""
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ; # 
+  fhir:alias ( [
+     fhir:v "CC CC Rennes" ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "lang"^^xsd:anyURI ;
+           fhir:l fhir:lang
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "en"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "content"^^xsd:anyURI ;
+           fhir:l fhir:content
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v ""
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
+       ]
+     ] )
+  ] ) ; # 
   fhir:address ( [
      fhir:line ( [ fhir:v "12 rue du paris" ] ) ;
      fhir:city [ fhir:v "Rennes" ] ;

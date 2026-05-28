@@ -79,9 +79,35 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-fr-related-
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person",
   "version" : "2.0.1",
   "name" : "CDSFrRelatedPerson",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "CDSFrRelatedPerson"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "title" : "CDS Fr RelatedPerson Profile",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "CDS Fr RelatedPerson Profile"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "status" : "active",
-  "date" : "2026-05-27T16:13:17+00:00",
+  "date" : "2026-05-28T07:53:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -141,6 +167,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-fr-related-
       "path" : "RelatedPerson.relationship",
       "sliceName" : "Role",
       "short" : "Rôle de la personne",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Rôle de la personne"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "min" : 1
     },
     {
@@ -148,6 +187,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-fr-related-
       "path" : "RelatedPerson.relationship",
       "sliceName" : "RelationType",
       "short" : "Relation de la personne",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Relation de la personne"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "max" : "1"
     },
     {

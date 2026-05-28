@@ -114,9 +114,35 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-bundle-tran
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj",
   "version" : "2.0.1",
   "name" : "CDSBundleTransactionMAJ",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "CDSBundleTransactionMAJ"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "title" : "CDS Bundle Transaction MAJ Profile",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "CDS Bundle Transaction MAJ Profile"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "status" : "active",
-  "date" : "2026-05-27T16:13:17+00:00",
+  "date" : "2026-05-28T07:53:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -314,6 +340,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-bundle-tran
       "path" : "Bundle.entry",
       "sliceName" : "practitionerRoleOrg",
       "short" : "Situation d'exercice du PS (PractitionerRole)",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Situation d'exercice du PS (PractitionerRole)"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "min" : 0,
       "max" : "*"
     },
@@ -347,6 +386,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-bundle-tran
       "path" : "Bundle.entry",
       "sliceName" : "practitionerPro",
       "short" : "Exercice professionnel du PS (Practitioner)",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Exercice professionnel du PS (Practitioner)"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "min" : 0,
       "max" : "*"
     },

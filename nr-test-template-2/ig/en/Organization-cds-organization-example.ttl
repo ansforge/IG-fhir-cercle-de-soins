@@ -18,7 +18,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Organization cds-organization-example</b></p><a name=\"en-cds-organization-example\"> </a><a name=\"en-hccds-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: Cabinet médical CC CC</p><p><b>alias</b>: CC CC Rennes</p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: Organization cds-organization-example</b></p><a name=\"en-cds-organization-example\"> </a><a name=\"en-hccds-organization-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profile</a></p></div><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307 MEDICAL}\">Médical</span></p><p><b>name</b>: </p><p><b>alias</b>: </p><p><b>address</b>: 12 rue du paris Rennes 35000 99100 </p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:active [ fhir:v true] ; # 
   fhir:type ( [
@@ -41,8 +41,8 @@
        fhir:display [ fhir:v "Médical" ]
      ] )
   ] ) ; # 
-  fhir:name [ fhir:v "Cabinet médical CC CC"] ; # 
-  fhir:alias ( [ fhir:v "CC CC Rennes"] ) ; # 
+  fhir:name [ fhir:v ""] ; # 
+  fhir:alias ( [ fhir:v ""] ) ; # 
   fhir:address ( [
      fhir:line ( [ fhir:v "12 rue du paris" ] ) ;
      fhir:city [ fhir:v "Rennes" ] ;

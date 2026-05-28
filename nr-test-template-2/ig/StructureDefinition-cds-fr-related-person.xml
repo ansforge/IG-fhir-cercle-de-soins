@@ -30,10 +30,28 @@
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"/>
   <version value="2.0.1"/>
-  <name value="CDSFrRelatedPerson"/>
-  <title value="CDS Fr RelatedPerson Profile"/>
+  <name value="CDSFrRelatedPerson">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content">
+        <valueString value="CDSFrRelatedPerson"/>
+      </extension>
+    </extension>
+  </name>
+  <title value="CDS Fr RelatedPerson Profile">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content">
+        <valueString value="CDS Fr RelatedPerson Profile"/>
+      </extension>
+    </extension>
+  </title>
   <status value="active"/>
-  <date value="2026-05-27T16:13:17+00:00"/>
+  <date value="2026-05-28T07:53:58+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -846,7 +864,16 @@
     <element id="RelatedPerson.relationship:Role">
       <path value="RelatedPerson.relationship"/>
       <sliceName value="Role"/>
-      <short value="Rôle de la personne"/>
+      <short value="Rôle de la personne">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Rôle de la personne"/>
+          </extension>
+        </extension>
+      </short>
       <definition value="The nature of the relationship between a patient and the related person."/>
       <requirements value="We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person."/>
       <min value="1"/>
@@ -1312,7 +1339,16 @@
     <element id="RelatedPerson.relationship:RelationType">
       <path value="RelatedPerson.relationship"/>
       <sliceName value="RelationType"/>
-      <short value="Relation de la personne"/>
+      <short value="Relation de la personne">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Relation de la personne"/>
+          </extension>
+        </extension>
+      </short>
       <definition value="The nature of the relationship between a patient and the related person."/>
       <requirements value="We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person."/>
       <min value="0"/>
@@ -2671,13 +2707,31 @@
     <element id="RelatedPerson.relationship:Role">
       <path value="RelatedPerson.relationship"/>
       <sliceName value="Role"/>
-      <short value="Rôle de la personne"/>
+      <short value="Rôle de la personne">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Rôle de la personne"/>
+          </extension>
+        </extension>
+      </short>
       <min value="1"/>
     </element>
     <element id="RelatedPerson.relationship:RelationType">
       <path value="RelatedPerson.relationship"/>
       <sliceName value="RelationType"/>
-      <short value="Relation de la personne"/>
+      <short value="Relation de la personne">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Relation de la personne"/>
+          </extension>
+        </extension>
+      </short>
       <max value="1"/>
     </element>
     <element id="RelatedPerson.name">

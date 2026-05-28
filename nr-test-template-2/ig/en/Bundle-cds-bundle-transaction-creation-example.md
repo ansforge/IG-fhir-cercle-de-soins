@@ -33,6 +33,19 @@
       }],
       "status" : "active",
       "name" : "Cercle de soins de Mr Jacques Thobois",
+      "_name" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : ""
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "subject" : {
         "reference" : "Patient/cds-patient-example"
       },
@@ -90,7 +103,33 @@
         }]
       }],
       "name" : "Cabinet médical CC CC",
+      "_name" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : ""
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "alias" : ["CC CC Rennes"],
+      "_alias" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : ""
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      }],
       "address" : [{
         "line" : ["12 rue du paris"],
         "city" : "Rennes",

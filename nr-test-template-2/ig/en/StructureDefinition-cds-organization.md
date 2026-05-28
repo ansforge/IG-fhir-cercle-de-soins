@@ -33,9 +33,35 @@ Other representations of profile: [CSV](../StructureDefinition-cds-organization.
   "url" : "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization",
   "version" : "2.0.1",
   "name" : "CDSAsOrganization",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "CDSAsOrganization"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "title" : "CDS Organization Profile",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "CDS Organization Profile"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "status" : "active",
-  "date" : "2026-05-27T16:13:17+00:00",
+  "date" : "2026-05-28T07:53:58+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -94,6 +120,19 @@ Other representations of profile: [CSV](../StructureDefinition-cds-organization.
       "path" : "Organization.identifier",
       "sliceName" : "identifierOI",
       "short" : "identifiantOI (OI) : Identifiant de l'organisation interne. Le system https://oi.esante.gouv.fr est à utiliser s'il s'agit de l'OI unique et persistant défini au niveau national.",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : "identifiantOI (OI) : Identifiant de l'organisation interne. Le system https://oi.esante.gouv.fr est à utiliser s'il s'agit de l'OI unique et persistant défini au niveau national."
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "min" : 0,
       "max" : "1",
       "mustSupport" : true
@@ -115,13 +154,26 @@ Other representations of profile: [CSV](../StructureDefinition-cds-organization.
       "path" : "Organization.identifier.system",
       "example" : [{
         "label" : "General",
-        "valueString" : "https://oi.esante.gouv.fr"
+        "valueUri" : "http://www.acme.com/identifiers/patient"
       }]
     },
     {
       "id" : "Organization.partOf",
       "path" : "Organization.partOf",
       "short" : "Référence vers la structure de rattachement (lien OI/EG ou lien EG/EJ)",
+      "_short" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "en"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Référence vers la structure de rattachement (lien OI/EG ou lien EG/EJ)"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
       "type" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",

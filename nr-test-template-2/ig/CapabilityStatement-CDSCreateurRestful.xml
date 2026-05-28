@@ -11,8 +11,22 @@
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSCreateurRestful"/>
   <version value="2.0.1"/>
-  <name value="createur-restful-cds"/>
-  <title value="CI-SIS Gestion du Cercle de Soins - CreateurRestful"/>
+  <name value="createur-restful-cds">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </name>
+  <title value="CI-SIS Gestion du Cercle de Soins - CreateurRestful">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </title>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-07-14"/>
@@ -39,10 +53,24 @@
   <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
   <rest>
     <mode value="client"/>
-    <documentation value="Envoie une requete pour créer ou mettre à jour un cercle de soins"/>
+    <documentation value="Envoie une requete pour créer ou mettre à jour un cercle de soins">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"/>
+        </extension>
+        <extension url="content"/>
+      </extension>
+    </documentation>
     <security>
       <cors value="false"/>
-      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content"/>
+        </extension>
+      </description>
     </security>
     <resource>
       <type value="Patient"/>

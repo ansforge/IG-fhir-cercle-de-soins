@@ -9,9 +9,16 @@
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start"/>
   <version value="2.0.1"/>
-  <name value="CDSCareTeamStart"/>
+  <name value="CDSCareTeamStart">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </name>
   <status value="active"/>
-  <date value="2026-05-27T16:13:17+00:00"/>
+  <date value="2026-05-28T07:53:58+00:00"/>
   <publisher value="ANS"/>
   <contact>
     <name value="ANS"/>
@@ -20,7 +27,14 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Recherche sur la date de création du cercle de soins"/>
+  <description value="Recherche sur la date de création du cercle de soins">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </description>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

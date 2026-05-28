@@ -73,8 +73,22 @@
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSConsommateur"/>
   <version value="2.0.1"/>
-  <name value="consommateur-cds"/>
-  <title value="CI-SIS Gestion du Cercle de Soins - Consommateur"/>
+  <name value="consommateur-cds">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </name>
+  <title value="CI-SIS Gestion du Cercle de Soins - Consommateur">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </title>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-07-14"/>
@@ -86,7 +100,14 @@
       <value value="https://esante.gouv.fr"/>
     </telecom>
   </contact>
-  <description value="Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination."/>
+  <description value="Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination.">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content"/>
+    </extension>
+  </description>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -101,10 +122,24 @@
   <implementationGuide value="https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"/>
   <rest>
     <mode value="client"/>
-    <documentation value="Recherche de cercles de soins"/>
+    <documentation value="Recherche de cercles de soins">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="en"/>
+        </extension>
+        <extension url="content"/>
+      </extension>
+    </documentation>
     <security>
       <cors value="false"/>
-      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)"/>
+      <description value="L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="en"/>
+          </extension>
+          <extension url="content"/>
+        </extension>
+      </description>
     </security>
     <resource>
       <type value="CareTeam"/>
@@ -128,79 +163,170 @@
         <name value="identifier"/>
         <definition value="http://hl7.org/fhir/SearchParameter/clinical-identifier|4.0.1"/>
         <type value="token"/>
-        <documentation value="identifiant du cercle de soins"/>
+        <documentation value="identifiant du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="CDSCareTeamStart"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start|2.0.1"/>
         <type value="date"/>
-        <documentation value="date de création du cercle de soins"/>
+        <documentation value="date de création du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="CDSCareTeamEnd"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end|2.0.1"/>
         <type value="date"/>
-        <documentation value="date de fin du cercle de soins"/>
+        <documentation value="date de fin du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="status"/>
         <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-status|4.0.1"/>
         <type value="token"/>
-        <documentation value="statut du cercle de soins"/>
+        <documentation value="statut du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated|4.0.1"/>
         <type value="date"/>
-        <documentation value="date de mise à jour du cercle de soins"/>
+        <documentation value="date de mise à jour du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="category"/>
         <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-category|4.0.1"/>
         <type value="token"/>
-        <documentation value="Représente la catégorie cercle de soins."/>
+        <documentation value="Représente la catégorie cercle de soins.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="date"/>
         <definition value="http://hl7.org/fhir/SearchParameter/clinical-date|4.0.1"/>
         <type value="date"/>
-        <documentation value="Représente la période couverte par le cercle de soins."/>
+        <documentation value="Représente la période couverte par le cercle de soins.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="participant"/>
         <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-participant|4.0.1"/>
         <type value="reference"/>
-        <documentation value="Représente les participants impliqués dans le cercle de soins."/>
+        <documentation value="Représente les participants impliqués dans le cercle de soins.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="patient"/>
         <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient|4.0.1"/>
         <type value="reference"/>
-        <documentation value="Représente le patient du cercle de soins."/>
+        <documentation value="Représente le patient du cercle de soins.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="subject"/>
         <definition value="http://hl7.org/fhir/SearchParameter/CareTeam-subject|4.0.1"/>
         <type value="reference"/>
-        <documentation value="Représente le sujet du cercle de soins."/>
+        <documentation value="Représente le sujet du cercle de soins.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="CDSCareTeamParticipantStart"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start|2.0.1"/>
         <type value="date"/>
-        <documentation value="Date d'entrée d'un membre du cercle de soins"/>
+        <documentation value="Date d'entrée d'un membre du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="CDSCareTeamParticipantEnd"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-end|2.0.1"/>
         <type value="date"/>
-        <documentation value="Date de sortie d'un membre du cercle de soins"/>
+        <documentation value="Date de sortie d'un membre du cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="CareTeamManagingOrganization"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization|2.0.1"/>
         <type value="reference"/>
-        <documentation value="Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l'organisation responsable du cercle de soins."/>
+        <documentation value="Représente le paramètre de recherche chaîné créé pour le volet CdS de manière à pouvoir utiliser comme critère de recherche l'organisation responsable du cercle de soins.">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
     </resource>
     <resource>
@@ -216,49 +342,105 @@
         <name value="identifier"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier|4.0.1"/>
         <type value="token"/>
-        <documentation value="Identifiant du patient"/>
+        <documentation value="Identifiant du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="family"/>
         <definition value="http://hl7.org/fhir/SearchParameter/individual-family|4.0.1"/>
         <type value="string"/>
-        <documentation value="Nom de famille du patient"/>
+        <documentation value="Nom de famille du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="given"/>
         <definition value="http://hl7.org/fhir/SearchParameter/individual-given|4.0.1"/>
         <type value="string"/>
-        <documentation value="Prénom du patient"/>
+        <documentation value="Prénom du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="name"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Patient-name|4.0.1"/>
         <type value="string"/>
-        <documentation value="Nom du patient"/>
+        <documentation value="Nom du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="address"/>
         <definition value="http://hl7.org/fhir/SearchParameter/individual-address|4.0.1"/>
         <type value="string"/>
-        <documentation value="Adresse du patient"/>
+        <documentation value="Adresse du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="birthdate"/>
         <definition value="http://hl7.org/fhir/SearchParameter/individual-birthdate|4.0.1"/>
         <type value="date"/>
-        <documentation value="Date de naissance du patient"/>
+        <documentation value="Date de naissance du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="gender"/>
         <definition value="http://hl7.org/fhir/SearchParameter/individual-gender|4.0.1"/>
         <type value="token"/>
-        <documentation value="Genre du patient"/>
+        <documentation value="Genre du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="birthplace"/>
         <definition value="https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace|2.0.1"/>
         <type value="string"/>
-        <documentation value="Genre du patient"/>
+        <documentation value="Genre du patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
     </resource>
     <resource>
@@ -274,19 +456,40 @@
         <name value="_id"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1"/>
         <type value="token"/>
-        <documentation value="Identifiant technique de la personne de confiance"/>
+        <documentation value="Identifiant technique de la personne de confiance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="name"/>
         <definition value="http://hl7.org/fhir/SearchParameter/RelatedPerson-name|4.0.1"/>
         <type value="string"/>
-        <documentation value="Nom de la personne de confiance"/>
+        <documentation value="Nom de la personne de confiance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="relationship"/>
         <definition value="http://hl7.org/fhir/SearchParameter/RelatedPerson-relationship|4.0.1"/>
         <type value="token"/>
-        <documentation value="Relation entre le patient et la personne de confiance"/>
+        <documentation value="Relation entre le patient et la personne de confiance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
     </resource>
     <resource>
@@ -302,25 +505,53 @@
         <name value="_id"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1"/>
         <type value="token"/>
-        <documentation value="Identifiant technique de la personne de confiance"/>
+        <documentation value="Identifiant technique de la personne de confiance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="name"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Organization-name|4.0.1"/>
         <type value="string"/>
-        <documentation value="Nom de la personne de confiance"/>
+        <documentation value="Nom de la personne de confiance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="identifier"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier|4.0.1"/>
         <type value="token"/>
-        <documentation value="Nom de la personne de confiance"/>
+        <documentation value="Nom de la personne de confiance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="partof"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Organization-partof|4.0.1"/>
         <type value="reference"/>
-        <documentation value="Reference vers l'entite juridique"/>
+        <documentation value="Reference vers l'entite juridique">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
     </resource>
     <resource>
@@ -337,19 +568,40 @@
         <name value="_id"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1"/>
         <type value="token"/>
-        <documentation value="Identifiant technique du membre professionnel dans la situation d'exercice"/>
+        <documentation value="Identifiant technique du membre professionnel dans la situation d'exercice">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="practitioner"/>
         <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner|4.0.1"/>
         <type value="reference"/>
-        <documentation value="Référence du professionnel"/>
+        <documentation value="Référence du professionnel">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
       <searchParam>
         <name value="role"/>
         <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-role|4.0.1"/>
         <type value="token"/>
-        <documentation value="Rôle du membre de cercle de soins"/>
+        <documentation value="Rôle du membre de cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </documentation>
       </searchParam>
     </resource>
   </rest>

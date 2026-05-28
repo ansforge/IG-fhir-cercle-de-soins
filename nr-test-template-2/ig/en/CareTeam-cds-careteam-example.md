@@ -16,7 +16,7 @@ Profile: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
 
 **status**: Active
 
-**name**: Cercle de soins de Mr Jacques Thobois
+**name**: 
 
 **subject**: [Jacques Thobois (official) Male, DoB: 1984-10-02 ( NIR définitif (use: official, ))](Patient-cds-patient-example.md)
 
@@ -24,9 +24,9 @@ Profile: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
 
 > **participant****member**: [RelatedPerson CHIBOUT Lamine (official)](RelatedPerson-cds-relatedperson-example.md)**period**: 2013-01-12 --> (ongoing)
 
-> **participant****member**: [Organization Cabinet médical CC CC](Organization-cds-organization-example.md)**period**: 2013-01-12 --> 2032-12-18 13:48:19+0100
+> **participant****member**: [Organization ](Organization-cds-organization-example.md)**period**: 2013-01-12 --> 2032-12-18 13:48:19+0100
 
-**managingOrganization**: [Organization Cabinet médical CC CC](Organization-cds-organization-example.md)
+**managingOrganization**: [Organization ](Organization-cds-organization-example.md)
 
 
 
@@ -46,6 +46,19 @@ Profile: [CDS CareTeam Profile](StructureDefinition-cds-ihe-careteam.md)
   }],
   "status" : "active",
   "name" : "Cercle de soins de Mr Jacques Thobois",
+  "_name" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : ""
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "subject" : {
     "reference" : "Patient/cds-patient-example"
   },
