@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2026-05-28T07:53:58+00:00",
+  "date" : "2026-05-28T08:04:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
@@ -1077,6 +1077,15 @@
           }],
           "nameUrl" : "downloads.html",
           "title" : "Téléchargements et usages",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "translationinfo.html"
+          }],
+          "nameUrl" : "translationinfo.html",
+          "title" : "Informations sur la traduction",
           "generation" : "markdown"
         }]
       },

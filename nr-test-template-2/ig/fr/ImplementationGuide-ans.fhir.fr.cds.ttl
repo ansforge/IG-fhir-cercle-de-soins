@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-28T07:53:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-28T08:04:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "ANS"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "ANS" ] ;
@@ -2198,6 +2198,25 @@
              fhir:l fhir:downloads.html
            ] ;
            fhir:title [ fhir:v "Téléchargements et usages" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "translationinfo.html"^^xsd:anyURI ;
+               fhir:l fhir:translationinfo.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "translationinfo.html"^^xsd:anyURI ;
+             fhir:l fhir:translationinfo.html
+           ] ;
+           fhir:title [ fhir:v "Informations sur la traduction" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [

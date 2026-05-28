@@ -56,7 +56,7 @@ Roles des participants dans un cercle de soins.
     }]
   },
   "status" : "active",
-  "date" : "2026-05-28T07:53:58+00:00",
+  "date" : "2026-05-28T08:04:13+00:00",
   "publisher" : "ANS",
   "contact" : [{
     "name" : "ANS",
