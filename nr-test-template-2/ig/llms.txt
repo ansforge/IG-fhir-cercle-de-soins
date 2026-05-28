@@ -1,59 +1,59 @@
-# ans.fhir.fr.cds#2.0.1: Cercle De Soins(fr-FR)
+# ans.fhir.fr.cds#2.0.1: Cercle De Soins(fr)
 
 ## Pages
 
-* [Accueil](fr-FR/index.md)
-* [Correspondances métier](fr-FR/correspondances_metier.md)
-* [Historique](fr-FR/changes.md)
-* [Specifications Techniques](fr-FR/specifications_techniques.md)
-* [Artifacts Summary](fr-FR/artifacts.md)
-* [Interactions RESTful](fr-FR/interaction_restful.md)
-* [Informations sur la traduction](fr-FR/translationinfo.md)
-* [Interactions transaction](fr-FR/interaction_transaction.md)
-* [Volume 1 - Etude fonctionnelle](fr-FR/specifications_fonctionnelles.md)
-* [Recherche CDS](fr-FR/recherche_recuperation_cds.md)
-* [Téléchargements et usages](fr-FR/downloads.md)
-* [Autres Ressources](fr-FR/autres_ressources.md)
+* [Accueil](fr/index.md)
+* [Historique](fr/changes.md)
+* [Specifications Techniques](fr/specifications_techniques.md)
+* [Correspondances métier](fr/correspondances_metier.md)
+* [Informations sur la traduction](fr/translationinfo.md)
+* [Volume 1 - Etude fonctionnelle](fr/specifications_fonctionnelles.md)
+* [Interactions RESTful](fr/interaction_restful.md)
+* [Recherche CDS](fr/recherche_recuperation_cds.md)
+* [Téléchargements et usages](fr/downloads.md)
+* [Autres Ressources](fr/autres_ressources.md)
+* [Résumé des artefacts](fr/artifacts.md)
+* [Interactions transaction](fr/interaction_transaction.md)
 
 ## Resources
 
 ### ValueSets
 
-* [Roles des participants dans un cercle de soins](fr-FR/ValueSet-careteam-roles-vs.md)
+* [Roles des participants dans un cercle de soins](fr/ValueSet-careteam-roles-vs.md)
 
 ### Resource Profiles
 
-* [CDS Bundle Response Recherche Profile](fr-FR/StructureDefinition-cds-bundle-response-recherche.md)
-* [CDS Bundle Transaction Creation Profile](fr-FR/StructureDefinition-cds-bundle-transaction-creation.md)
-* [CDS Bundle Transaction MAJ Profile](fr-FR/StructureDefinition-cds-bundle-transaction-maj.md)
-* [CDS Fr RelatedPerson Profile](fr-FR/StructureDefinition-cds-fr-related-person.md)
-* [CDS CareTeam Profile](fr-FR/StructureDefinition-cds-ihe-careteam.md)
-* [CDS Organization Profile](fr-FR/StructureDefinition-cds-organization.md)
+* [CDS Bundle Response Recherche Profile](fr/StructureDefinition-cds-bundle-response-recherche.md)
+* [CDS Bundle Transaction Creation Profile](fr/StructureDefinition-cds-bundle-transaction-creation.md)
+* [CDS Bundle Transaction MAJ Profile](fr/StructureDefinition-cds-bundle-transaction-maj.md)
+* [CDS Fr RelatedPerson Profile](fr/StructureDefinition-cds-fr-related-person.md)
+* [CDS CareTeam Profile](fr/StructureDefinition-cds-ihe-careteam.md)
+* [CDS Organization Profile](fr/StructureDefinition-cds-organization.md)
 
 ### CapabilityStatements
 
-* [CI-SIS Gestion du Cercle de Soins - Consommateur](fr-FR/CapabilityStatement-CDSConsommateur.md)
-* [CI-SIS Gestion du Cercle de Soins - CreateurRestful](fr-FR/CapabilityStatement-CDSCreateurRestful.md)
-* [CI-SIS Gestion du Cercle de Soins - CreateurTransaction](fr-FR/CapabilityStatement-CDSCreateurTransaction.md)
-* [CI-SIS Gestion du Cercle de Soins - Gestionnaire](fr-FR/CapabilityStatement-CDSGestionnaire.md)
+* [CI-SIS Gestion du Cercle de Soins - Consommateur](fr/CapabilityStatement-CDSConsommateur.md)
+* [CI-SIS Gestion du Cercle de Soins - CreateurRestful](fr/CapabilityStatement-CDSCreateurRestful.md)
+* [CI-SIS Gestion du Cercle de Soins - CreateurTransaction](fr/CapabilityStatement-CDSCreateurTransaction.md)
+* [CI-SIS Gestion du Cercle de Soins - Gestionnaire](fr/CapabilityStatement-CDSGestionnaire.md)
 
 ### ImplementationGuides
 
-* [Cercle De Soins](fr-FR/ImplementationGuide-ans.fhir.fr.cds.md)
+* [Cercle De Soins](fr/ImplementationGuide-ans.fhir.fr.cds.md)
 
 ### SearchParameters
 
-* [CDSCareTeamEnd](fr-FR/SearchParameter-cds-careteam-end.md)
-* [CDSCareTeamManagingOrganization](fr-FR/SearchParameter-cds-careteam-managing-organization.md)
-* [CDSCareTeamParticipantEnd](fr-FR/SearchParameter-cds-careteam-participant-end.md)
-* [CDSCareTeamParticipantStart](fr-FR/SearchParameter-cds-careteam-participant-start.md)
-* [CDSCareTeamStart](fr-FR/SearchParameter-cds-careteam-start.md)
-* [CDSPatientBirthplace](fr-FR/SearchParameter-cds-patient-birthplace.md)
+* [CDSCareTeamEnd](fr/SearchParameter-cds-careteam-end.md)
+* [CDSCareTeamManagingOrganization](fr/SearchParameter-cds-careteam-managing-organization.md)
+* [CDSCareTeamParticipantEnd](fr/SearchParameter-cds-careteam-participant-end.md)
+* [CDSCareTeamParticipantStart](fr/SearchParameter-cds-careteam-participant-start.md)
+* [CDSCareTeamStart](fr/SearchParameter-cds-careteam-start.md)
+* [CDSPatientBirthplace](fr/SearchParameter-cds-patient-birthplace.md)
 
 ### Examples
 
-* [cds-bundle-transaction-creation-example (Bundle)](fr-FR/Bundle-cds-bundle-transaction-creation-example.md)
-* [Cercle de soins de Mr Jacques Thobois (CareTeam)](fr-FR/CareTeam-cds-careteam-example.md)
-* [Cabinet médical CC CC (Organization)](fr-FR/Organization-cds-organization-example.md)
-* [cds-patient-example (Patient)](fr-FR/Patient-cds-patient-example.md)
-* [cds-relatedperson-example (RelatedPerson)](fr-FR/RelatedPerson-cds-relatedperson-example.md)
+* [cds-bundle-transaction-creation-example (Bundle)](fr/Bundle-cds-bundle-transaction-creation-example.md)
+* [Cercle de soins de Mr Jacques Thobois (CareTeam)](fr/CareTeam-cds-careteam-example.md)
+* [Cabinet médical CC CC (Organization)](fr/Organization-cds-organization-example.md)
+* [cds-patient-example (Patient)](fr/Patient-cds-patient-example.md)
+* [cds-relatedperson-example (RelatedPerson)](fr/RelatedPerson-cds-relatedperson-example.md)
