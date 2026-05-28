@@ -6,7 +6,7 @@ Usage: #definition
 * status = #active
 * date = "2023-07-14"
 * experimental = false
-* description = "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne"
+* description = "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle de soins d'une personne"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #json
