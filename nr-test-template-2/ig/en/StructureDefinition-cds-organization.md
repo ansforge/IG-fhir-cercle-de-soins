@@ -61,7 +61,7 @@ Other representations of profile: [CSV](../StructureDefinition-cds-organization.
     }]
   },
   "status" : "active",
-  "date" : "2026-05-28T08:17:26+00:00",
+  "date" : "2026-05-28T08:25:32+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
