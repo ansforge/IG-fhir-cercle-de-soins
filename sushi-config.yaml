@@ -5,7 +5,7 @@ canonical: https://interop.esante.gouv.fr/ig/fhir/cds
 name: CDS
 title: Cercle De Soins
 publisher:
-  name: ANS
+  name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
   url: https://esante.gouv.fr
 status: active
 version: 2.0.1 # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
@@ -13,6 +13,7 @@ fhirVersion: 4.0.1
 copyrightYear: 2020+
 # releaseLabel: trial-use
 releaseLabel: final-text
+
 jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
@@ -23,6 +24,7 @@ dependencies:
 
 parameters:
     shownav: 'true'
+    path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
     pin-canonicals: pin-all
     i18n-default-lang: fr # Default language
     apply-jurisdiction: true
