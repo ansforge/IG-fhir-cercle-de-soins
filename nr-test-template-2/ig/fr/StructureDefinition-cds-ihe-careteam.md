@@ -128,7 +128,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-ihe-caretea
     }]
   },
   "status" : "active",
-  "date" : "2026-05-28T13:58:36+00:00",
+  "date" : "2026-05-28T14:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -220,7 +220,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-cds-ihe-caretea
     {
       "id" : "CareTeam.status",
       "path" : "CareTeam.status",
-      "short" : "Statut du cercle de soins.\n valeurs autorisées : proposed | active | suspended | inactive | entered-in-error",
+      "short" : "Statut du cercle de soins. valeurs autorisées : proposed | active | suspended | inactive | entered-in-error",
       "min" : 1
     },
     {
