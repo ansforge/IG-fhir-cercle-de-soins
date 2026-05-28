@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "CDS"] ; # 
   fhir:title [ fhir:v "Cercle De Soins"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-28T13:37:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-28T13:48:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1997,7 +1997,7 @@
          fhir:reference [ fhir:v "CapabilityStatement/CDSCreateurRestful" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - CreateurRestful" ] ;
-       fhir:description [ fhir:v "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne" ] ;
+       fhir:description [ fhir:v "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle de soins d'une personne" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2018,7 +2018,7 @@
          fhir:reference [ fhir:v "CapabilityStatement/CDSCreateurTransaction" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - CreateurTransaction" ] ;
-       fhir:description [ fhir:v "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne" ] ;
+       fhir:description [ fhir:v "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle de soins d'une personne" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2039,7 +2039,7 @@
          fhir:reference [ fhir:v "CapabilityStatement/CDSGestionnaire" ]
        ] ;
        fhir:name [ fhir:v "CI-SIS Gestion du Cercle de Soins - Gestionnaire" ] ;
-       fhir:description [ fhir:v "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation." ] ;
+       fhir:description [ fhir:v "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,donne accès aux informations en cas de consultation." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

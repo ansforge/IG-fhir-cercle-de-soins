@@ -54,7 +54,7 @@ Le rôle de créateur incarné par un système peut créer ou mettre à jour le 
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
+  "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle de soins d'une personne",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

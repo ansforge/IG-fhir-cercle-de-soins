@@ -3,7 +3,7 @@
 ## CapabilityStatement: CI-SIS Gestion du Cercle de Soins - Gestionnaire 
 
  
-Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins, donne accès aux informations en cas de consultation. 
+Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,donne accès aux informations en cas de consultation. 
 
  [Raw OpenAPI-Swagger Definition file](../CDSGestionnaire.openapi.json) | [Download](../CDSGestionnaire.openapi.json) 
 
@@ -54,7 +54,7 @@ Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de 
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
+  "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,donne accès aux informations en cas de consultation.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

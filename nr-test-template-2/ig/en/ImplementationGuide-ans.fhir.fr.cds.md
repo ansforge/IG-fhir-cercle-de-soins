@@ -14,7 +14,7 @@
   "name" : "CDS",
   "title" : "Cercle De Soins",
   "status" : "active",
-  "date" : "2026-05-28T13:37:46+00:00",
+  "date" : "2026-05-28T13:48:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -980,7 +980,7 @@
         "reference" : "CapabilityStatement/CDSCreateurRestful"
       },
       "name" : "CI-SIS Gestion du Cercle de Soins - CreateurRestful",
-      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
+      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle de soins d'une personne",
       "exampleBoolean" : false
     },
     {
@@ -992,7 +992,7 @@
         "reference" : "CapabilityStatement/CDSCreateurTransaction"
       },
       "name" : "CI-SIS Gestion du Cercle de Soins - CreateurTransaction",
-      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
+      "description" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle de soins d'une personne",
       "exampleBoolean" : false
     },
     {
@@ -1004,7 +1004,7 @@
         "reference" : "CapabilityStatement/CDSGestionnaire"
       },
       "name" : "CI-SIS Gestion du Cercle de Soins - Gestionnaire",
-      "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
+      "description" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,donne accès aux informations en cas de consultation.",
       "exampleBoolean" : false
     },
     {
