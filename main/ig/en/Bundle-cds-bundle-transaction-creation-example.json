@@ -1,0 +1,219 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "cds-bundle-transaction-creation-example",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"]
+  },
+  "language" : "en",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a",
+    "resource" : {
+      "resourceType" : "CareTeam",
+      "id" : "cds-careteam-example",
+      "meta" : {
+        "lastUpdated" : "2023-09-27T13:48:19.342+01:00",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "system" : "http://fake-identifier.fr",
+        "value" : "1"
+      }],
+      "status" : "active",
+      "name" : "",
+      "subject" : {
+        "reference" : "Patient/cds-patient-example"
+      },
+      "period" : {
+        "start" : "2013-01-12"
+      },
+      "participant" : [{
+        "member" : {
+          "reference" : "RelatedPerson/cds-relatedperson-example"
+        },
+        "period" : {
+          "start" : "2013-01-12"
+        }
+      },
+      {
+        "member" : {
+          "reference" : "Organization/cds-organization-example"
+        },
+        "period" : {
+          "start" : "2013-01-12",
+          "end" : "2032-12-18T13:48:19.342+01:00"
+        }
+      }],
+      "managingOrganization" : [{
+        "reference" : "Organization/cds-organization-example"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "CareTeam"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0b",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "cds-organization-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "active" : true,
+      "type" : [{
+        "extension" : [{
+          "url" : "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types",
+          "valueCode" : "organizationType"
+        }],
+        "coding" : [{
+          "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
+          "code" : "MEDICAL",
+          "display" : "Médical"
+        }]
+      }],
+      "name" : "",
+      "alias" : [""],
+      "address" : [{
+        "line" : ["12 rue du paris"],
+        "city" : "Rennes",
+        "postalCode" : "35000",
+        "country" : "99100"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Organization"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "cds-patient-example",
+      "meta" : {
+        "lastUpdated" : "2023-09-27T13:48:19.342+01:00",
+        "profile" : ["https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "extension" : [{
+        "extension" : [{
+          "url" : "identityStatus",
+          "valueCoding" : {
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445",
+            "code" : "VALI"
+          }
+        }],
+        "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code",
+            "valueCoding" : {
+              "system" : "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune",
+              "code" : "29064"
+            }
+          }],
+          "city" : "GOULVEN"
+        }
+      }],
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203",
+            "code" : "INS-NIR"
+          }]
+        },
+        "system" : "urn:oid:1.2.250.1.213.1.4.8",
+        "value" : "123456789012244"
+      }],
+      "name" : [{
+        "extension" : [{
+          "url" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name",
+          "valueString" : "Jacques"
+        }],
+        "use" : "official",
+        "family" : "Thobois",
+        "given" : ["Jacques"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1984-10-02"
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "Patient"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0d",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "cds-relatedperson-example",
+      "meta" : {
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "generated"
+      },
+      "identifier" : [{
+        "use" : "temp",
+        "system" : "https://fake-system",
+        "value" : "id-relatedPerson-12"
+      }],
+      "active" : true,
+      "patient" : {
+        "reference" : "Patient/cds-patient-example"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code" : "ECON",
+          "display" : "Entité à contacter en cas d'urgence"
+        }]
+      },
+      {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+          "code" : "NBOR",
+          "display" : "Voisin(e)"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Lamine",
+        "given" : ["CHIBOUT"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "0602143212"
+      }],
+      "gender" : "male",
+      "address" : [{
+        "line" : ["12 Rue de la Paix"],
+        "city" : "Paris",
+        "postalCode" : "75004",
+        "country" : "FRA"
+      }]
+    },
+    "request" : {
+      "method" : "POST",
+      "url" : "RelatedPerson"
+    }
+  }]
+}
