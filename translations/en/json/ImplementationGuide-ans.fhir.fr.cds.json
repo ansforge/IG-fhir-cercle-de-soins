@@ -1,0 +1,341 @@
+{
+  "id" : "ImplementationGuide-ans.fhir.fr.cds",
+  "baseLang" : "fr",
+  "languages" : [
+    {
+      "targetLang" : "en",
+      "entries" : [
+        {
+          "id" : "ImplementationGuide.name",
+          "context" : "A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+          "source" : "CDS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.title",
+          "context" : "A short, descriptive, user-friendly title for the implementation guide.",
+          "source" : "Cercle De Soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.publisher",
+          "context" : "The name of the organization or individual that published the implementation guide.",
+          "source" : "ANS",
+          "target" : null
+        },
+        {
+          "id" : "ContactDetail.name",
+          "context" : "The name of an individual to contact.",
+          "source" : "ANS",
+          "target" : null
+        },
+        {
+          "id" : "Coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "France (la)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CDS Bundle Response Recherche Profile",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CDS Bundle Transaction Creation Profile",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CDS Bundle Transaction MAJ Profile",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.\nIl s'agit d'un bundle de type \"transaction\" permettant d'organiser le contenu du flux de création d'un cercle de soins.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CDS CareTeam Profile",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam ».",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CDS Fr RelatedPerson Profile",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…).",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CDS Organization Profile",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-bundle-transaction-creation-example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-careteam-end",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Recherche sur la date de fin du cercle de soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-careteam-example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-careteam-managing-organization",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Organisation responsable du Cercle De Soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-careteam-participant-end",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Date de sortie d’un membre du cercle de soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-careteam-participant-start",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Date d’entrée d’un membre du cercle de soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-careteam-start",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Recherche sur la date de création du cercle de soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-organization-example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-patient-birthplace",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Lieu de naissance du patient",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-patient-example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "cds-relatedperson-example",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CI-SIS Gestion du Cercle de Soins - Consommateur",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CI-SIS Gestion du Cercle de Soins - CreateurRestful",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle\nde soins d'une personne",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CI-SIS Gestion du Cercle de Soins - CreateurTransaction",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "CI-SIS Gestion du Cercle de Soins - Gestionnaire",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Roles des participants dans un cercle de soins",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Roles des participants dans un cercle de soins.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Table of Contents",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Accueil",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Volume 1 - Etude fonctionnelle",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Specifications Techniques",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Interactions RESTful",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Interactions transaction",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Recherche CDS",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Correspondances métier",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Autres Ressources",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Téléchargements et usages",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Informations sur la traduction",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.definition.page.title",
+          "context" : "A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.",
+          "source" : "Historique",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

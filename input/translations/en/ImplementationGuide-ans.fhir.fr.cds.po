@@ -1,0 +1,275 @@
+
+# A natural language name identifying the implementation guide. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: ImplementationGuide.name
+msgid "CDS"
+msgstr ""
+
+# A short, descriptive, user-friendly title for the implementation guide.
+#: ImplementationGuide.title
+msgid "Cercle De Soins"
+msgstr ""
+
+# The name of the organization or individual that published the implementation guide.
+#: ImplementationGuide.publisher
+msgid "ANS"
+msgstr ""
+
+# The name of an individual to contact.
+#: ContactDetail.name
+msgid "ANS"
+msgstr ""
+
+# A representation of the meaning of the code in the system, following the rules of the system.
+#: Coding.display
+msgid "France (la)"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CDS Bundle Response Recherche Profile"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Profil « Bundle » de type « searchset » encapsulant une collection de 0, une ou plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CDS Bundle Transaction Creation Profile"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour créer un cercle de soins selon l’option Transaction.
+Il s'agit d'un bundle de type `transaction` permettant d'organiser le contenu du flux de création d'un cercle de soins."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CDS Bundle Transaction MAJ Profile"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Profil défini dans le volet de Gestion du Cercle de Soins (flux 1c) pour mettre à jour un cercle de soins selon l’option Transaction.
+Il s'agit d'un bundle de type \"transaction\" permettant d'organiser le contenu du flux de création d'un cercle de soins."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CDS CareTeam Profile"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Profil héritant du profil défini dans DCTM et défini pour le volet Gestion du Cercle de Soins. Le concept métier « cercle de soins » correspond à la ressource FHIR « CareTeam »."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CDS Fr RelatedPerson Profile"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Profil créé pour le volet Gestion du Cercle de Soins afin de décrire les contacts du sujet du cercle de soins (aidant, personne de confiance…)."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CDS Organization Profile"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Profil organization adapté au cercle de soins. Ce profil peut modéliser une entité juridique (EJ), une entité géographique (EG) ou une organisation interne (OI)"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-bundle-transaction-creation-example"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-careteam-end"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Recherche sur la date de fin du cercle de soins"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-careteam-example"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-careteam-managing-organization"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Organisation responsable du Cercle De Soins"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-careteam-participant-end"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Date de sortie d’un membre du cercle de soins"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-careteam-participant-start"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Date d’entrée d’un membre du cercle de soins"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-careteam-start"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Recherche sur la date de création du cercle de soins"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-organization-example"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-patient-birthplace"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Lieu de naissance du patient"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-patient-example"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "cds-relatedperson-example"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CI-SIS Gestion du Cercle de Soins - Consommateur"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Le rôle de consommateur incarné par un système, peut consulter un cercle de soins.  Exemples  de  consommateur  :  un  dossier  patient  informatisé,  un  système  de  gestion  de  laboratoire,  un  système  d’information  radiologique,  un  logiciel  de  gestion de cabinet, un service numérique d’appui à la coordination."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CI-SIS Gestion du Cercle de Soins - CreateurRestful"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Le rôle de créateur incarné par un système peut créer ou mettre à jour le cercle
+de soins d'une personne"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CI-SIS Gestion du Cercle de Soins - CreateurTransaction"
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "CI-SIS Gestion du Cercle de Soins - Gestionnaire"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,
+donne accès aux informations en cas de consultation."
+msgstr ""
+
+# A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+#: ImplementationGuide.definition.resource.name
+msgid "Roles des participants dans un cercle de soins"
+msgstr ""
+
+# A description of the reason that a resource has been included in the implementation guide.
+#: ImplementationGuide.definition.resource.description
+msgid "Roles des participants dans un cercle de soins."
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Table of Contents"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Accueil"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Volume 1 - Etude fonctionnelle"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Specifications Techniques"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Interactions RESTful"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Interactions transaction"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Recherche CDS"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Correspondances métier"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Autres Ressources"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Téléchargements et usages"
+msgstr ""
+
+# A short title used to represent this page in navigational structures such as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Historique"
+msgstr ""
+

@@ -6,7 +6,7 @@ Usage: #definition
 * status = #active
 * date = "2023-07-14"
 * experimental = false
-* description = "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,\ndonne accès aux informations en cas de consultation."
+* description = "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,donne accès aux informations en cas de consultation."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #json

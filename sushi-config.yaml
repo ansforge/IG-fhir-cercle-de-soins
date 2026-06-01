@@ -5,7 +5,7 @@ canonical: https://interop.esante.gouv.fr/ig/fhir/cds
 name: CDS
 title: Cercle De Soins
 publisher:
-  name: ANS
+  name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
   url: https://esante.gouv.fr
 status: active
 version: 2.0.1 # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
@@ -13,16 +13,25 @@ fhirVersion: 4.0.1
 copyrightYear: 2020+
 # releaseLabel: trial-use
 releaseLabel: final-text
-jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
+
+jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
   ans.fhir.fr.annuaire: 1.1.0
   hl7.fhir.fr.core: 2.1.0
   ans.fr.terminologies: latest
+  hl7.fhir.uv.extensions.r4: 5.2.0
 
 parameters:
     shownav: 'true'
+    path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
     pin-canonicals: pin-all
+    i18n-default-lang: fr # Default language
+    apply-jurisdiction: true
+    i18n-lang:
+      - en
+    translation-sources:
+      - input/translations/en
 
 
 
@@ -44,14 +53,15 @@ pages:
         title: Autres Ressources
         downloads.md:
             title: Téléchargements et usages
+        translationinfo.md:
+            title: Informations sur la traduction
     changes.md:
         title: Historique
 
-
 menu:
     Accueil: index.html
-    Volume 1 - Etude fonctionnelle: specifications_fonctionnelles.html
-    Volume 2 - Détail des transactions:
+    Vol 1 - Etude fonctionnelle: specifications_fonctionnelles.html
+    Vol 2 - Détail des transactions:
         Interactions RESTful: interaction_restful.html
         Interactions transaction: interaction_transaction.html
         Recherche CDS: recherche_recuperation_cds.html
