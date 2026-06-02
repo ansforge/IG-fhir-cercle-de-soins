@@ -7,10 +7,12 @@ import re
 import sys
 import argparse
 import httpx
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ALBERT_API_URL = "https://albert.api.etalab.gouv.fr/v1/chat/completions"
 DEFAULT_MODEL = "mistralai/Mistral-Small-3.2-24B-Instruct-2506"
+DEFAULT_WORKERS = 5
 
 SYSTEM_PROMPT = """You are a medical/technical translator specializing in French healthcare interoperability documentation (FHIR Implementation Guides).
 
@@ -26,19 +28,16 @@ Strict rules:
 
 
 def parse_po_entries(content):
-    """Parse a .po file and return a list of (msgid, msgstr, full_block) tuples."""
     entries = []
     pattern = re.compile(
         r'((?:#[^\n]*\n)*)msgid\s+"((?:[^"\\]|\\.)*)"\nmsgstr\s+"((?:[^"\\]|\\.)*)"',
         re.MULTILINE,
     )
     for m in pattern.finditer(content):
-        comment = m.group(1)
         msgid = m.group(2).replace("\\n", "\n")
         msgstr = m.group(3).replace("\\n", "\n")
         entries.append(
             {
-                "comment": comment,
                 "msgid": msgid,
                 "msgstr": msgstr,
                 "span": (m.start(), m.end()),
@@ -49,7 +48,6 @@ def parse_po_entries(content):
 
 
 def translate_batch(msgids, token, model):
-    """Translate a list of strings in one API call. Returns a list of translated strings."""
     payload = json.dumps(msgids, ensure_ascii=False)
     response = httpx.post(
         ALBERT_API_URL,
@@ -67,13 +65,13 @@ def translate_batch(msgids, token, model):
     )
     response.raise_for_status()
     raw = response.json()["choices"][0]["message"]["content"].strip()
-    # Strip markdown code block if present
     raw = re.sub(r"^```(?:json)?\s*", "", raw)
     raw = re.sub(r"\s*```$", "", raw)
     return json.loads(raw)
 
 
 def translate_po_file(source_path, target_path, token, model, force):
+    """Translate one .po file. Returns number of entries translated."""
     content = source_path.read_text(encoding="utf-8")
     entries = parse_po_entries(content)
 
@@ -81,7 +79,6 @@ def translate_po_file(source_path, target_path, token, model, force):
     if not to_translate:
         return 0
 
-    # Batch: skip empty msgids (just spaces / identifiers not worth translating)
     msgids = [e["msgid"] for e in to_translate]
     translations = translate_batch(msgids, token, model)
 
@@ -90,7 +87,6 @@ def translate_po_file(source_path, target_path, token, model, force):
             f"Expected {len(to_translate)} translations, got {len(translations)}"
         )
 
-    # Rebuild content by replacing msgstr values
     result = content
     offset = 0
     for entry, translated in zip(to_translate, translations):
@@ -136,6 +132,12 @@ def main():
         action="store_true",
         help="Retranslate entries even if msgstr is already filled",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=DEFAULT_WORKERS,
+        help=f"Number of parallel API calls (default: {DEFAULT_WORKERS})",
+    )
     args = parser.parse_args()
 
     token = os.environ.get("ALBERT_API_KEY")
@@ -155,29 +157,44 @@ def main():
         print(f"No .po files found in {source_dir}")
         return
 
+    print(f"Processing {len(po_files)} file(s) with {args.workers} workers...")
+
     translated_total = 0
     skipped_count = 0
+    errors = []
 
-    for source_file in po_files:
-        target_file = target_dir / source_file.name
-        print(f"Processing {source_file.name}...", end=" ", flush=True)
-        try:
-            count = translate_po_file(source_file, target_file, token, args.model, args.force)
-            if count == 0:
-                print("skipped (already translated)")
-                skipped_count += 1
-            else:
-                print(f"OK ({count} entries translated)")
-                translated_total += count
-        except httpx.HTTPStatusError as e:
-            print(f"FAILED (HTTP {e.response.status_code})", file=sys.stderr)
-            print(e.response.text, file=sys.stderr)
-            sys.exit(1)
-        except Exception as e:
-            print(f"FAILED: {e}", file=sys.stderr)
-            sys.exit(1)
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        futures = {
+            executor.submit(
+                translate_po_file,
+                f,
+                target_dir / f.name,
+                token,
+                args.model,
+                args.force,
+            ): f
+            for f in po_files
+        }
+        for future in as_completed(futures):
+            name = futures[future].name
+            try:
+                count = future.result()
+                if count == 0:
+                    print(f"  - {name} (already translated)")
+                    skipped_count += 1
+                else:
+                    print(f"  ✓ {name} ({count} entries)")
+                    translated_total += count
+            except httpx.HTTPStatusError as e:
+                print(f"  ✗ {name} (HTTP {e.response.status_code})", file=sys.stderr)
+                errors.append((name, str(e)))
+            except Exception as e:
+                print(f"  ✗ {name}: {e}", file=sys.stderr)
+                errors.append((name, str(e)))
 
-    print(f"\nDone: {translated_total} entries translated across {len(po_files) - skipped_count} file(s), {skipped_count} skipped.")
+    print(f"\nDone: {translated_total} entries translated, {skipped_count} file(s) skipped, {len(errors)} failed.")
+    if errors:
+        sys.exit(1)
 
 
 if __name__ == "__main__":

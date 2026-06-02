@@ -5,10 +5,12 @@ import os
 import sys
 import argparse
 import httpx
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 ALBERT_API_URL = "https://albert.api.etalab.gouv.fr/v1/chat/completions"
 DEFAULT_MODEL = "mistralai/Mistral-Small-3.2-24B-Instruct-2506"
+DEFAULT_WORKERS = 5
 
 SYSTEM_PROMPT = """You are a medical/technical translator specializing in French healthcare interoperability documentation (FHIR Implementation Guides).
 
@@ -48,6 +50,22 @@ def translate_content(content: str, token: str, model: str) -> str:
     return response.json()["choices"][0]["message"]["content"]
 
 
+def process_file(source_file, target_dir, token, model, force):
+    """Translate one file. Returns (filename, status, error_or_none)."""
+    target_file = target_dir / source_file.name
+    content = source_file.read_text(encoding="utf-8")
+
+    if not content.strip():
+        return (source_file.name, "skipped_empty", None)
+
+    if target_file.exists() and not force:
+        return (source_file.name, "skipped_exists", None)
+
+    translated = translate_content(content, token, model)
+    target_file.write_text(translated, encoding="utf-8")
+    return (source_file.name, "translated", None)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Translate IG pagecontent from French to English with Albert API"
@@ -72,6 +90,12 @@ def main():
         action="store_true",
         help="Retranslate files even if a translation already exists",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=DEFAULT_WORKERS,
+        help=f"Number of parallel API calls (default: {DEFAULT_WORKERS})",
+    )
     args = parser.parse_args()
 
     token = os.environ.get("ALBERT_API_KEY")
@@ -93,38 +117,41 @@ def main():
         print(f"No .md files found in {source_dir}")
         return
 
+    print(f"Processing {len(md_files)} file(s) with {args.workers} workers...")
+
     translated_count = 0
     skipped_count = 0
+    errors = []
 
-    for source_file in md_files:
-        target_file = target_dir / source_file.name
-        content = source_file.read_text(encoding="utf-8")
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        futures = {
+            executor.submit(process_file, f, target_dir, token, args.model, args.force): f
+            for f in md_files
+        }
+        for future in as_completed(futures):
+            try:
+                name, status, _ = future.result()
+                if status == "translated":
+                    print(f"  ✓ {name}")
+                    translated_count += 1
+                elif status == "skipped_empty":
+                    print(f"  - {name} (empty)")
+                    skipped_count += 1
+                else:
+                    print(f"  - {name} (already translated)")
+                    skipped_count += 1
+            except httpx.HTTPStatusError as e:
+                name = futures[future].name
+                print(f"  ✗ {name} (HTTP {e.response.status_code})", file=sys.stderr)
+                errors.append((name, str(e)))
+            except Exception as e:
+                name = futures[future].name
+                print(f"  ✗ {name}: {e}", file=sys.stderr)
+                errors.append((name, str(e)))
 
-        if not content.strip():
-            print(f"Skipping {source_file.name} (empty file)")
-            skipped_count += 1
-            continue
-
-        if target_file.exists() and not args.force:
-            print(f"Skipping {source_file.name} (translation exists — use --force to retranslate)")
-            skipped_count += 1
-            continue
-
-        print(f"Translating {source_file.name}...", end=" ", flush=True)
-        try:
-            translated = translate_content(content, token, args.model)
-            target_file.write_text(translated, encoding="utf-8")
-            print("OK")
-            translated_count += 1
-        except httpx.HTTPStatusError as e:
-            print(f"FAILED (HTTP {e.response.status_code})", file=sys.stderr)
-            print(e.response.text, file=sys.stderr)
-            sys.exit(1)
-        except Exception as e:
-            print(f"FAILED: {e}", file=sys.stderr)
-            sys.exit(1)
-
-    print(f"\nDone: {translated_count} translated, {skipped_count} skipped.")
+    print(f"\nDone: {translated_count} translated, {skipped_count} skipped, {len(errors)} failed.")
+    if errors:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
