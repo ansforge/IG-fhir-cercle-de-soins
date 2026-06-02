@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="8f53dc63-cbfd-4c7b-afbd-5d11fc587836"/>
+  <meta>
+    <lastUpdated value="2026-06-02T15:26:57.731+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion effectuée en interne basée sur :</p>
+              <ul>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R259-HL7ParticipationFunction.html">codesystem TRE_R259_HL7ParticipationFunction v20231215120000 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|20231215120000" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html">codesystem TRE_R260_HL7RoleClass v20240426120000 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20240426120000" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>Ce jeu de valeur (ValueSet) contient 11 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>
+                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
+                  </b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction-PCP"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R259-HL7ParticipationFunction.html#TRE-R259-HL7ParticipationFunction-PCP">PCP</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot;, &quot;version&quot;: &quot;20231215120000&quot;, &quot;code&quot;: &quot;PCP&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot;&gt;&lt;version value=&quot;20231215120000&quot;&gt;&lt;code value=&quot;PCP&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-ECON"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-ECON">ECON</a>
+                </td>
+                <td>personne à prévenir en cas d'urgence</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;ECON&quot;, &quot;display&quot;: &quot;personne à prévenir en cas d'urgence&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;ECON&quot;&gt;&lt;display value=&quot;personne à prévenir en cas d'urgence&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-GUARD"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-GUARD">GUARD</a>
+                </td>
+                <td>Responsable légal</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;GUARD&quot;, &quot;display&quot;: &quot;Responsable légal&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;GUARD&quot;&gt;&lt;display value=&quot;Responsable légal&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-QUAL"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-QUAL">QUAL</a>
+                </td>
+                <td>Personne de confiance</td>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;QUAL&quot;, &quot;display&quot;: &quot;Personne de confiance&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;QUAL&quot;&gt;&lt;display value=&quot;Personne de confiance&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-POLHOLD"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-POLHOLD">POLHOLD</a>
+                </td>
+                <td>Assuré ouvrant droit</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;POLHOLD&quot;, &quot;display&quot;: &quot;Assuré ouvrant droit&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;POLHOLD&quot;&gt;&lt;display value=&quot;Assuré ouvrant droit&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-CON"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CON">CON</a>
+                </td>
+                <td>Informateur</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;CON&quot;, &quot;display&quot;: &quot;Informateur&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;CON&quot;&gt;&lt;display value=&quot;Informateur&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-CAREGIVER"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CAREGIVER">CAREGIVER</a>
+                </td>
+                <td>Aidant</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;CAREGIVER&quot;, &quot;display&quot;: &quot;Aidant&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;CAREGIVER&quot;&gt;&lt;display value=&quot;Aidant&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-PAT"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PAT">PAT</a>
+                </td>
+                <td>aidé</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;PAT&quot;, &quot;display&quot;: &quot;aidé&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;PAT&quot;&gt;&lt;display value=&quot;aidé&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-PROV"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PROV">PROV</a>
+                </td>
+                <td>Professionnel de santé</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;PROV&quot;, &quot;display&quot;: &quot;Professionnel de santé&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;PROV&quot;&gt;&lt;display value=&quot;Professionnel de santé&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-AGNT"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-AGNT">AGNT</a>
+                </td>
+                <td>Professionnel caractérisé par son rôle</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;AGNT&quot;, &quot;display&quot;: &quot;Professionnel caractérisé par son rôle&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;AGNT&quot;&gt;&lt;display value=&quot;Professionnel caractérisé par son rôle&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-NOK"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-NOK">NOK</a>
+                </td>
+                <td>personne de confiance</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;NOK&quot;, &quot;display&quot;: &quot;personne de confiance&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;NOK&quot;&gt;&lt;display value=&quot;personne de confiance&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+        <version value="2.0.1"/>
+        <name value="CareTeamRolesValueSet">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </name>
+        <title value="Roles des participants dans un cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </title>
+        <status value="active"/>
+        <date value="2026-06-02T15:26:57+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France (la)"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d68fbc82-4e3a-4be0-bb83-c6f84ddc8d47"/>
+          <timestamp value="2026-06-02T15:29:51+00:00"/>
+          <total value="11"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|20231215120000"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20240426120000"/>
+          </parameter>
+          <property>
+            <code value="status"/>
+            <uri value="http://hl7.org/fhir/concept-properties#status"/>
+          </property>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
+            <code value="PCP"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="ECON"/>
+            <display value="personne à prévenir en cas d'urgence"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="GUARD"/>
+            <display value="Responsable légal"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="QUAL"/>
+            <display value="Personne de confiance"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="POLHOLD"/>
+            <display value="Assuré ouvrant droit"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CON"/>
+            <display value="Informateur"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CAREGIVER"/>
+            <display value="Aidant"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PAT"/>
+            <display value="aidé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="AGNT"/>
+            <display value="Professionnel caractérisé par son rôle"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="NOK"/>
+            <display value="personne de confiance"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion effectuée en interne basée sur :</p>
+              <ul>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R259-HL7ParticipationFunction.html">codesystem TRE_R259_HL7ParticipationFunction v20231215120000 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|20231215120000" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html">codesystem TRE_R260_HL7RoleClass v20240426120000 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20240426120000" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>Ce jeu de valeur (ValueSet) contient 11 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>
+                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
+                  </b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction-PCP"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R259-HL7ParticipationFunction.html#TRE-R259-HL7ParticipationFunction-PCP">PCP</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot;, &quot;version&quot;: &quot;20231215120000&quot;, &quot;code&quot;: &quot;PCP&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot;&gt;&lt;version value=&quot;20231215120000&quot;&gt;&lt;code value=&quot;PCP&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-ECON"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-ECON">ECON</a>
+                </td>
+                <td>personne à prévenir en cas d'urgence</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;ECON&quot;, &quot;display&quot;: &quot;personne à prévenir en cas d'urgence&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;ECON&quot;&gt;&lt;display value=&quot;personne à prévenir en cas d'urgence&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-GUARD"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-GUARD">GUARD</a>
+                </td>
+                <td>Responsable légal</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;GUARD&quot;, &quot;display&quot;: &quot;Responsable légal&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;GUARD&quot;&gt;&lt;display value=&quot;Responsable légal&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-QUAL"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-QUAL">QUAL</a>
+                </td>
+                <td>Personne de confiance</td>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;QUAL&quot;, &quot;display&quot;: &quot;Personne de confiance&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;QUAL&quot;&gt;&lt;display value=&quot;Personne de confiance&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-POLHOLD"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-POLHOLD">POLHOLD</a>
+                </td>
+                <td>Assuré ouvrant droit</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;POLHOLD&quot;, &quot;display&quot;: &quot;Assuré ouvrant droit&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;POLHOLD&quot;&gt;&lt;display value=&quot;Assuré ouvrant droit&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-CON"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CON">CON</a>
+                </td>
+                <td>Informateur</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;CON&quot;, &quot;display&quot;: &quot;Informateur&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;CON&quot;&gt;&lt;display value=&quot;Informateur&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-CAREGIVER"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CAREGIVER">CAREGIVER</a>
+                </td>
+                <td>Aidant</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;CAREGIVER&quot;, &quot;display&quot;: &quot;Aidant&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;CAREGIVER&quot;&gt;&lt;display value=&quot;Aidant&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-PAT"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PAT">PAT</a>
+                </td>
+                <td>aidé</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;PAT&quot;, &quot;display&quot;: &quot;aidé&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;PAT&quot;&gt;&lt;display value=&quot;aidé&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-PROV"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PROV">PROV</a>
+                </td>
+                <td>Professionnel de santé</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;PROV&quot;, &quot;display&quot;: &quot;Professionnel de santé&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;PROV&quot;&gt;&lt;display value=&quot;Professionnel de santé&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-AGNT"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-AGNT">AGNT</a>
+                </td>
+                <td>Professionnel caractérisé par son rôle</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;AGNT&quot;, &quot;display&quot;: &quot;Professionnel caractérisé par son rôle&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;AGNT&quot;&gt;&lt;display value=&quot;Professionnel caractérisé par son rôle&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-NOK"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-NOK">NOK</a>
+                </td>
+                <td>personne de confiance</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;NOK&quot;, &quot;display&quot;: &quot;personne de confiance&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;NOK&quot;&gt;&lt;display value=&quot;personne de confiance&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+        <version value="2.0.1"/>
+        <name value="CareTeamRolesValueSet">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </name>
+        <title value="Roles des participants dans un cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </title>
+        <status value="active"/>
+        <date value="2026-06-02T15:26:57+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France (la)"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d68fbc82-4e3a-4be0-bb83-c6f84ddc8d47"/>
+          <timestamp value="2026-06-02T15:29:51+00:00"/>
+          <total value="11"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|20231215120000"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20240426120000"/>
+          </parameter>
+          <property>
+            <code value="status"/>
+            <uri value="http://hl7.org/fhir/concept-properties#status"/>
+          </property>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
+            <code value="PCP"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="ECON"/>
+            <display value="personne à prévenir en cas d'urgence"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="GUARD"/>
+            <display value="Responsable légal"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="QUAL"/>
+            <display value="Personne de confiance"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="POLHOLD"/>
+            <display value="Assuré ouvrant droit"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CON"/>
+            <display value="Informateur"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CAREGIVER"/>
+            <display value="Aidant"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PAT"/>
+            <display value="aidé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="AGNT"/>
+            <display value="Professionnel caractérisé par son rôle"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="NOK"/>
+            <display value="personne de confiance"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R259-HL7ParticipationFunction.html">codesystem TRE_R259_HL7ParticipationFunction v20231215120000 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|20231215120000" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html">codesystem TRE_R260_HL7RoleClass v20240426120000 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20240426120000" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 11 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>
+                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
+                  </b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction-PCP"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R259-HL7ParticipationFunction.html#TRE-R259-HL7ParticipationFunction-PCP">PCP</a>
+                </td>
+                <td>Médecin traitant</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot;, &quot;version&quot;: &quot;20231215120000&quot;, &quot;code&quot;: &quot;PCP&quot;, &quot;display&quot;: &quot;Médecin traitant&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction&quot;&gt;&lt;version value=&quot;20231215120000&quot;&gt;&lt;code value=&quot;PCP&quot;&gt;&lt;display value=&quot;Médecin traitant&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-ECON"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-ECON">ECON</a>
+                </td>
+                <td>personne à prévenir en cas d'urgence</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;ECON&quot;, &quot;display&quot;: &quot;personne à prévenir en cas d'urgence&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;ECON&quot;&gt;&lt;display value=&quot;personne à prévenir en cas d'urgence&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-GUARD"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-GUARD">GUARD</a>
+                </td>
+                <td>Responsable légal</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;GUARD&quot;, &quot;display&quot;: &quot;Responsable légal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;GUARD&quot;&gt;&lt;display value=&quot;Responsable légal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-QUAL"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-QUAL">QUAL</a>
+                </td>
+                <td>Personne de confiance</td>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;QUAL&quot;, &quot;display&quot;: &quot;Personne de confiance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;QUAL&quot;&gt;&lt;display value=&quot;Personne de confiance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-POLHOLD"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-POLHOLD">POLHOLD</a>
+                </td>
+                <td>Assuré ouvrant droit</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;POLHOLD&quot;, &quot;display&quot;: &quot;Assuré ouvrant droit&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;POLHOLD&quot;&gt;&lt;display value=&quot;Assuré ouvrant droit&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-CON"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CON">CON</a>
+                </td>
+                <td>Informateur</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;CON&quot;, &quot;display&quot;: &quot;Informateur&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;CON&quot;&gt;&lt;display value=&quot;Informateur&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-CAREGIVER"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-CAREGIVER">CAREGIVER</a>
+                </td>
+                <td>Aidant</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;CAREGIVER&quot;, &quot;display&quot;: &quot;Aidant&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;CAREGIVER&quot;&gt;&lt;display value=&quot;Aidant&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-PAT"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PAT">PAT</a>
+                </td>
+                <td>aidé</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;PAT&quot;, &quot;display&quot;: &quot;aidé&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;PAT&quot;&gt;&lt;display value=&quot;aidé&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-PROV"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-PROV">PROV</a>
+                </td>
+                <td>Professionnel de santé</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;PROV&quot;, &quot;display&quot;: &quot;Professionnel de santé&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;PROV&quot;&gt;&lt;display value=&quot;Professionnel de santé&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-AGNT"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-AGNT">AGNT</a>
+                </td>
+                <td>Professionnel caractérisé par son rôle</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;AGNT&quot;, &quot;display&quot;: &quot;Professionnel caractérisé par son rôle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;AGNT&quot;&gt;&lt;display value=&quot;Professionnel caractérisé par son rôle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass-NOK"> </a>
+                  <code>https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-TRE-R260-HL7RoleClass.html#TRE-R260-HL7RoleClass-NOK">NOK</a>
+                </td>
+                <td>personne de confiance</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;, &quot;version&quot;: &quot;20240426120000&quot;, &quot;code&quot;: &quot;NOK&quot;, &quot;display&quot;: &quot;personne de confiance&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass&quot;&gt;&lt;version value=&quot;20240426120000&quot;&gt;&lt;code value=&quot;NOK&quot;&gt;&lt;display value=&quot;personne de confiance&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/cds/ValueSet/careteam-roles-vs"/>
+        <version value="2.0.1"/>
+        <name value="CareTeamRolesValueSet">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </name>
+        <title value="Roles des participants dans un cercle de soins">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="en"/>
+            </extension>
+            <extension url="content"/>
+          </extension>
+        </title>
+        <status value="active"/>
+        <date value="2026-06-02T15:26:57+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France (la)"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:687870cf-0d08-4810-936e-8d727e9fd736"/>
+          <timestamp value="2026-06-02T15:29:51+00:00"/>
+          <total value="11"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction|20231215120000"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass|20240426120000"/>
+          </parameter>
+          <property>
+            <code value="status"/>
+            <uri value="http://hl7.org/fhir/concept-properties#status"/>
+          </property>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R259-HL7ParticipationFunction/FHIR/TRE-R259-HL7ParticipationFunction"/>
+            <code value="PCP"/>
+            <display value="Médecin traitant"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="ECON"/>
+            <display value="personne à prévenir en cas d'urgence"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="GUARD"/>
+            <display value="Responsable légal"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="QUAL"/>
+            <display value="Personne de confiance"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="POLHOLD"/>
+            <display value="Assuré ouvrant droit"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CON"/>
+            <display value="Informateur"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="CAREGIVER"/>
+            <display value="Aidant"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PAT"/>
+            <display value="aidé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="PROV"/>
+            <display value="Professionnel de santé"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="AGNT"/>
+            <display value="Professionnel caractérisé par son rôle"/>
+          </contains>
+          <contains>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="NOK"/>
+            <display value="personne de confiance"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
