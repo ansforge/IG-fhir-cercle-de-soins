@@ -219,7 +219,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
 
-<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
+<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
 
 
 </p>
@@ -236,41 +236,41 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#flow-1-creation-of-a-care-circle" id="markdown-toc-flow-1-creation-of-a-care-circle">Flow 1: Creation of a care circle</a></li>
-  <li><a href="#flow-2-search-for-care-circles" id="markdown-toc-flow-2-search-for-care-circles">Flow 2: Search for care circles</a></li>
+  <li><a href="#flux-1-création-dun-cercle-de-soins" id="markdown-toc-flux-1-création-dun-cercle-de-soins">Flux 1 : Création d’un cercle de soins</a></li>
+  <li><a href="#flux-2-recherche-de-cercles-de-soins" id="markdown-toc-flux-2-recherche-de-cercles-de-soins">Flux 2 : Recherche de cercles de soins</a></li>
 </ul>
 
 </div>
-<p>In this section, the mapping is made between:</p>
+<p>Dans cette section, la mise en correspondance est faite entre :</p>
 
 <ul>
-  <li>The business objects identified following the functional specifications of the exchanges,</li>
-  <li>The resources of the HL7 FHIR standard.</li>
+  <li>Les objets métier identifiés à l’issue des spécifications fonctionnelles des échanges,</li>
+  <li>Les ressources du standard HL7 FHIR.</li>
 </ul>
 
-<p>For each business object, the tables below list all the business elements identified in the business study of the use case. For each attribute of each business class, the FHIR resource and more specifically the element of this resource used to convey the information is identified. When an existing profile is identified, the characteristics of the FHIR element of this profile are reported (for example IHECareTeam or FrPatient).</p>
+<p>Pour chaque objet métier, les tableaux ci-dessous reprennent l’ensemble des éléments métier identifiés dans l’étude métier du cas d’usage. Pour chaque attribut de chaque classe métier, la ressource FHIR et plus particulièrement l’élément de cette ressource utilisé pour véhiculer l’information est identifié. Lorsqu’un profil existant est identifié, les caractéristiques de l’élément FHIR de ce profil sont rapportées (par exemple IHECareTeam ou encore FrPatient).</p>
 
-<h3 id="flow-1-creation-of-a-care-circle">Flow 1: Creation of a care circle</h3>
+<h3 id="flux-1-création-dun-cercle-de-soins">Flux 1 : Création d’un cercle de soins</h3>
 
-<p>Flow 1 - CreationCercleSoins contains the information related to the creation of a care circle.</p>
+<p>Le flux 1 - CreationCercleSoins contient les informations relatives à la création d’un cercle de soins.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th colspan="2">Business elements</th>
-<th colspan="2">Corresponding elements in FHIR profiles</th>
+<th colspan="2">Éléments métier</th>
+<th colspan="2">Éléments correspondant dans les profils FHIR</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Class name</strong></td>
-<td><strong>Attribute name</strong></td>
-<td><strong>Resource</strong></td>
-<td><strong>Element</strong></td>
+<td><strong>Nom classe</strong></td>
+<td><strong>Nom attribut</strong></td>
+<td><strong>Ressource</strong></td>
+<td><strong>Elément</strong></td>
 </tr>
 <tr class="even">
 <td rowspan="8">CercleSoins</td>
-<td>idCercleSoins : [1..1] Identifier</td>
+<td>idCercleSoins : [1..1] Identifiant</td>
 <td><p><strong>CareTeam</strong></p>
 <p><em>IHECareTeam</em></p></td>
 <td>identifier : Identifier [1..*]</td>
@@ -321,15 +321,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td rowspan="5">PersonnePriseCharge</td>
 <td><p>INS : [1..1] INS[13]</p>
 <ul>
-<li><p>matriculeINS : [1..1] Identifier</p></li>
-<li><p>nomFamille : [1..1] Text</p></li>
-<li><p>prenomActeNaissance : [1..1] Text</p></li>
-<li><p>premierPrenomActeNaissance : [1..1] Text</p></li>
-<li><p>nomUtilise : [1..1] Text</p></li>
-<li><p>prenomUtilise : [1..1] Text</p></li>
+<li><p>matriculeINS : [1..1] Identifiant</p></li>
+<li><p>nomFamille : [1..1] Texte</p></li>
+<li><p>prenomActeNaissance : [1..1] Texte</p></li>
+<li><p>premierPrenomActeNaissance : [1..1] Texte</p></li>
+<li><p>nomUtilise : [1..1] Texte</p></li>
+<li><p>prenomUtilise : [1..1] Texte</p></li>
 <li><p>sexe : [1..1] Code</p>
-<p>dateNaissance : [1..1] DateTime</p></li>
-<li><p>lieuNaissance : [1..1] Text</p></li>
+<p>dateNaissance : [1..1] DateHeure</p></li>
+<li><p>lieuNaissance : [1..1] Texte</p></li>
 </ul></td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
@@ -347,23 +347,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <li><p>name[1..*].family : string [1..1] (FrHumanName)</p></li>
 <li><p>name[1..*].text : string [0..1] (FrHumanName)</p></li>
 <li><p>name[1..*].given : string [1..1] (FrHumanName)</p>
-<p>Slice officialName, Patient.name.use taking the value « official »)</p></li>
+<p>Slice officialName, Patient.name.use prenant la valeur « official »)</p></li>
 <li><p>name[1..*].family : string [0..1] (FrHumanName)</p></li>
 <li><p>name[1..*].given : string [0..*] (FrHumanName)</p>
-<p>Slice usualName, Patient.name.use taking the value « usual »</p></li>
+<p>Slice usualName, Patient.name.use prenant la valeur « usual »</p></li>
 <li><p>gender : code [1..1]</p></li>
 <li><p>birthDate : date [1..1]</p></li>
 <li><p>birthPlace : Extension(Address) [0..1] Extension (BirthPlace)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>idPersonnePriseCharge : [0..*] Identifier</td>
+<td>idPersonnePriseCharge : [0..*] Identifiant</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td>adresseCorrespondance : [1..1] Address</td>
+<td>adresseCorrespondance : [1..1] Adresse</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td>address : FrAddress [0..*]</td>
@@ -386,21 +386,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td><p>name[1..*].prefix : string [0..1] (FrHumanName)</p>
-<p>Slice « officialName », Patient.name.use taking the value « official »</p></td>
+<p>Slice « officialName », Patient.name.use prenant la valeur « official »</p></td>
 </tr>
 <tr class="even">
-<td>nomFamille : [0..1] Text</td>
+<td>nomFamille : [0..1] Texte</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td><p>name[1..*].family : string [0..1] (FrHumanName)</p>
-<p>Slice « usualName », Patient.name.use taking the value « usual »</p></td>
+<p>Slice « usualName », Patient.name.use prenant la valeur « usual »</p></td>
 </tr>
 <tr class="odd">
-<td>prenom : [0..*] Text</td>
+<td>prenom : [0..*] Texte</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td><p>name[1..*].given : string [0..*] (FrHumanName)</p>
-<p>Slice « usualName », Patient.name.use taking the value « usual »</p></td>
+<p>Slice « usualName », Patient.name.use prenant la valeur « usual »</p></td>
 </tr>
 <tr class="even">
 <td>sexe : [0..1] Code</td>
@@ -427,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>birthDate : date [1..1]</td>
 </tr>
 <tr class="even">
-<td>lieuNaissance : [0..1] Text</td>
+<td>lieuNaissance : [0..1] Texte</td>
 <td><p><strong>Patient</strong></p>
 <p><em>FrPatient</em></p></td>
 <td><p>birthPlace : Extension(Address) [0..1]</p>
@@ -476,7 +476,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="odd">
 <td rowspan="7">Contact</td>
-<td>idMembreCercleSoin : [1..1] Identifier</td>
+<td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>id : Id [0..1]</td>
@@ -488,7 +488,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="odd">
-<td>adresse : [0..*] Address</td>
+<td>adresse : [0..*] Adresse</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>address : FrAddress [0..*]</td>
@@ -498,10 +498,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td><p>relationship : CodeableConcept [1..*]</p>
-<p>Slice « RolePerson », RelatedPerson.relationship.coding.system taking the value «https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass »</p></td>
+<p>Slice « RolePerson », RelatedPerson.relationship.coding.system prenant la valeur «https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass »</p></td>
 </tr>
 <tr class="odd">
-<td>description : [0..1] Text</td>
+<td>description : [0..1] Texte</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>text : Narrative [0..1]</td>
@@ -511,7 +511,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td><p>relationship : CodeableConcept [1..*]</p>
-<p>Slice « RelatedPerson », RelatedPerson.relationship.coding.system taking the value «https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode»</p></td>
+<p>Slice « RelatedPerson », RelatedPerson.relationship.coding.system prenant la valeur «https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode»</p></td>
 </tr>
 <tr class="odd">
 <td>metadonnee : [1..1] Metadonnee</td>
@@ -521,13 +521,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="even">
 <td rowspan="3">PersonnePhysique</td>
-<td>nomFamille : [1..1] Text</td>
+<td>nomFamille : [1..1] Texte</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>name[0..*].family : string [0..1] (FrHumanName)</td>
 </tr>
 <tr class="odd">
-<td>prenom [0..1] Text</td>
+<td>prenom [0..1] Texte</td>
 <td><p><strong>RelatedPerson</strong></p>
 <p><em>FrRelatedPerson</em></p></td>
 <td>name[0..*].given : string [0..*] (FrHumanName)</td>
@@ -542,7 +542,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- SITEX -->
 <tr class="odd">
 <td rowspan="8">SituationExercice</td>
-<td>idMembreCercleSoin : [1..1] Identifier</td>
+<td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
 <td>id : Id [0..1]</td>
@@ -555,7 +555,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="odd">
-<td>adresse : [0..*] Address</td>
+<td>adresse : [0..*] Adresse</td>
 <td><p><strong>PractitionerRole</strong></p>
 <p><em>ASPractitionerRole</em></p></td>
 <td><p>location[0..*].address : FrAddressExtended [0..1]</p>
@@ -603,13 +603,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td><p>name[0..*].suffix : string [0..*] (FrHumanName)</p></td>
 </tr>
 <tr class="odd">
-<td>nomExercice : [0..1] Text</td>
+<td>nomExercice : [0..1] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
 <td><p>name[0..*].family : string [0..1] (FrHumanName)</p></td>
 </tr>
 <tr class="even">
-<td>prenomExercice : [0..1] Text</td>
+<td>prenomExercice : [0..1] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>AsPractitioner</em></p></td>
 <td><p>name[0..*].given : string [0..*] (FrHumanName)</p></td>
@@ -633,11 +633,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>meta : Meta [0..1]</td>
 </tr>
 
+
 <!-- professionnel -->
 
 <tr class="even">
 <td rowspan="3">Professionnel</td>
-<td>idPP : [0..1] Identifier</td>
+<td>idPP : [0..1] Identifiant</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>identifier : Identifier [0..*]</td>
@@ -662,13 +663,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>name[0..*].prefix : string [0..1] (FrHumanName)</td>
 </tr>
 <tr class="even">
-<td>nomFamille : [0..1] Text</td>
+<td>nomFamille : [0..1] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>name[0..*].family : string [0..1] (FrHumanName)</td>
 </tr>
 <tr class="odd">
-<td>prenom : [0..*] Text</td>
+<td>prenom : [0..*] Texte</td>
 <td><p><strong>Practitioner</strong></p>
 <p><em>ASPractitioner</em></p></td>
 <td>name[0..*].given : string [0..*] (FrHumanName)</td>
@@ -699,25 +700,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="even">
 <td rowspan="11">EntiteGeographique</td>
-<td>idMembreCercleSoin : [1..1] Identifier</td>
+<td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>id : Id [0..1]</td>
 </tr>
 <tr class="odd">
-<td>numFINESS : [0..1] Identifier</td>
+<td>numFINESS : [0..1] Identifiant</td>
 <td rowspan="4"><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td rowspan="4">identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td>numSIRET : [0..1] Identifier</td>
+<td>numSIRET : [0..1] Identifiant</td>
 </tr>
 <tr class="odd">
-<td>identifiantEG : [0..1] Identifier</td>
+<td>identifiantEG : [0..1] Identifiant</td>
 </tr>
 <tr class="even">
-<td>idNat_struct : [0..1] Identifier</td>
+<td>idNat_struct : [0..1] Identifiant</td>
 </tr>
 <tr class="odd">
 <td>telecommunication : [1..*] Telecommunication</td>
@@ -726,13 +727,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>telecom : FrContactPoint [0..*]</td>
 </tr>
 <tr class="even">
-<td>adresse : [0..*] Address</td>
+<td>adresse : [0..*] Adresse</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>address : FrAddress [0..*]</td>
 </tr>
 <tr class="odd">
-<td>denominationEG : [0..1] Text</td>
+<td>denominationEG : [0..1] Texte</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>name : string [0..1]</td>
@@ -757,22 +758,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="odd">
 <td rowspan="7">EntiteJuridique</td>
-<td>numFINESS : [0..1] Identifier</td>
+<td>numFINESS : [0..1] Identifiant</td>
 <td rowspan="4"><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td rowspan="4">identifier : Identifier [0..*]</td>
 </tr>
 <tr class="even">
-<td>numSIREN : [0..1] Identifier</td>
+<td>numSIREN : [0..1] Identifiant</td>
 </tr>
 <tr class="odd">
-<td>identifiantEJ : [0..1] Identifier</td>
+<td>identifiantEJ : [0..1] Identifiant</td>
 </tr>
 <tr class="even">
-<td>idNat_struct : [0..1] Identifier</td>
+<td>idNat_struct : [0..1] Identifiant</td>
 </tr>
 <tr class="odd">
-<td>raisonSociale : [0..1] Text</td>
+<td>raisonSociale : [0..1] Texte</td>
 <td><p><strong>Organization</strong></p>
 <p><em>ASOrganization</em></p></td>
 <td>name : string [0..1]</td>
@@ -791,12 +792,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="even">
 <td rowspan="8">OrganisationInterne</td>
-<td>idMembreCercleSoin : [1..1] Identifier</td>
+<td>idMembreCercleSoin : [1..1] Identifiant</td>
 <td><strong>Organization</strong>[18]</td>
 <td>id : Id [0..1]</td>
 </tr>
 <tr class="odd">
-<td>identifiantOI : [0..1] Identifier</td>
+<td>identifiantOI : [0..1] Identifiant</td>
 <td><strong>Organization</strong></td>
 <td>identifier : Identifier [0..*]</td>
 </tr>
@@ -806,12 +807,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>telecom : ContactPoint [0..*]</td>
 </tr>
 <tr class="odd">
-<td>adresse : [0..*] Address</td>
+<td>adresse : [0..*] Adresse</td>
 <td><strong>Organization</strong></td>
 <td>address : Address [0..*]</td>
 </tr>
 <tr class="even">
-<td>nom : [0..1] Text</td>
+<td>nom : [0..1] Texte</td>
 <td><strong>Organization</strong></td>
 <td>name : string [0..1]</td>
 </tr>
@@ -834,18 +835,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tbody>
 </table>
 
-<p>Table 4 Mapping of business contents / standard of flow 1</p>
+<p>Tableau 4 Mise en correspondance des contenus métier / standard du flux 1</p>
 
-<h3 id="flow-2-search-for-care-circles">Flow 2: Search for care circles</h3>
+<h3 id="flux-2-recherche-de-cercles-de-soins">Flux 2 : Recherche de cercles de soins</h3>
 
-<p>Flow 2 - RechercheCercleSoins contains the criteria for searching for one or more care circle(s).</p>
+<p>Le flux 2 - RechercheCercleSoins contient les critères pour rechercher un ou plusieurs cercle(s) de soins.</p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Search criterion</th>
-<th>FHIR Resource</th>
-<td>FHIR search parameter</td>
+<th>Critère de recherche</th>
+<th>Ressource FHIR</th>
+<td>Paramètre de recherche FHIR</td>
 <th></th>
 </tr>
 </thead>
@@ -857,13 +858,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="odd">
 <td>CercleSoins/dateCreation</td>
-<td><p><em>No match</em></p>
-<p><em>Search parameter created as part of this section: start</em></p></td>
+<td><p><em>Pas de correspondance</em></p>
+<p><em>Paramètre de recherche créé dans le cadre de ce volet : start</em></p></td>
 </tr>
 <tr class="even">
 <td>CercleSoins/dateFin</td>
-<td><p><em>No match</em></p>
-<p><em>Search parameter created as part of this section: end</em></p></td>
+<td><p><em>Pas de correspondance</em></p>
+<p><em>Paramètre de recherche créé dans le cadre de ce volet : end</em></p></td>
 </tr>
 <tr class="odd">
 <td>CercleSoins/statut</td>
@@ -877,13 +878,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <tr class="odd">
 <td>MembreCercleSoin/dateEntréeCercleSoin</td>
 <td rowspan="2">CareTeam</td>
-<td><p><em>No match</em></p>
-<p><em>Search parameter created as part of this section: participant-start</em></p></td>
+<td><p><em>Pas de correspondance</em></p>
+<p><em>Paramètre de recherche créé dans le cadre de ce volet: participant-start</em></p></td>
 </tr>
 <tr class="even">
 <td>MembreCercleSoin/dateSortieCercleSoin</td>
-<td><p><em>No match</em></p>
-<p><em>Search parameter created as part of this section: participant-end</em></p></td>
+<td><p><em>Pas de correspondance</em></p>
+<p><em>Paramètre de recherche créé dans le cadre de ce volet: participant-end</em></p></td>
 </tr>
 <tr class="odd">
 <td>PersonnePriseCharge/idPersonnePriseCharge</td>
@@ -908,8 +909,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="even">
 <td>PersonnePhysique/lieuNaissance</td>
-<td><p><em>No match</em></p>
-<p><em>Search parameter created as part of this section : birthplace</em></p></td>
+<td><p><em>Pas de correspondance</em></p>
+<p><em>Paramètre de recherche créé dans le cadre de ce volet : birthplace</em></p></td>
 </tr>
 <tr class="odd">
 <td>PersonnePhysique/sexe</td>
@@ -939,8 +940,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr class="odd">
 <td>ExerciceProfessionnel/nomExercice</td>
-<td><p><em>No match</em></p>
-<p><em>Search parameter created as part of this section : nameex</em></p></td>
+<td><p><em>Pas de correspondance</em></p>
+<p><em>Paramètre de recherche créé dans le cadre de ce volet : nameex</em></p></td>
 </tr>
 <tr class="even">
 <td>SituationExercice/role</td>
@@ -990,8 +991,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>OrganisationInterne/identifiantOI</td>
 <td>identifier : token</td>
 </tr>
+<tr class="odd">
+<td>OrganisationInterne/nom</td>
+<td>name : string</td>
+</tr>
+<tr class="even">
+<td>EntiteJuridique/raisonSociale</td>
+<td>name : string</td>
+</tr>
+</tbody>
+</table>
 
-</tbody></table>
+<p>Tableau 5 Mise en correspondance des contenus métier / standard du flux 2</p>
+
 
 
 
@@ -1041,7 +1053,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.cds#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-02 15:37:00 +0000">
+  <span title="2026-06-02 15:42:00 +0000">
     2026-06-02
   </span>
 

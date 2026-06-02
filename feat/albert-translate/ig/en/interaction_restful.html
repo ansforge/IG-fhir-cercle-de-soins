@@ -219,7 +219,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
 
-<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
+<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
 
 
 </p>
@@ -236,73 +236,74 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#actor-management" id="markdown-toc-actor-management">Actor Management</a></li>
-  <li><a href="#care-circle-management" id="markdown-toc-care-circle-management">Care Circle Management</a></li>
-  <li><a href="#flow-4b-updating-a-care-circle" id="markdown-toc-flow-4b-updating-a-care-circle">Flow 4b: Updating a Care Circle</a></li>
+  <li><a href="#gestion-des-acteurs" id="markdown-toc-gestion-des-acteurs">Gestion des acteurs</a></li>
+  <li><a href="#gestion-du-cercle-de-soins" id="markdown-toc-gestion-du-cercle-de-soins">Gestion du cercle de soins</a></li>
+  <li><a href="#flux-4b--mise-à-jour-dun-cercle-de-soins" id="markdown-toc-flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : mise à jour d’un cercle de soins</a></li>
 </ul>
 
 </div>
-<!-- Chapter 3.1 -->
+<!-- Chapitre 3.1 -->
 
-<h3 id="actor-management">Actor Management</h3>
+<h3 id="gestion-des-acteurs">Gestion des acteurs</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>More information on FHIR HTTP requests in the official documentation
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Plus d'informations sur les requêtes HTTP en FHIR sur la documentation officielle
 https://www.hl7.org/fhir/R4/http.html
 </code></pre></div></div>
 
-<p>The flows for managing resources representing care circle actors are creation and update flows for actors respectively operated by HTTP POST and HTTP PUT requests on the FHIR resources « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » and « Organization »:</p>
+<p>Les flux de gestion des ressources représentant les acteurs de cercle de soins sont des flux de création et de mise à jour des acteurs respectivement opérés par les requêtes HTTP POST et HTTP PUT sur les ressources FHIR « Patient », « Practitioner », « PractitionerRole », « RelatedPerson » et « Organization » :</p>
 
 <ul>
-  <li>It is strongly recommended to rely on data from the Health Directory, which brings together identification data for healthcare professionals and facilities from various national reference databases.</li>
-  <li>the Patient resource respecting the FrCorePatientProfile profile should preferably contain an identifier, a telecom and an address</li>
+  <li>Il est fortement recommandé de s’appuyer sur les données de l’Annuaire Santé, rassemblant les données d’identification des professionnels et des structures de santé issues des différents référentiels nationaux.</li>
+  <li>la ressource Patient respectant le profil FrCorePatientProfile doit contenir de préférence un identifier, un telecom et une address</li>
 </ul>
 
-<p>The defined RESTful interaction flows are:</p>
+<p>Les flux d'interaction restful définis sont :</p>
 
 <ul>
-  <li>Flow 1a for creating an actor is an HTTP POST request based on the FHIR « create » interaction.</li>
-  <li>Flow 4a for updating is an HTTP PUT request based on the FHIR « update » interaction. Updating requires specifying the logical identifier of the resource to be updated.</li>
+  <li>Le flux 1a de création d’un acteur est une requête HTTP POST reposant sur l’interaction « create » de FHIR.</li>
+  <li>Le flux 4a de mise à jour est une requête HTTP PUT reposant sur l’interaction « update » de FHIR . La mise à jour nécessite de préciser l’identifiant logique de la ressource à mettre à jour.</li>
 </ul>
 
-<p>These requests are sent to the manager:</p>
+<p>Ces requêtes sont envoyées au gestionnaire :</p>
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="st-crea-maj-acteur.png" alt="CI-SIS" title="Sequence diagram of flows 1a and 4a" />
+    <img style="height: auto; width: 100%;" src="st-crea-maj-acteur.png" alt="CI-SIS" title="Diagramme de séquence des flux 1a et 4a" />
 </div>
 
-<p>If the actor is created correctly, an HTTP 201 created code is returned.
-If an actor is updated correctly, the management system returns an HTTP 200 OK code.</p>
+<p>Si la création de l’acteur est correctement effectuée, un code HTTP 201 created est retourné.
+Si la mise à jour d’un acteur est correctement effectuée, le système gestionnaire retourne un code HTTP 200 OK.</p>
 
-<h3 id="care-circle-management">Care Circle Management</h3>
+<h3 id="gestion-du-cercle-de-soins">Gestion du cercle de soins</h3>
 
-<p>The flows for managing care circles are defined below:</p>
+<p>Les flux permettant de gérer les cercles de soins sont définis ci-dessous :</p>
 
 <ul>
-  <li>Flow 1b for creating the care circle will be handled by one or more HTTP POST requests.</li>
-  <li>Flow 2a for searching care circles will be handled by an HTTP GET request.</li>
-  <li>Flow 2b is a flow for requesting the retrieval of a particular care circle; it will be handled by an HTTP GET request.</li>
-  <li>Flow 3a for responding to the search for care circles will be handled by the response to the HTTP GET request (flow 2a).</li>
-  <li>Flow 3b is a flow for responding to the request for retrieval of a particular Care Circle; it will be handled by the response to the HTTP GET request (flow 2b).</li>
-  <li>Flow 4b for updating the care circle will be handled by one or more HTTP PUT requests.</li>
+  <li>Le flux 1b de création du cercle de soins sera assuré par une ou plusieurs requêtes HTTP POST.</li>
+  <li>Le flux 2a de recherche de cercles de soins sera assuré par une requête HTTP GET.</li>
+  <li>Le flux 2b est un flux de demande de récupération d’un cercle de soins particulier ; il sera assuré par une requête HTTP GET.</li>
+  <li>Le flux 3a de réponse à la recherche de cercles de soins sera assuré par la réponse à la requête HTTP GET (flux 2a).</li>
+  <li>Le flux 3b est un flux de réponse à la demande de récupération d’un Cercle de Soins particulier ; il sera assuré par la réponse à la requête HTTP GET (flux 2b).</li>
+  <li>Le flux 4b de mise à jour du cercle de soins sera assuré par une ou plusieurs requêtes HTTP PUT.</li>
 </ul>
 
-<p>As indicated in the <a href="specifications_fonctionnelles.html">Functional Specification</a> tab of this guide, the prerequisite for creating a care circle is searching for this care circle. If the care circle does not exist, it is created (flow 1b), otherwise, it is updated (flow 4b):</p>
+<p>Comme indiqué dans l'onglet <a href="specifications_fonctionnelles.html">Spécification Fonctionnelle</a> de ce guide, le pré-requis à la création d’un cercle de soins est la recherche de ce cercle de soins. Si le cercle de soins n’existe pas, il est créé (flux 1b), sinon, il est mis à jour (flux 4b) :</p>
 
 <div class="figure" style="width:65%;">
-    <img style="height: auto; width: 100%;" src="st-gestion-cds.png" alt="CI-SIS" title="Sequence diagram of care circle management flows (1b, 2a, 2b, 3a, 3b and 4b)" />
+    <img style="height: auto; width: 100%;" src="st-gestion-cds.png" alt="CI-SIS" title="Diagramme de séquence des flux de gestion d’un cercle de soins (1b, 2a, 2b, 3a, 3b et 4b)" />
 </div>
 
-<h4 id="flow-1b-creating-a-care-circle">Flow 1b: Creating a Care Circle</h4>
+<h4 id="flux-1b--création-dun-cercle-de-soins">Flux 1b : Création d’un cercle de soins</h4>
 
-<p>The flow for creating the « CareTeam » resource is an HTTP POST request based on the FHIR « create » interaction. The « CareTeam » resource constitutes the body of the request. This flow is based on the IHE transaction request « Update Care Team » [PCC-45] of the DCTM profile.
-If the care circle is created correctly, an HTTP 201 created code is returned.</p>
+<p>Le flux de création de la ressource « CareTeam » est une requête HTTP POST reposant sur l’interaction « create » de FHIR. La ressource « CareTeam » constitue le corps de la requête. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
+Si la création du cercle de soins est correctement effectuée, un code HTTP 201 created est retourné.</p>
 
-<h3 id="flow-4b-updating-a-care-circle">Flow 4b: Updating a Care Circle</h3>
+<h3 id="flux-4b--mise-à-jour-dun-cercle-de-soins">Flux 4b : mise à jour d’un cercle de soins</h3>
 
-<p>The flow for updating the « CareTeam » resource is an HTTP PUT request. The « CareTeam » resource constitutes the body of the request. Updating the CareTeam resource requires specifying the logical identifier of the resource to be updated. This flow is based on the IHE transaction request « Update Care Team » [PCC-45] of the DCTM profile.
-The care circle update should be able to be performed based on the FHIR « update » interaction.
-If the care circle is updated correctly, the management system returns an HTTP 200 ok code. For information on other HTTP codes (HTTP status codes), consult the documentation related to the update interaction, « update » of the FHIR REST API.
-When updating the care circle, the manager increments the version number of the resource (Careteam.meta.versionID) and indicates the update date at the level of Careteam.meta.LastUpdated.</p>
+<p>Le flux de mise à jour de la ressource « CareTeam » est une requête HTTP PUT. La ressource « CareTeam » constitue le corps de la requête. La mise à jour de la ressource CareTeam nécessite de préciser l’identifiant logique de la ressource à mettre à jour. Ce flux se base sur la requête de la transaction IHE « Update Care Team » [PCC-45] du profil DCTM.
+La mise à jour du cercle de soins doit pouvoir être réalisée en s’appuyant sur l’interaction « update » de FHIR.
+Si la mise à jour du cercle de soins est correctement effectuée, le système gestionnaire retourne un code HTTP 200 ok. Pour des informations sur les autres codes HTTP (HTTP status codes) consultez la documentation relative à l’interaction de mise à jour, « update » de l’API REST FHIR.<br />
+A la mise à jour du cercle de soins, le gestionnaire incrémente le numéro de version de la ressource (Careteam.meta.versionID) et indique la date de la mise à jour au niveau de Careteam.meta.LastUpdated.</p>
+
 
 
 
@@ -352,7 +353,7 @@ When updating the care circle, the manager increments the version number of the 
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.cds#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-02 15:37:00 +0000">
+  <span title="2026-06-02 15:42:00 +0000">
     2026-06-02
   </span>
 

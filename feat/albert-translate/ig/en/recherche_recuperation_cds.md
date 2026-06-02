@@ -3,63 +3,63 @@
 ## Recherche CDS
 
  
-This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
-### Flux 2a: Care team search
+### Flux 2a : recherche de cercles de soins
 
 ```
-More information about FHIR search in the official documentation
+Plus d'informations sur la search en FHIR sur la documentation officielle
 https://www.hl7.org/fhir/R4/search.html
 
 ```
 
-This flow is based on the query of the IHE transaction "Search for Care Team" [PCC-46] of the DCTM profile based on the FHIR "search" interaction.
+Ce flux se base sur la requête de la transaction IHE « Search for Care Team » [PCC-46] du profil DCTM reposant sur l’interaction « search » de FHIR.
 
-The GET request is accompanied by search parameters defined in the [CapabilityStatement of the Manager](CapabilityStatement-CDSGestionnaire.md). These search criteria were defined in the [Functional Specifications](specifications_fonctionnelles.md).
+La requête GET est accompagnée des paramètres de recherches définis dans le [CapabilityStatement du Gestionnaire](CapabilityStatement-CDSGestionnaire.md). Ces critères de recherche ont été définis dans les [Spécification Fonctionnelle](specifications_fonctionnelles.md).
 
-Chained search parameters must be defined to meet these requirements, some examples can be found in the table below:
+Des paramètres de recherche chaînés doivent être définis afin de répondre à ces attentes, certains exemples peuvent être trouvés dans le tableau ci-dessous :
 
 | | |
 | :--- | :--- |
-| Care team member identifier (contact) | participant:RelatedPerson._id : token |
-| Care team member identifier (professional in a practice situation) | participant:PractitionerRole._id : token |
-| Care team member identifier (geographic entity) | participant:Organization._id : token |
-| Identifier of the geographic entity, legal entity | participant:Organization.identifier : token |
-| Professional identifier | participant:PractitionerRole.practitioner:Practitioner.identifier |
-| Name of the care team member (contact) | participant:RelatedPerson.name: string |
-| Name of the care team member (professional in a professional practice or in a practice situation) | participant:PractitionerRole.practitioner.name : string (custom parameter) |
-| Name of the care team member (geographic entity) | participant:Organization.name : string |
-| Legal entity corporate name | participant:Organization.partof.name : string |
-| Role of the care team member (contact) | participant:RelatedPerson.relationship: token |
-| Role of the care team member (professional practice) | participant:PractitionerRole.role : token |
+| Identifiant du membre du cercle de soins (contact) | participant:RelatedPerson._id : token |
+| Identifiant du membre du cercle de soins (professionnel dans une situation d’exercice) | participant:PractitionerRole._id : token |
+| Identifiant du membre du cercle de soins (entité géographique) | participant:Organization._id : token |
+| Identifiant de l’entité géographique, de l’entité juridique | participant:Organization.identifier : token |
+| Identifiant du professionnel | participant:PractitionerRole.practitioner:Practitioner.identifier |
+| Nom du membre du cercle de soins (contact) | participant:RelatedPerson.name: string |
+| Nom du membre du cercle de soins (professionnel dans un exercice professionnel ou dans une situation d’exercice) | participant:PractitionerRole.practitioner.name : string (paramètre custom) |
+| Nom du membre du cercle de soins (entité géographique) | participant:Organization.name : string |
+| Raison sociale de l’Entité Juridique | participant:Organization.partof.name : string |
+| Rôle du membre du cercle de soins (contact) | participant:RelatedPerson.relationship: token |
+| Rôle du membre du cercle de soins (exercice professionnel) | participant:PractitionerRole.role : token |
 
-The "_include" and "_revinclude" parameters can be used to retrieve referenced resources. The "_elements" parameter can be used to limit the attributes returned by the server.
+Les paramètres «_include » et «_revinclude » peuvent être utilisés pour récupérer les ressources référencées. Le paramètre « _elements » peut être utilisé pour limiter les attributs retournés par le serveur.
 
-#### Query examples
+#### Exemples de requêtes
 
-* Search for Careteam resources whose subject has the identifier 123456. The search result should also include all resources referenced by the returned "CareTeam" resources as well as the resources referenced by these resources.
+* Rechercher les ressources de type Careteam dont le sujet porte l’identifiant 123456. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par les ressources « CareTeam » retournées ainsi que les ressources référencées par ces-dites ressources.
 
 GET http://targetsystem.com/API/Careteam?_include:iterate=*&patient.identifier=http://exAutoriteAffectation/patient|123456
 
-* Search for Careteam resources with a RelatedPerson type member named Ducros and living in Tourcoing. The search result should also include all resources referenced by the "subject" element of the returned "Careteam" resources, i.e., the resources corresponding to patients having this third party in their care team.
+* Rechercher les ressources de type Careteam ayant un membre de type RelatedPerson portant le nom Ducros et vivant à Tourcoing. Le résultat de la recherche devrait aussi inclure toutes les ressources référencées par l’élément « subject » des ressources « Careteam » retournées, c’est-à-dire les ressources correspondant aux patients ayant cette personne tierce dans leur cercle de soins.
 
-GET http://targetsystem.com/API/Careteam?_include:iterate=CareTeam:subject&participant:RelatedPerson.name:exact=Ducros&participant:RelatedPerson.address=Tourcoing
+GET http://targetsystem.com/API/Careteam?_include:iterate =CareTeam:subject&participant:RelatedPerson.name:exact=Ducros&participant:RelatedPerson.address=Tourcoing
 
-### Flux 3a: Response to care team search
+### Flux 3a : Réponse à la recherche de cercles de soins
 
-Flow 3a constitutes the response to the GET request of flow 2a. When the search has been successfully executed, the management system returns an HTTP 200 OK code. The body of the response to the request is a "Bundle" resource of type "searchset" encapsulating 0, 1 to several "CareTeam" resources meeting the search criteria. The resources referenced by the returned CareTeam resources are also in the Bundle if it was requested to include them in the GET request. Flows 2a and 3a correspond to the IHE transaction "Search for CareTeam" [PCC-46].
+Le flux 3a constitue la réponse à la requête GET du flux 2a. Lorsque la recherche s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « Bundle » de type « searchset » encapsulant 0, 1 à plusieurs ressources « CareTeam » répondant aux critères de recherche. Les ressources référencées par les ressources CareTeam retournées sont aussi dans le Bundle s’il a été demandé de les inclure dans la requête GET. Les flux 2a et 3a correspondent à la transaction IHE « Search for CareTeam » [PCC-46].
 
-### Flux 2b: Retrieval of a care team
+### Flux 2b : Récupération d’un cercle de soins
 
-This flow is based on the query of the IHE transaction "Retrieve Care Team" [PCC-47] of the DCTM profile. The retrieval of a CareTeam resource corresponding to a specified identifier is based on the FHIR "read" interaction. Flow 2b is therefore an HTTP GET request accompanied by the "id" parameter.
+Ce flux se base sur la requête de la transaction IHE « Retrieve Care Team » [PCC-47] du profil DCTM. La récupération d’une ressource CareTeam correspondant à un identifiant spécifié est basée sur l’interaction « read » de FHIR. Le flux 2b est donc une requête HTTP GET accompagnée du paramètre « id ».
 
-The retrieval of a CareTeam resource corresponding to a logical identifier must be able to be carried out based on the FHIR "vread" interaction which allows to take into account the version of the resource and on the "history" interaction which allows to request the retrieval of a specific version of the resource (history-instance and history-type should be offered).
+La récupération d’une ressource CareTeam correspondant à un identifiant logique doit pouvoir être réalisée en s’appuyant sur l’interaction « vread » de FHIR qui permet de tenir compte de la version de la ressource et sur l’interaction « history » qui permet de demander la récupération d’une version précise de la ressource (history-instance et history-type devront être proposés).
 
-* Query example - search for the second version of the CareTeam resource 123
+* Exemple de requête - rechercher la deuxième version de la ressource CareTeam 123
 
 GET http://targetsystem.com/API/Careteam/123/_history/2
 
-### Flux 3b: Response to care team retrieval
+### Flux 3b : réponse à la récupération d’un cercle de soins
 
-Flow 3b constitutes the response to the GET request of flow 3a. When the request has been successfully executed, the management system returns an HTTP 200 OK code. The body of the response to the request is a "CareTeam" resource bearing the requested identifier and, if applicable, corresponding to the version specified in the request. Flows 2b and 3b for retrieving a care team correspond to the IHE transaction "Retrieve CareTeam" [PCC-47].
+Le flux 3b constitue la réponse à la requête GET du flux 3a. Lorsque la requête s’est bien exécutée, le système gestionnaire retourne un code HTTP 200 OK. Le corps de la réponse à la requête est une ressource « CareTeam » portant l’identifiant demandé et le cas échéant correspondant à la version précisée dans la requête. Les flux 2b et 3b de récupération d’un cercle de soins correspondent à la transaction IHE « Retrieve CareTeam » [PCC-47].
 

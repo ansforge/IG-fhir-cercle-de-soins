@@ -3,28 +3,28 @@
 ## Téléchargements et usages
 
  
-This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
-The implementation guide contains a downloadable package [here](package.tgz) that allows validating instances against the profiles it contains.
+L'implementation guide contient un package [téléchargeable ici](package.tgz) permettant de valider les instances par rapport aux profils qu'il contient.
 
-To do this, simply download the [package.tgz](package.tgz) and import it into a server, for example on hapi by following this [python script](https://github.com/nmdp-bioinformatics/igloader) open source.
+Pour cela, il suffit de télécharger le [package.tgz](package.tgz) et l'importer dans un serveur, par exemple sur hapi en suivant ce [script python](https://github.com/nmdp-bioinformatics/igloader) open source.
 
-You can then use the [$validate](https://www.hl7.org/fhir/resource-operation-validate.html) operation to validate resource instances against a profile from this specification.
+Vous pourrez ensuite utiliser l'opération [$validate](https://www.hl7.org/fhir/resource-operation-validate.html) pour valider les instances de ressource contre un profil issu de cette spécification.
 
-Downloadable resources:
+Ensemble des ressources téléchargeables :
 
-* [Full specification (zip)](full-ig.zip)
+* [L'ensemble de la specification (zip)](full-ig.zip)
 * [Package (tgz)](package.tgz)
 
-### Definitions
+### Définitions
 
-* [JSON definitions (zip)](definitions.json.zip)
-* [XML definitions (zip)](definitions.xml.zip)
-* [Turtle definitions (zip)](definitions.ttl.zip)
+* [Définitions JSON (zip)](definitions.json.zip)
+* [Définitions XML (zip)](definitions.xml.zip)
+* [Définitions Turtle (zip)](definitions.ttl.zip)
 
-### Examples
+### Exemples
 
-* [XML examples (zip)](examples.xml.zip)
-* [JSON examples (zip)](examples.json.zip)
-* [JSON examples (zip)](examples.ttl.zip)
+* [Exemples XML (zip)](examples.xml.zip)
+* [Exemples JSON (zip)](examples.json.zip)
+* [Exemples JSON (zip)](examples.ttl.zip)
 

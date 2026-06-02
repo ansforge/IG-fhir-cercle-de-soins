@@ -3,44 +3,44 @@
 ## Interactions transaction
 
  
-This page includes translations from the original source language in which the guide was authored. Information on these translations and instructions on how to provide feedback on the translations can be found [here](translationinfo.md). 
+There is no translation page available for the current page, so it has been rendered in the default language 
 
-### Creation of a care team
+### Création d’un cercle de soins
 
-The first step in building this care team creation flow is to organize its content. Several types of resources are present:
+La première étape de la construction de ce flux de création du cercle de soins consiste à organiser son contenu. Plusieurs types de ressources sont présents :
 
-* The CareTeam resource (profile [CDS_IHECareTeam](StructureDefinition-cds-ihe-careteam.md)),
-* The resource referenced as the subject of the Care Team: the Patient resource complying with the FrCorePatientProfile profile, preferably containing an identifier, a telecom, and an address,
-* The resource(s) referenced as members of the Care Team, and those they reference, among the following resources: 
-* PractitionerRole (profile ASPractitionerRole) to represent a particular practice situation of a professional. 
-* With Practitioner (profile ASPractitioner) referenced from PractitionerRole.practitioner (Professional Practice).
+* La ressource CareTeam (profil [CDS_IHECareTeam](StructureDefinition-cds-ihe-careteam.md)),
+* La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient respectant le profil FrCorePatientProfile, contenant de préférence un identifier, un telecom et une address,
+* La ou les ressources référencées comme membres du Cercle de Soins, et celles qu’elles référencent, parmi les ressources suivantes : 
+* PractitionerRole (profil ASPractitionerRole) pour représenter la situation d’exercice particulière d’un professionnel. 
+* Avec Practitioner (profil ASPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).
  
-* RelatedPerson (profile [CDS_FrRelatedperson](StructureDefinition-cds-fr-related-person.md)) to represent a third party,
-* Organization (profile CDSAsOrganization) to represent a geographical entity (EG), a legal entity (EJ), or an internal organization (OI)
-* Or none if the only member is the person already referenced as the subject of the Care Team.
+* RelatedPerson (profil [CDS_FrRelatedperson](StructureDefinition-cds-fr-related-person.md)) pour représenter une personne tierce,
+* Organization (profil CDSAsOrganization) pour représenter une entité géographique (EG), une entité juridique (EJ) ou une organisation interne (OI)
+* Ou aucune si le seul membre est la personne prise en charge déjà référencée comme sujet du Cercle de Soins.
  
 
-These resources are encapsulated in a "Bundle" resource of type "transaction" compliant with the profile [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.md). The Bundle contains at least one CareTeam resource. This Bundle constitutes the body of the HTTP POST request.
+Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.md). Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.
 
 
-For each entry element of the Bundle resource, the request.method parameter will be set to POST for new resources to be posted to the server:
+Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à POST pour les nouvelles ressources à poster sur le serveur :
 
-* For the CareTeam resource, the request.method attribute will be set to POST,
-* For the resources referenced in CareTeam as the subject and members of the care team, they will be included in the Bundle if they do not exist on the server; the request.method attribute will be set to POST.
+* Pour la ressource CareTeam, l’attribut request.method sera positionné à POST,
+* Pour les ressources référencées dans CareTeam comme sujet et membres du cercle de soins, elles seront inclues dans le Bundle si elles n’existent pas sur le serveur ; l’attribut request.method sera positionné à POST.
 
-The management of creation and modification rights of the actors is the responsibility of the manager.
+La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire.
 
-If the transaction has been correctly performed and therefore the creation of the care team is correctly performed, an HTTP 200 OK code is returned. A transaction-response type Bundle must be returned in the body of the response. The latter must contain the resources as they were created by the manager or, at a minimum, the logical identifiers of the resources that were assigned by the manager (in Bundle.entry.fullUrl and/or Bundle.entry.resource.id). Otherwise, an HTTP 500 Internal Server Error code is returned with an OperationOutcome resource containing the details of the errors and warnings resulting from the processing of the Bundle entries.
+Si la transaction a été correctement effectuée et donc que la création du cercle de soins est correctement effectuée, un code HTTP 200 ok est retourné . Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse . Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, à minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id). Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource OperationOutcome contenant le détail des erreurs et avertissements résultant du traitement des entrées du Bundle.
 
-### Updating care teams
+### Mise à jour de cercles de soins
 
-The Bundle [CDS_BundleTransactionMAJ](StructureDefinition-cds-bundle-transaction-maj.md) can contain exactly the same resources as the [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.md). The Bundle contains at least one CareTeam resource; regarding the actors, only the resource(s) that need to be created or updated are included in the bundle. This Bundle constitutes the body of the HTTP POST request.
+Le Bundle [CDS_BundleTransactionMAJ](StructureDefinition-cds-bundle-transaction-maj.md) peut contenir exactement les mêmes ressources que le [CDS_BundleTransactionCreation](StructureDefinition-cds-bundle-transaction-creation.md). Le Bundle contient à minima une ressource CareTeam ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.
 
 
-For each entry element of the Bundle resource, the request.method parameter will be set to PUT for each resource to be updated or to POST for each new resource to be created on the server:
+Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à PUT pour chaque ressource à mettre à jour ou à POST pour chaque nouvelle ressource à créer sur le serveur :
 
-* For the CareTeam resource, the request.method attribute will be set to PUT,
-* For the resources referenced in CareTeam as the subject and members of the care team, they will be included in the Bundle if they do not exist on the server; the request.method attribute will then be set to POST if it is a new actor or to PUT to update a member.
+* Pour la ressource CareTeam, l’attribut request.method sera positionné à PUT,
+* Pour les ressources référencées dans CareTeam comme sujet et membres du cercle de soins, elles seront inclues dans le Bundle si elles n’existent pas sur le serveur ; l’attribut request.method sera alors positionné à POST s’il s’agit d’un nouvel acteur ou à PUT pour mettre à jour un membre.
 
-The management of creation and modification rights of the actors is the responsibility of the manager.
+La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire.
 
