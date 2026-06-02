@@ -30,20 +30,7 @@ jobs:
       - name: Install dependencies
         run: pip install httpx
 
-      - name: Sync PO files (translations/en/po → input/translations/en)
-        run: |
-          SRC="translations/en/po"
-          DEST="input/translations/en"
-          if [ -d "$SRC" ] && ls "$SRC"/*.po 2>/dev/null | grep -q .; then
-            echo "Syncing .po files from $SRC to $DEST..."
-            mkdir -p "$DEST"
-            cp "$SRC"/*.po "$DEST"/
-            echo "Synced $(ls "$SRC"/*.po | wc -l) file(s)."
-          else
-            echo "No .po files found in $SRC — skipping."
-          fi
-
-      - name: Translate pagecontent pages
+      - name: Translate pagecontent pages (FR→EN)
         env:
           ALBERT_API_KEY: ${{ secrets.ALBERT_API_KEY }}
         run: |
@@ -53,13 +40,23 @@ jobs:
           fi
           python tools/translate_pages.py $FORCE_FLAG
 
+      - name: Translate .po files (FR→EN)
+        env:
+          ALBERT_API_KEY: ${{ secrets.ALBERT_API_KEY }}
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.mode }}" = "force" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python tools/translate_po.py $FORCE_FLAG
+
       - name: Create PR with translations
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add input/translations/en/pagecontent/
+          git add input/translations/en/
 
           if git diff --cached --quiet; then
             echo "No translation changes — skipping PR creation."
@@ -69,15 +66,15 @@ jobs:
           BRANCH="translations/auto-$(date +%Y%m%d-%H%M%S)"
           BASE="${{ github.ref_name }}"
           git checkout -b "$BRANCH"
-          git commit -m "chore: auto-translate pagecontent FR→EN via Albert IA (mode: ${{ inputs.mode }})"
+          git commit -m "chore: auto-translate FR→EN via Albert IA (mode: ${{ inputs.mode }})"
           git push origin "$BRANCH"
 
-          TRANSLATED=$(git diff HEAD~1 --name-only | grep "input/translations/en/pagecontent/" | sed 's|input/translations/en/pagecontent/||' | sed 's/^/* /' )
+          TRANSLATED=$(git diff HEAD~1 --name-only | sed 's|^|* |')
 
           gh pr create \
             --base "$BASE" \
             --head "$BRANCH" \
-            --title "chore: traduction automatique FR→EN des pages pagecontent (mode: ${{ inputs.mode }})" \
+            --title "chore: traduction automatique FR→EN via Albert IA (mode: ${{ inputs.mode }})" \
             --body "## Description des changements
 
           ${TRANSLATED}
