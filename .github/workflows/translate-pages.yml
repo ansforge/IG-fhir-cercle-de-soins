@@ -1,0 +1,72 @@
+name: Translate pagecontent (FR → EN) via Albert IA
+
+on:
+  workflow_call:
+    inputs:
+      force:
+        description: 'Force retranslation of all pages (even if translation already exists)'
+        required: false
+        default: false
+        type: boolean
+  push:
+    paths:
+      - 'input/pagecontent/**.md'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force retranslation of all pages (even if translation already exists)'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install httpx
+
+      - name: Sync PO files (translations/en/po → input/translations/en)
+        run: |
+          SRC="translations/en/po"
+          DEST="input/translations/en"
+          if [ -d "$SRC" ] && ls "$SRC"/*.po 2>/dev/null | grep -q .; then
+            echo "Syncing .po files from $SRC to $DEST..."
+            mkdir -p "$DEST"
+            cp "$SRC"/*.po "$DEST"/
+            echo "Synced $(ls "$SRC"/*.po | wc -l) file(s)."
+          else
+            echo "No .po files found in $SRC — skipping."
+          fi
+
+      - name: Translate pagecontent pages
+        env:
+          ALBERT_API_KEY: ${{ secrets.ALBERT_API_KEY }}
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python tools/translate_pages.py $FORCE_FLAG
+
+      - name: Commit and push translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add input/translations/en/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-translate pagecontent FR→EN via Albert IA"
+            git push
+          fi
