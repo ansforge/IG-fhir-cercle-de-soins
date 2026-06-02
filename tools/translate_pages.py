@@ -32,6 +32,11 @@ Strict rules:
 
 
 def translate_content(content: str, token: str, model: str) -> str:
+    # Scale max_tokens and timeout to content size (approx 4 chars/token)
+    estimated_tokens = len(content) // 4
+    max_tokens = max(8192, min(estimated_tokens * 2, 32768))
+    timeout = max(180.0, estimated_tokens / 30)
+
     response = httpx.post(
         ALBERT_API_URL,
         headers={"Authorization": f"Bearer {token}"},
@@ -41,10 +46,10 @@ def translate_content(content: str, token: str, model: str) -> str:
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": content},
             ],
-            "max_tokens": 8192,
+            "max_tokens": max_tokens,
             "temperature": 0.1,
         },
-        timeout=120.0,
+        timeout=timeout,
     )
     response.raise_for_status()
     return response.json()["choices"][0]["message"]["content"]
