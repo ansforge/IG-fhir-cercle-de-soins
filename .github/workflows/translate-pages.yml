@@ -1,29 +1,23 @@
 name: Translate pagecontent (FR → EN) via Albert IA
 
 on:
-  workflow_call:
-    inputs:
-      force:
-        description: 'Force retranslation of all pages (even if translation already exists)'
-        required: false
-        default: false
-        type: boolean
-  push:
-    paths:
-      - 'input/pagecontent/**.md'
   workflow_dispatch:
     inputs:
-      force:
-        description: 'Force retranslation of all pages (even if translation already exists)'
-        required: false
-        default: false
-        type: boolean
+      mode:
+        description: 'Mode de traduction'
+        required: true
+        default: 'missing'
+        type: choice
+        options:
+          - missing
+          - force
 
 jobs:
   translate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
@@ -54,19 +48,40 @@ jobs:
           ALBERT_API_KEY: ${{ secrets.ALBERT_API_KEY }}
         run: |
           FORCE_FLAG=""
-          if [ "${{ inputs.force }}" = "true" ]; then
+          if [ "${{ inputs.mode }}" = "force" ]; then
             FORCE_FLAG="--force"
           fi
           python tools/translate_pages.py $FORCE_FLAG
 
-      - name: Commit and push translations
+      - name: Create PR with translations
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add input/translations/en/
+          git add input/translations/en/pagecontent/
+
           if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: auto-translate pagecontent FR→EN via Albert IA"
-            git push
+            echo "No translation changes — skipping PR creation."
+            exit 0
           fi
+
+          BRANCH="translations/auto-$(date +%Y%m%d-%H%M%S)"
+          BASE="${{ github.ref_name }}"
+          git checkout -b "$BRANCH"
+          git commit -m "chore: auto-translate pagecontent FR→EN via Albert IA (mode: ${{ inputs.mode }})"
+          git push origin "$BRANCH"
+
+          TRANSLATED=$(git diff HEAD~1 --name-only | grep "input/translations/en/pagecontent/" | sed 's|input/translations/en/pagecontent/||' | sed 's/^/* /' )
+
+          gh pr create \
+            --base "$BASE" \
+            --head "$BRANCH" \
+            --title "chore: traduction automatique FR→EN des pages pagecontent (mode: ${{ inputs.mode }})" \
+            --body "## Description des changements
+
+          ${TRANSLATED}
+
+          ## Preview
+
+          https://ansforge.github.io/IG-fhir-cercle-de-soins/${BRANCH}/ig"
