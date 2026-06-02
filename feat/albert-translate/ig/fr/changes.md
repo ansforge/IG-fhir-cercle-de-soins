@@ -22,6 +22,6 @@ Modifications apportées dans cette release :
 * Ajout du narratif au format web [#27](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/27), [#13](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/27), [#35](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/35)
 * Transformation des profils en FSH [#6](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/6), [#10](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/10)
 * Mise à jour des dépendances (FrCore, NOS, Annuaire) [#20](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/20)
-* Ajout d`un binding sur le rôle des participants au CDS [#33](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/33)
+* Ajout d'un binding sur le rôle des participants au CDS [#33](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/33)
 * Ajout des exemples [#38](https://github.com/ansforge/IG-fhir-cercle-de-soins/pull/38)
 
