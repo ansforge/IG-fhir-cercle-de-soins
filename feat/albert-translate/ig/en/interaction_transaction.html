@@ -219,7 +219,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
 
-<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
+<p>This page includes translations from the original source language in which the guide was authored.  Information on these translations and instructions on how to provide feedback on the translations can be found <a href="translationinfo.html">here</a>.</p>
 
 
 </p>
@@ -236,67 +236,66 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#création-dun-cercle-de-soins" id="markdown-toc-création-dun-cercle-de-soins">Création d’un cercle de soins</a></li>
-  <li><a href="#mise-à-jour-de-cercles-de-soins" id="markdown-toc-mise-à-jour-de-cercles-de-soins">Mise à jour de cercles de soins</a></li>
+  <li><a href="#creation-of-a-care-team" id="markdown-toc-creation-of-a-care-team">Creation of a care team</a></li>
+  <li><a href="#updating-care-teams" id="markdown-toc-updating-care-teams">Updating care teams</a></li>
 </ul>
 
 </div>
-<h3 id="création-dun-cercle-de-soins">Création d’un cercle de soins</h3>
+<h3 id="creation-of-a-care-team">Creation of a care team</h3>
 
-<p>La première étape de la construction de ce flux de création du cercle de soins consiste à organiser son contenu. Plusieurs types de ressources sont présents :</p>
+<p>The first step in building this care team creation flow is to organize its content. Several types of resources are present:</p>
 
 <ul>
-  <li>La ressource CareTeam (profil <a href="StructureDefinition-cds-ihe-careteam.html">CDS_IHECareTeam</a>),</li>
-  <li>La ressource référencée en tant que sujet du Cercle de Soins : la ressource Patient respectant le profil FrCorePatientProfile, contenant de préférence un identifier, un telecom et une address,</li>
-  <li>La ou les ressources référencées comme membres du Cercle de Soins, et celles qu’elles référencent, parmi les ressources suivantes :
+  <li>The CareTeam resource (profile <a href="StructureDefinition-cds-ihe-careteam.html">CDS_IHECareTeam</a>),</li>
+  <li>The resource referenced as the subject of the Care Team: the Patient resource complying with the FrCorePatientProfile profile, preferably containing an identifier, a telecom, and an address,</li>
+  <li>The resource(s) referenced as members of the Care Team, and those they reference, among the following resources:
     <ul>
-      <li>PractitionerRole (profil ASPractitionerRole) pour représenter la situation d’exercice particulière d’un professionnel.
+      <li>PractitionerRole (profile ASPractitionerRole) to represent a particular practice situation of a professional.
         <ul>
-          <li>Avec Practitioner (profil ASPractitioner) référencée depuis PractitionerRole.practitioner (Exercice professionnel).</li>
+          <li>With Practitioner (profile ASPractitioner) referenced from PractitionerRole.practitioner (Professional Practice).</li>
         </ul>
       </li>
-      <li>RelatedPerson (profil <a href="StructureDefinition-cds-fr-related-person.html">CDS_FrRelatedperson</a>) pour représenter une personne tierce,</li>
-      <li>Organization (profil CDSAsOrganization) pour représenter une entité géographique (EG), une entité juridique (EJ) ou une organisation interne (OI)</li>
-      <li>Ou aucune si le seul membre est la personne prise en charge déjà référencée comme sujet du Cercle de Soins.</li>
+      <li>RelatedPerson (profile <a href="StructureDefinition-cds-fr-related-person.html">CDS_FrRelatedperson</a>) to represent a third party,</li>
+      <li>Organization (profile CDSAsOrganization) to represent a geographical entity (EG), a legal entity (EJ), or an internal organization (OI)</li>
+      <li>Or none if the only member is the person already referenced as the subject of the Care Team.</li>
     </ul>
   </li>
 </ul>
 
-<p>Ces ressources sont encapsulées dans une ressource « Bundle » de type « transaction » conforme au profil <a href="StructureDefinition-cds-bundle-transaction-creation.html">CDS_BundleTransactionCreation</a>. Le Bundle contient à minima une ressource CareTeam. Ce Bundle constitue le corps de la requête HTTP POST.</p>
+<p>These resources are encapsulated in a "Bundle" resource of type "transaction" compliant with the profile <a href="StructureDefinition-cds-bundle-transaction-creation.html">CDS_BundleTransactionCreation</a>. The Bundle contains at least one CareTeam resource. This Bundle constitutes the body of the HTTP POST request.</p>
 
 <div class="figure" style="width:100%;">
     <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="164px" preserveAspectRatio="none" style="width:388px;height:164px;background:#FFFFFF;" version="1.1" viewBox="0 0 388 164" width="388px" zoomAndPan="magnify"><defs /><g><rect fill="#FFFFFF" height="65.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="37" y="46.2969" /><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="326" y="82.5625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="42" x2="42" y1="36.2969" y2="129.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="331" x2="331" y1="36.2969" y2="129.6953" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="12" y="24.9951">Cr&#233;ateur</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="5" y="128.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="12" y="148.6904">Cr&#233;ateur</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="280" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="287" y="24.9951">Gestionnaire</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="280" y="128.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="287" y="148.6904">Gestionnaire</text><rect fill="#FFFFFF" height="65.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="37" y="46.2969" /><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="326" y="82.5625" /><polygon fill="#181818" points="314,78.5625,324,82.5625,314,86.5625,318,82.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="47" x2="320" y1="82.5625" y2="82.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="260" x="54" y="62.3638">Flux 1c - CreationCercleSoinsTransaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="212" x="54" y="77.4966">HTTP POST [Lien vers le serveur]/</text><polygon fill="#181818" points="53,107.6953,43,111.6953,53,115.6953,49,111.6953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="47" x2="330" y1="111.6953" y2="111.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="59" y="106.6294">HTTP 200 OK</text></g></svg></p>
 </div>
 
-<p>Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à POST pour les nouvelles ressources à poster sur le serveur :</p>
+<p>For each entry element of the Bundle resource, the request.method parameter will be set to POST for new resources to be posted to the server:</p>
 
 <ul>
-  <li>Pour la ressource CareTeam, l’attribut request.method sera positionné à POST,</li>
-  <li>Pour les ressources référencées dans CareTeam comme sujet et membres du cercle de soins, elles seront inclues dans le Bundle si elles n’existent pas sur le serveur ; l’attribut request.method sera positionné à POST.</li>
+  <li>For the CareTeam resource, the request.method attribute will be set to POST,</li>
+  <li>For the resources referenced in CareTeam as the subject and members of the care team, they will be included in the Bundle if they do not exist on the server; the request.method attribute will be set to POST.</li>
 </ul>
 
-<p>La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire.</p>
+<p>The management of creation and modification rights of the actors is the responsibility of the manager.</p>
 
-<p>Si la transaction a été correctement effectuée et donc que la création du cercle de soins est correctement effectuée, un code HTTP 200 ok est retourné . Un Bundle de type transaction-response doit être renvoyé dans le corps de la réponse . Ce dernier doit contenir les ressources telles qu’elles ont été créées par le gestionnaire ou, à minima, les identifiants logiques des ressources ayant été attribués par le gestionnaire (dans Bundle.entry.fullUrl et/ou Bundle.entry.resource.id). 
-Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource OperationOutcome contenant le détail des erreurs et avertissements résultant du traitement des entrées du Bundle.</p>
+<p>If the transaction has been correctly performed and therefore the creation of the care team is correctly performed, an HTTP 200 OK code is returned. A transaction-response type Bundle must be returned in the body of the response. The latter must contain the resources as they were created by the manager or, at a minimum, the logical identifiers of the resources that were assigned by the manager (in Bundle.entry.fullUrl and/or Bundle.entry.resource.id).
+Otherwise, an HTTP 500 Internal Server Error code is returned with an OperationOutcome resource containing the details of the errors and warnings resulting from the processing of the Bundle entries.</p>
 
-<h3 id="mise-à-jour-de-cercles-de-soins">Mise à jour de cercles de soins</h3>
+<h3 id="updating-care-teams">Updating care teams</h3>
 
-<p>Le Bundle <a href="StructureDefinition-cds-bundle-transaction-maj.html">CDS_BundleTransactionMAJ</a> peut contenir exactement les mêmes ressources que le <a href="StructureDefinition-cds-bundle-transaction-creation.html">CDS_BundleTransactionCreation</a>. Le Bundle contient à minima une ressource CareTeam ; concernant les acteurs, seules la ou les ressources qui doivent être créées ou mises à jour sont inclues dans le bundle. Ce Bundle constitue le corps de la requête HTTP POST.</p>
+<p>The Bundle <a href="StructureDefinition-cds-bundle-transaction-maj.html">CDS_BundleTransactionMAJ</a> can contain exactly the same resources as the <a href="StructureDefinition-cds-bundle-transaction-creation.html">CDS_BundleTransactionCreation</a>. The Bundle contains at least one CareTeam resource; regarding the actors, only the resource(s) that need to be created or updated are included in the bundle. This Bundle constitutes the body of the HTTP POST request.</p>
 
 <div class="figure" style="width:65%;">
      <p><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="164px" preserveAspectRatio="none" style="width:357px;height:164px;background:#FFFFFF;" version="1.1" viewBox="0 0 357 164" width="357px" zoomAndPan="magnify"><defs /><g><rect fill="#FFFFFF" height="65.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="37" y="46.2969" /><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="295" y="82.5625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="42" x2="42" y1="36.2969" y2="129.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="300" x2="300" y1="36.2969" y2="129.6953" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="12" y="24.9951">Cr&#233;ateur</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74" x="5" y="128.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="12" y="148.6904">Cr&#233;ateur</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="249" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="256" y="24.9951">Gestionnaire</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="249" y="128.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="256" y="148.6904">Gestionnaire</text><rect fill="#FFFFFF" height="65.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="37" y="46.2969" /><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="295" y="82.5625" /><polygon fill="#181818" points="283,78.5625,293,82.5625,283,86.5625,287,82.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="47" x2="289" y1="82.5625" y2="82.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="229" x="54" y="62.3638">Flux 4c - MAJCercleSoinsTransaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="212" x="54" y="77.4966">HTTP POST [Lien vers le serveur]/</text><polygon fill="#181818" points="53,107.6953,43,111.6953,53,115.6953,49,111.6953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="47" x2="299" y1="111.6953" y2="111.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="59" y="106.6294">HTTP 200 OK</text></g></svg></p>
 </div>
 
-<p>Pour chaque élément entry de la ressource Bundle, le paramètre request.method sera positionné à PUT pour chaque ressource à mettre à jour ou à POST pour chaque nouvelle ressource à créer sur le serveur :</p>
+<p>For each entry element of the Bundle resource, the request.method parameter will be set to PUT for each resource to be updated or to POST for each new resource to be created on the server:</p>
 
 <ul>
-  <li>Pour la ressource CareTeam, l’attribut request.method sera positionné à PUT,</li>
-  <li>Pour les ressources référencées dans CareTeam comme sujet et membres du cercle de soins, elles seront inclues dans le Bundle si elles n’existent pas sur le serveur ; l’attribut request.method sera alors positionné à POST s’il s’agit d’un nouvel acteur ou à PUT pour mettre à jour un membre.</li>
+  <li>For the CareTeam resource, the request.method attribute will be set to PUT,</li>
+  <li>For the resources referenced in CareTeam as the subject and members of the care team, they will be included in the Bundle if they do not exist on the server; the request.method attribute will then be set to POST if it is a new actor or to PUT to update a member.</li>
 </ul>
 
-<p>La gestion des droits de création et de modification des acteurs est à la charge du gestionnaire.</p>
-
+<p>The management of creation and modification rights of the actors is the responsibility of the manager.</p>
 
 
 
@@ -346,7 +345,7 @@ Sinon, un code HTTP 500 Internal Server Error est retourné avec une ressource O
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.cds#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-02 15:29:00 +0000">
+  <span title="2026-06-02 15:37:00 +0000">
     2026-06-02
   </span>
 
