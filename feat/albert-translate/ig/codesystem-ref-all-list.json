@@ -133,47 +133,47 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "1.0.1",
+    "status" : "active",
     "name" : "CommonTags",
     "title" : "Common Tags",
     "description" : "Common Tag Codes defined by FHIR project",
-    "oids" : ["2.16.840.1.113883.4.642.4.1067"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "2.0.0",
+    "status" : "active",
     "name" : "ContactEntityType",
     "title" : "Contact entity type",
     "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
-    "oids" : ["2.16.840.1.113883.4.642.4.1129"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1129"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "2.0.1",
+    "status" : "active",
     "name" : "OrganizationType",
     "title" : "Organization type",
     "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
-    "oids" : ["2.16.840.1.113883.4.642.4.1128"],
+    "oids" : ["2.16.840.1.113883.4.642.1.1128"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-    "version" : "2.9",
+    "version" : "3.0.0",
     "status" : "active",
-    "name" : "v2.0131",
-    "title" : "v2 Contact Role",
-    "description" : "FHIR Value set/code system definition for HL7 v2 table 0131 ( Contact Role)",
+    "name" : "ContactRole2",
+    "title" : "contactRole2",
+    "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
@@ -182,11 +182,11 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "version" : "2.9",
+    "version" : "5.0.0",
     "status" : "active",
-    "name" : "v2.0203",
-    "title" : "v2 Identifier Type",
-    "description" : "FHIR Value set/code system definition for HL7 v2 table 0203 ( Identifier Type)",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
@@ -194,11 +194,11 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-    "version" : "2018-08-12",
+    "version" : "4.0.0",
     "status" : "active",
-    "name" : "v3.RoleCode",
-    "title" : "v3 Code System RoleCode",
-    "description" : " A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+    "name" : "RoleCode",
+    "title" : "RoleCode",
+    "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
@@ -247,7 +247,7 @@
     "oids" : ["1.2.250.1.71.4.2.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101_SecteurActivite_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J101-SecteurActivite-RASS.html" : "JDV_J101_SecteurActivite_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice",
@@ -259,7 +259,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.11"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79_CiviliteExercice_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J79-CiviliteExercice-RASS.html" : "JDV_J79_CiviliteExercice_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
@@ -320,7 +320,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.8"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129_CategorieEtablissement_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J129-CategorieEtablissement-RASS.html" : "JDV_J129_CategorieEtablissement_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique",
@@ -332,7 +332,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.44"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J100-FinessStatutJuridique-RASS.html" : "JDV_J100_FinessStatutJuridique_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J100-FinessStatutJuridique-RASS.html" : "JDV_J100_FinessStatutJuridique_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
@@ -344,7 +344,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.45"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J162-ESPIC-RASS.html" : "JDV_J162_ESPIC_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J162-ESPIC-RASS.html" : "JDV_J162_ESPIC_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R75-InseeNAFrev2Niveau5/FHIR/TRE-R75-InseeNAFrev2Niveau5",
@@ -356,7 +356,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.47"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J99-InseeNAFrav2Niveau5-RASS.html" : "JDV_J99_InseeNAFrav2Niveau5_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J99-InseeNAFrav2Niveau5-RASS.html" : "JDV_J99_InseeNAFrav2Niveau5_RASS"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
@@ -368,7 +368,7 @@
     "oids" : ["1.2.250.1.213.1.6.1.69"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-JDV-J78-Civilite-RASS.html" : "JDV_J78_Civilite_RASS"
+    "https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-JDV-J78-Civilite-RASS.html" : "JDV_J78_Civilite_RASS"
   },
   {
     "url" : "urn:ietf:bcp:47",

@@ -13,7 +13,7 @@
      fhir:lastUpdated [ fhir:v "2023-09-27T13:48:19.342+01:00"^^xsd:dateTime ] ;
      fhir:profile ( [
        fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
-       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+       fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
      ] )
   ] ; # 
   fhir:language [ fhir:v "en"] ; # 
@@ -23,41 +23,23 @@
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "identityStatus"^^xsd:anyURI ;
-         fhir:l fhir:identityStatus
-       ] ;
+       fhir:url [ fhir:v "identityStatus"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [
-           fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"^^xsd:anyURI ;
-           fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445>
-         ] ;
+         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "VALI" ]
        ]
      ] ) ;
-     fhir:url [
-       fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"^^xsd:anyURI ;
-       fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability>
-     ]
+     fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability"^^xsd:anyURI ]
   ] [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/StructureDefinition/patient-birthPlace>
-     ] ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Address ;
        fhir:extension ( [
-         fhir:url [
-           fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"^^xsd:anyURI ;
-           fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code>
-         ] ;
+         fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:Coding ;
-           fhir:system [
-             fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"^^xsd:anyURI ;
-             fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune>
-           ] ;
+           fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"^^xsd:anyURI ] ;
            fhir:code [ fhir:v "29064" ]
          ]
        ] ) ;
@@ -68,27 +50,18 @@
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ;
-           fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203>
-         ] ;
+         fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "INS-NIR" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "urn:oid:1.2.250.1.213.1.4.8"^^xsd:anyURI ;
-       fhir:l <urn:oid:1.2.250.1.213.1.4.8>
-     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.250.1.213.1.4.8"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "123456789012244" ]
   ] ) ; # 
   fhir:name ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name"^^xsd:anyURI ;
-         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name>
-       ] ;
+       fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:String ;
+         a fhir:string ;
          fhir:v "Jacques"
        ]
      ] ) ;

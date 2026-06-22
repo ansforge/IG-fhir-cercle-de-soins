@@ -282,7 +282,7 @@
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:l</a> &lt;https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization&gt;     ] )
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization&gt;     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/resource.html#Organization.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/domainresource.html#Organization.text">fhir:text</a> [
@@ -292,16 +292,12 @@
   <a href="http://hl7.org/fhir/R4/organization.html#Organization.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
   <a href="http://hl7.org/fhir/R4/organization.html#Organization.type">fhir:type</a> ( [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Element#CodeableConcept.extension">fhir:extension</a> [
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:code ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;organizationType&quot;       ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MEDICAL&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Médical&quot; ]     ] )
   ] ) ; # 
@@ -369,8 +365,8 @@
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.cds#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-02 16:40:00 +0000">
-    2026-06-02
+  <span title="2026-06-22 16:37:00 +0000">
+    2026-06-22
   </span>
 
           <br/>
