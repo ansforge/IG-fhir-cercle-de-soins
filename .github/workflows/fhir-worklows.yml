@@ -2,21 +2,78 @@ name: Workflow Sushi Tests gitHubpages
 on:
   workflow_call:
   push:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
   run-sushi-tests_gitHubPages:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ansforge/fhir-ig-builder:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-        with:      
+        with:
           path: igSource
-      - uses: ansforge/IG-workflows@main
-        with:      
-          repo_ig: "./igSource"   
-          github_page: "true"
-          github_page_token: ${{ secrets.GITHUB_TOKEN }}
-          bake: "false"
-          validator_cli: "false"
-          generate_testscript: "false"
-          generate_plantuml : "false"
+
+      - name: Create to_publish
+        shell: bash
+        run: mkdir to_publish
+
+      - name: Cache FHIR packages
+        uses: actions/cache@v4
+        with:
+          path: /root/.fhir/packages
+          key: fhir-packages-${{ hashFiles('igSource/sushi-config.yaml') }}
+          restore-keys: |
+            fhir-packages-
+
+      - name: Run sushi
+        shell: bash
+        run: sushi ./igSource
+
+      - name: Resolve IG Publisher version
+        id: resolve-publisher-version
+        shell: bash
+        run: |
+          VERSION=$(curl -s https://api.github.com/repos/HL7/fhir-ig-publisher/releases/latest | jq -r '.tag_name')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Cache IG Publisher JAR
+        id: cache-publisher
+        uses: actions/cache@v4
+        with:
+          path: publisher.jar
+          key: ig-publisher-${{ steps.resolve-publisher-version.outputs.version }}
+
+      - name: Download IG Publisher
+        if: steps.cache-publisher.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          wget -q https://github.com/HL7/fhir-ig-publisher/releases/download/${{ steps.resolve-publisher-version.outputs.version }}/publisher.jar
+
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v8
+
+      - name: Run IG Publisher
+        shell: bash
+        run: |
+          cd igSource
+          java -Xmx8192m -jar ../publisher.jar -ig . -authorise-non-conformant-tx-servers
+          [ -f ./output/qa.min.html ] && cat ./output/qa.min.html >> $GITHUB_STEP_SUMMARY || true
+          mkdir -p ../to_publish/ig
+          cp -r ./output/. ../to_publish/ig
+
+      - name: Create .gitignore for gh-pages
+        shell: bash
+        run: echo "**/full-ig.zip" > ./to_publish/.gitignore
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./to_publish
+          destination_dir: ${{ steps.branch-name.outputs.current_branch }}
+          exclude_assets: '**.zip,**.tgz,**.pack'
+          commit_message: '${{ github.event.head_commit.message }}'
