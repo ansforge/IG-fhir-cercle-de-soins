@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="cds-bundle-transaction-creation-example"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation"/>
+  </meta>
+  <language value="en"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0a"/>
+    <resource>
+      <CareTeam>
+        <id value="cds-careteam-example"/>
+        <meta>
+          <lastUpdated value="2023-09-27T13:48:19.342+01:00"/>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <identifier>
+          <system value="http://fake-identifier.fr"/>
+          <value value="1"/>
+        </identifier>
+        <status value="active"/>
+        <name value=""/>
+        <subject>
+          <reference value="Patient/cds-patient-example"/>
+        </subject>
+        <period>
+          <start value="2013-01-12"/>
+        </period>
+        <participant>
+          <member>
+            <reference value="RelatedPerson/cds-relatedperson-example"/>
+          </member>
+          <period>
+            <start value="2013-01-12"/>
+          </period>
+        </participant>
+        <participant>
+          <member>
+            <reference value="Organization/cds-organization-example"/>
+          </member>
+          <period>
+            <start value="2013-01-12"/>
+            <end value="2032-12-18T13:48:19.342+01:00"/>
+          </period>
+        </participant>
+        <managingOrganization>
+          <reference value="Organization/cds-organization-example"/>
+        </managingOrganization>
+      </CareTeam>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="CareTeam"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0b"/>
+    <resource>
+      <Organization>
+        <id value="cds-organization-example"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <active value="true"/>
+        <type>
+          <extension url="https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types">
+            <valueCode value="organizationType"/>
+          </extension>
+          <coding>
+            <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"/>
+            <code value="MEDICAL"/>
+            <display value="Médical"/>
+          </coding>
+        </type>
+        <name value=""/>
+        <alias value=""/>
+        <address>
+          <line value="12 rue du paris"/>
+          <city value="Rennes"/>
+          <postalCode value="35000"/>
+          <country value="99100"/>
+        </address>
+      </Organization>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0c"/>
+    <resource>
+      <Patient>
+        <id value="cds-patient-example"/>
+        <meta>
+          <lastUpdated value="2023-09-27T13:48:19.342+01:00"/>
+          <profile value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability">
+          <extension url="identityStatus">
+            <valueCoding>
+              <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0445"/>
+              <code value="VALI"/>
+            </valueCoding>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+          <valueAddress>
+            <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code">
+              <valueCoding>
+                <system value="https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune"/>
+                <code value="29064"/>
+              </valueCoding>
+            </extension>
+            <city value="GOULVEN"/>
+          </valueAddress>
+        </extension>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203"/>
+              <code value="INS-NIR"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.250.1.213.1.4.8"/>
+          <value value="123456789012244"/>
+        </identifier>
+        <name>
+          <extension url="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name">
+            <valueString value="Jacques"/>
+          </extension>
+          <use value="official"/>
+          <family value="Thobois"/>
+          <given value="Jacques"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1984-10-02"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:61ebe359-bfdc-4613-8bf2-c5e300945f0d"/>
+    <resource>
+      <RelatedPerson>
+        <id value="cds-relatedperson-example"/>
+        <meta>
+          <profile value="https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/>
+        </text>
+        <identifier>
+          <use value="temp"/>
+          <system value="https://fake-system"/>
+          <value value="id-relatedPerson-12"/>
+        </identifier>
+        <active value="true"/>
+        <patient>
+          <reference value="Patient/cds-patient-example"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"/>
+            <code value="ECON"/>
+            <display value="Entité à contacter en cas d'urgence"/>
+          </coding>
+        </relationship>
+        <relationship>
+          <coding>
+            <system value="https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"/>
+            <code value="NBOR"/>
+            <display value="Voisin(e)"/>
+          </coding>
+        </relationship>
+        <name>
+          <use value="official"/>
+          <family value="Lamine"/>
+          <given value="CHIBOUT"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="0602143212"/>
+        </telecom>
+        <gender value="male"/>
+        <address>
+          <line value="12 Rue de la Paix"/>
+          <city value="Paris"/>
+          <postalCode value="75004"/>
+          <country value="FRA"/>
+        </address>
+      </RelatedPerson>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="RelatedPerson"/>
+    </request>
+  </entry>
+</Bundle>
