@@ -11,6 +11,8 @@ jobs:
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
+      volumes:
+        - /home/runner/.fhir/packages:/root/.fhir/packages
     steps:
       - uses: actions/checkout@v3
         with:
