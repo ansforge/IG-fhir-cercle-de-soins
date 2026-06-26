@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "cds-careteam-managing-organization"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ParamètreRecherche cds-careteam-managing-organization</b></p><a name=\"cds-careteam-managing-organization\"> </a><a name=\"hccds-careteam-managing-organization\"> </a><h2>CDSCareTeamManagingOrganization</h2><p>Paramètre <code>managingOrganization</code>:<code>reference</code></p><div><p>Organisation responsable du Cercle De Soins</p>\n</div><table class=\"grid\"><tr><td>Ressource</td><td><a href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a></td></tr><tr><td>Expression</td><td><code>CareTeam.managingOrganization</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd : Le paramètre peut se répéter pour spécifier plusieurs valeurs qui doivent toutes être vraies</li><li>multipleOr : Le paramètre peut avoir plusieurs valeurs (séparées par des virgules) dont au moins une doit être vraie</li></ul></td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter cds-careteam-managing-organization</b></p><a name=\"en-cds-careteam-managing-organization\"> </a><a name=\"en-hccds-careteam-managing-organization\"> </a><h2>CDSCareTeamManagingOrganization</h2><p>Parameter <code>managingOrganization</code>:<code>reference</code></p><div><p>Organisation responsable du Cercle De Soins</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a></td></tr><tr><td>Expression</td><td><code>CareTeam.managingOrganization</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div></div>"
+  ] ;
+  fhir:SearchParameter.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization"] ;
+  fhir:SearchParameter.version [ fhir:value "2.0.1"] ;
+  fhir:SearchParameter.name [
+     fhir:value "CDSCareTeamManagingOrganization" ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "lang" ] ;
+         fhir:Extension.valueCode [ fhir:value "en" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "content" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+     ]
+  ] ;
+  fhir:SearchParameter.status [ fhir:value "active"] ;
+  fhir:SearchParameter.date [ fhir:value "2026-06-26T12:44:41+00:00"^^xsd:dateTime] ;
+  fhir:SearchParameter.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:SearchParameter.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+     ]
+  ] ;
+  fhir:SearchParameter.description [
+     fhir:value "Organisation responsable du Cercle De Soins" ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "lang" ] ;
+         fhir:Extension.valueCode [ fhir:value "en" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "content" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
+     ]
+  ] ;
+  fhir:SearchParameter.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:SearchParameter.code [ fhir:value "managingOrganization"] ;
+  fhir:SearchParameter.base [
+     fhir:value "CareTeam" ;
+     fhir:index 0
+  ] ;
+  fhir:SearchParameter.type [ fhir:value "reference"] ;
+  fhir:SearchParameter.expression [ fhir:value "CareTeam.managingOrganization"] ;
+  fhir:SearchParameter.multipleOr [ fhir:value "true"^^xsd:boolean] ;
+  fhir:SearchParameter.multipleAnd [ fhir:value "true"^^xsd:boolean] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
