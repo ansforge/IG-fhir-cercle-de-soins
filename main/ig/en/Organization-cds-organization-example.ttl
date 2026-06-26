@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization>
      ] )
   ] ; # 
   fhir:language [ fhir:v "en"] ; # 
@@ -23,20 +23,14 @@
   fhir:active [ fhir:v true] ; # 
   fhir:type ( [
      fhir:extension ( [
-       fhir:url [
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types>
-       ] ;
+       fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-ext-organization-types"^^xsd:anyURI ] ;
        fhir:value [
-         a fhir:Code ;
+         a fhir:code ;
          fhir:v "organizationType"
        ]
      ] ) ;
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ;
-         fhir:l <https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307>
-       ] ;
+       fhir:system [ fhir:v "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "MEDICAL" ] ;
        fhir:display [ fhir:v "Médical" ]
      ] )

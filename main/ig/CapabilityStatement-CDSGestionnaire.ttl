@@ -13,57 +13,36 @@
      fhir:status [ fhir:v "extensions" ] ;
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CapabilityStatement CDSGestionnaire</b></p><a name=\"CDSGestionnaire\"> </a><a name=\"hcCDSGestionnaire\"> </a><h2 id=\"title\">CI-SIS Gestion du Cercle de Soins - Gestionnaire</h2><ul><li>Version du guide d'implémentation : 2.0.1 </li><li>Version de FHIR : 4.0.1 </li><li>Formats supportés : <code>json</code>, <code>xml</code></li><li>Publié sur : 2023-07-14 </li><li>Publié par : Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris </li></ul><blockquote class=\"impl-note\"><p><strong>Note aux implémenteurs : capacités FHIR</strong></p><p>Toute capacité FHIR peut être 'autorisée' par le système sauf si elle est explicitement marquée comme 'SHALL NOT'. Quelques éléments sont marqués comme MAY dans le guide d'implémentation pour souligner leur pertinence potentielle pour le cas d'usage.</p></blockquote><h3 id=\"shallIGs\">DOIT prendre en charge les guides d’implémentation suivants.</h3><ul><li><a href=\"index.html\">https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</a></li></ul><h2 id=\"rest\">Capacités RESTful FHIR</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div><p>Création et mise à jour des cercles de soins</p>\n</div><div class=\"lead\"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)</p>\n</div></blockquote><div class=\"lead\"><em>Résumé des interactions au niveau du système</em></div><ul><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation</p>\n</div></li><li>Supporte le/la <code>transaction</code>Les interactions sont décrites comme suit :<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj</p>\n</div></li></ul></div></div><h3 id=\"resourcesCap1\">Capacités par ressource/profil</h3><h4 id=\"resourcesSummary1\">Résumé</h4><p>Le tableau récapitulatif liste les ressources faisant partie de cette configuration, et pour chaque ressource, il liste :</p><ul><li>Les profils pertinents (le cas échéant)</li><li>Les interactions supportées par chaque ressource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>les types sont seulement présents si au moins une des ressources les prend en charge.</li><li><span>Les paramètres de recherche (SearchParameters) requis, recommandés, optionnels (le cas échéant). </span></li><li>Les ressources liées activées pour <code>_include</code></li><li>Les autres ressources activées pour <code>_revinclude</code></li><li>Les opérations sur la ressource (le cas échéant)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Type de Ressource</b></th><th><b>Profil</b></th><th class=\"text-center\"><b title=\"GET d'une ressource (interaction read)\">R</b></th><th class=\"text-center\"><b title=\"GET des versions passées des ressources (interaction vread)\">V-R</b></th><th class=\"text-center\"><b title=\"GET de l'ensemble des ressources du type (interaction search)\">S</b></th><th class=\"text-center\"><b title=\"PUT d'une nouvelle version de ressource (interaction update)\">U</b></th><th class=\"text-center\"><b title=\"POST d'une nouvelle ressource (interaction create)\">C</b></th><th class=\"text-center\"><b title=\"GET des changements d'une ressource (interaction history sur l'instance)\">H-I</b></th><th class=\"text-center\"><b title=\"GET des changements pour toutes les ressources du type (interaction history sur le type)\">H-T</b></th><th><b title=\"Paramètres de recherche requis et recommandés\">Recherches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Opérations</b></th></tr></thead><tbody><tr><td><a href=\"#CareTeam1-1\">CareTeam</a></td><td><a href=\"StructureDefinition-cds-ihe-careteam.html\">https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>identifier, start, end, status, _lastUpdated, category, participant-start, participant-end, date, participant, patient, subject, managingOrganization</td><td/><td/><td/></tr><tr><td><a href=\"#Patient1-2\">Patient</a></td><td><a href=\"https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html\">https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>identifier, family, given, name, address, birthdate, gender, birthplace</td><td/><td/><td/></tr><tr><td><a href=\"#RelatedPerson1-3\">RelatedPerson</a></td><td><a href=\"StructureDefinition-cds-fr-related-person.html\">https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, name, relationship</td><td/><td/><td/></tr><tr><td><a href=\"#Practitioner1-4\">Practitioner</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>identifier, name</td><td/><td/><td/></tr><tr><td><a href=\"#PractitionerRole1-5\">PractitionerRole</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, practitioner, role</td><td/><td/><td/></tr><tr><td><a href=\"#Organization1-6\">Organization</a></td><td><a href=\"StructureDefinition-cds-organization.html\">https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, identifier, name</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"CareTeam1-1\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>CareTeam</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cds-ihe-careteam.html\">CDS CareTeam Profileversion : 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>update</code>, <code>search-type</code>, <code>read</code>, <code>create</code>, <code>vread</code>, <code>history-instance</code>, <code>history-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Paramètres de recherche</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformité</th><th>Paramètre</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant du cercle de soins</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-start.html\">start</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de création du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-end.html\">end</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de fin du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">status</a></td><td><code>token</code></td><td><div><p>Recherche selon le du cercle de soins</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_lastUpdated</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de mise à jour du cercle de soins</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">category</a></td><td><code>token</code></td><td><div><p>Recherche selon la catégorie de cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-participant-start.html\">participant-start</a></td><td><code>date</code></td><td><div><p>Recherche selon la date d'entrée d'un membre du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-participant-start.html\">participant-end</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de sortie d'un membre du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">date</a></td><td><code>date</code></td><td><div><p>Recherche selon la période couverte par le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">participant</a></td><td><code>reference</code></td><td><div><p>Recherche selon les participants impliqués dans le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">patient</a></td><td><code>reference</code></td><td><div><p>Recherche selon le patient impliqué dans le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">subject</a></td><td><code>reference</code></td><td><div><p>Recherche selon le sujet impliqué dans le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-managing-organization.html\">managingOrganization</a></td><td><code>reference</code></td><td><div><p>Recherche selon l'organisation responsable du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Patient1-2\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html\">FR Core Patient Profileversion : 2.1.0)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Paramètres de recherche</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformité</th><th>Paramètre</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">family</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom de famille du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">given</a></td><td><code>string</code></td><td><div><p>Recherche selon le prénom du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">address</a></td><td><code>string</code></td><td><div><p>Recherche selon l'adresse du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">birthdate</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de naissance du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">gender</a></td><td><code>token</code></td><td><div><p>Recherche selon le genre du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-patient-birthplace.html\">birthplace</a></td><td><code>string</code></td><td><div><p>Recherche selon le lieu de naissance du patient</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"RelatedPerson1-3\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>RelatedPerson</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cds-fr-related-person.html\">CDS Fr RelatedPerson Profileversion : 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Paramètres de recherche</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformité</th><th>Paramètre</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_id</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant technique de la personne de confiance</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/relatedperson.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom de la personne de confiance</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/relatedperson.html#search\">relationship</a></td><td><code>token</code></td><td><div><p>Recherche selon la relation entre le patient et la personne de confiance</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Practitioner1-4\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Practitioner</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html\">AS Practitioner Profileversion : 1.1.0)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Paramètres de recherche</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformité</th><th>Paramètre</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitioner.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant du practicien</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitioner.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom du practicien</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"PractitionerRole1-5\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>PractitionerRole</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html\">AS PractitionerRole Profileversion : 1.1.0)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Paramètres de recherche</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformité</th><th>Paramètre</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_id</a></td><td><code>token</code></td><td><div><p>Identifiant technique du membre professionnel dans la situation d'exercice</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html#search\">practitioner</a></td><td><code>reference</code></td><td><div><p>Référence du professionnel</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html#search\">role</a></td><td><code>token</code></td><td><div><p>Rôle du membre de cercle de soins</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Organization1-6\" class=\"panel-title\"><span style=\"float: right;\">Conformité de la ressource : unspecified </span>Organization</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Profil système de base</span><br/><a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profileversion : 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Conformité au Profil</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Politique de référence</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Résumé des interactions</span><br/><ul><li>Supporte <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Paramètres de recherche</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformité</th><th>Paramètre</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_id</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant technique de l'organisation</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/organization.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant de l'organisation</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/organization.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom de l'organisation</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement CDSGestionnaire</b></p><a name=\"en-CDSGestionnaire\"> </a><a name=\"en-hcCDSGestionnaire\"> </a><h2 id=\"en-title\">CI-SIS Gestion du Cercle de Soins - Gestionnaire</h2><ul><li>Implementation Guide Version: 2.0.1 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>json</code>, <code>xml</code></li><li>Published on: 2023-07-14 </li><li>Published by: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id=\"en-shallIGs\">SHALL Support the Following Implementation Guides</h3><ul><li><a href=\"index.html\">https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds</a></li></ul><h2 id=\"en-rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"en-mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div><p>Création et mise à jour des cercles de soins</p>\n</div><div class=\"lead\"><em>Security</em></div><blockquote><div><p>L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)</p>\n</div></blockquote><div class=\"lead\"><em>Summary of System-wide Interactions</em></div><ul><li>Supports the <code>transaction</code>interaction described as follows:<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation</p>\n</div></li><li>Supports the <code>transaction</code>interaction described as follows:<div><p>https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj</p>\n</div></li></ul></div></div><h3 id=\"en-resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"en-resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET past versions of resources (vread interaction)\">V-R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th class=\"text-center\"><b title=\"GET changes to a resource (history interaction on instance)\">H-I</b></th><th class=\"text-center\"><b title=\"GET changes for all resources of the type (history interaction on type)\">H-T</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#en-CareTeam1-1\">CareTeam</a></td><td><a href=\"StructureDefinition-cds-ihe-careteam.html\">https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>identifier, start, end, status, _lastUpdated, category, participant-start, participant-end, date, participant, patient, subject, managingOrganization</td><td/><td/><td/></tr><tr><td><a href=\"#en-Patient1-2\">Patient</a></td><td><a href=\"https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html\">https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>identifier, family, given, name, address, birthdate, gender, birthplace</td><td/><td/><td/></tr><tr><td><a href=\"#en-RelatedPerson1-3\">RelatedPerson</a></td><td><a href=\"StructureDefinition-cds-fr-related-person.html\">https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, name, relationship</td><td/><td/><td/></tr><tr><td><a href=\"#en-Practitioner1-4\">Practitioner</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>identifier, name</td><td/><td/><td/></tr><tr><td><a href=\"#en-PractitionerRole1-5\">PractitionerRole</a></td><td><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html\">https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, practitioner, role</td><td/><td/><td/></tr><tr><td><a href=\"#en-Organization1-6\">Organization</a></td><td><a href=\"StructureDefinition-cds-organization.html\">https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1</a></td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td>_id, identifier, name</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"en-CareTeam1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>CareTeam</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-cds-ihe-careteam.html\">CDS CareTeam Profileversion: 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>update</code>, <code>search-type</code>, <code>read</code>, <code>create</code>, <code>vread</code>, <code>history-instance</code>, <code>history-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant du cercle de soins</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-start.html\">start</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de création du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-end.html\">end</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de fin du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">status</a></td><td><code>token</code></td><td><div><p>Recherche selon le du cercle de soins</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_lastUpdated</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de mise à jour du cercle de soins</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">category</a></td><td><code>token</code></td><td><div><p>Recherche selon la catégorie de cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-participant-start.html\">participant-start</a></td><td><code>date</code></td><td><div><p>Recherche selon la date d'entrée d'un membre du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-participant-start.html\">participant-end</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de sortie d'un membre du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">date</a></td><td><code>date</code></td><td><div><p>Recherche selon la période couverte par le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">participant</a></td><td><code>reference</code></td><td><div><p>Recherche selon les participants impliqués dans le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">patient</a></td><td><code>reference</code></td><td><div><p>Recherche selon le patient impliqué dans le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/careteam.html#search\">subject</a></td><td><code>reference</code></td><td><div><p>Recherche selon le sujet impliqué dans le cercle de soins.</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-careteam-managing-organization.html\">managingOrganization</a></td><td><code>reference</code></td><td><div><p>Recherche selon l'organisation responsable du cercle de soins (Paramètre créé dans le cadre de ce guide).</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"en-Patient1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-patient.html\">FR Core Patient Profileversion: 2.1.0)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">family</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom de famille du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">given</a></td><td><code>string</code></td><td><div><p>Recherche selon le prénom du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">address</a></td><td><code>string</code></td><td><div><p>Recherche selon l'adresse du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">birthdate</a></td><td><code>date</code></td><td><div><p>Recherche selon la date de naissance du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#search\">gender</a></td><td><code>token</code></td><td><div><p>Recherche selon le genre du patient</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-cds-patient-birthplace.html\">birthplace</a></td><td><code>string</code></td><td><div><p>Recherche selon le lieu de naissance du patient</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"en-RelatedPerson1-3\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>RelatedPerson</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-cds-fr-related-person.html\">CDS Fr RelatedPerson Profileversion: 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_id</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant technique de la personne de confiance</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/relatedperson.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom de la personne de confiance</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/relatedperson.html#search\">relationship</a></td><td><code>token</code></td><td><div><p>Recherche selon la relation entre le patient et la personne de confiance</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"en-Practitioner1-4\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Practitioner</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitioner.html\">AS Practitioner Profileversion: 1.1.0)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitioner.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant du practicien</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitioner.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom du practicien</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"en-PractitionerRole1-5\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>PractitionerRole</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"https://interop.esante.gouv.fr/ig/fhir/annuaire/1.1.0/StructureDefinition-as-practitionerrole.html\">AS PractitionerRole Profileversion: 1.1.0)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_id</a></td><td><code>token</code></td><td><div><p>Identifiant technique du membre professionnel dans la situation d'exercice</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html#search\">practitioner</a></td><td><code>reference</code></td><td><div><p>Référence du professionnel</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/practitionerrole.html#search\">role</a></td><td><code>token</code></td><td><div><p>Rôle du membre de cercle de soins</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"en-Organization1-6\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Organization</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-cds-organization.html\">CDS Organization Profileversion: 2.0.1)</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>create</code>, <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/resource.html#search\">_id</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant technique de l'organisation</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/organization.html#search\">identifier</a></td><td><code>token</code></td><td><div><p>Recherche selon l'identifiant de l'organisation</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td><a href=\"http://hl7.org/fhir/R4/organization.html#search\">name</a></td><td><code>string</code></td><td><div><p>Recherche selon le nom de l'organisation</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div></div></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire>
-  ] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/CapabilityStatement/CDSGestionnaire"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "2.0.1"] ; # 
   fhir:name [
      fhir:v "gestionnaire-cds" ;
      fhir:extension ( [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "lang"^^xsd:anyURI ;
-           fhir:l fhir:lang
-         ] ;
+         fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:Code ;
+           a fhir:code ;
            fhir:v "en"
          ]
        ] [
-         fhir:url [
-           fhir:v "content"^^xsd:anyURI ;
-           fhir:l fhir:content
-         ]
+         fhir:url [ fhir:v "content"^^xsd:anyURI ]
        ] ) ;
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-       ]
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
      ] )
   ] ; # 
   fhir:title [
      fhir:v "CI-SIS Gestion du Cercle de Soins - Gestionnaire" ;
      fhir:extension ( [
        fhir:extension ( [
-         fhir:url [
-           fhir:v "lang"^^xsd:anyURI ;
-           fhir:l fhir:lang
-         ] ;
+         fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:Code ;
+           a fhir:code ;
            fhir:v "en"
          ]
        ] [
-         fhir:url [
-           fhir:v "content"^^xsd:anyURI ;
-           fhir:l fhir:content
-         ]
+         fhir:url [ fhir:v "content"^^xsd:anyURI ]
        ] ) ;
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-       ]
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
      ] )
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -80,10 +59,7 @@
   fhir:description [ fhir:v "Le rôle de gestionnaire incarné par un système, gère et stocke le cercle de soins,donne accès aux informations en cas de consultation."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
-       ] ;
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "FR" ] ;
        fhir:display [ fhir:v "France (la)" ]
      ] )
@@ -93,7 +69,7 @@
   fhir:format ( [ fhir:v "json"] [ fhir:v "xml"] ) ; # 
   fhir:implementationGuide ( [
      fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds>
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/ImplementationGuide/ans.fhir.fr.cds>
   ] ) ; # 
   fhir:rest ( [
      fhir:mode [ fhir:v "server" ] ;
@@ -101,24 +77,15 @@
        fhir:v "Création et mise à jour des cercles de soins" ;
        fhir:extension ( [
          fhir:extension ( [
-           fhir:url [
-             fhir:v "lang"^^xsd:anyURI ;
-             fhir:l fhir:lang
-           ] ;
+           fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
            fhir:value [
-             a fhir:Code ;
+             a fhir:code ;
              fhir:v "en"
            ]
          ] [
-           fhir:url [
-             fhir:v "content"^^xsd:anyURI ;
-             fhir:l fhir:content
-           ]
+           fhir:url [ fhir:v "content"^^xsd:anyURI ]
          ] ) ;
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-         ]
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
        ] )
      ] ;
      fhir:security [
@@ -127,24 +94,15 @@
          fhir:v "L’ANS propose des référentiels dédiés à la politique de sécurité (la PGSSI-S) et des mécanismes de sécurisation sont définis dans les volets de la couche Transport du Cadre d’Interopérabilité des systèmes d’information de santé (CI-SIS)" ;
          fhir:extension ( [
            fhir:extension ( [
-             fhir:url [
-               fhir:v "lang"^^xsd:anyURI ;
-               fhir:l fhir:lang
-             ] ;
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
              fhir:value [
-               a fhir:Code ;
+               a fhir:code ;
                fhir:v "en"
              ]
            ] [
-             fhir:url [
-               fhir:v "content"^^xsd:anyURI ;
-               fhir:l fhir:content
-             ]
+             fhir:url [ fhir:v "content"^^xsd:anyURI ]
            ] ) ;
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-           ]
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
          ] )
        ]
      ] ;
@@ -152,7 +110,7 @@
        fhir:type [ fhir:v "CareTeam" ] ;
        fhir:profile [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam?version=2.0.1>
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-ihe-careteam|2.0.1>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "update" ]
@@ -173,403 +131,286 @@
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/clinical-identifier|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/clinical-identifier?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-identifier|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'identifiant du cercle de soins" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "start" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start|2.0.1"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start?version=2.0.1>
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-start|2.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la date de création du cercle de soins (Paramètre créé dans le cadre de ce guide)." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "end" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end|2.0.1"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end?version=2.0.1>
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-end|2.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la date de fin du cercle de soins (Paramètre créé dans le cadre de ce guide)." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "status" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/CareTeam-status|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/CareTeam-status?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/CareTeam-status|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le du cercle de soins" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "_lastUpdated" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-lastUpdated|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-lastUpdated|4.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la date de mise à jour du cercle de soins" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "category" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/CareTeam-category|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/CareTeam-category?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/CareTeam-category|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la catégorie de cercle de soins." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "participant-start" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start|2.0.1"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start?version=2.0.1>
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start|2.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la date d'entrée d'un membre du cercle de soins (Paramètre créé dans le cadre de ce guide)." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "participant-end" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start|2.0.1"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start?version=2.0.1>
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-participant-start|2.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la date de sortie d'un membre du cercle de soins (Paramètre créé dans le cadre de ce guide)." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "date" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/clinical-date|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/clinical-date?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-date|4.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la période couverte par le cercle de soins." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "participant" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/CareTeam-participant|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/CareTeam-participant?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/CareTeam-participant|4.0.1>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [
            fhir:v "Recherche selon les participants impliqués dans le cercle de soins." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "patient" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/clinical-patient|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/clinical-patient?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/clinical-patient|4.0.1>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le patient impliqué dans le cercle de soins." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "subject" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/CareTeam-subject|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/CareTeam-subject?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/CareTeam-subject|4.0.1>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le sujet impliqué dans le cercle de soins." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "managingOrganization" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization|2.0.1"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization?version=2.0.1>
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-careteam-managing-organization|2.0.1>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'organisation responsable du cercle de soins (Paramètre créé dans le cadre de ce guide)." ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] )
@@ -577,7 +418,7 @@
        fhir:type [ fhir:v "Patient" ] ;
        fhir:profile [
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0"^^xsd:anyURI ;
-         fhir:l <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient?version=2.1.0>
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient|2.1.0>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "create" ]
@@ -592,248 +433,176 @@
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Patient-identifier|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Patient-identifier?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Patient-identifier|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'identifiant du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "family" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/individual-family|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/individual-family?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/individual-family|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le nom de famille du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "given" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/individual-given|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/individual-given?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/individual-given|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le prénom du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Patient-name|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Patient-name?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Patient-name|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le nom du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "address" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/individual-address|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/individual-address?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/individual-address|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'adresse du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "birthdate" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/individual-birthdate|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/individual-birthdate?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/individual-birthdate|4.0.1>
          ] ;
          fhir:type [ fhir:v "date" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la date de naissance du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "gender" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/individual-gender|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/individual-gender?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/individual-gender|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le genre du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "birthplace" ] ;
          fhir:definition [
            fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace|2.0.1"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace?version=2.0.1>
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/SearchParameter/cds-patient-birthplace|2.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le lieu de naissance du patient" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] )
@@ -841,7 +610,7 @@
        fhir:type [ fhir:v "RelatedPerson" ] ;
        fhir:profile [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person?version=2.0.1>
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person|2.0.1>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "create" ]
@@ -856,93 +625,66 @@
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Resource-id?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'identifiant technique de la personne de confiance" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/RelatedPerson-name|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/RelatedPerson-name?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/RelatedPerson-name|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le nom de la personne de confiance" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "relationship" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/RelatedPerson-relationship|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/RelatedPerson-relationship?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/RelatedPerson-relationship|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon la relation entre le patient et la personne de confiance" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] )
@@ -950,7 +692,7 @@
        fhir:type [ fhir:v "Practitioner" ] ;
        fhir:profile [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner?version=1.1.0>
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitioner|1.1.0>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "create" ]
@@ -965,62 +707,44 @@
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Practitioner-identifier|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Practitioner-identifier?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Practitioner-identifier|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'identifiant du practicien" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/individual-family|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/individual-family?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/individual-family|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le nom du practicien" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] )
@@ -1028,7 +752,7 @@
        fhir:type [ fhir:v "PractitionerRole" ] ;
        fhir:profile [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole?version=1.1.0>
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/annuaire/StructureDefinition/as-practitionerrole|1.1.0>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "create" ]
@@ -1043,93 +767,66 @@
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Resource-id?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Identifiant technique du membre professionnel dans la situation d'exercice" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "practitioner" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner|4.0.1>
          ] ;
          fhir:type [ fhir:v "reference" ] ;
          fhir:documentation [
            fhir:v "Référence du professionnel" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "role" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/PractitionerRole-role|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/PractitionerRole-role?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/PractitionerRole-role|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Rôle du membre de cercle de soins" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] )
@@ -1137,7 +834,7 @@
        fhir:type [ fhir:v "Organization" ] ;
        fhir:profile [
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization?version=2.0.1>
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-organization|2.0.1>
        ] ;
        fhir:interaction ( [
          fhir:code [ fhir:v "create" ]
@@ -1152,93 +849,66 @@
          fhir:name [ fhir:v "_id" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Resource-id?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Resource-id|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'identifiant technique de l'organisation" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "identifier" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Organization-identifier|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Organization-identifier?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Organization-identifier|4.0.1>
          ] ;
          fhir:type [ fhir:v "token" ] ;
          fhir:documentation [
            fhir:v "Recherche selon l'identifiant de l'organisation" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] [
          fhir:name [ fhir:v "name" ] ;
          fhir:definition [
            fhir:v "http://hl7.org/fhir/SearchParameter/Organization-name|4.0.1"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/SearchParameter/Organization-name?version=4.0.1>
+           fhir:link <http://hl7.org/fhir/SearchParameter/Organization-name|4.0.1>
          ] ;
          fhir:type [ fhir:v "string" ] ;
          fhir:documentation [
            fhir:v "Recherche selon le nom de l'organisation" ;
            fhir:extension ( [
              fhir:extension ( [
-               fhir:url [
-                 fhir:v "lang"^^xsd:anyURI ;
-                 fhir:l fhir:lang
-               ] ;
+               fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
                fhir:value [
-                 a fhir:Code ;
+                 a fhir:code ;
                  fhir:v "en"
                ]
              ] [
-               fhir:url [
-                 fhir:v "content"^^xsd:anyURI ;
-                 fhir:l fhir:content
-               ]
+               fhir:url [ fhir:v "content"^^xsd:anyURI ]
              ] ) ;
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-             ]
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
            ] )
          ]
        ] )
@@ -1249,24 +919,15 @@
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-creation" ;
          fhir:extension ( [
            fhir:extension ( [
-             fhir:url [
-               fhir:v "lang"^^xsd:anyURI ;
-               fhir:l fhir:lang
-             ] ;
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
              fhir:value [
-               a fhir:Code ;
+               a fhir:code ;
                fhir:v "en"
              ]
            ] [
-             fhir:url [
-               fhir:v "content"^^xsd:anyURI ;
-               fhir:l fhir:content
-             ]
+             fhir:url [ fhir:v "content"^^xsd:anyURI ]
            ] ) ;
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-           ]
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
          ] )
        ]
      ] [
@@ -1275,24 +936,15 @@
          fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-bundle-transaction-maj" ;
          fhir:extension ( [
            fhir:extension ( [
-             fhir:url [
-               fhir:v "lang"^^xsd:anyURI ;
-               fhir:l fhir:lang
-             ] ;
+             fhir:url [ fhir:v "lang"^^xsd:anyURI ] ;
              fhir:value [
-               a fhir:Code ;
+               a fhir:code ;
                fhir:v "en"
              ]
            ] [
-             fhir:url [
-               fhir:v "content"^^xsd:anyURI ;
-               fhir:l fhir:content
-             ]
+             fhir:url [ fhir:v "content"^^xsd:anyURI ]
            ] ) ;
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/StructureDefinition/translation>
-           ]
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/translation"^^xsd:anyURI ]
          ] )
        ]
      ] )

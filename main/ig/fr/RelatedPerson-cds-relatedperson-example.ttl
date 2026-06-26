@@ -12,7 +12,7 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
+       fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/StructureDefinition/cds-fr-related-person>
      ] )
   ] ; # 
   fhir:language [ fhir:v "fr"] ; # 
@@ -22,32 +22,23 @@
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "temp" ] ;
-     fhir:system [
-       fhir:v "https://fake-system"^^xsd:anyURI ;
-       fhir:l <https://fake-system>
-     ] ;
+     fhir:system [ fhir:v "https://fake-system"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "id-relatedPerson-12" ]
   ] ) ; # 
   fhir:active [ fhir:v true] ; # 
   fhir:patient [
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
+     fhir:link <https://interop.esante.gouv.fr/ig/fhir/cds/Patient/cds-patient-example> ;
      fhir:reference [ fhir:v "Patient/cds-patient-example" ]
   ] ; # 
   fhir:relationship ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"^^xsd:anyURI ;
-         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass>
-       ] ;
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "ECON" ] ;
        fhir:display [ fhir:v "Entité à contacter en cas d'urgence" ]
      ] )
   ] [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"^^xsd:anyURI ;
-         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode>
-       ] ;
+       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "NBOR" ] ;
        fhir:display [ fhir:v "Voisin(e)" ]
      ] )
