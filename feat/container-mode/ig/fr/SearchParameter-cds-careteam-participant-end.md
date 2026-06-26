@@ -29,7 +29,7 @@ Date de sortie d’un membre du cercle de soins
     }]
   },
   "status" : "active",
-  "date" : "2026-06-26T10:02:42+00:00",
+  "date" : "2026-06-26T10:05:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
